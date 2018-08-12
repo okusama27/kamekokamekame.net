@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="ja-JP">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>index_tag - 鉄は熱いうちに打て</title>
+  
+  <link rel="stylesheet" href="static/css/sample_article.css">
+
+</head>
+
+<body>
+  
+<div class="container">
+  <h1 class="index-title">
+    <a href="index.html">鉄は熱いうちに打て</a>
+  </h1>
+
+  <div class="container-inner">
+    <div class="container-body">
+      
+
+  <div class="articles">
+    
+      <div class="article-metadata">
+    <span class="article-date"> 2017-12-22 </span>
+    <span> Python </span>
+    <span> Python </span>
+  </div>
+      <h2 class="article-title"><a href="2017/2017-12-22-article.html">関数のreturnが変なコード</a></h2>
+      <div class="article-body"><p>12月は毎日書くぞー！と思って、10日分を残して早30日。いやー、12月は早かった！</p>
+<p>ということで、残りの日付は今年の振り返りと小ネタで埋めていきます。</p>
+<p>今日は私がコードレビューでよく指摘される話。</p>
+<p><a href="http://kamekokamekame.net/python/2017/12/15/article.html">TogglとSlackを連携した話</a>のコードも最初、こうなっていました。</p>
+<div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">get_toggl</span><span class="p">():</span>
+    <span class="err">〜略〜</span>
+    <span class="k">if</span> <span class="n">current</span><span class="o">.</span><span class="n">status_code</span> <span class="o">!=</span> <span class="mi">200</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s2">"togglの情報取得に失敗しました"</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">current_json</span> <span class="o">=</span> <span class="n">current</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">current_json</span><span class="p">[</span><span class="s1">'data'</span></pre></div></div>
+    
+      <div class="article-metadata">
+    <span class="article-date"> 2017-12-21 </span>
+    <span> Python </span>
+    <span> Python </span>
+  </div>
+      <h2 class="article-title"><a href="2017/2017-12-21-article.html">pytestを使ってみる</a></h2>
+      <div class="article-body"><p>今日の内容は、<a href="http://kamekokamekame.net/advent_calendar/2017/12/18/article.html">Pythonでテストしたい</a>にまとめている内容の詳細部分です。</p>
+<p>unittestより高度な機能を提供するpytestを使ってみます。</p>
+<p><a href="https://docs.pytest.org/en/latest/">公式ドキュメント</a> は、これかな？</p>
+<p>本もありますね。これ、日本語訳本でるのかなぁ？出そうだなぁ。と思っているので、英語版を買おうかどうか迷っています。誰か教えて。結構いいお値段なんですよね。</p>
+<p><a href="https://www.amazon.co.jp/Python-Testing-Pytest-Effective-Scalable/dp/1680502409/ref=as_li_ss_il?ie=UTF8&amp;qid=1514210841&amp;sr=8-1&amp;keywords=Python+Testing+with+pytest&amp;linkCode=li2&amp;tag=ironhotcom-22&amp;linkId=4fc06da72baa01cf82b554f26d08fc1d" target="_blank"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=1680502409&amp;Format=_SL160_&amp;ID=AsinImage&amp;MarketPlace=JP&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=ironhotcom-22"/></a><img alt="" border="0" height="1" src="https://ir-jp.amazon-adsystem.com/e/ir?t=ironhotcom-22&amp;l=li2&amp;o=9&amp;a=1680502409" style="border:none !important; margin:0px !important;" width="1"/></p>
+<div class="header_target" id="h_2017_2017_2d12_2d21_2darticle_2emd_1"></div><h2>インストール</h2>
+<p>サードパーティー製なのでインストールが必要です。</p>
+<div class="codehilite"><pre><span></span>$ pip install pytest
+</pre></div>
+<div class="header_target" id="h_2017_2017_2d12_2d21_2darticle_2emd_2"></div><h2>テストしてみよう</h2>
+<p>まずはunittestと同じテストをしてみます。</p>
+<p>なにも継承しないで、 </p></div>
+    
+      <div class="article-metadata">
+    <span class="article-date"> 2017-12-19 </span>
+    <span> Python </span>
+    <span> Python </span>
+  </div>
+      <h2 class="article-title"><a href="2017/2017-12-19-article.html">unittest.mock.patchを使ってみる（コンテキストマネージャ）</a></h2>
+      <div class="article-body"><p>今日の内容は、<a href="http://kamekokamekame.net/advent_calendar/2017/12/18/article.html">Pythonでテストしたい</a>にまとめている内容の詳細部分です。</p>
+<p>unittest.mock.patch（コンテキストマネージャ）を使ってみます。</p>
+<p>sample_method.py</p>
+
+<p>sample_methodを読み込んでテストする</p>
+
+<p>意味がないテストになっていますが、 <code>with patch('sample_method.SampleMethod.method_1') as mock_method_1:</code> と書いて、　<code>mock_method_1.return_value = 'AAA'</code> と書くことで、　<code>SampleMethod.method_1</code></p></div>
+    
+      <div class="article-metadata">
+    <span class="article-date"> 2017-12-17 </span>
+    <span> Python </span>
+    <span> Python </span>
+  </div>
+      <h2 class="article-title"><a href="2017/2017-12-17-article.html">unittest.mock.patchを使ってみる（デコレータ）</a></h2>
+      <div class="article-body"><p>今日の内容は、<a href="http://kamekokamekame.net/advent_calendar/2017/12/18/article.html">Pythonでテストしたい</a>にまとめている内容の詳細部分です。</p>
+<p>unittest.mock.patch（デコレータ）を使ってみます。</p>
+<p>sample_method.py</p>
+
+<p>sample_methodを読み込んでテストする</p>
+
+<p>意味がないテストになっていますが、 <code>@patch('sample_method.SampleMethod.method_1')</code> と書いて、引数の最後に <code>mock_method_1</code> を追加すると、　<code>mock_method_1.return_value = 'AAA'</code> と書くことで、　<code>SampleMethod.method_1</code></p></div>
+    
+      <div class="article-metadata">
+    <span class="article-date"> 2017-12-16 </span>
+    <span> Python </span>
+    <span> Python </span>
+  </div>
+      <h2 class="article-title"><a href="2017/2017-12-16-article.html">unittest.mock.MagicMockを使ってみる</a></h2>
+      <div class="article-body"><p>今日の内容は、<a href="http://kamekokamekame.net/advent_calendar/2017/12/18/article.html">Pythonでテストしたい</a>にまとめている内容の詳細部分です。</p>
+<p>unittest.mock.MagicMockを使ってみます。</p>
+
+<p>20行目の <code>self.sample.method_1 = MagicMock(return_value='AAA')</code> この部分で、 <code>method_1</code> の戻り値を　'method_1'　から 'AAA' に変更しています。</p>
+<p>本来は通信結果返す、データベースの結果を返すメソッドに実際は通信しなくても結果を返してテストできるように使うようです。</p>
+<p><a href="https://docs.python.org/ja/3/library/unittest.mock.html#unittest.mock.MagicMock">公式ドキュメント</a>もどうぞ。</p></div>
+    
+  </div>
+
+  <div class="index-pagination">
+    
+      <span class="index-navi disabled-link">&larr;</span>
+    
+    
+    
+      <a class="index-navi"
+         href="index_tag_tags_Python_2.html">&rarr;</a>
+    
+  </div>
+
+
+    </div>
+    <aside class="container-right">
+
+      カテゴリ:
+        
+      <ul>
+        
+          <li>
+            <a href="index_category_category_Advent@20Calendar.html">
+              Advent Calendar
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Book.html">
+              Book
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Event.html">
+              Event
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Git.html">
+              Git
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_OS.html">
+              OS
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Other.html">
+              Other
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_PyCon@20JP.html">
+              PyCon JP
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_PyLadies.html">
+              PyLadies
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Python.html">
+              Python
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Sphinx.html">
+              Sphinx
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Web.html">
+              Web
+            </a>
+          </li>
+        
+      </ul>
+      <div>
+        <br><br>
+        <a href="//af.moshimo.com/af/c/click?a_id=767877&p_id=1166&pc_id=1793&pl_id=20229&guid=ON" target="_blank" rel="nofollow"><img src="//image.moshimo.com/af-img/0408/000000020229.png" width="250" height="250" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=767877&p_id=1166&pc_id=1793&pl_id=20229" width="1" height="1" style="border:none;">
+        <br>
+        <a href="//af.moshimo.com/af/c/click?a_id=767877&p_id=1166&pc_id=1793&pl_id=17971&guid=ON" target="_blank" rel="nofollow"><img src="//image.moshimo.com/af-img/0408/000000017971.png" width="250" height="250" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=767877&p_id=1166&pc_id=1793&pl_id=17971" width="1" height="1" style="border:none;">
+      </div>
+    </aside>
+  </div>
+
+</div>
+
+</body>
+</html>

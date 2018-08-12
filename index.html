@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="ja-JP">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>index - 鉄は熱いうちに打て</title>
+  
+  <link rel="stylesheet" href="static/css/sample_article.css">
+
+</head>
+
+<body>
+  
+<div class="container">
+  <h1 class="index-title">
+    <a href="index.html">鉄は熱いうちに打て</a>
+  </h1>
+
+  <div class="container-inner">
+    <div class="container-body">
+      
+
+  <div class="articles">
+    
+      <div class="article-metadata">
+    <span class="article-date"> 2018-08-05 </span>
+    <span> Web </span>
+    <span> Web </span>
+  </div>
+      <h2 class="article-title"><a href="2018/2018-08-05-article.html">ブログをGCEに乗っけて、Miyadaikuに変更</a></h2>
+      <div class="article-body"><p>しばらく、GitHub Pagesだったこのブログですが、自由度があまりに低いのでGCEに載せ替えました。</p>
+<p>ついでに <a class="reference external" href="https://miyadaiku.github.io/ja/index.html">Miyadaiku</a> に変更しました。</p>
+<p>久しぶりにNginxの設定して、いろいろ忘れてました。</p>
+<p>HTTPSもアクセスできるように Let’s Encrypt で証明書も取ったりして楽しかったです。</p>
+<p>せっかくのGCEなので、Webアプリケーションも作っていこうと思っています。</p></div>
+    
+      <div class="article-metadata">
+    <span class="article-date"> 2018-05-16 </span>
+    <span> PyLadies </span>
+    <span> PyLadies </span>
+  </div>
+      <h2 class="article-title"><a href="2018/2018-05-16-article.html">Java女子部に行って、Pythonのことを話してきました</a></h2>
+      <div class="article-body"><p><a href="https://javajo.doorkeeper.jp/events/73293">【東京】【女性/女性同伴男性限定】言語不問! 各言語の思想や成り立ちを知ろう&amp;女性エンジニアについて考えようの会 #javajo</a> に行ってきました。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p dir="ltr" lang="ja">【東京】【女性/女性同伴男性限定】言語不問! 各言語の思想や成り立ちを知ろう&amp;女性エンジニアについて考えようの会 <a href="https://twitter.com/hashtag/javajo?src=hash&amp;ref_src=twsrc%5Etfw">#javajo</a> - Togetter <a href="https://t.co/gqVuDXfsb7">https://t.co/gqVuDXfsb7</a> <a href="https://twitter.com/hashtag/javajo?src=hash&amp;ref_src=twsrc%5Etfw">#javajo</a></p>— まーや(Maaya) (@maaya8585) <a href="https://twitter.com/maaya8585/status/996771041107099649?ref_src=twsrc%5Etfw">2018年5月16日</a></blockquote>
+
+<p>笑っていただけたので、嬉しいです。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p dir="ltr" lang="ja">Heather 「Java is No.1」<br/>kame-chan 「ワード検索でPythonがJavaを抜きました」</p></blockquote></div>
+    
+      <div class="article-metadata">
+    <span class="article-date"> 2018-04-22 </span>
+    <span> PyLadies </span>
+    <span> PyLadies </span>
+  </div>
+      <h2 class="article-title"><a href="2018/2018-04-22-article.html">PyLadies Tokyo Meetup #31 Python入学式に参加しました</a></h2>
+      <div class="article-body"><p>『PyLadies Tokyo Meetup #31 Python入学式』に参加しました。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p dir="ltr" lang="ja">あす4/22(日) は、31回Meetup Python入学式 が開催されます😊<a href="https://t.co/ZND34vYjpG">https://t.co/ZND34vYjpG</a><br/>参加されるみなさまよろしくお願いいたします。<br/>参加できなそう。という場合は、connpassの方からキャンセル登録をお願いいたします🙇‍♀️ <a href="https://twitter.com/hashtag/PyLadiesTokyo?src=hash&amp;ref_src=twsrc%5Etfw">#PyLadiesTokyo</a></p>— PyLadiesTokyo (@PyLadiesTokyo) <a href="https://twitter.com/PyLadiesTokyo/status/987581838808903680?ref_src=twsrc%5Etfw">2018年4月21日</a></blockquote>
+
+<p>最初のPyLadies Tokyoの紹介と司会を担当しました。
+ハンズオンも好評で、LTの内容も濃かったです。</p></div>
+    
+      <div class="article-metadata">
+    <span class="article-date"> 2018-03-03 </span>
+    <span> Sphinx </span>
+    <span> Sphinx </span>
+  </div>
+      <h2 class="article-title"><a href="2018/2018-03-03-article.html">Markdownにmetaタグを入れる</a></h2>
+      <div class="article-body"><p>Sphinx使ってますか？私は結構使っています。</p>
+<p>今日はHTMLの全ページにmetaタグを入れた話です。</p>
+<p>HTMLには目に見えている以外にその文書の情報を持たせられます。それがmetaタグです。
+前ページに <code>その文書の説明（description）</code> をもたせようと思いました。</p>
+<p>同僚に聞いたら、 <a href="http://www.sphinx-doc.org/ja/stable/config.html">rst_prolog</a> というのがあるみたいです。ファイルの先頭に指定した文字列を追加してくれます。
+しかし、実行しても <code>reSturucturedText</code> ファイルにしか追加されません。</p>
+<p>調べると、 <a href="https://github.com/sphinx-doc/sphinx/issues/2445">Use rst_prolog and rst_epilog only for rst files? #2445</a></p></div>
+    
+      <div class="article-metadata">
+    <span class="article-date"> 2018-02-22 </span>
+    <span> PyLadies </span>
+    <span> PyLadies </span>
+  </div>
+      <h2 class="article-title"><a href="2018/2018-02-22-article.html">PyLadies「テストをまなぼう」に登壇しました</a></h2>
+      <div class="article-body"><p>今日は、<a href="https://pyladies-tokyo.connpass.com/event/76967/">PyLadies Tokyo Meetup #29 テストをまなぼう</a> で、登壇しました。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p dir="ltr" lang="ja">PyLadies Tokyo Meetup #29 テストをまなぼう を公開しました！ <a href="https://t.co/szes8XI1Nc">https://t.co/szes8XI1Nc</a> <a href="https://twitter.com/hashtag/PyLadiesTokyo?src=hash&amp;ref_src=twsrc%5Etfw">#PyLadiesTokyo</a></p>— せりーな(se-lina) (@se_lina08) <a href="https://twitter.com/se_lina08/status/956457045237972992?ref_src=twsrc%5Etfw">2018年1月25日</a></blockquote>
+
+<div class="header_target" id="h_2018_2018_2d02_2d22_2darticle_2emd_1"></div><h2>オファー</h2>
+<p>ことの発端は、<a href="http://kamekokamekame.net/pyladies/2017/11/04/article.html">PyLadies Tokyo 秋合宿 2017</a> でした。</p>
+<p><strong>亀「最近、仕事で結構テストばっかり書いてますよ〜」</strong></p>
+<p><strong>Ma「ほー。PyLadiesでテストテーマに登壇しない？」</strong></p></div>
+    
+  </div>
+
+  <div class="index-pagination">
+    
+      <span class="index-navi disabled-link">&larr;</span>
+    
+    
+    
+      <a class="index-navi"
+         href="index_2.html">&rarr;</a>
+    
+  </div>
+
+
+    </div>
+    <aside class="container-right">
+
+      カテゴリ:
+        
+      <ul>
+        
+          <li>
+            <a href="index_category_category_Advent@20Calendar.html">
+              Advent Calendar
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Book.html">
+              Book
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Event.html">
+              Event
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Git.html">
+              Git
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_OS.html">
+              OS
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Other.html">
+              Other
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_PyCon@20JP.html">
+              PyCon JP
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_PyLadies.html">
+              PyLadies
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Python.html">
+              Python
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Sphinx.html">
+              Sphinx
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Web.html">
+              Web
+            </a>
+          </li>
+        
+      </ul>
+      <div>
+        <br><br>
+        <a href="//af.moshimo.com/af/c/click?a_id=767877&p_id=1166&pc_id=1793&pl_id=20229&guid=ON" target="_blank" rel="nofollow"><img src="//image.moshimo.com/af-img/0408/000000020229.png" width="250" height="250" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=767877&p_id=1166&pc_id=1793&pl_id=20229" width="1" height="1" style="border:none;">
+        <br>
+        <a href="//af.moshimo.com/af/c/click?a_id=767877&p_id=1166&pc_id=1793&pl_id=17971&guid=ON" target="_blank" rel="nofollow"><img src="//image.moshimo.com/af-img/0408/000000017971.png" width="250" height="250" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=767877&p_id=1166&pc_id=1793&pl_id=17971" width="1" height="1" style="border:none;">
+      </div>
+    </aside>
+  </div>
+
+</div>
+
+</body>
+</html>

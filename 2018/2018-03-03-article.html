@@ -1,0 +1,163 @@
+
+
+<!DOCTYPE html>
+<html lang="ja-JP">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Markdownにmetaタグを入れる - 鉄は熱いうちに打て</title>
+  
+  <link rel="stylesheet" href="../static/css/sample_article.css">
+
+</head>
+
+<body>
+  
+<div class="container">
+  <h1 class="index-title">
+    <a href="../index.html">鉄は熱いうちに打て</a>
+  </h1>
+
+  <div class="container-inner">
+    <div class="container-body">
+      
+  <div class="article-metadata">
+    <span class="article-date"> 2018-03-03 </span>
+    <span> Sphinx </span>
+    <span> Sphinx </span>
+  </div>
+  <h1 class="article-title">
+    Markdownにmetaタグを入れる
+  </h1>
+
+  <div class="article-body">
+    <p>Sphinx使ってますか？私は結構使っています。</p>
+<p>今日はHTMLの全ページにmetaタグを入れた話です。</p>
+<p>HTMLには目に見えている以外にその文書の情報を持たせられます。それがmetaタグです。
+前ページに <code>その文書の説明（description）</code> をもたせようと思いました。</p>
+<p>同僚に聞いたら、 <a href="http://www.sphinx-doc.org/ja/stable/config.html">rst_prolog</a> というのがあるみたいです。ファイルの先頭に指定した文字列を追加してくれます。
+しかし、実行しても <code>reSturucturedText</code> ファイルにしか追加されません。</p>
+<p>調べると、 <a href="https://github.com/sphinx-doc/sphinx/issues/2445">Use rst_prolog and rst_epilog only for rst files? #2445</a> で、<code>reSturucturedText</code> にしか追加されないように修正されている。</p>
+<p>終わった。</p>
+<p>そんなわけで、テンプレートでhead部分を修正する方法もわからなかったので、Sphinxユーザー会のSlackに聞きに行きました。</p>
+<p><a href="http://sphinx-users.jp/">Sphinx-Users.jp</a> から、誰でも参加できます。
+みなさんとてもいい人です。なに言っているかわからないこともたくさんありますが、オープンソースってこーやって話し合われているのねーと参考にもなります。</p>
+<p>相談したら、そもそも私は、MarkDownを利用するために <code>recommonmark.parser.CommonMarkParser</code> というSphinxの標準じゃないライブラリを使っていたのです！！</p>
+<p>ガッテム！</p>
+<p>そんなの相談されても困りますね。とほほ。と思っていたら、<a href="https://twitter.com/tk0miya">@tk0miya</a>さんがスクリプトを書いてくださいました。</p>
+<p>これを <code>conf.py</code> に追加しました。</p>
+<div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">on_source_read</span><span class="p">(</span><span class="n">app</span><span class="p">,</span> <span class="n">docname</span><span class="p">,</span> <span class="n">source</span><span class="p">):</span>
+    <span class="n">filename</span> <span class="o">=</span> <span class="n">app</span><span class="o">.</span><span class="n">env</span><span class="o">.</span><span class="n">doc2path</span><span class="p">(</span><span class="n">docname</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">filename</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">'.md'</span><span class="p">):</span>
+        <span class="n">source</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">app</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">md_prolog</span> <span class="o">+</span> <span class="s2">"</span><span class="se">\n\n</span><span class="s2">"</span> <span class="o">+</span> <span class="n">source</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+
+<span class="k">def</span> <span class="nf">setup</span><span class="p">(</span><span class="n">app</span><span class="p">):</span>
+    <span class="n">app</span><span class="o">.</span><span class="n">add_config_value</span><span class="p">(</span><span class="s1">'md_prolog'</span><span class="p">,</span> <span class="s1">''</span><span class="p">,</span> <span class="s1">'env'</span><span class="p">)</span>
+    <span class="n">app</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">'source-read'</span><span class="p">,</span> <span class="n">on_source_read</span><span class="p">)</span>
+</pre></div>
+<p>ありがたや〜。</p>
+<p>これで、さらに <code>conf.py</code> にこんな感じで追加しました。</p>
+<div class="codehilite"><pre><span></span><span class="n">md_prolog</span><span class="o">=</span><span class="s2">"""</span>
+<span class="s2">｀｀｀eval_rst</span>
+<span class="s2">.. meta::</span>
+<span class="s2">   :description: 説明</span>
+<span class="s2">｀｀｀</span>
+<span class="s2">"""</span>
+</pre></div>
+<p>(内部のバッククォートは全角になっています＞＜)</p>
+<p>親切なSphinxコミュニティーの皆様ありがとうございました！！</p>
+<p>ブログ書いていいよ！と言っていただいたので、書きました。これからも使っていきます。</p>
+  </div>
+
+
+
+    </div>
+    <aside class="container-right">
+
+      カテゴリ:
+        
+      <ul>
+        
+          <li>
+            <a href="../index_category_category_Advent@20Calendar.html">
+              Advent Calendar
+            </a>
+          </li>
+        
+          <li>
+            <a href="../index_category_category_Book.html">
+              Book
+            </a>
+          </li>
+        
+          <li>
+            <a href="../index_category_category_Event.html">
+              Event
+            </a>
+          </li>
+        
+          <li>
+            <a href="../index_category_category_Git.html">
+              Git
+            </a>
+          </li>
+        
+          <li>
+            <a href="../index_category_category_OS.html">
+              OS
+            </a>
+          </li>
+        
+          <li>
+            <a href="../index_category_category_Other.html">
+              Other
+            </a>
+          </li>
+        
+          <li>
+            <a href="../index_category_category_PyCon@20JP.html">
+              PyCon JP
+            </a>
+          </li>
+        
+          <li>
+            <a href="../index_category_category_PyLadies.html">
+              PyLadies
+            </a>
+          </li>
+        
+          <li>
+            <a href="../index_category_category_Python.html">
+              Python
+            </a>
+          </li>
+        
+          <li>
+            <a href="../index_category_category_Sphinx.html">
+              Sphinx
+            </a>
+          </li>
+        
+          <li>
+            <a href="../index_category_category_Web.html">
+              Web
+            </a>
+          </li>
+        
+      </ul>
+      <div>
+        <br><br>
+        <a href="//af.moshimo.com/af/c/click?a_id=767877&p_id=1166&pc_id=1793&pl_id=20229&guid=ON" target="_blank" rel="nofollow"><img src="//image.moshimo.com/af-img/0408/000000020229.png" width="250" height="250" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=767877&p_id=1166&pc_id=1793&pl_id=20229" width="1" height="1" style="border:none;">
+        <br>
+        <a href="//af.moshimo.com/af/c/click?a_id=767877&p_id=1166&pc_id=1793&pl_id=17971&guid=ON" target="_blank" rel="nofollow"><img src="//image.moshimo.com/af-img/0408/000000017971.png" width="250" height="250" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=767877&p_id=1166&pc_id=1793&pl_id=17971" width="1" height="1" style="border:none;">
+      </div>
+    </aside>
+  </div>
+
+</div>
+
+</body>
+</html>

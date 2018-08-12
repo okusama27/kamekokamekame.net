@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html lang="ja-JP">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>index_tag - 鉄は熱いうちに打て</title>
+  
+  <link rel="stylesheet" href="static/css/sample_article.css">
+
+</head>
+
+<body>
+  
+<div class="container">
+  <h1 class="index-title">
+    <a href="index.html">鉄は熱いうちに打て</a>
+  </h1>
+
+  <div class="container-inner">
+    <div class="container-body">
+      
+
+  <div class="articles">
+    
+      <div class="article-metadata">
+    <span class="article-date"> 2017-12-01 </span>
+    <span> Python </span>
+    <span> Python </span>
+  </div>
+      <h2 class="article-title"><a href="2017/2017-12-01-article.html">The Zen of Python</a></h2>
+      <div class="article-body"><p>12月ですね。</p>
+<div class="header_target" id="h_2017_2017_2d12_2d01_2darticle_2emd_1"></div><h2>はじめに</h2>
+<p>今年も今月で終わりですが、最後になにか学習をしたいと考えていました。
+知らない言語を学んでみようかなと <code>Land of Lisp</code> という本を読んでみました。しかし、作者の他言語への並々ならぬ気持ちがすごかったので、受け止めきれなかったです。<code>Lisp</code> に関してはわかりやすかったです。読むまでは <code>Lisp</code> はカッコばっかりでとっつきにくいと思ったけどいい本でした。</p>
+<p>そんな時、<a href="https://cronote.connpass.com/">くろのて勉強会</a>に参加しました。</p>
+<ul>
+<li>他言語学ぶほどPython知っているの？</li>
+<li>おまえのPythonの知識は充分なの？</li>
+</ul>
+<p>と私の中のリトル亀子が問いかけてきます。</p></div>
+    
+      <div class="article-metadata">
+    <span class="article-date"> 2015-04-15 </span>
+    <span> Python </span>
+    <span> Python </span>
+  </div>
+      <h2 class="article-title"><a href="2015/2015-04-15-article.html">もう一回virtualenvの使い方</a></h2>
+      <div class="article-body"><p>virtualenvの使い方を習得できていないというか、適当に検索して使ってみたけど、皆自分に都合がいいことしか書いてないのでわかりづらい。初心者に優しくない！</p>
+<p>あと、余計なツールは逆にめんどくさい！！と思う。
+ということで、普通に<a href="https://virtualenv.pypa.io/en/latest/index.html" target="_blank">virtualenvのドキュメント</a>を読みました。そうだ！私って英語読めるんだった！！</p>
+<p>インストール</p>
+<div class="codehilite"><pre><span></span>$ <span class="o">[</span>sudo<span class="o">]</span> pip install virtualenv
+</pre></div>
+<p>作成</p>
+<div class="codehilite"><pre><span></span>$ virtualenv ENV
+</pre></div>
+<p>アクティブ化</p>
+<div class="codehilite"><pre><span></span>$ <span class="nb">source</span> ENV/bin/activate
+</pre></div>
+<p>アクティブ解除</p>
+<div class="codehilite"><pre><span></span>$ deactivate
+</pre></div></div>
+    
+      <div class="article-metadata">
+    <span class="article-date"> 2015-04-14 </span>
+    <span> Python </span>
+    <span> Python </span>
+  </div>
+      <h2 class="article-title"><a href="2015/2015-04-14-article.html">eggを作ってみる</a></h2>
+      <div class="article-body"><p>Pythonのモジュールの配布方法としてeggというzipファイルを作成して配るらしい。</p>
+<p>完全にこちらのサイトを参考にしました。ありがとうございます。mm</p>
+<p><a href="http://www.exsoft.net/blog/entry/ab4v5g" target="_blank">python開発環境の構築から作成したeggを別環境へインストールするまで</a>
+pasterのインストール</p>
+<div class="codehilite"><pre><span></span>$ easy_install PasteScript
+</pre></div>
+<p>雛形の作成</p>
+<div class="codehilite"><pre><span></span>$ paster create -t basic_package MyPkg
+</pre></div>
+<p>これやると色々聞かれる。バージョンとか作者の名前とか。聞かれたことはsetup.py中に記録されています。</p>
+<p>egg作成</p></div>
+    
+      <div class="article-metadata">
+    <span class="article-date"> 2015-04-13 </span>
+    <span> Python </span>
+    <span> Python </span>
+  </div>
+      <h2 class="article-title"><a href="2015/2015-04-13-article.html">pydoc</a></h2>
+      <div class="article-body"><p><code>pydoc</code> という機能を使うと、 <code>Javadoc</code> のようなものが作れるらしい。</p>
+<p>先日の <code>twc.py</code> に書き足してみる</p>
+<div class="codehilite"><pre><span></span><span class="s2">"""</span>
+<span class="s2">This is a command line tool of watching twitter timelines</span>
+<span class="s2">"""</span>
+<span class="nv">__author__</span>  <span class="o">=</span> <span class="s1">'作者&lt;kame＠kamekokamekame.net&gt;'</span>
+<span class="nv">__status__</span>  <span class="o">=</span> <span class="s2">"production"</span>
+<span class="nv">__version__</span> <span class="o">=</span> <span class="s2">"0.1.0"</span>
+<span class="nv">__date__</span>    <span class="o">=</span> <span class="s2">"11 Apr 2015"</span>
+</pre></div>
+<p>Pythonのインタプリタで実行</p>
+<div class="codehilite"><pre><span></span>$ python
+&gt;&gt;&gt; help</pre></div></div>
+    
+      <div class="article-metadata">
+    <span class="article-date"> 2015-04-12 </span>
+    <span> Python </span>
+    <span> Python </span>
+  </div>
+      <h2 class="article-title"><a href="2015/2015-04-12-article.html">virtualenv使ってみる</a></h2>
+      <div class="article-body"><p>独立した環境を利用するためのツールがある。virtualenvってやつで、Python3からはpyvenv(venv?)ってのを利用するらしい。</p>
+<p>で、virtualenvを利用しやすくするものにpyenvとか、なんちゃらenvとかいろいろあるみたい。Goで書かれた<a href="https://github.com/zimbatm/direnv" target="_blank">direnv</a>ってのもぐいぐい来ているらしいが、また今度。
+とりあえずインストール</p>
+<div class="codehilite"><pre><span></span>$ sudo pip install virtualenv
+</pre></div>
+<p>virtualenvwrapperってのを入れると環境の切り替えが楽らしい</p>
+<div class="codehilite"><pre><span></span>sudo pip install virtualenvwrapper
+</pre></div></div>
+    
+  </div>
+
+  <div class="index-pagination">
+    
+      <a class="index-navi"
+         href="index_tag_tags_Python_2.html">&larr;</a>
+    
+    
+    
+      <a class="index-navi"
+         href="index_tag_tags_Python_4.html">&rarr;</a>
+    
+  </div>
+
+
+    </div>
+    <aside class="container-right">
+
+      カテゴリ:
+        
+      <ul>
+        
+          <li>
+            <a href="index_category_category_Advent@20Calendar.html">
+              Advent Calendar
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Book.html">
+              Book
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Event.html">
+              Event
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Git.html">
+              Git
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_OS.html">
+              OS
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Other.html">
+              Other
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_PyCon@20JP.html">
+              PyCon JP
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_PyLadies.html">
+              PyLadies
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Python.html">
+              Python
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Sphinx.html">
+              Sphinx
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Web.html">
+              Web
+            </a>
+          </li>
+        
+      </ul>
+      <div>
+        <br><br>
+        <a href="//af.moshimo.com/af/c/click?a_id=767877&p_id=1166&pc_id=1793&pl_id=20229&guid=ON" target="_blank" rel="nofollow"><img src="//image.moshimo.com/af-img/0408/000000020229.png" width="250" height="250" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=767877&p_id=1166&pc_id=1793&pl_id=20229" width="1" height="1" style="border:none;">
+        <br>
+        <a href="//af.moshimo.com/af/c/click?a_id=767877&p_id=1166&pc_id=1793&pl_id=17971&guid=ON" target="_blank" rel="nofollow"><img src="//image.moshimo.com/af-img/0408/000000017971.png" width="250" height="250" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=767877&p_id=1166&pc_id=1793&pl_id=17971" width="1" height="1" style="border:none;">
+      </div>
+    </aside>
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,214 @@
+
+
+<!DOCTYPE html>
+<html lang="ja-JP">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>unittestの公式ドキュメントを読んでみた - 鉄は熱いうちに打て</title>
+  
+  <link rel="stylesheet" href="../static/css/sample_article.css">
+
+</head>
+
+<body>
+  
+<div class="container">
+  <h1 class="index-title">
+    <a href="../index.html">鉄は熱いうちに打て</a>
+  </h1>
+
+  <div class="container-inner">
+    <div class="container-body">
+      
+  <div class="article-metadata">
+    <span class="article-date"> 2017-12-11 </span>
+    <span> Python </span>
+    <span> Python </span>
+  </div>
+  <h1 class="article-title">
+    unittestの公式ドキュメントを読んでみた
+  </h1>
+
+  <div class="article-body">
+    <p>今日の内容は、<a href="http://kamekokamekame.net/advent_calendar/2017/12/18/article.html">Pythonでテストしたい</a>にまとめている内容の詳細部分です。</p>
+<p>unittestの公式ドキュメントを読みます。</p>
+<p><a href="https://docs.python.org/ja/3/library/unittest.html">unittest — ユニットテストフレームワーク</a></p>
+<div class="header_target" id="h_2017_2017_2d12_2d11_2darticle_2emd_1"></div><h2>基本的な例</h2>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">unittest</span>
+
+<span class="c1"># unittest.TestCase)を継承するTestStringMethodsクラスを定義していますね。</span>
+<span class="k">class</span> <span class="nc">TestStringMethods</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
+
+    <span class="c1"># 1つ目のテスト</span>
+    <span class="c1"># 「'foo'.upper()」と「'FOO'」が等しいか比較していますね</span>
+    <span class="k">def</span> <span class="nf">test_upper</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="s1">'foo'</span><span class="o">.</span><span class="n">upper</span><span class="p">(),</span> <span class="s1">'FOO'</span><span class="p">)</span>
+
+    <span class="c1"># 2つ目のテスト</span>
+    <span class="c1"># 全部大文字かどうかを確認するstr.isupper()を利用しています</span>
+    <span class="k">def</span> <span class="nf">test_isupper</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># 「'FOO'.isupper())」の結果がTrueか</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="s1">'FOO'</span><span class="o">.</span><span class="n">isupper</span><span class="p">())</span>
+        <span class="c1"># 「'Foo'.isupper()」の結果がFalseか</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertFalse</span><span class="p">(</span><span class="s1">'Foo'</span><span class="o">.</span><span class="n">isupper</span><span class="p">())</span>
+
+    <span class="c1"># 3つ目のテスト</span>
+    <span class="c1"># 文字を配列に分割して、比較</span>
+    <span class="k">def</span> <span class="nf">test_split</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">s</span> <span class="o">=</span> <span class="s1">'hello world'</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">split</span><span class="p">(),</span> <span class="p">[</span><span class="s1">'hello'</span><span class="p">,</span> <span class="s1">'world'</span><span class="p">])</span>
+        <span class="c1"># わざとstr.split()の引数に文字以外のものを指定して、TypeErrorが起こるか検証</span>
+        <span class="c1"># check that s.split fails when the separator is not a string</span>
+        <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">assertRaises</span><span class="p">(</span><span class="ne">TypeError</span><span class="p">):</span>
+            <span class="n">s</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
+    <span class="n">unittest</span><span class="o">.</span><span class="n">main</span><span class="p">()</span>
+</pre></div>
+<p>実行</p>
+<div class="codehilite"><pre><span></span>$ python unittest_sample1.py 
+...
+----------------------------------------------------------------------
+Ran <span class="m">3</span> tests in <span class="m">0</span>.000s
+
+OK
+</pre></div>
+<p><code>-v</code> オプションを付けて詳細を表示</p>
+<div class="codehilite"><pre><span></span>$ python unittest_sample1.py 
+...
+----------------------------------------------------------------------
+Ran <span class="m">3</span> tests in <span class="m">0</span>.000s
+
+OK
+<span class="o">(</span>env<span class="o">)</span> Arsenal:tests kaz$ python unittest_sample1.py -v
+test_isupper <span class="o">(</span>__main__.TestStringMethods<span class="o">)</span> ... ok
+test_split <span class="o">(</span>__main__.TestStringMethods<span class="o">)</span> ... ok
+test_upper <span class="o">(</span>__main__.TestStringMethods<span class="o">)</span> ... ok
+
+----------------------------------------------------------------------
+Ran <span class="m">3</span> tests in <span class="m">0</span>.001s
+
+OK
+</pre></div>
+<p>コマンドラインからも実行できる</p>
+<div class="codehilite"><pre><span></span>$ python -m unittest unittest_sample1.TestStringMethods
+...
+----------------------------------------------------------------------
+Ran <span class="m">3</span> tests in <span class="m">0</span>.000s
+
+OK
+</pre></div>
+<p>ファイルパスでもできる</p>
+<div class="codehilite"><pre><span></span>$ python -m unittest unittest_sample1.py 
+...
+----------------------------------------------------------------------
+Ran <span class="m">3</span> tests in <span class="m">0</span>.001s
+
+OK
+</pre></div>
+<p><code>-v</code> オプションも付けられる</p>
+<div class="codehilite"><pre><span></span>$ python -m unittest -v unittest_sample1.TestStringMethods
+test_isupper <span class="o">(</span>unittest_sample1.TestStringMethods<span class="o">)</span> ... ok
+test_split <span class="o">(</span>unittest_sample1.TestStringMethods<span class="o">)</span> ... ok
+test_upper <span class="o">(</span>unittest_sample1.TestStringMethods<span class="o">)</span> ... ok
+
+----------------------------------------------------------------------
+Ran <span class="m">3</span> tests in <span class="m">0</span>.001s
+
+OK
+</pre></div>
+<p>今日はここまで、公式ドキュメントを読むのも楽しいですね。</p>
+  </div>
+
+
+
+    </div>
+    <aside class="container-right">
+
+      カテゴリ:
+        
+      <ul>
+        
+          <li>
+            <a href="../index_category_category_Advent@20Calendar.html">
+              Advent Calendar
+            </a>
+          </li>
+        
+          <li>
+            <a href="../index_category_category_Book.html">
+              Book
+            </a>
+          </li>
+        
+          <li>
+            <a href="../index_category_category_Event.html">
+              Event
+            </a>
+          </li>
+        
+          <li>
+            <a href="../index_category_category_Git.html">
+              Git
+            </a>
+          </li>
+        
+          <li>
+            <a href="../index_category_category_OS.html">
+              OS
+            </a>
+          </li>
+        
+          <li>
+            <a href="../index_category_category_Other.html">
+              Other
+            </a>
+          </li>
+        
+          <li>
+            <a href="../index_category_category_PyCon@20JP.html">
+              PyCon JP
+            </a>
+          </li>
+        
+          <li>
+            <a href="../index_category_category_PyLadies.html">
+              PyLadies
+            </a>
+          </li>
+        
+          <li>
+            <a href="../index_category_category_Python.html">
+              Python
+            </a>
+          </li>
+        
+          <li>
+            <a href="../index_category_category_Sphinx.html">
+              Sphinx
+            </a>
+          </li>
+        
+          <li>
+            <a href="../index_category_category_Web.html">
+              Web
+            </a>
+          </li>
+        
+      </ul>
+      <div>
+        <br><br>
+        <a href="//af.moshimo.com/af/c/click?a_id=767877&p_id=1166&pc_id=1793&pl_id=20229&guid=ON" target="_blank" rel="nofollow"><img src="//image.moshimo.com/af-img/0408/000000020229.png" width="250" height="250" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=767877&p_id=1166&pc_id=1793&pl_id=20229" width="1" height="1" style="border:none;">
+        <br>
+        <a href="//af.moshimo.com/af/c/click?a_id=767877&p_id=1166&pc_id=1793&pl_id=17971&guid=ON" target="_blank" rel="nofollow"><img src="//image.moshimo.com/af-img/0408/000000017971.png" width="250" height="250" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=767877&p_id=1166&pc_id=1793&pl_id=17971" width="1" height="1" style="border:none;">
+      </div>
+    </aside>
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="ja-JP">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>index_tag - 鉄は熱いうちに打て</title>
+  
+  <link rel="stylesheet" href="static/css/sample_article.css">
+
+</head>
+
+<body>
+  
+<div class="container">
+  <h1 class="index-title">
+    <a href="index.html">鉄は熱いうちに打て</a>
+  </h1>
+
+  <div class="container-inner">
+    <div class="container-body">
+      
+
+  <div class="articles">
+    
+      <div class="article-metadata">
+    <span class="article-date"> 2018-03-03 </span>
+    <span> Sphinx </span>
+    <span> Sphinx </span>
+  </div>
+      <h2 class="article-title"><a href="2018/2018-03-03-article.html">Markdownにmetaタグを入れる</a></h2>
+      <div class="article-body"><p>Sphinx使ってますか？私は結構使っています。</p>
+<p>今日はHTMLの全ページにmetaタグを入れた話です。</p>
+<p>HTMLには目に見えている以外にその文書の情報を持たせられます。それがmetaタグです。
+前ページに <code>その文書の説明（description）</code> をもたせようと思いました。</p>
+<p>同僚に聞いたら、 <a href="http://www.sphinx-doc.org/ja/stable/config.html">rst_prolog</a> というのがあるみたいです。ファイルの先頭に指定した文字列を追加してくれます。
+しかし、実行しても <code>reSturucturedText</code> ファイルにしか追加されません。</p>
+<p>調べると、 <a href="https://github.com/sphinx-doc/sphinx/issues/2445">Use rst_prolog and rst_epilog only for rst files? #2445</a></p></div>
+    
+      <div class="article-metadata">
+    <span class="article-date"> 2017-09-16 </span>
+    <span> Sphinx </span>
+    <span> Sphinx </span>
+  </div>
+      <h2 class="article-title"><a href="2017/2017-09-16-article.html">Sphinxでスライドを作りたい</a></h2>
+      <div class="article-body"><p>入社してから会社でSphinxを使って文書を書くことが増えたので、reStructuredTextもついでに覚えようと思いました。
+でも仕事中にいろいろ試している時間はないので、勉強会とかでLTするスライドとかブログに使えばいいじゃない。と考えて、使い始めました。</p>
+<p>ここ3,4年ほどはMarkdown一筋だったんですが、reStructuredTextも慣れるといろいろ微調整できて便利です。</p>
+<p>なんとなく2年間使ってきたんですが、せっかくPython製なのでもうちょっと勉強しようかなと思って、Sphinx ユーザーコミュニティのSlackに入りました。</p></div>
+    
+      <div class="article-metadata">
+    <span class="article-date"> 2017-09-02 </span>
+    <span> Sphinx </span>
+    <span> Sphinx </span>
+  </div>
+      <h2 class="article-title"><a href="2017/2017-09-02-article.html">久しぶりにSphinxでスライドを作ろうとしたら完全に迷子</a></h2>
+      <div class="article-body"><p>Sphinxでスライドが作れたよねーと思って作ったら、困ったのでメモ</p>
+<div class="header_target" id="h_2017_2017_2d09_2d02_2darticle_2emd_1"></div><h2>結論</h2>
+<p><a href="https://pypi.python.org/pypi/sphinxjp.themes.s6">sphinxjp.themes.s6 0.3.0</a>を見よう！</p>
+<p>このリンク先の通りにやれば間違いないです。</p>
+<div class="header_target" id="h_2017_2017_2d09_2d02_2darticle_2emd_2"></div><h2>困ったこと</h2>
+<p>適当に検索してたら、conf.pyを下のように書くのだというサイトがいくつか出てきて、コンパイルしたら、「'sphinxjp.themecore'」はもう書かなくていいよぉぉぉ。とか出てくるし。</p>
+<div class="codehilite"><pre><span></span>extensions = ['sphinxjp.themecore']
+html_theme = 's6'
+</pre></div>
+<p>正解はこっちでした。</p></div>
+    
+      <div class="article-metadata">
+    <span class="article-date"> 2016-10-22 </span>
+    <span> Sphinx </span>
+    <span> Sphinx </span>
+  </div>
+      <h2 class="article-title"><a href="2016/2016-10-22-article.html">ブログをWordpressからSphinxに乗り換えた話</a></h2>
+      <div class="article-body"><div class="header_target" id="h_2016_2016_2d10_2d22_2darticle_2emd_1"></div><h2>私とブログ</h2>
+<ul>
+<li>1995年にパソコン購入。同時にパソコン通信（niftyサーブ）開始。</li>
+<li>1999年当時のプロバイダだったInfoWeb（現@nifty）からホームページスペースを与えられたので、htmlを自分で書いてブログスタート。</li>
+<li>2004年html書くのめんどくさくなって、どっかのブログサービスでブログ開始。</li>
+<li>2006年フリーランスになったので、勉強のために自分でCMSを運営しようとhetemlと契約。Nucleus CMSにブログを乗り換え。</li>
+<li>2010年Wordpressの仕事が増えて、プラグインを作ったりしていた。Nucleus CMSの更新がほぼなくなり、hetemlがサポートするPHPのバージョンと合わなくなってくる。hetemlにWordpress簡単インストールというサービスができた機にWordpressに乗り換え。</li></ul></div>
+    
+  </div>
+
+  <div class="index-pagination">
+    
+      <span class="index-navi disabled-link">&larr;</span>
+    
+    
+    
+      <span class="index-navi disabled-link">&rarr;</span>
+    
+  </div>
+
+
+    </div>
+    <aside class="container-right">
+
+      カテゴリ:
+        
+      <ul>
+        
+          <li>
+            <a href="index_category_category_Advent@20Calendar.html">
+              Advent Calendar
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Book.html">
+              Book
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Event.html">
+              Event
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Git.html">
+              Git
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_OS.html">
+              OS
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Other.html">
+              Other
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_PyCon@20JP.html">
+              PyCon JP
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_PyLadies.html">
+              PyLadies
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Python.html">
+              Python
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Sphinx.html">
+              Sphinx
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Web.html">
+              Web
+            </a>
+          </li>
+        
+      </ul>
+      <div>
+        <br><br>
+        <a href="//af.moshimo.com/af/c/click?a_id=767877&p_id=1166&pc_id=1793&pl_id=20229&guid=ON" target="_blank" rel="nofollow"><img src="//image.moshimo.com/af-img/0408/000000020229.png" width="250" height="250" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=767877&p_id=1166&pc_id=1793&pl_id=20229" width="1" height="1" style="border:none;">
+        <br>
+        <a href="//af.moshimo.com/af/c/click?a_id=767877&p_id=1166&pc_id=1793&pl_id=17971&guid=ON" target="_blank" rel="nofollow"><img src="//image.moshimo.com/af-img/0408/000000017971.png" width="250" height="250" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=767877&p_id=1166&pc_id=1793&pl_id=17971" width="1" height="1" style="border:none;">
+      </div>
+    </aside>
+  </div>
+
+</div>
+
+</body>
+</html>

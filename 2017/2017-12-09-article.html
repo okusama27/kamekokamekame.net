@@ -1,0 +1,151 @@
+
+
+<!DOCTYPE html>
+<html lang="ja-JP">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Effective Pythonで学ぶ - 4章 メタクラスと属性 - 鉄は熱いうちに打て</title>
+  
+  <link rel="stylesheet" href="../static/css/sample_article.css">
+
+</head>
+
+<body>
+  
+<div class="container">
+  <h1 class="index-title">
+    <a href="../index.html">鉄は熱いうちに打て</a>
+  </h1>
+
+  <div class="container-inner">
+    <div class="container-body">
+      
+  <div class="article-metadata">
+    <span class="article-date"> 2017-12-09 </span>
+    <span> Book </span>
+    <span> Book </span>
+  </div>
+  <h1 class="article-title">
+    Effective Pythonで学ぶ - 4章　メタクラスと属性
+  </h1>
+
+  <div class="article-body">
+    <div class="header_target" id="h_2017_2017_2d12_2d09_2darticle_2emd_1"></div><h2>昨日までのあらすじ</h2>
+<p><a href="https://www.oreilly.co.jp/books/9784873117560/">Effective Python</a>を真面目に読もうと思ったので読みはじめました。</p>
+<div class="header_target" id="h_2017_2017_2d12_2d09_2darticle_2emd_2"></div><h2>4章　メタクラスと属性</h2>
+<p>まずは、 <strong>メタクラス</strong> とはなんでしょうか？</p>
+<p>困ったときは、<a href="https://www.oreilly.co.jp/books/9784873116884/">Python文法詳解</a>を読みます。さすが姉妹本です。</p>
+<p><a href="https://docs.python.org/ja/3/library/functions.html?highlight=type#type">class type(name, bases, dict)</a></p>
+<p>組み込み関数の <code>type()</code> を利用すると動的にクラスが作れる。型オブジェクトの型となるようなクラスをメタクラスと呼ぶそうです。へー。</p>
+<div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">method</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">arg</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">arg</span><span class="p">)</span>
+
+
+<span class="n">Spam</span> <span class="o">=</span> <span class="nb">type</span><span class="p">(</span><span class="s1">'Spam'</span><span class="p">,</span> <span class="p">(),</span> <span class="o">&amp;</span><span class="c1">#123;'ham':method, 'egg':100&amp;#125;)</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="n">Spam</span><span class="p">()</span>
+<span class="n">a</span><span class="o">.</span><span class="n">ham</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">egg</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+</pre></div>
+<div class="codehilite"><pre><span></span>100
+&lt;__main__.Spam object at 0x10382d080&gt; 50
+&lt;class '__main__.Spam'&gt;
+</pre></div>
+<p>文法はわかりました。
+あとで、<a href="http://note.crohaco.net/2016/python-metaclass/">[Python] メタクラスをたおした - くろのて</a>も読みます。</p>
+<p>メタクラスは今のところ使わなそうなので飛ばします。ついでに5章の平行性と並列性もいったん飛ばし。</p>
+  </div>
+
+
+
+    </div>
+    <aside class="container-right">
+
+      カテゴリ:
+        
+      <ul>
+        
+          <li>
+            <a href="../index_category_category_Advent@20Calendar.html">
+              Advent Calendar
+            </a>
+          </li>
+        
+          <li>
+            <a href="../index_category_category_Book.html">
+              Book
+            </a>
+          </li>
+        
+          <li>
+            <a href="../index_category_category_Event.html">
+              Event
+            </a>
+          </li>
+        
+          <li>
+            <a href="../index_category_category_Git.html">
+              Git
+            </a>
+          </li>
+        
+          <li>
+            <a href="../index_category_category_OS.html">
+              OS
+            </a>
+          </li>
+        
+          <li>
+            <a href="../index_category_category_Other.html">
+              Other
+            </a>
+          </li>
+        
+          <li>
+            <a href="../index_category_category_PyCon@20JP.html">
+              PyCon JP
+            </a>
+          </li>
+        
+          <li>
+            <a href="../index_category_category_PyLadies.html">
+              PyLadies
+            </a>
+          </li>
+        
+          <li>
+            <a href="../index_category_category_Python.html">
+              Python
+            </a>
+          </li>
+        
+          <li>
+            <a href="../index_category_category_Sphinx.html">
+              Sphinx
+            </a>
+          </li>
+        
+          <li>
+            <a href="../index_category_category_Web.html">
+              Web
+            </a>
+          </li>
+        
+      </ul>
+      <div>
+        <br><br>
+        <a href="//af.moshimo.com/af/c/click?a_id=767877&p_id=1166&pc_id=1793&pl_id=20229&guid=ON" target="_blank" rel="nofollow"><img src="//image.moshimo.com/af-img/0408/000000020229.png" width="250" height="250" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=767877&p_id=1166&pc_id=1793&pl_id=20229" width="1" height="1" style="border:none;">
+        <br>
+        <a href="//af.moshimo.com/af/c/click?a_id=767877&p_id=1166&pc_id=1793&pl_id=17971&guid=ON" target="_blank" rel="nofollow"><img src="//image.moshimo.com/af-img/0408/000000017971.png" width="250" height="250" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=767877&p_id=1166&pc_id=1793&pl_id=17971" width="1" height="1" style="border:none;">
+      </div>
+    </aside>
+  </div>
+
+</div>
+
+</body>
+</html>

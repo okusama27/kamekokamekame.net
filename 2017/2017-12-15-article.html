@@ -1,0 +1,149 @@
+
+
+<!DOCTYPE html>
+<html lang="ja-JP">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TogglとSlackを連携した話 - 鉄は熱いうちに打て</title>
+  
+  <link rel="stylesheet" href="../static/css/sample_article.css">
+
+</head>
+
+<body>
+  
+<div class="container">
+  <h1 class="index-title">
+    <a href="../index.html">鉄は熱いうちに打て</a>
+  </h1>
+
+  <div class="container-inner">
+    <div class="container-body">
+      
+  <div class="article-metadata">
+    <span class="article-date"> 2017-12-15 </span>
+    <span> Python </span>
+    <span> Python </span>
+  </div>
+  <h1 class="article-title">
+    TogglとSlackを連携した話
+  </h1>
+
+  <div class="article-body">
+    <div class="header_target" id="h_2017_2017_2d12_2d15_2darticle_2emd_1"></div><h2>昨日までのあらすじ</h2>
+<p>そうだ! Togglで仕事を開始したら、Slackに通知しよう！</p>
+<p><img alt="toggl_slack" src="/static/images/picture201712/toggl_slack.png"/></p>
+<div class="header_target" id="h_2017_2017_2d12_2d15_2darticle_2emd_2"></div><h2>サービスを探そう！</h2>
+<p>最初は無料で通知できるサービスが無いか探しました。<a href="https://zapier.com/">Zapier</a>というサービスを見つけました。いろいろなサービスを連携するサービスのようです。</p>
+<p>使っていたのですが、1ヶ月100回までしか無料で使えず、1日5回。普通の人なら足りそうですが、私は1日でいろんなタスクを行ったり来たりするので、すぐに限界が来ました。(´；ω；｀)</p>
+<p>そんなわけで、探すのもめんどくさいので、自分でスクリプト書いて、PCのcronで動かせばいいじゃない！と思い、実装しました。</p>
+<div class="header_target" id="h_2017_2017_2d12_2d15_2darticle_2emd_3"></div><h2>Togglのトークンを取得</h2>
+<p>Togglの自分のアイコンあたりを押したら、profile settingsにAPI tokenというのがあるのでコピーします。</p>
+<div class="header_target" id="h_2017_2017_2d12_2d15_2darticle_2emd_4"></div><h2>slackのIncoming WebHooksのURLを取得</h2>
+<p>SlackのAppsあたりで「Incoming WebHooks」を探してPOST用のURLを探してください。</p>
+<div class="header_target" id="h_2017_2017_2d12_2d15_2darticle_2emd_5"></div><h2>コード</h2>
+<p><script src="https://gist.github.com/okusama27/08582d8c203883844c96ce7c0e28b38d.js"></script></p>
+<p>Togglから、現在のタスクを取得して、Slackに書き込んでいるだけのコードです。ユーザー名とかべた書きですいません。</p>
+<p>タスク継続中はslackに出ないように前のタスクをファイルの保存しています。それと違ったら、pushするぅ〜。って感じ。</p>
+<p>cronから呼ぶためにshファイル作りました。</p>
+<script src="https://gist.github.com/okusama27/51ce956a42ecc68f43e0ebdccb2d3e43.js"></script>
+<p>で、cronと思ったんですが、MacOSでは、LaunchAgentsというのを使うんじゃ。と何処かで見かけたので、LaunchAgentsにしました。 「~/Library/LaunchAgents/mytoggl.plist」に設置しています。 <code>&lt;key&gt;StartInterval&lt;/key&gt;</code> に、　300秒（5分）に1回toggl.shを実行と設定しています。</p>
+<script src="https://gist.github.com/okusama27/76e00b1fbe67ef629964d42229539268.js"></script>
+<p>動くと、こんな感じでSlackに表示されます。</p>
+<p><img alt="toggle_sample1" src="/static/images/picture201712/toggle_sample1.png"/></p>
+<p>イェア！</p>
+<p>1日のまとめ取得とか、色々改造していきたいです。</p>
+  </div>
+
+
+
+    </div>
+    <aside class="container-right">
+
+      カテゴリ:
+        
+      <ul>
+        
+          <li>
+            <a href="../index_category_category_Advent@20Calendar.html">
+              Advent Calendar
+            </a>
+          </li>
+        
+          <li>
+            <a href="../index_category_category_Book.html">
+              Book
+            </a>
+          </li>
+        
+          <li>
+            <a href="../index_category_category_Event.html">
+              Event
+            </a>
+          </li>
+        
+          <li>
+            <a href="../index_category_category_Git.html">
+              Git
+            </a>
+          </li>
+        
+          <li>
+            <a href="../index_category_category_OS.html">
+              OS
+            </a>
+          </li>
+        
+          <li>
+            <a href="../index_category_category_Other.html">
+              Other
+            </a>
+          </li>
+        
+          <li>
+            <a href="../index_category_category_PyCon@20JP.html">
+              PyCon JP
+            </a>
+          </li>
+        
+          <li>
+            <a href="../index_category_category_PyLadies.html">
+              PyLadies
+            </a>
+          </li>
+        
+          <li>
+            <a href="../index_category_category_Python.html">
+              Python
+            </a>
+          </li>
+        
+          <li>
+            <a href="../index_category_category_Sphinx.html">
+              Sphinx
+            </a>
+          </li>
+        
+          <li>
+            <a href="../index_category_category_Web.html">
+              Web
+            </a>
+          </li>
+        
+      </ul>
+      <div>
+        <br><br>
+        <a href="//af.moshimo.com/af/c/click?a_id=767877&p_id=1166&pc_id=1793&pl_id=20229&guid=ON" target="_blank" rel="nofollow"><img src="//image.moshimo.com/af-img/0408/000000020229.png" width="250" height="250" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=767877&p_id=1166&pc_id=1793&pl_id=20229" width="1" height="1" style="border:none;">
+        <br>
+        <a href="//af.moshimo.com/af/c/click?a_id=767877&p_id=1166&pc_id=1793&pl_id=17971&guid=ON" target="_blank" rel="nofollow"><img src="//image.moshimo.com/af-img/0408/000000017971.png" width="250" height="250" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=767877&p_id=1166&pc_id=1793&pl_id=17971" width="1" height="1" style="border:none;">
+      </div>
+    </aside>
+  </div>
+
+</div>
+
+</body>
+</html>
