@@ -26,6 +26,24 @@
   <div class="articles">
     
       <div class="article-metadata">
+    <span class="article-date"> 2017-12-22 </span>
+    <span> Python </span>
+    <span> Python </span>
+  </div>
+      <h2 class="article-title"><a href="2017/2017-12-22-article.html">関数のreturnが変なコード</a></h2>
+      <div class="article-body"><p>12月は毎日書くぞー！と思って、10日分を残して早30日。いやー、12月は早かった！</p>
+<p>ということで、残りの日付は今年の振り返りと小ネタで埋めていきます。</p>
+<p>今日は私がコードレビューでよく指摘される話。</p>
+<p><a href="http://kamekokamekame.net/python/2017/12/15/article.html">TogglとSlackを連携した話</a>のコードも最初、こうなっていました。</p>
+<div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">get_toggl</span><span class="p">():</span>
+    <span class="err">〜略〜</span>
+    <span class="k">if</span> <span class="n">current</span><span class="o">.</span><span class="n">status_code</span> <span class="o">!=</span> <span class="mi">200</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s2">"togglの情報取得に失敗しました"</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">current_json</span> <span class="o">=</span> <span class="n">current</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">current_json</span><span class="p">[</span><span class="s1">'data'</span></pre></div></div>
+    
+      <div class="article-metadata">
     <span class="article-date"> 2017-12-21 </span>
     <span> Python </span>
     <span> Python </span>
@@ -89,20 +107,6 @@
 <div class="header_target" id="h_2017_2017_2d12_2d18_2darticle_2emd_2"></div><h1><a href="http://amzn.to/2AK9EOE">Python ライブラリ厳選レシピ</a></h1>
 <div class="header_target" id="h_2017_2017_2d12_2d18_2darticle_2emd_3"></div><h2>第１１章テストとデバック</h2>
 <p><a href="http://amzn.to/2AK9EOE">Python ライブラリ厳選レシピ</a> の11章の内容を参考に各モジュールについて確認していきます。</p></div>
-    
-      <div class="article-metadata">
-    <span class="article-date"> 2017-12-17 </span>
-    <span> Python </span>
-    <span> Python </span>
-  </div>
-      <h2 class="article-title"><a href="2017/2017-12-17-article.html">unittest.mock.patchを使ってみる（デコレータ）</a></h2>
-      <div class="article-body"><p>今日の内容は、<a href="http://kamekokamekame.net/advent_calendar/2017/12/18/article.html">Pythonでテストしたい</a>にまとめている内容の詳細部分です。</p>
-<p>unittest.mock.patch（デコレータ）を使ってみます。</p>
-<p>sample_method.py</p>
-
-<p>sample_methodを読み込んでテストする</p>
-
-<p>意味がないテストになっていますが、 <code>@patch('sample_method.SampleMethod.method_1')</code> と書いて、引数の最後に <code>mock_method_1</code> を追加すると、　<code>mock_method_1.return_value = 'AAA'</code> と書くことで、　<code>SampleMethod.method_1</code></p></div>
     
   </div>
 
