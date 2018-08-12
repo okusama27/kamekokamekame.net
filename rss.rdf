@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>鉄は熱いうちに打て</title><link>https://kamekokamekame.net/</link><description></description><lastBuildDate>Sun, 05 Aug 2018 00:00:00 +0900</lastBuildDate><item><title>ブログをGCEに乗っけて、Miyadaikuに変更</title><link>https://kamekokamekame.net/2018/2018-08-05-article.html</link><description>&lt;p&gt;しばらく、GitHub Pagesだったこのブログですが、自由度があまりに低いのでGCEに載せ替えました。&lt;/p&gt;
+<rss version="2.0"><channel><title>鉄は熱いうちに打て</title><link>https://kamekokamekame.net/</link><description></description><lastBuildDate>Mon, 06 Aug 2018 00:00:00 +0900</lastBuildDate><item><title>PyLadies Handbook 翻訳しNight 〜第4夜〜を開催しました</title><link>https://kamekokamekame.net/2018/2018-08-06-article.html</link><description>&lt;p&gt;&lt;a class="reference external" href="https://pyladies-tokyo.connpass.com/event/94642/"&gt;PyLadies Handbook 翻訳しNight 〜第4夜〜&lt;/a&gt; を開催しました。&lt;/p&gt;
+&lt;div class="section" id="night"&gt;
+&lt;div class="header_target" id="h_2018_2018_2d08_2d06_2darticle_2erst_1"&gt;&lt;/div&gt;&lt;h1&gt;翻訳しNightでやっていること&lt;/h1&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://kit.pyladies.com/"&gt;PyLadies Handbook&lt;/a&gt; を翻訳しています。特に行動規範から先に翻訳を開始しています。
+現在の目標は &lt;a class="reference external" href="https://pycon.jp/2018/"&gt;PyCon JP 2018&lt;/a&gt; までに行動規範部分の翻訳を終わらせることです。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="pylaides-handbook"&gt;
+&lt;div class="header_target" id="h_2018_2018_2d08_2d06_2darticle_2erst_2"&gt;&lt;/div&gt;&lt;h1&gt;PyLaides Handbookとは&lt;/h1&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://kit.pyladies.com/"&gt;PyLadies Handbook&lt;/a&gt; の最初に以下の文があります。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The pyladies kit gets you up and running with starting a PyLadies local group, including what’s needed, advice, event planning help, and some tools that may be helpful.&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;</description><pubDate>Mon, 06 Aug 2018 00:00:00 +0900</pubDate><guid isPermaLink="false">tag:kamekokamekame.net,2018-08-06:/2018/2018-08-06-article.html</guid></item><item><title>ブログをGCEに乗っけて、Miyadaikuに変更</title><link>https://kamekokamekame.net/2018/2018-08-05-article.html</link><description>&lt;p&gt;しばらく、GitHub Pagesだったこのブログですが、自由度があまりに低いのでGCEに載せ替えました。&lt;/p&gt;
 &lt;p&gt;ついでに &lt;a class="reference external" href="https://miyadaiku.github.io/ja/index.html"&gt;Miyadaiku&lt;/a&gt; に変更しました。&lt;/p&gt;
 &lt;p&gt;久しぶりにNginxの設定して、いろいろ忘れてました。&lt;/p&gt;
 &lt;p&gt;HTTPSもアクセスできるように Let’s Encrypt で証明書も取ったりして楽しかったです。&lt;/p&gt;
@@ -51,8 +61,4 @@
 &lt;li&gt;2,3,4月お休み&lt;/li&gt;
 &lt;li&gt;５月から　レアジョブ開始: 172回&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;英会話は &lt;strong&gt;合計189回&lt;/strong&gt; 受講でした。途中で萎えたけど、モチベーションが戻せて良かったです。来年は技術系の英語も　積極的に読んでいこうと思います。&lt;/p&gt;</description><pubDate>Mon, 01 Jan 2018 00:00:00 +0900</pubDate><guid isPermaLink="false">tag:kamekokamekame.net,2018-01-01:/2018/2018-01-01-article.html</guid></item><item><title>ブログを毎日書こうと思った話</title><link>https://kamekokamekame.net/2017/2017-12-31-article.html</link><description>&lt;p&gt;ブログを12月は毎日書くぞー！と意気込んで12月に入ったのですが、30日の時点で9日分が残っていたので最後は独り言みたいな感じになりましたが、決めたことを達成できて嬉しいです。&lt;/p&gt;
-&lt;p&gt;人に伝えようと思わなくても &lt;strong&gt;書く&lt;/strong&gt; という行為は自分の中でモワッとしているものをしっかりさせます。
-いつか読もうと思っていた本も読めて良かったです。読みたいけど、楽しい本（The Goalとか）をついつい読んでしまうので、ほったらかしだったEffective Pythonとか他の書籍も読めました。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;12/01: &lt;a href="http://kamekokamekame.net/python/2017/12/01/article.html"&gt;The Zen of Python&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description><pubDate>Sun, 31 Dec 2017 00:00:00 +0900</pubDate><guid isPermaLink="false">tag:kamekokamekame.net,2017-12-31:/2017/2017-12-31-article.html</guid></item></channel></rss>
+&lt;p&gt;英会話は &lt;strong&gt;合計189回&lt;/strong&gt; 受講でした。途中で萎えたけど、モチベーションが戻せて良かったです。来年は技術系の英語も　積極的に読んでいこうと思います。&lt;/p&gt;</description><pubDate>Mon, 01 Jan 2018 00:00:00 +0900</pubDate><guid isPermaLink="false">tag:kamekokamekame.net,2018-01-01:/2018/2018-01-01-article.html</guid></item></channel></rss>

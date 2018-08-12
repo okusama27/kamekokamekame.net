@@ -26,6 +26,29 @@
   <div class="articles">
     
       <div class="article-metadata">
+    <span class="article-date"> 2017-12-06 </span>
+    <span> Book </span>
+    <span> Book </span>
+  </div>
+      <h2 class="article-title"><a href="2017/2017-12-06-article.html">Effective Pythonで学ぶ - 3章　クラスと継承 2</a></h2>
+      <div class="article-body"><div class="header_target" id="h_2017_2017_2d12_2d06_2darticle_2emd_1"></div><h2>昨日までのあらすじ</h2>
+<p><a href="https://www.oreilly.co.jp/books/9784873117560/">Effective Python</a>を真面目に読もうと思ったので読みはじめました。</p>
+<div class="header_target" id="h_2017_2017_2d12_2d06_2darticle_2emd_2"></div><h2>3章　クラスと継承</h2>
+<ul>
+<li>項目 24：@classmethodポリモルフィズムを使ってオブジェクトをジェネリックに構築する</li>
+<li>項目 25：親クラスを superを使って初期化する</li>
+</ul>
+<p><img alt="関数" src="/static/images/picture201712/picture_20171206_1.png"/></p>
+<p>実行してみて謎なことが。こんなものなの？</p>
+<div class="codehilite"><pre><span></span><span class="k">class</span> <span class="nc">GrandPa</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="s1">'おじいちゃん'</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">Papa</span><span class="p">(</span><span class="n">GrandPa</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span></pre></div></div>
+    
+      <div class="article-metadata">
     <span class="article-date"> 2017-12-05 </span>
     <span> Book </span>
     <span> Book </span>
@@ -87,23 +110,6 @@
 <p><a href="https://www.oreilly.co.jp/books/9784873117560/">Effective Python</a>は「Pythonプログラムを改良する59項目」とサブタイトルが付いていますが、 <strong>こう書いたほうがいいよね</strong> が詰まっている本です。</p>
 <p>これを会社に入社したときにきちんと読み込んでいたら、私のコードをレビューした人の手間が大分減ったのに。と後悔しました。
 過去を振り返ってもピチピチギャルには戻れないので、これから未来の為にPythonらしさ、おすすめの書き方を学んでいきます。</p></div>
-    
-      <div class="article-metadata">
-    <span class="article-date"> 2017-12-01 </span>
-    <span> Python </span>
-    <span> Python </span>
-  </div>
-      <h2 class="article-title"><a href="2017/2017-12-01-article.html">The Zen of Python</a></h2>
-      <div class="article-body"><p>12月ですね。</p>
-<div class="header_target" id="h_2017_2017_2d12_2d01_2darticle_2emd_1"></div><h2>はじめに</h2>
-<p>今年も今月で終わりですが、最後になにか学習をしたいと考えていました。
-知らない言語を学んでみようかなと <code>Land of Lisp</code> という本を読んでみました。しかし、作者の他言語への並々ならぬ気持ちがすごかったので、受け止めきれなかったです。<code>Lisp</code> に関してはわかりやすかったです。読むまでは <code>Lisp</code> はカッコばっかりでとっつきにくいと思ったけどいい本でした。</p>
-<p>そんな時、<a href="https://cronote.connpass.com/">くろのて勉強会</a>に参加しました。</p>
-<ul>
-<li>他言語学ぶほどPython知っているの？</li>
-<li>おまえのPythonの知識は充分なの？</li>
-</ul>
-<p>と私の中のリトル亀子が問いかけてきます。</p></div>
     
   </div>
 

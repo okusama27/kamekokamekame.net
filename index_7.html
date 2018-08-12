@@ -26,6 +26,25 @@
   <div class="articles">
     
       <div class="article-metadata">
+    <span class="article-date"> 2017-12-11 </span>
+    <span> Python </span>
+    <span> Python </span>
+  </div>
+      <h2 class="article-title"><a href="2017/2017-12-11-article.html">unittestの公式ドキュメントを読んでみた</a></h2>
+      <div class="article-body"><p>今日の内容は、<a href="http://kamekokamekame.net/advent_calendar/2017/12/18/article.html">Pythonでテストしたい</a>にまとめている内容の詳細部分です。</p>
+<p>unittestの公式ドキュメントを読みます。</p>
+<p><a href="https://docs.python.org/ja/3/library/unittest.html">unittest — ユニットテストフレームワーク</a></p>
+<div class="header_target" id="h_2017_2017_2d12_2d11_2darticle_2emd_1"></div><h2>基本的な例</h2>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">unittest</span>
+
+<span class="c1"># unittest.TestCase)を継承するTestStringMethodsクラスを定義していますね。</span>
+<span class="k">class</span> <span class="nc">TestStringMethods</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
+
+    <span class="c1"># 1つ目のテスト</span>
+    <span class="c1"># 「'foo'.upper()」と「'FOO'」が等しいか比較していますね</span>
+    <span class="k">def</span></pre></div></div>
+    
+      <div class="article-metadata">
     <span class="article-date"> 2017-12-10 </span>
     <span> Python </span>
     <span> Python </span>
@@ -110,29 +129,6 @@
 MRO（Method Resolution Order）で検索していくらしいです。同じ親を持つと兄弟も検索していくそうです。</p>
 <p>おじいちゃんもおばあちゃんも ~~objectを継承して、~~ super()を書いたら、こうなりました。</p>
 <div class="codehilite"><pre><span></span><span class="k">class</span> <span class="nc">GrandPa</span></pre></div></div>
-    
-      <div class="article-metadata">
-    <span class="article-date"> 2017-12-06 </span>
-    <span> Book </span>
-    <span> Book </span>
-  </div>
-      <h2 class="article-title"><a href="2017/2017-12-06-article.html">Effective Pythonで学ぶ - 3章　クラスと継承 2</a></h2>
-      <div class="article-body"><div class="header_target" id="h_2017_2017_2d12_2d06_2darticle_2emd_1"></div><h2>昨日までのあらすじ</h2>
-<p><a href="https://www.oreilly.co.jp/books/9784873117560/">Effective Python</a>を真面目に読もうと思ったので読みはじめました。</p>
-<div class="header_target" id="h_2017_2017_2d12_2d06_2darticle_2emd_2"></div><h2>3章　クラスと継承</h2>
-<ul>
-<li>項目 24：@classmethodポリモルフィズムを使ってオブジェクトをジェネリックに構築する</li>
-<li>項目 25：親クラスを superを使って初期化する</li>
-</ul>
-<p><img alt="関数" src="/static/images/picture201712/picture_20171206_1.png"/></p>
-<p>実行してみて謎なことが。こんなものなの？</p>
-<div class="codehilite"><pre><span></span><span class="k">class</span> <span class="nc">GrandPa</span><span class="p">:</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">print</span><span class="p">(</span><span class="s1">'おじいちゃん'</span><span class="p">)</span>
-
-<span class="k">class</span> <span class="nc">Papa</span><span class="p">(</span><span class="n">GrandPa</span><span class="p">):</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span></pre></div></div>
     
   </div>
 
