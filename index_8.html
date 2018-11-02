@@ -26,58 +26,6 @@
   <div class="articles">
     
       <div class="article-metadata">
-    <span class="article-date"> 2017-12-10 </span>
-    <span> Python </span>
-    <span> Python </span>
-  </div>
-      <h2 class="article-title"><a href="2017/2017-12-10-article.html">doctestを触ってみた</a></h2>
-      <div class="article-body"><p>今日の内容は、<a href="http://kamekokamekame.net/advent_calendar/2017/12/18/article.html">Pythonでテストしたい</a>にまとめている内容の詳細部分です。</p>
-<p>doctestを触ってみました。</p>
-<p>sample.py</p>
-<div class="codehilite"><pre><span></span><span class="sd">"""</span>
-<span class="sd">値を1増加させる関数です</span>
-<span class="sd">&gt;&gt;&gt; add_one(1)</span>
-<span class="sd">2</span>
-<span class="sd">"""</span>
-
-
-<span class="k">def</span> <span class="nf">add_one</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="sd">"""</span>
-<span class="sd">    値が1増加します</span>
-<span class="sd">    &gt;&gt;&gt; [add_one(x) for x in range(5)]</span>
-<span class="sd">    [1, 2, 3, 4, 5]</span>
-<span class="sd">    """</span>
-    <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
-
-
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
-    <span class="kn">import</span> <span class="nn">doctest</span>
-    <span class="n">doctest</span><span class="o">.</span><span class="n">testmod</span><span class="p">()</span>
-</pre></div>
-<p>実行する</p>
-<div class="codehilite"><pre><span></span>$ python sample.py
-</pre></div></div>
-    
-      <div class="article-metadata">
-    <span class="article-date"> 2017-12-09 </span>
-    <span> Book </span>
-    <span> Book </span>
-  </div>
-      <h2 class="article-title"><a href="2017/2017-12-09-article.html">Effective Pythonで学ぶ - 4章　メタクラスと属性</a></h2>
-      <div class="article-body"><div class="header_target" id="h_2017_2017_2d12_2d09_2darticle_2emd_1"></div><h2>昨日までのあらすじ</h2>
-<p><a href="https://www.oreilly.co.jp/books/9784873117560/">Effective Python</a>を真面目に読もうと思ったので読みはじめました。</p>
-<div class="header_target" id="h_2017_2017_2d12_2d09_2darticle_2emd_2"></div><h2>4章　メタクラスと属性</h2>
-<p>まずは、 <strong>メタクラス</strong> とはなんでしょうか？</p>
-<p>困ったときは、<a href="https://www.oreilly.co.jp/books/9784873116884/">Python文法詳解</a>を読みます。さすが姉妹本です。</p>
-<p><a href="https://docs.python.org/ja/3/library/functions.html?highlight=type#type">class type(name, bases, dict)</a></p>
-<p>組み込み関数の <code>type()</code> を利用すると動的にクラスが作れる。型オブジェクトの型となるようなクラスをメタクラスと呼ぶそうです。へー。</p>
-<div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">method</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">arg</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">arg</span><span class="p">)</span>
-
-
-<span class="n">Spam</span> <span class="o">=</span> <span class="nb">type</span><span class="p">(</span><span class="s1">'Spam'</span></pre></div></div>
-    
-      <div class="article-metadata">
     <span class="article-date"> 2017-12-08 </span>
     <span> Book </span>
     <span> Book </span>
@@ -133,6 +81,39 @@ MRO（Method Resolution Order）で検索していくらしいです。同じ親
 <span class="k">class</span> <span class="nc">Papa</span><span class="p">(</span><span class="n">GrandPa</span><span class="p">):</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span></pre></div></div>
+    
+      <div class="article-metadata">
+    <span class="article-date"> 2017-12-05 </span>
+    <span> Book </span>
+    <span> Book </span>
+  </div>
+      <h2 class="article-title"><a href="2017/2017-12-05-article.html">Effective Pythonで学ぶ - 3章　クラスと継承</a></h2>
+      <div class="article-body"><div class="header_target" id="h_2017_2017_2d12_2d05_2darticle_2emd_1"></div><h2>昨日までのあらすじ</h2>
+<p><a href="https://www.oreilly.co.jp/books/9784873117560/">Effective Python</a>を真面目に読もうと思ったので読みはじめました。</p>
+<div class="header_target" id="h_2017_2017_2d12_2d05_2darticle_2emd_2"></div><h2>3章　クラスと継承</h2>
+<ul>
+<li>項目 22：辞書やタプルで記録管理するよりもヘルパークラスを使う</li>
+<li>項目 23：単純なインタフェースにはクラスの代わりに関数を使う</li>
+</ul>
+<p><img alt="関数" src="/static/images/picture201712/picture_20171205_1.png"/></p>
+<p>だんだんだらけてきてますが、まぁ、ぼちぼちやります。</p></div>
+    
+      <div class="article-metadata">
+    <span class="article-date"> 2017-12-04 </span>
+    <span> Book </span>
+    <span> Book </span>
+  </div>
+      <h2 class="article-title"><a href="2017/2017-12-04-article.html">Effective Pythonで学ぶ - 2章　関数</a></h2>
+      <div class="article-body"><div class="header_target" id="h_2017_2017_2d12_2d04_2darticle_2emd_1"></div><h2>昨日までのあらすじ</h2>
+<p><a href="https://www.oreilly.co.jp/books/9784873117560/">Effective Python</a>を真面目に読もうと思ったので読みはじめました。</p>
+<div class="header_target" id="h_2017_2017_2d12_2d04_2darticle_2emd_2"></div><h2>2章　関数</h2>
+<p>この関数の章は関数のTipsなのか謎の内容。クロージャ、ジェネレータ、イテレータって関数ですが、関数の区分けなのでしょうか。</p>
+<ul>
+<li>項目 14：Noneを返すよりは例外を選ぶ</li>
+<li>項目 15：クロージャが変数スコープとどう関わるかを知っておく</li>
+<li>項目 16：リストを返さずにジェネレータを返すことを考える</li>
+<li>項目 17：引数に対してイテレータを使うときには確実さを尊ぶ</li>
+<li>項目 18：可変長位置引数を使って、見た目をすっきりさせる</li></ul></div>
     
   </div>
 
