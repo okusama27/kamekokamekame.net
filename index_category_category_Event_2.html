@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="ja-JP">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>index_category - 鉄は熱いうちに打て</title>
+  
+  <link rel="stylesheet" href="static/css/sample_article.css">
+
+</head>
+
+<body>
+  
+<div class="container">
+  <h1 class="index-title">
+    <a href="index.html">鉄は熱いうちに打て</a>
+  </h1>
+
+  <div class="container-inner">
+    <div class="container-body">
+      
+
+  <div class="articles">
+    
+      <div class="article-metadata">
+    <span class="article-date"> 2015-12-17 </span>
+    <span> Event </span>
+    <span> Event </span>
+  </div>
+      <h2 class="article-title"><a href="2015/2015-12-17-article.html">Slackのとあるチャンネルから記事を取得したい</a></h2>
+      <div class="article-body"><p>この記事は<a href="http://connpass.com/event/22759/" target="_blank">2015 tech-yuruyuru アドベントカレンダー</a>の１7日目の記事です。</p>
+<p>なぜ、２日連続でエントリーしたのか。それは空いていたから。エントリーした時は出来る気がしたんですが。。書くテーマを決めて、内容の下調べも終えてからエントリーしないとダメだな。と反省しています。</p>
+<p>そんなわけでゆるい話。</p>
+<p>いろんな所でSlack使っているんですが、とあるチャンネルの記録だけを抜いて、特定の文字列を含む記事を保存しておきたいんですが、どうやるのかなぁ？と調べたので、それを書いておきます。</p>
+<p>まず、公開ちゃんねる全部をexportする機能があるんですが、全部いらないし、大きくなるのでやらないです。バックアップを毎日しておきたい場合にはいいですね。</p>
+<p><img alt="slack0" src="/static/images/old/slack0-300x137.png"/></p>
+<p>Slack APIってところを見ると<a href="https://api.slack.com/methods/channels.history" target="_blank">channels.history</a>というAPIがありますね。画面でパラメータを入力すればテストもできるようになっています。</p>
+<p>まずは認証用のTokenを作成します。</p>
+<p><img alt="slack3" src="/static/images/old/slack3-300x214.png"/></p>
+<p>すごい親切で<a href="https://api.slack.com/web" target="_blank">https://api.slack.com/web</a>でCreate tokenボタンを押すだけで取得できます。複数参加していたら複数分表示されています。</p>
+<p>で、<a href="https://api.slack.com/methods/channels.history" target="_blank">channels.history</a>にアクセスします。</p>
+<p><img alt="slack1" src="/static/images/old/slack1-300x223.png"/></p>
+<p>でも、channelってところがチャンネル名じゃなくてcannelのIDじゃないとダメみたいです。と思ったら、それもchannels.listというAPIで取れるみたいです。</p>
+<p><img alt="slack2" src="/static/images/old/slack2-300x205.png"/></p>
+<p>とれたchannelのIDをchannels.historyで指定してこれで特定のチャンネルの記事がとれました。</p>
+<p>調べたものの、トークン作ると管理者にメールが飛ぶみたいなんで調べただけでやってないです。ははは。</p></div>
+    
+      <div class="article-metadata">
+    <span class="article-date"> 2015-07-04 </span>
+    <span> Event </span>
+    <span> Event </span>
+  </div>
+      <h2 class="article-title"><a href="2015/2015-07-04-article.html">IT × 家事育児 LT大会&amp;交流会！！に行ってきました</a></h2>
+      <div class="article-body"><p>IT系わーママの集まりがあるということで行ってきました。実際はわーパパと半々くらいでしたが楽しかったです。</p>
+<p><a href="http://ikujixit.connpass.com/event/15999/" target="_blank">IT × 家事育児 LT大会&amp;交流会！！</a></p>
+<p>忙しい合間を縫って会を主催してくださった <a href="https://twitter.com/so_kazusan" target="_blank">@so_kazusan</a>さん,<a href="https://twitter.com/kinu" target="_blank">@kinu</a>さん,MichikoYamamotoさんありがとうございました！！寝ながらSkype会議だけで会が開けるなんて素敵です！！予約しやすい会場を提供してくださる<a href="https://twitter.com/21cafe_shibuya" target="_blank">21cafe</a>様のような会場があってこそですが。</p>
+<p>内容は子育ての悩みやITを使った育児ほうなど様々で楽しかったです。（私もLTしましたが、ちょっと内容を出せなくてすいません&gt;&lt;）</p>
+<p>子持ちの方がこんなに集まるなんてなかなかなので貴重な会でした。ありがとうございました。
+私も触発されて、Google Calendarの内容をSlackに毎朝お知らせしてくれるスクリプトを作りました。</p>
+<p><img alt="slack" src="/static/images/old/image-300x223.png"/></p>
+<p>一番印象に残ったのは<a href="https://twitter.com/kinu" target="_blank">@kinu</a>さんの「エンジニアなので瞬殺で作れる」です。私も瞬殺でなんでも作れるようにこれからも精進します。上のSlackは超簡単で１５分くらいで作れるのでおすすめです。（作り方は自分で調べてください。。。）</p>
+<p>ちょっとしたことにガンバルの重要。これからも頑張ります。</p></div>
+    
+      <div class="article-metadata">
+    <span class="article-date"> 2015-05-29 </span>
+    <span> Event </span>
+    <span> Event </span>
+  </div>
+      <h2 class="article-title"><a href="2015/2015-05-29-article.html">BPStudy93 に行ってきました</a></h2>
+      <div class="article-body"><p><a href="http://bpstudy.connpass.com/event/13348/?utm_campaign=event_reminder&amp;utm_source=notifications&amp;utm_medium=email&amp;utm_content=detail_btn" target="_blank">BPStudy#93</a>に参加してきました。いつも凄い人数なので参加できていませんでしたが、なぜか少なかったので参加できました。ありがとうございました。それにしても凄い雨でしたしね。</p>
+<div class="header_target" id="h_2015_2015_2d05_2d29_2darticle_2emd_1"></div><h2>第1部 「360°スゴイ」を創るVOYAGE GROUPエンジニア成長施策</h2>
+<iframe allowfullscreen="" frameborder="0" height="355" marginheight="0" marginwidth="0" scrolling="no" src="//www.slideshare.net/slideshow/embed_code/key/Cxppr2SYgQ0fr9" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" width="425"> </iframe>
+<div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/hironorimiura/360-voyage-group" target="_blank" title="「360°スゴイ」を創る voyage groupエンジニア成長施策">「360°スゴイ」を創る voyage groupエンジニア成長施策</a> </strong> from <strong><a href="//www.slideshare.net/hironorimiura" target="_blank">Hironori Miura</a></strong> </div>
+<p>インターン研修、新人研修のお話でした。こんな素敵な会社があるなら１６年前に戻って入社したいです。というか、新人に求めるハードルが高い気がしますが、現在の手軽に情報が手に入る世の中では当たり前の事なのでしょうか。</p>
+<div class="header_target" id="h_2015_2015_2d05_2d29_2darticle_2emd_2"></div><h2>第2部 PyPro2の読みどころ紹介：Python開発の過去と現在</h2>
+<iframe allowfullscreen="" frameborder="0" height="355" marginheight="0" marginwidth="0" scrolling="no" src="//www.slideshare.net/slideshow/embed_code/key/mI3nJ6uThfsMJK" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" width="425"> </iframe>
+<div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/shimizukawa/pypro2python-bpstudy93" target="_blank" title="PyPro2の読みどころ紹介：Python開発の過去と現在 - BPStudy93">PyPro2の読みどころ紹介：Python開発の過去と現在 – BPStudy93</a> </strong> from <strong><a href="//www.slideshare.net/shimizukawa" target="_blank">Takayuki Shimizukawa</a></strong> </div>
+<p>合計３２人で１冊の本を作った方法をご紹介いただきました。
+Slack、その他の技術を駆使していて大変参考になりました。やっぱり一人で書くほうが楽ですよね。。１１人が執筆って多すぎです。レビューへの対応がないとSlackに雨マークが出るとか面白かったです。Google SpreadSheetAPIってそういえば使った事ないので、今度やってみます。</p>
+<p>あと、Pythonはどうなる？ってディスカッションをみんなでされてました。2020年でPython2系は終了だが、REL7の寿命が2025なのでそこまでは使われるかなというお話でした。
+あと、一つの言語にこだわるとよくない話。まぁ、一つの言語を極めておけば他に移るのも簡単なので、そう熱くなる必要はないと私は思いますが。。</p>
+<div class="header_target" id="h_2015_2015_2d05_2d29_2darticle_2emd_3"></div><h2>「Pythonエンジニア養成読本」オモテウラ</h2>
+<iframe allowfullscreen="" frameborder="0" height="355" marginheight="0" marginwidth="0" scrolling="no" src="//www.slideshare.net/slideshow/embed_code/key/2pThu9siwOS4n8" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" width="425"> </iframe>
+<div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/takanory/two-sides-of-python-engineer-training-book" target="_blank" title='Two sides of "Python Engineer Training Book"'>Two sides of "Python Engineer Training Book"</a> </strong> from <strong><a href="//www.slideshare.net/takanory" target="_blank">Takanori Suzuki</a></strong> </div>
+<p>技術書執筆は突然に！</p>
+<p>突然、依頼されて、突然６人で本を出した話。全編書きおろしの本っていいですね。１年前の記事をまとめてムックにというお話をいただいたのですが、１年経ってたのでいろいろ古くてめんどくさくて、時間と予算があれば全部書き直したかったのですが、編集の意向でなるべく変えないで！って言われたので、しょんぼりでした。。（後半は私の愚痴ですね。。）</p>
+<div class="header_target" id="h_2015_2015_2d05_2d29_2darticle_2emd_4"></div><h2>まとめ</h2>
+<p>濃い２時間でした。機会があったらまたぜひ参加したいです。ありがとうございました。</p></div>
+    
+  </div>
+
+  <div class="index-pagination">
+    
+      <a class="index-navi"
+         href="index_category_category_Event.html">&larr;</a>
+    
+    
+    
+      <span class="index-navi disabled-link">&rarr;</span>
+    
+  </div>
+
+
+    </div>
+    <aside class="container-right">
+
+      カテゴリ:
+        
+      <ul>
+        
+          <li>
+            <a href="index_category_category_Advent@20Calendar.html">
+              Advent Calendar
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Book.html">
+              Book
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Event.html">
+              Event
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Git.html">
+              Git
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_OS.html">
+              OS
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Other.html">
+              Other
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_PyCon@20JP.html">
+              PyCon JP
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_PyLadies.html">
+              PyLadies
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Python.html">
+              Python
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Sphinx.html">
+              Sphinx
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Web.html">
+              Web
+            </a>
+          </li>
+        
+      </ul>
+      <div>
+        <br><br>
+        <a href="//af.moshimo.com/af/c/click?a_id=767877&p_id=1166&pc_id=1793&pl_id=20229&guid=ON" target="_blank" rel="nofollow"><img src="//image.moshimo.com/af-img/0408/000000020229.png" width="250" height="250" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=767877&p_id=1166&pc_id=1793&pl_id=20229" width="1" height="1" style="border:none;">
+        <br>
+        <a href="//af.moshimo.com/af/c/click?a_id=767877&p_id=1166&pc_id=1793&pl_id=17971&guid=ON" target="_blank" rel="nofollow"><img src="//image.moshimo.com/af-img/0408/000000017971.png" width="250" height="250" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=767877&p_id=1166&pc_id=1793&pl_id=17971" width="1" height="1" style="border:none;">
+      </div>
+    </aside>
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,364 @@
+
+<!DOCTYPE html>
+<html lang="ja-JP">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>index - 鉄は熱いうちに打て</title>
+  
+  <link rel="stylesheet" href="static/css/sample_article.css">
+
+</head>
+
+<body>
+  
+<div class="container">
+  <h1 class="index-title">
+    <a href="index.html">鉄は熱いうちに打て</a>
+  </h1>
+
+  <div class="container-inner">
+    <div class="container-body">
+      
+
+  <div class="articles">
+    
+      <div class="article-metadata">
+    <span class="article-date"> 2015-04-13 </span>
+    <span> Python </span>
+    <span> Python </span>
+  </div>
+      <h2 class="article-title"><a href="2015/2015-04-13-article.html">pydoc</a></h2>
+      <div class="article-body"><p><code>pydoc</code> という機能を使うと、 <code>Javadoc</code> のようなものが作れるらしい。</p>
+<p>先日の <code>twc.py</code> に書き足してみる</p>
+<div class="codehilite"><pre><span></span><span class="s2">"""</span>
+<span class="s2">This is a command line tool of watching twitter timelines</span>
+<span class="s2">"""</span>
+<span class="nv">__author__</span>  <span class="o">=</span> <span class="s1">'作者&lt;kame＠kamekokamekame.net&gt;'</span>
+<span class="nv">__status__</span>  <span class="o">=</span> <span class="s2">"production"</span>
+<span class="nv">__version__</span> <span class="o">=</span> <span class="s2">"0.1.0"</span>
+<span class="nv">__date__</span>    <span class="o">=</span> <span class="s2">"11 Apr 2015"</span>
+</pre></div>
+<p>Pythonのインタプリタで実行</p>
+<div class="codehilite"><pre><span></span>$ python
+&gt;&gt;&gt; help<span class="o">()</span>
+help&gt; twc
+</pre></div>
+<p>おお！表示された！！</p>
+<div class="codehilite"><pre><span></span>Help on module twc:
+NAME
+    twc - This is a <span class="nb">command</span> line tool of watching twitter timelines
+FILE
+    /Users/kaz/git/twitter-cli/twc.py
+FUNCTIONS
+    post_tweet<span class="o">(</span>oauth, args<span class="o">)</span>
+    show_home_timeline<span class="o">(</span>oauth<span class="o">)</span>
+    show_user_timeline<span class="o">(</span>oauth, args<span class="o">)</span>
+        <span class="c1"># Get someone's timeline</span>
+DATA
+    <span class="nv">AS</span> <span class="o">=</span> <span class="s1">'XXXXXXXXXXXXXXX'</span>
+    <span class="nv">AT</span> <span class="o">=</span> <span class="s1">'XXXXXXXXXXXXXXX'</span>
+    <span class="nv">CK</span> <span class="o">=</span> <span class="s1">'XXXXXXXXXXXXXXX'</span>
+    <span class="nv">CS</span> <span class="o">=</span> <span class="s1">'XXXXXXXXXXXXXXX'</span>
+    <span class="nv">HOME_TIME_LINE_URL</span> <span class="o">=</span> <span class="s1">'https://api.twitter.com/1.1/statuses/home_timeli...</span>
+<span class="s1">    POST_STATUS_UPDATE = '</span>https://api.twitter.com/1.1/statuses/update.json...
+    <span class="nv">USER_TIME_LINE_URL</span> <span class="o">=</span> <span class="s1">'https://api.twitter.com/1.1/statuses/user_timeli...</span>
+<span class="s1">    __author__  = '</span>Kameko Kamekame&lt;kame@kamekokamekame.net&gt;<span class="s1">'</span>
+<span class="s1">    __date__ = '</span><span class="m">11</span> Apr <span class="m">2015</span><span class="s1">'</span>
+<span class="s1">    __status__ = '</span>production<span class="s1">'</span>
+<span class="s1">    __version__ = '</span><span class="m">0</span>.1.0<span class="s1">'</span>
+<span class="s1">    config = '</span>twitter_key:<span class="se">\n</span>    CK: XXXXXXXXXXXXXXX  ... https:/...
+    <span class="nv">data</span> <span class="o">=</span> <span class="p">&amp;</span><span class="c1">#123;'twitter_key': &amp;#123;'AS': 'XXXXXXXXXXXXXXX...</span>
+    <span class="nv">tz_tokyo</span> <span class="o">=</span> &lt;DstTzInfo <span class="s1">'Asia/Tokyo'</span> JST+9:00:00 STD&gt;
+VERSION
+    <span class="m">0</span>.1.0
+DATE
+    <span class="m">11</span> Apr <span class="m">2015</span>
+AUTHOR
+    Kameko Kamekame &lt;kame@kamekokamekame.net&gt;
+</pre></div>
+<div class="header_target" id="h_2015_2015_2d04_2d13_2darticle_2emd_1"></div><h2>後日追記</h2>
+<p>当時、なにを勘違いしたかこれを <code>pydoc</code> と思っていましたが、これは組み込み関数 <code>help()</code> の話ですね。
+<code>pydoc</code> は <code>help()</code> をわざわざ使わずにシェルから直接ヘルプがみられる機能なのですね。</p>
+<p><code>help()</code> だと</p>
+<div class="codehilite"><pre><span></span>$ python
+&gt;&gt;&gt; help()
+help&gt; sys
+ヘルプが表示される
+</pre></div>
+<p><code>pydoc</code> だと</p>
+<div class="codehilite"><pre><span></span>$ pydoc sys
+ヘルプが表示される
+</pre></div>
+<div class="header_target" id="h_2015_2015_2d04_2d13_2darticle_2emd_2"></div><h2>公式ドキュメント</h2>
+<p><a href="https://docs.python.org/ja/3/library/pydoc.html#module-pydoc">pydoc — ドキュメント生成とオンラインヘルプシステム</a></p></div>
+    
+      <div class="article-metadata">
+    <span class="article-date"> 2015-04-12 </span>
+    <span> Python </span>
+    <span> Python </span>
+  </div>
+      <h2 class="article-title"><a href="2015/2015-04-12-article.html">virtualenv使ってみる</a></h2>
+      <div class="article-body"><p>独立した環境を利用するためのツールがある。virtualenvってやつで、Python3からはpyvenv(venv?)ってのを利用するらしい。</p>
+<p>で、virtualenvを利用しやすくするものにpyenvとか、なんちゃらenvとかいろいろあるみたい。Goで書かれた<a href="https://github.com/zimbatm/direnv" target="_blank">direnv</a>ってのもぐいぐい来ているらしいが、また今度。
+とりあえずインストール</p>
+<div class="codehilite"><pre><span></span>$ sudo pip install virtualenv
+</pre></div>
+<p>virtualenvwrapperってのを入れると環境の切り替えが楽らしい</p>
+<div class="codehilite"><pre><span></span>sudo pip install virtualenvwrapper
+</pre></div>
+<p>環境設定 .bashrcに追加</p>
+<div class="codehilite"><pre><span></span><span class="c1">#virtualenv settings</span>
+<span class="nb">export</span> <span class="nv">WORKON_HOME</span><span class="o">=</span><span class="nv">$HOME</span>/.virtualenvs
+. /Library/Frameworks/Python.framework/Versions/2.7/bin/virtualenvwrapper.sh
+</pre></div>
+<p>環境のファイル作る</p>
+<div class="codehilite"><pre><span></span>mkvirtualenv <span class="p">&amp;</span><span class="c1">#123;env name&amp;#125;</span>
+</pre></div>
+<p>作った環境一覧</p>
+<div class="codehilite"><pre><span></span>workon
+</pre></div>
+<p>とある環境をアクティブにする</p>
+<div class="codehilite"><pre><span></span>workon <span class="p">&amp;</span><span class="c1">#123;env name&amp;#125;</span>
+</pre></div>
+<p>アクティブ終了</p>
+<div class="codehilite"><pre><span></span>deactivate
+</pre></div>
+<p>削除するとき</p>
+<div class="codehilite"><pre><span></span>rmvirtualenv <span class="p">&amp;</span><span class="c1">#123;env name&amp;#125;</span>
+</pre></div>
+<p><em>私の環境はMacOSXです。</em></p></div>
+    
+      <div class="article-metadata">
+    <span class="article-date"> 2015-04-11 </span>
+    <span> Python </span>
+    <span> Python </span>
+  </div>
+      <h2 class="article-title"><a href="2015/2015-04-11-article.html">「(第53回)Python mini Hack-a-thon」に参加しました</a></h2>
+      <div class="article-body"><p>更にPythonを修得するのと動機付けのために「(第53回)Python mini Hack-a-thon」に参加しました。</p>
+<p>運営の皆様、へっぽこな私ですがお世話になりました。</p>
+<p>会場を提供くださったビープラウド社様ありがとうございます。
+作ったもの：</p>
+<div class="codehilite"><pre><span></span>Twitterをコマンドラインで見るやつ
+</pre></div>
+<p>ソース：</p>
+<div class="codehilite"><pre><span></span><span class="ch">#!/usr/bin/env python</span>
+<span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="n">__author__</span>  <span class="o">=</span> <span class="s1">'Kameko&lt;kame@kamekokamekame.net&gt;'</span>
+<span class="kn">from</span> <span class="nn">requests_oauthlib</span> <span class="kn">import</span> <span class="n">OAuth1Session</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">argparse</span>
+<span class="kn">import</span> <span class="nn">yaml</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+<span class="c1">#import dateutil.tz</span>
+<span class="kn">import</span> <span class="nn">pytz</span>
+<span class="c1"># Check config file</span>
+<span class="n">config</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'config.yaml'</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">yaml</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">config</span><span class="p">)</span>
+<span class="n">CK</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">'twitter_key'</span><span class="p">][</span><span class="s1">'CK'</span><span class="p">]</span>    <span class="c1"># Consumer Key</span>
+<span class="n">CS</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">'twitter_key'</span><span class="p">][</span><span class="s1">'CS'</span><span class="p">]</span>    <span class="c1"># Consumer Secret</span>
+<span class="n">AT</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">'twitter_key'</span><span class="p">][</span><span class="s1">'AT'</span><span class="p">]</span>    <span class="c1"># Access Token</span>
+<span class="n">AS</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">'twitter_key'</span><span class="p">][</span><span class="s1">'AS'</span><span class="p">]</span>    <span class="c1"># Access Token Secret</span>
+<span class="c1"># Set REST API URL</span>
+<span class="n">USER_TIME_LINE_URL</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">'twitter_url'</span><span class="p">][</span><span class="s1">'USER_TIME_LINE_URL'</span><span class="p">]</span>
+<span class="n">HOME_TIME_LINE_URL</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">'twitter_url'</span><span class="p">][</span><span class="s1">'HOME_TIME_LINE_URL'</span><span class="p">]</span>
+<span class="n">POST_STATUS_UPDATE</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">'twitter_url'</span><span class="p">][</span><span class="s1">'POST_STATUS_UPDATE'</span><span class="p">]</span>
+<span class="c1"># Set timezone</span>
+<span class="n">tz_tokyo</span> <span class="o">=</span> <span class="n">pytz</span><span class="o">.</span><span class="n">timezone</span><span class="p">(</span><span class="s1">'Asia/Tokyo'</span><span class="p">)</span>
+<span class="c1"># Get someone's timeline</span>
+<span class="k">def</span> <span class="nf">show_user_timeline</span><span class="p">(</span><span class="n">oauth</span><span class="p">,</span><span class="n">args</span><span class="p">):</span>
+    <span class="n">params</span> <span class="o">=</span> <span class="o">&amp;</span><span class="c1">#123;"screen_name":args.screen_name&amp;#125;</span>
+    <span class="n">req</span> <span class="o">=</span> <span class="n">oauth</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">USER_TIME_LINE_URL</span><span class="p">,</span> <span class="n">params</span> <span class="o">=</span> <span class="n">params</span><span class="p">)</span>
+    <span class="c1"># Check response</span>
+    <span class="k">if</span> <span class="n">req</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
+        <span class="n">timeline</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">req</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">print</span> <span class="p">(</span><span class="s2">"Error: </span><span class="si">%d</span><span class="s2">"</span> <span class="o">%</span> <span class="n">req</span><span class="o">.</span><span class="n">status_code</span><span class="p">)</span>
+    <span class="c1"># display timeline</span>
+    <span class="k">for</span> <span class="n">tweet</span> <span class="ow">in</span> <span class="n">timeline</span><span class="p">:</span>
+        <span class="n">dt</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">tweet</span><span class="p">[</span><span class="s1">'created_at'</span><span class="p">],</span><span class="s1">'%a %b </span><span class="si">%d</span><span class="s1"> %H:%M:%S +0000 %Y'</span><span class="p">)</span>
+        <span class="c1">#dt.replace(tzinfo=dateutil.tz.tzutc()).astimezone(dateutil.tz.tzlocal())</span>
+        <span class="n">created_at</span> <span class="o">=</span> <span class="n">tz_tokyo</span><span class="o">.</span><span class="n">fromutc</span><span class="p">(</span><span class="n">dt</span><span class="p">)</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">'%Y-%m-</span><span class="si">%d</span><span class="s1"> %H:%M:%S'</span><span class="p">)</span>
+        <span class="k">print</span> <span class="s2">"[</span><span class="si">%s</span><span class="s2">]"</span> <span class="o">%</span> <span class="n">created_at</span> <span class="p">,</span>
+        <span class="k">print</span> <span class="n">tweet</span><span class="p">[</span><span class="s2">"text"</span><span class="p">]</span>
+<span class="k">def</span> <span class="nf">show_home_timeline</span><span class="p">(</span><span class="n">oauth</span><span class="p">):</span>
+    <span class="n">params</span> <span class="o">=</span> <span class="o">&amp;</span><span class="c1">#123;&amp;#125;</span>
+    <span class="n">req</span> <span class="o">=</span> <span class="n">oauth</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">HOME_TIME_LINE_URL</span><span class="p">,</span> <span class="n">params</span> <span class="o">=</span> <span class="n">params</span><span class="p">)</span>
+    <span class="c1"># Check response</span>
+    <span class="k">if</span> <span class="n">req</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
+        <span class="n">timeline</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">req</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">print</span> <span class="p">(</span><span class="s2">"Error: </span><span class="si">%d</span><span class="s2">"</span> <span class="o">%</span> <span class="n">req</span><span class="o">.</span><span class="n">status_code</span><span class="p">)</span>
+    <span class="c1"># display timeline</span>
+    <span class="k">for</span> <span class="n">tweet</span> <span class="ow">in</span> <span class="n">timeline</span><span class="p">:</span>
+        <span class="c1"># i.g. Sat Apr 11 06:10:12 +0000 2015</span>
+        <span class="n">dt</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">tweet</span><span class="p">[</span><span class="s1">'created_at'</span><span class="p">],</span><span class="s1">'%a %b </span><span class="si">%d</span><span class="s1"> %H:%M:%S +0000 %Y'</span><span class="p">)</span>
+        <span class="c1">#dt.replace(tzinfo=dateutil.tz.tzutc()).astimezone(dateutil.tz.tzlocal())</span>
+        <span class="n">created_at</span> <span class="o">=</span> <span class="n">tz_tokyo</span><span class="o">.</span><span class="n">fromutc</span><span class="p">(</span><span class="n">dt</span><span class="p">)</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">'%Y-%m-</span><span class="si">%d</span><span class="s1"> %H:%M:%S'</span><span class="p">)</span>
+        <span class="k">print</span> <span class="s2">"[</span><span class="si">%s</span><span class="s2">]"</span> <span class="o">%</span> <span class="n">created_at</span> <span class="p">,</span>
+        <span class="k">print</span> <span class="s2">"@</span><span class="si">%s</span><span class="s2"> :"</span> <span class="o">%</span> <span class="n">tweet</span><span class="p">[</span><span class="s2">"user"</span><span class="p">][</span><span class="s2">"screen_name"</span><span class="p">]</span> <span class="p">,</span>
+        <span class="k">print</span> <span class="n">tweet</span><span class="p">[</span><span class="s2">"text"</span><span class="p">]</span>
+<span class="k">def</span> <span class="nf">post_tweet</span><span class="p">(</span><span class="n">oauth</span><span class="p">,</span><span class="n">args</span><span class="p">):</span>
+    <span class="n">params</span> <span class="o">=</span> <span class="o">&amp;</span><span class="c1">#123;"status":args.tweet&amp;#125;</span>
+    <span class="n">req</span> <span class="o">=</span> <span class="n">oauth</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">POST_STATUS_UPDATE</span><span class="p">,</span> <span class="n">params</span> <span class="o">=</span> <span class="n">params</span><span class="p">)</span>
+    <span class="c1"># Check response</span>
+    <span class="k">if</span> <span class="n">req</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
+        <span class="k">print</span> <span class="s2">"OK"</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">print</span> <span class="p">(</span><span class="s2">"Error: </span><span class="si">%d</span><span class="s2">"</span> <span class="o">%</span> <span class="n">req</span><span class="o">.</span><span class="n">status_code</span><span class="p">)</span>
+<span class="c1"># main flow</span>
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
+    <span class="c1"># Get args</span>
+    <span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s1">'twitter command line tool'</span><span class="p">)</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">'command'</span><span class="p">)</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">'-s'</span><span class="p">,</span> <span class="s1">'--screen_name'</span><span class="p">)</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">'-t'</span><span class="p">,</span> <span class="s1">'--tweet'</span><span class="p">)</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">'-v'</span><span class="p">)</span>    <span class="c1"># Display the request body</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">'--version'</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s1">'version'</span><span class="p">,</span> <span class="n">version</span><span class="o">=</span><span class="s1">'</span><span class="si">%(prog)s</span><span class="s1"> 2.0'</span><span class="p">)</span>
+    <span class="n">args</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_args</span><span class="p">()</span>
+    <span class="c1"># OAuth</span>
+    <span class="n">oauth</span> <span class="o">=</span> <span class="n">OAuth1Session</span><span class="p">(</span><span class="n">CK</span><span class="p">,</span> <span class="n">CS</span><span class="p">,</span> <span class="n">AT</span><span class="p">,</span> <span class="n">AS</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">args</span><span class="o">.</span><span class="n">command</span> <span class="o">==</span> <span class="s2">"home"</span><span class="p">:</span>
+        <span class="n">show_home_timeline</span><span class="p">(</span><span class="n">oauth</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">args</span><span class="o">.</span><span class="n">command</span> <span class="o">==</span> <span class="s2">"timeline"</span><span class="p">:</span>
+        <span class="n">show_user_timeline</span><span class="p">(</span><span class="n">oauth</span><span class="p">,</span><span class="n">args</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">args</span><span class="o">.</span><span class="n">command</span> <span class="o">==</span> <span class="s2">"tweet"</span><span class="p">:</span>
+        <span class="n">post_tweet</span><span class="p">(</span><span class="n">oauth</span><span class="p">,</span><span class="n">args</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">show_home_timeline</span><span class="p">(</span><span class="n">oauth</span><span class="p">)</span>
+</pre></div>
+<p>動かしてみた</p>
+<p>自分のタイムライン</p>
+<div class="codehilite"><pre><span></span>$ ./twc.py home
+</pre></div>
+<p>@okusama27のタイムライン</p>
+<div class="codehilite"><pre><span></span>$ ./twc.py --screen_name okusama27 timeline
+</pre></div>
+<p>Tweetの投稿</p>
+<div class="codehilite"><pre><span></span>$ ./twc.py --tweet Hello,Python tweet
+</pre></div>
+<p><img alt="デモ" src="/static/images/old/13ad12cfd18aff7dd616870abf39dcba-300x108.png"/></p>
+<p>とりあえず、自分のhomeのTLと指定アカウントのみTLを見るところを作りました。</p>
+<p>created_atのtimezoneをJSTにしたかっただけなのにハマりました。。。orz
+そして、教えていただきました #＾＾#
+エラー処理も何もせず。。うーん。</p>
+<ul>
+<li>感想１：もっと慣れないとPythonistには程遠い。。。</li>
+<li>感想２：Javadocみたいなの見たい。（あるのかな？あるよね。。）</li>
+<li>感想３：戻り値のクラスを知りたい。</li>
+</ul>
+<p>以下は疑問点ですが、後ほど調べます。。。</p>
+<ul>
+<li>疑問１：C++のヘッダーファイルみたいなの作れます？　メソッドの一覧とかだけ書いてあるファイルあるのか？コンパイルしないからいらないか。。</li>
+<li>疑問２：pydocみたいなのを出すためのコメントの書き方とかある？</li>
+</ul>
+<p>あと、後悔
+- 後悔１：テストコード書きたかった
+- 後悔２：eggとかにしたかった。
+- 後悔３：同じこと２回も書いている！！</p>
+<p>抱負：GWまでにはGithubで公開できるように続けて頑張ります。</p></div>
+    
+  </div>
+
+  <div class="index-pagination">
+    
+      <a class="index-navi"
+         href="index_27.html">&larr;</a>
+    
+    
+    
+      <a class="index-navi"
+         href="index_29.html">&rarr;</a>
+    
+  </div>
+
+
+    </div>
+    <aside class="container-right">
+
+      カテゴリ:
+        
+      <ul>
+        
+          <li>
+            <a href="index_category_category_Advent@20Calendar.html">
+              Advent Calendar
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Book.html">
+              Book
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Event.html">
+              Event
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Git.html">
+              Git
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_OS.html">
+              OS
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Other.html">
+              Other
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_PyCon@20JP.html">
+              PyCon JP
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_PyLadies.html">
+              PyLadies
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Python.html">
+              Python
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Sphinx.html">
+              Sphinx
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Web.html">
+              Web
+            </a>
+          </li>
+        
+      </ul>
+      <div>
+        <br><br>
+        <a href="//af.moshimo.com/af/c/click?a_id=767877&p_id=1166&pc_id=1793&pl_id=20229&guid=ON" target="_blank" rel="nofollow"><img src="//image.moshimo.com/af-img/0408/000000020229.png" width="250" height="250" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=767877&p_id=1166&pc_id=1793&pl_id=20229" width="1" height="1" style="border:none;">
+        <br>
+        <a href="//af.moshimo.com/af/c/click?a_id=767877&p_id=1166&pc_id=1793&pl_id=17971&guid=ON" target="_blank" rel="nofollow"><img src="//image.moshimo.com/af-img/0408/000000017971.png" width="250" height="250" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=767877&p_id=1166&pc_id=1793&pl_id=17971" width="1" height="1" style="border:none;">
+      </div>
+    </aside>
+  </div>
+
+</div>
+
+</body>
+</html>

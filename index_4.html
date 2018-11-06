@@ -26,77 +26,164 @@
   <div class="articles">
     
       <div class="article-metadata">
-    <span class="article-date"> 2017-12-30 </span>
-    <span> Other </span>
-    <span> Other </span>
+    <span class="article-date"> 2018-03-03 </span>
+    <span> Sphinx </span>
+    <span> Sphinx </span>
   </div>
-      <h2 class="article-title"><a href="2017/2017-12-30-article.html">自社サービス開発の話</a></h2>
-      <div class="article-body"><p>今年の総まとめとして、自社サービスの開発に関われた話を書きます。</p>
-<div class="header_target" id="h_2017_2017_2d12_2d30_2darticle_2emd_1"></div><h1>プロローグ</h1>
+      <h2 class="article-title"><a href="2018/2018-03-03-article.html">Markdownにmetaタグを入れる</a></h2>
+      <div class="article-body"><p>Sphinx使ってますか？私は結構使っています。</p>
+<p>今日はHTMLの全ページにmetaタグを入れた話です。</p>
+<p>HTMLには目に見えている以外にその文書の情報を持たせられます。それがmetaタグです。
+前ページに <code>その文書の説明（description）</code> をもたせようと思いました。</p>
+<p>同僚に聞いたら、 <a href="http://www.sphinx-doc.org/ja/stable/config.html">rst_prolog</a> というのがあるみたいです。ファイルの先頭に指定した文字列を追加してくれます。
+しかし、実行しても <code>reSturucturedText</code> ファイルにしか追加されません。</p>
+<p>調べると、 <a href="https://github.com/sphinx-doc/sphinx/issues/2445">Use rst_prolog and rst_epilog only for rst files? #2445</a> で、<code>reSturucturedText</code> にしか追加されないように修正されている。</p>
+<p>終わった。</p>
+<p>そんなわけで、テンプレートでhead部分を修正する方法もわからなかったので、Sphinxユーザー会のSlackに聞きに行きました。</p>
+<p><a href="http://sphinx-users.jp/">Sphinx-Users.jp</a> から、誰でも参加できます。
+みなさんとてもいい人です。なに言っているかわからないこともたくさんありますが、オープンソースってこーやって話し合われているのねーと参考にもなります。</p>
+<p>相談したら、そもそも私は、MarkDownを利用するために <code>recommonmark.parser.CommonMarkParser</code> というSphinxの標準じゃないライブラリを使っていたのです！！</p>
+<p>ガッテム！</p>
+<p>そんなの相談されても困りますね。とほほ。と思っていたら、<a href="https://twitter.com/tk0miya">@tk0miya</a>さんがスクリプトを書いてくださいました。</p>
+<p>これを <code>conf.py</code> に追加しました。</p>
+<div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">on_source_read</span><span class="p">(</span><span class="n">app</span><span class="p">,</span> <span class="n">docname</span><span class="p">,</span> <span class="n">source</span><span class="p">):</span>
+    <span class="n">filename</span> <span class="o">=</span> <span class="n">app</span><span class="o">.</span><span class="n">env</span><span class="o">.</span><span class="n">doc2path</span><span class="p">(</span><span class="n">docname</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">filename</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">'.md'</span><span class="p">):</span>
+        <span class="n">source</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">app</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">md_prolog</span> <span class="o">+</span> <span class="s2">"</span><span class="se">\n\n</span><span class="s2">"</span> <span class="o">+</span> <span class="n">source</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+
+<span class="k">def</span> <span class="nf">setup</span><span class="p">(</span><span class="n">app</span><span class="p">):</span>
+    <span class="n">app</span><span class="o">.</span><span class="n">add_config_value</span><span class="p">(</span><span class="s1">'md_prolog'</span><span class="p">,</span> <span class="s1">''</span><span class="p">,</span> <span class="s1">'env'</span><span class="p">)</span>
+    <span class="n">app</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">'source-read'</span><span class="p">,</span> <span class="n">on_source_read</span><span class="p">)</span>
+</pre></div>
+<p>ありがたや〜。</p>
+<p>これで、さらに <code>conf.py</code> にこんな感じで追加しました。</p>
+<div class="codehilite"><pre><span></span><span class="n">md_prolog</span><span class="o">=</span><span class="s2">"""</span>
+<span class="s2">｀｀｀eval_rst</span>
+<span class="s2">.. meta::</span>
+<span class="s2">   :description: 説明</span>
+<span class="s2">｀｀｀</span>
+<span class="s2">"""</span>
+</pre></div>
+<p>(内部のバッククォートは全角になっています＞＜)</p>
+<p>親切なSphinxコミュニティーの皆様ありがとうございました！！</p>
+<p>ブログ書いていいよ！と言っていただいたので、書きました。これからも使っていきます。</p></div>
+    
+      <div class="article-metadata">
+    <span class="article-date"> 2018-02-22 </span>
+    <span> PyLadies </span>
+    <span> PyLadies </span>
+  </div>
+      <h2 class="article-title"><a href="2018/2018-02-22-article.html">PyLadies「テストをまなぼう」に登壇しました</a></h2>
+      <div class="article-body"><p>今日は、<a href="https://pyladies-tokyo.connpass.com/event/76967/">PyLadies Tokyo Meetup #29 テストをまなぼう</a> で、登壇しました。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p dir="ltr" lang="ja">PyLadies Tokyo Meetup #29 テストをまなぼう を公開しました！ <a href="https://t.co/szes8XI1Nc">https://t.co/szes8XI1Nc</a> <a href="https://twitter.com/hashtag/PyLadiesTokyo?src=hash&amp;ref_src=twsrc%5Etfw">#PyLadiesTokyo</a></p>— せりーな(se-lina) (@se_lina08) <a href="https://twitter.com/se_lina08/status/956457045237972992?ref_src=twsrc%5Etfw">2018年1月25日</a></blockquote>
+<script async="" charset="utf-8" src="https://platform.twitter.com/widgets.js"></script>
+<div class="header_target" id="h_2018_2018_2d02_2d22_2darticle_2emd_1"></div><h2>オファー</h2>
+<p>ことの発端は、<a href="http://kamekokamekame.net/pyladies/2017/11/04/article.html">PyLadies Tokyo 秋合宿 2017</a> でした。</p>
+<p><strong>亀「最近、仕事で結構テストばっかり書いてますよ〜」</strong></p>
+<p><strong>Ma「ほー。PyLadiesでテストテーマに登壇しない？」</strong></p>
+<p><strong>亀「いぇーい！」</strong></p>
+<p><strong>Ma「いぇーい！」</strong></p>
+<p>※ Maは <a href="https://twitter.com/maaya8585">まーや(Maaya)</a>さん</p>
+<p>という感じで、ノリで受けてしまいました。テヘッ。</p>
+<div class="header_target" id="h_2018_2018_2d02_2d22_2darticle_2emd_2"></div><h2>現状把握</h2>
+<p>仕事でテストをたくさん書いていたのは本当です。しかし、誰かにテストについて話せるかと言われれば完全にNOでした。</p>
+<p>そんなわけで安請け合いしてしまったので、勉強することにしました。まずは本を読んで勉強しよう！と思ったのですが、 <strong>テストって書き方の紹介くらいで詳しく書いてある本がほとんどない（汗）</strong> という事実に気が付きました。</p>
+<div class="header_target" id="h_2018_2018_2d02_2d22_2darticle_2emd_3"></div><h2>勉強開始</h2>
+<p>そんなか、ちょうど、<a href="https://www.amazon.co.jp/dp/4274217884/">テスト駆動開発</a>が再翻訳されて再出版された直後だったので早速購入しました。</p>
+<p><img alt="テスト駆動開発" src="/static/images/2018/02/tdd_book.png"/></p>
+<p>サンプルが途中までJavaだったので、<a href="https://github.com/okusama27/books_code_of_python/tree/master/test_driven_development">Pythonで書き換えながら</a>勉強しました。
+かなりわかりやすい本ですね。この本1冊やるとテスト駆動開発の考えが身につきます。</p>
+<p>t_wadaさんの動画もPyLadiesのメンバーの方に教えていただいたので見ました。</p>
+<p><a href="https://channel9.msdn.com/Events/de-code/2017/DO03">50 分でわかるテスト駆動開発</a></p>
+<p>結局、テスト駆動開発だとPython感が薄いかなと思って、以下の本も勉強しました。</p>
+<p><a href="https://www.amazon.co.jp/dp/4774177075/">Pythonライブラリ厳選レシピ</a></p>
+<p><img alt="Pythonライブラリ厳選レシピ" src="/static/images/2018/02/python_lib.png"/></p>
+<p><a href="https://www.amazon.co.jp/dp/4873118166/">初めての自動テスト ―Webシステムのための自動テスト基礎</a></p>
+<p><img alt="初めての自動テスト" src="/static/images/2018/02/auto_test.png"/></p>
+<p><a href="https://www.amazon.co.jp/dp/4873115655/">リーダブルコード</a></p>
+<p><img alt="リーダブルコード" src="/static/images/2018/02/readablecode.png"/></p>
+<p>勉強しながら、ブログも書きました。</p>
 <ul>
-<li>2012年: 旦那が会社を辞めてしまい、まったり個人事業主として働いていた私に転機が！家族を養うためにSIerに転職。</li>
-<li>2015年: SIerといいつつ他の会社と協業して、そこの製品の支援をしたりユーザー側で開発会社に物申す的な仕事が続いたので、開発案件をやりたくて転職を決意</li>
-<li>2015年3月: 勉強会に参加しまくって、たまたま行ったPythonで仕事したい人の集いで社長と会う</li>
-<li>2015年8月: 現在の会社にジョイン</li>
+<li><a href="http://kamekokamekame.net/advent_calendar/2017/12/18/article.html">Pythonでテストしたい</a></li>
+<li><a href="http://kamekokamekame.net/python/2017/12/10/article.html">doctestを触ってみた</a></li>
+<li><a href="http://kamekokamekame.net/python/2017/12/11/article.html">unittestの公式ドキュメントを読んでみた</a></li>
+<li><a href="http://kamekokamekame.net/python/2017/12/12/article.html">unittestのテスト前後に実行される処理の確認</a></li>
+<li><a href="http://kamekokamekame.net/python/2017/12/16/article.html">unittest.mock.MagicMockを使ってみる</a></li>
+<li><a href="http://kamekokamekame.net/python/2017/12/17/article.html">unittest.mock.patchを使ってみる（デコレータ）</a></li>
+<li><a href="http://kamekokamekame.net/python/2017/12/19/article.html">unittest.mock.patchを使ってみる（コンテキストマネージャ）</a></li>
+<li><a href="http://kamekokamekame.net/python/2017/12/21/article.html">pytestを使ってみる</a></li>
 </ul>
-<div class="header_target" id="h_2017_2017_2d12_2d30_2darticle_2emd_2"></div><h1>入社後の話</h1>
-<p>はじめは受託案件にアサインされました。久しぶりに自分で要件定義して、仕様決めて、開発して、テストして、運用開始してという一連の開発の流れができて嬉しかったです。Pythonでの開発に慣れていないのと、レガシーな開発方法しか知らなかったんでチームメンバーには結構迷惑をかけました。</p></div>
+<p>くろはこ先生のブログも読みました。</p>
+<ul>
+<li><a href="http://note.crohaco.net/2016/python-pytest/">[Python] 初中級者のためのpytest入門 - くろのて</a></li>
+<li><a href="http://note.crohaco.net/2015/python-mock/">[python] まだmockで消耗してるの？mockを理解するための3つのポイント - くろのて</a></li>
+</ul>
+<div class="header_target" id="h_2018_2018_2d02_2d22_2darticle_2emd_4"></div><h2>不安な日々と魔法の言葉</h2>
+<p>不安だ。どうしよう。資料が作れない。と、当初は全く書けませんでした。
+しかし、資料の最初に <strong>魔法の言葉</strong> を書いたらスラスラと筆が進みました。以下、魔法の言葉。</p>
+<hr/>
+<p>誤解されないように言っておきたいことがあります。せっかく来てくれたのにゴメンナサイ。</p>
+<div class="header_target" id="h_2018_2018_2d02_2d22_2darticle_2emd_5"></div><h3>私、そんなにテスト詳しくないです！</h3>
+<p>仕事で普通に書くくらい。レビューに出したらいろいろ指摘を受けます。</p>
+<p>このイベントのオファーが来たので、渡りに船！と思い勉強しました。
+私も目的がないと何もしない人なので、勉強の理由をいつも探しています。
+良い機会をいただけて、PyLadiesに感謝しています。</p>
+<p>皆様も次のイベントで興味がある事の講師をやってみてはどうでしょうか。圧倒的に成長できます。</p>
+<p>尊敬する<a href="https://twitter.com/tokibito">tokibitoさん</a>が言いました。 <strong>「勉強すればできる」</strong> と。</p>
+<p>今日、解決しなかったら、一緒に勉強していきましょう！</p>
+<hr/>
+<p>別に講師だからって全知全能の神である必要はないんです。できる範囲で価値を生み出せたらいいんです。この話を主張したおかげで、次のMeetupの講師の依頼を受けてくれる人も出たようでよかったです。</p>
+<p>（PyLadiesの） <strong>イベント駆動学習</strong> ですね。この流れが広まっていくといいですね。</p>
+<div class="header_target" id="h_2018_2018_2d02_2d22_2darticle_2emd_6"></div><h2>喉の調子が。。</h2>
+<p>しかし、緊張と花粉症と風邪治りかけのため、喉の調子が良くなくてマスクをして挑んですいませんでした。PyLadiesのシャツも来ていくの忘れるし、緊張しすぎですね。次はもっとうまくできると思う。たぶん。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p dir="ltr" lang="ja">続いて、<a href="https://twitter.com/okusama27?ref_src=twsrc%5Etfw">@okusama27</a> のセッションです。Pythonでの単体試験とハンズオン 始まりました！ <a href="https://twitter.com/hashtag/PyLadiesTokyo?src=hash&amp;ref_src=twsrc%5Etfw">#PyLadiesTokyo</a> <a href="https://t.co/ZeQmiwbEyw">pic.twitter.com/ZeQmiwbEyw</a></p>— PyLadiesTokyo (@PyLadiesTokyo) <a href="https://twitter.com/PyLadiesTokyo/status/966629973686591489?ref_src=twsrc%5Etfw">2018年2月22日</a></blockquote>
+<script async="" charset="utf-8" src="https://platform.twitter.com/widgets.js"></script>
+<p>これが前回書いた2月も忙しかった理由です。</p>
+<p>すべての予定が終わって、緊張の糸が切れたので、今度は後回しにしておいた翻訳に挑戦していこうと思います。</p>
+<div class="header_target" id="h_2018_2018_2d02_2d22_2darticle_2emd_7"></div><h2>最後に</h2>
+<p>このような機会を与えてくださったPyLadies Tokyoのスタッフの皆様。おいでいただいた方々。快く会場を提供していただいたビープラウドの皆様。ありがとうございました！！</p></div>
     
       <div class="article-metadata">
-    <span class="article-date"> 2017-12-29 </span>
+    <span class="article-date"> 2018-02-17 </span>
     <span> Book </span>
     <span> Book </span>
   </div>
-      <h2 class="article-title"><a href="2017/2017-12-29-article.html">達人プログラマーを読んでみた−43. 容赦ないテスト</a></h2>
-      <div class="article-body"><p>「達人プログラマー」の容赦ないテストを読みます。</p>
-<p><a href="https://www.amazon.co.jp/%E6%96%B0%E8%A3%85%E7%89%88-%E9%81%94%E4%BA%BA%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9E%E3%83%BC-%E8%81%B7%E4%BA%BA%E3%81%8B%E3%82%89%E5%90%8D%E5%8C%A0%E3%81%B8%E3%81%AE%E9%81%93-Andrew-Hunt/dp/427421933X/ref=as_li_ss_il?ie=UTF8&amp;qid=1514636620&amp;sr=8-1&amp;keywords=%E9%81%94%E4%BA%BA%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9E%E3%83%BC&amp;linkCode=li2&amp;tag=ironhotcom-22&amp;linkId=75181be5d3d6e6fb07275ce348c31c07" target="_blank"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=427421933X&amp;Format=_SL160_&amp;ID=AsinImage&amp;MarketPlace=JP&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=ironhotcom-22"/></a><img alt="" border="0" height="1" src="https://ir-jp.amazon-adsystem.com/e/ir?t=ironhotcom-22&amp;l=li2&amp;o=9&amp;a=427421933X" style="border:none !important; margin:0px !important;" width="1"/></p>
-<p>以下は、読んだ私の感想を書いているので本の内容そのものではありません。</p>
-<div class="header_target" id="h_2017_2017_2d12_2d29_2darticle_2emd_1"></div><h2>43. 容赦ないテスト</h2>
-<p><strong>早めにテスト、何度もテスト、自動でテスト</strong> </p>
-<p>今年は私の中でテストの地位が上がった一年でした。テストがないと夜も安心して寝られません。人生で一番テストを書いた1年でした。しかし、行き当たりばったりで書いていたことも多かったので来年はテストの理論やよりより設計を学んでいこうと思います。</p>
-<p><a href="https://www.amazon.co.jp/%E3%83%86%E3%82%B9%E3%83%88%E9%A7%86%E5%8B%95%E9%96%8B%E7%99%BA-%EF%BC%AB%EF%BD%85%EF%BD%8E%EF%BD%94%EF%BC%A2%EF%BD%85%EF%BD%83%EF%BD%8B-ebook/dp/B077D2L69C/ref=as_li_ss_il?ie=UTF8&amp;qid=1514723724&amp;sr=8-1&amp;keywords=%E3%83%86%E3%82%B9%E3%83%88%E9%A7%86%E5%8B%95%E9%96%8B%E7%99%BA&amp;linkCode=li2&amp;tag=ironhotcom-22&amp;linkId=4dbe20431bc07078dca37f68ae995a73" target="_blank"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=B077D2L69C&amp;Format=_SL160_&amp;ID=AsinImage&amp;MarketPlace=JP&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=ironhotcom-22"/></a><img alt="" border="0" height="1" src="https://ir-jp.amazon-adsystem.com/e/ir?t=ironhotcom-22&amp;l=li2&amp;o=9&amp;a=B077D2L69C" style="border:none !important; margin:0px !important;" width="1"/></p>
-<p>この本もまだざっと読んだだけなので読んでいきます。</p></div>
-    
-      <div class="article-metadata">
-    <span class="article-date"> 2017-12-28 </span>
-    <span> Book </span>
-    <span> Book </span>
-  </div>
-      <h2 class="article-title"><a href="2017/2017-12-28-article.html">達人プログラマーを読んでみた−34．テストしやすいコード2</a></h2>
-      <div class="article-body"><p>「達人プログラマー」のテストしやすいコードを読みます。</p>
-<p><a href="https://www.amazon.co.jp/%E6%96%B0%E8%A3%85%E7%89%88-%E9%81%94%E4%BA%BA%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9E%E3%83%BC-%E8%81%B7%E4%BA%BA%E3%81%8B%E3%82%89%E5%90%8D%E5%8C%A0%E3%81%B8%E3%81%AE%E9%81%93-Andrew-Hunt/dp/427421933X/ref=as_li_ss_il?ie=UTF8&amp;qid=1514636620&amp;sr=8-1&amp;keywords=%E9%81%94%E4%BA%BA%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9E%E3%83%BC&amp;linkCode=li2&amp;tag=ironhotcom-22&amp;linkId=75181be5d3d6e6fb07275ce348c31c07" target="_blank"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=427421933X&amp;Format=_SL160_&amp;ID=AsinImage&amp;MarketPlace=JP&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=ironhotcom-22"/></a><img alt="" border="0" height="1" src="https://ir-jp.amazon-adsystem.com/e/ir?t=ironhotcom-22&amp;l=li2&amp;o=9&amp;a=427421933X" style="border:none !important; margin:0px !important;" width="1"/></p>
-<p>以下は、読んだ私の感想を書いているので本の内容そのものではありません。</p>
-<div class="header_target" id="h_2017_2017_2d12_2d28_2darticle_2emd_1"></div><h2>34. テストしやすいコード</h2>
-<div class="header_target" id="h_2017_2017_2d12_2d28_2darticle_2emd_2"></div><h3>テスト装備を使用する</h3>
-<p><strong>テスト装備</strong> ってなんでしょ？</p>
-<p>「プロジェクトの標準としてテスト装備を開発しておくのが良いでしょう。」と書いてあるのでコーディング規約とか、チームの決まりとかなのかな？</p>
-<p>Javaで各クラスにmainを書いておいてユニットテスト用のコードを用意しておくと便利みたいです。確かにファイル単位で動かせるようにして、そこにテストを書いておくのは良さそうです。</p></div>
-    
-      <div class="article-metadata">
-    <span class="article-date"> 2017-12-27 </span>
-    <span> Book </span>
-    <span> Book </span>
-  </div>
-      <h2 class="article-title"><a href="2017/2017-12-27-article.html">達人プログラマーを読んでみた−34．テストしやすいコード1</a></h2>
-      <div class="article-body"><p>「達人プログラマー」のテストしやすいコードを読みます。</p>
-<p><a href="https://www.amazon.co.jp/%E6%96%B0%E8%A3%85%E7%89%88-%E9%81%94%E4%BA%BA%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9E%E3%83%BC-%E8%81%B7%E4%BA%BA%E3%81%8B%E3%82%89%E5%90%8D%E5%8C%A0%E3%81%B8%E3%81%AE%E9%81%93-Andrew-Hunt/dp/427421933X/ref=as_li_ss_il?ie=UTF8&amp;qid=1514636620&amp;sr=8-1&amp;keywords=%E9%81%94%E4%BA%BA%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9E%E3%83%BC&amp;linkCode=li2&amp;tag=ironhotcom-22&amp;linkId=75181be5d3d6e6fb07275ce348c31c07" target="_blank"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=427421933X&amp;Format=_SL160_&amp;ID=AsinImage&amp;MarketPlace=JP&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=ironhotcom-22"/></a><img alt="" border="0" height="1" src="https://ir-jp.amazon-adsystem.com/e/ir?t=ironhotcom-22&amp;l=li2&amp;o=9&amp;a=427421933X" style="border:none !important; margin:0px !important;" width="1"/></p>
-<p>以下は、読んだ私の感想を書いているので本の内容そのものではありません。</p>
-<div class="header_target" id="h_2017_2017_2d12_2d27_2darticle_2emd_1"></div><h2>34. テストしやすいコード</h2>
-<p>関数は何かデータを入力して、出力するものです。この契約を守れる関数かどうかを確認するテストがユニットテストです。</p>
-<p>最近、興味があるので、来年は <a href="http://xunitpatterns.com/">index at XUnitPatterns.com</a> を読んでいこうと考えています。
-本もあるみたいですが、PDF版を買おうとしたらアダルト系決済サイトの入力画面が出てきたので、萎えてます。amazonで買うと2倍のお値段。しかもkindle。悩む。</p></div>
-    
-      <div class="article-metadata">
-    <span class="article-date"> 2017-12-26 </span>
-    <span> Book </span>
-    <span> Book </span>
-  </div>
-      <h2 class="article-title"><a href="2017/2017-12-26-article.html">情熱プログラマーを読んでみた</a></h2>
-      <div class="article-body"><p>「達人プログラマー」を買ったついでに似ているタイトルだったので買いました。こちらは感情や、モチベーション維持、チームメンバーとうまくやっていく方法が書いてありました。</p>
-<p>冒頭に <strong>この本は自分のキャリアにおいて充足感と幸福感を得るためのものである。</strong> と書いてあります。上を見たらキリがない状態で、自分を保って自分の仕事を愛するにはどうすればいいのでしょうか？この悩みを解決してくれる一冊ではないかと思います。</p>
-<iframe frameborder="0" marginheight="0" marginwidth="0" scrolling="no" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=ironhotcom-22&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=4274067939&amp;linkId=c5552c0809c23f2a33e68c475cd504c5" style="width:120px;height:240px;"></iframe>
-<p><strong>この本は退屈しない人生を送りたいという思いを育むためのものでもある。</strong> とも書いてあります。</p>
-<p>簡単な同じようなことを続けるとすぐに飽きてしまいますが、難しいことをやり続けるとストレスが溜まっていきます。失敗して悲しい気持ちにもなります。そんなときにどうしたらいいのでしょうか。</p></div>
+      <h2 class="article-title"><a href="2018/2018-02-17-article.html">独学プログラマーが発売されるってよ！</a></h2>
+      <div class="article-body"><p>2018年2月23日に<a href="http://ec.nikkeibp.co.jp/item/books/C92270.html">独学プログラマー</a>という本が発売されます。</p>
+<p><img alt="独学プログラマー" src="/static/images/2018/02/dokugaku.png"/></p>
+<p>献本頂きました！</p>
+<p>なんで献本していただけたかというと、レビューアーだからです。(｀・ω・´)ｂ</p>
+<p>その話の前に本の紹介をします。</p>
+<p>Pythonを学ぶ本というよりは、どうやってエンジニアになるのか？なにを学んでいくのが大事なのか？的な本です。
+エンジニアを目指す方や学生さんはこの本を最初に読んでモチベーションを限界まで高めてから、さらに一つ一つの分野を深く学んでいくと良いと思います。
+有名エンジニアの名言も載っているのでグッグとモチベーションがあがります！！</p>
+<p>更なる本の紹介は、監訳者の清水川さんのブログを見よう。（丸投げ）</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p dir="ltr" lang="ja">Blog書きました。 『独学プログラマー』 The Self-Taught Programmer の紹介 <a href="https://t.co/yVaXHNpZHn">https://t.co/yVaXHNpZHn</a> - 清水川Web</p>— Takayuki Shimizukawa (@shimizukawa) <a href="https://twitter.com/shimizukawa/status/964270872868433920?ref_src=twsrc%5Etfw">2018年2月15日</a></blockquote>
+<script async="" charset="utf-8" src="https://platform.twitter.com/widgets.js"></script>
+<blockquote class="twitter-tweet" data-lang="ja"><p dir="ltr" lang="ja">Blog書きました。 『独学プログラマー』 の見本誌が届いた！ <a href="https://t.co/FHWHKLTOPz">https://t.co/FHWHKLTOPz</a> - 清水川Web</p>— Takayuki Shimizukawa (@shimizukawa) <a href="https://twitter.com/shimizukawa/status/964432939307057154?ref_src=twsrc%5Etfw">2018年2月16日</a></blockquote>
+<script async="" charset="utf-8" src="https://platform.twitter.com/widgets.js"></script>
+<p>本が出るとこんなに嬉しそうなのですね。しゅごい。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p dir="ltr" lang="ja">見本を手にご満悦の監訳者近影です <a href="https://twitter.com/hashtag/%E7%8B%AC%E3%83%97%E3%83%AD?src=hash&amp;ref_src=twsrc%5Etfw">#独プロ</a> (@ 株式会社ビープラウド - <a href="https://twitter.com/beproud_jp?ref_src=twsrc%5Etfw">@beproud_jp</a> in 渋谷区, 東京都) <a href="https://t.co/8ZHHjCMhCB">https://t.co/8ZHHjCMhCB</a> <a href="https://t.co/57EEkrXLQs">pic.twitter.com/57EEkrXLQs</a></p>— Takanori Suzuki (@takanory) <a href="https://twitter.com/takanory/status/964324289817272320?ref_src=twsrc%5Etfw">2018年2月16日</a></blockquote>
+<script async="" charset="utf-8" src="https://platform.twitter.com/widgets.js"></script>
+<p>思い起こせば2017年11月30日の昼下がりに清水川さんにスラックで打診されました。</p>
+<p><img alt="slack" src="/static/images/2018/02/dokugaku_2.png"/></p>
+<p>本のレビューアーは会社の仕事でやったことはあったのですが、プライベートでは初めてでした。翻訳で、原著の内容は変えられないみたいだし、誤字脱字、表現を修正すればいいのよね。という軽い気持ちで受けました。</p>
+<p>しかし、それは地獄のはじまりだったのです。</p>
+<p>なにが悪かったかというと受けた時期が悪かったです。
+この時、私は <strong>12月に毎日ブログを書くぜ！</strong> と強い決心をしていました。
+11月中に5本位書いていたのですが、とうとう12月になってしまう！！！！どーしよーーー！！という時期でした。</p>
+<p>ここから毎日、「レビューもしたい。ブログも書きたい。英語の勉強もしたい。」というプライベートの時間をどう使うのか葛藤する日々がはじまったのです。（大げさ）</p>
+<p>とりあえず、原著がKindle版で500円くらいだったので買って、会社帰りの電車で読み始めました。
+読んでびっくり。Pythonの初心者本だと思っていたらぜんぜん違う！！Bashとか、Package Managersとか書いてる。
+英語で名言的なの書いてあるよ！？ヒ～！ヒ～！ヒ～！</p>
+<p>安請け合いは良くないなと思いましたよ。(´・ω・｀)</p>
+<p>名言はいい訳をあてるのは難しいですね。普通のところも英語そのままってわけにもいかないところもあって、訳すのも大変だと思いました。</p>
+<p>でも、なんとかブログも毎日書けたし、レビューも最後までできたので、いい経験になりました。やって良かったです。</p>
+<p>その疲れが1月に出て、ブログも書けなかったです。2月は2月で忙しかったのですが、その話はまた別の機会に。</p>
+<p><strong>教訓：レビューも結構大変です</strong></p>
+<p>みんな買ってねー！</p>
+<p>清水川さんと新木さんは打ち上げに誘ってねー！！よろよろ！！</p></div>
     
   </div>
 

@@ -26,85 +26,70 @@
   <div class="articles">
     
       <div class="article-metadata">
-    <span class="article-date"> 2017-09-16 </span>
-    <span> Sphinx </span>
-    <span> Sphinx </span>
+    <span class="article-date"> 2017-12-16 </span>
+    <span> Python </span>
+    <span> Python </span>
   </div>
-      <h2 class="article-title"><a href="2017/2017-09-16-article.html">Sphinxでスライドを作りたい</a></h2>
-      <div class="article-body"><p>入社してから会社でSphinxを使って文書を書くことが増えたので、reStructuredTextもついでに覚えようと思いました。
-でも仕事中にいろいろ試している時間はないので、勉強会とかでLTするスライドとかブログに使えばいいじゃない。と考えて、使い始めました。</p>
-<p>ここ3,4年ほどはMarkdown一筋だったんですが、reStructuredTextも慣れるといろいろ微調整できて便利です。</p>
-<p>なんとなく2年間使ってきたんですが、せっかくPython製なのでもうちょっと勉強しようかなと思って、Sphinx ユーザーコミュニティのSlackに入りました。</p></div>
+      <h2 class="article-title"><a href="2017/2017-12-16-article.html">unittest.mock.MagicMockを使ってみる</a></h2>
+      <div class="article-body"><p>今日の内容は、<a href="http://kamekokamekame.net/advent_calendar/2017/12/18/article.html">Pythonでテストしたい</a>にまとめている内容の詳細部分です。</p>
+<p>unittest.mock.MagicMockを使ってみます。</p>
+<script src="https://gist.github.com/okusama27/62b683559439330ca50d34b01798ff26.js"></script>
+<p>20行目の <code>self.sample.method_1 = MagicMock(return_value='AAA')</code> この部分で、 <code>method_1</code> の戻り値を　'method_1'　から 'AAA' に変更しています。</p>
+<p>本来は通信結果返す、データベースの結果を返すメソッドに実際は通信しなくても結果を返してテストできるように使うようです。</p>
+<p><a href="https://docs.python.org/ja/3/library/unittest.mock.html#unittest.mock.MagicMock">公式ドキュメント</a>もどうぞ。</p></div>
     
       <div class="article-metadata">
-    <span class="article-date"> 2017-09-15 </span>
-    <span> PyCon JP </span>
-    <span> PyCon JP </span>
+    <span class="article-date"> 2017-12-15 </span>
+    <span> Python </span>
+    <span> Python </span>
   </div>
-      <h2 class="article-title"><a href="2017/2017-09-15-article.html">PyCon JP 2017 に参加しました。</a></h2>
-      <div class="article-body"><p>今年も <a href="https://pycon.jp/2017/ja/">PyCon JP 2017</a> に参加しました。</p>
-<p>仕事で感想とか書いたので自分のブログは脳内の楽しかった思い出を垂れ流します。</p>
-<div class="header_target" id="h_2017_2017_2d09_2d15_2darticle_2emd_1"></div><h2>恒例の写真</h2>
-<p><img alt="MONOTARO" src="/static/images/pyconjp2017/monotaro.png"/></p>
-<p>３年連続参加でした。そして、今年も企業ブースを出しました。
-私以外は社長とスピーカーという組み合わせのため、結構一人の時が多かったです。
-とはいえ、スピーカー陣も自分の発表でドキドキのはずなのにブースも頑張ってすごい～な。って思いました。
-来年はその立場になりたい！！</p>
-<p>1年前よりも知っている人も増えていて、参加するのがどんどん楽しくなるなぁと思いました。</p>
-<p>やはりPyCon といえばパーティーですよね。パーティー楽しかったです。
-日本酒を飲みすぎて、ちょっと二日酔いになっちゃいました。誰だよ日本酒をたくさん寄付した素晴らしいスポンサー様は！</p></div>
+      <h2 class="article-title"><a href="2017/2017-12-15-article.html">TogglとSlackを連携した話</a></h2>
+      <div class="article-body"><div class="header_target" id="h_2017_2017_2d12_2d15_2darticle_2emd_1"></div><h2>昨日までのあらすじ</h2>
+<p>そうだ! Togglで仕事を開始したら、Slackに通知しよう！</p>
+<p><img alt="toggl_slack" src="/static/images/picture201712/toggl_slack.png"/></p>
+<div class="header_target" id="h_2017_2017_2d12_2d15_2darticle_2emd_2"></div><h2>サービスを探そう！</h2>
+<p>最初は無料で通知できるサービスが無いか探しました。<a href="https://zapier.com/">Zapier</a>というサービスを見つけました。いろいろなサービスを連携するサービスのようです。</p>
+<p>使っていたのですが、1ヶ月100回までしか無料で使えず、1日5回。普通の人なら足りそうですが、私は1日でいろんなタスクを行ったり来たりするので、すぐに限界が来ました。(´；ω；｀)</p>
+<p>そんなわけで、探すのもめんどくさいので、自分でスクリプト書いて、PCのcronで動かせばいいじゃない！と思い、実装しました。</p>
+<div class="header_target" id="h_2017_2017_2d12_2d15_2darticle_2emd_3"></div><h2>Togglのトークンを取得</h2>
+<p>Togglの自分のアイコンあたりを押したら、profile settingsにAPI tokenというのがあるのでコピーします。</p>
+<div class="header_target" id="h_2017_2017_2d12_2d15_2darticle_2emd_4"></div><h2>slackのIncoming WebHooksのURLを取得</h2>
+<p>SlackのAppsあたりで「Incoming WebHooks」を探してPOST用のURLを探してください。</p>
+<div class="header_target" id="h_2017_2017_2d12_2d15_2darticle_2emd_5"></div><h2>コード</h2>
+<p><script src="https://gist.github.com/okusama27/08582d8c203883844c96ce7c0e28b38d.js"></script></p>
+<p>Togglから、現在のタスクを取得して、Slackに書き込んでいるだけのコードです。ユーザー名とかべた書きですいません。</p>
+<p>タスク継続中はslackに出ないように前のタスクをファイルの保存しています。それと違ったら、pushするぅ〜。って感じ。</p>
+<p>cronから呼ぶためにshファイル作りました。</p>
+<script src="https://gist.github.com/okusama27/51ce956a42ecc68f43e0ebdccb2d3e43.js"></script>
+<p>で、cronと思ったんですが、MacOSでは、LaunchAgentsというのを使うんじゃ。と何処かで見かけたので、LaunchAgentsにしました。 「~/Library/LaunchAgents/mytoggl.plist」に設置しています。 <code>&lt;key&gt;StartInterval&lt;/key&gt;</code> に、　300秒（5分）に1回toggl.shを実行と設定しています。</p>
+<script src="https://gist.github.com/okusama27/76e00b1fbe67ef629964d42229539268.js"></script>
+<p>動くと、こんな感じでSlackに表示されます。</p>
+<p><img alt="toggle_sample1" src="/static/images/picture201712/toggle_sample1.png"/></p>
+<p>イェア！</p>
+<p>1日のまとめ取得とか、色々改造していきたいです。</p></div>
     
       <div class="article-metadata">
-    <span class="article-date"> 2017-09-02 </span>
-    <span> Sphinx </span>
-    <span> Sphinx </span>
+    <span class="article-date"> 2017-12-14 </span>
+    <span> Python </span>
+    <span> Python </span>
   </div>
-      <h2 class="article-title"><a href="2017/2017-09-02-article.html">久しぶりにSphinxでスライドを作ろうとしたら完全に迷子</a></h2>
-      <div class="article-body"><p>Sphinxでスライドが作れたよねーと思って作ったら、困ったのでメモ</p>
-<div class="header_target" id="h_2017_2017_2d09_2d02_2darticle_2emd_1"></div><h2>結論</h2>
-<p><a href="https://pypi.python.org/pypi/sphinxjp.themes.s6">sphinxjp.themes.s6 0.3.0</a>を見よう！</p>
-<p>このリンク先の通りにやれば間違いないです。</p>
-<div class="header_target" id="h_2017_2017_2d09_2d02_2darticle_2emd_2"></div><h2>困ったこと</h2>
-<p>適当に検索してたら、conf.pyを下のように書くのだというサイトがいくつか出てきて、コンパイルしたら、「'sphinxjp.themecore'」はもう書かなくていいよぉぉぉ。とか出てくるし。</p>
-<div class="codehilite"><pre><span></span>extensions = ['sphinxjp.themecore']
-html_theme = 's6'
-</pre></div>
-<p>正解はこっちでした。</p></div>
-    
-      <div class="article-metadata">
-    <span class="article-date"> 2017-04-12 </span>
-    <span> Other </span>
-    <span> Other </span>
-  </div>
-      <h2 class="article-title"><a href="2017/2017-04-12-article.html">サービスリリースできた話</a></h2>
-      <div class="article-body"><p>最私の人生ではじめての一から関わったサービスのリリース日でした！
-（個人で出した黒歴史iPhoneアプリのことは忘れました。）</p>
-<p>最初に聞かされた時は途方もない構想で、無理じゃない？と思ったんですが、なんやかんやでリリースできて嬉しいです。</p>
-<p><a href="//af.moshimo.com/af/c/click?a_id=767877&amp;p_id=1166&amp;pc_id=1793&amp;pl_id=17949&amp;guid=ON" rel="nofollow" target="_blank">PyQ</a><img height="1" src="//i.moshimo.com/af/i/impression?a_id=767877&amp;p_id=1166&amp;pc_id=1793&amp;pl_id=17949" style="border:none;" width="1"/>というサービスです。|ω・`）詳しくはリンクをクリックだ！</p>
-<p>忙しすぎて何も思い出せないですが、走馬灯のように駆け抜けた1年半くらいでした。</p>
-<p>2,3年前は、丸の内にある某ビッグデータなサービスを運営している会社に1年間くらい出向してました。
-そこではみんなが輝いていて自社のサービスを一丸となって取り組んでいました。
-みんないい人たちばかりで、協力会社な私にも優しく接してくださり、技術的にわからないことは教えて下さいました。本当に人間の格？徳の高さ？が違いすぎの人たちで感謝で鼻血出すぎな毎日でした。
-私はサポート担当として活動していたんですが、本当に</p></div>
-    
-      <div class="article-metadata">
-    <span class="article-date"> 2017-03-07 </span>
-    <span> Git </span>
-    <span> Git </span>
-  </div>
-      <h2 class="article-title"><a href="2017/2017-03-07-article.html">Gitのガイドライン</a></h2>
-      <div class="article-body"><p>皆さん、Git使ってますか？
-私は仕事で<strong>GitHub</strong>を使ってます。
-今日はコミットするときのメッセージの話。</p>
-<p>何書けばいいのよ？と、思いながら、見よう見まねで書いていたんですが、ガイドラインがあるんですね。</p>
-<ul>
-<li><a href="https://github.com/git/git/blob/master/Documentation/SubmittingPatches">Gitのコントリビューター向けのガイドライン</a></li>
-<li><a href="https://docs.djangoproject.com/ja/1.10/internals/contributing/committing-code/#committing-guidelines">Djangoのコミットガイドライン</a></li>
-</ul>
-<p>あと、issueが終了するキーワードがあるらしい。知らなかった。</p>
-<ul>
-<li><a href="https://help.github.com/articles/closing-issues-via-commit-messages/">Closing issues via commit messages</a></li>
-</ul></div>
+      <h2 class="article-title"><a href="2017/2017-12-14-article.html">TogglとSlackを連携したいと思った経緯</a></h2>
+      <div class="article-body"><p>仕事がんばっていますか？</p>
+<p>私はすぐに気が散ってしまい、全然作業が進みません。どこかの塾のキャッチフレーズとかに <strong>やりはじめないと、やる気は出ません。</strong> とかありましたが、やり始めるのが億劫で、ぼーっとしているとすぐに１時間位過ぎてしまいます。</p>
+<p>そこで、業務改善の本を読みまくりました。</p>
+<p>業務改善の本じゃないですが、ホモドーロテクニックが紹介されていました。まぁ、集中しろとおっしゃってます。</p>
+<p><a href="https://www.amazon.co.jp/SOFT-SKILLS-%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E9%96%8B%E7%99%BA%E8%80%85%E3%81%AE%E4%BA%BA%E7%94%9F%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB-%E3%82%B8%E3%83%A7%E3%83%B3%E3%83%BB%E3%82%BD%E3%83%B3%E3%83%A1%E3%82%BA-ebook/dp/B01GDS0994/ref=as_li_ss_il?ie=UTF8&amp;qid=1513859358&amp;sr=8-1&amp;keywords=SOFT+SKILLS%E3%80%80%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E9%96%8B%E7%99%BA%E8%80%85%E3%81%AE%E4%BA%BA%E7%94%9F%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB&amp;linkCode=li2&amp;tag=ironhotcom-22&amp;linkId=726f53104c97c25958a9ece0489accd7" target="_blank"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=B01GDS0994&amp;Format=_SL160_&amp;ID=AsinImage&amp;MarketPlace=JP&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=ironhotcom-22"/></a><img alt="" border="0" height="1" src="https://ir-jp.amazon-adsystem.com/e/ir?t=ironhotcom-22&amp;l=li2&amp;o=9&amp;a=B01GDS0994" style="border:none !important; margin:0px !important;" width="1"/></p>
+<p>筆者、朝の４時頃起きて仕事するとか、社畜魂丸出しな感じの本ですが、午前中に仕事の殆どを集中してやる。あたりはぐっと来ました。
+英語を話せる方法は英語しか話せない人とデートすることだそうです。既婚者はどうすればいいんだ！！</p>
+<p><a href="https://www.amazon.co.jp/%E3%81%AA%E3%81%9C-%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AE%E4%BB%95%E4%BA%8B%E3%81%AF%E7%B5%82%E3%82%8F%E3%82%89%E3%81%AA%E3%81%84%E3%81%AE%E3%81%8B-%E3%82%B9%E3%83%94%E3%83%BC%E3%83%89%E3%81%AF%E6%9C%80%E5%BC%B7%E3%81%AE%E6%AD%A6%E5%99%A8%E3%81%A7%E3%81%82%E3%82%8B-%E4%B8%AD%E5%B3%B6%E8%81%A1/dp/4905073413/ref=as_li_ss_il?_encoding=UTF8&amp;qid=&amp;sr=&amp;linkCode=li2&amp;tag=ironhotcom-22&amp;linkId=b48214690a9d1c2a171b8b11ca2ade68" target="_blank"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=4905073413&amp;Format=_SL160_&amp;ID=AsinImage&amp;MarketPlace=JP&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=ironhotcom-22"/></a><img alt="" border="0" height="1" src="https://ir-jp.amazon-adsystem.com/e/ir?t=ironhotcom-22&amp;l=li2&amp;o=9&amp;a=4905073413" style="border:none !important; margin:0px !important;" width="1"/></p>
+<p>ホモドーロテクニックだ！と勢いで、ポモドーロタイマー的なアプリなどを入れてやってみたのですが、私の仕事的にずーとコーディングするということもなく、とぎれとぎれに５分で終わる仕事をしたり、１，２時間かかる仕事をしたりするので、２５分は結構切りが悪かった。</p>
+<p>紆余曲折でいきついたのが<a href="https://toggl.com/">Toggl</a>でした。</p>
+<p>やったことを記録しておくツールです。止め忘れとかを教えてくれます。有名なので、詳細は省きます。</p>
+<p>けっこう、毎日同じ仕事をしているので、一度タイトルを書けばON, OFFを押すだけでとても便利です。ブラウザの拡張プラグインを使えば色々なサービスと連携できます。私は主にGitHubとasanaと連携して使っています。</p>
+<p>それから半年ほど経ったある日、会社のチーム全体でTogglを利用しようということになりました。</p>
+<p>私のチームはみんないろいろな仕事を細切れでやっているので、報告がめんどくさい→Togglを使って記録して、それをメンバーに見せればいいじゃない。となりました。</p>
+<p>それなら、仕事を開始したら、チームのSlackにメンションしたいなと思うようになりました。そんなわけで、TogglからSlackに作業を開始したら書き込むスクリプトを書きましたの話をしようと思ってたんですが、長くなってきたので、また明日！</p>
+<p><a href="http://kamekokamekame.net/python/2017/12/15/article.html"><img alt="toggl_slack" src="/static/images/picture201712/toggl_slack.png"/></a></p></div>
     
   </div>
 

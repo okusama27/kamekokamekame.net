@@ -26,83 +26,227 @@
   <div class="articles">
     
       <div class="article-metadata">
-    <span class="article-date"> 2017-01-10 </span>
-    <span> Web </span>
-    <span> Web </span>
+    <span class="article-date"> 2017-12-13 </span>
+    <span> Event </span>
+    <span> Event </span>
   </div>
-      <h2 class="article-title"><a href="2017/2017-01-10-article.html">index.mdじゃなくて、index.htmlだ</a></h2>
-      <div class="article-body"><p>Github Pages（Jekyll）の設定でハマりました。</p>
-<p>ブログっぽく記事を区切って表示しようと思ったんですが、<a href="https://jekyllrb.com/docs/pagination/">paginate</a>ってのが、
-書いてある通りに設定してもデータが取れない。間違ってないはずなのに。なのに。なのにーー！って思ったら、 
-<strong>index.mdじゃなくて、index.htmlだ</strong> とのことでした。</p>
-<p>たしかにあらゆるところに書いてありましたよ。「index.htmlに書きましょう」と。
-でもさ、index.mdを自動でindex.htmlに変換してくれるっていうのがウリのサービスで、本当にgithub側にindex.htmlを配置すると思わないですよね。
-脳内変換して、何回もindex.mdに書いて、あーでもない、こーでもない、やってました。
-site.postsとかはindex.mdでも普通に取れるのに、paginate.postsだけとれない。</p></div>
-    
-      <div class="article-metadata">
-    <span class="article-date"> 2017-01-07 </span>
-    <span> Web </span>
-    <span> Web </span>
-  </div>
-      <h2 class="article-title"><a href="2017/2017-01-07-article.html">Github Pagesに変更</a></h2>
-      <div class="article-body"><p>あけましておめでとうございます。</p>
-<p>去年は全然ブログを書けなかったので、今年はもっとアウトプットしていきたいです。
-しょーもないことでもアウトプット大事。</p>
-<p>いつでも更新できるように、ブログの場所を<a href="https://pages.github.com/">Github Pages</a>に変更しました。
-Markdownで記事を書いていたので、移行が簡単でした。
-リポジトリ作って、設定するだけで便利ですね。</p>
-<p>手軽に書きたいのにmakeするのめんどいのと、私の都合ですがプロバイダーにアップするのめんどくさかったです。
-githubのWebページでも直接修正できるのが魅力。有料会員なので下書きはprivateなのもGoodです。</p></div>
-    
-      <div class="article-metadata">
-    <span class="article-date"> 2016-10-22 </span>
-    <span> Sphinx </span>
-    <span> Sphinx </span>
-  </div>
-      <h2 class="article-title"><a href="2016/2016-10-22-article.html">ブログをWordpressからSphinxに乗り換えた話</a></h2>
-      <div class="article-body"><div class="header_target" id="h_2016_2016_2d10_2d22_2darticle_2emd_1"></div><h2>私とブログ</h2>
+      <h2 class="article-title"><a href="2017/2017-12-13-article.html">PyCon JP 2016にブースを出した話</a></h2>
+      <div class="article-body"><p>これは、<a href="https://adventar.org/calendars/2462">PyLadies Advent Calendar 2017</a>の 13日目です。</p>
+<p>エモい話！とか盛り上がってたんですが、全然思いつきませんでした。
+そんなわけで、PyCon JPにブースを出したときの思い出を語ります。
+いままで2016、2017と2回出展しています。
+初回だった2016のほうが思い出深いので去年の話で申し訳ないですが、こっちを書きます。ちなみに今年もほとんど同じでした。
+これからはじめてブースを出そうという方の参考になると嬉しいです。</p>
+<div class="header_target" id="h_2017_2017_2d12_2d13_2darticle_2emd_1"></div><h1>決意</h1>
+<p>はじめて自社サービスを開発するメンバーになりました。
+しかし、私の会社には「広報担当」的な人がいません。というかエンジニア以外の人がほぼいません。
+売上も立っていない状態で新規に雇えるわけもなく、広報的なことは自分たちでやることになりました。</p>
+<p>どうしたらいいのかわからなかったのですが、まぁ、宣伝しよう！ということで最初のやったのはPyCon JPへのブース出展でした。</p>
+<div class="header_target" id="h_2017_2017_2d12_2d13_2darticle_2emd_2"></div><h1>申し込み＆出展確定</h1>
+<p>そんなこんなでPyCon JP 2016にブースを出す計画をはじめました。
+はじめはあまり明確な理由はなく「楽しそう」くらいで出そうと思っていました。
+しかし、それでは会社的にNGということで、「β版をお披露目して、β版ユーザーを募る」という目的で出展することにしました。</p>
+<p>以前の所属会社でも何度かブースに立ったことはあったんですが、どの会社にもマーケティング担当者がいたのでブースに展示する商品の説明をするだけでそれ以外のことはしたことがなかったです。</p>
+<p>今回は全体の責任者ということで、まず「ブースを出すための手配」からはじめました。</p>
+<p>PyCon JPにブースを出すにはスポンサーになる必要があります。会社が毎年シルバースポンサーをやっていたのでこれはクリアです。
+しかし、シルバースポンサーなだけだとブースの権利が抽選になります。ゴールドのスポンサーの出展希望が多いと抽選も無くなるそうです。
+シルバースポンサーかつ、ブースを出したい場合は「早期確定オプション」を追加で申し込む必要があります。私たちも申し込んで出展を確定させました。</p>
+<p>遅くとも5月くらいにはスポンサー申し込みをしたほうが良さそうです。
+ゴールドスポンサー以上ならスポンサーにさえなれれば、ブースとジョブフェアに条件無しで出せるみたいです。（たぶん）
+しかし、近年は上位スポンサーが埋まるの早いようです。
+シルバースポンサーは早期確定オプションと合わせて、スポンサー受付が開始したらすぐに申し込みましょう。</p>
+<div class="header_target" id="h_2017_2017_2d12_2d13_2darticle_2emd_3"></div><h1>過去の動画チェック</h1>
+<p>PyCon JPの過去の動画がYoutubeにあがっています。
+価値のあるブースにしたいので、過去の他社のブースの動画などをみて、どういうブースがいいかチームで話し合いました。</p>
+<div class="header_target" id="h_2017_2017_2d12_2d13_2darticle_2emd_4"></div><h1>準備</h1>
+<p>具体的に準備を開始しました。</p>
 <ul>
-<li>1995年にパソコン購入。同時にパソコン通信（niftyサーブ）開始。</li>
-<li>1999年当時のプロバイダだったInfoWeb（現@nifty）からホームページスペースを与えられたので、htmlを自分で書いてブログスタート。</li>
-<li>2004年html書くのめんどくさくなって、どっかのブログサービスでブログ開始。</li>
-<li>2006年フリーランスになったので、勉強のために自分でCMSを運営しようとhetemlと契約。Nucleus CMSにブログを乗り換え。</li>
-<li>2010年Wordpressの仕事が増えて、プラグインを作ったりしていた。Nucleus CMSの更新がほぼなくなり、hetemlがサポートするPHPのバージョンと合わなくなってくる。hetemlにWordpress簡単インストールというサービスができた機にWordpressに乗り換え。</li></ul></div>
+<li>ポロシャツ（スタッフ感を出すために地味めのポロシャツに決定）</li>
+<li>チラシ（スケジュールがギリギリ過ぎてデザイナーがアサインできず、1年目は私の手作りでした。あはは）</li>
+<li>ポスター(コミケなどで使うポスタースタンドを会社の人が持っていたので借りる）</li>
+<li>動画（ブースに流す動画。）</li>
+<li>ブースに来た人への対応リスト（来た人にする質問などを事前に決める）</li>
+<li>当日のスタッフの動きの表（誰がどこにいるかわかって良かったです）</li>
+<li>持っていくもののチェックリスト（忘れ物がないか確認）</li>
+</ul>
+<p>特に動画は良かったですね。深く考えずに動画を作って、それを写すディスプレイを持っていっていたのですが、本当に役に立ちました。</p>
+<p>あと、スタッフっぽいポロシャツもお客様が声をかけやすいので重要です。メンバーの服が揃っていることが重要です。</p>
+<div class="header_target" id="h_2017_2017_2d12_2d13_2darticle_2emd_5"></div><h1>当日</h1>
+<p>実際の運営は、会社にPyCon JPに詳しい人が結構いました。
+加えて、いつもは会場スタッフとして活躍されている方がいるんですが、その年はスタッフをお休みしていらっしゃいました。ものすごく助けていただけました！！</p>
+<p>知り合いに会って話し込んだり、スタッフの中からスピーカーに選ばれる人が出てくるので、思うより1人か2人多めにスタッフはアサインしたほうがいいです。</p>
+<p>2017年に至っては、私以外は社長か、スピーカー。朝の集合時間に2日とも自分しかいない状態でした。。。とほほ。。元気で飲みすぎないスピーカーじゃない人のアサイン大事！</p>
+<div class="header_target" id="h_2017_2017_2d12_2d13_2darticle_2emd_6"></div><h1>いらなかったもの</h1>
+<p>初年度でいらなかったものも結構ありました。</p>
+<ul>
+<li>イス（座っている暇がなかった）</li>
+<li>シール（需要がなかった。サービスが有名になっていないのにシールを欲しがる人はいない。）</li>
+</ul>
+<p>通路には結構椅子があるので、人が歩いていない時はそっちに座ればいいだけでした。休憩という名の散歩にも結構行ったので、座る暇はなかったです。</p>
+<div class="header_target" id="h_2017_2017_2d12_2d13_2darticle_2emd_7"></div><h1>最後に</h1>
+<p>「1日目に飲みすぎると2日目が地獄」という言葉を皆様に送ります。</p></div>
     
       <div class="article-metadata">
-    <span class="article-date"> 2016-09-22 </span>
-    <span> PyCon JP </span>
-    <span> PyCon JP </span>
+    <span class="article-date"> 2017-12-12 </span>
+    <span> Python </span>
+    <span> Python </span>
   </div>
-      <h2 class="article-title"><a href="2016/2016-09-22-article.html">PyCon JP 2016 2日目とブースと私</a></h2>
-      <div class="article-body"><p>私のPyCon JP 2016が終わりました。</p>
-<p>ブースにもたくさんの方に来ていただいてありがとうございました。</p>
-<p>今年もみんなすごいなーと思っているうちに終わってしまいました。</p>
-<p>ブースに気持ちが持って行かれて、トークは一つしか聞けませんでしたが、やる気は注入されました。</p>
-<div class="header_target" id="h_2016_2016_2d09_2d22_2darticle_2emd_1"></div><h2>貰ったり、買ったりしたもの。</h2>
-<p><img alt="PyLadiesシール" src="/static/images/old/20160922_1.png"/></p>
-<p><img alt="PyLadiesシャツ" src="/static/images/old/20160922_4.png"/></p>
-<p>PyLadiesシールとシャツ</p>
-<p><img alt="募金した人が貰えるシール" src="/static/images/old/20160922_2.png"/></p>
-<p>募金した人が貰えるシール（2回目）</p>
-<p><img alt="カップケーキ" src="/static/images/old/20160922_3.png"/></p>
-<p>Pythonマークのカップケーキ</p>
-<div class="header_target" id="h_2016_2016_2d09_2d22_2darticle_2emd_2"></div><h2>来年へ向けて</h2>
-<p>来年も憧れのスタッフはできなさそうですが、スピーカーに選ばれるように頑張ります。どう頑張るかはこれから。。。。</p></div>
+      <h2 class="article-title"><a href="2017/2017-12-12-article.html">unittestのテスト前後に実行される処理の確認</a></h2>
+      <div class="article-body"><p>今日の内容は、<a href="http://kamekokamekame.net/advent_calendar/2017/12/18/article.html">Pythonでテストしたい</a>にまとめている内容の詳細部分です。</p>
+<p>この本の236ページに書いてある「テスト実行する前後の処理を定義する」表のメソッドを試してみます。</p>
+<p><a href="https://www.amazon.co.jp/Python-%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA%E5%8E%B3%E9%81%B8%E3%83%AC%E3%82%B7%E3%83%94-%E6%B1%A0%E5%86%85-%E5%AD%9D%E5%95%93/dp/4774177075/ref=as_li_ss_il?s=books&amp;ie=UTF8&amp;qid=1513461251&amp;sr=1-1&amp;keywords=python+%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA&amp;linkCode=li2&amp;tag=ironhotcom-22&amp;linkId=97da69f3c2938b7531280618fa17cb5f" target="_blank"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=4774177075&amp;Format=_SL160_&amp;ID=AsinImage&amp;MarketPlace=JP&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=ironhotcom-22"/></a><img alt="" border="0" height="1" src="https://ir-jp.amazon-adsystem.com/e/ir?t=ironhotcom-22&amp;l=li2&amp;o=9&amp;a=4774177075" style="border:none !important; margin:0px !important;" width="1"/></p>
+<p>こんな感じで書きました。</p>
+<script src="https://gist.github.com/okusama27/4c9fa7d203a50b3278f210ca7d1dcbb3.js"></script>
+<p>実行してみます。</p>
+<div class="header_target" id="h_2017_2017_2d12_2d12_2darticle_2emd_1"></div><h2>実行結果</h2>
+<p><code>setUpClass</code>、<code>tearDownClass</code> は1回ずつ、 <code>setUp</code>、<code>tearDown</code> は2回ずつ呼ばれていますね。</p>
+<div class="codehilite"><pre><span></span>setUpClass
+setUp
+test_method_1
+method_1
+tearDown
+setUp
+test_method_2
+method_2
+tearDown
+tearDownClass
+setUpClass msg
+</pre></div>
+<div class="header_target" id="h_2017_2017_2d12_2d12_2darticle_2emd_2"></div><h2>失敗させる</h2>
+<p>テストが失敗するようにちょっと書き換えてみます。</p>
+<div class="codehilite"><pre><span></span>    <span class="k">def</span> <span class="nf">test_method_2</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="s1">'test_method_2'</span><span class="p">)</span>
+        <span class="n">expected</span> <span class="o">=</span> <span class="s1">'method_3'</span>
+        <span class="n">actual</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sample</span><span class="o">.</span><span class="n">method_2</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">expected</span><span class="p">,</span> <span class="n">actual</span><span class="p">)</span>
+</pre></div>
+<div class="header_target" id="h_2017_2017_2d12_2d12_2darticle_2emd_3"></div><h2>実行結果</h2>
+<p>失敗しても、 <code>tearDown</code>、<code>tearDownClass</code>も呼ばれていますね。</p>
+<div class="codehilite"><pre><span></span>ssetUpClass
+setUp
+test_method_1
+method_1
+tearDown
+setUp
+test_method_2
+method_2
+tearDown
+
+Failure
+Expected :'method_3'
+Actual   :'method_2'
+ &lt;Click to see difference&gt;
+
+Traceback (most recent call last):
+  File "/Users/kaz/tmp/python_sample/tests/unittest_sample2.py", line 43, in test_method_2
+    self.assertEqual(expected, actual)
+AssertionError: 'method_3' != 'method_2'
+- method_3
+?        ^
++ method_2
+?        ^
+
+
+tearDownClass
+setUpClass msg
+</pre></div>
+<p>こんな感じですね。</p>
+<p><img alt="unittest" src="/static/images/picture201712/picture_20171212_1.png"/></p></div>
     
       <div class="article-metadata">
-    <span class="article-date"> 2016-09-21 </span>
-    <span> PyCon JP </span>
-    <span> PyCon JP </span>
+    <span class="article-date"> 2017-12-11 </span>
+    <span> Python </span>
+    <span> Python </span>
   </div>
-      <h2 class="article-title"><a href="2016/2016-09-21-article.html">PyCon JP 2016 1日目とブース</a></h2>
-      <div class="article-body"><p><a href="https://pycon.jp/2016/ja/">PyCon JP 2016</a> にブース出してます。1日目が終わったです。疲れたです。</p>
-<p>初のブース運営で、精神的に一杯一杯で普通のチケットを持っていたのですが、トークに一個もいけませんでした。明日こそは、明日こそは。</p>
-<p>ブースでは自社のサービスを宣伝しています。よかったら、お話きかせてください。</p>
-<p><img alt="ブース" src="/static/images/old/IMG_2450-300x225.jpg"/></p>
-<p>スタンプラリー用のシールもキンコーズに行って作ったんですが、余り売れなかったので、明日もあるんでよろしくお願いします！！</p>
-<p><img alt="スタンプラリー用のシール" src="/static/images/old/IMG_2452-225x300.jpg"/></p>
-<p>用意していたものは諸々役に立ったので良かったなと思っています。明日も頑張ります！遊びに来てください！</p></div>
+      <h2 class="article-title"><a href="2017/2017-12-11-article.html">unittestの公式ドキュメントを読んでみた</a></h2>
+      <div class="article-body"><p>今日の内容は、<a href="http://kamekokamekame.net/advent_calendar/2017/12/18/article.html">Pythonでテストしたい</a>にまとめている内容の詳細部分です。</p>
+<p>unittestの公式ドキュメントを読みます。</p>
+<p><a href="https://docs.python.org/ja/3/library/unittest.html">unittest — ユニットテストフレームワーク</a></p>
+<div class="header_target" id="h_2017_2017_2d12_2d11_2darticle_2emd_1"></div><h2>基本的な例</h2>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">unittest</span>
+
+<span class="c1"># unittest.TestCase)を継承するTestStringMethodsクラスを定義していますね。</span>
+<span class="k">class</span> <span class="nc">TestStringMethods</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
+
+    <span class="c1"># 1つ目のテスト</span>
+    <span class="c1"># 「'foo'.upper()」と「'FOO'」が等しいか比較していますね</span>
+    <span class="k">def</span> <span class="nf">test_upper</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="s1">'foo'</span><span class="o">.</span><span class="n">upper</span><span class="p">(),</span> <span class="s1">'FOO'</span><span class="p">)</span>
+
+    <span class="c1"># 2つ目のテスト</span>
+    <span class="c1"># 全部大文字かどうかを確認するstr.isupper()を利用しています</span>
+    <span class="k">def</span> <span class="nf">test_isupper</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># 「'FOO'.isupper())」の結果がTrueか</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="s1">'FOO'</span><span class="o">.</span><span class="n">isupper</span><span class="p">())</span>
+        <span class="c1"># 「'Foo'.isupper()」の結果がFalseか</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertFalse</span><span class="p">(</span><span class="s1">'Foo'</span><span class="o">.</span><span class="n">isupper</span><span class="p">())</span>
+
+    <span class="c1"># 3つ目のテスト</span>
+    <span class="c1"># 文字を配列に分割して、比較</span>
+    <span class="k">def</span> <span class="nf">test_split</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">s</span> <span class="o">=</span> <span class="s1">'hello world'</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">split</span><span class="p">(),</span> <span class="p">[</span><span class="s1">'hello'</span><span class="p">,</span> <span class="s1">'world'</span><span class="p">])</span>
+        <span class="c1"># わざとstr.split()の引数に文字以外のものを指定して、TypeErrorが起こるか検証</span>
+        <span class="c1"># check that s.split fails when the separator is not a string</span>
+        <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">assertRaises</span><span class="p">(</span><span class="ne">TypeError</span><span class="p">):</span>
+            <span class="n">s</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
+    <span class="n">unittest</span><span class="o">.</span><span class="n">main</span><span class="p">()</span>
+</pre></div>
+<p>実行</p>
+<div class="codehilite"><pre><span></span>$ python unittest_sample1.py 
+...
+----------------------------------------------------------------------
+Ran <span class="m">3</span> tests in <span class="m">0</span>.000s
+
+OK
+</pre></div>
+<p><code>-v</code> オプションを付けて詳細を表示</p>
+<div class="codehilite"><pre><span></span>$ python unittest_sample1.py 
+...
+----------------------------------------------------------------------
+Ran <span class="m">3</span> tests in <span class="m">0</span>.000s
+
+OK
+<span class="o">(</span>env<span class="o">)</span> Arsenal:tests kaz$ python unittest_sample1.py -v
+test_isupper <span class="o">(</span>__main__.TestStringMethods<span class="o">)</span> ... ok
+test_split <span class="o">(</span>__main__.TestStringMethods<span class="o">)</span> ... ok
+test_upper <span class="o">(</span>__main__.TestStringMethods<span class="o">)</span> ... ok
+
+----------------------------------------------------------------------
+Ran <span class="m">3</span> tests in <span class="m">0</span>.001s
+
+OK
+</pre></div>
+<p>コマンドラインからも実行できる</p>
+<div class="codehilite"><pre><span></span>$ python -m unittest unittest_sample1.TestStringMethods
+...
+----------------------------------------------------------------------
+Ran <span class="m">3</span> tests in <span class="m">0</span>.000s
+
+OK
+</pre></div>
+<p>ファイルパスでもできる</p>
+<div class="codehilite"><pre><span></span>$ python -m unittest unittest_sample1.py 
+...
+----------------------------------------------------------------------
+Ran <span class="m">3</span> tests in <span class="m">0</span>.001s
+
+OK
+</pre></div>
+<p><code>-v</code> オプションも付けられる</p>
+<div class="codehilite"><pre><span></span>$ python -m unittest -v unittest_sample1.TestStringMethods
+test_isupper <span class="o">(</span>unittest_sample1.TestStringMethods<span class="o">)</span> ... ok
+test_split <span class="o">(</span>unittest_sample1.TestStringMethods<span class="o">)</span> ... ok
+test_upper <span class="o">(</span>unittest_sample1.TestStringMethods<span class="o">)</span> ... ok
+
+----------------------------------------------------------------------
+Ran <span class="m">3</span> tests in <span class="m">0</span>.001s
+
+OK
+</pre></div>
+<p>今日はここまで、公式ドキュメントを読むのも楽しいですね。</p></div>
     
   </div>
 

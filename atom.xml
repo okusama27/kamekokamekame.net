@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>鉄は熱いうちに打て</title><link href="https://kamekokamekame.net/" rel="alternate"></link><link href="https://kamekokamekame.net/atom.xml" rel="self"></link><id>https://kamekokamekame.net/</id><updated>2018-11-01T00:00:00+09:00</updated><entry><title>PyLadies沖縄合宿に参加します - 目標を立てよう</title><link href="https://kamekokamekame.net/2018/2018-11-01-article.html" rel="alternate"></link><published>2018-11-01T00:00:00+09:00</published><updated>2018-11-01T00:00:00+09:00</updated><id>tag:kamekokamekame.net,2018-11-01:/2018/2018-11-01-article.html</id><summary type="html">&lt;p&gt;今年も &lt;a class="reference external" href="https://pyladies-tokyo.connpass.com/event/95648/"&gt;PyLadies Tokyo 沖縄秋合宿 2018&lt;/a&gt; に参加します！&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>鉄は熱いうちに打て</title><link href="https://kamekokamekame.net/" rel="alternate"></link><link href="https://kamekokamekame.net/atom.xml" rel="self"></link><id>https://kamekokamekame.net/</id><updated>2018-11-03T00:00:00+09:00</updated><entry><title>PyLadies沖縄合宿 - 2日目</title><link href="https://kamekokamekame.net/2018/2018-11-03-article.html" rel="alternate"></link><published>2018-11-03T00:00:00+09:00</published><updated>2018-11-03T00:00:00+09:00</updated><id>tag:kamekokamekame.net,2018-11-03:/2018/2018-11-03-article.html</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="https://pyladies-tokyo.connpass.com/event/95648/"&gt;PyLadies Tokyo 沖縄秋合宿 2018&lt;/a&gt; 2日目です。&lt;/p&gt;
+&lt;p&gt;今日はあいにくの雨でしたが、部屋の中でもくもくしました。&lt;/p&gt;
+&lt;p&gt;夜ご飯担当でした。&lt;/p&gt;
+&lt;p&gt;沖縄なのでにんじんしりしりとゴーヤチャンプルーを作りました。スーパーにゴーヤチャンプルーの素とか売っているんですね。さすが沖縄。&lt;/p&gt;
+&lt;div class="section" id="id1"&gt;
+&lt;div class="header_target" id="h_2018_2018_2d11_2d03_2darticle_2erst_1"&gt;&lt;/div&gt;&lt;h1&gt;進捗&lt;/h1&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;[x] このブログの証明書更新（11/13くらいまでに証明書を更新しないといけないのにやってない）&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;[ ] &lt;a class="reference external" href="https://sphinxjp.connpass.com/event/103294/"&gt;SphinxCon JP 2018&lt;/a&gt; の資料作成（CfPが通っているか謎ですが念の為。いつわかるんじゃろう？）&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;[x] 参加者と仲良くなる（私の中では仲良くなりました。）&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</summary></entry><entry><title>PyLadies沖縄合宿に参加します - 目標を立てよう</title><link href="https://kamekokamekame.net/2018/2018-11-01-article.html" rel="alternate"></link><published>2018-11-01T00:00:00+09:00</published><updated>2018-11-01T00:00:00+09:00</updated><id>tag:kamekokamekame.net,2018-11-01:/2018/2018-11-01-article.html</id><summary type="html">&lt;p&gt;今年も &lt;a class="reference external" href="https://pyladies-tokyo.connpass.com/event/95648/"&gt;PyLadies Tokyo 沖縄秋合宿 2018&lt;/a&gt; に参加します！&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="https://kamekokamekame.net/2017/2017-11-04-article.html"&gt;去年の思い出&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;今年はなんと &lt;strong&gt;沖縄&lt;/strong&gt; です！台風が若干気になりますが、人生初の沖縄上陸！楽しみです。&lt;/p&gt;
 &lt;p&gt;女性12,3人でAirB&amp;amp;Bで借りた一軒家で過ごします。&lt;/p&gt;
@@ -47,10 +56,4 @@
 前ページに &lt;code&gt;その文書の説明（description）&lt;/code&gt; をもたせようと思いました。&lt;/p&gt;
 &lt;p&gt;同僚に聞いたら、 &lt;a href="http://www.sphinx-doc.org/ja/stable/config.html"&gt;rst_prolog&lt;/a&gt; というのがあるみたいです。ファイルの先頭に指定した文字列を追加してくれます。
 しかし、実行しても &lt;code&gt;reSturucturedText&lt;/code&gt; ファイルにしか追加されません。&lt;/p&gt;
-&lt;p&gt;調べると、 &lt;a href="https://github.com/sphinx-doc/sphinx/issues/2445"&gt;Use rst_prolog and rst_epilog only for rst files? #2445&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>PyLadies「テストをまなぼう」に登壇しました</title><link href="https://kamekokamekame.net/2018/2018-02-22-article.html" rel="alternate"></link><published>2018-02-22T00:00:00+09:00</published><updated>2018-02-22T00:00:00+09:00</updated><id>tag:kamekokamekame.net,2018-02-22:/2018/2018-02-22-article.html</id><summary type="html">&lt;p&gt;今日は、&lt;a href="https://pyladies-tokyo.connpass.com/event/76967/"&gt;PyLadies Tokyo Meetup #29 テストをまなぼう&lt;/a&gt; で、登壇しました。&lt;/p&gt;
-&lt;blockquote class="twitter-tweet" data-lang="ja"&gt;&lt;p dir="ltr" lang="ja"&gt;PyLadies Tokyo Meetup #29 テストをまなぼう を公開しました！ &lt;a href="https://t.co/szes8XI1Nc"&gt;https://t.co/szes8XI1Nc&lt;/a&gt; &lt;a href="https://twitter.com/hashtag/PyLadiesTokyo?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#PyLadiesTokyo&lt;/a&gt;&lt;/p&gt;— せりーな(se-lina) (@se_lina08) &lt;a href="https://twitter.com/se_lina08/status/956457045237972992?ref_src=twsrc%5Etfw"&gt;2018年1月25日&lt;/a&gt;&lt;/blockquote&gt;
-
-&lt;div class="header_target" id="h_2018_2018_2d02_2d22_2darticle_2emd_1"&gt;&lt;/div&gt;&lt;h2&gt;オファー&lt;/h2&gt;
-&lt;p&gt;ことの発端は、&lt;a href="http://kamekokamekame.net/pyladies/2017/11/04/article.html"&gt;PyLadies Tokyo 秋合宿 2017&lt;/a&gt; でした。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;亀「最近、仕事で結構テストばっかり書いてますよ〜」&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Ma「ほー。PyLadiesでテストテーマに登壇しない？」&lt;/strong&gt;&lt;/p&gt;</summary></entry></feed>
+&lt;p&gt;調べると、 &lt;a href="https://github.com/sphinx-doc/sphinx/issues/2445"&gt;Use rst_prolog and rst_epilog only for rst files? #2445&lt;/a&gt;&lt;/p&gt;</summary></entry></feed>

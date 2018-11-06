@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html lang="ja-JP">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>index_category - 鉄は熱いうちに打て</title>
+  
+  <link rel="stylesheet" href="static/css/sample_article.css">
+
+</head>
+
+<body>
+  
+<div class="container">
+  <h1 class="index-title">
+    <a href="index.html">鉄は熱いうちに打て</a>
+  </h1>
+
+  <div class="container-inner">
+    <div class="container-body">
+      
+
+  <div class="articles">
+    
+      <div class="article-metadata">
+    <span class="article-date"> 2015-04-14 </span>
+    <span> Python </span>
+    <span> Python </span>
+  </div>
+      <h2 class="article-title"><a href="2015/2015-04-14-article.html">eggを作ってみる</a></h2>
+      <div class="article-body"><p>Pythonのモジュールの配布方法としてeggというzipファイルを作成して配るらしい。</p>
+<p>完全にこちらのサイトを参考にしました。ありがとうございます。mm</p>
+<p><a href="http://www.exsoft.net/blog/entry/ab4v5g" target="_blank">python開発環境の構築から作成したeggを別環境へインストールするまで</a>
+pasterのインストール</p>
+<div class="codehilite"><pre><span></span>$ easy_install PasteScript
+</pre></div>
+<p>雛形の作成</p>
+<div class="codehilite"><pre><span></span>$ paster create -t basic_package MyPkg
+</pre></div>
+<p>これやると色々聞かれる。バージョンとか作者の名前とか。聞かれたことはsetup.py中に記録されています。</p>
+<p>egg作成</p>
+<div class="codehilite"><pre><span></span>$ <span class="nb">cd</span> MyPkg
+$ python setup.py bdist_egg
+</pre></div>
+<p>bdist_eggってコマンドだけど、なんの略？？</p>
+<p>とりあえず、よくわからない時の合言葉”おまじない”ってことで。
+で、Mypkg/distの下にパッケージが完成！！</p>
+<p>インストールはこれでオケ。</p>
+<div class="codehilite"><pre><span></span>$ easy_install <span class="p">&amp;</span><span class="c1">#123;作ったeggファイル&amp;#125;</span>
+</pre></div></div>
+    
+      <div class="article-metadata">
+    <span class="article-date"> 2015-04-13 </span>
+    <span> Python </span>
+    <span> Python </span>
+  </div>
+      <h2 class="article-title"><a href="2015/2015-04-13-article.html">pydoc</a></h2>
+      <div class="article-body"><p><code>pydoc</code> という機能を使うと、 <code>Javadoc</code> のようなものが作れるらしい。</p>
+<p>先日の <code>twc.py</code> に書き足してみる</p>
+<div class="codehilite"><pre><span></span><span class="s2">"""</span>
+<span class="s2">This is a command line tool of watching twitter timelines</span>
+<span class="s2">"""</span>
+<span class="nv">__author__</span>  <span class="o">=</span> <span class="s1">'作者&lt;kame＠kamekokamekame.net&gt;'</span>
+<span class="nv">__status__</span>  <span class="o">=</span> <span class="s2">"production"</span>
+<span class="nv">__version__</span> <span class="o">=</span> <span class="s2">"0.1.0"</span>
+<span class="nv">__date__</span>    <span class="o">=</span> <span class="s2">"11 Apr 2015"</span>
+</pre></div>
+<p>Pythonのインタプリタで実行</p>
+<div class="codehilite"><pre><span></span>$ python
+&gt;&gt;&gt; help<span class="o">()</span>
+help&gt; twc
+</pre></div>
+<p>おお！表示された！！</p>
+<div class="codehilite"><pre><span></span>Help on module twc:
+NAME
+    twc - This is a <span class="nb">command</span> line tool of watching twitter timelines
+FILE
+    /Users/kaz/git/twitter-cli/twc.py
+FUNCTIONS
+    post_tweet<span class="o">(</span>oauth, args<span class="o">)</span>
+    show_home_timeline<span class="o">(</span>oauth<span class="o">)</span>
+    show_user_timeline<span class="o">(</span>oauth, args<span class="o">)</span>
+        <span class="c1"># Get someone's timeline</span>
+DATA
+    <span class="nv">AS</span> <span class="o">=</span> <span class="s1">'XXXXXXXXXXXXXXX'</span>
+    <span class="nv">AT</span> <span class="o">=</span> <span class="s1">'XXXXXXXXXXXXXXX'</span>
+    <span class="nv">CK</span> <span class="o">=</span> <span class="s1">'XXXXXXXXXXXXXXX'</span>
+    <span class="nv">CS</span> <span class="o">=</span> <span class="s1">'XXXXXXXXXXXXXXX'</span>
+    <span class="nv">HOME_TIME_LINE_URL</span> <span class="o">=</span> <span class="s1">'https://api.twitter.com/1.1/statuses/home_timeli...</span>
+<span class="s1">    POST_STATUS_UPDATE = '</span>https://api.twitter.com/1.1/statuses/update.json...
+    <span class="nv">USER_TIME_LINE_URL</span> <span class="o">=</span> <span class="s1">'https://api.twitter.com/1.1/statuses/user_timeli...</span>
+<span class="s1">    __author__  = '</span>Kameko Kamekame&lt;kame@kamekokamekame.net&gt;<span class="s1">'</span>
+<span class="s1">    __date__ = '</span><span class="m">11</span> Apr <span class="m">2015</span><span class="s1">'</span>
+<span class="s1">    __status__ = '</span>production<span class="s1">'</span>
+<span class="s1">    __version__ = '</span><span class="m">0</span>.1.0<span class="s1">'</span>
+<span class="s1">    config = '</span>twitter_key:<span class="se">\n</span>    CK: XXXXXXXXXXXXXXX  ... https:/...
+    <span class="nv">data</span> <span class="o">=</span> <span class="p">&amp;</span><span class="c1">#123;'twitter_key': &amp;#123;'AS': 'XXXXXXXXXXXXXXX...</span>
+    <span class="nv">tz_tokyo</span> <span class="o">=</span> &lt;DstTzInfo <span class="s1">'Asia/Tokyo'</span> JST+9:00:00 STD&gt;
+VERSION
+    <span class="m">0</span>.1.0
+DATE
+    <span class="m">11</span> Apr <span class="m">2015</span>
+AUTHOR
+    Kameko Kamekame &lt;kame@kamekokamekame.net&gt;
+</pre></div>
+<div class="header_target" id="h_2015_2015_2d04_2d13_2darticle_2emd_1"></div><h2>後日追記</h2>
+<p>当時、なにを勘違いしたかこれを <code>pydoc</code> と思っていましたが、これは組み込み関数 <code>help()</code> の話ですね。
+<code>pydoc</code> は <code>help()</code> をわざわざ使わずにシェルから直接ヘルプがみられる機能なのですね。</p>
+<p><code>help()</code> だと</p>
+<div class="codehilite"><pre><span></span>$ python
+&gt;&gt;&gt; help()
+help&gt; sys
+ヘルプが表示される
+</pre></div>
+<p><code>pydoc</code> だと</p>
+<div class="codehilite"><pre><span></span>$ pydoc sys
+ヘルプが表示される
+</pre></div>
+<div class="header_target" id="h_2015_2015_2d04_2d13_2darticle_2emd_2"></div><h2>公式ドキュメント</h2>
+<p><a href="https://docs.python.org/ja/3/library/pydoc.html#module-pydoc">pydoc — ドキュメント生成とオンラインヘルプシステム</a></p></div>
+    
+      <div class="article-metadata">
+    <span class="article-date"> 2015-04-12 </span>
+    <span> Python </span>
+    <span> Python </span>
+  </div>
+      <h2 class="article-title"><a href="2015/2015-04-12-article.html">virtualenv使ってみる</a></h2>
+      <div class="article-body"><p>独立した環境を利用するためのツールがある。virtualenvってやつで、Python3からはpyvenv(venv?)ってのを利用するらしい。</p>
+<p>で、virtualenvを利用しやすくするものにpyenvとか、なんちゃらenvとかいろいろあるみたい。Goで書かれた<a href="https://github.com/zimbatm/direnv" target="_blank">direnv</a>ってのもぐいぐい来ているらしいが、また今度。
+とりあえずインストール</p>
+<div class="codehilite"><pre><span></span>$ sudo pip install virtualenv
+</pre></div>
+<p>virtualenvwrapperってのを入れると環境の切り替えが楽らしい</p>
+<div class="codehilite"><pre><span></span>sudo pip install virtualenvwrapper
+</pre></div>
+<p>環境設定 .bashrcに追加</p>
+<div class="codehilite"><pre><span></span><span class="c1">#virtualenv settings</span>
+<span class="nb">export</span> <span class="nv">WORKON_HOME</span><span class="o">=</span><span class="nv">$HOME</span>/.virtualenvs
+. /Library/Frameworks/Python.framework/Versions/2.7/bin/virtualenvwrapper.sh
+</pre></div>
+<p>環境のファイル作る</p>
+<div class="codehilite"><pre><span></span>mkvirtualenv <span class="p">&amp;</span><span class="c1">#123;env name&amp;#125;</span>
+</pre></div>
+<p>作った環境一覧</p>
+<div class="codehilite"><pre><span></span>workon
+</pre></div>
+<p>とある環境をアクティブにする</p>
+<div class="codehilite"><pre><span></span>workon <span class="p">&amp;</span><span class="c1">#123;env name&amp;#125;</span>
+</pre></div>
+<p>アクティブ終了</p>
+<div class="codehilite"><pre><span></span>deactivate
+</pre></div>
+<p>削除するとき</p>
+<div class="codehilite"><pre><span></span>rmvirtualenv <span class="p">&amp;</span><span class="c1">#123;env name&amp;#125;</span>
+</pre></div>
+<p><em>私の環境はMacOSXです。</em></p></div>
+    
+  </div>
+
+  <div class="index-pagination">
+    
+      <a class="index-navi"
+         href="index_category_category_Python_4.html">&larr;</a>
+    
+    
+    
+      <a class="index-navi"
+         href="index_category_category_Python_6.html">&rarr;</a>
+    
+  </div>
+
+
+    </div>
+    <aside class="container-right">
+
+      カテゴリ:
+        
+      <ul>
+        
+          <li>
+            <a href="index_category_category_Advent@20Calendar.html">
+              Advent Calendar
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Book.html">
+              Book
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Event.html">
+              Event
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Git.html">
+              Git
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_OS.html">
+              OS
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Other.html">
+              Other
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_PyCon@20JP.html">
+              PyCon JP
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_PyLadies.html">
+              PyLadies
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Python.html">
+              Python
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Sphinx.html">
+              Sphinx
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Web.html">
+              Web
+            </a>
+          </li>
+        
+      </ul>
+      <div>
+        <br><br>
+        <a href="//af.moshimo.com/af/c/click?a_id=767877&p_id=1166&pc_id=1793&pl_id=20229&guid=ON" target="_blank" rel="nofollow"><img src="//image.moshimo.com/af-img/0408/000000020229.png" width="250" height="250" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=767877&p_id=1166&pc_id=1793&pl_id=20229" width="1" height="1" style="border:none;">
+        <br>
+        <a href="//af.moshimo.com/af/c/click?a_id=767877&p_id=1166&pc_id=1793&pl_id=17971&guid=ON" target="_blank" rel="nofollow"><img src="//image.moshimo.com/af-img/0408/000000017971.png" width="250" height="250" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=767877&p_id=1166&pc_id=1793&pl_id=17971" width="1" height="1" style="border:none;">
+      </div>
+    </aside>
+  </div>
+
+</div>
+
+</body>
+</html>

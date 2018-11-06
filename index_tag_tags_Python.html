@@ -41,7 +41,32 @@
         <span class="k">print</span><span class="p">(</span><span class="s2">"togglの情報取得に失敗しました"</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="n">current_json</span> <span class="o">=</span> <span class="n">current</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
-        <span class="k">if</span> <span class="n">current_json</span><span class="p">[</span><span class="s1">'data'</span></pre></div></div>
+        <span class="k">if</span> <span class="n">current_json</span><span class="p">[</span><span class="s1">'data'</span><span class="p">]:</span>
+            <span class="k">return</span> <span class="n">current_json</span><span class="p">[</span><span class="s1">'data'</span><span class="p">][</span><span class="s1">'pid'</span><span class="p">],</span> <span class="n">current_json</span><span class="p">[</span><span class="s1">'data'</span><span class="p">][</span><span class="s1">'description'</span><span class="p">]</span>
+    <span class="k">return</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span>    
+</pre></div>
+<p>さあ、レビューしてみましょう！</p>
+<ul>
+<li>情報取得に失敗したあとも処理が続いている</li>
+<li>関数の最後で異常系（データがなかった場合）が返っている</li>
+<li>正常系がネストされたif文の中で返っている</li>
+</ul>
+<p>名付けとか色々あると思いますが、私はよく言われダメコーディングの一つ、 <strong>関数のreturnを1回しか書かないやーつ</strong> なんです。気を抜くとすぐに書いてしまいます。
+動けばいいやくらいで書いたスクリプトだったんで、ブログの記事を上げたら、旦那から「恥ずかしいから今すぐ直せ！」と言われました。(´・ω・｀)。</p>
+<div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">get_toggl</span><span class="p">():</span>
+    <span class="err">〜略〜</span>
+    <span class="k">if</span> <span class="n">current</span><span class="o">.</span><span class="n">status_code</span> <span class="o">!=</span> <span class="mi">200</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s2">"togglの情報取得に失敗しました"</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span>
+
+    <span class="n">current_json</span> <span class="o">=</span> <span class="n">current</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">current_json</span><span class="p">[</span><span class="s1">'data'</span><span class="p">]:</span>
+        <span class="k">return</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span>
+    <span class="k">return</span> <span class="n">current_json</span><span class="p">[</span><span class="s1">'data'</span><span class="p">][</span><span class="s1">'pid'</span><span class="p">],</span> <span class="n">current_json</span><span class="p">[</span><span class="s1">'data'</span><span class="p">][</span><span class="s1">'description'</span><span class="p">]</span>
+</pre></div>
+<p>直したあとは↑みたいな感じ。関数の最後のreturnは正常系の最後にしたほうが読みやすいですね。</p>
+<p>あと、私は <strong>変なフラグをつくりたがるやーつ</strong> でもあります。気を抜くとすぐに flg_XXX みたいな変なフラグ変数を作っちゃいます。</p>
+<p>まぁ、過去を振り返っても仕方ないので、これからも変なコードを作らないように自己レビューを厳しくしていきたいと思います。でも、変なときは指摘してくださいね。</p></div>
     
       <div class="article-metadata">
     <span class="article-date"> 2017-12-21 </span>
@@ -60,7 +85,21 @@
 </pre></div>
 <div class="header_target" id="h_2017_2017_2d12_2d21_2darticle_2emd_2"></div><h2>テストしてみよう</h2>
 <p>まずはunittestと同じテストをしてみます。</p>
-<p>なにも継承しないで、 </p></div>
+<p>なにも継承しないで、 <code>test_</code> とついているメソッドを実行してくれるようです。</p>
+<script src="https://gist.github.com/okusama27/2904c282c133ffbf028b992de48f0e9d.js"></script>
+<div class="header_target" id="h_2017_2017_2d12_2d21_2darticle_2emd_3"></div><h2>実行</h2>
+<p><code>py.test</code> の後ろにディレクトリ名を指定すると、ファイル名に <code>test_</code> とか、 <code>_test</code> とかついているファイルを自動で探して実行してくれるそうです。中身がunittestで書かれていても実行してくれるそうです。色々書かなくて良くて楽ですね。</p>
+<div class="codehilite"><pre><span></span>$ python -m pytest tests/
+<span class="o">=========================</span> <span class="nb">test</span> session <span class="nv">starts</span> <span class="o">=========================</span>
+platform darwin -- Python <span class="m">3</span>.5.0, pytest-3.3.1, py-1.5.2, pluggy-0.6.0
+rootdir: /Users/user/tmp/python_sample, inifile:
+collected <span class="m">1</span> item                                                                                                                                       
+
+tests/test_pytest_sample_1.py .                                                                                                                  <span class="o">[</span><span class="m">100</span>%<span class="o">]</span>
+
+<span class="o">=========================</span> <span class="m">1</span> passed in <span class="m">0</span>.03 <span class="nv">seconds</span> <span class="o">=========================</span>
+</pre></div>
+<p>なんだか便利そうなので、もう少し勉強します。</p></div>
     
       <div class="article-metadata">
     <span class="article-date"> 2017-12-19 </span>
@@ -71,37 +110,12 @@
       <div class="article-body"><p>今日の内容は、<a href="http://kamekokamekame.net/advent_calendar/2017/12/18/article.html">Pythonでテストしたい</a>にまとめている内容の詳細部分です。</p>
 <p>unittest.mock.patch（コンテキストマネージャ）を使ってみます。</p>
 <p>sample_method.py</p>
-
+<script src="https://gist.github.com/okusama27/ae6648958d4d84a09127163068e83e6b.js"></script>
 <p>sample_methodを読み込んでテストする</p>
-
-<p>意味がないテストになっていますが、 <code>with patch('sample_method.SampleMethod.method_1') as mock_method_1:</code> と書いて、　<code>mock_method_1.return_value = 'AAA'</code> と書くことで、　<code>SampleMethod.method_1</code></p></div>
-    
-      <div class="article-metadata">
-    <span class="article-date"> 2017-12-17 </span>
-    <span> Python </span>
-    <span> Python </span>
-  </div>
-      <h2 class="article-title"><a href="2017/2017-12-17-article.html">unittest.mock.patchを使ってみる（デコレータ）</a></h2>
-      <div class="article-body"><p>今日の内容は、<a href="http://kamekokamekame.net/advent_calendar/2017/12/18/article.html">Pythonでテストしたい</a>にまとめている内容の詳細部分です。</p>
-<p>unittest.mock.patch（デコレータ）を使ってみます。</p>
-<p>sample_method.py</p>
-
-<p>sample_methodを読み込んでテストする</p>
-
-<p>意味がないテストになっていますが、 <code>@patch('sample_method.SampleMethod.method_1')</code> と書いて、引数の最後に <code>mock_method_1</code> を追加すると、　<code>mock_method_1.return_value = 'AAA'</code> と書くことで、　<code>SampleMethod.method_1</code></p></div>
-    
-      <div class="article-metadata">
-    <span class="article-date"> 2017-12-16 </span>
-    <span> Python </span>
-    <span> Python </span>
-  </div>
-      <h2 class="article-title"><a href="2017/2017-12-16-article.html">unittest.mock.MagicMockを使ってみる</a></h2>
-      <div class="article-body"><p>今日の内容は、<a href="http://kamekokamekame.net/advent_calendar/2017/12/18/article.html">Pythonでテストしたい</a>にまとめている内容の詳細部分です。</p>
-<p>unittest.mock.MagicMockを使ってみます。</p>
-
-<p>20行目の <code>self.sample.method_1 = MagicMock(return_value='AAA')</code> この部分で、 <code>method_1</code> の戻り値を　'method_1'　から 'AAA' に変更しています。</p>
-<p>本来は通信結果返す、データベースの結果を返すメソッドに実際は通信しなくても結果を返してテストできるように使うようです。</p>
-<p><a href="https://docs.python.org/ja/3/library/unittest.mock.html#unittest.mock.MagicMock">公式ドキュメント</a>もどうぞ。</p></div>
+<script src="https://gist.github.com/okusama27/3a95f4e8b1d00fc3d683058998164c83.js"></script>
+<p>意味がないテストになっていますが、 <code>with patch('sample_method.SampleMethod.method_1') as mock_method_1:</code> と書いて、　<code>mock_method_1.return_value = 'AAA'</code> と書くことで、　<code>SampleMethod.method_1</code> の戻り値を置き換えられます。</p>
+<p><code>with</code> の外に出ると元のメソッドに戻ります。</p>
+<p><a href="https://docs.python.org/ja/3/library/contextlib.html">公式ドキュメント</a>もどうぞ。</p></div>
     
   </div>
 

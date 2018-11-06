@@ -26,66 +26,172 @@
   <div class="articles">
     
       <div class="article-metadata">
-    <span class="article-date"> 2015-12-16 </span>
-    <span> OS </span>
-    <span> OS </span>
+    <span class="article-date"> 2017-12-07 </span>
+    <span> Book </span>
+    <span> Book </span>
   </div>
-      <h2 class="article-title"><a href="2015/2015-12-16-article.html">Ubuntu14.04でdnsサーバを指定した</a></h2>
-      <div class="article-body"><p>この記事は<a href="http://connpass.com/event/22759/" target="_blank">2015 tech-yuruyuru アドベントカレンダー</a>の１６日目の記事です。</p>
-<p>ユルユル〜と思っていたら、意外とみんなちゃんとしていますが、普通にゆるい感じでお願いします。</p>
-<p>自宅でvirtual boxを設定したらどうもインターネットに繋がらない。と思ったら、dnsを設定しないといけませんでした。</p>
-<p>下記がOSの詳細。</p>
-<div class="codehilite"><pre><span></span>$ cat /etc/lsb-release
-<span class="nv">DISTRIB_ID</span><span class="o">=</span>Ubuntu
-<span class="nv">DISTRIB_RELEASE</span><span class="o">=</span><span class="m">14</span>.04
-<span class="nv">DISTRIB_CODENAME</span><span class="o">=</span>trusty
-<span class="nv">DISTRIB_DESCRIPTION</span></pre></div></div>
+      <h2 class="article-title"><a href="2017/2017-12-07-article.html">Effective Pythonで学ぶ - 3章　クラスと継承3</a></h2>
+      <div class="article-body"><div class="header_target" id="h_2017_2017_2d12_2d07_2darticle_2emd_1"></div><h2>昨日までのあらすじ</h2>
+<p><a href="https://www.oreilly.co.jp/books/9784873117560/">Effective Python</a>を真面目に読もうと思ったので読みはじめました。</p>
+<div class="header_target" id="h_2017_2017_2d12_2d07_2darticle_2emd_2"></div><h2>3章　クラスと継承</h2>
+<ul>
+<li>項目 25：親クラスを superを使って初期化する</li>
+</ul>
+<p>昨日のコンストラクタの話ですが、<a href="https://www.oreilly.co.jp/books/9784873116884/">Python文法詳解</a>の６．４．３継承にありました。
+MRO（Method Resolution Order）で検索していくらしいです。同じ親を持つと兄弟も検索していくそうです。</p>
+<p>おじいちゃんもおばあちゃんも ~~objectを継承して、~~ super()を書いたら、こうなりました。</p>
+<div class="codehilite"><pre><span></span><span class="k">class</span> <span class="nc">GrandPa</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+        <span class="k">print</span><span class="p">(</span><span class="s1">'おじいちゃん'</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">Papa</span><span class="p">(</span><span class="n">GrandPa</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+        <span class="k">print</span><span class="p">(</span><span class="s1">'パパ'</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">GrandMa</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+        <span class="k">print</span><span class="p">(</span><span class="s1">'おばあちゃん'</span><span class="p">)</span>
+
+
+<span class="k">class</span> <span class="nc">Mama</span><span class="p">(</span><span class="n">GrandMa</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+        <span class="k">print</span><span class="p">(</span><span class="s1">'ママ'</span><span class="p">)</span>
+
+
+<span class="k">class</span> <span class="nc">Boku</span><span class="p">(</span><span class="n">Papa</span><span class="p">,</span> <span class="n">Mama</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+        <span class="k">print</span><span class="p">(</span><span class="s1">'僕'</span><span class="p">)</span>
+
+
+<span class="n">boku</span> <span class="o">=</span> <span class="n">Boku</span><span class="p">()</span>
+</pre></div>
+<p>大集合</p>
+<div class="codehilite"><pre><span></span>おばあちゃん
+ママ
+おじいちゃん
+パパ
+僕
+</pre></div>
+<p>スッキリして良かったです。</p>
+<p>結局、多重継承を使って1から書いたりしないのですが、知っておくのはいいことですね。
+わからないと調べるし。</p>
+<p>クラスの章が重い。これ、読み終わるのかな。。。</p>
+<div class="header_target" id="h_2017_2017_2d12_2d07_2darticle_2emd_3"></div><h2>追記</h2>
+<p>Python3は「class GrandPa(object):」書かなくてもobject継承するそうです。</p>
+<p>ありがたいお言葉をいただいたので、精進します。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p dir="ltr" lang="ja">クラスの継承はインスタンスとして1つなので boku はおじいちゃんでもあるという解釈になります。クラス、継承、インスタンスの概念を根本的に学びなおしたほうがいいのではと思います。</p>— あお (@aodag) <a href="https://twitter.com/aodag/status/938580425353465856?ref_src=twsrc%5Etfw">2017年12月7日</a></blockquote>
+<p><script async="" charset="utf-8" src="https://platform.twitter.com/widgets.js"></script> </p></div>
     
       <div class="article-metadata">
-    <span class="article-date"> 2015-12-10 </span>
+    <span class="article-date"> 2017-12-06 </span>
     <span> Book </span>
     <span> Book </span>
   </div>
-      <h2 class="article-title"><a href="2015/2015-12-10-article.html">ドラッカーさんに教わったIT技術者が変わる50の習慣</a></h2>
-      <div class="article-body"><div class="header_target" id="h_2015_2015_2d12_2d10_2darticle_2emd_1"></div><h2>ドラッカーさんに教わったIT技術者が変わる50の習慣</h2>
-<p><a href="http://www.amazon.co.jp/gp/product/4798040363/ref=as_li_tf_il?ie=UTF8&amp;camp=247&amp;creative=1211&amp;creativeASIN=4798040363&amp;linkCode=as2&amp;tag=ironhotcom-22" rel="nofollow"><img border="0" src="http://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=4798040363&amp;Format=_SL250_&amp;ID=AsinImage&amp;MarketPlace=JP&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=ironhotcom-22"/></a><img alt="" border="0" height="1" src="http://ir-jp.amazon-adsystem.com/e/ir?t=ironhotcom-22&amp;l=as2&amp;o=9&amp;a=4798040363" style="border:none !important; margin:0px !important;" width="1"/></p>
-<p>会社に本の代金を支援してくれる制度があります。仕事に役立つ本を買ったら、たとえ自宅にずっと置いておいても毎月３０００円分まで援助してくれます。どの会社にもあると思うのですが、完全に自分のものにしても良いし、退職時も戻したりしなくていいというのが普通の会社と違うと思います。</p>
-<p>その制度で買った１冊目の本です。</p>
-<p>仕事のやり方をドラッカーさんの名言をはさみつつ解説している本ですが、リーダー的なところの話が良かったです。すっと読める本ですが、対人関係でどうしようかなぁ〜と悩んだ時に読み返す感じですね。</p></div>
+      <h2 class="article-title"><a href="2017/2017-12-06-article.html">Effective Pythonで学ぶ - 3章　クラスと継承 2</a></h2>
+      <div class="article-body"><div class="header_target" id="h_2017_2017_2d12_2d06_2darticle_2emd_1"></div><h2>昨日までのあらすじ</h2>
+<p><a href="https://www.oreilly.co.jp/books/9784873117560/">Effective Python</a>を真面目に読もうと思ったので読みはじめました。</p>
+<div class="header_target" id="h_2017_2017_2d12_2d06_2darticle_2emd_2"></div><h2>3章　クラスと継承</h2>
+<ul>
+<li>項目 24：@classmethodポリモルフィズムを使ってオブジェクトをジェネリックに構築する</li>
+<li>項目 25：親クラスを superを使って初期化する</li>
+</ul>
+<p><img alt="関数" src="/static/images/picture201712/picture_20171206_1.png"/></p>
+<p>実行してみて謎なことが。こんなものなの？</p>
+<div class="codehilite"><pre><span></span><span class="k">class</span> <span class="nc">GrandPa</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="s1">'おじいちゃん'</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">Papa</span><span class="p">(</span><span class="n">GrandPa</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+        <span class="k">print</span><span class="p">(</span><span class="s1">'パパ'</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">Boku</span><span class="p">(</span><span class="n">Papa</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+        <span class="k">print</span><span class="p">(</span><span class="s1">'僕'</span><span class="p">)</span>
+
+<span class="n">boku</span> <span class="o">=</span> <span class="n">Boku</span><span class="p">()</span>
+</pre></div>
+<p>実行すると、こんな感じ</p>
+<div class="codehilite"><pre><span></span>おじいちゃん
+パパ
+僕
+</pre></div>
+<p>別系統のママを足す</p>
+<div class="codehilite"><pre><span></span><span class="k">class</span> <span class="nc">GrandMa</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="s1">'おばあちゃん'</span><span class="p">)</span>
+
+
+<span class="k">class</span> <span class="nc">Mama</span><span class="p">(</span><span class="n">GrandMa</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+        <span class="k">print</span><span class="p">(</span><span class="s1">'ママ'</span><span class="p">)</span>
+
+
+<span class="k">class</span> <span class="nc">Boku</span><span class="p">(</span><span class="n">Papa</span><span class="p">,</span> <span class="n">Mama</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+        <span class="k">print</span><span class="p">(</span><span class="s1">'僕'</span><span class="p">)</span>
+
+
+<span class="n">boku</span> <span class="o">=</span> <span class="n">Boku</span><span class="p">()</span>
+</pre></div>
+<p>実行すると、こんな感じ</p>
+<div class="codehilite"><pre><span></span>おじいちゃん
+パパ
+僕
+</pre></div>
+<p>ママの方は実行されない。多重継承して、同じメソッドがあると左側が優先されるらしい。</p>
+<p>しかし、ママもおじいちゃんを継承すると、</p>
+<div class="codehilite"><pre><span></span><span class="k">class</span> <span class="nc">Mama</span><span class="p">(</span><span class="n">GrandPa</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+        <span class="k">print</span><span class="p">(</span><span class="s1">'ママ'</span><span class="p">)</span>
+
+
+<span class="k">class</span> <span class="nc">Boku</span><span class="p">(</span><span class="n">Papa</span><span class="p">,</span> <span class="n">Mama</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+        <span class="k">print</span><span class="p">(</span><span class="s1">'僕'</span><span class="p">)</span>
+
+
+<span class="n">boku</span> <span class="o">=</span> <span class="n">Boku</span><span class="p">()</span>
+</pre></div>
+<p>なんということでしょう〜</p>
+<div class="codehilite"><pre><span></span>おじいちゃん
+ママ
+パパ
+僕
+</pre></div>
+<p>ママが出てきた！</p>
+<p>調べる気力が無いので、また今度。</p>
+<div class="header_target" id="h_2017_2017_2d12_2d06_2darticle_2emd_3"></div><h2>追記</h2>
+<p>super()が足りなかったようです。しみずかわさんありがとう。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p dir="ltr" lang="ja">GranPaとGranMaが<br/>super().__init__()呼んでないからだねー <a href="https://t.co/BOhrEEcg51">https://t.co/BOhrEEcg51</a></p>— Takayuki Shimizukawa (@shimizukawa) <a href="https://twitter.com/shimizukawa/status/938413224239624192?ref_src=twsrc%5Etfw">2017年12月6日</a></blockquote>
+<p><script async="" charset="utf-8" src="https://platform.twitter.com/widgets.js"></script> </p></div>
     
       <div class="article-metadata">
-    <span class="article-date"> 2015-12-01 </span>
+    <span class="article-date"> 2017-12-05 </span>
     <span> Book </span>
     <span> Book </span>
   </div>
-      <h2 class="article-title"><a href="2015/2015-12-01-article.html">本音で生きる</a></h2>
-      <div class="article-body"><div class="header_target" id="h_2015_2015_2d12_2d01_2darticle_2emd_1"></div><h2>本音で生きる　一秒も後悔しない強い生き方 (SB新書)</h2>
-<p><a href="http://www.amazon.co.jp/gp/product/B00W4O6E0U/ref=as_li_tf_il?ie=UTF8&amp;camp=247&amp;creative=1211&amp;creativeASIN=B00W4O6E0U&amp;linkCode=as2&amp;tag=ironhotcom-22" rel="nofollow"><img border="0" src="http://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=B00W4O6E0U&amp;Format=_SL250_&amp;ID=AsinImage&amp;MarketPlace=JP&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=ironhotcom-22"/></a><img alt="" border="0" height="1" src="http://ir-jp.amazon-adsystem.com/e/ir?t=ironhotcom-22&amp;l=as2&amp;o=9&amp;a=B00W4O6E0U" style="border:none !important; margin:0px !important;" width="1"/></p>
-<p>みんな大好きホリエモンの本です。言い訳ばっかりしてないで、やりたいことがあるならやればいいじゃん！って本です。周りの自己評価が気になってしょうがない人は読むといいと思う。そうでもない人は読んでもしょうがない感じ。勢いで買っちゃったんですが、暗い気分の時とかに読むと前向きになれます。</p></div>
-    
-      <div class="article-metadata">
-    <span class="article-date"> 2015-11-30 </span>
-    <span> Book </span>
-    <span> Book </span>
-  </div>
-      <h2 class="article-title"><a href="2015/2015-11-30-article.html">いいとこ取り! 熟年交際のススメ</a></h2>
-      <div class="article-body"><div class="header_target" id="h_2015_2015_2d11_2d30_2darticle_2emd_1"></div><h2>いいとこ取り! 熟年交際のススメ</h2>
-<iframe frameborder="0" marginheight="0" marginwidth="0" scrolling="no" src="http://rcm-fe.amazon-adsystem.com/e/cm?t=ironhotcom-22&amp;o=9&amp;p=8&amp;l=as1&amp;asins=4103019360&amp;ref=tf_til&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;m=amazon&amp;lc1=0000FF&amp;bc1=000000&amp;bg1=FFFFFF&amp;npa=1&amp;f=ifr" style="width:120px;height:240px;"></iframe>
-<p>西原理恵子、ゲスいけど、好きです。自分じゃ思っていてもなかなか言えない本音を言ってくれる。</p>
-<p>“０点の女には０点男しか寄ってこない。弁護士と付き合いたかったら弁護士になればいい。”って話を読んで、若い時、全く同じこと考えていたなーと。思いました。子供の時から勉強ができる男が好きだったのですが、もっと賢い人と出会うにはもっと賢い場所に行かねば！と思って勉強してました。まぁ、頑張った甲斐あって似たような点数の人とは出えたと思うｗ</p>
-<p>不倫も軽くならいいとか水筒（隠語です）いっぱい持っとけのあたりには全く共感できないですが、暗い時に読むといいと思う。</p></div>
-    
-      <div class="article-metadata">
-    <span class="article-date"> 2015-08-01 </span>
-    <span> Book </span>
-    <span> Book </span>
-  </div>
-      <h2 class="article-title"><a href="2015/2015-08-01-article.html">Pythonプロフェッショナルプログラミング第２版</a></h2>
-      <div class="article-body"><div class="header_target" id="h_2015_2015_2d08_2d01_2darticle_2emd_1"></div><h2>Pythonプロフェッショナルプログラミング第2版</h2>
-<p><a href="http://www.amazon.co.jp/gp/product/479804315X/ref=as_li_tf_il?ie=UTF8&amp;camp=247&amp;creative=1211&amp;creativeASIN=479804315X&amp;linkCode=as2&amp;tag=ironhotcom-22"><img border="0" src="http://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=479804315X&amp;Format=_SL250_&amp;ID=AsinImage&amp;MarketPlace=JP&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=ironhotcom-22"/></a><img alt="" border="0" height="1" src="http://ir-jp.amazon-adsystem.com/e/ir?t=ironhotcom-22&amp;l=as2&amp;o=9&amp;a=479804315X" style="border:none !important; margin:0px !important;" width="1"/></p>
-<p>名前からするとパーフェクトPythonのような本かしら？という印象ですが、プログラミングのTips集ではありません。</p>
-<p>Pythonを利用した仕事の進め方の本です。BeProud社でのPythonを利用した場合の仕事の進め方の紹介となっています。
-途中まではPythonっぽい本なんですが、途中からBeProud社で新しく働く人向けの内容でPython関係ないじゃん！な内容もまざっておりますので純粋にPythonのチュートリアル、Tipsと思って買うと「あれ？」と思うかもしれないのでご注意ください。</p></div>
+      <h2 class="article-title"><a href="2017/2017-12-05-article.html">Effective Pythonで学ぶ - 3章　クラスと継承</a></h2>
+      <div class="article-body"><div class="header_target" id="h_2017_2017_2d12_2d05_2darticle_2emd_1"></div><h2>昨日までのあらすじ</h2>
+<p><a href="https://www.oreilly.co.jp/books/9784873117560/">Effective Python</a>を真面目に読もうと思ったので読みはじめました。</p>
+<div class="header_target" id="h_2017_2017_2d12_2d05_2darticle_2emd_2"></div><h2>3章　クラスと継承</h2>
+<ul>
+<li>項目 22：辞書やタプルで記録管理するよりもヘルパークラスを使う</li>
+<li>項目 23：単純なインタフェースにはクラスの代わりに関数を使う</li>
+</ul>
+<p><img alt="関数" src="/static/images/picture201712/picture_20171205_1.png"/></p>
+<p>だんだんだらけてきてますが、まぁ、ぼちぼちやります。</p></div>
     
   </div>
 

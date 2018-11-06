@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="ja-JP">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>index - 鉄は熱いうちに打て</title>
+  
+  <link rel="stylesheet" href="static/css/sample_article.css">
+
+</head>
+
+<body>
+  
+<div class="container">
+  <h1 class="index-title">
+    <a href="index.html">鉄は熱いうちに打て</a>
+  </h1>
+
+  <div class="container-inner">
+    <div class="container-body">
+      
+
+  <div class="articles">
+    
+      <div class="article-metadata">
+    <span class="article-date"> 2016-06-28 </span>
+    <span> PyCon JP </span>
+    <span> PyCon JP </span>
+  </div>
+      <h2 class="article-title"><a href="2016/2016-06-28-article.html">PyConJP 2016 Talkと私</a></h2>
+      <div class="article-body"><p>応募したのですが、見事、不採用。</p>
+<p>通知の前にご縁があって、<a href="http://pyconjp.blogspot.jp/2016/06/pyconjp2016-reviewers-apply.html" target="_blank">外部審査員</a>をお引き受けしてまして、応募されたTalkをほぼ見ました。</p>
+<p>Talkって概要だけ出しておいて、当日までに仕上げるのかな？とおもっていたのですが、ところがどっこい、思ってたより完成度が高いプロポーザルだらけ！！</p>
+<p>もし、私が出したのものの内容が良かったとしても（仮定ですよ）、こりゃ受からん！と外部審査員１日目にして思いました。
+しかし、他のレビューワーさんからのフィードバックなどを頂いたので、「可能性あるのかな？」とその気になってせっせと修正しました。が、不採用でした。ハハハ（涙）</p>
+<p>今年は「出してみようかな？」くらいの気持ちで初めて出したので、<a href="https://twitter.com/hajime_nakagami">nakagami</a>さんのように来年は選ばれるようにもっと前から計画を練りたいと思います。</p>
+<p>最後に外部審査員の話。</p>
+<ul>
+<li>
+<p>良かった点</p>
+<ul>
+<li>みんなのプロポーザルが詳細まで見れた。</li>
+<li>PyConJPのスタッフSlackに参加できたので、スタッフさんの雰囲気とか苦労を知ることができた。</li>
+<li>自分がレビューして選ばれたTalkが見れるなんて、PyConが楽しみになった！！</li>
+</ul>
+</li>
+<li>
+<p>悪かった点</p>
+<ul>
+<li>知っている人のは評価しにくい。</li>
+<li>よくわからない話題は評価しにくい。</li>
+<li>悪い点をつけられない。</li>
+</ul>
+</li>
+</ul>
+<p>英語のものとか、知らない話題のものとかをレビューするの大変でしたが、トータルで楽しかったです。皆さんも気軽にやってみたらいかがと、思いました。</p></div>
+    
+      <div class="article-metadata">
+    <span class="article-date"> 2015-12-31 </span>
+    <span> Other </span>
+    <span> Other </span>
+  </div>
+      <h2 class="article-title"><a href="2015/2015-12-31-article.html">クワインって何？</a></h2>
+      <div class="article-body"><p>クワインって知ってます？ただの貴族の遊びのようなものですが。</p>
+<p><strong>自身のソースコードと完全に同じ文字列を出力するプログラムである。</strong></p>
+<p>参照: <a href="https://ja.wikipedia.org/wiki/%E3%82%AF%E3%83%AF%E3%82%A4%E3%83%B3_(%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0)" target="_blank">wikipedia</a></p>
+<p>「自分のプログラム書いたファイルを読み込んで表示すればいいんじゃないの？」って思ったんですが、そういうのは邪道だそうです。</p></div>
+    
+      <div class="article-metadata">
+    <span class="article-date"> 2015-12-17 </span>
+    <span> Event </span>
+    <span> Event </span>
+  </div>
+      <h2 class="article-title"><a href="2015/2015-12-17-article.html">Slackのとあるチャンネルから記事を取得したい</a></h2>
+      <div class="article-body"><p>この記事は<a href="http://connpass.com/event/22759/" target="_blank">2015 tech-yuruyuru アドベントカレンダー</a>の１7日目の記事です。</p>
+<p>なぜ、２日連続でエントリーしたのか。それは空いていたから。エントリーした時は出来る気がしたんですが。。書くテーマを決めて、内容の下調べも終えてからエントリーしないとダメだな。と反省しています。</p>
+<p>そんなわけでゆるい話。</p>
+<p>いろんな所でSlack使っているんですが、とあるチャンネルの記録だけを抜いて、特定の文字列を含む記事を保存しておきたいんですが、どうやるのかなぁ？と調べたので、それを書いておきます。</p>
+<p>まず、公開ちゃんねる全部をexportする機能があるんですが、全部いらないし、大きくなるのでやらないです。バックアップを毎日しておきたい場合にはいいですね。</p>
+<p><img alt="slack0" src="/static/images/old/slack0-300x137.png"/></p>
+<p>Slack APIってところを見ると<a href="https://api.slack.com/methods/channels.history" target="_blank">channels.history</a>というAPIがありますね。画面でパラメータを入力すればテストもできるようになっています。</p>
+<p>まずは認証用のTokenを作成します。</p>
+<p><img alt="slack3" src="/static/images/old/slack3-300x214.png"/></p>
+<p>すごい親切で<a href="https://api.slack.com/web" target="_blank">https://api.slack.com/web</a>でCreate tokenボタンを押すだけで取得できます。複数参加していたら複数分表示されています。</p>
+<p>で、<a href="https://api.slack.com/methods/channels.history" target="_blank">channels.history</a>にアクセスします。</p>
+<p><img alt="slack1" src="/static/images/old/slack1-300x223.png"/></p>
+<p>でも、channelってところがチャンネル名じゃなくてcannelのIDじゃないとダメみたいです。と思ったら、それもchannels.listというAPIで取れるみたいです。</p>
+<p><img alt="slack2" src="/static/images/old/slack2-300x205.png"/></p>
+<p>とれたchannelのIDをchannels.historyで指定してこれで特定のチャンネルの記事がとれました。</p>
+<p>調べたものの、トークン作ると管理者にメールが飛ぶみたいなんで調べただけでやってないです。ははは。</p></div>
+    
+  </div>
+
+  <div class="index-pagination">
+    
+      <a class="index-navi"
+         href="index_21.html">&larr;</a>
+    
+    
+    
+      <a class="index-navi"
+         href="index_23.html">&rarr;</a>
+    
+  </div>
+
+
+    </div>
+    <aside class="container-right">
+
+      カテゴリ:
+        
+      <ul>
+        
+          <li>
+            <a href="index_category_category_Advent@20Calendar.html">
+              Advent Calendar
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Book.html">
+              Book
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Event.html">
+              Event
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Git.html">
+              Git
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_OS.html">
+              OS
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Other.html">
+              Other
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_PyCon@20JP.html">
+              PyCon JP
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_PyLadies.html">
+              PyLadies
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Python.html">
+              Python
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Sphinx.html">
+              Sphinx
+            </a>
+          </li>
+        
+          <li>
+            <a href="index_category_category_Web.html">
+              Web
+            </a>
+          </li>
+        
+      </ul>
+      <div>
+        <br><br>
+        <a href="//af.moshimo.com/af/c/click?a_id=767877&p_id=1166&pc_id=1793&pl_id=20229&guid=ON" target="_blank" rel="nofollow"><img src="//image.moshimo.com/af-img/0408/000000020229.png" width="250" height="250" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=767877&p_id=1166&pc_id=1793&pl_id=20229" width="1" height="1" style="border:none;">
+        <br>
+        <a href="//af.moshimo.com/af/c/click?a_id=767877&p_id=1166&pc_id=1793&pl_id=17971&guid=ON" target="_blank" rel="nofollow"><img src="//image.moshimo.com/af-img/0408/000000017971.png" width="250" height="250" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=767877&p_id=1166&pc_id=1793&pl_id=17971" width="1" height="1" style="border:none;">
+      </div>
+    </aside>
+  </div>
+
+</div>
+
+</body>
+</html>

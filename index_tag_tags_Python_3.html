@@ -26,96 +26,189 @@
   <div class="articles">
     
       <div class="article-metadata">
-    <span class="article-date"> 2017-12-01 </span>
+    <span class="article-date"> 2017-12-14 </span>
     <span> Python </span>
     <span> Python </span>
   </div>
-      <h2 class="article-title"><a href="2017/2017-12-01-article.html">The Zen of Python</a></h2>
-      <div class="article-body"><p>12月ですね。</p>
-<div class="header_target" id="h_2017_2017_2d12_2d01_2darticle_2emd_1"></div><h2>はじめに</h2>
-<p>今年も今月で終わりですが、最後になにか学習をしたいと考えていました。
-知らない言語を学んでみようかなと <code>Land of Lisp</code> という本を読んでみました。しかし、作者の他言語への並々ならぬ気持ちがすごかったので、受け止めきれなかったです。<code>Lisp</code> に関してはわかりやすかったです。読むまでは <code>Lisp</code> はカッコばっかりでとっつきにくいと思ったけどいい本でした。</p>
-<p>そんな時、<a href="https://cronote.connpass.com/">くろのて勉強会</a>に参加しました。</p>
-<ul>
-<li>他言語学ぶほどPython知っているの？</li>
-<li>おまえのPythonの知識は充分なの？</li>
-</ul>
-<p>と私の中のリトル亀子が問いかけてきます。</p></div>
+      <h2 class="article-title"><a href="2017/2017-12-14-article.html">TogglとSlackを連携したいと思った経緯</a></h2>
+      <div class="article-body"><p>仕事がんばっていますか？</p>
+<p>私はすぐに気が散ってしまい、全然作業が進みません。どこかの塾のキャッチフレーズとかに <strong>やりはじめないと、やる気は出ません。</strong> とかありましたが、やり始めるのが億劫で、ぼーっとしているとすぐに１時間位過ぎてしまいます。</p>
+<p>そこで、業務改善の本を読みまくりました。</p>
+<p>業務改善の本じゃないですが、ホモドーロテクニックが紹介されていました。まぁ、集中しろとおっしゃってます。</p>
+<p><a href="https://www.amazon.co.jp/SOFT-SKILLS-%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E9%96%8B%E7%99%BA%E8%80%85%E3%81%AE%E4%BA%BA%E7%94%9F%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB-%E3%82%B8%E3%83%A7%E3%83%B3%E3%83%BB%E3%82%BD%E3%83%B3%E3%83%A1%E3%82%BA-ebook/dp/B01GDS0994/ref=as_li_ss_il?ie=UTF8&amp;qid=1513859358&amp;sr=8-1&amp;keywords=SOFT+SKILLS%E3%80%80%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E9%96%8B%E7%99%BA%E8%80%85%E3%81%AE%E4%BA%BA%E7%94%9F%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB&amp;linkCode=li2&amp;tag=ironhotcom-22&amp;linkId=726f53104c97c25958a9ece0489accd7" target="_blank"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=B01GDS0994&amp;Format=_SL160_&amp;ID=AsinImage&amp;MarketPlace=JP&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=ironhotcom-22"/></a><img alt="" border="0" height="1" src="https://ir-jp.amazon-adsystem.com/e/ir?t=ironhotcom-22&amp;l=li2&amp;o=9&amp;a=B01GDS0994" style="border:none !important; margin:0px !important;" width="1"/></p>
+<p>筆者、朝の４時頃起きて仕事するとか、社畜魂丸出しな感じの本ですが、午前中に仕事の殆どを集中してやる。あたりはぐっと来ました。
+英語を話せる方法は英語しか話せない人とデートすることだそうです。既婚者はどうすればいいんだ！！</p>
+<p><a href="https://www.amazon.co.jp/%E3%81%AA%E3%81%9C-%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AE%E4%BB%95%E4%BA%8B%E3%81%AF%E7%B5%82%E3%82%8F%E3%82%89%E3%81%AA%E3%81%84%E3%81%AE%E3%81%8B-%E3%82%B9%E3%83%94%E3%83%BC%E3%83%89%E3%81%AF%E6%9C%80%E5%BC%B7%E3%81%AE%E6%AD%A6%E5%99%A8%E3%81%A7%E3%81%82%E3%82%8B-%E4%B8%AD%E5%B3%B6%E8%81%A1/dp/4905073413/ref=as_li_ss_il?_encoding=UTF8&amp;qid=&amp;sr=&amp;linkCode=li2&amp;tag=ironhotcom-22&amp;linkId=b48214690a9d1c2a171b8b11ca2ade68" target="_blank"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=4905073413&amp;Format=_SL160_&amp;ID=AsinImage&amp;MarketPlace=JP&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=ironhotcom-22"/></a><img alt="" border="0" height="1" src="https://ir-jp.amazon-adsystem.com/e/ir?t=ironhotcom-22&amp;l=li2&amp;o=9&amp;a=4905073413" style="border:none !important; margin:0px !important;" width="1"/></p>
+<p>ホモドーロテクニックだ！と勢いで、ポモドーロタイマー的なアプリなどを入れてやってみたのですが、私の仕事的にずーとコーディングするということもなく、とぎれとぎれに５分で終わる仕事をしたり、１，２時間かかる仕事をしたりするので、２５分は結構切りが悪かった。</p>
+<p>紆余曲折でいきついたのが<a href="https://toggl.com/">Toggl</a>でした。</p>
+<p>やったことを記録しておくツールです。止め忘れとかを教えてくれます。有名なので、詳細は省きます。</p>
+<p>けっこう、毎日同じ仕事をしているので、一度タイトルを書けばON, OFFを押すだけでとても便利です。ブラウザの拡張プラグインを使えば色々なサービスと連携できます。私は主にGitHubとasanaと連携して使っています。</p>
+<p>それから半年ほど経ったある日、会社のチーム全体でTogglを利用しようということになりました。</p>
+<p>私のチームはみんないろいろな仕事を細切れでやっているので、報告がめんどくさい→Togglを使って記録して、それをメンバーに見せればいいじゃない。となりました。</p>
+<p>それなら、仕事を開始したら、チームのSlackにメンションしたいなと思うようになりました。そんなわけで、TogglからSlackに作業を開始したら書き込むスクリプトを書きましたの話をしようと思ってたんですが、長くなってきたので、また明日！</p>
+<p><a href="http://kamekokamekame.net/python/2017/12/15/article.html"><img alt="toggl_slack" src="/static/images/picture201712/toggl_slack.png"/></a></p></div>
     
       <div class="article-metadata">
-    <span class="article-date"> 2015-04-15 </span>
+    <span class="article-date"> 2017-12-12 </span>
     <span> Python </span>
     <span> Python </span>
   </div>
-      <h2 class="article-title"><a href="2015/2015-04-15-article.html">もう一回virtualenvの使い方</a></h2>
-      <div class="article-body"><p>virtualenvの使い方を習得できていないというか、適当に検索して使ってみたけど、皆自分に都合がいいことしか書いてないのでわかりづらい。初心者に優しくない！</p>
-<p>あと、余計なツールは逆にめんどくさい！！と思う。
-ということで、普通に<a href="https://virtualenv.pypa.io/en/latest/index.html" target="_blank">virtualenvのドキュメント</a>を読みました。そうだ！私って英語読めるんだった！！</p>
-<p>インストール</p>
-<div class="codehilite"><pre><span></span>$ <span class="o">[</span>sudo<span class="o">]</span> pip install virtualenv
+      <h2 class="article-title"><a href="2017/2017-12-12-article.html">unittestのテスト前後に実行される処理の確認</a></h2>
+      <div class="article-body"><p>今日の内容は、<a href="http://kamekokamekame.net/advent_calendar/2017/12/18/article.html">Pythonでテストしたい</a>にまとめている内容の詳細部分です。</p>
+<p>この本の236ページに書いてある「テスト実行する前後の処理を定義する」表のメソッドを試してみます。</p>
+<p><a href="https://www.amazon.co.jp/Python-%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA%E5%8E%B3%E9%81%B8%E3%83%AC%E3%82%B7%E3%83%94-%E6%B1%A0%E5%86%85-%E5%AD%9D%E5%95%93/dp/4774177075/ref=as_li_ss_il?s=books&amp;ie=UTF8&amp;qid=1513461251&amp;sr=1-1&amp;keywords=python+%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA&amp;linkCode=li2&amp;tag=ironhotcom-22&amp;linkId=97da69f3c2938b7531280618fa17cb5f" target="_blank"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=4774177075&amp;Format=_SL160_&amp;ID=AsinImage&amp;MarketPlace=JP&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=ironhotcom-22"/></a><img alt="" border="0" height="1" src="https://ir-jp.amazon-adsystem.com/e/ir?t=ironhotcom-22&amp;l=li2&amp;o=9&amp;a=4774177075" style="border:none !important; margin:0px !important;" width="1"/></p>
+<p>こんな感じで書きました。</p>
+<script src="https://gist.github.com/okusama27/4c9fa7d203a50b3278f210ca7d1dcbb3.js"></script>
+<p>実行してみます。</p>
+<div class="header_target" id="h_2017_2017_2d12_2d12_2darticle_2emd_1"></div><h2>実行結果</h2>
+<p><code>setUpClass</code>、<code>tearDownClass</code> は1回ずつ、 <code>setUp</code>、<code>tearDown</code> は2回ずつ呼ばれていますね。</p>
+<div class="codehilite"><pre><span></span>setUpClass
+setUp
+test_method_1
+method_1
+tearDown
+setUp
+test_method_2
+method_2
+tearDown
+tearDownClass
+setUpClass msg
 </pre></div>
-<p>作成</p>
-<div class="codehilite"><pre><span></span>$ virtualenv ENV
+<div class="header_target" id="h_2017_2017_2d12_2d12_2darticle_2emd_2"></div><h2>失敗させる</h2>
+<p>テストが失敗するようにちょっと書き換えてみます。</p>
+<div class="codehilite"><pre><span></span>    <span class="k">def</span> <span class="nf">test_method_2</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="s1">'test_method_2'</span><span class="p">)</span>
+        <span class="n">expected</span> <span class="o">=</span> <span class="s1">'method_3'</span>
+        <span class="n">actual</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sample</span><span class="o">.</span><span class="n">method_2</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">expected</span><span class="p">,</span> <span class="n">actual</span><span class="p">)</span>
 </pre></div>
-<p>アクティブ化</p>
-<div class="codehilite"><pre><span></span>$ <span class="nb">source</span> ENV/bin/activate
+<div class="header_target" id="h_2017_2017_2d12_2d12_2darticle_2emd_3"></div><h2>実行結果</h2>
+<p>失敗しても、 <code>tearDown</code>、<code>tearDownClass</code>も呼ばれていますね。</p>
+<div class="codehilite"><pre><span></span>ssetUpClass
+setUp
+test_method_1
+method_1
+tearDown
+setUp
+test_method_2
+method_2
+tearDown
+
+Failure
+Expected :'method_3'
+Actual   :'method_2'
+ &lt;Click to see difference&gt;
+
+Traceback (most recent call last):
+  File "/Users/kaz/tmp/python_sample/tests/unittest_sample2.py", line 43, in test_method_2
+    self.assertEqual(expected, actual)
+AssertionError: 'method_3' != 'method_2'
+- method_3
+?        ^
++ method_2
+?        ^
+
+
+tearDownClass
+setUpClass msg
 </pre></div>
-<p>アクティブ解除</p>
-<div class="codehilite"><pre><span></span>$ deactivate
-</pre></div></div>
+<p>こんな感じですね。</p>
+<p><img alt="unittest" src="/static/images/picture201712/picture_20171212_1.png"/></p></div>
     
       <div class="article-metadata">
-    <span class="article-date"> 2015-04-14 </span>
+    <span class="article-date"> 2017-12-11 </span>
     <span> Python </span>
     <span> Python </span>
   </div>
-      <h2 class="article-title"><a href="2015/2015-04-14-article.html">eggを作ってみる</a></h2>
-      <div class="article-body"><p>Pythonのモジュールの配布方法としてeggというzipファイルを作成して配るらしい。</p>
-<p>完全にこちらのサイトを参考にしました。ありがとうございます。mm</p>
-<p><a href="http://www.exsoft.net/blog/entry/ab4v5g" target="_blank">python開発環境の構築から作成したeggを別環境へインストールするまで</a>
-pasterのインストール</p>
-<div class="codehilite"><pre><span></span>$ easy_install PasteScript
+      <h2 class="article-title"><a href="2017/2017-12-11-article.html">unittestの公式ドキュメントを読んでみた</a></h2>
+      <div class="article-body"><p>今日の内容は、<a href="http://kamekokamekame.net/advent_calendar/2017/12/18/article.html">Pythonでテストしたい</a>にまとめている内容の詳細部分です。</p>
+<p>unittestの公式ドキュメントを読みます。</p>
+<p><a href="https://docs.python.org/ja/3/library/unittest.html">unittest — ユニットテストフレームワーク</a></p>
+<div class="header_target" id="h_2017_2017_2d12_2d11_2darticle_2emd_1"></div><h2>基本的な例</h2>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">unittest</span>
+
+<span class="c1"># unittest.TestCase)を継承するTestStringMethodsクラスを定義していますね。</span>
+<span class="k">class</span> <span class="nc">TestStringMethods</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
+
+    <span class="c1"># 1つ目のテスト</span>
+    <span class="c1"># 「'foo'.upper()」と「'FOO'」が等しいか比較していますね</span>
+    <span class="k">def</span> <span class="nf">test_upper</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="s1">'foo'</span><span class="o">.</span><span class="n">upper</span><span class="p">(),</span> <span class="s1">'FOO'</span><span class="p">)</span>
+
+    <span class="c1"># 2つ目のテスト</span>
+    <span class="c1"># 全部大文字かどうかを確認するstr.isupper()を利用しています</span>
+    <span class="k">def</span> <span class="nf">test_isupper</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># 「'FOO'.isupper())」の結果がTrueか</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="s1">'FOO'</span><span class="o">.</span><span class="n">isupper</span><span class="p">())</span>
+        <span class="c1"># 「'Foo'.isupper()」の結果がFalseか</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertFalse</span><span class="p">(</span><span class="s1">'Foo'</span><span class="o">.</span><span class="n">isupper</span><span class="p">())</span>
+
+    <span class="c1"># 3つ目のテスト</span>
+    <span class="c1"># 文字を配列に分割して、比較</span>
+    <span class="k">def</span> <span class="nf">test_split</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">s</span> <span class="o">=</span> <span class="s1">'hello world'</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">split</span><span class="p">(),</span> <span class="p">[</span><span class="s1">'hello'</span><span class="p">,</span> <span class="s1">'world'</span><span class="p">])</span>
+        <span class="c1"># わざとstr.split()の引数に文字以外のものを指定して、TypeErrorが起こるか検証</span>
+        <span class="c1"># check that s.split fails when the separator is not a string</span>
+        <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">assertRaises</span><span class="p">(</span><span class="ne">TypeError</span><span class="p">):</span>
+            <span class="n">s</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
+    <span class="n">unittest</span><span class="o">.</span><span class="n">main</span><span class="p">()</span>
 </pre></div>
-<p>雛形の作成</p>
-<div class="codehilite"><pre><span></span>$ paster create -t basic_package MyPkg
+<p>実行</p>
+<div class="codehilite"><pre><span></span>$ python unittest_sample1.py 
+...
+----------------------------------------------------------------------
+Ran <span class="m">3</span> tests in <span class="m">0</span>.000s
+
+OK
 </pre></div>
-<p>これやると色々聞かれる。バージョンとか作者の名前とか。聞かれたことはsetup.py中に記録されています。</p>
-<p>egg作成</p></div>
-    
-      <div class="article-metadata">
-    <span class="article-date"> 2015-04-13 </span>
-    <span> Python </span>
-    <span> Python </span>
-  </div>
-      <h2 class="article-title"><a href="2015/2015-04-13-article.html">pydoc</a></h2>
-      <div class="article-body"><p><code>pydoc</code> という機能を使うと、 <code>Javadoc</code> のようなものが作れるらしい。</p>
-<p>先日の <code>twc.py</code> に書き足してみる</p>
-<div class="codehilite"><pre><span></span><span class="s2">"""</span>
-<span class="s2">This is a command line tool of watching twitter timelines</span>
-<span class="s2">"""</span>
-<span class="nv">__author__</span>  <span class="o">=</span> <span class="s1">'作者&lt;kame＠kamekokamekame.net&gt;'</span>
-<span class="nv">__status__</span>  <span class="o">=</span> <span class="s2">"production"</span>
-<span class="nv">__version__</span> <span class="o">=</span> <span class="s2">"0.1.0"</span>
-<span class="nv">__date__</span>    <span class="o">=</span> <span class="s2">"11 Apr 2015"</span>
+<p><code>-v</code> オプションを付けて詳細を表示</p>
+<div class="codehilite"><pre><span></span>$ python unittest_sample1.py 
+...
+----------------------------------------------------------------------
+Ran <span class="m">3</span> tests in <span class="m">0</span>.000s
+
+OK
+<span class="o">(</span>env<span class="o">)</span> Arsenal:tests kaz$ python unittest_sample1.py -v
+test_isupper <span class="o">(</span>__main__.TestStringMethods<span class="o">)</span> ... ok
+test_split <span class="o">(</span>__main__.TestStringMethods<span class="o">)</span> ... ok
+test_upper <span class="o">(</span>__main__.TestStringMethods<span class="o">)</span> ... ok
+
+----------------------------------------------------------------------
+Ran <span class="m">3</span> tests in <span class="m">0</span>.001s
+
+OK
 </pre></div>
-<p>Pythonのインタプリタで実行</p>
-<div class="codehilite"><pre><span></span>$ python
-&gt;&gt;&gt; help</pre></div></div>
-    
-      <div class="article-metadata">
-    <span class="article-date"> 2015-04-12 </span>
-    <span> Python </span>
-    <span> Python </span>
-  </div>
-      <h2 class="article-title"><a href="2015/2015-04-12-article.html">virtualenv使ってみる</a></h2>
-      <div class="article-body"><p>独立した環境を利用するためのツールがある。virtualenvってやつで、Python3からはpyvenv(venv?)ってのを利用するらしい。</p>
-<p>で、virtualenvを利用しやすくするものにpyenvとか、なんちゃらenvとかいろいろあるみたい。Goで書かれた<a href="https://github.com/zimbatm/direnv" target="_blank">direnv</a>ってのもぐいぐい来ているらしいが、また今度。
-とりあえずインストール</p>
-<div class="codehilite"><pre><span></span>$ sudo pip install virtualenv
+<p>コマンドラインからも実行できる</p>
+<div class="codehilite"><pre><span></span>$ python -m unittest unittest_sample1.TestStringMethods
+...
+----------------------------------------------------------------------
+Ran <span class="m">3</span> tests in <span class="m">0</span>.000s
+
+OK
 </pre></div>
-<p>virtualenvwrapperってのを入れると環境の切り替えが楽らしい</p>
-<div class="codehilite"><pre><span></span>sudo pip install virtualenvwrapper
-</pre></div></div>
+<p>ファイルパスでもできる</p>
+<div class="codehilite"><pre><span></span>$ python -m unittest unittest_sample1.py 
+...
+----------------------------------------------------------------------
+Ran <span class="m">3</span> tests in <span class="m">0</span>.001s
+
+OK
+</pre></div>
+<p><code>-v</code> オプションも付けられる</p>
+<div class="codehilite"><pre><span></span>$ python -m unittest -v unittest_sample1.TestStringMethods
+test_isupper <span class="o">(</span>unittest_sample1.TestStringMethods<span class="o">)</span> ... ok
+test_split <span class="o">(</span>unittest_sample1.TestStringMethods<span class="o">)</span> ... ok
+test_upper <span class="o">(</span>unittest_sample1.TestStringMethods<span class="o">)</span> ... ok
+
+----------------------------------------------------------------------
+Ran <span class="m">3</span> tests in <span class="m">0</span>.001s
+
+OK
+</pre></div>
+<p>今日はここまで、公式ドキュメントを読むのも楽しいですね。</p></div>
     
   </div>
 
