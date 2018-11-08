@@ -1,0 +1,35 @@
+.. kamekokamekame.net documentation master file, created by
+   sphinx-quickstart on Wed Nov  7 00:22:05 2018.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+==============================================
+鉄は熱いうちに打て
+==============================================
+
+なんとなく書いている日記のようなブログです。
+
+--------
+
+.. include:: /pages/2018/2018-11-08-article.rst
+
+----
+
+最新
++++++++++++
+
+.. toctree::
+   :maxdepth: 1
+
+   pages/2018/2018-11-03-article
+   pages/2018/2018-11-01-article
+   pages/2018/2018-09-24-article
+   pages/2018/2018-08-19-article
+   pages/2018/2018-08-06-article
+
+
+
+.. toctree::
+   :maxdepth: 2
+
+   pages/index

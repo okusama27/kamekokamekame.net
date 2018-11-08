@@ -1,0 +1,30 @@
+date: 2017-09-02
+title: 久しぶりにSphinxでスライドを作ろうとしたら完全に迷子
+category: Sphinx
+tags: Sphinx
+
+
+Sphinxでスライドが作れたよねーと思って作ったら、困ったのでメモ
+
+## 結論
+
+[sphinxjp.themes.s6 0.3.0](https://pypi.python.org/pypi/sphinxjp.themes.s6)を見よう！
+
+このリンク先の通りにやれば間違いないです。
+
+## 困ったこと
+
+適当に検索してたら、conf.pyを下のように書くのだというサイトがいくつか出てきて、コンパイルしたら、「'sphinxjp.themecore'」はもう書かなくていいよぉぉぉ。とか出てくるし。
+
+```
+extensions = ['sphinxjp.themecore']
+html_theme = 's6'
+```
+
+正解はこっちでした。
+
+```
+extensions = ['sphinxjp.themes.s6']
+html_theme = 's6'
+
+```

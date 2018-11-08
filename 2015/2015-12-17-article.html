@@ -1,0 +1,114 @@
+
+
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>&lt;no title&gt; &#8212; 鉄は熱いうちに打て</title>
+    <link rel="stylesheet" href="../_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/bizstyle.js"></script>
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="next" title="&lt;no title&gt;" href="2015-12-31-article.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="2015-12-16-article.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="2015-12-31-article.html" title="&lt;no title&gt;"
+             accesskey="N">次へ</a></li>
+        <li class="right" >
+          <a href="2015-12-16-article.html" title="&lt;no title&gt;"
+             accesskey="P">前へ</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &gt;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">2015</a> &gt;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>前のトピックへ</h4>
+  <p class="topless"><a href="2015-12-16-article.html"
+                        title="前の章へ">&lt;no title&gt;</a></p>
+  <h4>次のトピックへ</h4>
+  <p class="topless"><a href="2015-12-31-article.html"
+                        title="次の章へ">&lt;no title&gt;</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>クイック検索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="検索" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <p>date: 2015-12-17
+title:  Slackのとあるチャンネルから記事を取得したい
+category: Event
+tags: Event</p>
+<p>この記事は<a href="http://connpass.com/event/22759/" target="_blank">2015 tech-yuruyuru アドベントカレンダー</a>の１7日目の記事です。</p>
+<p>なぜ、２日連続でエントリーしたのか。それは空いていたから。エントリーした時は出来る気がしたんですが。。書くテーマを決めて、内容の下調べも終えてからエントリーしないとダメだな。と反省しています。</p>
+<p>そんなわけでゆるい話。</p>
+<p>いろんな所でSlack使っているんですが、とあるチャンネルの記録だけを抜いて、特定の文字列を含む記事を保存しておきたいんですが、どうやるのかなぁ？と調べたので、それを書いておきます。</p>
+<p>まず、公開ちゃんねる全部をexportする機能があるんですが、全部いらないし、大きくなるのでやらないです。バックアップを毎日しておきたい場合にはいいですね。</p>
+<p><img alt="slack0" src="static/images/old/slack0-300x137.png" /></p>
+<p>Slack APIってところを見ると<a href="https://api.slack.com/methods/channels.history" target="_blank">channels.history</a>というAPIがありますね。画面でパラメータを入力すればテストもできるようになっています。</p>
+<p>まずは認証用のTokenを作成します。</p>
+<p><img alt="slack3" src="static/images/old/slack3-300x214.png" /></p>
+<p>すごい親切で<a href="https://api.slack.com/web" target="_blank">https://api.slack.com/web</a>でCreate tokenボタンを押すだけで取得できます。複数参加していたら複数分表示されています。</p>
+<p>で、<a href="https://api.slack.com/methods/channels.history" target="_blank">channels.history</a>にアクセスします。</p>
+<p><img alt="slack1" src="static/images/old/slack1-300x223.png" /></p>
+<p>でも、channelってところがチャンネル名じゃなくてcannelのIDじゃないとダメみたいです。と思ったら、それもchannels.listというAPIで取れるみたいです。</p>
+<p><img alt="slack2" src="static/images/old/slack2-300x205.png" /></p>
+<p>とれたchannelのIDをchannels.historyで指定してこれで特定のチャンネルの記事がとれました。</p>
+<p>調べたものの、トークン作ると管理者にメールが飛ぶみたいなんで調べただけでやってないです。ははは。</p>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="2015-12-31-article.html" title="&lt;no title&gt;"
+             >次へ</a></li>
+        <li class="right" >
+          <a href="2015-12-16-article.html" title="&lt;no title&gt;"
+             >前へ</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &gt;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >2015</a> &gt;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2018, kamekokamekame.net.
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.1 で生成しました。
+    </div>
+  </body>
+</html>

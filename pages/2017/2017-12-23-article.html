@@ -1,0 +1,131 @@
+
+
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>達人プログラマーを読んでみた &#8212; 鉄は熱いうちに打て</title>
+    <link rel="stylesheet" href="../../_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../../_static/bizstyle.js"></script>
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="地獄のエビデンス" href="2017-12-24-article.html" />
+    <link rel="prev" title="関数のreturnが変なコード" href="2017-12-22-article.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="2017-12-24-article.html" title="地獄のエビデンス"
+             accesskey="N">次へ</a></li>
+        <li class="right" >
+          <a href="2017-12-22-article.html" title="関数のreturnが変なコード"
+             accesskey="P">前へ</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">鉄は熱いうちに打て</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >一覧</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" accesskey="U">2017</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">達人プログラマーを読んでみた</a><ul>
+<li><a class="reference internal" href="#id2">24. いつ例外を使用するか？</a></li>
+<li><a class="reference internal" href="#id3">33. リファクタリング</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>前のトピックへ</h4>
+  <p class="topless"><a href="2017-12-22-article.html"
+                        title="前の章へ">関数のreturnが変なコード</a></p>
+  <h4>次のトピックへ</h4>
+  <p class="topless"><a href="2017-12-24-article.html"
+                        title="次の章へ">地獄のエビデンス</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>クイック検索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="検索" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="id1">
+<h1>達人プログラマーを読んでみた<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>2017-12-23</p>
+<p>「達人プログラマー」という本がいいと昔から聞いていたのですが、絶版していてなかなか読むことができず年月が過ぎ、去年オーム社から新装版として出たので勢いで買ったのですが、余り読んでませんでした。ちょこちょこ読んでいこうと思います。</p>
+<a href="https://www.amazon.co.jp/%E6%96%B0%E8%A3%85%E7%89%88-%E9%81%94%E4%BA%BA%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9E%E3%83%BC-%E8%81%B7%E4%BA%BA%E3%81%8B%E3%82%89%E5%90%8D%E5%8C%A0%E3%81%B8%E3%81%AE%E9%81%93-Andrew-Hunt/dp/427421933X/ref=as_li_ss_il?ie=UTF8&qid=1514636620&sr=8-1&keywords=%E9%81%94%E4%BA%BA%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9E%E3%83%BC&linkCode=li2&tag=ironhotcom-22&linkId=75181be5d3d6e6fb07275ce348c31c07" target="_blank"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=427421933X&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=ironhotcom-22" ></a><img src="https://ir-jp.amazon-adsystem.com/e/ir?t=ironhotcom-22&l=li2&o=9&a=427421933X" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /><div class="section" id="id2">
+<h2>24. いつ例外を使用するか？<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<ul class="simple">
+<li>例外処理がなくてもプログラムは仕様どおりに動作するようにする。</li>
+<li>必ずファイルが有る仕様の場合は、ファイルがない場合の例外を取るのは良いが、ファイルが有るか無いかわからないプログラムでは、ファイルの存在確認をし、エラーコードを返すようにすべき</li>
+</ul>
+<p><strong>例外は例外的な問題のみに使用すること</strong></p>
+<p>例外って、例外が起こる実装の場合はなにも考えずに書きがちですが、何故起こっているのか考えてから実装を考えるのが大事ですね。</p>
+</div>
+<div class="section" id="id3">
+<h2>33. リファクタリング<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>いつリファクタリングを行うべきなのか？</p>
+<ul class="simple">
+<li>二重化</li>
+<li>直行していない設計</li>
+<li>時代遅れの知識</li>
+<li>パフォーマンス</li>
+</ul>
+<p><strong>早めにリファクタリングすること、そしてこまめにリファクタリングすること</strong></p>
+<p>リファクタリングしたくてもできないことって多いです。特に納品してしまったコード。デグレードしたら目も当てられません。私が思うリファクタリングのタイミングはコーディングした次の日じゃないかと思います。最後に、コードを見直す時間を工数に加味しておくのは品質を保持するのに重要じゃないのでしょうか。</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="2017-12-24-article.html" title="地獄のエビデンス"
+             >次へ</a></li>
+        <li class="right" >
+          <a href="2017-12-22-article.html" title="関数のreturnが変なコード"
+             >前へ</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">鉄は熱いうちに打て</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >一覧</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" >2017</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2018, kamekokamekame.net.
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.1 で生成しました。
+    </div>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+
+
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>TogglとSlackを連携した話 &#8212; 鉄は熱いうちに打て</title>
+    <link rel="stylesheet" href="../../_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../../_static/bizstyle.js"></script>
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="unittest.mock.MagicMockを使ってみる" href="2017-12-16-article.html" />
+    <link rel="prev" title="TogglとSlackを連携したいと思った経緯" href="2017-12-14-article.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="2017-12-16-article.html" title="unittest.mock.MagicMockを使ってみる"
+             accesskey="N">次へ</a></li>
+        <li class="right" >
+          <a href="2017-12-14-article.html" title="TogglとSlackを連携したいと思った経緯"
+             accesskey="P">前へ</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">鉄は熱いうちに打て</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >一覧</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" accesskey="U">2017</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">TogglとSlackを連携した話</a><ul>
+<li><a class="reference internal" href="#id1">昨日までのあらすじ</a></li>
+<li><a class="reference internal" href="#id2">サービスを探そう！</a></li>
+<li><a class="reference internal" href="#toggl">Togglのトークンを取得</a></li>
+<li><a class="reference internal" href="#slackincoming-webhooksurl">slackのIncoming WebHooksのURLを取得</a></li>
+<li><a class="reference internal" href="#id3">コード</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>前のトピックへ</h4>
+  <p class="topless"><a href="2017-12-14-article.html"
+                        title="前の章へ">TogglとSlackを連携したいと思った経緯</a></p>
+  <h4>次のトピックへ</h4>
+  <p class="topless"><a href="2017-12-16-article.html"
+                        title="次の章へ">unittest.mock.MagicMockを使ってみる</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>クイック検索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="検索" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="togglslack">
+<h1>TogglとSlackを連携した話<a class="headerlink" href="#togglslack" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>2017-12-15</p>
+<div class="section" id="id1">
+<h2>昨日までのあらすじ<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>そうだ! Togglで仕事を開始したら、Slackに通知しよう！</p>
+<img alt="toggl_slack" src="../../_images/toggl_slack.png" />
+</div>
+<div class="section" id="id2">
+<h2>サービスを探そう！<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>最初は無料で通知できるサービスが無いか探しました。 <a class="reference external" href="https://zapier.com/">Zapier</a> というサービスを見つけました。いろいろなサービスを連携するサービスのようです。</p>
+<p>使っていたのですが、1ヶ月100回までしか無料で使えず、1日5回。普通の人なら足りそうですが、私は1日でいろんなタスクを行ったり来たりするので、すぐに限界が来ました。(´；ω；｀)</p>
+<p>そんなわけで、探すのもめんどくさいので、自分でスクリプト書いて、PCのcronで動かせばいいじゃない！と思い、実装しました。</p>
+</div>
+<div class="section" id="toggl">
+<h2>Togglのトークンを取得<a class="headerlink" href="#toggl" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>Togglの自分のアイコンあたりを押したら、profile settingsにAPI tokenというのがあるのでコピーします。</p>
+</div>
+<div class="section" id="slackincoming-webhooksurl">
+<h2>slackのIncoming WebHooksのURLを取得<a class="headerlink" href="#slackincoming-webhooksurl" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>SlackのAppsあたりで「Incoming WebHooks」を探してPOST用のURLを探してください。</p>
+</div>
+<div class="section" id="id3">
+<h2>コード<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<script src="https://gist.github.com/okusama27/08582d8c203883844c96ce7c0e28b38d.js"></script><p>Togglから、現在のタスクを取得して、Slackに書き込んでいるだけのコードです。ユーザー名とかべた書きですいません。</p>
+<p>タスク継続中はslackに出ないように前のタスクをファイルの保存しています。それと違ったら、pushするぅ〜。って感じ。</p>
+<p>cronから呼ぶためにshファイル作りました。</p>
+<script src="https://gist.github.com/okusama27/51ce956a42ecc68f43e0ebdccb2d3e43.js"></script><p>で、cronと思ったんですが、MacOSでは、LaunchAgentsというのを使うんじゃ。と何処かで見かけたので、LaunchAgentsにしました。 「~/Library/LaunchAgents/mytoggl.plist」に設置しています。 <cite>&lt;key&gt;StartInterval&lt;/key&gt;</cite> に、　300秒（5分）に1回toggl.shを実行と設定しています。</p>
+<script src="https://gist.github.com/okusama27/76e00b1fbe67ef629964d42229539268.js"></script><p>動くと、こんな感じでSlackに表示されます。</p>
+<img alt="toggle_sample1" src="../../_images/toggle_sample1.png" />
+<p>イェア！</p>
+<p>1日のまとめ取得とか、色々改造していきたいです。</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="2017-12-16-article.html" title="unittest.mock.MagicMockを使ってみる"
+             >次へ</a></li>
+        <li class="right" >
+          <a href="2017-12-14-article.html" title="TogglとSlackを連携したいと思った経緯"
+             >前へ</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">鉄は熱いうちに打て</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >一覧</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" >2017</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2018, kamekokamekame.net.
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.1 で生成しました。
+    </div>
+  </body>
+</html>

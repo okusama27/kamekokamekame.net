@@ -1,0 +1,47 @@
+date: 2015-04-15
+title:  もう一回virtualenvの使い方
+category: Python
+tags: Python
+
+virtualenvの使い方を習得できていないというか、適当に検索して使ってみたけど、皆自分に都合がいいことしか書いてないのでわかりづらい。初心者に優しくない！
+
+あと、余計なツールは逆にめんどくさい！！と思う。
+ということで、普通に<a href="https://virtualenv.pypa.io/en/latest/index.html" target="_blank">virtualenvのドキュメント</a>を読みました。そうだ！私って英語読めるんだった！！
+
+インストール
+
+```bash
+$ [sudo] pip install virtualenv
+```
+作成
+
+```bash
+$ virtualenv ENV
+```
+
+アクティブ化
+
+```bash
+$ source ENV/bin/activate
+```
+
+アクティブ解除
+
+```bash
+$ deactivate
+```
+
+システムデフォルト以外のPythonのバージョンを指定したい場合。
+
+```bash
+$ virtualenv -p {他のPython} ENV
+```
+
+環境の削除（普通に作ったディレクトリを削除するだけ）
+
+```bash
+$ rm -rf ENV 
+```
+
+以上！
+

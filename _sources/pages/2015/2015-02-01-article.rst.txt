@@ -1,0 +1,23 @@
+==========================================================
+embulkとは？
+==========================================================
+
+2015-02-01
+
+..
+   :date: 2015-02-01
+   :title: embulkとは？
+   :category: Other
+   :tags: Other
+
+
+embulkは様々なストレージ、データベース、NoSQLなどからクラウドサービスへデータを転送するプラグインベースのデータローダです。オープンソースとしてfluentd,MessagePackなどの開発者でもあるトレジャーデータ社の古橋さんを含むメンバーが開発しました。
+
+古橋さんの記事: http://frsyuki.hatenablog.com/entry/2015/02/16/080150
+
+Github: https://github.com/embulk/embulk
+
+スライド: http://www.slideshare.net/frsyuki/embuk-making-data-integration-works-relaxed
+
+様々な人がプラグインを作成し、協力することによりEmbulkは発展していくそうです。
+

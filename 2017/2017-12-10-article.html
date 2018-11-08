@@ -1,0 +1,232 @@
+
+
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>参考リンク &#8212; 鉄は熱いうちに打て</title>
+    <link rel="stylesheet" href="../_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/bizstyle.js"></script>
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="next" title="基本的な例" href="2017-12-11-article.html" />
+    <link rel="prev" title="昨日までのあらすじ" href="2017-12-09-article.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="2017-12-11-article.html" title="基本的な例"
+             accesskey="N">次へ</a></li>
+        <li class="right" >
+          <a href="2017-12-09-article.html" title="昨日までのあらすじ"
+             accesskey="P">前へ</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &gt;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">&lt;no title&gt;</a> &gt;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">参考リンク</a></li>
+<li><a class="reference internal" href="#">参考図書</a></li>
+</ul>
+
+  <h4>前のトピックへ</h4>
+  <p class="topless"><a href="2017-12-09-article.html"
+                        title="前の章へ">昨日までのあらすじ</a></p>
+  <h4>次のトピックへ</h4>
+  <p class="topless"><a href="2017-12-11-article.html"
+                        title="次の章へ">基本的な例</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>クイック検索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="検索" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <p>date: 2017-12-10
+title: doctestを触ってみた
+category: Python
+tags: Python</p>
+<p>今日の内容は、<a class="reference external" href="http://kamekokamekame.net/advent_calendar/2017/12/18/article.html">Pythonでテストしたい</a>にまとめている内容の詳細部分です。</p>
+<p>doctestを触ってみました。</p>
+<p>sample.py</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">値を1増加させる関数です</span>
+<span class="sd">&gt;&gt;&gt; add_one(1)</span>
+<span class="sd">2</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+
+<span class="k">def</span> <span class="nf">add_one</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    値が1増加します</span>
+<span class="sd">    &gt;&gt;&gt; [add_one(x) for x in range(5)]</span>
+<span class="sd">    [1, 2, 3, 4, 5]</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="kn">import</span> <span class="nn">doctest</span>
+    <span class="n">doctest</span><span class="o">.</span><span class="n">testmod</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>実行する</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ python sample.py
+</pre></div>
+</div>
+<p>正常に動作した場合はなにも表示されない</p>
+<p>sample.pyの14行目を <code class="docutils literal notranslate"><span class="pre">return</span> <span class="pre">x</span> <span class="pre">+</span> <span class="pre">2</span></code> と書き換えて実行</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ python sample.py 
+**********************************************************************
+File <span class="s2">&quot;sample.py&quot;</span>, line <span class="m">3</span>, in __main__
+Failed example:
+    add_one<span class="o">(</span><span class="m">1</span><span class="o">)</span>
+Expected:
+    <span class="m">2</span>
+Got:
+    <span class="m">3</span>
+**********************************************************************
+File <span class="s2">&quot;sample.py&quot;</span>, line <span class="m">11</span>, in __main__.add_one
+Failed example:
+    <span class="o">[</span>add_one<span class="o">(</span>x<span class="o">)</span> <span class="k">for</span> x in range<span class="o">(</span><span class="m">5</span><span class="o">)]</span>
+Expected:
+    <span class="o">[</span><span class="m">1</span>, <span class="m">2</span>, <span class="m">3</span>, <span class="m">4</span>, <span class="m">5</span><span class="o">]</span>
+Got:
+    <span class="o">[</span><span class="m">2</span>, <span class="m">3</span>, <span class="m">4</span>, <span class="m">5</span>, <span class="m">6</span><span class="o">]</span>
+**********************************************************************
+<span class="m">2</span> items had failures:
+   <span class="m">1</span> of   <span class="m">1</span> in __main__
+   <span class="m">1</span> of   <span class="m">1</span> in __main__.add_one
+***Test Failed*** <span class="m">2</span> failures.
+</pre></div>
+</div>
+<p>エーラーが出ます。
+正しい場合も実行時にオプション <code class="docutils literal notranslate"><span class="pre">-v</span></code> をつけるとテストの詳細が表示されます。</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ python sample.py -v
+Trying:
+    add_one<span class="o">(</span><span class="m">1</span><span class="o">)</span>
+Expecting:
+    <span class="m">2</span>
+ok
+Trying:
+    <span class="o">[</span>add_one<span class="o">(</span>x<span class="o">)</span> <span class="k">for</span> x in range<span class="o">(</span><span class="m">5</span><span class="o">)]</span>
+Expecting:
+    <span class="o">[</span><span class="m">1</span>, <span class="m">2</span>, <span class="m">3</span>, <span class="m">4</span>, <span class="m">5</span><span class="o">]</span>
+ok
+<span class="m">2</span> items passed all tests:
+   <span class="m">1</span> tests in __main__
+   <span class="m">1</span> tests in __main__.add_one
+<span class="m">2</span> tests in <span class="m">2</span> items.
+<span class="m">2</span> passed and <span class="m">0</span> failed.
+Test passed.
+</pre></div>
+</div>
+<p>別のファイルにも書き出せるようです。</p>
+<p>sample.txt</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>The ``sample`` module
+==========================
+Using ``add_one``
+------------------------
+First import ``add_one`` from the ``sample`` module:
+
+    &gt;&gt;&gt; from sample9 import add_one
+
+Now use it:
+
+    &gt;&gt;&gt; add_one(1)
+    2
+</pre></div>
+</div>
+<p>sample.py</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">add_one</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="kn">import</span> <span class="nn">doctest</span>
+    <span class="n">doctest</span><span class="o">.</span><span class="n">testfile</span><span class="p">(</span><span class="s2">&quot;sample.txt&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>実行</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ python sample.py -v
+Trying:
+    from sample import add_one
+Expecting nothing
+ok
+Trying:
+    add_one(1)
+Expecting:
+    2
+ok
+1 items passed all tests:
+   2 tests in sample.txt
+2 tests in 1 items.
+2 passed and 0 failed.
+Test passed.
+</pre></div>
+</div>
+<p>簡単な機能の関数のテストならこれで充分ですね。</p>
+<div class="section" id="">
+<span id="id1"></span><h1>参考リンク<a class="headerlink" href="#" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>公式ドキュメント: <a class="reference external" href="https://docs.python.org/ja/3/library/doctest.html">doctest — 対話的な実行例をテストする</a></p>
+</div>
+<div class="section" id="">
+<span id="id2"></span><h1>参考図書<a class="headerlink" href="#" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p><a href="https://www.amazon.co.jp/Python-%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA%E5%8E%B3%E9%81%B8%E3%83%AC%E3%82%B7%E3%83%94-%E6%B1%A0%E5%86%85-%E5%AD%9D%E5%95%93/dp/4774177075/ref=as_li_ss_il?s=books&ie=UTF8&qid=1513461251&sr=1-1&keywords=python+%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA&linkCode=li2&tag=ironhotcom-22&linkId=97da69f3c2938b7531280618fa17cb5f" target="_blank"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=4774177075&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=ironhotcom-22" ></a><img src="https://ir-jp.amazon-adsystem.com/e/ir?t=ironhotcom-22&l=li2&o=9&a=4774177075" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></p>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="2017-12-11-article.html" title="基本的な例"
+             >次へ</a></li>
+        <li class="right" >
+          <a href="2017-12-09-article.html" title="昨日までのあらすじ"
+             >前へ</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &gt;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >&lt;no title&gt;</a> &gt;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2018, kamekokamekame.net.
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.1 で生成しました。
+    </div>
+  </body>
+</html>

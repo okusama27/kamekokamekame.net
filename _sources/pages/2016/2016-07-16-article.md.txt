@@ -1,0 +1,46 @@
+date: 2016-07-16
+title:  効率化がんばっとります
+category: Other
+tags: Other
+
+最近、同僚の進捗がすごいなと思っています。でも、１８時になったら帰るし、家でこっそりやっているふうでもないです。
+
+一方、私はというと日によってムラがあり、できなかった日の夕方にはその日は有給だったということにしてなかったコトにしたい幻想に駆られます。
+
+しかし、会社も１９時も過ぎるとほとんど人がいなくなる！？
+
+どうも、みんなの仕事量が私より少ないというよりは、効率がいい。つまり、集中して仕事に取り組んでいるようです。
+
+ほぼ頭のなかで道筋ができている状態での実装工程ならともかく（そんな仕事、めったにない。）、大体の仕事が考えながらやることばかりです。
+
+そんなわけで、本を読みました。
+
+**なぜ、あなたの仕事は終わらないのか スピードは最強の武器である**
+
+<script charset="utf-8" type="text/javascript" src="http://ws-fe.amazon-adsystem.com/widgets/q?rt=ss_mfw&#038;ServiceVersion=20070822&#038;MarketPlace=JP&#038;ID=V20070822%2FJP%2Fironhotcom-22%2F8001%2Fc2e86c3f-4702-4100-9dc5-536f29ec591e"> </script> <NOSCRIPT><A rel="nofollow" HREF="http://ws-fe.amazon-adsystem.com/widgets/q?rt=ss_mfw&#038;ServiceVersion=20070822&#038;MarketPlace=JP&#038;ID=V20070822%2FJP%2Fironhotcom-22%2F8001%2Fc2e86c3f-4702-4100-9dc5-536f29ec591e&#038;Operation=NoScript">Amazon.co.jp ウィジェット</A></NOSCRIPT>
+
+**SOFT SKILLS　ソフトウェア開発者の人生マニュアル**
+
+<script charset="utf-8" type="text/javascript" src="http://ws-fe.amazon-adsystem.com/widgets/q?rt=ss_mfw&#038;ServiceVersion=20070822&#038;MarketPlace=JP&#038;ID=V20070822%2FJP%2Fironhotcom-22%2F8001%2F45c73053-681e-4d12-9108-84bcd0223362"> </script> <NOSCRIPT><A rel="nofollow" HREF="http://ws-fe.amazon-adsystem.com/widgets/q?rt=ss_mfw&#038;ServiceVersion=20070822&#038;MarketPlace=JP&#038;ID=V20070822%2FJP%2Fironhotcom-22%2F8001%2F45c73053-681e-4d12-9108-84bcd0223362&#038;Operation=NoScript">Amazon.co.jp ウィジェット</A></NOSCRIPT>
+
+**スーパープログラマーに学ぶ 最強シンプル思考術**
+
+<script charset="utf-8" type="text/javascript" src="http://ws-fe.amazon-adsystem.com/widgets/q?rt=ss_mfw&#038;ServiceVersion=20070822&#038;MarketPlace=JP&#038;ID=V20070822%2FJP%2Fironhotcom-22%2F8001%2Fbbf9c883-c88a-47c7-bb35-0415d055a687"> </script> <NOSCRIPT><A rel="nofollow" HREF="http://ws-fe.amazon-adsystem.com/widgets/q?rt=ss_mfw&#038;ServiceVersion=20070822&#038;MarketPlace=JP&#038;ID=V20070822%2FJP%2Fironhotcom-22%2F8001%2Fbbf9c883-c88a-47c7-bb35-0415d055a687&#038;Operation=NoScript">Amazon.co.jp ウィジェット</A></NOSCRIPT>
+
+ざっくりまとめると。
+
+
+- ポモドーロタイマーいい！
+- 集中しろ
+- テレビ見るな
+- ちゃんと寝ろ
+
+うん。知ってる。
+
+知っているけど、実践できてないことだらけでした。
+一番上の本で進められてた<a href="https://kanbanflow.com/" target="_blank">Kanban Flow</a>を使い始めました。全然、思い通りには集中できないですが、少しずつ進捗が早くなっているとは思います。
+
+しかし、進捗ゼロの日を有給で置き換えたいものですね。はー、なかったコトにしたいよ。まじで。
+
+そんなわけにも行かないので、同僚達のように効率よく働けるようにモチベーションを自分でコントロールできるようにしていこう。という、結果も何も書かない話。ここまで読んだ人ゴメン。
+

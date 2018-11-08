@@ -1,0 +1,114 @@
+date: 2017-12-11
+title: unittestの公式ドキュメントを読んでみた
+category: Python
+tags: Python
+
+今日の内容は、[Pythonでテストしたい](http://kamekokamekame.net/advent_calendar/2017/12/18/article.html)にまとめている内容の詳細部分です。
+
+unittestの公式ドキュメントを読みます。
+
+[unittest — ユニットテストフレームワーク](https://docs.python.org/ja/3/library/unittest.html)
+
+## 基本的な例
+
+```python
+import unittest
+
+# unittest.TestCase)を継承するTestStringMethodsクラスを定義していますね。
+class TestStringMethods(unittest.TestCase):
+
+    # 1つ目のテスト
+    # 「'foo'.upper()」と「'FOO'」が等しいか比較していますね
+    def test_upper(self):
+        self.assertEqual('foo'.upper(), 'FOO')
+
+    # 2つ目のテスト
+    # 全部大文字かどうかを確認するstr.isupper()を利用しています
+    def test_isupper(self):
+        # 「'FOO'.isupper())」の結果がTrueか
+        self.assertTrue('FOO'.isupper())
+        # 「'Foo'.isupper()」の結果がFalseか
+        self.assertFalse('Foo'.isupper())
+
+    # 3つ目のテスト
+    # 文字を配列に分割して、比較
+    def test_split(self):
+        s = 'hello world'
+        self.assertEqual(s.split(), ['hello', 'world'])
+        # わざとstr.split()の引数に文字以外のものを指定して、TypeErrorが起こるか検証
+        # check that s.split fails when the separator is not a string
+        with self.assertRaises(TypeError):
+            s.split(2)
+
+if __name__ == '__main__':
+    unittest.main()
+```
+
+実行
+
+```bash
+$ python unittest_sample1.py 
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+OK
+```
+
+`-v` オプションを付けて詳細を表示
+
+```bash
+$ python unittest_sample1.py 
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+OK
+(env) Arsenal:tests kaz$ python unittest_sample1.py -v
+test_isupper (__main__.TestStringMethods) ... ok
+test_split (__main__.TestStringMethods) ... ok
+test_upper (__main__.TestStringMethods) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK
+```
+
+コマンドラインからも実行できる
+
+```bash
+$ python -m unittest unittest_sample1.TestStringMethods
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+OK
+```
+
+ファイルパスでもできる
+
+```bash
+$ python -m unittest unittest_sample1.py 
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK
+```
+
+`-v` オプションも付けられる
+
+```bash
+$ python -m unittest -v unittest_sample1.TestStringMethods
+test_isupper (unittest_sample1.TestStringMethods) ... ok
+test_split (unittest_sample1.TestStringMethods) ... ok
+test_upper (unittest_sample1.TestStringMethods) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK
+```
+
+今日はここまで、公式ドキュメントを読むのも楽しいですね。

@@ -1,0 +1,58 @@
+date: 2015-04-12
+title:  virtualenv使ってみる
+category: Python
+tags: Python
+
+独立した環境を利用するためのツールがある。virtualenvってやつで、Python3からはpyvenv(venv?)ってのを利用するらしい。
+
+で、virtualenvを利用しやすくするものにpyenvとか、なんちゃらenvとかいろいろあるみたい。Goで書かれた<a href="https://github.com/zimbatm/direnv" target="_blank">direnv</a>ってのもぐいぐい来ているらしいが、また今度。
+とりあえずインストール
+
+```bash
+$ sudo pip install virtualenv
+```
+
+virtualenvwrapperってのを入れると環境の切り替えが楽らしい
+
+```bash 
+sudo pip install virtualenvwrapper
+```
+
+環境設定 .bashrcに追加
+
+```bash
+#virtualenv settings
+export WORKON_HOME=$HOME/.virtualenvs
+. /Library/Frameworks/Python.framework/Versions/2.7/bin/virtualenvwrapper.sh
+```
+環境のファイル作る
+
+```bash 
+mkvirtualenv {env name}
+```
+
+作った環境一覧
+
+```bash 
+workon
+```
+とある環境をアクティブにする
+
+```bash 
+workon {env name}
+```
+
+アクティブ終了
+
+```bash 
+deactivate
+```
+
+削除するとき
+
+```bash 
+rmvirtualenv {env name}
+```
+
+_私の環境はMacOSXです。_
+

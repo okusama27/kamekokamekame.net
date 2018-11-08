@@ -1,0 +1,38 @@
+==========================================================
+Pythonエンジニア養成読本
+==========================================================
+
+2015-04-21
+
+..
+   :date: 2015-04-21
+   :title: Pythonエンジニア養成読本
+   :category: Book
+   :tags: Book
+
+
+Pythonエンジニア養成読本［いまどきの開発ノウハウ満載！］
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. raw:: html
+
+   <a href="http://www.amazon.co.jp/gp/product/4774173207/ref=as_li_qf_sp_asin_il?ie=UTF8&#038;camp=247&#038;creative=1211&#038;creativeASIN=4774173207&#038;linkCode=as2&#038;tag=ironhotcom-22"><img border="0" src="http://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&#038;ASIN=4774173207&#038;Format=_SL250_&#038;ID=AsinImage&#038;MarketPlace=JP&#038;ServiceVersion=20070822&#038;WS=1&#038;tag=ironhotcom-22" ></a>
+
+Python mini Hack-a-thonでこれでもかと宣伝されていたので買いました。
+
+
+.. raw:: html
+
+   <blockquote class="twitter-tweet" lang="ja"><p lang="ja" dir="ltr">Pythonエンジニア養成読本が届きました。</p>
+   <p>&mdash; KamekoKameKame (@okusama27) <a href="https://twitter.com/okusama27/status/589405826906882049">2015, 4月 18</a></p></blockquote>
+   <p><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+
+.. raw:: html
+
+   <blockquote class="twitter-tweet" lang="ja"><p lang="ja" dir="ltr">Pythonエンジニア養成読本読破。RubyとかPHPをある程度知っている人がPythonを始めるのに各キーワードが紹介されていてよいと思いました。各キーワードに爪が引っかかったので、そのあとは自分で調べます。</p>
+   <p>&mdash; KamekoKameKame (@okusama27) <a href="https://twitter.com/okusama27/status/590332838051913728">2015, 4月 21</a></p></blockquote>
+   <p><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+
+この形式の本は一通り舐めつつ、初心者向けハンズオンが載っている系が多いと思うのですが、初心者ハンズオン部分が少ないかな？と思いました。その代わり、最近はやりのことをこれでもかと詰め込んであって、私のようなよくわかってない奴には丁度いいですね。
+

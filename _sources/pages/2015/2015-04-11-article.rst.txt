@@ -1,0 +1,167 @@
+==========================================================
+「(第53回)Python mini Hack-a-thon」に参加しました
+==========================================================
+
+2015-04-11
+
+..
+   :date: 2015-04-11
+   :title: 「(第53回)Python mini Hack-a-thon」に参加しました
+   :category: Python
+   :tags: Python
+
+
+更にPythonを修得するのと動機付けのために「(第53回)Python mini Hack-a-thon」に参加しました。
+
+運営の皆様、へっぽこな私ですがお世話になりました。
+
+会場を提供くださったビープラウド社様ありがとうございます。
+作ったものは、Twitterをコマンドラインで見るやつです。
+
+ソース
++++++++++
+
+.. code-block:: python
+
+   #!/usr/bin/env python
+   -*- coding: utf-8 -*-
+   --------------------------------------------------------------
+   __author__  = 'Kameko<kame@kamekokamekame.net>'
+   from requests_oauthlib import OAuth1Session
+   import json
+   import argparse
+   import yaml
+   from datetime import datetime
+   #import dateutil.tz
+   import pytz
+   Check config file
+   --------------------------------------------------------------
+   config = open('config.yaml').read()
+   data = yaml.load(config)
+   CK = data['twitter_key']['CK']    # Consumer Key
+   CS = data['twitter_key']['CS']    # Consumer Secret
+   AT = data['twitter_key']['AT']    # Access Token
+   AS = data['twitter_key']['AS']    # Access Token Secret
+   Set REST API URL
+   --------------------------------------------------------------
+   USER_TIME_LINE_URL = data['twitter_url']['USER_TIME_LINE_URL']
+   HOME_TIME_LINE_URL = data['twitter_url']['HOME_TIME_LINE_URL']
+   POST_STATUS_UPDATE = data['twitter_url']['POST_STATUS_UPDATE']
+   Set timezone
+   --------------------------------------------------------------
+   tz_tokyo = pytz.timezone('Asia/Tokyo')
+   Get someone's timeline
+   --------------------------------------------------------------
+   def show_user_timeline(oauth,args):
+       params = {"screen_name":args.screen_name}
+       req = oauth.get(USER_TIME_LINE_URL, params = params)
+       # Check response
+       if req.status_code == 200:
+           timeline = json.loads(req.text)
+       else:
+           print ("Error: %d" % req.status_code)
+       # display timeline
+       for tweet in timeline:
+           dt = datetime.strptime(tweet['created_at'],'%a %b %d %H:%M:%S +0000 %Y')
+           #dt.replace(tzinfo=dateutil.tz.tzutc()).astimezone(dateutil.tz.tzlocal())
+           created_at = tz_tokyo.fromutc(dt).strftime('%Y-%m-%d %H:%M:%S')
+           print "[%s]" % created_at ,
+           print tweet["text"]
+   def show_home_timeline(oauth):
+       params = {}
+       req = oauth.get(HOME_TIME_LINE_URL, params = params)
+       # Check response
+       if req.status_code == 200:
+           timeline = json.loads(req.text)
+       else:
+           print ("Error: %d" % req.status_code)
+       # display timeline
+       for tweet in timeline:
+           # i.g. Sat Apr 11 06:10:12 +0000 2015
+           dt = datetime.strptime(tweet['created_at'],'%a %b %d %H:%M:%S +0000 %Y')
+           #dt.replace(tzinfo=dateutil.tz.tzutc()).astimezone(dateutil.tz.tzlocal())
+           created_at = tz_tokyo.fromutc(dt).strftime('%Y-%m-%d %H:%M:%S')
+           print "[%s]" % created_at ,
+           print "@%s :" % tweet["user"]["screen_name"] ,
+           print tweet["text"]
+   def post_tweet(oauth,args):
+       params = {"status":args.tweet}
+       req = oauth.post(POST_STATUS_UPDATE, params = params)
+       # Check response
+       if req.status_code == 200:
+           print "OK"
+       else:
+           print ("Error: %d" % req.status_code)
+   main flow
+   --------------------------------------------------------------
+   if __name__ == '__main__':
+       # Get args
+       parser = argparse.ArgumentParser(description='twitter command line tool')
+       parser.add_argument('command')
+       parser.add_argument('-s', '--screen_name')
+       parser.add_argument('-t', '--tweet')
+       parser.add_argument('-v')    # Display the request body
+       parser.add_argument('--version', action='version', version='%(prog)s 2.0')
+       args = parser.parse_args()
+       # OAuth
+       oauth = OAuth1Session(CK, CS, AT, AS)
+       if args.command == "home":
+           show_home_timeline(oauth)
+       elif args.command == "timeline":
+           show_user_timeline(oauth,args)
+       elif args.command == "tweet":
+           post_tweet(oauth,args)
+       else:
+           show_home_timeline(oauth)
+
+
+動かしてみた
+
+自分のタイムライン
+
+.. code-block:: bash
+
+   $ ./twc.py home
+
+
+@okusama27のタイムライン
+
+.. code-block:: bash
+
+   $ ./twc.py --screen_name okusama27 timeline
+
+
+Tweetの投稿
+
+.. code-block:: bash
+
+   $ ./twc.py --tweet Hello,Python tweet
+
+
+
+.. image:: ../../_static/images/old/13ad12cfd18aff7dd616870abf39dcba-300x108.png
+   :alt: デモ
+
+
+とりあえず、自分のhomeのTLと指定アカウントのみTLを見るところを作りました。
+
+created_atのtimezoneをJSTにしたかっただけなのにハマりました。。。orz
+そして、教えていただきました #＾＾#
+エラー処理も何もせず。。うーん。
+
+- 感想１：もっと慣れないとPythonistには程遠い。。。
+- 感想２：Javadocみたいなの見たい。（あるのかな？あるよね。。）
+- 感想３：戻り値のクラスを知りたい。
+
+以下は疑問点ですが、後ほど調べます。。。
+
+- 疑問１：C++のヘッダーファイルみたいなの作れます？　メソッドの一覧とかだけ書いてあるファイルあるのか？コンパイルしないからいらないか。。
+- 疑問２：pydocみたいなのを出すためのコメントの書き方とかある？
+
+あと、後悔
+- 後悔１：テストコード書きたかった
+- 後悔２：eggとかにしたかった。
+- 後悔３：同じこと２回も書いている！！
+
+抱負：GWまでにはGithubで公開できるように続けて頑張ります。
+

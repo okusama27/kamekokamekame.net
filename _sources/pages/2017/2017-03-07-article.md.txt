@@ -1,0 +1,18 @@
+date: 2017-03-07
+title: Gitのガイドライン
+category: Git
+tags: Git
+
+
+皆さん、Git使ってますか？
+私は仕事で**GitHub**を使ってます。
+今日はコミットするときのメッセージの話。
+
+何書けばいいのよ？と、思いながら、見よう見まねで書いていたんですが、ガイドラインがあるんですね。
+
+- [Gitのコントリビューター向けのガイドライン](https://github.com/git/git/blob/master/Documentation/SubmittingPatches)
+- [Djangoのコミットガイドライン](https://docs.djangoproject.com/ja/1.10/internals/contributing/committing-code/#committing-guidelines)
+
+あと、issueが終了するキーワードがあるらしい。知らなかった。
+
+- [Closing issues via commit messages](https://help.github.com/articles/closing-issues-via-commit-messages/)
