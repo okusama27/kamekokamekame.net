@@ -1,0 +1,206 @@
+
+
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>pydoc &#8212; 鉄は熱いうちに打て</title>
+    <link rel="stylesheet" href="../_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/bizstyle.js"></script>
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="next" title="eggを作ってみる" href="2015-04-14-article.html" />
+    <link rel="prev" title="virtualenv使ってみる" href="2015-04-12-article.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="2015-04-14-article.html" title="eggを作ってみる"
+             accesskey="N">次へ</a></li>
+        <li class="right" >
+          <a href="2015-04-12-article.html" title="virtualenv使ってみる"
+             accesskey="P">前へ</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">2015</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div id="toc" class="sidebarRow">
+<h3><a href="../index.html">Table Of Contents</a></h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../2018/2018-11-08-article.html">ブログ作成ツールをSphinxに変更しました</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2018/2018-11-03-article.html">PyLadies沖縄合宿 - 2日目</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2018/2018-11-01-article.html">PyLadies沖縄合宿に参加します - 目標を立てよう</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2018/2018-09-24-article.html">PyLadiesの行動規範を整える</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2018/2018-08-19-article.html">PyLadies Tokyo Meetup #35 もくもく会 に参加しました</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../2018/index.html">2018</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2017/index.html">2017</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2016/index.html">2016</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">2015</a></li>
+</ul>
+
+</div>
+  <h4>前のトピックへ</h4>
+  <p class="topless"><a href="2015-04-12-article.html"
+                        title="前の章へ">virtualenv使ってみる</a></p>
+  <h4>次のトピックへ</h4>
+  <p class="topless"><a href="2015-04-14-article.html"
+                        title="次の章へ">eggを作ってみる</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>クイック検索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="検索" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+<h1>鉄は熱いうちに打て<br>
+=============================</h1>
+
+<div class="section" id="pydoc">
+<h1>pydoc<a class="headerlink" href="#pydoc" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>2015-04-13</p>
+<p><code class="docutils literal notranslate"><span class="pre">pydoc</span></code> という機能を使うと、 <code class="docutils literal notranslate"><span class="pre">Javadoc</span></code> のようなものが作れるらしい。</p>
+<p>先日の <code class="docutils literal notranslate"><span class="pre">twc.py</span></code> に書き足してみる</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">This is a command line tool of watching twitter timelines</span>
+<span class="s2">&quot;&quot;&quot;</span>
+<span class="nv">__author__</span>  <span class="o">=</span> <span class="s1">&#39;作者&lt;kame＠kamekokamekame.net&gt;&#39;</span>
+<span class="nv">__status__</span>  <span class="o">=</span> <span class="s2">&quot;production&quot;</span>
+<span class="nv">__version__</span> <span class="o">=</span> <span class="s2">&quot;0.1.0&quot;</span>
+<span class="nv">__date__</span>    <span class="o">=</span> <span class="s2">&quot;11 Apr 2015&quot;</span>
+</pre></div>
+</div>
+<p>Pythonのインタプリタで実行</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ python
+&gt;&gt;&gt; help<span class="o">()</span>
+help&gt; twc
+</pre></div>
+</div>
+<p>おお！表示された！！</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Help on module twc:
+NAME
+    twc - This is a command line tool of watching twitter timelines
+FILE
+    /Users/kaz/git/twitter-cli/twc.py
+FUNCTIONS
+    post_tweet(oauth, args)
+    show_home_timeline(oauth)
+    show_user_timeline(oauth, args)
+        # Get someone&#39;s timeline
+DATA
+    AS = &#39;XXXXXXXXXXXXXXX&#39;
+    AT = &#39;XXXXXXXXXXXXXXX&#39;
+    CK = &#39;XXXXXXXXXXXXXXX&#39;
+    CS = &#39;XXXXXXXXXXXXXXX&#39;
+    HOME_TIME_LINE_URL = &#39;https://api.twitter.com/1.1/statuses/home_timeli...
+    POST_STATUS_UPDATE = &#39;https://api.twitter.com/1.1/statuses/update.json...
+    USER_TIME_LINE_URL = &#39;https://api.twitter.com/1.1/statuses/user_timeli...
+    __author__  = &#39;Kameko Kamekame&lt;kame@kamekokamekame.net&gt;&#39;
+    __date__ = &#39;11 Apr 2015&#39;
+    __status__ = &#39;production&#39;
+    __version__ = &#39;0.1.0&#39;
+    config = &#39;twitter_key:\n    CK: XXXXXXXXXXXXXXX  ... https:/...
+    data = {&#39;twitter_key&#39;: {&#39;AS&#39;: &#39;XXXXXXXXXXXXXXX...
+    tz_tokyo = &lt;DstTzInfo &#39;Asia/Tokyo&#39; JST+9:00:00 STD&gt;
+VERSION
+    0.1.0
+DATE
+    11 Apr 2015
+AUTHOR
+    Kameko Kamekame &lt;kame@kamekokamekame.net&gt;
+</pre></div>
+</div>
+<div class="section" id="id1">
+<h2>後日追記<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>当時、なにを勘違いしたかこれを <code class="docutils literal notranslate"><span class="pre">pydoc</span></code> と思っていましたが、これは組み込み関数 <code class="docutils literal notranslate"><span class="pre">help()</span></code> の話ですね。
+<code class="docutils literal notranslate"><span class="pre">pydoc</span></code> は <code class="docutils literal notranslate"><span class="pre">help()</span></code> をわざわざ使わずにシェルから直接ヘルプがみられる機能なのですね。</p>
+<p><code class="docutils literal notranslate"><span class="pre">help()</span></code> だと</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ python
+&gt;&gt;&gt; help<span class="o">()</span>
+help&gt; sys
+ヘルプが表示される
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">pydoc</span></code> だと</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ pydoc sys
+ヘルプが表示される
+</pre></div>
+</div>
+</div>
+<div class="section" id="id2">
+<h2>公式ドキュメント<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p><a class="reference external" href="https://docs.python.org/ja/3/library/pydoc.html#module-pydoc">pydoc — ドキュメント生成とオンラインヘルプシステム</a></p>
+</div>
+</div>
+
+
+<br><br>
+<style>
+.box5 {
+    padding: 0.5em 1em;
+    border: double 5px #4ec4d3;
+}
+.box5 p {
+    margin: 0;
+    padding: 0;
+    font-size: large;
+}
+</style>
+<p>
+    <a href="//af.moshimo.com/af/c/click?a_id=767877&p_id=1166&pc_id=1793&pl_id=17972&guid=ON" target="_blank" rel="nofollow"><img src="//image.moshimo.com/af-img/0408/000000017972.png" width="234" height="60" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=767877&p_id=1166&pc_id=1793&pl_id=17972" width="1" height="1" style="border:none;">
+    <a href="//af.moshimo.com/af/c/click?a_id=767877&p_id=1166&pc_id=1793&pl_id=20225&guid=ON" target="_blank" rel="nofollow"><img src="//image.moshimo.com/af-img/0408/000000020225.png" width="234" height="60" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=767877&p_id=1166&pc_id=1793&pl_id=20225" width="1" height="1" style="border:none;">
+</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="2015-04-14-article.html" title="eggを作ってみる"
+             >次へ</a></li>
+        <li class="right" >
+          <a href="2015-04-12-article.html" title="virtualenv使ってみる"
+             >前へ</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >2015</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2018, kamekokamekame.net.
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.1 で生成しました。
+    </div>
+  </body>
+</html>

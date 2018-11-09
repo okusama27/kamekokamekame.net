@@ -1,0 +1,210 @@
+
+
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Pythonでテストしたい &#8212; 鉄は熱いうちに打て</title>
+    <link rel="stylesheet" href="../_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/bizstyle.js"></script>
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="next" title="unittest.mock.patchを使ってみる（コンテキストマネージャ）" href="2017-12-19-article.html" />
+    <link rel="prev" title="unittest.mock.patchを使ってみる（デコレータ）" href="2017-12-17-article.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="2017-12-19-article.html" title="unittest.mock.patchを使ってみる（コンテキストマネージャ）"
+             accesskey="N">次へ</a></li>
+        <li class="right" >
+          <a href="2017-12-17-article.html" title="unittest.mock.patchを使ってみる（デコレータ）"
+             accesskey="P">前へ</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">2017</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div id="toc" class="sidebarRow">
+<h3><a href="../index.html">Table Of Contents</a></h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../2018/2018-11-08-article.html">ブログ作成ツールをSphinxに変更しました</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2018/2018-11-03-article.html">PyLadies沖縄合宿 - 2日目</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2018/2018-11-01-article.html">PyLadies沖縄合宿に参加します - 目標を立てよう</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2018/2018-09-24-article.html">PyLadiesの行動規範を整える</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2018/2018-08-19-article.html">PyLadies Tokyo Meetup #35 もくもく会 に参加しました</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../2018/index.html">2018</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">2017</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2016/index.html">2016</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2015/index.html">2015</a></li>
+</ul>
+
+</div>
+  <h4>前のトピックへ</h4>
+  <p class="topless"><a href="2017-12-17-article.html"
+                        title="前の章へ">unittest.mock.patchを使ってみる（デコレータ）</a></p>
+  <h4>次のトピックへ</h4>
+  <p class="topless"><a href="2017-12-19-article.html"
+                        title="次の章へ">unittest.mock.patchを使ってみる（コンテキストマネージャ）</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>クイック検索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="検索" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+<h1>鉄は熱いうちに打て<br>
+=============================</h1>
+
+<div class="section" id="python">
+<h1>Pythonでテストしたい<a class="headerlink" href="#python" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>2017-12-18</p>
+<p>これは、<a class="reference external" href="https://adventar.org/calendars/2462">PyLadies Advent Calendar 2017</a> の 18日目です。</p>
+<div class="section" id="id1">
+<h2>はじめに<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>エモい話は諦めて、これからテストを掘り下げていこうと思っているのでそちらについて書きます。</p>
+<p>最近、本を読んだりインターネットで調べているときにスケッチブックに書いていくのにハマっています。
+あとで見返したりできるし、まとめるために要約を考えたりするので結構良いなと思っています。</p>
+<img alt="テストについて" src="../_images/picture_20171218_1.png" />
+</div>
+<div class="section" id="id3">
+<h2><a class="reference external" href="http://amzn.to/2AK9EOE">Python ライブラリ厳選レシピ</a><a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="id4">
+<h3>第１１章テストとデバック<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p><a class="reference external" href="http://amzn.to/2AK9EOE">Python ライブラリ厳選レシピ</a>  の11章の内容を参考に各モジュールについて確認していきます。</p>
+</div>
+<div class="section" id="pydoc">
+<h3>pydoc<a class="headerlink" href="#pydoc" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>pydocモジュールは、Pythonモジュールから自動的にドキュメントを生成します。
+<cite>help()</cite> と同じ機能をコマンドラインから利用できる他に、<cite>-w</cite> オプションを付けるとhtmlを出力してくれるそうです。
+また、確認用の簡易HTTPサーバーをローカルに起動できるそうです。便利ですね。</p>
+<p>実施例はこちら:
+* <a class="reference external" href="/pages/2015/2015-04-13-article.html">pydoc</a></p>
+</div>
+<div class="section" id="doctest">
+<h3>doctest<a class="headerlink" href="#doctest" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>Pythonファイル中のコメント内の対話的実行例形式で書かれているものが実行されてテストができます。別ファイルに書くこともできるようです。</p>
+<p>実施例はこちら:
+* <a class="reference external" href="/pages/2017/2017-12-10-article.html">doctestを触ってみた</a></p>
+</div>
+<div class="section" id="unittest">
+<h3>unittest<a class="headerlink" href="#unittest" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>他の言語にもあって馴染み深いのがUnitテストですね。</p>
+<p>実施例はこちら:
+* <a class="reference external" href="/pages/2017/2017-12-11-article.html">unittestの公式ドキュメントを読んでみた</a>
+* <a class="reference external" href="/pages/2017/2017-12-12-article.html">unittestのテスト前後に実行される処理の確認</a></p>
+</div>
+<div class="section" id="unittest-mock">
+<h3>unittest.mock<a class="headerlink" href="#unittest-mock" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>テストがオブジェクトに依存する場合にその疑似オブジェクトを用意するためのものですね。</p>
+<p>実施例はこちら:
+* <a class="reference external" href="/pages/2017/2017-12-16-article.html">unittest.mock.MagicMockを使ってみる</a>
+* <a class="reference external" href="/pages/2017/2017-12-17-article.html">unittest.mock.patchを使ってみる（デコレータ）</a>
+* <a class="reference external" href="/pages/2017/2017-12-19-article.html">unittest.mock.patchを使ってみる（コンテキストマネージャ）</a></p>
+</div>
+<div class="section" id="pdb">
+<h3>pdb<a class="headerlink" href="#pdb" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>デバック用のモジュールですね。今度、PyCharmのでバックと合わせて書きたいです。</p>
+</div>
+<div class="section" id="timeit">
+<h3>timeit<a class="headerlink" href="#timeit" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>コードの実行時間を計測するモジュール</p>
+</div>
+<div class="section" id="pytest">
+<h3>pytest<a class="headerlink" href="#pytest" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>サードパーティー製の高度なユニットテストモジュールです。普段はあまり使わないのですが、本も出たし、攻略していきたいです。</p>
+<p>実施例はこちら:
+* <a class="reference external" href="/pages/2017/2017-12-21-article.html">pytestを使ってみる</a></p>
+</div>
+<div class="section" id="traceback">
+<h3>traceback<a class="headerlink" href="#traceback" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>スタックトレース用のモジュールみたいですね。</p>
+</div>
+<div class="section" id="logging">
+<h3>logging<a class="headerlink" href="#logging" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>ログ用のモジュールみたいですね。</p>
+<p>後半のモジュールは手がつけれていないですが、おいおいやっていきます。</p>
+</div>
+</div>
+<div class="section" id="id12">
+<h2>今日の参考書籍:<a class="headerlink" href="#id12" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>今回、参考にした参考書です。</p>
+<p>この本は最近買ったので、ざっとしか読んでないですが1章ずつ噛み締めていきます。</p>
+<a href="https://www.amazon.co.jp/%E3%83%86%E3%82%B9%E3%83%88%E9%A7%86%E5%8B%95%E9%96%8B%E7%99%BA-Kent-Beck/dp/4274217884/ref=as_li_ss_il?ie=UTF8&qid=1513461223&sr=8-1&keywords=%E3%83%86%E3%82%B9%E3%83%88%E9%A7%86%E5%8B%95%E9%96%8B%E7%99%BA&linkCode=li2&tag=ironhotcom-22&linkId=e183526fe87957be00245311da3675a7" target="_blank"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=4274217884&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=ironhotcom-22" ></a><img src="https://ir-jp.amazon-adsystem.com/e/ir?t=ironhotcom-22&l=li2&o=9&a=4274217884" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /><p>普通の初心者向け本はテストについて書いてあっても触りだけですが、
+この本はテストについてきちんと記述があります。
+初めて手にするにはPythonの単体テストについてよくまとまっていて読みやすいと思います。</p>
+<a href="https://www.amazon.co.jp/Python-%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA%E5%8E%B3%E9%81%B8%E3%83%AC%E3%82%B7%E3%83%94-%E6%B1%A0%E5%86%85-%E5%AD%9D%E5%95%93/dp/4774177075/ref=as_li_ss_il?s=books&ie=UTF8&qid=1513461251&sr=1-1&keywords=python+%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA&linkCode=li2&tag=ironhotcom-22&linkId=97da69f3c2938b7531280618fa17cb5f" target="_blank"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=4774177075&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=ironhotcom-22" ></a><img src="https://ir-jp.amazon-adsystem.com/e/ir?t=ironhotcom-22&l=li2&o=9&a=4774177075" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /><p>一度読んでおくと良さそうです。こちらもガッツリとは読んでいないので今後読んでいきたいです。</p>
+<a href="https://www.amazon.co.jp/%E5%88%9D%E3%82%81%E3%81%A6%E3%81%AE%E8%87%AA%E5%8B%95%E3%83%86%E3%82%B9%E3%83%88-%E2%80%95Web%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E8%87%AA%E5%8B%95%E3%83%86%E3%82%B9%E3%83%88%E5%9F%BA%E7%A4%8E-Jonathan-Rasmusson/dp/4873118166/ref=as_li_ss_il?s=books&ie=UTF8&qid=1513461356&sr=1-1&keywords=%E5%88%9D%E3%82%81%E3%81%A6%E3%81%AE%E8%87%AA%E5%8B%95%E3%83%86%E3%82%B9%E3%83%88&linkCode=li2&tag=ironhotcom-22&linkId=04d5cb434e8997acdeb69b2f98eb308d" target="_blank"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=4873118166&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=ironhotcom-22" ></a><img src="https://ir-jp.amazon-adsystem.com/e/ir?t=ironhotcom-22&l=li2&o=9&a=4873118166" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></div>
+</div>
+
+
+<br><br>
+<style>
+.box5 {
+    padding: 0.5em 1em;
+    border: double 5px #4ec4d3;
+}
+.box5 p {
+    margin: 0;
+    padding: 0;
+    font-size: large;
+}
+</style>
+<p>
+    <a href="//af.moshimo.com/af/c/click?a_id=767877&p_id=1166&pc_id=1793&pl_id=17972&guid=ON" target="_blank" rel="nofollow"><img src="//image.moshimo.com/af-img/0408/000000017972.png" width="234" height="60" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=767877&p_id=1166&pc_id=1793&pl_id=17972" width="1" height="1" style="border:none;">
+    <a href="//af.moshimo.com/af/c/click?a_id=767877&p_id=1166&pc_id=1793&pl_id=20225&guid=ON" target="_blank" rel="nofollow"><img src="//image.moshimo.com/af-img/0408/000000020225.png" width="234" height="60" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=767877&p_id=1166&pc_id=1793&pl_id=20225" width="1" height="1" style="border:none;">
+</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="2017-12-19-article.html" title="unittest.mock.patchを使ってみる（コンテキストマネージャ）"
+             >次へ</a></li>
+        <li class="right" >
+          <a href="2017-12-17-article.html" title="unittest.mock.patchを使ってみる（デコレータ）"
+             >前へ</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >2017</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2018, kamekokamekame.net.
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.1 で生成しました。
+    </div>
+  </body>
+</html>

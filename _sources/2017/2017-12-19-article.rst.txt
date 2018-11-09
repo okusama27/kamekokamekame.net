@@ -1,0 +1,35 @@
+==========================================================
+unittest.mock.patchを使ってみる（コンテキストマネージャ）
+==========================================================
+
+2017-12-19
+
+..
+   :date: 2017-12-19
+   :title: unittest.mock.patchを使ってみる（コンテキストマネージャ）
+   :category: Python
+   :tags: Python
+
+
+ 
+今日の内容は、 `Pythonでテストしたい </pages/2017/2017-12-18-article.html>`_ にまとめている内容の詳細部分です。
+
+unittest.mock.patch（コンテキストマネージャ）を使ってみます。
+
+sample_method.py
+
+.. raw:: html
+
+   <script src="https://gist.github.com/okusama27/ae6648958d4d84a09127163068e83e6b.js"></script>
+
+sample_methodを読み込んでテストする
+
+.. raw:: html
+
+   <script src="https://gist.github.com/okusama27/3a95f4e8b1d00fc3d683058998164c83.js"></script>
+
+意味がないテストになっていますが、 `with patch('sample_method.SampleMethod.method_1') as mock_method_1:` と書いて、　`mock_method_1.return_value = 'AAA'` と書くことで、　`SampleMethod.method_1` の戻り値を置き換えられます。
+
+`with` の外に出ると元のメソッドに戻ります。
+
+`公式ドキュメント <https://docs.python.org/ja/3/library/contextlib.html>`_ もどうぞ。

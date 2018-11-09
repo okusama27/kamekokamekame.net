@@ -1,0 +1,170 @@
+==========================================================
+doctestを触ってみた
+==========================================================
+
+2017-12-10
+
+..
+   :date: 2017-12-10
+   :title: doctestを触ってみた
+   :category: Python
+   :tags: Python
+
+
+今日の内容は、 `Pythonでテストしたい </pages/2017/2017-12-18-article.html>`_ にまとめている内容の詳細部分です。
+
+doctestを触ってみました。
+
+sample.py
+
+.. code-block:: python
+
+   """
+   値を1増加させる関数です
+   >>> add_one(1)
+   2
+   """
+
+
+   def add_one(x):
+       """
+       値が1増加します
+       >>> [add_one(x) for x in range(5)]
+       [1, 2, 3, 4, 5]
+       """
+       return x + 1
+
+
+   if __name__ == '__main__':
+       import doctest
+       doctest.testmod()
+
+
+実行する
+
+.. code-block:: bash
+
+   $ python sample.py
+
+
+正常に動作した場合はなにも表示されない
+
+sample.pyの14行目を ``return x + 2`` と書き換えて実行
+
+.. code-block:: bash
+
+   $ python sample.py
+   **********************************************************************
+   File "sample.py", line 3, in __main__
+   Failed example:
+       add_one(1)
+   Expected:
+       2
+   Got:
+       3
+   **********************************************************************
+   File "sample.py", line 11, in __main__.add_one
+   Failed example:
+       [add_one(x) for x in range(5)]
+   Expected:
+       [1, 2, 3, 4, 5]
+   Got:
+       [2, 3, 4, 5, 6]
+   **********************************************************************
+   2 items had failures:
+      1 of   1 in __main__
+      1 of   1 in __main__.add_one
+   ***Test Failed*** 2 failures.
+
+
+エーラーが出ます。
+正しい場合も実行時にオプション ``-v`` をつけるとテストの詳細が表示されます。
+
+.. code-block:: bash
+
+   $ python sample.py -v
+   Trying:
+       add_one(1)
+   Expecting:
+       2
+   ok
+   Trying:
+       [add_one(x) for x in range(5)]
+   Expecting:
+       [1, 2, 3, 4, 5]
+   ok
+   2 items passed all tests:
+      1 tests in __main__
+      1 tests in __main__.add_one
+   2 tests in 2 items.
+   2 passed and 0 failed.
+   Test passed.
+
+
+別のファイルにも書き出せるようです。
+
+sample.txt
+
+.. code-block:: bash
+
+   The ``sample`` module
+   ==========================
+   Using ``add_one``
+   ------------------------
+   First import ``add_one`` from the ``sample`` module:
+
+       >>> from sample9 import add_one
+
+   Now use it:
+
+       >>> add_one(1)
+       2
+
+
+sample.py
+
+.. code-block:: python
+
+   def add_one(x):
+       return x + 1
+
+
+   if __name__ == '__main__':
+       import doctest
+       doctest.testfile("sample.txt")
+
+
+実行
+
+.. code-block:: bash
+
+   $ python sample.py -v
+   Trying:
+       from sample import add_one
+   Expecting nothing
+   ok
+   Trying:
+       add_one(1)
+   Expecting:
+       2
+   ok
+   1 items passed all tests:
+      2 tests in sample.txt
+   2 tests in 1 items.
+   2 passed and 0 failed.
+   Test passed.
+
+
+簡単な機能の関数のテストならこれで充分ですね。
+
+参考リンク
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+公式ドキュメント: `doctest — 対話的な実行例をテストする <https://docs.python.org/ja/3/library/doctest.html>`_ 
+
+参考図書
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+   <a href="https://www.amazon.co.jp/Python-%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA%E5%8E%B3%E9%81%B8%E3%83%AC%E3%82%B7%E3%83%94-%E6%B1%A0%E5%86%85-%E5%AD%9D%E5%95%93/dp/4774177075/ref=as_li_ss_il?s=books&ie=UTF8&qid=1513461251&sr=1-1&keywords=python+%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA&linkCode=li2&tag=ironhotcom-22&linkId=97da69f3c2938b7531280618fa17cb5f" target="_blank"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=4774177075&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=ironhotcom-22" ></a><img src="https://ir-jp.amazon-adsystem.com/e/ir?t=ironhotcom-22&l=li2&o=9&a=4774177075" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+

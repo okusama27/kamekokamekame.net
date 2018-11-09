@@ -1,0 +1,52 @@
+==========================================================
+TogglとSlackを連携したいと思った経緯
+==========================================================
+
+2017-12-14
+
+..
+   :date: 2017-12-14
+   :title: TogglとSlackを連携したいと思った経緯
+   :category: Python
+   :tags: Python
+
+
+
+仕事がんばっていますか？
+
+私はすぐに気が散ってしまい、全然作業が進みません。どこかの塾のキャッチフレーズとかに **やりはじめないと、やる気は出ません。** とかありましたが、やり始めるのが億劫で、ぼーっとしているとすぐに１時間位過ぎてしまいます。
+
+そこで、業務改善の本を読みまくりました。
+
+業務改善の本じゃないですが、ホモドーロテクニックが紹介されていました。まぁ、集中しろとおっしゃってます。
+
+
+.. raw:: html
+
+   <a href="https://www.amazon.co.jp/SOFT-SKILLS-%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E9%96%8B%E7%99%BA%E8%80%85%E3%81%AE%E4%BA%BA%E7%94%9F%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB-%E3%82%B8%E3%83%A7%E3%83%B3%E3%83%BB%E3%82%BD%E3%83%B3%E3%83%A1%E3%82%BA-ebook/dp/B01GDS0994/ref=as_li_ss_il?ie=UTF8&qid=1513859358&sr=8-1&keywords=SOFT+SKILLS%E3%80%80%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E9%96%8B%E7%99%BA%E8%80%85%E3%81%AE%E4%BA%BA%E7%94%9F%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB&linkCode=li2&tag=ironhotcom-22&linkId=726f53104c97c25958a9ece0489accd7" target="_blank"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B01GDS0994&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=ironhotcom-22" ></a><img src="https://ir-jp.amazon-adsystem.com/e/ir?t=ironhotcom-22&l=li2&o=9&a=B01GDS0994" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
+筆者、朝の４時頃起きて仕事するとか、社畜魂丸出しな感じの本ですが、午前中に仕事の殆どを集中してやる。あたりはぐっと来ました。
+英語を話せる方法は英語しか話せない人とデートすることだそうです。既婚者はどうすればいいんだ！！
+
+
+.. raw:: html
+
+   <a href="https://www.amazon.co.jp/%E3%81%AA%E3%81%9C-%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AE%E4%BB%95%E4%BA%8B%E3%81%AF%E7%B5%82%E3%82%8F%E3%82%89%E3%81%AA%E3%81%84%E3%81%AE%E3%81%8B-%E3%82%B9%E3%83%94%E3%83%BC%E3%83%89%E3%81%AF%E6%9C%80%E5%BC%B7%E3%81%AE%E6%AD%A6%E5%99%A8%E3%81%A7%E3%81%82%E3%82%8B-%E4%B8%AD%E5%B3%B6%E8%81%A1/dp/4905073413/ref=as_li_ss_il?_encoding=UTF8&qid=&sr=&linkCode=li2&tag=ironhotcom-22&linkId=b48214690a9d1c2a171b8b11ca2ade68" target="_blank"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=4905073413&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=ironhotcom-22" ></a><img src="https://ir-jp.amazon-adsystem.com/e/ir?t=ironhotcom-22&l=li2&o=9&a=4905073413" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
+ホモドーロテクニックだ！と勢いで、ポモドーロタイマー的なアプリなどを入れてやってみたのですが、私の仕事的にずーとコーディングするということもなく、とぎれとぎれに５分で終わる仕事をしたり、１，２時間かかる仕事をしたりするので、２５分は結構切りが悪かった。
+
+紆余曲折でいきついたのが `Toggl <https://toggl.com/>`_ でした。
+
+やったことを記録しておくツールです。止め忘れとかを教えてくれます。有名なので、詳細は省きます。
+
+けっこう、毎日同じ仕事をしているので、一度タイトルを書けばON, OFFを押すだけでとても便利です。ブラウザの拡張プラグインを使えば色々なサービスと連携できます。私は主にGitHubとasanaと連携して使っています。
+
+それから半年ほど経ったある日、会社のチーム全体でTogglを利用しようということになりました。
+
+私のチームはみんないろいろな仕事を細切れでやっているので、報告がめんどくさい→Togglを使って記録して、それをメンバーに見せればいいじゃない。となりました。
+
+それなら、仕事を開始したら、チームのSlackにメンションしたいなと思うようになりました。そんなわけで、TogglからSlackに作業を開始したら書き込むスクリプトを書きましたの話をしようと思ってたんですが、長くなってきたので、また明日！
+
+.. image:: ../_static/images/picture201712/toggl_slack.png
+
+/pages/2017/2017-12-15-article.html

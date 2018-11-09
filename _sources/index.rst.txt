@@ -3,33 +3,29 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-==============================================
-鉄は熱いうちに打て
-==============================================
+.. title:: トップページ
 
-なんとなく書いている日記のようなブログです。
+.. include:: /2018/2018-11-08-article.rst
 
---------
 
-.. include:: /pages/2018/2018-11-08-article.rst
 
-----
-
-最新
-+++++++++++
+最近の投稿
+++++++++++++++++++++++
 
 .. toctree::
    :maxdepth: 1
 
-   pages/2018/2018-11-03-article
-   pages/2018/2018-11-01-article
-   pages/2018/2018-09-24-article
-   pages/2018/2018-08-19-article
-   pages/2018/2018-08-06-article
-
-
+   2018/2018-11-08-article
+   2018/2018-11-03-article
+   2018/2018-11-01-article
+   2018/2018-09-24-article
+   2018/2018-08-19-article
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
+   :hidden:
 
-   pages/index
+   2018/index
+   2017/index
+   2016/index
+   2015/index

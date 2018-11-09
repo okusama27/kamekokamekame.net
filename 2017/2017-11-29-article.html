@@ -1,0 +1,181 @@
+
+
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>深層学習ライブラリPyTorchに参加しました &#8212; 鉄は熱いうちに打て</title>
+    <link rel="stylesheet" href="../_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/bizstyle.js"></script>
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="next" title="The Zen of Python" href="2017-12-01-article.html" />
+    <link rel="prev" title="PyLadies Handbook 翻訳しNightに参加しました" href="2017-11-28-article.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="2017-12-01-article.html" title="The Zen of Python"
+             accesskey="N">次へ</a></li>
+        <li class="right" >
+          <a href="2017-11-28-article.html" title="PyLadies Handbook 翻訳しNightに参加しました"
+             accesskey="P">前へ</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">2017</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div id="toc" class="sidebarRow">
+<h3><a href="../index.html">Table Of Contents</a></h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../2018/2018-11-08-article.html">ブログ作成ツールをSphinxに変更しました</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2018/2018-11-03-article.html">PyLadies沖縄合宿 - 2日目</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2018/2018-11-01-article.html">PyLadies沖縄合宿に参加します - 目標を立てよう</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2018/2018-09-24-article.html">PyLadiesの行動規範を整える</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2018/2018-08-19-article.html">PyLadies Tokyo Meetup #35 もくもく会 に参加しました</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../2018/index.html">2018</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">2017</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2016/index.html">2016</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2015/index.html">2015</a></li>
+</ul>
+
+</div>
+  <h4>前のトピックへ</h4>
+  <p class="topless"><a href="2017-11-28-article.html"
+                        title="前の章へ">PyLadies Handbook 翻訳しNightに参加しました</a></p>
+  <h4>次のトピックへ</h4>
+  <p class="topless"><a href="2017-12-01-article.html"
+                        title="次の章へ">The Zen of Python</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>クイック検索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="検索" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+<h1>鉄は熱いうちに打て<br>
+=============================</h1>
+
+<div class="section" id="pytorch">
+<h1>深層学習ライブラリPyTorchに参加しました<a class="headerlink" href="#pytorch" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>2017-11-29</p>
+<p><a class="reference external" href="https://pydatatokyo.connpass.com/event/68416/">PyData.Tokyo Meetup #16 - 深層学習ライブラリ PyTorch</a>  に参加しました。</p>
+<p>はじめてのPyData Tokyo参加です。</p>
+<div class="section" id="id1">
+<h2>メインセッション: PYTORCH 個人の戦略ツールとして<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>タイトルが変更されました。旧タイトル→「Pythonic で高速・クリーンな深層学習ライブラリ PyTorch」</p>
+</div>
+<div class="section" id="bakfoo-inc">
+<h2>スピーカー：Bakfoo Inc. 柏野 雄太 さん<a class="headerlink" href="#bakfoo-inc" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>BakFoo社はメディア向けにリアルタイムデータプラットフォームをエンタープライズ向けに提供してる
+
+- テレビの天気予報向けに気象データの提供
+- 新聞の電子化支援
+- 次世代テレビ
+</pre></div>
+</div>
+<p>なんだかすごそう。</p>
+</div>
+<div class="section" id="tensorflow">
+<h2>TensorFlowの一強<a class="headerlink" href="#tensorflow" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">TensorFlow</span> <span class="pre">eage</span></code> ってのにまとまったそうです。</p>
+<p>たくさんのAPI、デプロイメント、デバック環境、特徴量工学.etcが特徴だそうです。</p>
+</div>
+<div class="section" id="deeplearning">
+<h2>日本の産業政策としてのDeepLearning<a class="headerlink" href="#deeplearning" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>研究実績、投資資金、人材の質と量の欠如(´・ω・｀)</p>
+</div>
+<div class="section" id="id2">
+<h2>DeepLearningに対する個人の戦略<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>ポリグロット戦略</p>
+<p>そこで、戦略的学習環境としての <strong>PYTORCH</strong></p>
+<p>やっと出てきた</p>
+</div>
+<div class="section" id="id3">
+<h2>PyTorch<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<ul class="simple">
+<li>速度は他のフレームワークに比べてそこそこ</li>
+<li>けっこう、Chainerと一緒</li>
+</ul>
+<p>話題の論文なら、PyTorch実装がすぐに「自生」する。
+お陰で動かしながら学ぶこと、考えることができる。
+全部の論文を自分で読んで、実装するわけにも行かないので、嬉しい。研究者が雪崩式に使い出している。</p>
+<p>StackOverFlow風の掲示板で、3時間以内に開発者の中のひとりが答えてくれる。すごい盛り上がっている。</p>
+<p>後半はビール飲んで、余りわからなかったです。Sonyさんも頑張っている。</p>
+<p>実は深層学習を余りわかってないのですが、PyDataのシール貰ったのに行ったことがなかったので、定員割れしていたので行ってみました。
+とてもわかりやすくてありがたい回でした。</p>
+<p>今度はもうちょっと勉強してから参加します。</p>
+</div>
+</div>
+
+
+<br><br>
+<style>
+.box5 {
+    padding: 0.5em 1em;
+    border: double 5px #4ec4d3;
+}
+.box5 p {
+    margin: 0;
+    padding: 0;
+    font-size: large;
+}
+</style>
+<p>
+    <a href="//af.moshimo.com/af/c/click?a_id=767877&p_id=1166&pc_id=1793&pl_id=17972&guid=ON" target="_blank" rel="nofollow"><img src="//image.moshimo.com/af-img/0408/000000017972.png" width="234" height="60" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=767877&p_id=1166&pc_id=1793&pl_id=17972" width="1" height="1" style="border:none;">
+    <a href="//af.moshimo.com/af/c/click?a_id=767877&p_id=1166&pc_id=1793&pl_id=20225&guid=ON" target="_blank" rel="nofollow"><img src="//image.moshimo.com/af-img/0408/000000020225.png" width="234" height="60" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=767877&p_id=1166&pc_id=1793&pl_id=20225" width="1" height="1" style="border:none;">
+</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="2017-12-01-article.html" title="The Zen of Python"
+             >次へ</a></li>
+        <li class="right" >
+          <a href="2017-11-28-article.html" title="PyLadies Handbook 翻訳しNightに参加しました"
+             >前へ</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >2017</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2018, kamekokamekame.net.
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.1 で生成しました。
+    </div>
+  </body>
+</html>

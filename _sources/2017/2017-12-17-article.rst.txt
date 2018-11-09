@@ -1,0 +1,35 @@
+==========================================================
+unittest.mock.patchを使ってみる（デコレータ）
+==========================================================
+
+2017-12-17
+
+..
+   :date: 2017-12-17
+   :title: unittest.mock.patchを使ってみる（デコレータ）
+   :category: Python
+   :tags: Python
+
+
+ 
+今日の内容は、 `Pythonでテストしたい </pages/2017/2017-12-18-article.html>`_ にまとめている内容の詳細部分です。
+
+unittest.mock.patch（デコレータ）を使ってみます。
+
+sample_method.py
+
+.. raw:: html
+
+   <script src="https://gist.github.com/okusama27/ae6648958d4d84a09127163068e83e6b.js"></script>
+
+sample_methodを読み込んでテストする
+
+.. raw:: html
+
+   <script src="https://gist.github.com/okusama27/906283ebbd39cdeab676ce2be523bece.js"></script>
+
+意味がないテストになっていますが、 ``@patch('sample_method.SampleMethod.method_1')`` と書いて、引数の最後に ``mock_method_1`` を追加すると、 ``mock_method_1.return_value = 'AAA'`` と書くことで、　`SampleMethod.method_1` の戻り値を置き換えられます。
+
+こちらはモジュールを読み込む場合に ``@patch()`` にはパッケージ名から追加するそうです。 ``@patch('SampleMethod.method_1')`` と書いても動きませんでした。
+
+`公式ドキュメント <https://docs.python.org/ja/3/library/unittest.mock.html#the-patchers>`_ もどうぞ。

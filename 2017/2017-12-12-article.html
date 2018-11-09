@@ -1,0 +1,203 @@
+
+
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>unittestのテスト前後に実行される処理の確認 &#8212; 鉄は熱いうちに打て</title>
+    <link rel="stylesheet" href="../_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/bizstyle.js"></script>
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="next" title="PyCon JP 2016にブースを出した話" href="2017-12-13-article.html" />
+    <link rel="prev" title="unittestの公式ドキュメントを読んでみた" href="2017-12-11-article.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="2017-12-13-article.html" title="PyCon JP 2016にブースを出した話"
+             accesskey="N">次へ</a></li>
+        <li class="right" >
+          <a href="2017-12-11-article.html" title="unittestの公式ドキュメントを読んでみた"
+             accesskey="P">前へ</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">2017</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div id="toc" class="sidebarRow">
+<h3><a href="../index.html">Table Of Contents</a></h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../2018/2018-11-08-article.html">ブログ作成ツールをSphinxに変更しました</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2018/2018-11-03-article.html">PyLadies沖縄合宿 - 2日目</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2018/2018-11-01-article.html">PyLadies沖縄合宿に参加します - 目標を立てよう</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2018/2018-09-24-article.html">PyLadiesの行動規範を整える</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2018/2018-08-19-article.html">PyLadies Tokyo Meetup #35 もくもく会 に参加しました</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../2018/index.html">2018</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">2017</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2016/index.html">2016</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2015/index.html">2015</a></li>
+</ul>
+
+</div>
+  <h4>前のトピックへ</h4>
+  <p class="topless"><a href="2017-12-11-article.html"
+                        title="前の章へ">unittestの公式ドキュメントを読んでみた</a></p>
+  <h4>次のトピックへ</h4>
+  <p class="topless"><a href="2017-12-13-article.html"
+                        title="次の章へ">PyCon JP 2016にブースを出した話</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>クイック検索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="検索" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+<h1>鉄は熱いうちに打て<br>
+=============================</h1>
+
+<div class="section" id="unittest">
+<h1>unittestのテスト前後に実行される処理の確認<a class="headerlink" href="#unittest" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>2017-12-12</p>
+<p>今日の内容は、 <a class="reference external" href="/pages/2017/2017-12-18-article.html">Pythonでテストしたい</a> にまとめている内容の詳細部分です。</p>
+<p>この本の236ページに書いてある「テスト実行する前後の処理を定義する」表のメソッドを試してみます。</p>
+<a href="https://www.amazon.co.jp/Python-%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA%E5%8E%B3%E9%81%B8%E3%83%AC%E3%82%B7%E3%83%94-%E6%B1%A0%E5%86%85-%E5%AD%9D%E5%95%93/dp/4774177075/ref=as_li_ss_il?s=books&ie=UTF8&qid=1513461251&sr=1-1&keywords=python+%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA&linkCode=li2&tag=ironhotcom-22&linkId=97da69f3c2938b7531280618fa17cb5f" target="_blank"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=4774177075&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=ironhotcom-22" ></a><img src="https://ir-jp.amazon-adsystem.com/e/ir?t=ironhotcom-22&l=li2&o=9&a=4774177075" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /><p>こんな感じで書きました。</p>
+<blockquote>
+<div>&lt;script src=&quot;<a class="reference external" href="https://gist.github.com/okusama27/4c9fa7d203a50b3278f210ca7d1dcbb3.js">https://gist.github.com/okusama27/4c9fa7d203a50b3278f210ca7d1dcbb3.js</a>&quot;&gt;&lt;/script&gt;</div></blockquote>
+<p>実行してみます。</p>
+<div class="section" id="id1">
+<h2>実行結果<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">setUpClass</span></code> 、 <code class="docutils literal notranslate"><span class="pre">tearDownClass</span></code> は1回ずつ、 <code class="docutils literal notranslate"><span class="pre">setUp</span></code> 、 <code class="docutils literal notranslate"><span class="pre">tearDown</span></code> は2回ずつ呼ばれていますね。</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>setUpClass
+setUp
+test_method_1
+method_1
+tearDown
+setUp
+test_method_2
+method_2
+tearDown
+tearDownClass
+setUpClass msg
+</pre></div>
+</div>
+</div>
+<div class="section" id="id2">
+<h2>失敗させる<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>テストが失敗するようにちょっと書き換えてみます。</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">test_method_2</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;test_method_2&#39;</span><span class="p">)</span>
+    <span class="n">expected</span> <span class="o">=</span> <span class="s1">&#39;method_3&#39;</span>
+    <span class="n">actual</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sample</span><span class="o">.</span><span class="n">method_2</span><span class="p">()</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">expected</span><span class="p">,</span> <span class="n">actual</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id3">
+<h2>実行結果<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>失敗しても、 <code class="docutils literal notranslate"><span class="pre">tearDown</span></code> 、 <code class="docutils literal notranslate"><span class="pre">tearDownClass</span></code> も呼ばれていますね。</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssetUpClass
+setUp
+test_method_1
+method_1
+tearDown
+setUp
+test_method_2
+method_2
+tearDown
+
+Failure
+Expected :<span class="s1">&#39;method_3&#39;</span>
+Actual   :<span class="s1">&#39;method_2&#39;</span>
+ &lt;Click to see difference&gt;
+
+Traceback <span class="o">(</span>most recent call last<span class="o">)</span>:
+  File <span class="s2">&quot;/Users/kaz/tmp/python_sample/tests/unittest_sample2.py&quot;</span>, line <span class="m">43</span>, in test_method_2
+    self.assertEqual<span class="o">(</span>expected, actual<span class="o">)</span>
+AssertionError: <span class="s1">&#39;method_3&#39;</span> !<span class="o">=</span> <span class="s1">&#39;method_2&#39;</span>
+- method_3
+?        ^
++ method_2
+?        ^
+
+
+tearDownClass
+setUpClass msg
+</pre></div>
+</div>
+<p>こんな感じですね。</p>
+<img alt="unittest" src="../_images/picture_20171212_1.png" />
+</div>
+</div>
+
+
+<br><br>
+<style>
+.box5 {
+    padding: 0.5em 1em;
+    border: double 5px #4ec4d3;
+}
+.box5 p {
+    margin: 0;
+    padding: 0;
+    font-size: large;
+}
+</style>
+<p>
+    <a href="//af.moshimo.com/af/c/click?a_id=767877&p_id=1166&pc_id=1793&pl_id=17972&guid=ON" target="_blank" rel="nofollow"><img src="//image.moshimo.com/af-img/0408/000000017972.png" width="234" height="60" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=767877&p_id=1166&pc_id=1793&pl_id=17972" width="1" height="1" style="border:none;">
+    <a href="//af.moshimo.com/af/c/click?a_id=767877&p_id=1166&pc_id=1793&pl_id=20225&guid=ON" target="_blank" rel="nofollow"><img src="//image.moshimo.com/af-img/0408/000000020225.png" width="234" height="60" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=767877&p_id=1166&pc_id=1793&pl_id=20225" width="1" height="1" style="border:none;">
+</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="2017-12-13-article.html" title="PyCon JP 2016にブースを出した話"
+             >次へ</a></li>
+        <li class="right" >
+          <a href="2017-12-11-article.html" title="unittestの公式ドキュメントを読んでみた"
+             >前へ</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >2017</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2018, kamekokamekame.net.
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.1 で生成しました。
+    </div>
+  </body>
+</html>

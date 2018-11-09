@@ -1,0 +1,33 @@
+:date: 2018-07-22 00:00:00
+:title: PyLadies Tokyo Meetup #34 PyLadies × XR女子部交流会に参加しました
+:category: PyLadies
+:tags: PyLadies
+
+================================================================================
+PyLadies Tokyo Meetup #34 PyLadies × XR女子部交流会に参加しました
+================================================================================
+
+2018-07-22
+
+
+`PyLadies Tokyo Meetup #34 PyLadies × XR女子部交流会 <https://pyladies-tokyo.connpass.com/event/93445/>`_ に参加しました。
+
+初の受付をやりました。
+初対面の人に話しかけられると緊張しますね。受付だからしょうがないけど。
+
+`XR女子部 <https://mr-girls.connpass.com/>`_ と共同イベントでした。
+普段聞けないような話が聞けてとても楽しかったです。
+
+.. raw:: html
+
+   <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">集合写真です！皆さん、ご参加ありがとうございます😊 <a href="https://twitter.com/hashtag/PyLadiesTokyo?src=hash&amp;ref_src=twsrc%5Etfw">#PyLadiesTokyo</a> <a href="https://twitter.com/hashtag/XR%E5%A5%B3%E5%AD%90%E9%83%A8?src=hash&amp;ref_src=twsrc%5Etfw">#XR女子部</a> <a href="https://t.co/up18gjCxIb">pic.twitter.com/up18gjCxIb</a></p>&mdash; PyLadiesTokyo (@PyLadiesTokyo) <a href="https://twitter.com/PyLadiesTokyo/status/1020930305127956480?ref_src=twsrc%5Etfw">2018年7月22日</a></blockquote>
+   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+毎度おなじみのPマークポーズをしてたら、同僚に心配されました（汗）
+
+.. raw:: html
+
+   <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">かめこさんだけしかあのポーズやってなくて、はぶられてるのかなってしんぱいになります</p>&mdash; tell-k (@tell_k) <a href="https://twitter.com/tell_k/status/1020971729311621120?ref_src=twsrc%5Etfw">2018年7月22日</a></blockquote>
+   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+私は元気です。元気ですよ。元気だってば！
