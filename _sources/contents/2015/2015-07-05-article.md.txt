@@ -1,0 +1,30 @@
+date: 2015-07-05
+title:  Hello Go
+category: Other
+tags: Other
+
+Goって書いたことないので、やってみます。
+
+<a href="https://golang.org/doc/" target="_blank">公式ドキュメント</a>みっけ
+
+Mac用のインストーラがあったので、インストール、チュートリアル
+
+hello.go
+```go
+prepackage main
+import "fmt"
+func main() {
+	fmt.Println("Hello, Go")
+}
+```
+
+実行
+```bash
+$ go run hello.go
+Hello, Go
+```
+
+でた。
+
+初めてのGo。終わり。
+

@@ -1,0 +1,15 @@
+.. article::
+   :date: 2018-08-05
+   :title: ブログをGCEに乗っけて、Miyadaikuに変更
+   :category: Web
+   :tags: Web
+
+しばらく、GitHub Pagesだったこのブログですが、自由度があまりに低いのでGCEに載せ替えました。
+
+ついでに `Miyadaiku <https://miyadaiku.github.io/ja/index.html>`_ に変更しました。
+
+久しぶりにNginxの設定して、いろいろ忘れてました。
+
+HTTPSもアクセスできるように Let’s Encrypt で証明書も取ったりして楽しかったです。
+
+せっかくのGCEなので、Webアプリケーションも作っていこうと思っています。

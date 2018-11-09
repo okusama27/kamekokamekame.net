@@ -1,209 +1,198 @@
 
 
-<!DOCTYPE html>
-<html lang="ja-JP">
-<head>
-  
-  
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Effective Pythonで学ぶ - 3章 クラスと継承 2 - 鉄は熱いうちに打て</title>
-  
-  <link rel="stylesheet" href="../static/css/sample_article.css">
+<!doctype html>
 
-</head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>昨日までのあらすじ &#8212; 鉄は熱いうちに打て</title>
+    <link rel="stylesheet" href="../_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/bizstyle.js"></script>
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="next" title="昨日までのあらすじ" href="2017-12-07-article.html" />
+    <link rel="prev" title="昨日までのあらすじ" href="2017-12-05-article.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="2017-12-07-article.html" title="昨日までのあらすじ"
+             accesskey="N">次へ</a></li>
+        <li class="right" >
+          <a href="2017-12-05-article.html" title="昨日までのあらすじ"
+             accesskey="P">前へ</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &gt;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">2017</a> &gt;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">昨日までのあらすじ</a></li>
+<li><a class="reference internal" href="#">3章　クラスと継承</a></li>
+<li><a class="reference internal" href="#">追記</a></li>
+</ul>
 
-<body>
-  
-<div class="container">
-  <h1 class="index-title">
-    <a href="../index.html">鉄は熱いうちに打て</a>
-  </h1>
+  <h4>前のトピックへ</h4>
+  <p class="topless"><a href="2017-12-05-article.html"
+                        title="前の章へ">昨日までのあらすじ</a></p>
+  <h4>次のトピックへ</h4>
+  <p class="topless"><a href="2017-12-07-article.html"
+                        title="次の章へ">昨日までのあらすじ</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>クイック検索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="検索" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
 
-  <div class="container-inner">
-    <div class="container-body">
-      
-  <div class="article-metadata">
-    <span class="article-date"> 2017-12-06 </span>
-    <span> Book </span>
-    <span> Book </span>
-  </div>
-  <h1 class="article-title">
-    Effective Pythonで学ぶ - 3章　クラスと継承 2
-  </h1>
-
-  <div class="article-body">
-    <div class="header_target" id="h_2017_2017_2d12_2d06_2darticle_2emd_1"></div><h2>昨日までのあらすじ</h2>
-<p><a href="https://www.oreilly.co.jp/books/9784873117560/">Effective Python</a>を真面目に読もうと思ったので読みはじめました。</p>
-<div class="header_target" id="h_2017_2017_2d12_2d06_2darticle_2emd_2"></div><h2>3章　クラスと継承</h2>
-<ul>
-<li>項目 24：@classmethodポリモルフィズムを使ってオブジェクトをジェネリックに構築する</li>
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <p>date: 2017-12-06
+title: Effective Pythonで学ぶ - 3章　クラスと継承 2
+category: Book
+tags: Book</p>
+<div class="section" id="">
+<span id="id1"></span><h1>昨日までのあらすじ<a class="headerlink" href="#" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p><a class="reference external" href="https://www.oreilly.co.jp/books/9784873117560/">Effective Python</a>を真面目に読もうと思ったので読みはじめました。</p>
+</div>
+<div class="section" id="">
+<span id="id2"></span><h1>3章　クラスと継承<a class="headerlink" href="#" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<ul class="simple">
+<li>項目 24：&#64;classmethodポリモルフィズムを使ってオブジェクトをジェネリックに構築する</li>
 <li>項目 25：親クラスを superを使って初期化する</li>
 </ul>
-<p><img alt="関数" src="/static/images/picture201712/picture_20171206_1.png"/></p>
+<p><img alt="関数" src="static/images/picture201712/picture_20171206_1.png" /></p>
 <p>実行してみて謎なことが。こんなものなの？</p>
-<div class="codehilite"><pre><span></span><span class="k">class</span> <span class="nc">GrandPa</span><span class="p">:</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">GrandPa</span><span class="p">:</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">print</span><span class="p">(</span><span class="s1">'おじいちゃん'</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s1">&#39;おじいちゃん&#39;</span><span class="p">)</span>
 
 <span class="k">class</span> <span class="nc">Papa</span><span class="p">(</span><span class="n">GrandPa</span><span class="p">):</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
-        <span class="k">print</span><span class="p">(</span><span class="s1">'パパ'</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s1">&#39;パパ&#39;</span><span class="p">)</span>
 
 <span class="k">class</span> <span class="nc">Boku</span><span class="p">(</span><span class="n">Papa</span><span class="p">):</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
-        <span class="k">print</span><span class="p">(</span><span class="s1">'僕'</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s1">&#39;僕&#39;</span><span class="p">)</span>
 
 <span class="n">boku</span> <span class="o">=</span> <span class="n">Boku</span><span class="p">()</span>
 </pre></div>
+</div>
 <p>実行すると、こんな感じ</p>
-<div class="codehilite"><pre><span></span>おじいちゃん
-パパ
-僕
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">おじいちゃん</span>
+<span class="n">パパ</span>
+<span class="n">僕</span>
 </pre></div>
+</div>
 <p>別系統のママを足す</p>
-<div class="codehilite"><pre><span></span><span class="k">class</span> <span class="nc">GrandMa</span><span class="p">:</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">GrandMa</span><span class="p">:</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">print</span><span class="p">(</span><span class="s1">'おばあちゃん'</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s1">&#39;おばあちゃん&#39;</span><span class="p">)</span>
 
 
 <span class="k">class</span> <span class="nc">Mama</span><span class="p">(</span><span class="n">GrandMa</span><span class="p">):</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
-        <span class="k">print</span><span class="p">(</span><span class="s1">'ママ'</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s1">&#39;ママ&#39;</span><span class="p">)</span>
 
 
 <span class="k">class</span> <span class="nc">Boku</span><span class="p">(</span><span class="n">Papa</span><span class="p">,</span> <span class="n">Mama</span><span class="p">):</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
-        <span class="k">print</span><span class="p">(</span><span class="s1">'僕'</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s1">&#39;僕&#39;</span><span class="p">)</span>
 
 
 <span class="n">boku</span> <span class="o">=</span> <span class="n">Boku</span><span class="p">()</span>
 </pre></div>
+</div>
 <p>実行すると、こんな感じ</p>
-<div class="codehilite"><pre><span></span>おじいちゃん
-パパ
-僕
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">おじいちゃん</span>
+<span class="n">パパ</span>
+<span class="n">僕</span>
 </pre></div>
+</div>
 <p>ママの方は実行されない。多重継承して、同じメソッドがあると左側が優先されるらしい。</p>
 <p>しかし、ママもおじいちゃんを継承すると、</p>
-<div class="codehilite"><pre><span></span><span class="k">class</span> <span class="nc">Mama</span><span class="p">(</span><span class="n">GrandPa</span><span class="p">):</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Mama</span><span class="p">(</span><span class="n">GrandPa</span><span class="p">):</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
-        <span class="k">print</span><span class="p">(</span><span class="s1">'ママ'</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s1">&#39;ママ&#39;</span><span class="p">)</span>
 
 
 <span class="k">class</span> <span class="nc">Boku</span><span class="p">(</span><span class="n">Papa</span><span class="p">,</span> <span class="n">Mama</span><span class="p">):</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
-        <span class="k">print</span><span class="p">(</span><span class="s1">'僕'</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s1">&#39;僕&#39;</span><span class="p">)</span>
 
 
 <span class="n">boku</span> <span class="o">=</span> <span class="n">Boku</span><span class="p">()</span>
 </pre></div>
+</div>
 <p>なんということでしょう〜</p>
-<div class="codehilite"><pre><span></span>おじいちゃん
-ママ
-パパ
-僕
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">おじいちゃん</span>
+<span class="n">ママ</span>
+<span class="n">パパ</span>
+<span class="n">僕</span>
 </pre></div>
+</div>
 <p>ママが出てきた！</p>
 <p>調べる気力が無いので、また今度。</p>
-<div class="header_target" id="h_2017_2017_2d12_2d06_2darticle_2emd_3"></div><h2>追記</h2>
-<p>super()が足りなかったようです。しみずかわさんありがとう。</p>
-<blockquote class="twitter-tweet" data-lang="ja"><p dir="ltr" lang="ja">GranPaとGranMaが<br/>super().__init__()呼んでないからだねー <a href="https://t.co/BOhrEEcg51">https://t.co/BOhrEEcg51</a></p>— Takayuki Shimizukawa (@shimizukawa) <a href="https://twitter.com/shimizukawa/status/938413224239624192?ref_src=twsrc%5Etfw">2017年12月6日</a></blockquote>
-<p><script async="" charset="utf-8" src="https://platform.twitter.com/widgets.js"></script> </p>
-  </div>
-
-
-
-    </div>
-    <aside class="container-right">
-
-      カテゴリ:
-        
-      <ul>
-        
-          <li>
-            <a href="../index_category_category_Advent@20Calendar.html">
-              Advent Calendar
-            </a>
-          </li>
-        
-          <li>
-            <a href="../index_category_category_Book.html">
-              Book
-            </a>
-          </li>
-        
-          <li>
-            <a href="../index_category_category_Event.html">
-              Event
-            </a>
-          </li>
-        
-          <li>
-            <a href="../index_category_category_Git.html">
-              Git
-            </a>
-          </li>
-        
-          <li>
-            <a href="../index_category_category_OS.html">
-              OS
-            </a>
-          </li>
-        
-          <li>
-            <a href="../index_category_category_Other.html">
-              Other
-            </a>
-          </li>
-        
-          <li>
-            <a href="../index_category_category_PyCon@20JP.html">
-              PyCon JP
-            </a>
-          </li>
-        
-          <li>
-            <a href="../index_category_category_PyLadies.html">
-              PyLadies
-            </a>
-          </li>
-        
-          <li>
-            <a href="../index_category_category_Python.html">
-              Python
-            </a>
-          </li>
-        
-          <li>
-            <a href="../index_category_category_Sphinx.html">
-              Sphinx
-            </a>
-          </li>
-        
-          <li>
-            <a href="../index_category_category_Web.html">
-              Web
-            </a>
-          </li>
-        
-      </ul>
-      <div>
-        <br><br>
-        <a href="//af.moshimo.com/af/c/click?a_id=767877&p_id=1166&pc_id=1793&pl_id=20229&guid=ON" target="_blank" rel="nofollow"><img src="//image.moshimo.com/af-img/0408/000000020229.png" width="250" height="250" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=767877&p_id=1166&pc_id=1793&pl_id=20229" width="1" height="1" style="border:none;">
-        <br>
-        <a href="//af.moshimo.com/af/c/click?a_id=767877&p_id=1166&pc_id=1793&pl_id=17971&guid=ON" target="_blank" rel="nofollow"><img src="//image.moshimo.com/af-img/0408/000000017971.png" width="250" height="250" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=767877&p_id=1166&pc_id=1793&pl_id=17971" width="1" height="1" style="border:none;">
-      </div>
-    </aside>
-  </div>
-
 </div>
+<div class="section" id="">
+<span id="id3"></span><h1>追記<a class="headerlink" href="#" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>super()が足りなかったようです。しみずかわさんありがとう。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">GranPaとGranMaが<br>super().__init__()呼んでないからだねー <a href="https://t.co/BOhrEEcg51">https://t.co/BOhrEEcg51</a></p>&mdash; Takayuki Shimizukawa (@shimizukawa) <a href="https://twitter.com/shimizukawa/status/938413224239624192?ref_src=twsrc%5Etfw">2017年12月6日</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> </div>
 
-</body>
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="2017-12-07-article.html" title="昨日までのあらすじ"
+             >次へ</a></li>
+        <li class="right" >
+          <a href="2017-12-05-article.html" title="昨日までのあらすじ"
+             >前へ</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &gt;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >2017</a> &gt;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2018, kamekokamekame.net.
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.1 で生成しました。
+    </div>
+  </body>
 </html>

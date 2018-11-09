@@ -1,0 +1,43 @@
+date: 2015-03-07
+title:  Pythonでサンプルデータ作成
+category: Python
+tags: Python
+
+とりあえず、思い出すためにサンプルデータをシェルで作ればいいのをあえてPythonで作ってみました。
+
+```python
+#coding: UTF-8
+# Make following data
+# time,a,b,c
+# 2015-03-01 00:00:00,1,2,3
+import datetime
+num1 = 100
+num2 = 1
+num3 = 4
+dt = datetime.datetime(2015,03,01,0,0,0)
+#nw = datetime.datetime(2015,03,31,23,59,59)
+nw = datetime.datetime.now()
+#print dt
+#print nw
+f = open('test.csv','a')
+try:
+  f.write("time,a,b,c\n")
+  while dt < nw:
+    dt = dt + datetime.timedelta(hours=1)
+   num1 += 10
+   num2 += 5
+   num3 += 20
+    f.write(dt.strftime('%Y-%m-%d %H:%M:%S') + "," + str(num1) + "," + str(num2) + "," + str(num3) + "\n")
+   if num1 > 1000:
+     num1 = 0
+   if num2 > 100:
+     num2 = 0
+   if num3 > 500:
+     num3 = 0
+finally:
+  f.close()
+while XXX: <-ここのコロン忘れてハマる体たらく。。。orz..
+```
+
+一からやり直します。
+

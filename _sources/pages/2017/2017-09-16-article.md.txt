@@ -1,0 +1,31 @@
+date: 2017-09-16
+title:  Sphinxでスライドを作りたい
+category: Sphinx
+tags: Sphinx
+
+
+入社してから会社でSphinxを使って文書を書くことが増えたので、reStructuredTextもついでに覚えようと思いました。
+でも仕事中にいろいろ試している時間はないので、勉強会とかでLTするスライドとかブログに使えばいいじゃない。と考えて、使い始めました。
+
+ここ3,4年ほどはMarkdown一筋だったんですが、reStructuredTextも慣れるといろいろ微調整できて便利です。
+
+なんとなく2年間使ってきたんですが、せっかくPython製なのでもうちょっと勉強しようかなと思って、Sphinx ユーザーコミュニティのSlackに入りました。
+
+誰でも入れるっぽいです。ここから → [http://sphinx-users.jp/howtojoin.html#slack](http://sphinx-users.jp/howtojoin.html#slack)
+
+はいった途端に色々教えていただいて、もう少し自分情報を整理してから入ればよかったかなとちょっと後悔しています。
+
+今まで、自分で調べた結果、[sphinxjp.themes.s6](https://pypi.python.org/pypi/sphinxjp.themes.s6)ってのが便利そうなので使ってました。
+いままでAuthorsとか全然見てなかったけど、清水川さんが作者だった。ありがとうございます。
+
+作者はどっか知らないの外国の人って時代は終わったんですね。
+
+話は戻って、Sphinx slackでs6以外に[sphinxjp.themes.impressjs](https://pypi.python.org/pypi/sphinxjp.themes.impressjs)、[sphinxjp.themes.gopher](https://pypi.python.org/pypi/sphinxjp.themes.gopher)を教えてもらいました。
+
+pypiのサイトで、**sphinxjp.themes** って入れて検索すればザクザク出てくるんですね。目からウロコ。
+
+上から順にやってみよう。
+
+ググってみてたブログが同僚のブログ、便利そうと思って使っていたツールが同僚作、よく見るドキュメントの日本語訳も同僚、本を買ったら著者に同僚。という現象が発生中。
+みんな作っても宣伝しないんですね。かっこいいぞ。そして、そんな会社に運良く入れててちょっとラッキーと同僚の名前を見つけるたびに思うのでした。
+私もラッキーと思われる側目指してやっていこう。地道が一番。

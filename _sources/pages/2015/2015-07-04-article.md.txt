@@ -1,0 +1,22 @@
+date: 2015-07-04
+title:  IT × 家事育児 LT大会&交流会！！に行ってきました
+category: Event
+tags: Event
+
+IT系わーママの集まりがあるということで行ってきました。実際はわーパパと半々くらいでしたが楽しかったです。
+
+<a href="http://ikujixit.connpass.com/event/15999/" target="_blank">IT × 家事育児 LT大会&交流会！！</a>
+
+忙しい合間を縫って会を主催してくださった <a href="https://twitter.com/so_kazusan" target="_blank">@so_kazusan</a>さん,<a href="https://twitter.com/kinu" target="_blank">@kinu</a>さん,MichikoYamamotoさんありがとうございました！！寝ながらSkype会議だけで会が開けるなんて素敵です！！予約しやすい会場を提供してくださる<a href="https://twitter.com/21cafe_shibuya" target="_blank">21cafe</a>様のような会場があってこそですが。
+
+内容は子育ての悩みやITを使った育児ほうなど様々で楽しかったです。（私もLTしましたが、ちょっと内容を出せなくてすいません><）
+
+子持ちの方がこんなに集まるなんてなかなかなので貴重な会でした。ありがとうございました。
+私も触発されて、Google Calendarの内容をSlackに毎朝お知らせしてくれるスクリプトを作りました。
+
+![slack](/static/images/old/image-300x223.png)
+
+一番印象に残ったのは<a href="https://twitter.com/kinu" target="_blank">@kinu</a>さんの「エンジニアなので瞬殺で作れる」です。私も瞬殺でなんでも作れるようにこれからも精進します。上のSlackは超簡単で１５分くらいで作れるのでおすすめです。（作り方は自分で調べてください。。。）
+
+ちょっとしたことにガンバルの重要。これからも頑張ります。
+

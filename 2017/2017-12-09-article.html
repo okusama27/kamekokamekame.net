@@ -1,151 +1,135 @@
 
 
-<!DOCTYPE html>
-<html lang="ja-JP">
-<head>
-  
-  
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Effective Pythonで学ぶ - 4章 メタクラスと属性 - 鉄は熱いうちに打て</title>
-  
-  <link rel="stylesheet" href="../static/css/sample_article.css">
+<!doctype html>
 
-</head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>昨日までのあらすじ &#8212; 鉄は熱いうちに打て</title>
+    <link rel="stylesheet" href="../_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/bizstyle.js"></script>
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="next" title="参考リンク" href="2017-12-10-article.html" />
+    <link rel="prev" title="昨日までのあらすじ" href="2017-12-08-article.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="2017-12-10-article.html" title="参考リンク"
+             accesskey="N">次へ</a></li>
+        <li class="right" >
+          <a href="2017-12-08-article.html" title="昨日までのあらすじ"
+             accesskey="P">前へ</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &gt;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">&lt;no title&gt;</a> &gt;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">昨日までのあらすじ</a></li>
+<li><a class="reference internal" href="#">4章　メタクラスと属性</a></li>
+</ul>
 
-<body>
-  
-<div class="container">
-  <h1 class="index-title">
-    <a href="../index.html">鉄は熱いうちに打て</a>
-  </h1>
+  <h4>前のトピックへ</h4>
+  <p class="topless"><a href="2017-12-08-article.html"
+                        title="前の章へ">昨日までのあらすじ</a></p>
+  <h4>次のトピックへ</h4>
+  <p class="topless"><a href="2017-12-10-article.html"
+                        title="次の章へ">参考リンク</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>クイック検索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="検索" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
 
-  <div class="container-inner">
-    <div class="container-body">
-      
-  <div class="article-metadata">
-    <span class="article-date"> 2017-12-09 </span>
-    <span> Book </span>
-    <span> Book </span>
-  </div>
-  <h1 class="article-title">
-    Effective Pythonで学ぶ - 4章　メタクラスと属性
-  </h1>
-
-  <div class="article-body">
-    <div class="header_target" id="h_2017_2017_2d12_2d09_2darticle_2emd_1"></div><h2>昨日までのあらすじ</h2>
-<p><a href="https://www.oreilly.co.jp/books/9784873117560/">Effective Python</a>を真面目に読もうと思ったので読みはじめました。</p>
-<div class="header_target" id="h_2017_2017_2d12_2d09_2darticle_2emd_2"></div><h2>4章　メタクラスと属性</h2>
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <p>date: 2017-12-09
+title: Effective Pythonで学ぶ - 4章　メタクラスと属性
+category: Book
+tags: Book</p>
+<div class="section" id="">
+<span id="id1"></span><h1>昨日までのあらすじ<a class="headerlink" href="#" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p><a class="reference external" href="https://www.oreilly.co.jp/books/9784873117560/">Effective Python</a>を真面目に読もうと思ったので読みはじめました。</p>
+</div>
+<div class="section" id="">
+<span id="id2"></span><h1>4章　メタクラスと属性<a class="headerlink" href="#" title="このヘッドラインへのパーマリンク">¶</a></h1>
 <p>まずは、 <strong>メタクラス</strong> とはなんでしょうか？</p>
-<p>困ったときは、<a href="https://www.oreilly.co.jp/books/9784873116884/">Python文法詳解</a>を読みます。さすが姉妹本です。</p>
-<p><a href="https://docs.python.org/ja/3/library/functions.html?highlight=type#type">class type(name, bases, dict)</a></p>
-<p>組み込み関数の <code>type()</code> を利用すると動的にクラスが作れる。型オブジェクトの型となるようなクラスをメタクラスと呼ぶそうです。へー。</p>
-<div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">method</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">arg</span><span class="p">):</span>
+<p>困ったときは、<a class="reference external" href="https://www.oreilly.co.jp/books/9784873116884/">Python文法詳解</a>を読みます。さすが姉妹本です。</p>
+<p><a class="reference external" href="https://docs.python.org/ja/3/library/functions.html?highlight=type#type">class type(name, bases, dict)</a></p>
+<p>組み込み関数の <code class="docutils literal notranslate"><span class="pre">type()</span></code> を利用すると動的にクラスが作れる。型オブジェクトの型となるようなクラスをメタクラスと呼ぶそうです。へー。</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">method</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">arg</span><span class="p">):</span>
     <span class="k">print</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">arg</span><span class="p">)</span>
 
 
-<span class="n">Spam</span> <span class="o">=</span> <span class="nb">type</span><span class="p">(</span><span class="s1">'Spam'</span><span class="p">,</span> <span class="p">(),</span> <span class="o">&amp;</span><span class="c1">#123;'ham':method, 'egg':100&amp;#125;)</span>
+<span class="n">Spam</span> <span class="o">=</span> <span class="nb">type</span><span class="p">(</span><span class="s1">&#39;Spam&#39;</span><span class="p">,</span> <span class="p">(),</span> <span class="p">{</span><span class="s1">&#39;ham&#39;</span><span class="p">:</span><span class="n">method</span><span class="p">,</span> <span class="s1">&#39;egg&#39;</span><span class="p">:</span><span class="mi">100</span><span class="p">})</span>
 
 <span class="n">a</span> <span class="o">=</span> <span class="n">Spam</span><span class="p">()</span>
 <span class="n">a</span><span class="o">.</span><span class="n">ham</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
 <span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">egg</span><span class="p">)</span>
 <span class="k">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
 </pre></div>
-<div class="codehilite"><pre><span></span>100
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>100
 &lt;__main__.Spam object at 0x10382d080&gt; 50
-&lt;class '__main__.Spam'&gt;
+&lt;class &#39;__main__.Spam&#39;&gt;
 </pre></div>
+</div>
 <p>文法はわかりました。
-あとで、<a href="http://note.crohaco.net/2016/python-metaclass/">[Python] メタクラスをたおした - くろのて</a>も読みます。</p>
+あとで、<a class="reference external" href="http://note.crohaco.net/2016/python-metaclass/">[Python] メタクラスをたおした - くろのて</a>も読みます。</p>
 <p>メタクラスは今のところ使わなそうなので飛ばします。ついでに5章の平行性と並列性もいったん飛ばし。</p>
-  </div>
-
-
-
-    </div>
-    <aside class="container-right">
-
-      カテゴリ:
-        
-      <ul>
-        
-          <li>
-            <a href="../index_category_category_Advent@20Calendar.html">
-              Advent Calendar
-            </a>
-          </li>
-        
-          <li>
-            <a href="../index_category_category_Book.html">
-              Book
-            </a>
-          </li>
-        
-          <li>
-            <a href="../index_category_category_Event.html">
-              Event
-            </a>
-          </li>
-        
-          <li>
-            <a href="../index_category_category_Git.html">
-              Git
-            </a>
-          </li>
-        
-          <li>
-            <a href="../index_category_category_OS.html">
-              OS
-            </a>
-          </li>
-        
-          <li>
-            <a href="../index_category_category_Other.html">
-              Other
-            </a>
-          </li>
-        
-          <li>
-            <a href="../index_category_category_PyCon@20JP.html">
-              PyCon JP
-            </a>
-          </li>
-        
-          <li>
-            <a href="../index_category_category_PyLadies.html">
-              PyLadies
-            </a>
-          </li>
-        
-          <li>
-            <a href="../index_category_category_Python.html">
-              Python
-            </a>
-          </li>
-        
-          <li>
-            <a href="../index_category_category_Sphinx.html">
-              Sphinx
-            </a>
-          </li>
-        
-          <li>
-            <a href="../index_category_category_Web.html">
-              Web
-            </a>
-          </li>
-        
-      </ul>
-      <div>
-        <br><br>
-        <a href="//af.moshimo.com/af/c/click?a_id=767877&p_id=1166&pc_id=1793&pl_id=20229&guid=ON" target="_blank" rel="nofollow"><img src="//image.moshimo.com/af-img/0408/000000020229.png" width="250" height="250" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=767877&p_id=1166&pc_id=1793&pl_id=20229" width="1" height="1" style="border:none;">
-        <br>
-        <a href="//af.moshimo.com/af/c/click?a_id=767877&p_id=1166&pc_id=1793&pl_id=17971&guid=ON" target="_blank" rel="nofollow"><img src="//image.moshimo.com/af-img/0408/000000017971.png" width="250" height="250" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=767877&p_id=1166&pc_id=1793&pl_id=17971" width="1" height="1" style="border:none;">
-      </div>
-    </aside>
-  </div>
-
 </div>
 
-</body>
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="2017-12-10-article.html" title="参考リンク"
+             >次へ</a></li>
+        <li class="right" >
+          <a href="2017-12-08-article.html" title="昨日までのあらすじ"
+             >前へ</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &gt;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >&lt;no title&gt;</a> &gt;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2018, kamekokamekame.net.
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.1 で生成しました。
+    </div>
+  </body>
 </html>

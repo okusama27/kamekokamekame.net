@@ -1,139 +1,123 @@
 
 
-<!DOCTYPE html>
-<html lang="ja-JP">
-<head>
-  
-  
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>久しぶりにSphinxでスライドを作ろうとしたら完全に迷子 - 鉄は熱いうちに打て</title>
-  
-  <link rel="stylesheet" href="../static/css/sample_article.css">
+<!doctype html>
 
-</head>
-
-<body>
-  
-<div class="container">
-  <h1 class="index-title">
-    <a href="../index.html">鉄は熱いうちに打て</a>
-  </h1>
-
-  <div class="container-inner">
-    <div class="container-body">
-      
-  <div class="article-metadata">
-    <span class="article-date"> 2017-09-02 </span>
-    <span> Sphinx </span>
-    <span> Sphinx </span>
-  </div>
-  <h1 class="article-title">
-    久しぶりにSphinxでスライドを作ろうとしたら完全に迷子
-  </h1>
-
-  <div class="article-body">
-    <p>Sphinxでスライドが作れたよねーと思って作ったら、困ったのでメモ</p>
-<div class="header_target" id="h_2017_2017_2d09_2d02_2darticle_2emd_1"></div><h2>結論</h2>
-<p><a href="https://pypi.python.org/pypi/sphinxjp.themes.s6">sphinxjp.themes.s6 0.3.0</a>を見よう！</p>
-<p>このリンク先の通りにやれば間違いないです。</p>
-<div class="header_target" id="h_2017_2017_2d09_2d02_2darticle_2emd_2"></div><h2>困ったこと</h2>
-<p>適当に検索してたら、conf.pyを下のように書くのだというサイトがいくつか出てきて、コンパイルしたら、「'sphinxjp.themecore'」はもう書かなくていいよぉぉぉ。とか出てくるし。</p>
-<div class="codehilite"><pre><span></span>extensions = ['sphinxjp.themecore']
-html_theme = 's6'
-</pre></div>
-<p>正解はこっちでした。</p>
-<div class="codehilite"><pre><span></span>extensions = ['sphinxjp.themes.s6']
-html_theme = 's6'
-</pre></div>
-  </div>
-
-
-
-    </div>
-    <aside class="container-right">
-
-      カテゴリ:
-        
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>結論 &#8212; 鉄は熱いうちに打て</title>
+    <link rel="stylesheet" href="../_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/bizstyle.js"></script>
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="next" title="恒例の写真" href="2017-09-15-article.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="2017-04-12-article.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
       <ul>
-        
-          <li>
-            <a href="../index_category_category_Advent@20Calendar.html">
-              Advent Calendar
-            </a>
-          </li>
-        
-          <li>
-            <a href="../index_category_category_Book.html">
-              Book
-            </a>
-          </li>
-        
-          <li>
-            <a href="../index_category_category_Event.html">
-              Event
-            </a>
-          </li>
-        
-          <li>
-            <a href="../index_category_category_Git.html">
-              Git
-            </a>
-          </li>
-        
-          <li>
-            <a href="../index_category_category_OS.html">
-              OS
-            </a>
-          </li>
-        
-          <li>
-            <a href="../index_category_category_Other.html">
-              Other
-            </a>
-          </li>
-        
-          <li>
-            <a href="../index_category_category_PyCon@20JP.html">
-              PyCon JP
-            </a>
-          </li>
-        
-          <li>
-            <a href="../index_category_category_PyLadies.html">
-              PyLadies
-            </a>
-          </li>
-        
-          <li>
-            <a href="../index_category_category_Python.html">
-              Python
-            </a>
-          </li>
-        
-          <li>
-            <a href="../index_category_category_Sphinx.html">
-              Sphinx
-            </a>
-          </li>
-        
-          <li>
-            <a href="../index_category_category_Web.html">
-              Web
-            </a>
-          </li>
-        
+        <li class="right" style="margin-right: 10px">
+          <a href="2017-09-15-article.html" title="恒例の写真"
+             accesskey="N">次へ</a></li>
+        <li class="right" >
+          <a href="2017-04-12-article.html" title="&lt;no title&gt;"
+             accesskey="P">前へ</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &gt;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">&lt;no title&gt;</a> &gt;</li> 
       </ul>
-      <div>
-        <br><br>
-        <a href="//af.moshimo.com/af/c/click?a_id=767877&p_id=1166&pc_id=1793&pl_id=20229&guid=ON" target="_blank" rel="nofollow"><img src="//image.moshimo.com/af-img/0408/000000020229.png" width="250" height="250" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=767877&p_id=1166&pc_id=1793&pl_id=20229" width="1" height="1" style="border:none;">
-        <br>
-        <a href="//af.moshimo.com/af/c/click?a_id=767877&p_id=1166&pc_id=1793&pl_id=17971&guid=ON" target="_blank" rel="nofollow"><img src="//image.moshimo.com/af-img/0408/000000017971.png" width="250" height="250" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=767877&p_id=1166&pc_id=1793&pl_id=17971" width="1" height="1" style="border:none;">
-      </div>
-    </aside>
-  </div>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">結論</a></li>
+<li><a class="reference internal" href="#">困ったこと</a></li>
+</ul>
 
+  <h4>前のトピックへ</h4>
+  <p class="topless"><a href="2017-04-12-article.html"
+                        title="前の章へ">&lt;no title&gt;</a></p>
+  <h4>次のトピックへ</h4>
+  <p class="topless"><a href="2017-09-15-article.html"
+                        title="次の章へ">恒例の写真</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>クイック検索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="検索" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <p>date: 2017-09-02
+title: 久しぶりにSphinxでスライドを作ろうとしたら完全に迷子
+category: Sphinx
+tags: Sphinx</p>
+<p>Sphinxでスライドが作れたよねーと思って作ったら、困ったのでメモ</p>
+<div class="section" id="">
+<span id="id1"></span><h1>結論<a class="headerlink" href="#" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p><a class="reference external" href="https://pypi.python.org/pypi/sphinxjp.themes.s6">sphinxjp.themes.s6 0.3.0</a>を見よう！</p>
+<p>このリンク先の通りにやれば間違いないです。</p>
+</div>
+<div class="section" id="">
+<span id="id2"></span><h1>困ったこと<a class="headerlink" href="#" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>適当に検索してたら、conf.pyを下のように書くのだというサイトがいくつか出てきて、コンパイルしたら、「'sphinxjp.themecore'」はもう書かなくていいよぉぉぉ。とか出てくるし。</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sphinxjp.themecore&#39;</span><span class="p">]</span>
+<span class="n">html_theme</span> <span class="o">=</span> <span class="s1">&#39;s6&#39;</span>
+</pre></div>
+</div>
+<p>正解はこっちでした。</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sphinxjp.themes.s6&#39;</span><span class="p">]</span>
+<span class="n">html_theme</span> <span class="o">=</span> <span class="s1">&#39;s6&#39;</span>
+</pre></div>
+</div>
 </div>
 
-</body>
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="2017-09-15-article.html" title="恒例の写真"
+             >次へ</a></li>
+        <li class="right" >
+          <a href="2017-04-12-article.html" title="&lt;no title&gt;"
+             >前へ</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &gt;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >&lt;no title&gt;</a> &gt;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2018, kamekokamekame.net.
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.1 で生成しました。
+    </div>
+  </body>
 </html>

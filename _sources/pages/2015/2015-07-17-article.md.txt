@@ -1,0 +1,16 @@
+date: 2015-07-17
+title:  システムインテグレーション崩壊
+category: Book
+tags: Book
+
+## システムインテグレーション崩壊 ~これからSIerはどう生き残ればいいか?
+
+<a href="http://www.amazon.co.jp/gp/product/4774165220/ref=as_li_qf_sp_asin_il?ie=UTF8&#038;camp=247&#038;creative=1211&#038;creativeASIN=4774165220&#038;linkCode=as2&#038;tag=ironhotcom-22"><img border="0" src="http://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&#038;ASIN=4774165220&#038;Format=_SL250_&#038;ID=AsinImage&#038;MarketPlace=JP&#038;ServiceVersion=20070822&#038;WS=1&#038;tag=ironhotcom-22" ></a><img src="http://ir-jp.amazon-adsystem.com/e/ir?t=ironhotcom-22&#038;l=as2&#038;o=9&#038;a=4774165220" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
+知っている人や所属会社名などが出てきて、私から距離が近そうな人が執筆なさったみたいでした。
+
+これまでの人月で見積もってウォータフォールで開発するのは限界がきているというお話でした。
+これまでのSIerのやり方で人をかき集めて製品を作成するやり方は私の周りでは限界というか効率が悪いと感じることが多いので共感できました。USではユーザ企業にエンジニアの７５％が所属。不必要になったら解雇も自由。人の流動性も高いとのことでした。日本でもWEB系の企業ではその流れがきていて２年単位くらいでポジションを求めて転職している人が増えてきた気がします。ずっと一緒にやりたい会社が見つかったら幸せですが、そうじゃないのに我慢し続けてExcelファイルのメンテナンスばかりやっているようなら転職したほうがいいと思います。経営側も技術者に新しい刺激を与えつつ、顧客満足度も高め、マネタイズもしないといけない大変そうですね。
+
+中堅SIerの人が身の振り方を考えるのに読むのはいいと思います。大企業の人は経験がないのでわからないです。その会社で定年まで行けそうならずっといたほうが生涯年収は高いでしょうね。楽しいかどうかは知りませんが。
+

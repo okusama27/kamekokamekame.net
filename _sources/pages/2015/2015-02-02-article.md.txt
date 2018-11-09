@@ -1,0 +1,18 @@
+date: 2015-02-02
+title:  Macのキー配列変換
+category: OS
+tags: OS
+
+会社がJISで自宅が英語キーボードなのでどちらかに揃えたい。会社でキーボードに触っている時間のほうが長いのでJISに揃える。
+
+下の２つを作成
+Karabiner
+
+<a href="https://pqrs.org/osx/karabiner/index.html.ja" target="_blank">https://pqrs.org/osx/karabiner/index.html.ja</a>
+
+Seil
+
+<a href="https://pqrs.org/osx/karabiner/seil.html.ja" target="_blank">https://pqrs.org/osx/karabiner/seil.html.ja</a>
+
+まず、KarabinerでCommandキーを英数とかなにして、その後、右Optionを右Commandに入れ替えてから、さらにSeilでCapsLockと入れ替えたら、私の大好きな配列に！
+
