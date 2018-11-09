@@ -19,6 +19,8 @@ Pythonのモジュールの配布方法としてeggというzipファイルを�
 .. raw:: html
 
    <a href="http://www.exsoft.net/blog/entry/ab4v5g" target="_blank">python開発環境の構築から作成したeggを別環境へインストールするまで</a>
+
+
 pasterのインストール
 
 .. code-block:: bash

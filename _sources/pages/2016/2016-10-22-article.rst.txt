@@ -113,6 +113,7 @@ feedのプラグインがなかったんで、feedを出力してくれるスク
 
 結局、 ``feedgenerator`` というのを使うと各情報を渡すだけでfeedできます。どーん。
 
+
 .. code-block:: python
 
    フィードを生成

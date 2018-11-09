@@ -11,7 +11,7 @@ Pythonでテストしたい
    :tags: Advent Calendar
 
 
-これは、[PyLadies Advent Calendar 2017 <https://adventar.org/calendars/2462)の 18日目です。
+これは、`PyLadies Advent Calendar 2017 <https://adventar.org/calendars/2462>`_ の 18日目です。
 
 はじめに
 --------------------------------------------------------------
