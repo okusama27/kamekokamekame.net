@@ -1,0 +1,55 @@
+==========================================================
+eggを作ってみる
+==========================================================
+
+2015-04-14
+
+..
+   :date: 2015-04-14
+   :title: eggを作ってみる
+   :category: Python
+   :tags: Python
+
+
+Pythonのモジュールの配布方法としてeggというzipファイルを作成して配るらしい。
+
+完全にこちらのサイトを参考にしました。ありがとうございます。mm
+
+
+.. raw:: html
+
+   <a href="http://www.exsoft.net/blog/entry/ab4v5g" target="_blank">python開発環境の構築から作成したeggを別環境へインストールするまで</a>
+pasterのインストール
+
+.. code-block:: bash
+
+   $ easy_install PasteScript
+
+
+雛形の作成
+
+.. code-block:: bash
+
+   $ paster create -t basic_package MyPkg
+
+
+これやると色々聞かれる。バージョンとか作者の名前とか。聞かれたことはsetup.py中に記録されています。
+
+egg作成
+
+.. code-block:: bash
+
+   $ cd MyPkg
+   $ python setup.py bdist_egg
+
+
+bdist_eggってコマンドだけど、なんの略？？
+
+とりあえず、よくわからない時の合言葉”おまじない”ってことで。
+で、Mypkg/distの下にパッケージが完成！！
+
+インストールはこれでオケ。
+
+.. code-block:: bash
+
+   $ easy_install {作ったeggファイル}

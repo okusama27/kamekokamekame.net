@@ -1,0 +1,102 @@
+==========================================================
+unittestのテスト前後に実行される処理の確認
+==========================================================
+
+2017-12-12
+
+..
+   :date: 2017-12-12
+   :title: unittestのテスト前後に実行される処理の確認
+   :category: Python
+   :tags: Python
+
+
+
+今日の内容は、 `Pythonでテストしたい </pages/2017/2017-12-18-article.html>`_ にまとめている内容の詳細部分です。
+
+この本の236ページに書いてある「テスト実行する前後の処理を定義する」表のメソッドを試してみます。
+
+
+.. raw:: html
+
+   <a href="https://www.amazon.co.jp/Python-%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA%E5%8E%B3%E9%81%B8%E3%83%AC%E3%82%B7%E3%83%94-%E6%B1%A0%E5%86%85-%E5%AD%9D%E5%95%93/dp/4774177075/ref=as_li_ss_il?s=books&ie=UTF8&qid=1513461251&sr=1-1&keywords=python+%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA&linkCode=li2&tag=ironhotcom-22&linkId=97da69f3c2938b7531280618fa17cb5f" target="_blank"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=4774177075&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=ironhotcom-22" ></a><img src="https://ir-jp.amazon-adsystem.com/e/ir?t=ironhotcom-22&l=li2&o=9&a=4774177075" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
+こんな感じで書きました。
+
+   <script src="https://gist.github.com/okusama27/4c9fa7d203a50b3278f210ca7d1dcbb3.js"></script>
+
+実行してみます。
+
+実行結果
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+``setUpClass`` 、 ``tearDownClass`` は1回ずつ、 ``setUp`` 、 ``tearDown`` は2回ずつ呼ばれていますね。
+
+.. code-block:: bash
+
+   setUpClass
+   setUp
+   test_method_1
+   method_1
+   tearDown
+   setUp
+   test_method_2
+   method_2
+   tearDown
+   tearDownClass
+   setUpClass msg
+
+
+失敗させる
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+テストが失敗するようにちょっと書き換えてみます。
+
+.. code-block:: python
+
+    def test_method_2(self):
+        print('test_method_2')
+        expected = 'method_3'
+        actual = self.sample.method_2()
+        self.assertEqual(expected, actual)
+
+
+実行結果
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+失敗しても、 ``tearDown`` 、 ``tearDownClass`` も呼ばれていますね。
+
+.. code-block:: bash
+
+   ssetUpClass
+   setUp
+   test_method_1
+   method_1
+   tearDown
+   setUp
+   test_method_2
+   method_2
+   tearDown
+
+   Failure
+   Expected :'method_3'
+   Actual   :'method_2'
+    <Click to see difference>
+
+   Traceback (most recent call last):
+     File "/Users/kaz/tmp/python_sample/tests/unittest_sample2.py", line 43, in test_method_2
+       self.assertEqual(expected, actual)
+   AssertionError: 'method_3' != 'method_2'
+   - method_3
+   ?        ^
+   + method_2
+   ?        ^
+
+
+   tearDownClass
+   setUpClass msg
+
+
+こんな感じですね。
+
+
+.. image:: ../../_static/images/picture201712/picture_20171212_1.png
+   :alt: unittest
+

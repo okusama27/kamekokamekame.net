@@ -1,0 +1,59 @@
+==========================================================
+BPStudy93 に行ってきました
+==========================================================
+
+2015-05-29
+
+..
+   :date: 2015-05-29
+   :title: BPStudy93 に行ってきました
+   :category: Event
+   :tags: Event
+
+
+
+.. raw:: html
+
+   <a href="http://bpstudy.connpass.com/event/13348/?utm_campaign=event_reminder&utm_source=notifications&utm_medium=email&utm_content=detail_btn" target="_blank">BPStudy#93</a>に参加してきました。いつも凄い人数なので参加できていませんでしたが、なぜか少なかったので参加できました。ありがとうございました。それにしても凄い雨でしたしね。
+
+第1部 「360°スゴイ」を創るVOYAGE GROUPエンジニア成長施策
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+   <iframe src="//www.slideshare.net/slideshow/embed_code/key/Cxppr2SYgQ0fr9" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+   <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/hironorimiura/360-voyage-group" title="「360°スゴイ」を創る voyage groupエンジニア成長施策" target="_blank">「360°スゴイ」を創る voyage groupエンジニア成長施策</a> </strong> from <strong><a href="//www.slideshare.net/hironorimiura" target="_blank">Hironori Miura</a></strong> </div>
+
+
+インターン研修、新人研修のお話でした。こんな素敵な会社があるなら１６年前に戻って入社したいです。というか、新人に求めるハードルが高い気がしますが、現在の手軽に情報が手に入る世の中では当たり前の事なのでしょうか。
+
+第2部 PyPro2の読みどころ紹介：Python開発の過去と現在
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+   <iframe src="//www.slideshare.net/slideshow/embed_code/key/mI3nJ6uThfsMJK" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+   <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/shimizukawa/pypro2python-bpstudy93" title="PyPro2の読みどころ紹介：Python開発の過去と現在 - BPStudy93" target="_blank">PyPro2の読みどころ紹介：Python開発の過去と現在 &#8211; BPStudy93</a> </strong> from <strong><a href="//www.slideshare.net/shimizukawa" target="_blank">Takayuki Shimizukawa</a></strong> </div>
+
+合計３２人で１冊の本を作った方法をご紹介いただきました。
+Slack、その他の技術を駆使していて大変参考になりました。やっぱり一人で書くほうが楽ですよね。。１１人が執筆って多すぎです。レビューへの対応がないとSlackに雨マークが出るとか面白かったです。Google SpreadSheetAPIってそういえば使った事ないので、今度やってみます。
+
+あと、Pythonはどうなる？ってディスカッションをみんなでされてました。2020年でPython2系は終了だが、REL7の寿命が2025なのでそこまでは使われるかなというお話でした。
+あと、一つの言語にこだわるとよくない話。まぁ、一つの言語を極めておけば他に移るのも簡単なので、そう熱くなる必要はないと私は思いますが。。
+
+「Pythonエンジニア養成読本」オモテウラ
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+   <iframe src="//www.slideshare.net/slideshow/embed_code/key/2pThu9siwOS4n8" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+   <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/takanory/two-sides-of-python-engineer-training-book" title="Two sides of &quot;Python Engineer Training Book&quot;" target="_blank">Two sides of &quot;Python Engineer Training Book&quot;</a> </strong> from <strong><a href="//www.slideshare.net/takanory" target="_blank">Takanori Suzuki</a></strong> </div>
+
+技術書執筆は突然に！
+
+突然、依頼されて、突然６人で本を出した話。全編書きおろしの本っていいですね。１年前の記事をまとめてムックにというお話をいただいたのですが、１年経ってたのでいろいろ古くてめんどくさくて、時間と予算があれば全部書き直したかったのですが、編集の意向でなるべく変えないで！って言われたので、しょんぼりでした。。（後半は私の愚痴ですね。。）
+
+まとめ
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+濃い２時間でした。機会があったらまたぜひ参加したいです。ありがとうございました。
+

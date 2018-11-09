@@ -1,0 +1,55 @@
+==========================================================
+Effective Pythonで学ぶ - 4章　メタクラスと属性
+==========================================================
+
+2017-12-09
+
+..
+   :date: 2017-12-09
+   :title: Effective Pythonで学ぶ - 4章　メタクラスと属性
+   :category: Book
+   :tags: Book
+
+
+
+昨日までのあらすじ
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+`Effective Python <https://www.oreilly.co.jp/books/9784873117560/>`_ を真面目に読もうと思ったので読みはじめました。
+
+
+4章　メタクラスと属性
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+まずは、 **メタクラス** とはなんでしょうか？
+
+困ったときは、 `Python文法詳解 <https://www.oreilly.co.jp/books/9784873116884/>`_ を読みます。さすが姉妹本です。
+
+`class type(name, bases, dict) <https://docs.python.org/ja/3/library/functions.html?highlight=type#type>`_ 
+
+組み込み関数の `type()` を利用すると動的にクラスが作れる。型オブジェクトの型となるようなクラスをメタクラスと呼ぶそうです。へー。
+
+.. code-block:: python
+
+   def method(self, arg):
+       print(self, arg)
+
+
+   Spam = type('Spam', (), {'ham':method, 'egg':100})
+
+   a = Spam()
+   a.ham(50)
+   print(a.egg)
+   print(type(a))
+
+
+.. code-block:: text
+
+   100
+   <__main__.Spam object at 0x10382d080> 50
+   <class '__main__.Spam'>
+
+
+文法はわかりました。
+あとで、 `[Python] メタクラスをたおした - くろのて <http://note.crohaco.net/2016/python-metaclass/>`_ も読みます。
+
+メタクラスは今のところ使わなそうなので飛ばします。ついでに5章の平行性と並列性もいったん飛ばし。

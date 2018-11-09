@@ -1,0 +1,57 @@
+==========================================================
+Slackのとあるチャンネルから記事を取得したい
+==========================================================
+
+2015-12-17
+
+..
+   :date: 2015-12-17
+   :title: Slackのとあるチャンネルから記事を取得したい
+   :category: Event
+   :tags: Event
+
+
+この記事は `2015 tech-yuruyuru アドベントカレンダー <http://connpass.com/event/22759/>`_ の１7日目の記事です。
+
+なぜ、２日連続でエントリーしたのか。それは空いていたから。エントリーした時は出来る気がしたんですが。。書くテーマを決めて、内容の下調べも終えてからエントリーしないとダメだな。と反省しています。
+
+そんなわけでゆるい話。
+
+いろんな所でSlack使っているんですが、とあるチャンネルの記録だけを抜いて、特定の文字列を含む記事を保存しておきたいんですが、どうやるのかなぁ？と調べたので、それを書いておきます。
+
+まず、公開ちゃんねる全部をexportする機能があるんですが、全部いらないし、大きくなるのでやらないです。バックアップを毎日しておきたい場合にはいいですね。
+
+
+.. image:: ../../_static/images/old/slack0-300x137.png
+   :alt: slack0
+
+
+Slack APIってところを見ると `channels.history <https://api.slack.com/methods/channels.history>`_ というAPIがありますね。画面でパラメータを入力すればテストもできるようになっています。
+
+まずは認証用のTokenを作成します。
+
+
+.. image:: ../../_static/images/old/slack3-300x214.png
+   :alt: slack3
+
+
+すごい親切で https://api.slack.com/web でCreate tokenボタンを押すだけで取得できます。複数参加していたら複数分表示されています。
+
+で、 `channels.history <https://api.slack.com/methods/channels.history>`_ にアクセスします。
+
+
+.. image:: ../../_static/images/old/slack1-300x223.png
+   :alt: slack1
+
+
+でも、channelってところがチャンネル名じゃなくてcannelのIDじゃないとダメみたいです。と思ったら、それもchannels.listというAPIで取れるみたいです。
+
+
+.. image:: ../../_static/images/old/slack2-300x205.png
+   :alt: slack2
+
+
+とれたchannelのIDをchannels.historyで指定してこれで特定のチャンネルの記事がとれました。
+
+調べたものの、トークン作ると管理者にメールが飛ぶみたいなんで調べただけでやってないです。ははは。
+

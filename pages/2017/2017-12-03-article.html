@@ -1,0 +1,202 @@
+
+
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Effective Pythonで学ぶ（項目７〜） &#8212; 鉄は熱いうちに打て</title>
+    <link rel="stylesheet" href="../../_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../../_static/bizstyle.js"></script>
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="Effective Pythonで学ぶ - 2章 関数" href="2017-12-04-article.html" />
+    <link rel="prev" title="Effective Pythonで学ぶ" href="2017-12-02-article.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="2017-12-04-article.html" title="Effective Pythonで学ぶ - 2章 関数"
+             accesskey="N">次へ</a></li>
+        <li class="right" >
+          <a href="2017-12-02-article.html" title="Effective Pythonで学ぶ"
+             accesskey="P">前へ</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">鉄は熱いうちに打て</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >一覧</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" accesskey="U">2017</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Effective Pythonで学ぶ（項目７〜）</a><ul>
+<li><a class="reference internal" href="#id1">昨日までのあらすじ</a></li>
+<li><a class="reference internal" href="#python-pythonic-thinking">1章　 Python流思考（Pythonic Thinking）</a><ul>
+<li><a class="reference internal" href="#mapfilter">項目 7：mapやfilterの代わりにリスト内包表記を使う</a></li>
+<li><a class="reference internal" href="#id2">項目 8：リスト内包表記には、 3つ以上の式を避ける</a></li>
+<li><a class="reference internal" href="#id3">項目 9：大きな内包表記にはジェネレータ式を考える</a></li>
+<li><a class="reference internal" href="#range-enumerate">項目 10：rangeよりは enumerateにする</a></li>
+<li><a class="reference internal" href="#zip">項目 11：イテレータを並列に処理するには zipを使う</a></li>
+<li><a class="reference internal" href="#forwhile-else">項目 12：forとwhileループの後の elseブロックは使うのを避ける</a></li>
+<li><a class="reference internal" href="#try-except-else-finally">項目 13：try/except/else/finallyの各ブロックを活用する</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>前のトピックへ</h4>
+  <p class="topless"><a href="2017-12-02-article.html"
+                        title="前の章へ">Effective Pythonで学ぶ</a></p>
+  <h4>次のトピックへ</h4>
+  <p class="topless"><a href="2017-12-04-article.html"
+                        title="次の章へ">Effective Pythonで学ぶ - 2章　関数</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>クイック検索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="検索" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+<div class="section" id="effective-python-7">
+<h1>Effective Pythonで学ぶ（項目７〜）<a class="headerlink" href="#effective-python-7" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>2017-12-03</p>
+<div class="section" id="id1">
+<h2>昨日までのあらすじ<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p><a class="reference external" href="https://www.oreilly.co.jp/books/9784873117560/">Effective Python</a> を真面目に読もうと思ったので読みはじめました。</p>
+</div>
+<div class="section" id="python-pythonic-thinking">
+<h2>1章　 Python流思考（Pythonic Thinking）<a class="headerlink" href="#python-pythonic-thinking" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="mapfilter">
+<h3>項目 7：mapやfilterの代わりにリスト内包表記を使う<a class="headerlink" href="#mapfilter" title="このヘッドラインへのパーマリンク">¶</a></h3>
+</div>
+<div class="section" id="id2">
+<h3>項目 8：リスト内包表記には、 3つ以上の式を避ける<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>内包表記をはじめてみたときはなんじゃこりゃ？と思いましたが、慣れると便利ですね。</p>
+<img alt="内包表記" src="../../_images/picture_20171203_1.png" />
+<p>ネストがあまり長くなったり、結果が大きい場合は気をつけようねって書いてありました。</p>
+</div>
+<div class="section" id="id3">
+<h3>項目 9：大きな内包表記にはジェネレータ式を考える<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p><strong>ジェネレータ式</strong> って便利ですね。</p>
+<p>内包表記と同じように書くのを括弧で囲むそうです。便利だ</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">greetings</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Good Morning&#39;</span><span class="p">,</span> <span class="s1">&#39;Hello&#39;</span><span class="p">,</span> <span class="s1">&#39;Good Night&#39;</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">it</span> <span class="o">=</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">greetings</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">next</span><span class="p">(</span><span class="n">it</span><span class="p">)</span>
+<span class="go">12</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">next</span><span class="p">(</span><span class="n">it</span><span class="p">)</span>
+<span class="go">5</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">next</span><span class="p">(</span><span class="n">it</span><span class="p">)</span>
+<span class="go">10</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">next</span><span class="p">(</span><span class="n">it</span><span class="p">)</span>
+<span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+<span class="gr">StopIteration</span>
+<span class="go">&gt;&gt;&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="range-enumerate">
+<h3>項目 10：rangeよりは enumerateにする<a class="headerlink" href="#range-enumerate" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>これ、Pythonをはじめた頃に指摘されました。</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">some_list</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>じゃなくて、こう書く！</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">val</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">some_list</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">val</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>当時、もうちょっと、enumerateの綴りが短いといいのにな（´・ω・<a href="#id4"><span class="problematic" id="id5">`</span></a>）とは思いましたけどね。</p>
+</div>
+<div class="section" id="zip">
+<h3>項目 11：イテレータを並列に処理するには zipを使う<a class="headerlink" href="#zip" title="このヘッドラインへのパーマリンク">¶</a></h3>
+</div>
+<div class="section" id="forwhile-else">
+<h3>項目 12：forとwhileループの後の elseブロックは使うのを避ける<a class="headerlink" href="#forwhile-else" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>使わないというか、あまり有名じゃないと思っているのは私だけでしょうか。</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>for val in some_list:
+    なんか処理
+else:
+    # brakeとかでfor文を終わらずに最後まで来たら実行
+</pre></div>
+</div>
+</div>
+<div class="section" id="try-except-else-finally">
+<h3>項目 13：try/except/else/finallyの各ブロックを活用する<a class="headerlink" href="#try-except-else-finally" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>はい！</p>
+</div>
+</div>
+</div>
+
+
+<br><br>
+<style>
+.box5 {
+    padding: 0.5em 1em;
+    border: double 5px #4ec4d3;
+}
+.box5 p {
+    margin: 0;
+    padding: 0;
+    font-size: large;
+}
+</style>
+<p>
+    <a href="//af.moshimo.com/af/c/click?a_id=767877&p_id=1166&pc_id=1793&pl_id=17972&guid=ON" target="_blank" rel="nofollow"><img src="//image.moshimo.com/af-img/0408/000000017972.png" width="234" height="60" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=767877&p_id=1166&pc_id=1793&pl_id=17972" width="1" height="1" style="border:none;">
+    <a href="//af.moshimo.com/af/c/click?a_id=767877&p_id=1166&pc_id=1793&pl_id=20225&guid=ON" target="_blank" rel="nofollow"><img src="//image.moshimo.com/af-img/0408/000000020225.png" width="234" height="60" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=767877&p_id=1166&pc_id=1793&pl_id=20225" width="1" height="1" style="border:none;">
+</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="2017-12-04-article.html" title="Effective Pythonで学ぶ - 2章 関数"
+             >次へ</a></li>
+        <li class="right" >
+          <a href="2017-12-02-article.html" title="Effective Pythonで学ぶ"
+             >前へ</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">鉄は熱いうちに打て</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >一覧</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" >2017</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2018, kamekokamekame.net.
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.1 で生成しました。
+    </div>
+  </body>
+</html>
