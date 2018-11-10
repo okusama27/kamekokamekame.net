@@ -24,8 +24,8 @@ body {
     background-image: url(background_b01.png);
     color: black;
     padding: 0;
-    border-right: 1px solid #AA143B;
-    border-left: 1px solid #AA143B;
+    border-right: 1px solid #336600;
+    border-left: 1px solid #336600;
 
     margin: 0px 40px 0px 40px;
 }
@@ -61,7 +61,7 @@ div.related {
 }
 
 div.related ul {
-    background-color: #AA143B;
+    background-color: #336600;
     height: 100%;
     overflow: hidden;
     border-top: 1px solid #ddd;
@@ -111,8 +111,8 @@ div.sphinxsidebar h3, div.sphinxsidebar h4 {
     font-size: 1em;
     padding: 0.1em 0 0.1em 0.5em;
     color: white;
-    border: 1px solid #AA143B;
-    background-color: #AA143B;
+    border: 1px solid #336600;
+    background-color: #336600;
 }
 
 div.sphinxsidebar h3 a {
@@ -131,24 +131,24 @@ div.sphinxsidebar ul ul {
 }
 
 div.sphinxsidebar input {
-    border: 1px solid #AA143B;
+    border: 1px solid #336600;
 }
 
 div.footer {
     background-color: white;
-    color: #AA143B;
+    color: #336600;
     padding: 3px 8px 3px 0;
     clear: both;
     font-size: 0.8em;
     text-align: right;
-    border-bottom: 1px solid #AA143B;
+    border-bottom: 1px solid #336600;
 
     -moz-box-shadow: 2px 2px 5px #000;
     -webkit-box-shadow: 2px 2px 5px #000;
 }
 
 div.footer a {
-    color: #AA143B;
+    color: #336600;
     text-decoration: underline;
 }
 
@@ -159,12 +159,12 @@ p {
 }
 
 a {
-    color: #AA143B;
+    color: #336600;
     text-decoration: none;
 }
 
 a:hover {
-    color: #AA143B;
+    color: #336600;
     text-decoration: underline;
 }
 
@@ -173,7 +173,7 @@ div.body a {
 }
 
 h1, h2, h3 {
-    color: #AA143B;
+    color: #336600;
 }
 
 h1 {
@@ -186,7 +186,7 @@ h2 {
     margin: 1.3em 0 0.2em 0;
     font-size: 1.35em;
     padding-bottom: .5em;
-    border-bottom: 1px solid #AA143B;
+    border-bottom: 1px solid #336600;
 }
 
 h3 {
