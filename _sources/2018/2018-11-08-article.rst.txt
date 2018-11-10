@@ -12,9 +12,10 @@
 
 `ブログをGCEに乗っけて、Miyadaikuに変更 </pages/2018/2018-08-05-article.html>`_ とか言ってたわけですが、舌の根も乾かぬうちにSphinxに変更しました。
 
-何回、MarkdownとreStructuredTextの変換スクリプトを書いたことでしょう。
+これまでの記事の生ファイルは、MarkdownとreStructuredTextが混ざっていたのですが、全部reStructuredTextに変更しました。
+もう何回、MarkdownとreStructuredTextの変換スクリプトを書いたことでしょう。
 
-これまでは、MarkdownとreStructuredTextが混ざっていたのですが、全部reStructuredTextに変更しました。
+毎年、この時期になるとブログをきれいにしたくていそいそとブログ作成ツールの入れ替えをしているので、ブログ用ツールの変更はそろそろ終わりにしてこの仕組を温めていきます。
 
 Miyadaiku, 私には敷居が高ったようです。
 

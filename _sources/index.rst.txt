@@ -1,13 +1,6 @@
-.. kamekokamekame.net documentation master file, created by
-   sphinx-quickstart on Wed Nov  7 00:22:05 2018.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 .. title:: トップページ
 
-.. include:: /2018/2018-11-08-article.rst
-
-
+.. include:: 2018/2018-11-09-article.rst
 
 最近の投稿
 ++++++++++++++++++++++
@@ -15,11 +8,11 @@
 .. toctree::
    :maxdepth: 1
 
+   2018/2018-11-09-article
    2018/2018-11-08-article
    2018/2018-11-03-article
    2018/2018-11-01-article
    2018/2018-09-24-article
-   2018/2018-08-19-article
 
 .. toctree::
    :maxdepth: 1
