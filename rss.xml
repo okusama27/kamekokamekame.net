@@ -1,82 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>鉄は熱いうちに打て</title><link>https://kamekokamekame.net</link><description>Strike while the iron is hot</description><language>ja</language><copyright>2018, kamekokamekame.net</copyright><lastBuildDate>Fri, 09 Nov 2018 00:00:00 -0000</lastBuildDate><item><title>トップページ</title><link>https://kamekokamekame.net/index.html</link><description>&lt;div class=section id=sphinxrss&gt;
-
-&lt;p&gt;2018-11-09&lt;/p&gt;
-&lt;p&gt;このブログにRSSを設定しました。&lt;/p&gt;
-&lt;p&gt;自分で記事を読み込んでRSS形式にするスクリプトでもちまちま作ろうかなーと思っていたら、紹介していただきました。&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://github.com/shimizukawa/sphinxcontrib-feed"&gt;shimizukawa/sphinxcontrib-feed&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;元はPython2.7まで対応っぽいのをshimizukawaさんが自分用にforkしてPython3対応させたものです。&lt;/p&gt;
-&lt;div class=section id=id1&gt;
-&lt;h2&gt;設定したときのメモ書き&lt;/h2&gt;
-&lt;p&gt;venvで仮想環境作ってやってます。&lt;/p&gt;
-&lt;ul class=simple&gt;
-&lt;li&gt;&lt;a class="reference external" href="https://github.com/shimizukawa/sphinxcontrib-feed"&gt;shimizukawa/sphinxcontrib-feed&lt;/a&gt; をローカルに &lt;code class="docutils literal notranslate"&gt;&lt;span class=pre&gt;git&lt;/span&gt; &lt;span class=pre&gt;clone&lt;/span&gt;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code class="docutils literal notranslate"&gt;&lt;span class=pre&gt;python&lt;/span&gt; &lt;span class=pre&gt;setup.py&lt;/span&gt; &lt;span class=pre&gt;build&lt;/span&gt;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code class="docutils literal notranslate"&gt;&lt;span class=pre&gt;python&lt;/span&gt; &lt;span class=pre&gt;setup.py&lt;/span&gt; &lt;span class=pre&gt;install&lt;/span&gt;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code class="docutils literal notranslate"&gt;&lt;span class=pre&gt;conf.py&lt;/span&gt;&lt;/code&gt; に追加&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class="highlight-python notranslate"&gt;&lt;div class=highlight&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=n&gt;extensions&lt;/span&gt; &lt;span class=o&gt;=&lt;/span&gt; &lt;span class=p&gt;[&lt;/span&gt;&lt;span class=s1&gt;'sphinxcontrib.feed'&lt;/span&gt;&lt;span class=p&gt;]&lt;/span&gt;
-&lt;span class=n&gt;siteurl&lt;/span&gt; &lt;span class=o&gt;=&lt;/span&gt; &lt;span class=s1&gt;'https://kamekokamekame.net'&lt;/span&gt;
-&lt;span class=n&gt;feed_base_url&lt;/span&gt; &lt;span class=o&gt;=&lt;/span&gt; &lt;span class=n&gt;siteurl&lt;/span&gt;
-&lt;span class=n&gt;feed_description&lt;/span&gt; &lt;span class=o&gt;=&lt;/span&gt; &lt;span class=s2&gt;"Strike while the iron is hot"&lt;/span&gt;
-&lt;span class=n&gt;feed_filename&lt;/span&gt; &lt;span class=o&gt;=&lt;/span&gt; &lt;span class=s1&gt;'rss.xml'&lt;/span&gt;
-&lt;span class=n&gt;feed_title&lt;/span&gt; &lt;span class=o&gt;=&lt;/span&gt; &lt;span class=n&gt;html_title&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;ul class=simple&gt;
-&lt;li&gt;各article.rstの先頭に &lt;code class="docutils literal notranslate"&gt;&lt;span class=pre&gt;:date:&lt;/span&gt;&lt;/code&gt; を追加&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;この記事だとこんな感じ&lt;/p&gt;
-&lt;div class="highlight-rst notranslate"&gt;&lt;div class=highlight&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=nc&gt;:date:&lt;/span&gt; &lt;span class=nf&gt;2018-11-09 00:00:00&lt;/span&gt;
-&lt;span class=nc&gt;:title:&lt;/span&gt; &lt;span class=nf&gt;RSSを設定&lt;/span&gt;
-&lt;span class=nc&gt;:category:&lt;/span&gt; &lt;span class=nf&gt;sphinx&lt;/span&gt;
-&lt;span class=nc&gt;:tags:&lt;/span&gt; &lt;span class=nf&gt;sphinx&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;ul class=simple&gt;
-&lt;li&gt;RSSにちゃんと出るようにtoctreeを整備&lt;/li&gt;
-&lt;li&gt;新しい記事を書くときに記事の先頭に &lt;code class="docutils literal notranslate"&gt;&lt;span class=pre&gt;:date:&lt;/span&gt;&lt;/code&gt; とかを追加してファイルを作って、目次用のtoctreeに新しい記事を入れ込むスクリプト作成&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;目次のところ、年別と分けて、最新の記事5件を右のサイドバーに出すために下みたいに書いてます。&lt;/p&gt;
-&lt;div class="highlight-rst notranslate"&gt;&lt;div class=highlight&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=p&gt;..&lt;/span&gt; &lt;span class=ow&gt;toctree&lt;/span&gt;&lt;span class=p&gt;::&lt;/span&gt;
-   &lt;span class=nc&gt;:maxdepth:&lt;/span&gt; &lt;span class=nf&gt;1&lt;/span&gt;
-
-   2018/2018-11-09-article
-   2018/2018-11-08-article
-   2018/2018-11-03-article
-   2018/2018-11-01-article
-   2018/2018-09-24-article
-
-&lt;span class=p&gt;..&lt;/span&gt; &lt;span class=ow&gt;toctree&lt;/span&gt;&lt;span class=p&gt;::&lt;/span&gt;
-   &lt;span class=nc&gt;:maxdepth:&lt;/span&gt; &lt;span class=nf&gt;1&lt;/span&gt;
-   &lt;span class=nc&gt;:hidden:&lt;/span&gt;
-
-   2018/index
-   2017/index
-   2016/index
-   2015/index
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;1件記事が増えたら &lt;code class="docutils literal notranslate"&gt;&lt;span class=pre&gt;2018/2018-09-24-article&lt;/span&gt;&lt;/code&gt; を消して、先頭に新しい記事を入れて、古い方は &lt;code class="docutils literal notranslate"&gt;&lt;span class=pre&gt;2018/index&lt;/span&gt;&lt;/code&gt; に書き込んでいます。&lt;/p&gt;
-&lt;p&gt;まだ、カテゴリとかタグとかのリンクを出せていないですが、のぞみのブログができました。
-標準のSphinxだけでもなんとかなるもんですね。&lt;/p&gt;
-&lt;div class=section id=id3&gt;
-&lt;h3&gt;最近の投稿&lt;/h3&gt;
-&lt;div class="toctree-wrapper compound"&gt;
-&lt;ul&gt;
-&lt;li class=toctree-l1&gt;&lt;a class="reference internal" href="https://kamekokamekame.net/2018/2018-11-09-article.html"&gt;SphinxブログにRSSを設定&lt;/a&gt;&lt;/li&gt;
-&lt;li class=toctree-l1&gt;&lt;a class="reference internal" href="https://kamekokamekame.net/2018/2018-11-08-article.html"&gt;ブログ作成ツールをSphinxに変更しました&lt;/a&gt;&lt;/li&gt;
-&lt;li class=toctree-l1&gt;&lt;a class="reference internal" href="https://kamekokamekame.net/2018/2018-11-03-article.html"&gt;PyLadies沖縄合宿 - 2日目&lt;/a&gt;&lt;/li&gt;
-&lt;li class=toctree-l1&gt;&lt;a class="reference internal" href="https://kamekokamekame.net/2018/2018-11-01-article.html"&gt;PyLadies沖縄合宿に参加します - 目標を立てよう&lt;/a&gt;&lt;/li&gt;
-&lt;li class=toctree-l1&gt;&lt;a class="reference internal" href="https://kamekokamekame.net/2018/2018-09-24-article.html"&gt;PyLadiesの行動規範を整える&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="toctree-wrapper compound"&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</description><pubDate>Fri, 09 Nov 2018 00:00:00 -0000</pubDate><guid>https://kamekokamekame.net/index.html</guid></item><item><title>SphinxブログにRSSを設定</title><link>https://kamekokamekame.net/2018/2018-11-09-article.html</link><description>&lt;div class=section id=sphinxrss&gt;
+<rss version="2.0"><channel><title>鉄は熱いうちに打て</title><link>https://kamekokamekame.net</link><description>Strike while the iron is hot</description><language>ja</language><copyright>2018, kamekokamekame.net</copyright><lastBuildDate>Fri, 09 Nov 2018 00:00:00 -0000</lastBuildDate><item><title>SphinxブログにRSSを設定</title><link>https://kamekokamekame.net/2018/2018-11-09-article.html</link><description>&lt;div class=section id=sphinxrss&gt;
 
 &lt;p&gt;2018-11-09&lt;/p&gt;
 &lt;p&gt;このブログにRSSを設定しました。&lt;/p&gt;
@@ -139,33 +62,7 @@
 標準のSphinxだけでもなんとかなるもんですね。&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</description><pubDate>Fri, 09 Nov 2018 00:00:00 -0000</pubDate><guid>https://kamekokamekame.net/2018/2018-11-09-article.html</guid></item><item><title>トップページ</title><link>https://kamekokamekame.net/index.html</link><description>&lt;div class=section id=sphinx&gt;
-
-&lt;p&gt;2018-11-08&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://kamekokamekame.net/pages/2018/2018-08-05-article.html"&gt;ブログをGCEに乗っけて、Miyadaikuに変更&lt;/a&gt; とか言ってたわけですが、舌の根も乾かぬうちにSphinxに変更しました。&lt;/p&gt;
-&lt;p&gt;何回、MarkdownとreStructuredTextの変換スクリプトを書いたことでしょう。&lt;/p&gt;
-&lt;p&gt;これまでは、MarkdownとreStructuredTextが混ざっていたのですが、全部reStructuredTextに変更しました。&lt;/p&gt;
-&lt;p&gt;Miyadaiku, 私には敷居が高ったようです。&lt;/p&gt;
-&lt;p&gt;Miyadaikuを勧めてくれたクロハコ先生も &lt;a class="reference external" href="http://note.crohaco.net/2018/start-nikola/"&gt;Nikola を始める話 - くろのて&lt;/a&gt; とか言って、他のブログツールに乗り換えてしまいました。&lt;/p&gt;
-&lt;p&gt;もうちょっと頑張りたかったですが、どうやっていじっていいのかわからなくて「あー！」ってなりました。&lt;/p&gt;
-&lt;p&gt;Sphinxはブログ用でもCMSでもないですが、自分で改造できるくらいの知識はあるのでこっちがいいにゃん。
-そのうち、ブログ用のテーマ作りたいです。ブログ用のテーマは、すでにあるのは知っているんですが、自分色にしたいの。うふっ。&lt;/p&gt;
-&lt;div class=section id=id1&gt;
-&lt;h2&gt;最近の投稿&lt;/h2&gt;
-&lt;div class="toctree-wrapper compound"&gt;
-&lt;ul&gt;
-&lt;li class=toctree-l1&gt;&lt;a class="reference internal" href="https://kamekokamekame.net/2018/2018-11-08-article.html"&gt;ブログ作成ツールをSphinxに変更しました&lt;/a&gt;&lt;/li&gt;
-&lt;li class=toctree-l1&gt;&lt;a class="reference internal" href="https://kamekokamekame.net/2018/2018-11-03-article.html"&gt;PyLadies沖縄合宿 - 2日目&lt;/a&gt;&lt;/li&gt;
-&lt;li class=toctree-l1&gt;&lt;a class="reference internal" href="https://kamekokamekame.net/2018/2018-11-01-article.html"&gt;PyLadies沖縄合宿に参加します - 目標を立てよう&lt;/a&gt;&lt;/li&gt;
-&lt;li class=toctree-l1&gt;&lt;a class="reference internal" href="https://kamekokamekame.net/2018/2018-09-24-article.html"&gt;PyLadiesの行動規範を整える&lt;/a&gt;&lt;/li&gt;
-&lt;li class=toctree-l1&gt;&lt;a class="reference internal" href="https://kamekokamekame.net/2018/2018-08-19-article.html"&gt;PyLadies Tokyo Meetup #35 もくもく会 に参加しました&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="toctree-wrapper compound"&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</description><pubDate>Thu, 08 Nov 2018 00:00:00 -0000</pubDate><guid>https://kamekokamekame.net/index.html</guid></item><item><title>ブログ作成ツールをSphinxに変更しました</title><link>https://kamekokamekame.net/2018/2018-11-08-article.html</link><description>&lt;div class=section id=sphinx&gt;
+</description><pubDate>Fri, 09 Nov 2018 00:00:00 -0000</pubDate><guid>https://kamekokamekame.net/2018/2018-11-09-article.html</guid></item><item><title>ブログ作成ツールをSphinxに変更しました</title><link>https://kamekokamekame.net/2018/2018-11-08-article.html</link><description>&lt;div class=section id=sphinx&gt;
 
 &lt;p&gt;2018-11-08&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="https://kamekokamekame.net/pages/2018/2018-08-05-article.html"&gt;ブログをGCEに乗っけて、Miyadaikuに変更&lt;/a&gt; とか言ってたわけですが、舌の根も乾かぬうちにSphinxに変更しました。&lt;/p&gt;

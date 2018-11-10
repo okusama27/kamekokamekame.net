@@ -1,0 +1,73 @@
+==========================================================
+SphinxブログにRSSを設定
+==========================================================
+
+2018-11-09
+
+このブログにRSSを設定しました。
+
+自分で記事を読み込んでRSS形式にするスクリプトでもちまちま作ろうかなーと思っていたら、紹介していただきました。
+
+`shimizukawa/sphinxcontrib-feed <https://github.com/shimizukawa/sphinxcontrib-feed>`_
+
+元はPython2.7まで対応っぽいのをshimizukawaさんが自分用にforkしてPython3対応させたものです。
+
+設定したときのメモ書き
+------------------------------
+venvで仮想環境作ってやってます。
+
+- `shimizukawa/sphinxcontrib-feed <https://github.com/shimizukawa/sphinxcontrib-feed>`_ をローカルに ``git clone``
+- ``python setup.py build``
+- ``python setup.py install``
+- ``conf.py`` に追加
+
+.. code-block:: python
+
+   extensions = ['sphinxcontrib.feed']
+   siteurl = 'https://kamekokamekame.net'
+   feed_base_url = siteurl
+   feed_description = "Strike while the iron is hot"
+   feed_filename = 'rss.xml'
+   feed_title = html_title
+
+- 各article.rstの先頭に ``:date:`` を追加
+
+この記事だとこんな感じ
+
+.. code-block:: rst
+
+   :date: 2018-11-09 00:00:00
+   :title: RSSを設定
+   :category: sphinx
+   :tags: sphinx
+
+- RSSにちゃんと出るようにtoctreeを整備
+- 新しい記事を書くときに記事の先頭に ``:date:`` とかを追加してファイルを作って、目次用のtoctreeに新しい記事を入れ込むスクリプト作成
+
+目次のところ、年別と分けて、最新の記事5件を右のサイドバーに出すために下みたいに書いてます。
+
+.. code-block:: rst
+
+   .. toctree::
+      :maxdepth: 1
+
+      2018/2018-11-09-article
+      2018/2018-11-08-article
+      2018/2018-11-03-article
+      2018/2018-11-01-article
+      2018/2018-09-24-article
+
+   .. toctree::
+      :maxdepth: 1
+      :hidden:
+
+      2018/index
+      2017/index
+      2016/index
+      2015/index
+
+
+1件記事が増えたら ``2018/2018-09-24-article`` を消して、先頭に新しい記事を入れて、古い方は ``2018/index`` に書き込んでいます。
+
+まだ、カテゴリとかタグとかのリンクを出せていないですが、のぞみのブログができました。
+標準のSphinxだけでもなんとかなるもんですね。
