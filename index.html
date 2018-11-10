@@ -18,7 +18,7 @@
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="_static/bizstyle.js"></script>
     <link rel="search" title="検索" href="search.html" />
-    <link rel="next" title="ブログ作成ツールをSphinxに変更しました" href="2018/2018-11-08-article.html" />
+    <link rel="next" title="SphinxブログにRSSを設定" href="2018/2018-11-09-article.html" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <!--[if lt IE 9]>
     <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
@@ -28,7 +28,7 @@
       <h3>ナビゲーション</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="2018/2018-11-08-article.html" title="ブログ作成ツールをSphinxに変更しました"
+          <a href="2018/2018-11-09-article.html" title="SphinxブログにRSSを設定"
              accesskey="N">次へ</a></li>
         <li class="nav-item nav-item-0"><a href="#">鉄は熱いうちに打て</a> &#187;</li> 
       </ul>
@@ -37,11 +37,11 @@
         <div class="sphinxsidebarwrapper"><div id="toc" class="sidebarRow">
 <h3><a href="#">Table Of Contents</a></h3>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="2018/2018-11-09-article.html">SphinxブログにRSSを設定</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2018/2018-11-08-article.html">ブログ作成ツールをSphinxに変更しました</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2018/2018-11-03-article.html">PyLadies沖縄合宿 - 2日目</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2018/2018-11-01-article.html">PyLadies沖縄合宿に参加します - 目標を立てよう</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2018/2018-09-24-article.html">PyLadiesの行動規範を整える</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2018/2018-08-19-article.html">PyLadies Tokyo Meetup #35 もくもく会 に参加しました</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="2018/index.html">2018</a></li>
@@ -52,8 +52,8 @@
 
 </div>
   <h4>次のトピックへ</h4>
-  <p class="topless"><a href="2018/2018-11-08-article.html"
-                        title="次の章へ">ブログ作成ツールをSphinxに変更しました</a></p>
+  <p class="topless"><a href="2018/2018-11-09-article.html"
+                        title="次の章へ">SphinxブログにRSSを設定</a></p>
 <div id="searchbox" style="display: none" role="search">
   <h3>クイック検索</h3>
     <div class="searchformwrapper">
@@ -77,76 +77,78 @@
 <h1>鉄は熱いうちに打て<br>
 =============================</h1>
 
-<div class="section" id="sphinxrss">
-<h1>SphinxブログにRSSを設定<a class="headerlink" href="#sphinxrss" title="このヘッドラインへのパーマリンク">¶</a></h1>
-<p>2018-11-09</p>
-<p>このブログにRSSを設定しました。</p>
-<p>自分で記事を読み込んでRSS形式にするスクリプトでもちまちま作ろうかなーと思っていたら、紹介していただきました。</p>
-<p><a class="reference external" href="https://github.com/shimizukawa/sphinxcontrib-feed">shimizukawa/sphinxcontrib-feed</a></p>
-<p>元はPython2.7まで対応っぽいのをshimizukawaさんが自分用にforkしてPython3対応させたものです。</p>
+<div class="section" id="title">
+<h1>Title<a class="headerlink" href="#title" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>2018-11-10</p>
+<p><a class="reference external" href="https://pyladies-tokyo.connpass.com/event/95648/">PyLadies Tokyo 沖縄秋合宿 2018</a> に参加しました。</p>
+<p>はしゃぎすぎたのか、帰ってきてから体調最悪で病院に2回行って、仕事も自宅作業でずっと自宅にいました。</p>
+<p>大分、良くなったので旅の思い出まとめ。</p>
 <div class="section" id="id1">
-<h2>設定したときのメモ書き<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>venvで仮想環境作ってやってます。</p>
-<ul class="simple">
-<li><a class="reference external" href="https://github.com/shimizukawa/sphinxcontrib-feed">shimizukawa/sphinxcontrib-feed</a> をローカルに <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">setup.py</span> <span class="pre">build</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">setup.py</span> <span class="pre">install</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">conf.py</span></code> に追加</li>
-</ul>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sphinxcontrib.feed&#39;</span><span class="p">]</span>
-<span class="n">siteurl</span> <span class="o">=</span> <span class="s1">&#39;https://kamekokamekame.net&#39;</span>
-<span class="n">feed_base_url</span> <span class="o">=</span> <span class="n">siteurl</span>
-<span class="n">feed_description</span> <span class="o">=</span> <span class="s2">&quot;Strike while the iron is hot&quot;</span>
-<span class="n">feed_filename</span> <span class="o">=</span> <span class="s1">&#39;rss.xml&#39;</span>
-<span class="n">feed_title</span> <span class="o">=</span> <span class="n">html_title</span>
-</pre></div>
+<h2>１日目<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>一人寂しく4時半に起きて5時過ぎの電車に乗って羽田空港へ移動。</p>
+<p>そこから一人寂しく那覇空港へ。</p>
+<img alt="_images/pyladies_2018_01.png" src="_images/pyladies_2018_01.png" />
+<p>那覇空港で合流できた人とランチと、ビール！</p>
+<img alt="_images/pyladies_2018_02.png" src="_images/pyladies_2018_02.png" />
+<p>こんにちは。オリオンビール！ってことで美味しくいただきました。シンハービールに似てる感じですね。南国感がある。</p>
+<img alt="_images/pyladies_2018_04.png" src="_images/pyladies_2018_04.png" />
+<p>なんだかんだで宿に到着！宿の前には守り神のお姿が！</p>
+<img alt="_images/pyladies_2018_13.png" src="_images/pyladies_2018_13.png" />
+<p>早速モクモクする皆様。（いろいろあれなんで強めにモザイク）</p>
+<img alt="_images/pyladies_2018_05.png" src="_images/pyladies_2018_05.png" />
+<p>沖縄の温泉にも行きました。景色も泉質も、かなり良かったです！</p>
+<img alt="_images/pyladies_2018_06.png" src="_images/pyladies_2018_06.png" />
+<p>夕食タイム１日目。食事担当のみなさんが美味しいものいっぱい作ってくれたんですが、痛恨の写真撮り忘れ。ビールの写真はたくさん撮りました。</p>
+<img alt="_images/pyladies_2018_07.png" src="_images/pyladies_2018_07.png" />
+<img alt="_images/pyladies_2018_08.png" src="_images/pyladies_2018_08.png" />
+<img alt="_images/pyladies_2018_09.png" src="_images/pyladies_2018_09.png" />
+<img alt="_images/pyladies_2018_10.png" src="_images/pyladies_2018_10.png" />
+<p>もう疲れすぎてて、座っても値落ちしてたりしてたので22時には寝ました。
+2段ベッドが4つ並んだ部屋があって、修学旅行みたいでした。端っこの下で先に休ませてもらいました。</p>
 </div>
-<ul class="simple">
-<li>各article.rstの先頭に <code class="docutils literal notranslate"><span class="pre">:date:</span></code> を追加</li>
-</ul>
-<p>この記事だとこんな感じ</p>
-<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="nc">:date:</span> <span class="nf">2018-11-09 00:00:00</span>
-<span class="nc">:title:</span> <span class="nf">SphinxブログにRSSを設定</span>
-<span class="nc">:category:</span> <span class="nf">sphinx</span>
-<span class="nc">:tags:</span> <span class="nf">sphinx</span>
-</pre></div>
+<div class="section" id="id2">
+<h2>2日目<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>昼食。宿の近所のお店で買ってきてもらいました。美味しかったです。</p>
+<img alt="_images/pyladies_2018_11.png" src="_images/pyladies_2018_11.png" />
+<p>2日目もあいにくの雨で、リビングでモクモクしてました。海岸に行ったメンバーもいて楽しそうでした！！</p>
+<p>夕食タイム2日目。食事担当でした。作りすぎました。ごめんなさい。買った肉が大量に余って、どーすんのよ？という空気に。（余ったものを次の日の朝に２日目食事担当メンバーとと全力で調理したらきれいに無くなりました。）</p>
+<img alt="_images/pyladies_2018_12.png" src="_images/pyladies_2018_12.png" />
+<p>飲んだものの記録</p>
+<img alt="_images/pyladies_2018_14.png" src="_images/pyladies_2018_14.png" />
+<img alt="_images/pyladies_2018_15.png" src="_images/pyladies_2018_15.png" />
+<img alt="_images/pyladies_2018_16.png" src="_images/pyladies_2018_16.png" />
 </div>
-<ul class="simple">
-<li>RSSにちゃんと出るようにtoctreeを整備</li>
-<li>新しい記事を書くときに記事の先頭に <code class="docutils literal notranslate"><span class="pre">:date:</span></code> とかを追加してファイルを作って、目次用のtoctreeに新しい記事を入れ込むスクリプト作成</li>
-</ul>
-<p>目次のところ、年別と分けて、最新の記事5件を右のサイドバーに出すため <code class="docutils literal notranslate"><span class="pre">toctree</span></code> 分割</p>
-<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">toctree</span><span class="p">::</span>
-   <span class="nc">:maxdepth:</span> <span class="nf">1</span>
-
-   2018/2018-11-08-article
-   2018/2018-11-03-article
-   2018/2018-11-01-article
-   2018/2018-09-24-article
-   2018/2018-08-19-article
-
-<span class="p">..</span> <span class="ow">toctree</span><span class="p">::</span>
-   <span class="nc">:maxdepth:</span> <span class="nf">1</span>
-   <span class="nc">:hidden:</span>
-
-   2018/index
-   2017/index
-   2016/index
-   2015/index
-</pre></div>
-</div>
-<p>1件記事が増えたら <code class="docutils literal notranslate"><span class="pre">2018/2018-08-19-article</span></code> を消して、先頭に新しい記事を入れて、消した記事は <code class="docutils literal notranslate"><span class="pre">2018/index</span></code> に書き込んでいます。</p>
-<p>まだ、カテゴリとかタグとかのリンクを出せていないですが、のぞみのブログができました。
-標準のSphinxだけでもなんとかなるもんですね。</p>
 <div class="section" id="id3">
-<h3>最近の投稿<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h2>3日目<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>二手に分かれて観光しました。私は南組。</p>
+<p>斎場御嶽（せーふぁーうたき）という世界遺産。結構歩いたので汗だくになりました。思ったよりパワースポット感が強かったです。</p>
+<img alt="_images/pyladies_2018_17.png" src="_images/pyladies_2018_17.png" />
+<p>おきなわワールド。無料でレストランに行けるので、レストランに行って沖縄料理バイキングを食べました。ビールは飲んでないよ。</p>
+<img alt="_images/pyladies_2018_18.png" src="_images/pyladies_2018_18.png" />
+<img alt="_images/pyladies_2018_19.png" src="_images/pyladies_2018_19.png" />
+<p>亀とかめちゃん</p>
+<img alt="_images/pyladies_2018_20.png" src="_images/pyladies_2018_20.png" />
+<p>その後、国際通りで琉球グラスを作って、モノレールに乗って空港に移動しました。国際通りであまり時間が取れなくて残念でした。また行きたいです。</p>
+<p>飛行機に乗る前のラストオリオン。</p>
+<img alt="_images/pyladies_2018_21.png" src="_images/pyladies_2018_21.png" />
+<p>PyLadies合宿記念に買ったお土産の蛇。</p>
+<img alt="_images/pyladies_2018_22.png" src="_images/pyladies_2018_22.png" />
+<p>後日、琉球グラス届きました。いい感じ。</p>
+<img alt="_images/pyladies_2018_23.png" src="_images/pyladies_2018_23.png" />
+<p>全体写真。</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">沖縄合宿！集合写真！<a href="https://twitter.com/hashtag/PyLadiesTokyo?src=hash&amp;ref_src=twsrc%5Etfw">#PyLadiesTokyo</a> <a href="https://t.co/7Once0vksJ">pic.twitter.com/7Once0vksJ</a></p>&mdash; PyLadiesTokyo (@PyLadiesTokyo) <a href="https://twitter.com/PyLadiesTokyo/status/1058867010224832512?ref_src=twsrc%5Etfw">2018年11月3日</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><p>こんなに大人数で同じ家に泊まれるって、楽しくないわけがない！</p>
+<p>結構酔っ払っていたので何を話したかあまり覚えてないですが、各方面で活躍する方々のお話も聞けてよかったです。</p>
+<p>また来年も参加したい！と思いました！！</p>
+<div class="section" id="id4">
+<h3>最近の投稿<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <div class="toctree-wrapper compound">
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="2018/2018-11-09-article.html">SphinxブログにRSSを設定</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2018/2018-11-08-article.html">ブログ作成ツールをSphinxに変更しました</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2018/2018-11-03-article.html">PyLadies沖縄合宿 - 2日目</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2018/2018-11-01-article.html">PyLadies沖縄合宿に参加します - 目標を立てよう</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2018/2018-09-24-article.html">PyLadiesの行動規範を整える</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2018/2018-08-19-article.html">PyLadies Tokyo Meetup #35 もくもく会 に参加しました</a></li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
@@ -182,7 +184,7 @@
       <h3>ナビゲーション</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="2018/2018-11-08-article.html" title="ブログ作成ツールをSphinxに変更しました"
+          <a href="2018/2018-11-09-article.html" title="SphinxブログにRSSを設定"
              >次へ</a></li>
         <li class="nav-item nav-item-0"><a href="#">鉄は熱いうちに打て</a> &#187;</li> 
       </ul>
