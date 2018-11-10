@@ -106,7 +106,7 @@
 </ul>
 <p>この記事だとこんな感じ</p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="nc">:date:</span> <span class="nf">2018-11-09 00:00:00</span>
-<span class="nc">:title:</span> <span class="nf">RSSを設定</span>
+<span class="nc">:title:</span> <span class="nf">SphinxブログにRSSを設定</span>
 <span class="nc">:category:</span> <span class="nf">sphinx</span>
 <span class="nc">:tags:</span> <span class="nf">sphinx</span>
 </pre></div>
@@ -115,15 +115,15 @@
 <li>RSSにちゃんと出るようにtoctreeを整備</li>
 <li>新しい記事を書くときに記事の先頭に <code class="docutils literal notranslate"><span class="pre">:date:</span></code> とかを追加してファイルを作って、目次用のtoctreeに新しい記事を入れ込むスクリプト作成</li>
 </ul>
-<p>目次のところ、年別と分けて、最新の記事5件を右のサイドバーに出すために下みたいに書いてます。</p>
+<p>目次のところ、年別と分けて、最新の記事5件を右のサイドバーに出すため <code class="docutils literal notranslate"><span class="pre">toctree</span></code> 分割</p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">toctree</span><span class="p">::</span>
    <span class="nc">:maxdepth:</span> <span class="nf">1</span>
 
-   2018/2018-11-09-article
    2018/2018-11-08-article
    2018/2018-11-03-article
    2018/2018-11-01-article
    2018/2018-09-24-article
+   2018/2018-08-19-article
 
 <span class="p">..</span> <span class="ow">toctree</span><span class="p">::</span>
    <span class="nc">:maxdepth:</span> <span class="nf">1</span>
@@ -135,7 +135,7 @@
    2015/index
 </pre></div>
 </div>
-<p>1件記事が増えたら <code class="docutils literal notranslate"><span class="pre">2018/2018-09-24-article</span></code> を消して、先頭に新しい記事を入れて、古い方は <code class="docutils literal notranslate"><span class="pre">2018/index</span></code> に書き込んでいます。</p>
+<p>1件記事が増えたら <code class="docutils literal notranslate"><span class="pre">2018/2018-08-19-article</span></code> を消して、先頭に新しい記事を入れて、消した記事は <code class="docutils literal notranslate"><span class="pre">2018/index</span></code> に書き込んでいます。</p>
 <p>まだ、カテゴリとかタグとかのリンクを出せていないですが、のぞみのブログができました。
 標準のSphinxだけでもなんとかなるもんですね。</p>
 <div class="section" id="id3">
