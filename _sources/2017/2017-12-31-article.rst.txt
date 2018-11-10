@@ -17,37 +17,37 @@
 人に伝えようと思わなくても **書く** という行為は自分の中でモワッとしているものをしっかりさせます。
 いつか読もうと思っていた本も読めて良かったです。読みたいけど、楽しい本（The Goalとか）をついつい読んでしまうので、ほったらかしだったEffective Pythonとか他の書籍も読めました。
 
-- 12/01: `The Zen of Python </pages/2017/2017-12-01-article.html>`_
-- 12/02: `Effective Pythonで学ぶ </pages/2017/2017-12-02-article.html>`_
-- 12/03: `Effective Pythonで学ぶ（項目７〜） </pages/2017/2017-12-03-article.html>`_
-- 12/04: `Effective Pythonで学ぶ - 2章　関数 </pages/2017/2017-12-04-article.html>`_
-- 12/05: `Effective Pythonで学ぶ - 3章　クラスと継承1 </pages/2017/2017-12-05-article.html>`_
-- 12/06: `Effective Pythonで学ぶ - 3章　クラスと継承2 </pages/2017/2017-12-06-article.html>`_
-- 12/07: `Effective Pythonで学ぶ - 3章　クラスと継承3 </pages/2017/2017-12-07-article.html>`_
-- 12/08: `Effective Pythonで学ぶ - 3章　クラスと継承4 </pages/2017/2017-12-08-article.html>`_
-- 12/09: `Effective Pythonで学ぶ - 4章　メタクラスと属性 </pages/2017/2017-12-09-article.html>`_
-- 12/10: `doctestを触ってみた </pages/2017/2017-12-10-article.html>`_
-- 12/11: `unittestの公式ドキュメントを読んでみた </pages/2017/2017-12-11-article.html>`_
-- 12/12: `unittestのテスト前後に実行される処理の確認 </pages/2017/2017-12-12-article.html>`_
-- 12/13: `PyCon JP 2016にブースを出した話 </pages/2017/2017-12-13-article.html>`_
-- 12/14: `TogglとSlackを連携したいと思った経緯 </pages/2017/2017-12-14-article.html>`_
-- 12/15: `TogglとSlackを連携した話 </pages/2017/2017-12-15-article.html>`_
-- 12/16: `unittest.mock.MagicMockを使ってみる </pages/2017/2017-12-16-article.html>`_
-- 12/17: `unittest.mock.patchを使ってみる（デコレータ） </pages/2017/2017-12-17-article.html>`_
-- 12/18: `Pythonでテストしたい </pages/2017/2017-12-18-article.html>`_
-- 12/19: `unittest.mock.patchを使ってみる（コンテキストマネージャ） </pages/2017/2017-12-19-article.html>`_
-- 12/20: `Vimに詳しくなりたい2017 </pages/2017/2017-12-20-article.html>`_
-- 12/21: `pytestを使ってみる </pages/2017/2017-12-21-article.html>`_
-- 12/22: `関数のreturnが変なコード </pages/2017/2017-12-22-article.html>`_
-- 12/23: `達人プログラマーを読んでみた </pages/2017/2017-12-23-article.html>`_
-- 12/24: `地獄のエビデンス </pages/2017/2017-12-24-article.html>`_
-- 12/25: `クリスマスといえば、の話 </pages/2017/2017-12-25-article.html>`_
-- 12/26: `情熱プログラマーを読んでみた </pages/2017/2017-12-26-article.html>`_
-- 12/27: `達人プログラマーを読んでみた−34．テストしやすいコード1 </pages/2017/2017-12-27-article.html>`_
-- 12/28: `達人プログラマーを読んでみた−34．テストしやすいコード2 </pages/2017/2017-12-28-article.html>`_
-- 12/29: `達人プログラマーを読んでみた−43. 容赦ないテスト </pages/2017/2017-12-29-article.html>`_
-- 12/30: `自社サービス開発の話 </pages/2017/2017-12-30-article.html>`_
-- 12/31: `ブログを毎日書こうと思った話 </pages/2017/2017-12-31-article.html>`_
+- 12/01: `The Zen of Python </2017/2017-12-01-article.html>`_
+- 12/02: `Effective Pythonで学ぶ </2017/2017-12-02-article.html>`_
+- 12/03: `Effective Pythonで学ぶ（項目７〜） </2017/2017-12-03-article.html>`_
+- 12/04: `Effective Pythonで学ぶ - 2章　関数 </2017/2017-12-04-article.html>`_
+- 12/05: `Effective Pythonで学ぶ - 3章　クラスと継承1 </2017/2017-12-05-article.html>`_
+- 12/06: `Effective Pythonで学ぶ - 3章　クラスと継承2 </2017/2017-12-06-article.html>`_
+- 12/07: `Effective Pythonで学ぶ - 3章　クラスと継承3 </2017/2017-12-07-article.html>`_
+- 12/08: `Effective Pythonで学ぶ - 3章　クラスと継承4 </2017/2017-12-08-article.html>`_
+- 12/09: `Effective Pythonで学ぶ - 4章　メタクラスと属性 </2017/2017-12-09-article.html>`_
+- 12/10: `doctestを触ってみた </2017/2017-12-10-article.html>`_
+- 12/11: `unittestの公式ドキュメントを読んでみた </2017/2017-12-11-article.html>`_
+- 12/12: `unittestのテスト前後に実行される処理の確認 </2017/2017-12-12-article.html>`_
+- 12/13: `PyCon JP 2016にブースを出した話 </2017/2017-12-13-article.html>`_
+- 12/14: `TogglとSlackを連携したいと思った経緯 </2017/2017-12-14-article.html>`_
+- 12/15: `TogglとSlackを連携した話 </2017/2017-12-15-article.html>`_
+- 12/16: `unittest.mock.MagicMockを使ってみる </2017/2017-12-16-article.html>`_
+- 12/17: `unittest.mock.patchを使ってみる（デコレータ） </2017/2017-12-17-article.html>`_
+- 12/18: `Pythonでテストしたい </2017/2017-12-18-article.html>`_
+- 12/19: `unittest.mock.patchを使ってみる（コンテキストマネージャ） </2017/2017-12-19-article.html>`_
+- 12/20: `Vimに詳しくなりたい2017 </2017/2017-12-20-article.html>`_
+- 12/21: `pytestを使ってみる </2017/2017-12-21-article.html>`_
+- 12/22: `関数のreturnが変なコード </2017/2017-12-22-article.html>`_
+- 12/23: `達人プログラマーを読んでみた </2017/2017-12-23-article.html>`_
+- 12/24: `地獄のエビデンス </2017/2017-12-24-article.html>`_
+- 12/25: `クリスマスといえば、の話 </2017/2017-12-25-article.html>`_
+- 12/26: `情熱プログラマーを読んでみた </2017/2017-12-26-article.html>`_
+- 12/27: `達人プログラマーを読んでみた−34．テストしやすいコード1 </2017/2017-12-27-article.html>`_
+- 12/28: `達人プログラマーを読んでみた−34．テストしやすいコード2 </2017/2017-12-28-article.html>`_
+- 12/29: `達人プログラマーを読んでみた−43. 容赦ないテスト </2017/2017-12-29-article.html>`_
+- 12/30: `自社サービス開発の話 </2017/2017-12-30-article.html>`_
+- 12/31: `ブログを毎日書こうと思った話 </2017/2017-12-31-article.html>`_
 
 結構、勉強になりました。
 

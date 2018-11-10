@@ -10,7 +10,7 @@
 2018-11-08
 
 
-`ブログをGCEに乗っけて、Miyadaikuに変更 </pages/2018/2018-08-05-article.html>`_ とか言ってたわけですが、舌の根も乾かぬうちにSphinxに変更しました。
+`ブログをGCEに乗っけて、Miyadaikuに変更 </2018/2018-08-05-article.html>`_ とか言ってたわけですが、舌の根も乾かぬうちにSphinxに変更しました。
 
 これまでの記事の生ファイルは、MarkdownとreStructuredTextが混ざっていたのですが、全部reStructuredTextに変更しました。
 もう何回、MarkdownとreStructuredTextの変換スクリプトを書いたことでしょう。

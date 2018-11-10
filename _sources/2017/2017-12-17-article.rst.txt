@@ -12,7 +12,7 @@ unittest.mock.patchを使ってみる（デコレータ）
 
 
  
-今日の内容は、 `Pythonでテストしたい </pages/2017/2017-12-18-article.html>`_ にまとめている内容の詳細部分です。
+今日の内容は、 `Pythonでテストしたい </2017/2017-12-18-article.html>`_ にまとめている内容の詳細部分です。
 
 unittest.mock.patch（デコレータ）を使ってみます。
 

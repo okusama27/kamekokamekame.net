@@ -23,7 +23,7 @@ PyLadies「テストをまなぼう」に登壇しました
 オファー
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-ことの発端は、 `PyLadies Tokyo 秋合宿 2017 </pages/2017/2017-11-04-article.html>`_ でした。
+ことの発端は、 `PyLadies Tokyo 秋合宿 2017 </2017/2017-11-04-article.html>`_ でした。
 
 **亀「最近、仕事で結構テストばっかり書いてますよ〜」**
 
@@ -86,14 +86,14 @@ t_wadaさんの動画もPyLadiesのメンバーの方に教えていただいた
 
 勉強しながら、ブログも書きました。
 
-- `Pythonでテストしたい </pages/2017/2017-12-18-article.html>`_
-- `doctestを触ってみた </pages/2017/2017-12-10-article.html>`_
-- `unittestの公式ドキュメントを読んでみた </pages/2017/2017-12-11-article.html>`_
-- `unittestのテスト前後に実行される処理の確認 </pages/2017/2017-12-12-article.html>`_
-- `unittest.mock.MagicMockを使ってみる </pages/2017/2017-12-16-article.html>`_
-- `unittest.mock.patchを使ってみる（デコレータ） </pages/2017/2017-12-17-article.html>`_
-- `unittest.mock.patchを使ってみる（コンテキストマネージャ） </pages/2017/2017-12-19-article.html>`_
-- `pytestを使ってみる </pages/2017/2017-12-21-article.html>`_
+- `Pythonでテストしたい </2017/2017-12-18-article.html>`_
+- `doctestを触ってみた </2017/2017-12-10-article.html>`_
+- `unittestの公式ドキュメントを読んでみた </2017/2017-12-11-article.html>`_
+- `unittestのテスト前後に実行される処理の確認 </2017/2017-12-12-article.html>`_
+- `unittest.mock.MagicMockを使ってみる </2017/2017-12-16-article.html>`_
+- `unittest.mock.patchを使ってみる（デコレータ） </2017/2017-12-17-article.html>`_
+- `unittest.mock.patchを使ってみる（コンテキストマネージャ） </2017/2017-12-19-article.html>`_
+- `pytestを使ってみる </2017/2017-12-21-article.html>`_
 
 くろはこ先生のブログも読みました。
 

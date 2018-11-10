@@ -18,7 +18,7 @@
 
 今日は私がコードレビューでよく指摘される話。
 
-`TogglとSlackを連携した話 </pages/2017/2017-12-15-article.html>`_ のコードも最初、こうなっていました。
+`TogglとSlackを連携した話 </2017/2017-12-15-article.html>`_ のコードも最初、こうなっていました。
 
 
 .. code-block:: python
