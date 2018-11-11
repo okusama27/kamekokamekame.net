@@ -1,0 +1,58 @@
+:date: 2018-10-08 00:00:00
+:title: PyLadies Tokyo 4周年パーティーに参加
+:category: PyLadies
+:tags: PyLadies
+
+==========================================================
+PyLadies Tokyo 4周年パーティーに参加
+==========================================================
+
+2018-10-08
+
+（日付は開催日ですが、１ヶ月位してから書いてます。記憶がちょっと曖昧です。）
+
+`PyLadies Tokyo - 4周年記念パーティ - connpass <https://pyladies-tokyo.connpass.com/event/99733/>`_ に参加しました。
+
+初めて参加したときは２周年記念パーティーでしたが、そこから３年。今年はスタッフでした。
+
+毎度のことながら楽しい会でした。みんなありがとう！！
+
+スポンサーの皆様もありがとうございました！！
+
+- 会場スポンサー `コイニ―株式会社 <https://coiney.com/>`_ 様
+- ケーキスポンサー `kanan様 <https://twitter.com/Addition_quince>`_
+
+ケーキ美味しかったね
+
+.. raw:: html
+
+   <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">わーい。ケーキだぁ！ もぐもぐするよ。<a href="https://twitter.com/Addition_quince?ref_src=twsrc%5Etfw">@Addition_quince</a> さんありがとうございまーす！ <a href="https://twitter.com/hashtag/PyLadiesTokyo?src=hash&amp;ref_src=twsrc%5Etfw">#PyLadiesTokyo</a> <a href="https://t.co/aBUoy9DVWa">pic.twitter.com/aBUoy9DVWa</a></p>&mdash; PyLadiesTokyo (@PyLadiesTokyo) <a href="https://twitter.com/PyLadiesTokyo/status/1049162242757865473?ref_src=twsrc%5Etfw">2018年10月8日</a></blockquote>
+   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+集合写真
+----------------
+
+.. raw:: html
+
+   <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">集合写真でーす！ <a href="https://twitter.com/hashtag/PyLadiesTokyo?src=hash&amp;ref_src=twsrc%5Etfw">#PyLadiesTokyo</a> <a href="https://t.co/EQ1CFhVEfu">pic.twitter.com/EQ1CFhVEfu</a></p>&mdash; PyLadiesTokyo (@PyLadiesTokyo) <a href="https://twitter.com/PyLadiesTokyo/status/1049152075530031105?ref_src=twsrc%5Etfw">2018年10月8日</a></blockquote>
+   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+発表
+------------
+
+発表しました。オオトリとして、今年の成果を発表しました。
+
+私の発表資料 `PyLadies ハンドブックをSphinxとTransifexで翻訳した話 <https://github.com/okusama27/LightningTalk/blob/master/pyladies_translation_2018/source/index.rst>`_
+
+２次会
+--------------
+
+２次会、３次会（途中）に行きました。１次会はスタッフ活動でほとんど飲んでなかったので２次会のワインが美味しかったです。
+
+.. raw:: html
+
+   <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">二次会！！<a href="https://twitter.com/hashtag/PyLadiesTokyo?src=hash&amp;ref_src=twsrc%5Etfw">#PyLadiesTokyo</a> <a href="https://t.co/QODDoPDICx">pic.twitter.com/QODDoPDICx</a></p>&mdash; PyLadiesTokyo (@PyLadiesTokyo) <a href="https://twitter.com/PyLadiesTokyo/status/1049194931275759616?ref_src=twsrc%5Etfw">2018年10月8日</a></blockquote>
+   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+次の１年もやっていこうと思います！！
