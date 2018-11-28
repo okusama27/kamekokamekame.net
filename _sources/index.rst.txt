@@ -8,11 +8,11 @@
 .. toctree::
    :maxdepth: 1
 
+   2018/2018-11-10-article
    2018/2018-11-09-article
    2018/2018-11-08-article
    2018/2018-11-03-article
    2018/2018-11-01-article
-   2018/2018-10-08-article
 
 .. toctree::
    :maxdepth: 1
