@@ -14,6 +14,10 @@ SphinxCon JP 2018 に参加しました
 
 基調講演の方が、遅刻するという自体で、なぜか、最初の発表に。
 
+今日の台本
+
+.. image:: /static/images/2018/shinx_con_1128.png
+
 .. raw:: html
 
    <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr"><a href="https://twitter.com/hashtag/sphinxjp?src=hash&amp;ref_src=twsrc%5Etfw">#sphinxjp</a> 2018カンファレンス、基調講演の <a href="https://twitter.com/tk0miya?ref_src=twsrc%5Etfw">@tk0miya</a> 氏が遅れて突然トップバッターになった <a href="https://twitter.com/okusama27?ref_src=twsrc%5Etfw">@okusama27</a> (@ 株式会社VOYAGE GROUP - <a href="https://twitter.com/VOYAGE_GROUP_PR?ref_src=twsrc%5Etfw">@voyage_group_pr</a> in 渋谷区, 東京都 w/ <a href="https://twitter.com/koedoyoshida?ref_src=twsrc%5Etfw">@koedoyoshida</a>) <a href="https://t.co/AfC84HLjsM">https://t.co/AfC84HLjsM</a> <a href="https://t.co/xWZiwTfYo3">pic.twitter.com/xWZiwTfYo3</a></p>&mdash; Takayuki Shimizukawa (@shimizukawa) <a href="https://twitter.com/shimizukawa/status/1067724272297263104?ref_src=twsrc%5Etfw">2018年11月28日</a></blockquote>
