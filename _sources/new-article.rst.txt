@@ -11,7 +11,7 @@ SphinxCon JP 2018 に参加しました
 
 今日の台本
 
-.. image:: /static/images/2018/shinx_con_1128.png
+.. image:: /_static/images/2018/shinx_con_1128.png
 
 .. raw:: html
 
