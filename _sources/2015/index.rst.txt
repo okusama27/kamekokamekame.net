@@ -4,7 +4,34 @@
 
 
 .. toctree::
-   :glob:
    :maxdepth: 1
 
-   *
+   2015-12-31-article
+   2015-12-17-article
+   2015-12-16-article
+   2015-12-10-article
+   2015-12-01-article
+   2015-11-30-article
+   2015-08-01-article
+   2015-07-17-article
+   2015-07-05-article
+   2015-07-04-article
+   2015-06-11-article
+   2015-06-10-article
+   2015-05-29-article
+   2015-05-28-article
+   2015-04-21-article
+   2015-04-15-article
+   2015-04-14-article
+   2015-04-13-article
+   2015-04-12-article
+   2015-04-11-article
+   2015-04-04-article
+   2015-04-02-article
+   2015-03-08-article
+   2015-03-07-article
+   2015-03-06-article
+   2015-03-05-article
+   2015-02-03-article
+   2015-02-02-article
+   2015-02-01-article

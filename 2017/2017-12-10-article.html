@@ -6,6 +6,14 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@okusama27" />
+    <meta property="og:site_name" content="鉄は熱いうちに打て">
+    <meta property="og:title" content="doctestを触ってみた">
+    <meta property="og:description" content="2017-12-10 今日の内容は、 Pythonでテストしたい にまとめている内容の詳細部分です。 doctestを触ってみました。 sample.py 実行する 正常に動作した場合はなにも表示されない sample.pyの14行目を return x + 2 と書き換えて実行 エーラーが出ます。
+正しい場合も実行時にオプション -v をつけるとテストの詳細が表示されます。 別のファイルに...">
+    <meta property='og:url' content="https://kamekokamekame.net/2017/2017-12-10-article.html">
+    
     <title>doctestを触ってみた &#8212; 鉄は熱いうちに打て</title>
     <link rel="stylesheet" href="../_static/bizstyle.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -15,11 +23,10 @@
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
-    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/bizstyle.js"></script>
     <link rel="search" title="検索" href="../search.html" />
-    <link rel="next" title="unittestの公式ドキュメントを読んでみた" href="2017-12-11-article.html" />
-    <link rel="prev" title="Effective Pythonで学ぶ - 4章 メタクラスと属性" href="2017-12-09-article.html" />
+    <link rel="next" title="Effective Pythonで学ぶ - 4章 メタクラスと属性" href="2017-12-09-article.html" />
+    <link rel="prev" title="unittestの公式ドキュメントを読んでみた" href="2017-12-11-article.html" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <!--[if lt IE 9]>
     <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
@@ -29,10 +36,10 @@
       <h3>ナビゲーション</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="2017-12-11-article.html" title="unittestの公式ドキュメントを読んでみた"
+          <a href="2017-12-09-article.html" title="Effective Pythonで学ぶ - 4章 メタクラスと属性"
              accesskey="N">次へ</a></li>
         <li class="right" >
-          <a href="2017-12-09-article.html" title="Effective Pythonで学ぶ - 4章 メタクラスと属性"
+          <a href="2017-12-11-article.html" title="unittestの公式ドキュメントを読んでみた"
              accesskey="P">前へ</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">2017</a> &#187;</li> 
@@ -46,7 +53,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../2018/2018-11-08-article.html">ブログ作成ツールをSphinxに変更しました</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2018/2018-11-03-article.html">PyLadies沖縄合宿 - 2日目</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2018/2018-11-01-article.html">PyLadies沖縄合宿に参加します - 目標を立てよう</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2018/2018-09-24-article.html">PyLadiesの行動規範を整える</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2018/2018-10-08-article.html">PyLadies Tokyo 4周年パーティーに参加</a></li>
 </ul>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../2018/index.html">2018</a></li>
@@ -57,11 +64,11 @@
 
 </div>
   <h4>前のトピックへ</h4>
-  <p class="topless"><a href="2017-12-09-article.html"
-                        title="前の章へ">Effective Pythonで学ぶ - 4章　メタクラスと属性</a></p>
-  <h4>次のトピックへ</h4>
   <p class="topless"><a href="2017-12-11-article.html"
-                        title="次の章へ">unittestの公式ドキュメントを読んでみた</a></p>
+                        title="前の章へ">unittestの公式ドキュメントを読んでみた</a></p>
+  <h4>次のトピックへ</h4>
+  <p class="topless"><a href="2017-12-09-article.html"
+                        title="次の章へ">Effective Pythonで学ぶ - 4章　メタクラスと属性</a></p>
 <div id="searchbox" style="display: none" role="search">
   <h3>クイック検索</h3>
     <div class="searchformwrapper">
@@ -244,10 +251,10 @@ Test passed.
       <h3>ナビゲーション</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="2017-12-11-article.html" title="unittestの公式ドキュメントを読んでみた"
+          <a href="2017-12-09-article.html" title="Effective Pythonで学ぶ - 4章 メタクラスと属性"
              >次へ</a></li>
         <li class="right" >
-          <a href="2017-12-09-article.html" title="Effective Pythonで学ぶ - 4章 メタクラスと属性"
+          <a href="2017-12-11-article.html" title="unittestの公式ドキュメントを読んでみた"
              >前へ</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="index.html" >2017</a> &#187;</li> 
@@ -255,7 +262,7 @@ Test passed.
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2018, kamekokamekame.net.
-      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.1 で生成しました。
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.2 で生成しました。
     </div>
   </body>
 </html>

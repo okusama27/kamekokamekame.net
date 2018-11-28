@@ -4,7 +4,11 @@
 
 
 .. toctree::
-   :glob:
    :maxdepth: 1
 
-   *
+   2016-10-22-article
+   2016-09-22-article
+   2016-09-21-article
+   2016-09-17-article
+   2016-07-16-article
+   2016-06-28-article
