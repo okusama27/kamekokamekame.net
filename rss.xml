@@ -1,5 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>鉄は熱いうちに打て</title><link>https://kamekokamekame.net</link><description>Strike while the iron is hot</description><language>ja</language><copyright>2018, kamekokamekame.net</copyright><lastBuildDate>Wed, 28 Nov 2018 00:00:00 -0000</lastBuildDate><item><title>SphinxCon JP 2018 に参加しました</title><link>https://kamekokamekame.net/2018/2018-11-28-article.html</link><description>&lt;div class=section id=sphinxcon-jp-2018&gt;
+<rss version="2.0"><channel><title>鉄は熱いうちに打て</title><link>https://kamekokamekame.net</link><description>Strike while the iron is hot</description><language>ja</language><copyright>2018, kamekokamekame.net</copyright><lastBuildDate>Sat, 01 Dec 2018 00:00:00 -0000</lastBuildDate><item><title>PyLadies Tokyo Meetup #36 もくもく会</title><link>https://kamekokamekame.net/2018/2018-12-01-article.html</link><description>&lt;div class=section id=pyladies-tokyo-meetup-36&gt;
+
+&lt;p&gt;2018-12-01&lt;/p&gt;
+&lt;p&gt;この記事は、 &lt;a class="reference external" href="https://adventar.org/calendars/3116"&gt;PyLadies Advent Calendar 2018 - Adventar&lt;/a&gt; の1日目です。&lt;/p&gt;
+&lt;p&gt;今日は、&lt;a class="reference external" href="https://pyladies-tokyo.connpass.com/event/107418/"&gt;PyLadies Tokyo Meetup #36 もくもく会&lt;/a&gt; です！&lt;/p&gt;
+&lt;img alt="../_images/pyladies_2018_34.png" src="https://kamekokamekame.net/_images/pyladies_2018_34.png"&gt;
+&lt;p&gt;もくもく会の最中にブログを書いているので現在形です。&lt;/p&gt;
+&lt;blockquote class=twitter-tweet data-lang=ja&gt;&lt;p dir=ltr lang=ja&gt;本日はSQUEEZE 様のスペースをお借りしてモクモク会を開催しています。&lt;a href="https://twitter.com/hashtag/PyLadiesTokyo?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#PyLadiesTokyo&lt;/a&gt; &lt;a href="https://t.co/9LNjIqYPnR"&gt;pic.twitter.com/9LNjIqYPnR&lt;/a&gt;&lt;/p&gt;— PyLadiesTokyo (@PyLadiesTokyo) &lt;a href="https://twitter.com/PyLadiesTokyo/status/1068726873146875904?ref_src=twsrc%5Etfw"&gt;2018年12月1日&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async charset=utf-8 src="https://platform.twitter.com/widgets.js"&gt;&lt;/script&gt;
+
+&lt;blockquote class=twitter-tweet data-lang=ja&gt;&lt;p dir=ltr lang=ja&gt;モクモクの様子です &lt;a href="https://twitter.com/hashtag/PyLadiesTokyo?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#PyLadiesTokyo&lt;/a&gt; &lt;a href="https://t.co/gvAa2Nwf0V"&gt;pic.twitter.com/gvAa2Nwf0V&lt;/a&gt;&lt;/p&gt;— PyLadiesTokyo (@PyLadiesTokyo) &lt;a href="https://twitter.com/PyLadiesTokyo/status/1068727349657518080?ref_src=twsrc%5Etfw"&gt;2018年12月1日&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async charset=utf-8 src="https://platform.twitter.com/widgets.js"&gt;&lt;/script&gt;&lt;p&gt;参加者の方も &lt;a class="reference external" href="https://adventar.org/calendars/3116"&gt;PyLadies Advent Calendar 2018 - Adventar&lt;/a&gt; に登録してくれました！ありがとうございます！！
+まだまだ、枠が空いているので男女問わず登録お願いします！&lt;/p&gt;
+&lt;div class=section id=id3&gt;
+&lt;h2&gt;今年のイベントの振り返り&lt;/h2&gt;
+&lt;p&gt;今年のイベントを振り返ります。延べ266人の方にご参加いただきました。ありがとうございます！！&lt;/p&gt;
+&lt;p&gt;各詳細は、 &lt;a class="reference external" href="https://pyladies-tokyo.connpass.com/event/"&gt;PyLadies Tokyo - イベント一覧 - connpass&lt;/a&gt; を見てください。&lt;/p&gt;
+&lt;p&gt;色々なイベントを開催して、あっという間の1年でした。&lt;/p&gt;
+&lt;img alt="../_images/pyladies_2018_33.png" src="https://kamekokamekame.net/_images/pyladies_2018_33.png"&gt;
+&lt;img alt="../_images/pyladies_2018_32.png" src="https://kamekokamekame.net/_images/pyladies_2018_32.png"&gt;
+&lt;img alt="../_images/pyladies_2018_31.png" src="https://kamekokamekame.net/_images/pyladies_2018_31.png"&gt;
+&lt;img alt="../_images/pyladies_2018_30.png" src="https://kamekokamekame.net/_images/pyladies_2018_30.png"&gt;
+&lt;p&gt;去年まではスタッフじゃなくて、土日開催のものにはほとんど参加していなかったので今年はたくさんの方とお話できて楽しい一年でした。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=section id=pyladies-caravan&gt;
+&lt;h2&gt;PyLadies Caravan&lt;/h2&gt;
+&lt;p&gt;来年からは、 &lt;strong&gt;PyLadies Caravan&lt;/strong&gt; がはじまります！&lt;/p&gt;
+&lt;p&gt;Pythonを通じてプログラミングを学んだり、現役エンジニア、Pythonistaと交流したりして、女性同士新たなPython仲間と出会う場になればという思いで企画したイベントです。
+もうすぐ、connpassにイベントが立つので、お近くの方も遠くの方も是非参加してください！！&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=section id=id4&gt;
+&lt;h2&gt;個人的振り返り&lt;/h2&gt;
+&lt;p&gt;今年の頭に「今年は実装するぞ！」と目標を立てて、机の上にこの書初めを貼りました。&lt;/p&gt;
+&lt;img alt="../_images/pyladies_2018_35.png" src="https://kamekokamekame.net/_images/pyladies_2018_35.png"&gt;
+&lt;p&gt;お見せできるようなのは作れませんでしたが、主にポートフォリオ作ったり、株価みたりする実装とか、スクレイピングするのとか作りました。
+あとはこのブログとか、LightningTalk用の資料作ったりでした。&lt;/p&gt;
+&lt;p&gt;Java女子部にお呼ばれしてPythonを紹介できたのも良かったです。&lt;/p&gt;
+&lt;ul class=simple&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://kamekokamekame.net/2018/2018-05-16-article.html"&gt;Java女子部に行って、Pythonのことを話してきました&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;発表資料: &lt;a class="reference external" href="https://github.com/okusama27/LightningTalk/blob/master/javajo_20180516/source/index.rst"&gt;広がるPython&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;そして、明日の &lt;a class="reference external" href="https://adventar.org/calendars/3116"&gt;PyLadies Advent Calendar 2018 - Adventar&lt;/a&gt; も私です。&lt;/p&gt;
+&lt;p&gt;よろしくおねがいします m(_ _)m&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description><pubDate>Sat, 01 Dec 2018 00:00:00 -0000</pubDate><guid>https://kamekokamekame.net/2018/2018-12-01-article.html</guid></item><item><title>SphinxCon JP 2018 に参加しました</title><link>https://kamekokamekame.net/2018/2018-11-28-article.html</link><description>&lt;div class=section id=sphinxcon-jp-2018&gt;
 
 &lt;p&gt;2018-11-28&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="https://sphinxjp.connpass.com/event/103294/"&gt;SphinxCon JP 2018&lt;/a&gt; で、発表してきました。
