@@ -1,5 +1,195 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>鉄は熱いうちに打て</title><link>https://kamekokamekame.net</link><description>Strike while the iron is hot</description><language>ja</language><copyright>2018, kamekokamekame.net</copyright><lastBuildDate>Sat, 01 Dec 2018 00:00:00 -0000</lastBuildDate><item><title>PyLadies Tokyo Meetup #36 もくもく会</title><link>https://kamekokamekame.net/2018/2018-12-01-article.html</link><description>&lt;div class=section id=pyladies-tokyo-meetup-36&gt;
+<rss version="2.0"><channel><title>鉄は熱いうちに打て</title><link>https://kamekokamekame.net</link><description>Strike while the iron is hot</description><language>ja</language><copyright>2018, kamekokamekame.net</copyright><lastBuildDate>Sun, 02 Dec 2018 00:00:00 -0000</lastBuildDate><item><title>PyLadies Handbookの日本語化</title><link>https://kamekokamekame.net/2018/2018-12-02-article.html</link><description>&lt;div class=section id=pyladies-handbook&gt;
+
+&lt;p&gt;2018-12-02&lt;/p&gt;
+&lt;p&gt;この記事は、 &lt;a class="reference external" href="https://adventar.org/calendars/3116"&gt;PyLadies Advent Calendar 2018 - Adventar&lt;/a&gt; の2日目です。&lt;/p&gt;
+&lt;p&gt;2018-11-28に &lt;a class="reference external" href="https://kamekokamekame.net/2018/2018-11-28-article.html"&gt;SphinxCon JP 2018 に参加しました&lt;/a&gt; を書きましたが、そこでの発表した内容を紹介します。&lt;/p&gt;
+&lt;div class=section id=pyladies-tokyo&gt;
+&lt;h2&gt;PyLadies Tokyo とは&lt;/h2&gt;
+&lt;div class=section id=pylaies&gt;
+&lt;h3&gt;PyLaiesの紹介&lt;/h3&gt;
+&lt;p&gt;PyLadiesは，San Franciscoに本部があるPythonが好きな女性を結ぶ国際的なコミュニティです。&lt;/p&gt;
+&lt;p&gt;PyLaiesはPython界隈でマイノリティーである女性の支援を行い、各Pythonコミュニティーとの架け橋となることを目的としています。
+PyLaidesにはいくつかの守るべきルールがあります。&lt;/p&gt;
+&lt;p&gt;PyLadies Tokyoは、PyLadiesの東京支部として活動しています。&lt;/p&gt;
+&lt;img alt="../_images/pyladies_logo.png" src="https://kamekokamekame.net/_images/pyladies_logo.png"&gt;
+&lt;/div&gt;
+&lt;div class=section id=id1&gt;
+&lt;h3&gt;参加者募集中！&lt;/h3&gt;
+&lt;p&gt;Pythonが好きな女性であれば初心者／熟練者問わずどなたでも参加できます。&lt;/p&gt;
+&lt;p&gt;詳しくは、&lt;a class="reference external" href="https://pyladiestokyo.github.io/"&gt;https://pyladiestokyo.github.io/&lt;/a&gt; を御覧ください。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=section id=id2&gt;
+&lt;h2&gt;PyLadies Handbook&lt;/h2&gt;
+&lt;p&gt;本家PyLadiesにルールをまとめたPyLadiesのハンドブック &lt;a class="reference external" href="http://kit.pyladies.com/"&gt;PyLadies Handbook&lt;/a&gt; があります。&lt;/p&gt;
+&lt;img alt="../_images/pyladies_handbook_1.png" src="https://kamekokamekame.net/_images/pyladies_handbook_1.png"&gt;
+&lt;div class=section id=id4&gt;
+&lt;h3&gt;PyLadies Handbookに書いてあること&lt;/h3&gt;
+&lt;ul class=simple&gt;
+&lt;li&gt;ローカルPyLadiesの作り方&lt;/li&gt;
+&lt;li&gt;PyLadiesの運営方法&lt;/li&gt;
+&lt;li&gt;PyLadiesの行動規範&lt;/li&gt;
+&lt;li&gt;ロゴなどの権利&lt;/li&gt;
+&lt;li&gt;どんな人が参加できるか&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=section id=pip&gt;
+&lt;h3&gt;pip&lt;/h3&gt;
+&lt;p&gt;pipでインストールできます。&lt;/p&gt;
+&lt;div class="highlight-bash notranslate"&gt;&lt;table class=highlighttable&gt;&lt;tr&gt;&lt;td class=linenos&gt;&lt;div class=linenodiv&gt;&lt;pre&gt;1
+2&lt;/pre&gt;&lt;/div&gt;&lt;td class=code&gt;&lt;div class=highlight&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ pip install pyladies
+$ pyladies handbook
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/table&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=section id=id5&gt;
+&lt;h2&gt;翻訳プロジェクト発足&lt;/h2&gt;
+&lt;p&gt;特に本家のページはもちろん英語ですが、メンバーやこれから参加を考えている人にも読んでほしいと思い、翻訳を開始しました。
+最終的には &lt;strong&gt;翻訳して、本家に取り込んでもらう&lt;/strong&gt; のが目標です。&lt;/p&gt;
+&lt;p&gt;まず、第１段階として &lt;strong&gt;行動規範&lt;/strong&gt; と、 &lt;strong&gt;ハラスメントを受けた場合の対処法&lt;/strong&gt; の部分をPyCon JP 2018までに翻訳しました。&lt;/p&gt;
+&lt;div class=section id=night&gt;
+&lt;h3&gt;翻訳しNight!&lt;/h3&gt;
+&lt;p&gt;翻訳しNightというイベントを定期的に開いてみんなで翻訳しています。&lt;/p&gt;
+&lt;img alt="../_images/pyladies_translatin_night_1.png" src="https://kamekokamekame.net/_images/pyladies_translatin_night_1.png"&gt;
+&lt;/div&gt;
+&lt;div class=section id=id6&gt;
+&lt;h3&gt;着手&lt;/h3&gt;
+&lt;p&gt;以下の方法で、翻訳をはじめました。&lt;/p&gt;
+&lt;ul class=simple&gt;
+&lt;li&gt;GitHubにリポジトリを作る&lt;/li&gt;
+&lt;li&gt;本家の英文をコピー（本家、rstなのにmdにコピー）&lt;/li&gt;
+&lt;li&gt;issueで範囲、担当を指定&lt;/li&gt;
+&lt;li&gt;英文の真下に1行ずつ日本語を書いて、担当ページが終わったらPRを作る&lt;/li&gt;
+&lt;li&gt;PR上でレビューと修正を行う&lt;/li&gt;
+&lt;/ul&gt;
+&lt;img alt="../_images/pyladies_translatin_night_2.png" src="https://kamekokamekame.net/_images/pyladies_translatin_night_2.png"&gt;
+&lt;/div&gt;
+&lt;div class=section id=id7&gt;
+&lt;h3&gt;問題点&lt;/h3&gt;
+&lt;ul class=simple&gt;
+&lt;li&gt;日本語のドキュメントとして整形するときに手動でコピペが必要&lt;/li&gt;
+&lt;li&gt;本家に取り込んでもらう時、どうやってやるのか決めていない&lt;/li&gt;
+&lt;li&gt;レビューがやりづらい: PRでレビューするのですが、文書が1行ずつに分かれていて読みにくかったです&lt;/li&gt;
+&lt;li&gt;GitHubを使えない人が参加しにくい: 集まってもGitHubの使い方を説明して終わることもありました。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=section id=id8&gt;
+&lt;h2&gt;相談&lt;/h2&gt;
+&lt;p&gt;メンバーの一人がSphinx ユーザーグループに相談しました。&lt;/p&gt;
+&lt;div class=line-block&gt;
+&lt;div class=line&gt;&lt;br&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;img alt="../_images/pyladies_translatin_night_3.png" src="https://kamekokamekame.net/_images/pyladies_translatin_night_3.png"&gt;
+&lt;p&gt;あまり翻訳が進んでなかったのであっさりTransifexを使うことに決定！！&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=section id=sphinxpotransifexsphinx&gt;
+&lt;h2&gt;Sphinxからpoファイル作ってTransifexで翻訳してから、Sphinxに戻した話&lt;/h2&gt;
+&lt;div class=section id=sphinx&gt;
+&lt;h3&gt;Sphinxで翻訳&lt;/h3&gt;
+&lt;p&gt;Sphinxを使うとドキュメントの多言語化が容易にできます。&lt;/p&gt;
+&lt;p&gt;&lt;code class="docutils literal notranslate"&gt;&lt;span class=pre&gt;po&lt;/span&gt;&lt;/code&gt; ファイルを作って、訳文を書くと言語指定によって入れ替えて表示してくれます。&lt;/p&gt;
+&lt;img alt="../_images/translation.png" src="https://kamekokamekame.net/_images/translation.png"&gt;
+&lt;p&gt;引用元: &lt;a class="reference external" href="http://www.sphinx-doc.org/ja/stable/intl.html"&gt;国際化&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=section id=po&gt;
+&lt;h3&gt;生poファイルで翻訳しづらい問題&lt;/h3&gt;
+&lt;p&gt;poファイルは生ファイルなので、翻訳したり、レビューしたり議論したりがし辛いです。&lt;/p&gt;
+&lt;div class="highlight-default notranslate"&gt;&lt;div class=highlight&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;# 283ad006df7242c59abb816f7d85b03f
+#: ../../about.rst:4
+msgid "About"
+msgstr ""  ←ここに翻訳を書く
+
+# 55b61f6216ec4b70a10a738011d5cc82
+#: ../../about.rst:6
+msgid ""
+"We are an international mentorship group with a focus on helping more "
+"women become active participants and leaders in the Python open-source "
+"community. Our mission is to promote, educate and advance a diverse "
+"Python community through outreach, education, conferences, events and "
+"social gatherings."
+msgstr ""  ←ここに翻訳を書く
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=section id=transifex&gt;
+&lt;h3&gt;Transifexで翻訳&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class=section id=id10&gt;
+&lt;h3&gt;Transifexを利用する前の準備&lt;/h3&gt;
+&lt;p&gt;Transifexを利用すると、生poファイル編集より便利そうです。Transifexを利用して翻訳を進めることにしました。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=section id=githubpyladies-kit-clone&gt;
+&lt;h3&gt;本家のGitHubからpyladies-kitを取得（clone）&lt;/h3&gt;
+&lt;img alt="../_images/pyladies_transifex_1.png" src="https://kamekokamekame.net/_images/pyladies_transifex_1.png"&gt;
+&lt;/div&gt;
+&lt;div class=section id=id11&gt;
+&lt;h3&gt;Sphinxをインストール&lt;/h3&gt;
+&lt;div class="highlight-default notranslate"&gt;&lt;div class=highlight&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ pip install Sphinx
+$ pip install sphinx-intl
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;docs/ に移動&lt;/p&gt;
+&lt;p&gt;conf.pyのファイルの最後に追加&lt;/p&gt;
+&lt;div class="highlight-default notranslate"&gt;&lt;div class=highlight&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=n&gt;locale_dirs&lt;/span&gt; &lt;span class=o&gt;=&lt;/span&gt; &lt;span class=p&gt;[&lt;/span&gt;&lt;span class=s2&gt;"locale"&lt;/span&gt;&lt;span class=p&gt;]&lt;/span&gt;
+&lt;span class=n&gt;language&lt;/span&gt; &lt;span class=o&gt;=&lt;/span&gt; &lt;span class=s2&gt;"ja"&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;または、 &lt;code class="docutils literal notranslate"&gt;&lt;span class=pre&gt;sphinx-build&lt;/span&gt;&lt;/code&gt; のオプションで指定 &lt;code class="docutils literal notranslate"&gt;&lt;span class=pre&gt;sphinx-build&lt;/span&gt; &lt;span class=pre&gt;-M&lt;/span&gt; &lt;span class=pre&gt;html&lt;/span&gt; &lt;span class=pre&gt;-D&lt;/span&gt; &lt;span class=pre&gt;language=ja&lt;/span&gt; &lt;span class=pre&gt;-D&lt;/span&gt; &lt;span class=pre&gt;locale_dirs=locale&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;potファイルを作成するコマンドを実行&lt;/p&gt;
+&lt;div class="highlight-default notranslate"&gt;&lt;div class=highlight&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ make gettext
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;code class="docutils literal notranslate"&gt;&lt;span class=pre&gt;_build/locale&lt;/span&gt;&lt;/code&gt; の下に &lt;code class="docutils literal notranslate"&gt;&lt;span class=pre&gt;*.pot&lt;/span&gt;&lt;/code&gt; ファイルができている&lt;/p&gt;
+&lt;p&gt;potファイルからpoファイルを作る&lt;/p&gt;
+&lt;div class="highlight-default notranslate"&gt;&lt;div class=highlight&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sphinx-intl update -p _build/locale -l ja
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=section id=tansifex&gt;
+&lt;h3&gt;Tansifexにログイン&lt;/h3&gt;
+&lt;p&gt;プロジェクトを作成&lt;/p&gt;
+&lt;p&gt;poファイルをドラッグアンドドロップで追加&lt;/p&gt;
+&lt;img alt="../_images/pyladies_transifex_2.png" src="https://kamekokamekame.net/_images/pyladies_transifex_2.png"&gt;
+&lt;/div&gt;
+&lt;div class=section id=id12&gt;
+&lt;h3&gt;翻訳する&lt;/h3&gt;
+&lt;p&gt;左側の英文を選んで、翻訳を右側に書くだけ。レビューも同じ画面でできる。コメントも付けられる。&lt;/p&gt;
+&lt;a class="reference internal image-reference" href="https://kamekokamekame.net/_images/pyladies_transifex_3.png"&gt;&lt;img alt="../_images/pyladies_transifex_3.png" src="https://kamekokamekame.net/_images/pyladies_transifex_3.png" style="width: 650px;"&gt;&lt;/a&gt;
+&lt;p&gt;詳しくは、 &lt;a class="reference external" href="https://github.com/PyLadiesTokyo/pyladies-handbook-translation/blob/master/how_to/how_to_translate.md"&gt;翻訳とレビュー&lt;/a&gt; で解説&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=section id=id14&gt;
+&lt;h3&gt;Sphinxプロジェクトでの作業&lt;/h3&gt;
+&lt;ul class=simple&gt;
+&lt;li&gt;翻訳後のファイルをTransifexからダウンロード&lt;/li&gt;
+&lt;li&gt;Sphinxプロジェクトのlocale/ja/LC_MESSAGES/ に翻訳したpoファイルをコピー&lt;/li&gt;
+&lt;li&gt;htmlファイルを作成する&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight-default notranslate"&gt;&lt;div class=highlight&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ make html
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=section id=id15&gt;
+&lt;h2&gt;完成&lt;/h2&gt;
+&lt;p&gt;目標の &lt;strong&gt;行動規範&lt;/strong&gt; と、 &lt;strong&gt;ハラスメントを受けた場合の対処法&lt;/strong&gt; の部分の翻訳は終了しました。&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://pyladiestokyo.github.io/coc/index.html"&gt;https://pyladiestokyo.github.io/coc/index.html&lt;/a&gt;&lt;/p&gt;
+&lt;img alt="../_images/pyladies_transifex_4.png" src="https://kamekokamekame.net/_images/pyladies_transifex_4.png"&gt;
+&lt;p&gt;本家に取り込まれる日までがんばります。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=section id=id16&gt;
+&lt;h2&gt;まとめ&lt;/h2&gt;
+&lt;p&gt;Sphinx製のWebサイトは多言語化が容易である。&lt;/p&gt;
+&lt;p&gt;グループで翻訳を行う場合は、Tansifexを利用するとレビューなどがやりやすい。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=section id=id17&gt;
+&lt;h2&gt;明日は&lt;/h2&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://adventar.org/calendars/3116"&gt;PyLadies Advent Calendar 2018 - Adventar&lt;/a&gt; の3日目は、 &lt;a class="reference external" href="https://twitter.com/maya_t9"&gt;@maya_t9&lt;/a&gt; さんです&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description><pubDate>Sun, 02 Dec 2018 00:00:00 -0000</pubDate><guid>https://kamekokamekame.net/2018/2018-12-02-article.html</guid></item><item><title>PyLadies Tokyo Meetup #36 もくもく会</title><link>https://kamekokamekame.net/2018/2018-12-01-article.html</link><description>&lt;div class=section id=pyladies-tokyo-meetup-36&gt;
 
 &lt;p&gt;2018-12-01&lt;/p&gt;
 &lt;p&gt;この記事は、 &lt;a class="reference external" href="https://adventar.org/calendars/3116"&gt;PyLadies Advent Calendar 2018 - Adventar&lt;/a&gt; の1日目です。&lt;/p&gt;
