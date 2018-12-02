@@ -1,8 +1,8 @@
 ..
    :date: 2017-12-24
    :title: 地獄のエビデンス
-   :category: Other
-   :tags: Other
+   :category: Work
+   :tags: Work
 
 ==========================================================
 地獄のエビデンス

@@ -4,7 +4,7 @@ PyLadies Handbookの日本語化
 
 2018-12-02
 
-この記事は、 `PyLadies Advent Calendar 2018 - Adventar <https://adventar.org/calendars/3116>`_ の2日目です。
+`PyLadies Advent Calendar 2018 - Adventar <https://adventar.org/calendars/3116>`_ の2日目です。
 
 
 2018-11-28に `SphinxCon JP 2018 に参加しました <https://kamekokamekame.net/2018/2018-11-28-article.html>`_ を書きましたが、そこでの発表した内容を紹介します。

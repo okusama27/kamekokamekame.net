@@ -2,7 +2,7 @@
 <rss version="2.0"><channel><title>鉄は熱いうちに打て</title><link>https://kamekokamekame.net</link><description>Strike while the iron is hot</description><language>ja</language><copyright>2018, kamekokamekame.net</copyright><lastBuildDate>Sun, 02 Dec 2018 00:00:00 -0000</lastBuildDate><item><title>PyLadies Handbookの日本語化</title><link>https://kamekokamekame.net/2018/2018-12-02-article.html</link><description>&lt;div class=section id=pyladies-handbook&gt;
 
 &lt;p&gt;2018-12-02&lt;/p&gt;
-&lt;p&gt;この記事は、 &lt;a class="reference external" href="https://adventar.org/calendars/3116"&gt;PyLadies Advent Calendar 2018 - Adventar&lt;/a&gt; の2日目です。&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://adventar.org/calendars/3116"&gt;PyLadies Advent Calendar 2018 - Adventar&lt;/a&gt; の2日目です。&lt;/p&gt;
 &lt;p&gt;2018-11-28に &lt;a class="reference external" href="https://kamekokamekame.net/2018/2018-11-28-article.html"&gt;SphinxCon JP 2018 に参加しました&lt;/a&gt; を書きましたが、そこでの発表した内容を紹介します。&lt;/p&gt;
 &lt;div class=section id=pyladies-tokyo&gt;
 &lt;h2&gt;PyLadies Tokyo とは&lt;/h2&gt;
@@ -192,7 +192,7 @@ $ pip install sphinx-intl
 </description><pubDate>Sun, 02 Dec 2018 00:00:00 -0000</pubDate><guid>https://kamekokamekame.net/2018/2018-12-02-article.html</guid></item><item><title>PyLadies Tokyo Meetup #36 もくもく会</title><link>https://kamekokamekame.net/2018/2018-12-01-article.html</link><description>&lt;div class=section id=pyladies-tokyo-meetup-36&gt;
 
 &lt;p&gt;2018-12-01&lt;/p&gt;
-&lt;p&gt;この記事は、 &lt;a class="reference external" href="https://adventar.org/calendars/3116"&gt;PyLadies Advent Calendar 2018 - Adventar&lt;/a&gt; の1日目です。&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://adventar.org/calendars/3116"&gt;PyLadies Advent Calendar 2018 - Adventar&lt;/a&gt; の1日目です。&lt;/p&gt;
 &lt;p&gt;今日は、&lt;a class="reference external" href="https://pyladies-tokyo.connpass.com/event/107418/"&gt;PyLadies Tokyo Meetup #36 もくもく会&lt;/a&gt; です！&lt;/p&gt;
 &lt;img alt="../_images/pyladies_2018_34.png" src="https://kamekokamekame.net/_images/pyladies_2018_34.png"&gt;
 &lt;p&gt;もくもく会の最中にブログを書いているので現在形です。&lt;/p&gt;

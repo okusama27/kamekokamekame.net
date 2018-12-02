@@ -9,7 +9,7 @@ PyLadies Tokyo Meetup #36 もくもく会
 
 2018-12-01
 
-この記事は、 `PyLadies Advent Calendar 2018 - Adventar <https://adventar.org/calendars/3116>`_ の1日目です。
+`PyLadies Advent Calendar 2018 - Adventar <https://adventar.org/calendars/3116>`_ の1日目です。
 
 今日は、`PyLadies Tokyo Meetup #36 もくもく会 <https://pyladies-tokyo.connpass.com/event/107418/>`_ です！
 
