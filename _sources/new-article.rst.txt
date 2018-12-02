@@ -13,12 +13,7 @@ DocutilsのBugの何処かのボタンを押す
 
 これの中で残っているのが、 **docutilsのsourceforgeにログインして、issueの何かを押す（どこじゃろ？）** です。どこじゃろ？とか言ってて、何もわかっていませんでした。
 
-そもそも、 `@shimizukawa <https://twitter.com/shimizukawa>`_ さんの発表が引き金でした。
-
-.. raw:: html
-
-   <iframe src="//www.slideshare.net/slideshow/embed_code/key/juUPSQnrDSmCxD" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/shimizukawa/sphinx-customization-for-ogp-support-sphinx-con-jp-2018" title="Sphinx customization for OGP support at SphinxCon JP 2018" target="_blank">Sphinx customization for OGP support at SphinxCon JP 2018</a> </strong> from <strong><a href="https://www.slideshare.net/shimizukawa" target="_blank">Takayuki Shimizukawa</a></strong> </div>
-
+そもそも、 `@shimizukawa <https://twitter.com/shimizukawa>`_ さんの発表 `Sphinx customization for OGP support at SphinxCon JP 2018 <https://www.slideshare.net/shimizukawa/sphinx-customization-for-ogp-support-sphinx-con-jp-2018>`_ からの流れでした。
 
 `OGP <https://en.wikipedia.org/wiki/Facebook_Platform#Open_Graph_protocol>`_ （Open Graph protocol）というタグを自動でつける仕組みがSphinxないそうで、これを拡張機能として実装してみたという内容でした。
 
