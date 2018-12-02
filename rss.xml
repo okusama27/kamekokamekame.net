@@ -1,5 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>鉄は熱いうちに打て</title><link>https://kamekokamekame.net</link><description>Strike while the iron is hot</description><language>ja</language><copyright>2018, kamekokamekame.net</copyright><lastBuildDate>Sun, 02 Dec 2018 00:00:00 -0000</lastBuildDate><item><title>PyLadies Handbookの日本語化</title><link>https://kamekokamekame.net/2018/2018-12-02-article.html</link><description>&lt;div class=section id=pyladies-handbook&gt;
+<rss version="2.0"><channel><title>鉄は熱いうちに打て</title><link>https://kamekokamekame.net</link><description>Strike while the iron is hot</description><language>ja</language><copyright>2018, kamekokamekame.net</copyright><lastBuildDate>Mon, 03 Dec 2018 00:00:00 -0000</lastBuildDate><item><title>DocutilsのBugの何処かのボタンを押す</title><link>https://kamekokamekame.net/2018/2018-12-03-article.html</link><description>&lt;div class=section id=docutilsbug&gt;
+
+&lt;p&gt;2018-12-03&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://sphinxjp.connpass.com/event/103294/"&gt;SphinxCon JP 2018&lt;/a&gt; のときに自分に課した宿題がありました。&lt;/p&gt;
+&lt;blockquote class=twitter-tweet data-lang=ja&gt;&lt;p dir=ltr lang=ja&gt;家帰ってやること（今日やるとは言ってない）&lt;br&gt;- docutilsのsourceforgeにログインして、issueの何かを押す（どこじゃろ？）&lt;br&gt;- ブログにOGP拡張を入れる&lt;br&gt;- 今日のブログを書く&lt;/p&gt;— kame-chan (@okusama27) &lt;a href="https://twitter.com/okusama27/status/1067766605155692545?ref_src=twsrc%5Etfw"&gt;2018年11月28日&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async charset=utf-8 src="https://platform.twitter.com/widgets.js"&gt;&lt;/script&gt;&lt;p&gt;これの中で残っているのが、 &lt;strong&gt;docutilsのsourceforgeにログインして、issueの何かを押す（どこじゃろ？）&lt;/strong&gt; です。どこじゃろ？とか言ってて、何もわかっていませんでした。&lt;/p&gt;
+&lt;p&gt;そもそも、 &lt;a class="reference external" href="https://twitter.com/shimizukawa"&gt;@shimizukawa&lt;/a&gt; さんの発表が引き金でした。&lt;/p&gt;
+&lt;iframe allowfullscreen="" frameborder=0 height=485 marginheight=0 marginwidth=0 scrolling=no src="https://www.slideshare.net/slideshow/embed_code/key/juUPSQnrDSmCxD" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" width=595&gt; &lt;/iframe&gt; &lt;div style=margin-bottom:5px&gt; &lt;strong&gt; &lt;a href="https://www.slideshare.net/shimizukawa/sphinx-customization-for-ogp-support-sphinx-con-jp-2018" target=_blank title="Sphinx customization for OGP support at SphinxCon JP 2018"&gt;Sphinx customization for OGP support at SphinxCon JP 2018&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href="https://www.slideshare.net/shimizukawa" target=_blank&gt;Takayuki Shimizukawa&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;p&gt;&lt;a class="reference external" href="https://en.wikipedia.org/wiki/Facebook_Platform#Open_Graph_protocol"&gt;OGP&lt;/a&gt; （Open Graph protocol）というタグを自動でつける仕組みがSphinxないそうで、これを拡張機能として実装してみたという内容でした。&lt;/p&gt;
+&lt;p&gt;そーいえば、なかった！と目からウロコでした。&lt;/p&gt;
+&lt;p&gt;なんか、拡張機能はないが、ない理由が、Sphinxのコアであるdocutilesに組み込まれそうになっているのでSphinx自体で作っていないとのことでした。詳しくは、 &lt;a class="reference external" href="https://twitter.com/shimizukawa"&gt;@shimizukawa&lt;/a&gt; さんのツイートをみてください。&lt;/p&gt;
+&lt;p&gt;そんなわけで、本家のissueの &lt;cite&gt;+1&lt;/cite&gt; ボタンみたいなのをみんなで押そう！ということになっていたような記憶。私も押すだけなら参加できるぞー！と思いました。&lt;/p&gt;
+&lt;blockquote class=twitter-tweet data-lang=ja&gt;&lt;p dir=ltr lang=ja&gt;Docutils に出ている OGP 対応の issue &lt;a href="https://t.co/0oBAXBWGxe"&gt;https://t.co/0oBAXBWGxe&lt;/a&gt; &lt;a href="https://twitter.com/hashtag/sphinxjp?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#sphinxjp&lt;/a&gt;&lt;/p&gt;— tomo🐧 (@cocoatomo) &lt;a href="https://twitter.com/cocoatomo/status/1067763401873514496?ref_src=twsrc%5Etfw"&gt;2018年11月28日&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async charset=utf-8 src="https://platform.twitter.com/widgets.js"&gt;&lt;/script&gt;&lt;p&gt;早速、 &lt;a class="reference external" href="https://twitter.com/cocoatomo"&gt;@cocoatomo&lt;/a&gt; さんがリンクを貼ってくださいました。&lt;/p&gt;
+&lt;p&gt;しかし、ビール飲んで、眠くて朦朧としている私は「どっか押す」くらいしかわかっていませんでした。あとから調べたことをまとめましょう。&lt;/p&gt;
+&lt;ul class=simple&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://sourceforge.net/"&gt;SourceForge&lt;/a&gt; : オープンソースの開発とダウンロードをする老舗サイト。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;ここでDocutilsの開発が行われているらしい。&lt;/p&gt;
+&lt;ul class=simple&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://sourceforge.net/projects/docutils/"&gt;Docutils: Documentation Utilities download | SourceForge.net&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;これが、Docutilsのプロジェクトらしい。&lt;/p&gt;
+&lt;ul class=simple&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://sourceforge.net/p/docutils/bugs/281/"&gt;Docutils: Documentation Utilities / Bugs / #281 Support colon in meta directive name&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;これが該当のBugらしいです。ちゃんと聞いてなかったので、どこを押したらいいのかわかりませんでした。&lt;/p&gt;
+&lt;blockquote class=twitter-tweet data-lang=ja&gt;&lt;p dir=ltr lang=ja&gt;SOURCEFOGEにアカウント作ってログインしてみたけど、押すところがわからない。 Fixed in r8169. って書いてあるけど、なんか、直っているの？ &lt;a href="https://t.co/5fWKe1bib7"&gt;https://t.co/5fWKe1bib7&lt;/a&gt;&lt;/p&gt;— kame-chan (@okusama27) &lt;a href="https://twitter.com/okusama27/status/1069120818804744192?ref_src=twsrc%5Etfw"&gt;2018年12月2日&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async charset=utf-8 src="https://platform.twitter.com/widgets.js"&gt;&lt;/script&gt;&lt;p&gt;完全にうかつな私にお返事いただけました。ありがとうございます。&lt;/p&gt;
+&lt;blockquote class=twitter-tweet data-lang=ja&gt;&lt;p dir=ltr lang=ja&gt;こういう状態のようです&lt;a href="https://t.co/fCmFkb2O2U"&gt;https://t.co/fCmFkb2O2U&lt;/a&gt;&lt;/p&gt;— tomo🐧 (@cocoatomo) &lt;a href="https://twitter.com/cocoatomo/status/1069122107760472065?ref_src=twsrc%5Etfw"&gt;2018年12月2日&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async charset=utf-8 src="https://platform.twitter.com/widgets.js"&gt;&lt;/script&gt;&lt;p&gt;Docutilsのリリースが進むと入るらしい。&lt;/p&gt;
+&lt;p&gt;来年はOSSにPRを送る実績も解除しようと思います。頑張るぞー！&lt;/p&gt;
+&lt;/div&gt;
+</description><pubDate>Mon, 03 Dec 2018 00:00:00 -0000</pubDate><guid>https://kamekokamekame.net/2018/2018-12-03-article.html</guid></item><item><title>PyLadies Handbookの日本語化</title><link>https://kamekokamekame.net/2018/2018-12-02-article.html</link><description>&lt;div class=section id=pyladies-handbook&gt;
 
 &lt;p&gt;2018-12-02&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="https://adventar.org/calendars/3116"&gt;PyLadies Advent Calendar 2018 - Adventar&lt;/a&gt; の2日目です。&lt;/p&gt;
