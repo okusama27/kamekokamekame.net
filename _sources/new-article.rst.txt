@@ -1,6 +1,36 @@
 ==========================================================
-Title
+読書: 眠れなくなるほど面白い 図解 確率の話
 ==========================================================
 
-2018-12-06
+2018-12-04
 
+ちょいちょい株とか、投資とかやっています。
+これまでは優待とか配当もらえて嬉しいな♪ くらいだったんですが、老後も近づいてきているので来年はもう少し真面目にやろうかと考えています。
+
+いろいろな本を読むのですが、学生時代にあまり確率とか統計を勉強してなかったのでいまいちピンとこないことがあります。
+まずは、基本的な確率を勉強しようとこの本を読みました。
+
+眠れなくなるほど面白い 図解 確率の話
+----------------------------------------
+
+.. raw:: html
+
+   <a href="https://www.amazon.co.jp/dp/B07J2CGFW4/ref=as_li_ss_il?ie=UTF8&linkCode=li3&tag=ironhotcom-22&linkId=338b0f7133f999e6fa3769f82c6a2267&language=ja_JP" target="_blank"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B07J2CGFW4&Format=_SL250_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=ironhotcom-22&language=ja_JP" ></a><img src="https://ir-jp.amazon-adsystem.com/e/ir?t=ironhotcom-22&language=ja_JP&l=li3&o=9&a=B07J2CGFW4" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
+確率を使って考える **事例** がたくさん載っている本でした。流石に私も知っていることが多かったです。
+
+まとめ
+----------
+
+- ギャンブルは期待値で考える
+- ギャンブルは回数が少ないほど勝てる確率が高い
+- 人間の思い込みと実際の確率は違うこと多そう
+
+「眠れなくなるほど面白い 図解 数学の定理」という本が面白かったので、買ってみたんですが、シリーズ物なだけで著者違いなんですね。
+
+.. raw:: html
+
+   <a href="https://www.amazon.co.jp/%E7%9C%A0%E3%82%8C%E3%81%AA%E3%81%8F%E3%81%AA%E3%82%8B%E3%81%BB%E3%81%A9%E9%9D%A2%E7%99%BD%E3%81%84-%E5%9B%B3%E8%A7%A3-%E6%95%B0%E5%AD%A6%E3%81%AE%E5%AE%9A%E7%90%86-%E5%B0%8F%E5%AE%AE%E5%B1%B1-%E5%8D%9A%E4%BB%81/dp/4537215798/ref=as_li_ss_il?_encoding=UTF8&pd_rd_i=4537215798&pd_rd_r=ee842e1f-f95b-11e8-9dde-7b96ac1b4766&pd_rd_w=nzc9v&pd_rd_wg=NbsLB&pf_rd_p=cda7018a-662b-401f-9c16-bd4ec317039e&pf_rd_r=X8YAG9VKKJXGWYFX96WB&psc=1&refRID=X8YAG9VKKJXGWYFX96WB&linkCode=li2&tag=ironhotcom-22&linkId=62dd9d4796b66257ef6e7831c773dc37&language=ja_JP" target="_blank"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=4537215798&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=ironhotcom-22&language=ja_JP" ></a><img src="https://ir-jp.amazon-adsystem.com/e/ir?t=ironhotcom-22&language=ja_JP&l=li2&o=9&a=4537215798" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
+このシリーズは難しそうなことを図解と事例とかわいいイラストを使って読みやすくしていて良いシリーズだと思います。
+お値段も1000円以下なので、結構おすすめです。
