@@ -9,11 +9,12 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@okusama27" />
     <meta property="og:site_name" content="鉄は熱いうちに打て">
-    <meta property="og:title" content="Effective Pythonで学ぶ - 2章　関数">
-    <meta property="og:description" content="2017-12-04 Effective Python を真面目に読もうと思ったので読みはじめました。">
-    <meta property='og:url' content="https://kamekokamekame.net/2017/2017-12-04-article.html">
-    <meta property="og:image" content="https://kamekokamekame.net/_images/picture_20171204_1.png">
-    <title>Effective Pythonで学ぶ - 2章 関数 &#8212; 鉄は熱いうちに打て</title>
+    <meta property="og:title" content="ブログを毎日書こうと思った話 2018">
+    <meta property="og:description" content="2018-12-31 毎年、12月は毎日ちょっとでも勉強しようと思っています。 去年に引き続いて、今年も頑張りました。と書きたかったのですが、11月中旬から体調が悪く12月も引きずりました。
+なんとかAdvent Calendarの予定分は書けました。来年はもうちょっと頑張りたいです。 12/01: PyLadies Tokyo Meetup #36 もくもく会 12/02: PyLadie...">
+    <meta property='og:url' content="https://kamekokamekame.net/2018/2018-12-31-article.html">
+    
+    <title>ブログを毎日書こうと思った話 2018 &#8212; 鉄は熱いうちに打て</title>
     <link rel="stylesheet" href="../_static/bizstyle.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     
@@ -24,8 +25,6 @@
     <script type="text/javascript" src="../_static/translations.js"></script>
     <script type="text/javascript" src="../_static/bizstyle.js"></script>
     <link rel="search" title="検索" href="../search.html" />
-    <link rel="next" title="Effective Pythonで学ぶ（項目７〜）" href="2017-12-03-article.html" />
-    <link rel="prev" title="Effective Pythonで学ぶ - 3章 クラスと継承" href="2017-12-05-article.html" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <!--[if lt IE 9]>
     <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
@@ -34,14 +33,7 @@
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>ナビゲーション</h3>
       <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="2017-12-03-article.html" title="Effective Pythonで学ぶ（項目７〜）"
-             accesskey="N">次へ</a></li>
-        <li class="right" >
-          <a href="2017-12-05-article.html" title="Effective Pythonで学ぶ - 3章 クラスと継承"
-             accesskey="P">前へ</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">2017</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &#187;</li> 
       </ul>
     </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
@@ -50,21 +42,15 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../2019/2019-01-04-article.html">新年</a></li>
 </ul>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="../2019/index.html">2019</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2018/index.html">2018</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">2017</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">2018</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2017/index.html">2017</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2016/index.html">2016</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2015/index.html">2015</a></li>
 </ul>
 
 </div>
-  <h4>前のトピックへ</h4>
-  <p class="topless"><a href="2017-12-05-article.html"
-                        title="前の章へ">Effective Pythonで学ぶ - 3章　クラスと継承</a></p>
-  <h4>次のトピックへ</h4>
-  <p class="topless"><a href="2017-12-03-article.html"
-                        title="次の章へ">Effective Pythonで学ぶ（項目７〜）</a></p>
 <div id="searchbox" style="display: none" role="search">
   <h3>クイック検索</h3>
     <div class="searchformwrapper">
@@ -88,29 +74,20 @@
 <h1>鉄は熱いうちに打て<br>
 =============================</h1>
 
-<div class="section" id="effective-python-2">
-<h1>Effective Pythonで学ぶ - 2章　関数<a class="headerlink" href="#effective-python-2" title="このヘッドラインへのパーマリンク">¶</a></h1>
-<p>2017-12-04</p>
 <div class="section" id="id1">
-<h2>昨日までのあらすじ<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p><a class="reference external" href="https://www.oreilly.co.jp/books/9784873117560/">Effective Python</a> を真面目に読もうと思ったので読みはじめました。</p>
-</div>
-<div class="section" id="id2">
-<h2>2章　関数<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>この関数の章は関数のTipsなのか謎の内容。クロージャ、ジェネレータ、イテレータって関数ですが、関数の区分けなのでしょうか。</p>
+<h1>ブログを毎日書こうと思った話 2018<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>2018-12-31</p>
+<p>毎年、12月は毎日ちょっとでも勉強しようと思っています。</p>
+<p>去年に引き続いて、今年も頑張りました。と書きたかったのですが、11月中旬から体調が悪く12月も引きずりました。
+なんとかAdvent Calendarの予定分は書けました。来年はもうちょっと頑張りたいです。</p>
 <ul class="simple">
-<li>項目 14：Noneを返すよりは例外を選ぶ</li>
-<li>項目 15：クロージャが変数スコープとどう関わるかを知っておく</li>
-<li>項目 16：リストを返さずにジェネレータを返すことを考える</li>
-<li>項目 17：引数に対してイテレータを使うときには確実さを尊ぶ</li>
-<li>項目 18：可変長位置引数を使って、見た目をすっきりさせる</li>
-<li>項目 19：キーワード引数にオプションの振る舞いを与える</li>
-<li>項目 20：動的なデフォルト引数を指定するときには Noneとドキュメンテーション文字列を使う</li>
-<li>項目 21：キーワード専用引数で明確さを高める</li>
+<li>12/01: <a class="reference external" href="/2018/2018-12-01-article.html">PyLadies Tokyo Meetup #36 もくもく会</a></li>
+<li>12/02: <a class="reference external" href="/2018/2018-12-02-article.html">PyLadies Handbookの日本語化</a></li>
+<li>12/03: <a class="reference external" href="/2018/2018-12-03-article.html">DocutilsのBugの何処かのボタンを押す</a></li>
+<li>12/04: <a class="reference external" href="/2018/2018-12-04-article.html">読書: 眠れなくなるほど面白い 図解 確率の話</a></li>
+<li>12/14: <a class="reference external" href="/2018/2018-12-14-article.html">仕事の文章を書く</a></li>
+<li>12/31: <a class="reference external" href="/2018/2018-12-31-article.html">2018の振り返り</a></li>
 </ul>
-<img alt="関数" src="../_images/picture_20171204_1.png" />
-<p>そろそろ疲れてきたので、もう本読んで、メモして終わりになっている。元気になったら復習します。</p>
-</div>
 </div>
 
 
@@ -139,14 +116,7 @@
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>ナビゲーション</h3>
       <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="2017-12-03-article.html" title="Effective Pythonで学ぶ（項目７〜）"
-             >次へ</a></li>
-        <li class="right" >
-          <a href="2017-12-05-article.html" title="Effective Pythonで学ぶ - 3章 クラスと継承"
-             >前へ</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="index.html" >2017</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &#187;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
