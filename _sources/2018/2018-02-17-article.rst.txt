@@ -12,7 +12,7 @@
 
 
 
-2018年2月23日に `独学プログラマー <http://ec.nikkeibp.co.jp/item/books/C92270.html>`_ という本が発売されます。
+2018年2月23日に `独学プログラマー <https://amzn.to/2FAkziQ>`_ という本が発売されます。
 
 
 .. image:: ../_static/images/2018/02/dokugaku.png
@@ -86,3 +86,7 @@ Pythonを学ぶ本というよりは、どうやってエンジニアになる�
 みんな買ってねー！
 
 清水川さんと新木さんは打ち上げに誘ってねー！！よろよろ！！
+
+.. raw:: html
+
+   <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=ironhotcom-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=4822292274&linkId=50c029ffca69bda68aa68608aff96a1e"></iframe>

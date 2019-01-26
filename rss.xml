@@ -14,7 +14,38 @@
 &lt;li&gt;12/31: &lt;a class="reference external" href="https://kamekokamekame.net/2018/2018-12-31-article.html"&gt;2018年12月の振り返り&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-</description><pubDate>Tue, 31 Dec 2019 00:00:00 -0000</pubDate><guid>https://kamekokamekame.net/2018/2018-12-31-article.html</guid></item><item><title>新年</title><link>https://kamekokamekame.net/2019/2019-01-04-article.html</link><description>&lt;div class=section id=id1&gt;
+</description><pubDate>Tue, 31 Dec 2019 00:00:00 -0000</pubDate><guid>https://kamekokamekame.net/2018/2018-12-31-article.html</guid></item><item><title>PyLadies Tokyo Meetup #37 Java女子部共催 Git・GitHub入門</title><link>https://kamekokamekame.net/2019/2019-01-26-article.html</link><description>&lt;div class=section id=pyladies-tokyo-meetup-37-java-gitgithub&gt;
+
+&lt;p&gt;2019-01-26&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://pyladies-tokyo.connpass.com/event/115243/"&gt;PyLadies Tokyo Meetup #37 Java女子部共催 Git・GitHub入門&lt;/a&gt; に参加しました。&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://book.impress.co.jp/books/1118101036"&gt;いちばんやさしいGit&amp;amp;GitHubの教本&lt;/a&gt; の著者のお二人（横田さん、宇賀神さん）によるハンズオンセッションとトークセッションの2本立てでした。&lt;/p&gt;
+&lt;p&gt;Java女子部と共同イベントで、50人近いかたがいらっしゃってました。本当にためになる会でした。&lt;/p&gt;
+&lt;div class=section id=id2&gt;
+&lt;h2&gt;ハンズオン&lt;/h2&gt;
+&lt;p&gt;わかりやすい説明でした。&lt;/p&gt;
+&lt;blockquote class=twitter-tweet data-lang=ja&gt;&lt;p dir=ltr lang=ja&gt;&lt;a href="https://twitter.com/ihcomega?ref_src=twsrc%5Etfw"&gt;@ihcomega&lt;/a&gt; さんの発表。わかりやすくご説明ありがとうございます。参加者の皆さん、何か質問があれば、Slackでもツィッターでもスタッフまでメンションしてくださいね。&lt;a href="https://twitter.com/hashtag/javajo?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#javajo&lt;/a&gt; &lt;a href="https://twitter.com/hashtag/pyladiestokyo?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#pyladiestokyo&lt;/a&gt; &lt;a href="https://t.co/OjdqHEsxwW"&gt;pic.twitter.com/OjdqHEsxwW&lt;/a&gt;&lt;/p&gt;— PyLadiesTokyo (@PyLadiesTokyo) &lt;a href="https://twitter.com/PyLadiesTokyo/status/1089031494457118720?ref_src=twsrc%5Etfw"&gt;2019年1月26日&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async charset=utf-8 src="https://platform.twitter.com/widgets.js"&gt;&lt;/script&gt;&lt;p&gt;チューターとして待機してましたが、本がわかりやすかったのと、みなさんが優秀な感じで出番があまりなかったです。ツイートばっかりしてました。&lt;/p&gt;
+&lt;blockquote class=twitter-tweet data-lang=ja&gt;&lt;p dir=ltr lang=ja&gt;本に丁寧に書いてあるのと、参加者の皆さまが優秀であまりお手伝いすることなかった(´・ω・｀) &lt;a href="https://twitter.com/hashtag/pyladiestokyo?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#pyladiestokyo&lt;/a&gt;  &lt;a href="https://twitter.com/hashtag/javajo?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#javajo&lt;/a&gt;&lt;/p&gt;— kame-chan (@okusama27) &lt;a href="https://twitter.com/okusama27/status/1089061453355569153?ref_src=twsrc%5Etfw"&gt;2019年1月26日&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async charset=utf-8 src="https://platform.twitter.com/widgets.js"&gt;&lt;/script&gt;&lt;/div&gt;
+&lt;div class=section id=id3&gt;
+&lt;h2&gt;トークセッション&lt;/h2&gt;
+&lt;p&gt;楽しかったです〜！！&lt;/p&gt;
+&lt;blockquote class=twitter-tweet data-lang=ja&gt;&lt;p dir=ltr lang=ja&gt;トークセッション盛り上がってます！ &lt;a href="https://twitter.com/hashtag/pyladiestokyo?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#pyladiestokyo&lt;/a&gt; &lt;a href="https://twitter.com/hashtag/javajo?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#javajo&lt;/a&gt; &lt;a href="https://twitter.com/ihcomega?ref_src=twsrc%5Etfw"&gt;@ihcomega&lt;/a&gt; &lt;a href="https://twitter.com/syobochim?ref_src=twsrc%5Etfw"&gt;@syobochim&lt;/a&gt; &lt;a href="https://t.co/0SnsMFAaPo"&gt;pic.twitter.com/0SnsMFAaPo&lt;/a&gt;&lt;/p&gt;— PyLadiesTokyo (@PyLadiesTokyo) &lt;a href="https://twitter.com/PyLadiesTokyo/status/1089067915817627649?ref_src=twsrc%5Etfw"&gt;2019年1月26日&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async charset=utf-8 src="https://platform.twitter.com/widgets.js"&gt;&lt;/script&gt;&lt;div class=section id=id4&gt;
+&lt;h3&gt;断片的なリポート&lt;/h3&gt;
+&lt;p&gt;（たいへんでした？）宇賀神さん「転職直後だから暇かと思って受けたけど、めちゃくちゃ忙しかった。」&lt;/p&gt;
+&lt;p&gt;本を書き始めると忙しいですよね。（書いたことないけど。）&lt;/p&gt;
+&lt;p&gt;（工夫したことは？）横田さん「WIP制限。タスクを集中させて、1つの章に集中して書いていきました。あとは気合。」 &lt;a class="reference external" href="https://lean-trenches.com/one-day-in-kanban-land/"&gt;こんなのかな？&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;（嬉しかったことは？）宇賀神さん「皆さんからコメントを頂けたこと。ブログとか書いてくれるの嬉しい！工夫したところを指摘されると嬉しい。」&lt;/p&gt;
+&lt;p&gt;横田さん「エゴサしているんでよろしくおねがいします！」&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=section id=id6&gt;
+&lt;h2&gt;本について&lt;/h2&gt;
+&lt;p&gt;この会に向けて買ったんで、続きも全部読んだらレビュー記事書きたいと思います。&lt;/p&gt;
+&lt;a href="https://www.amazon.co.jp/%E3%81%84%E3%81%A1%E3%81%B0%E3%82%93%E3%82%84%E3%81%95%E3%81%97%E3%81%84Git-GitHub%E3%81%AE%E6%95%99%E6%9C%AC-%E4%BA%BA%E6%B0%97%E8%AC%9B%E5%B8%AB%E3%81%8C%E6%95%99%E3%81%88%E3%82%8B%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E7%AE%A1%E7%90%86-%E5%85%B1%E6%9C%89%E5%85%A5%E9%96%80-%E3%80%8C%E3%81%84%E3%81%A1%E3%81%B0%E3%82%93%E3%82%84%E3%81%95%E3%81%97%E3%81%84%E6%95%99%E6%9C%AC%E3%80%8D%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA/dp/429500524X/ref=as_li_ss_il?ie=UTF8&amp;amp;qid=1548490062&amp;amp;sr=8-1&amp;amp;keywords=%E3%81%84%E3%81%A1%E3%81%B0%E3%82%93%E3%82%84%E3%81%95%E3%81%97%E3%81%84%E3%80%80git&amp;amp;linkCode=li2&amp;amp;tag=ironhotcom-22&amp;amp;linkId=6d72f72288e5d80632e7245232194162&amp;amp;language=ja_JP" target=_blank&gt;&lt;img border=0 src="https://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;amp;ASIN=429500524X&amp;amp;Format=_SL160_&amp;amp;ID=AsinImage&amp;amp;MarketPlace=JP&amp;amp;ServiceVersion=20070822&amp;amp;WS=1&amp;amp;tag=ironhotcom-22&amp;amp;language=ja_JP"&gt;&lt;/a&gt;&lt;img alt="" border=0 height=1 src="https://ir-jp.amazon-adsystem.com/e/ir?t=ironhotcom-22&amp;amp;language=ja_JP&amp;amp;l=li2&amp;amp;o=9&amp;amp;a=429500524X" style="border:none !important; margin:0px !important;" width=1&gt;&lt;/div&gt;
+&lt;/div&gt;
+</description><pubDate>Sat, 26 Jan 2019 21:00:00 -0000</pubDate><guid>https://kamekokamekame.net/2019/2019-01-26-article.html</guid></item><item><title>新年</title><link>https://kamekokamekame.net/2019/2019-01-04-article.html</link><description>&lt;div class=section id=id1&gt;
 
 &lt;p&gt;2019-01-04&lt;/p&gt;
 &lt;p&gt;あけましておめでとうございます。&lt;/p&gt;
@@ -976,7 +1007,7 @@ $ pip install sphinx-intl
 </description><pubDate>Thu, 22 Feb 2018 00:00:00 -0000</pubDate><guid>https://kamekokamekame.net/2018/2018-02-22-article.html</guid></item><item><title>独学プログラマーが発売されるってよ！</title><link>https://kamekokamekame.net/2018/2018-02-17-article.html</link><description>&lt;div class=section id=id1&gt;
 
 &lt;p&gt;2018-02-17&lt;/p&gt;
-&lt;p&gt;2018年2月23日に &lt;a class="reference external" href="http://ec.nikkeibp.co.jp/item/books/C92270.html"&gt;独学プログラマー&lt;/a&gt; という本が発売されます。&lt;/p&gt;
+&lt;p&gt;2018年2月23日に &lt;a class="reference external" href="https://amzn.to/2FAkziQ"&gt;独学プログラマー&lt;/a&gt; という本が発売されます。&lt;/p&gt;
 &lt;img alt=独学プログラマー src="https://kamekokamekame.net/_images/dokugaku.png"&gt;
 &lt;p&gt;献本頂きました！&lt;/p&gt;
 &lt;p&gt;なんで献本していただけたかというと、レビューアーだからです。(｀・ω・´)ｂ&lt;/p&gt;
@@ -1007,7 +1038,7 @@ $ pip install sphinx-intl
 &lt;p&gt;&lt;strong&gt;教訓：レビューも結構大変です&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;みんな買ってねー！&lt;/p&gt;
 &lt;p&gt;清水川さんと新木さんは打ち上げに誘ってねー！！よろよろ！！&lt;/p&gt;
-&lt;/div&gt;
+&lt;iframe frameborder=0 marginheight=0 marginwidth=0 scrolling=no src="https://rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;amp;bc1=000000&amp;amp;IS2=1&amp;amp;bg1=FFFFFF&amp;amp;fc1=000000&amp;amp;lc1=0000FF&amp;amp;t=ironhotcom-22&amp;amp;language=ja_JP&amp;amp;o=9&amp;amp;p=8&amp;amp;l=as4&amp;amp;m=amazon&amp;amp;f=ifr&amp;amp;ref=as_ss_li_til&amp;amp;asins=4822292274&amp;amp;linkId=50c029ffca69bda68aa68608aff96a1e" style=width:120px;height:240px;&gt;&lt;/iframe&gt;&lt;/div&gt;
 </description><pubDate>Sat, 17 Feb 2018 00:00:00 -0000</pubDate><guid>https://kamekokamekame.net/2018/2018-02-17-article.html</guid></item><item><title>サポートエンジニアNight</title><link>https://kamekokamekame.net/2018/2018-02-07-article.html</link><description>&lt;div class=section id=night&gt;
 
 &lt;p&gt;2018-02-07&lt;/p&gt;

@@ -1,3 +1,8 @@
+:date: 2019-01-26 21:00:00
+:title: PyLadies Tokyo Meetup #37 Java女子部共催 Git・GitHub入門
+:category: PyLadies
+:tags: PyLadies
+
 ====================================================================================
 PyLadies Tokyo Meetup #37 Java女子部共催 Git・GitHub入門
 ====================================================================================
