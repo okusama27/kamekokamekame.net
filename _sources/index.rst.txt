@@ -8,7 +8,7 @@
 .. toctree::
    :maxdepth: 1
 
-   2019/2018-01-04-article
+   2019/2019-01-04-article
    2018/2018-12-31-article
    2018/2018-12-14-article
    2018/2018-12-04-article
