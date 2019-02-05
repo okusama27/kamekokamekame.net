@@ -95,22 +95,26 @@
 <div class="section" id="web">
 <h2>Webのページを取得する<a class="headerlink" href="#web" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>標準ライブラリの <a class="reference external" href="https://docs.python.org/ja/3/library/urllib.request.html">urllib.request</a> を使ってみます。</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">urllib.request</span> <span class="kn">import</span> <span class="n">urlopen</span>
+
+<span class="n">f</span> <span class="o">=</span> <span class="n">urlopen</span><span class="p">(</span><span class="s2">&quot;https://kamekokamekame.net/index.html&quot;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+</pre></div>
+</div>
 <p>実行するとエラー出た。しょんぼり。</p>
 <p><code class="docutils literal notranslate"><span class="pre">ssl.SSLCertVerificationError:</span> <span class="pre">[SSL:</span> <span class="pre">CERTIFICATE_VERIFY_FAILED]</span> <span class="pre">certificate</span> <span class="pre">verify</span> <span class="pre">failed:</span> <span class="pre">unable</span> <span class="pre">to</span> <span class="pre">get</span> <span class="pre">local</span> <span class="pre">issuer</span> <span class="pre">certificate</span> <span class="pre">(_ssl.c:1045)</span></code></p>
 <p>解決方法は以下のページに有りました。</p>
 <p><a class="reference external" href="https://qiita.com/orangain/items/0a641d980019fd7e0c52">macOS用公式インストーラーのPython 3.6でCERTIFICATE_VERIFY_FAILEDとなる問題</a></p>
 <p>Python3.7を使っているので、 <code class="docutils literal notranslate"><span class="pre">/Applications/Python\</span> <span class="pre">3.7/Install\</span> <span class="pre">Certificates.command</span></code> を実行したら取得できるようになりました。ありがたやー。</p>
 <p>なんか取得できたけど、文字化けしているぞ。てことで、ページの文字コードを調べてデコードだ！</p>
-<dl class="docutils">
-<dt>　  5 encoding = f.info().get_content_charset(failobj=&quot;utf-8&quot;)</dt>
-<dd><p class="first">6 text = f.read().decode(encoding)
-7 print(text)</p>
-<blockquote>
-<div>8
-9 with open(&quot;sample.html&quot;, &quot;w&quot;, encoding=encoding) as fp:</div></blockquote>
-<p class="last">10     fp.write(text)</p>
-</dd>
-</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">encoding</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">info</span><span class="p">()</span><span class="o">.</span><span class="n">get_content_charset</span><span class="p">(</span><span class="n">failobj</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span>
+<span class="n">text</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="n">encoding</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;sample.html&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="n">encoding</span><span class="p">)</span> <span class="k">as</span> <span class="n">fp</span><span class="p">:</span>
+<span class="n">fp</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+</pre></div>
+</div>
 <p>ちょこっと書き換えました。ついでに <code class="docutils literal notranslate"><span class="pre">sample.html</span></code> ファイルに保存。</p>
 <p>ハンズオンでは、 <a class="reference external" href="http://docs.python-requests.org/en/master/">Requests</a> の方を使ってますが、こっちでも充分ですね。</p>
 <p>どっちがいいですかね？って聞かれたらどうしよう。Webページ取得くらいならどっちでもいいと思う。

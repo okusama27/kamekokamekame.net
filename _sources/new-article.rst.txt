@@ -20,12 +20,12 @@ Webのページを取得する
 ---------------------------------
 標準ライブラリの `urllib.request <https://docs.python.org/ja/3/library/urllib.request.html>`_ を使ってみます。
 
-.. code-block::python
+.. code-block:: python
 
-   1 from urllib.request import urlopen                                                                    
-   2 
-   3 f = urlopen("https://kamekokamekame.net/index.html")
-   4 print(f.read())
+   from urllib.request import urlopen                                                                    
+   
+   f = urlopen("https://kamekokamekame.net/index.html")
+   print(f.read())
 
 実行するとエラー出た。しょんぼり。
 
@@ -39,14 +39,14 @@ Python3.7を使っているので、 ``/Applications/Python\ 3.7/Install\ Certif
 
 なんか取得できたけど、文字化けしているぞ。てことで、ページの文字コードを調べてデコードだ！
 
-.. code-block::python
+.. code-block:: python
 
-　  5 encoding = f.info().get_content_charset(failobj="utf-8")
-  　6 text = f.read().decode(encoding)
-  　7 print(text)
-    8
-    9 with open("sample.html", "w", encoding=encoding) as fp:
-   10     fp.write(text)
+   encoding = f.info().get_content_charset(failobj="utf-8")
+   text = f.read().decode(encoding)
+   print(text)
+   
+   with open("sample.html", "w", encoding=encoding) as fp:
+   fp.write(text)
 
 ちょこっと書き換えました。ついでに ``sample.html`` ファイルに保存。
 
