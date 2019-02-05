@@ -1,5 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>鉄は熱いうちに打て</title><link>https://kamekokamekame.net</link><description>Strike while the iron is hot</description><language>ja</language><copyright>2018, kamekokamekame.net</copyright><lastBuildDate>木, 31  1 2019 00:00:00 -0000</lastBuildDate><item><title>「BPStudy#137〜静かに進むブロックチェーン革命を学ぶ」参加</title><link>https://kamekokamekame.net/2019/2019-01-31-article.html</link><description>&lt;div class=section id=bpstudy-137&gt;
+<rss version="2.0"><channel><title>鉄は熱いうちに打て</title><link>https://kamekokamekame.net</link><description>Strike while the iron is hot</description><language>ja</language><copyright>2018, kamekokamekame.net</copyright><lastBuildDate>月, 04  2 2019 00:00:00 -0000</lastBuildDate><item><title>Webスクレイピング入門の予習 - robots.txt</title><link>https://kamekokamekame.net/2019/2019-02-04-article.html</link><description>&lt;div class=section id=web-robots-txt&gt;
+
+&lt;p&gt;2019-02-04&lt;/p&gt;
+&lt;p&gt;2/11に &lt;a class="reference external" href="https://pyladies-tokyo.connpass.com/event/118589/"&gt;PyLadies Tokyo Meetup #38 Webスクレイピング入門&lt;/a&gt;　でスクレイピングのハンズオンの進行をすることになりました。
+まぁ、やりたいことは調べながら実装はできるくらいですが、せっかくなので、勉強会駆動学習ということで、なるべく予習していこうと思います。&lt;/p&gt;
+&lt;p&gt;使うのは以下のライブラリ。&lt;/p&gt;
+&lt;ul class=simple&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/"&gt;Beautiful Soup Documentation — Beautiful Soup 4.4.0 documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://docs.python-requests.org/en/master/"&gt;Requests: HTTP for Humans™ — Requests 2.21.0 documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;まずは、あまり詳しくないrobots.txtを予習しよう&lt;/p&gt;
+&lt;div class=section id=robots-txt&gt;
+&lt;h2&gt;robots.txt&lt;/h2&gt;
+&lt;p&gt;自動でインターネット上に存在するページをどんどん分析していく処理があります。
+クローラーといいます。
+ほっとくと勝手にどんどんページにアクセスしてきます。&lt;/p&gt;
+&lt;p&gt;代表格がGoogle様。頼んでもないのに勝手に検索結果にWebサイトを表示してくれます。
+まぁ、これがないと便所の落書き、チラ裏のメモと同じなのですが。
+他の人が書いた有益な情報が読めるのもGoogle様のおかげです。&lt;/p&gt;
+&lt;p&gt;そういっても、検索エンジンに出してほしくないページやアクセスしないでほしい場所とかあるでしょう。
+ということで、クローラーへの指示を書いておいておくことができます。
+これがrobots.txtとrobots metaタグだそうです。&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://ja.wikipedia.org/wiki/Robots_Exclusion_Standard"&gt;Robots Exclusion Protocol （Wikipedia）&lt;/a&gt; として標準化されています。&lt;/p&gt;
+&lt;p&gt;あくまでクローラーにこうしてね！ってお願いするだけのテキストなので強制力はないそうです。
+でも、インターネット上で嫌われたくなかったら守ろうね。って感じみたいです。&lt;/p&gt;
+&lt;p&gt;試しにこのブログにも置いてみました。&lt;/p&gt;
+&lt;p&gt;すべてのクローラーに &lt;code class="docutils literal notranslate"&gt;&lt;span class=pre&gt;_images&lt;/span&gt;&lt;/code&gt; と &lt;code class="docutils literal notranslate"&gt;&lt;span class=pre&gt;_static&lt;/span&gt;&lt;/code&gt; というフォルダをクロールしないでね。って書いてみました。&lt;/p&gt;
+&lt;div class="highlight-default notranslate"&gt;&lt;div class=highlight&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=n&gt;User&lt;/span&gt;&lt;span class=o&gt;-&lt;/span&gt;&lt;span class=n&gt;agent&lt;/span&gt;&lt;span class=p&gt;:&lt;/span&gt; &lt;span class=o&gt;*&lt;/span&gt;
+&lt;span class=n&gt;Disallow&lt;/span&gt;&lt;span class=p&gt;:&lt;/span&gt; &lt;span class=o&gt;/&lt;/span&gt;&lt;span class=n&gt;_images&lt;/span&gt;&lt;span class=o&gt;/&lt;/span&gt;
+&lt;span class=n&gt;Disallow&lt;/span&gt;&lt;span class=p&gt;:&lt;/span&gt; &lt;span class=o&gt;/&lt;/span&gt;&lt;span class=n&gt;_static&lt;/span&gt;&lt;span class=o&gt;/&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;拘束力はないらしいのですが、検索サイトなどを作るときはRobotsに従ったクロールをする必要があるそうなので、設定しておくのは悪くなさそうですね。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description><pubDate>月, 04  2 2019 00:00:00 -0000</pubDate><guid>https://kamekokamekame.net/2019/2019-02-04-article.html</guid></item><item><title>「BPStudy#137〜静かに進むブロックチェーン革命を学ぶ」参加</title><link>https://kamekokamekame.net/2019/2019-01-31-article.html</link><description>&lt;div class=section id=bpstudy-137&gt;
 
 &lt;p&gt;2019-01-31&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="https://bpstudy.connpass.com/event/112555/"&gt;BPStudy#137〜静かに進むブロックチェーン革命を学ぶ&lt;/a&gt; に参加しました。&lt;/p&gt;
