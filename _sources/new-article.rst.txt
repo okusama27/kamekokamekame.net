@@ -1,71 +1,184 @@
+:date: 2019-04-13 21:00:00
+:title: PyLadies Tokyo Meetup #40 Python入学式
+:category: PyLadies
+:tags: PyLadies
+
 ==========================================================
-Webスクレイピング入門の予習 - その他の知識
+PyLadies Tokyo Meetup #40 Python入学式
 ==========================================================
 
-2019-02-10
+2019-04-13
 
-あらすじ
-----------
-2/11に `PyLadies Tokyo Meetup #38 Webスクレイピング入門 <https://pyladies-tokyo.connpass.com/event/118589/>`_　でスクレイピングのハンズオンの進行をすることになりました。
-まぁ、やりたいことは調べながら実装はできるくらいですが、せっかくなので、勉強会駆動学習ということで、なるべく予習していこうと思います。
+今日は、4月のPyLadies Tokyoのイベント、 `PyLadies Tokyo Meetup #40 Python入学式 <https://pyladies-tokyo.connpass.com/event/123097/>`_ に参加しました。
 
-使うのは以下のライブラリ。
+たくさんの方に参加いただきありがとうございました。
 
-- `Beautiful Soup Documentation — Beautiful Soup 4.4.0 documentation <https://www.crummy.com/software/BeautifulSoup/bs4/doc/>`_
-- `Requests: HTTP for Humans™ — Requests 2.21.0 documentation <http://docs.python-requests.org/en/master/>`_
+LTの応募が少なかったので、予備でLTを作っていました。
+結局、飛び込みLTなどがあったので、遠慮しておきました。
 
-時間が余ったときに備えよう
+せっかく作ったのでブログに貼っときます。
+本当に発表するなら現地で仕上げようと思っていたので、若干、適当です。
 
-データの取得方法
+今日はちゃんと予習してきた人がほとんどだったので、サポートも楽ちんでした。
+次は5月です。がんばります。
+
+
+はじめの頃に読む本とかにあまり書いてないけど、大事なこと
+============================================================================================
+
+
+| 2019.04.13 Kameko Ohmura
+
+自己紹介
+============================
+
+.. image:: _static/images/whoami.png
+   :align: left
+
+
+伝えたいこと
+=====================
+
+エラーを読もう
+---------------------
+
+ログを設定しよう
+---------------------
+
+テストを書こう
 --------------------
-わざわざプログラムを書かなくてもWebページのデータは取得できます。
 
-- ブラウザを利用して「ソースを表示」->「保存」
-- macOS, Linuxなどに含まれるwgetコマンドの利用 ``wget URL`` （例. wget https://kamekokamekame.net）
+エラーを読もう
+=======================
+これ実行すると、失敗します。どこが悪いでしょうか？
 
-Python書けるならやらないかな。ちょっと取得するときはwgetでいいかな。うーん。好み？
+pyramid.py
 
-データの種類
---------------
-- Webページのソース
-- XML(RSS)
-- APIから
+.. code-block:: python
 
-RSS
-----------
-プログなどの更新履歴。いちいちクローリングしなくても形式が決まっているので、手軽に取得できるようになっている。
+    def show_pyramid(num):
+        if num > 0:
+            for n in range(num):
+                print('*'*n)
+        else:
+            for n in range(abs(num), 0, -1):
+                print('*'*(n-1))
 
-ライブラリのインストール
+
+    def main():
+        show_pyramid(10)
+
+        show_pyrami(-10)
+
+
+    if __name__ == '__main__':
+        main()
+
+
+エラーを読もう
+=======================
+エラーはこんなのです。
 
 :: 
 
-   pip install feedparser
-
-各エントリーの更新日とタイトルの一覧を表示
-
-.. code-block:: python
-
-   import feedparser
-   
-   d = feedparser.parse("https://kamekokamekame.net/rss.xml")
-   for e in d.entries:
-       print(e.updated, e.title)
-
-API（Application Programming Interface）
-------------------------------------------------------------------------
-Webサイトが提供しているインターフェース
-
-例えば、 `APIリファレンス - connpass <https://connpass.com/about/api/>`_ とか、提供しています。
-
-今回のイベントのタイトルを取得するためだけの例
+   $ python3 pyramid.py 
+   *
+   **
+   ***
+   ****
+   *****
+   ******
+   *******
+   ********
+   *********
+   Traceback (most recent call last):
+   File "pyramid.py", line 17, in <module>
+        main()
+   File "pyramid.py", line 12, in main
+       show_pyrami(-10)
+   NameError: name 'show_pyrami' is not defined
 
 
-.. code-block:: python
+エラーを読もう
+=======================
+一番下を見よう。
 
-   import requests
-   
-   res = requests.get('https://connpass.com/api/v1/event/?event_id=118589')
-   
-   res = res.json()
-   print(res['events'][0]['title'])
+``NameError: name 'show_pyrami' is not defined``
 
+エラーはだいたい英語です。
+
+「'show_pyrami'が、定義されてない」
+
+2行上を見よう
+
+``File "pyramid.py", line 12, in main``
+
+「ファイル "pyramid.py" の12行目のmain」
+
+1行下を見よう
+
+``show_pyrami(-10)`` 
+
+関数名の最後の「d」がない！！
+
+エラーを読もう
+=======================
+
+エラーを読んだら、効率いいかも！！
+----------------------------------------------------------------------------
+
+エラーは除法の宝庫なので読みましょう！！
+----------------------------------------------------------------------------
+
+エラー読まずに先輩に「なんか動かないんですけど！」とか言うのは止めようね。
+
+嫌われます
+
+「エラーにXXXって書いてあったんですが、解決できないんですが教えてもらえませんか？」
+
+は、オッケー！！
+
+
+
+ログを設定しよう
+===========================
+大半のプログラミングって、毎回手動で動かさない。。。
+
+自動で動いています
+---------------------
+
+- 自動で動いているのにうまく行かない？
+- どこが悪かったの？
+- なんのせい？？？
+
+
+ログがあるとわかる
+========================
+ログは情報の宝庫！
+
+- 発生時刻
+- 発生ファイル
+- 発生したときのエラー
+- 使ってた情報
+
+詳しくは、 `Logging HOWTO — Python 3.7.3 ドキュメント <https://docs.python.org/ja/3/howto/logging.html>`_ をみてね。
+
+テストを書こう
+===================
+
+テストを書くといいことある
+
+特に修正したときに役に立つ
+
+初めて実装したときにテストを書いておけば、修正したときに修正した以外の部分は動いている事がわかる！
+
+できれば、テストから書くとなお良い！
+
+詳しくは、 `Pythonでの単体試験とハンズオン <https://github.com/okusama27/pyladies_2018_02>`_ をみてね。
+
+余裕が出たら早めにやっていくといいものの話でした
+=====================================================================================================
+
+- エラーを読む
+- ログを出力する
+- テストを書く
