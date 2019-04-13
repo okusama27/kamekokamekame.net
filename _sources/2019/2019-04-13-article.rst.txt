@@ -1,0 +1,76 @@
+:date: 2019-02-10 00:00:00
+:title: Webスクレイピング入門の予習 - その他の知識
+:category: Study
+:tags: Study
+
+==========================================================
+Webスクレイピング入門の予習 - その他の知識
+==========================================================
+
+2019-02-10
+
+あらすじ
+----------
+2/11に `PyLadies Tokyo Meetup #38 Webスクレイピング入門 <https://pyladies-tokyo.connpass.com/event/118589/>`_　でスクレイピングのハンズオンの進行をすることになりました。
+まぁ、やりたいことは調べながら実装はできるくらいですが、せっかくなので、勉強会駆動学習ということで、なるべく予習していこうと思います。
+
+使うのは以下のライブラリ。
+
+- `Beautiful Soup Documentation — Beautiful Soup 4.4.0 documentation <https://www.crummy.com/software/BeautifulSoup/bs4/doc/>`_
+- `Requests: HTTP for Humans™ — Requests 2.21.0 documentation <http://docs.python-requests.org/en/master/>`_
+
+時間が余ったときに備えよう
+
+データの取得方法
+--------------------
+わざわざプログラムを書かなくてもWebページのデータは取得できます。
+
+- ブラウザを利用して「ソースを表示」->「保存」
+- macOS, Linuxなどに含まれるwgetコマンドの利用 ``wget URL`` （例. wget https://kamekokamekame.net）
+
+Python書けるならやらないかな。ちょっと取得するときはwgetでいいかな。うーん。好み？
+
+データの種類
+--------------
+- Webページのソース
+- XML(RSS)
+- APIから
+
+RSS
+----------
+プログなどの更新履歴。いちいちクローリングしなくても形式が決まっているので、手軽に取得できるようになっている。
+
+ライブラリのインストール
+
+:: 
+
+   pip install feedparser
+
+各エントリーの更新日とタイトルの一覧を表示
+
+.. code-block:: python
+
+   import feedparser
+   
+   d = feedparser.parse("https://kamekokamekame.net/rss.xml")
+   for e in d.entries:
+       print(e.updated, e.title)
+
+API（Application Programming Interface）
+------------------------------------------------------------------------
+Webサイトが提供しているインターフェース
+
+例えば、 `APIリファレンス - connpass <https://connpass.com/about/api/>`_ とか、提供しています。
+
+今回のイベントのタイトルを取得するためだけの例
+
+
+.. code-block:: python
+
+   import requests
+   
+   res = requests.get('https://connpass.com/api/v1/event/?event_id=118589')
+   
+   res = res.json()
+   print(res['events'][0]['title'])
+

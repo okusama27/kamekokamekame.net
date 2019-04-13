@@ -1,5 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>鉄は熱いうちに打て</title><link>https://kamekokamekame.net</link><description>Strike while the iron is hot</description><language>ja</language><copyright>2018, kamekokamekame.net</copyright><lastBuildDate>日, 10  2 2019 00:00:00 -0000</lastBuildDate><item><title>Webスクレイピング入門の予習 - その他の知識</title><link>https://kamekokamekame.net/2019/2019-02-10-article.html</link><description>&lt;div class=section id=web&gt;
+<rss version="2.0"><channel><title>鉄は熱いうちに打て</title><link>https://kamekokamekame.net</link><description>Strike while the iron is hot</description><language>ja</language><copyright>2018, kamekokamekame.net</copyright><lastBuildDate>日, 10  2 2019 00:00:00 -0000</lastBuildDate><item><title>Webスクレイピング入門の予習 - その他の知識</title><link>https://kamekokamekame.net/2019/2019-04-13-article.html</link><description>&lt;div class=section id=web&gt;
+
+&lt;p&gt;2019-02-10&lt;/p&gt;
+&lt;div class=section id=id1&gt;
+&lt;h2&gt;あらすじ&lt;/h2&gt;
+&lt;p&gt;2/11に &lt;a class="reference external" href="https://pyladies-tokyo.connpass.com/event/118589/"&gt;PyLadies Tokyo Meetup #38 Webスクレイピング入門&lt;/a&gt;　でスクレイピングのハンズオンの進行をすることになりました。
+まぁ、やりたいことは調べながら実装はできるくらいですが、せっかくなので、勉強会駆動学習ということで、なるべく予習していこうと思います。&lt;/p&gt;
+&lt;p&gt;使うのは以下のライブラリ。&lt;/p&gt;
+&lt;ul class=simple&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/"&gt;Beautiful Soup Documentation — Beautiful Soup 4.4.0 documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://docs.python-requests.org/en/master/"&gt;Requests: HTTP for Humans™ — Requests 2.21.0 documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;時間が余ったときに備えよう&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=section id=id2&gt;
+&lt;h2&gt;データの取得方法&lt;/h2&gt;
+&lt;p&gt;わざわざプログラムを書かなくてもWebページのデータは取得できます。&lt;/p&gt;
+&lt;ul class=simple&gt;
+&lt;li&gt;ブラウザを利用して「ソースを表示」-&amp;gt;「保存」&lt;/li&gt;
+&lt;li&gt;macOS, Linuxなどに含まれるwgetコマンドの利用 &lt;code class="docutils literal notranslate"&gt;&lt;span class=pre&gt;wget&lt;/span&gt; &lt;span class=pre&gt;URL&lt;/span&gt;&lt;/code&gt; （例. wget &lt;a class="reference external" href="https://kamekokamekame.net"&gt;https://kamekokamekame.net&lt;/a&gt;）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Python書けるならやらないかな。ちょっと取得するときはwgetでいいかな。うーん。好み？&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=section id=id3&gt;
+&lt;h2&gt;データの種類&lt;/h2&gt;
+&lt;ul class=simple&gt;
+&lt;li&gt;Webページのソース&lt;/li&gt;
+&lt;li&gt;XML(RSS)&lt;/li&gt;
+&lt;li&gt;APIから&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=section id=rss&gt;
+&lt;h2&gt;RSS&lt;/h2&gt;
+&lt;p&gt;プログなどの更新履歴。いちいちクローリングしなくても形式が決まっているので、手軽に取得できるようになっている。&lt;/p&gt;
+&lt;p&gt;ライブラリのインストール&lt;/p&gt;
+&lt;div class="highlight-default notranslate"&gt;&lt;div class=highlight&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=n&gt;pip&lt;/span&gt; &lt;span class=n&gt;install&lt;/span&gt; &lt;span class=n&gt;feedparser&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;各エントリーの更新日とタイトルの一覧を表示&lt;/p&gt;
+&lt;div class="highlight-python notranslate"&gt;&lt;div class=highlight&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=kn&gt;import&lt;/span&gt; &lt;span class=nn&gt;feedparser&lt;/span&gt;
+
+&lt;span class=n&gt;d&lt;/span&gt; &lt;span class=o&gt;=&lt;/span&gt; &lt;span class=n&gt;feedparser&lt;/span&gt;&lt;span class=o&gt;.&lt;/span&gt;&lt;span class=n&gt;parse&lt;/span&gt;&lt;span class=p&gt;(&lt;/span&gt;&lt;span class=s2&gt;"https://kamekokamekame.net/rss.xml"&lt;/span&gt;&lt;span class=p&gt;)&lt;/span&gt;
+&lt;span class=k&gt;for&lt;/span&gt; &lt;span class=n&gt;e&lt;/span&gt; &lt;span class=ow&gt;in&lt;/span&gt; &lt;span class=n&gt;d&lt;/span&gt;&lt;span class=o&gt;.&lt;/span&gt;&lt;span class=n&gt;entries&lt;/span&gt;&lt;span class=p&gt;:&lt;/span&gt;
+    &lt;span class=k&gt;print&lt;/span&gt;&lt;span class=p&gt;(&lt;/span&gt;&lt;span class=n&gt;e&lt;/span&gt;&lt;span class=o&gt;.&lt;/span&gt;&lt;span class=n&gt;updated&lt;/span&gt;&lt;span class=p&gt;,&lt;/span&gt; &lt;span class=n&gt;e&lt;/span&gt;&lt;span class=o&gt;.&lt;/span&gt;&lt;span class=n&gt;title&lt;/span&gt;&lt;span class=p&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=section id=api-application-programming-interface&gt;
+&lt;h2&gt;API（Application Programming Interface）&lt;/h2&gt;
+&lt;p&gt;Webサイトが提供しているインターフェース&lt;/p&gt;
+&lt;p&gt;例えば、 &lt;a class="reference external" href="https://connpass.com/about/api/"&gt;APIリファレンス - connpass&lt;/a&gt; とか、提供しています。&lt;/p&gt;
+&lt;p&gt;今回のイベントのタイトルを取得するためだけの例&lt;/p&gt;
+&lt;div class="highlight-python notranslate"&gt;&lt;div class=highlight&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=kn&gt;import&lt;/span&gt; &lt;span class=nn&gt;requests&lt;/span&gt;
+
+&lt;span class=n&gt;res&lt;/span&gt; &lt;span class=o&gt;=&lt;/span&gt; &lt;span class=n&gt;requests&lt;/span&gt;&lt;span class=o&gt;.&lt;/span&gt;&lt;span class=n&gt;get&lt;/span&gt;&lt;span class=p&gt;(&lt;/span&gt;&lt;span class=s1&gt;'https://connpass.com/api/v1/event/?event_id=118589'&lt;/span&gt;&lt;span class=p&gt;)&lt;/span&gt;
+
+&lt;span class=n&gt;res&lt;/span&gt; &lt;span class=o&gt;=&lt;/span&gt; &lt;span class=n&gt;res&lt;/span&gt;&lt;span class=o&gt;.&lt;/span&gt;&lt;span class=n&gt;json&lt;/span&gt;&lt;span class=p&gt;()&lt;/span&gt;
+&lt;span class=k&gt;print&lt;/span&gt;&lt;span class=p&gt;(&lt;/span&gt;&lt;span class=n&gt;res&lt;/span&gt;&lt;span class=p&gt;[&lt;/span&gt;&lt;span class=s1&gt;'events'&lt;/span&gt;&lt;span class=p&gt;][&lt;/span&gt;&lt;span class=mi&gt;0&lt;/span&gt;&lt;span class=p&gt;][&lt;/span&gt;&lt;span class=s1&gt;'title'&lt;/span&gt;&lt;span class=p&gt;])&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description><pubDate>日, 10  2 2019 00:00:00 -0000</pubDate><guid>https://kamekokamekame.net/2019/2019-04-13-article.html</guid></item><item><title>Webスクレイピング入門の予習 - その他の知識</title><link>https://kamekokamekame.net/2019/2019-02-10-article.html</link><description>&lt;div class=section id=web&gt;
 
 &lt;p&gt;2019-02-10&lt;/p&gt;
 &lt;div class=section id=id1&gt;
