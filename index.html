@@ -10,9 +10,9 @@
     <meta name="twitter:site" content="@okusama27" />
     <meta property="og:site_name" content="鉄は熱いうちに打て">
     <meta property="og:title" content="トップページ">
-    <meta property="og:description" content="2019-04-13 今日は、4月のPyLadies Tokyoのイベント、 PyLadies Tokyo Meetup #40 Python入学式 に参加しました。 たくさんの方に参加いただきありがとうございました。 LTの応募が少なかったので、予備でLTを作っていました。
-結局、飛び込みLTなどがあったので、遠慮しておきました。 せっかく作ったのでブログに貼っときます。
-本当に発表するな...">
+    <meta property="og:description" content="2019-04-13 今日は、4月のPyLadies Tokyoのイベント、 PyLadies Tokyo Meetup #40 Python入学式 に参加しました。 たくさんの方に出会えました。 LTの応募が少なかったので、予備のLTを作っていました。
+結局、募集したら飛び込みLTがあったのでやりませんでした。 せっかく作ったのでブログに貼っときます。
+本当に発表するなら現地で仕上げようと...">
     <meta property='og:url' content="https://kamekokamekame.net/index.html">
     
     <title>トップページ &#8212; 鉄は熱いうちに打て</title>
@@ -46,9 +46,11 @@
 <h3><a href="#">Table Of Contents</a></h3>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="2019/2019-02-10-article.html">Webスクレイピング入門の予習 - その他の知識</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2019/2019-02-10-article.html">Webスクレイピング入門の予習 - その他の知識</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2019/2019-02-05-article.html">Webスクレイピング入門の予習 - Webのページを取得する</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2019/2019-02-04-article.html">Webスクレイピング入門の予習 - robots.txt</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2019/2019-01-31-article.html">「BPStudy#137〜静かに進むブロックチェーン革命を学ぶ」参加</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2019/2019-01-26-article.html">PyLadies Tokyo Meetup #37 Java女子部共催 Git・GitHub入門</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="2019/index.html">2019</a></li>
@@ -89,9 +91,9 @@
 <h1>PyLadies Tokyo Meetup #40 Python入学式<a class="headerlink" href="#pyladies-tokyo-meetup-40-python" title="このヘッドラインへのパーマリンク">¶</a></h1>
 <p>2019-04-13</p>
 <p>今日は、4月のPyLadies Tokyoのイベント、 <a class="reference external" href="https://pyladies-tokyo.connpass.com/event/123097/">PyLadies Tokyo Meetup #40 Python入学式</a> に参加しました。</p>
-<p>たくさんの方に参加いただきありがとうございました。</p>
-<p>LTの応募が少なかったので、予備でLTを作っていました。
-結局、飛び込みLTなどがあったので、遠慮しておきました。</p>
+<p>たくさんの方に出会えました。</p>
+<p>LTの応募が少なかったので、予備のLTを作っていました。
+結局、募集したら飛び込みLTがあったのでやりませんでした。</p>
 <p>せっかく作ったのでブログに貼っときます。
 本当に発表するなら現地で仕上げようと思っていたので、若干、適当です。</p>
 <p>今日はちゃんと予習してきた人がほとんどだったので、サポートも楽ちんでした。
@@ -99,19 +101,11 @@
 <div class="section" id="id2">
 <h2>はじめの頃に読む本とかにあまり書いてないけど、大事なこと<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <div class="line-block">
-<div class="line">2019.04.13 Kameko Ohmura</div>
+<div class="line">2019.04.13 Kameko</div>
 </div>
 </div>
 <div class="section" id="id3">
-<h2>伝えたいこと<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<ul class="simple">
-<li>エラーを読む</li>
-<li>ログを出力する</li>
-<li>テストを書く</li>
-</ul>
-</div>
-<div class="section" id="id4">
-<h2>エラーを読もう<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>エラーを読もう<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>これ実行すると、失敗します。どこが悪いでしょうか？</p>
 <p>pyramid.py</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">show_pyramid</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
@@ -134,8 +128,8 @@
 </pre></div>
 </div>
 </div>
-<div class="section" id="id5">
-<h2>エラーを読もう<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="id4">
+<h2>エラーを読もう<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>エラーはこんなのです。</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ python3 pyramid.py
 *
@@ -156,8 +150,8 @@ NameError: name &#39;show_pyrami&#39; is not defined
 </pre></div>
 </div>
 </div>
-<div class="section" id="id6">
-<h2>エラーを読もう<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="id5">
+<h2>エラーを読もう<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>一番下を見よう。</p>
 <p><code class="docutils literal notranslate"><span class="pre">NameError:</span> <span class="pre">name</span> <span class="pre">'show_pyrami'</span> <span class="pre">is</span> <span class="pre">not</span> <span class="pre">defined</span></code></p>
 <p>エラーはだいたい英語です。</p>
@@ -169,24 +163,24 @@ NameError: name &#39;show_pyrami&#39; is not defined
 <p><code class="docutils literal notranslate"><span class="pre">show_pyrami(-10)</span></code></p>
 <p>関数名の最後の「d」がない！！</p>
 </div>
+<div class="section" id="id6">
+<h2>エラーを読もう<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <div class="section" id="id7">
-<h2>エラーを読もう<a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<div class="section" id="id8">
-<h3>エラーを読んだら、効率いいかも！！<a class="headerlink" href="#id8" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>エラーを読んだら、効率いいかも！！<a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h3>
 </div>
-<div class="section" id="id9">
-<h3>エラーは除法の宝庫なので読みましょう！！<a class="headerlink" href="#id9" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="section" id="id8">
+<h3>エラーは除法の宝庫なので読みましょう！！<a class="headerlink" href="#id8" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>エラー読まずに先輩に「なんか動かないんですけど！」とか言うのは止めようね。</p>
 <p>嫌われます</p>
 <p>「エラーにXXXって書いてあったんですが、解決できないんですが教えてもらえませんか？」</p>
 <p>は、オッケー！！</p>
 </div>
 </div>
-<div class="section" id="id10">
-<h2>ログを設定しよう<a class="headerlink" href="#id10" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="id9">
+<h2>ログを設定しよう<a class="headerlink" href="#id9" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>大半のプログラミングって、毎回手動で動かさない。。。</p>
-<div class="section" id="id11">
-<h3>自動で動いています<a class="headerlink" href="#id11" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="section" id="id10">
+<h3>自動で動いています<a class="headerlink" href="#id10" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <ul class="simple">
 <li>自動で動いているのにうまく行かない？</li>
 <li>どこが悪かったの？</li>
@@ -194,8 +188,8 @@ NameError: name &#39;show_pyrami&#39; is not defined
 </ul>
 </div>
 </div>
-<div class="section" id="id12">
-<h2>ログがあるとわかる<a class="headerlink" href="#id12" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="id11">
+<h2>ログがあるとわかる<a class="headerlink" href="#id11" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>ログは情報の宝庫！</p>
 <ul class="simple">
 <li>発生時刻</li>
@@ -205,28 +199,23 @@ NameError: name &#39;show_pyrami&#39; is not defined
 </ul>
 <p>詳しくは、 <a class="reference external" href="https://docs.python.org/ja/3/howto/logging.html">Logging HOWTO — Python 3.7.3 ドキュメント</a> をみてね。</p>
 </div>
-<div class="section" id="id13">
-<h2>テストを書こう<a class="headerlink" href="#id13" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="id12">
+<h2>テストを書こう<a class="headerlink" href="#id12" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>テストを書くといいことある</p>
 <p>特に修正したときに役に立つ</p>
 <p>初めて実装したときにテストを書いておけば、修正したときに修正した以外の部分は動いている事がわかる！</p>
 <p>できれば、テストから書くとなお良い！</p>
 <p>詳しくは、 <a class="reference external" href="https://github.com/okusama27/pyladies_2018_02">Pythonでの単体試験とハンズオン</a> をみてね。</p>
 </div>
-<div class="section" id="id14">
-<h2>余裕が出たら早めにやっていくといいものの話でした<a class="headerlink" href="#id14" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="id13">
+<h2>余裕が出たら早めにやっていくといいものの話でした<a class="headerlink" href="#id13" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <ul class="simple">
 <li>エラーを読む</li>
 <li>ログを出力する</li>
 <li>テストを書く</li>
 </ul>
+<p>よきPythonライフを！</p>
 <div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="2019/2019-02-10-article.html">Webスクレイピング入門の予習 - その他の知識</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2019/2019-02-05-article.html">Webスクレイピング入門の予習 - Webのページを取得する</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2019/2019-02-04-article.html">Webスクレイピング入門の予習 - robots.txt</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2019/2019-01-31-article.html">「BPStudy#137〜静かに進むブロックチェーン革命を学ぶ」参加</a></li>
-</ul>
 </div>
 <div class="toctree-wrapper compound">
 </div>
