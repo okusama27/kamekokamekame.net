@@ -97,42 +97,6 @@
 <h1>Pythonでサンプルデータ作成<a class="headerlink" href="#python" title="このヘッドラインへのパーマリンク">¶</a></h1>
 <p>2015-03-07</p>
 <p>とりあえず、思い出すためにサンプルデータをシェルで作ればいいのをあえてPythonで作ってみました。</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>#coding: UTF-8
-Make following data
---------------------------------------------------------------
-time,a,b,c
---------------------------------------------------------------
-2015-03-01 00:00:00,1,2,3
---------------------------------------------------------------
-import datetime
-num1 = 100
-num2 = 1
-num3 = 4
-dt = datetime.datetime(2015,03,01,0,0,0)
-#nw = datetime.datetime(2015,03,31,23,59,59)
-nw = datetime.datetime.now()
-#print dt
-#print nw
-f = open(&#39;test.csv&#39;,&#39;a&#39;)
-try:
-  f.write(&quot;time,a,b,c\n&quot;)
-  while dt &lt; nw:
-    dt = dt + datetime.timedelta(hours=1)
-   num1 += 10
-   num2 += 5
-   num3 += 20
-    f.write(dt.strftime(&#39;%Y-%m-%d %H:%M:%S&#39;) + &quot;,&quot; + str(num1) + &quot;,&quot; + str(num2) + &quot;,&quot; + str(num3) + &quot;\n&quot;)
-   if num1 &gt; 1000:
-     num1 = 0
-   if num2 &gt; 100:
-     num2 = 0
-   if num3 &gt; 500:
-     num3 = 0
-finally:
-  f.close()
-while XXX: &lt;-ここのコロン忘れてハマる体たらく。。。orz..
-</pre></div>
-</div>
 <p>一からやり直します。</p>
 </div>
 

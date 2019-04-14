@@ -115,34 +115,11 @@
 <h3>項目 9：大きな内包表記にはジェネレータ式を考える<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p><strong>ジェネレータ式</strong> って便利ですね。</p>
 <p>内包表記と同じように書くのを括弧で囲むそうです。便利だ</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">greetings</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Good Morning&#39;</span><span class="p">,</span> <span class="s1">&#39;Hello&#39;</span><span class="p">,</span> <span class="s1">&#39;Good Night&#39;</span><span class="p">]</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">it</span> <span class="o">=</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">greetings</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">next</span><span class="p">(</span><span class="n">it</span><span class="p">)</span>
-<span class="go">12</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">next</span><span class="p">(</span><span class="n">it</span><span class="p">)</span>
-<span class="go">5</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">next</span><span class="p">(</span><span class="n">it</span><span class="p">)</span>
-<span class="go">10</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">next</span><span class="p">(</span><span class="n">it</span><span class="p">)</span>
-<span class="gt">Traceback (most recent call last):</span>
-  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
-<span class="gr">StopIteration</span>
-<span class="go">&gt;&gt;&gt;</span>
-</pre></div>
-</div>
 </div>
 <div class="section" id="range-enumerate">
 <h3>項目 10：rangeよりは enumerateにする<a class="headerlink" href="#range-enumerate" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>これ、Pythonをはじめた頃に指摘されました。</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">some_list</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
-</pre></div>
-</div>
 <p>じゃなくて、こう書く！</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">val</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">some_list</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">val</span><span class="p">)</span>
-</pre></div>
-</div>
 <p>当時、もうちょっと、 <code class="docutils literal notranslate"><span class="pre">enumerate</span></code> の綴りが短いといいのにな（´・ω・`）とは思いましたけどね。</p>
 </div>
 <div class="section" id="zip">
@@ -151,12 +128,6 @@
 <div class="section" id="forwhile-else">
 <h3>項目 12：forとwhileループの後の elseブロックは使うのを避ける<a class="headerlink" href="#forwhile-else" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>使わないというか、あまり有名じゃないと思っているのは私だけでしょうか。</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>for val in some_list:
-    なんか処理
-else:
-    # brakeとかでfor文を終わらずに最後まで来たら実行
-</pre></div>
-</div>
 </div>
 <div class="section" id="try-except-else-finally">
 <h3>項目 13：try/except/else/finallyの各ブロックを活用する<a class="headerlink" href="#try-except-else-finally" title="このヘッドラインへのパーマリンク">¶</a></h3>

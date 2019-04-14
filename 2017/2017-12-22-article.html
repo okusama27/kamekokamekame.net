@@ -100,17 +100,6 @@
 <p>ということで、残りの日付は今年の振り返りと小ネタで埋めていきます。</p>
 <p>今日は私がコードレビューでよく指摘される話。</p>
 <p><a class="reference external" href="/2017/2017-12-15-article.html">TogglとSlackを連携した話</a> のコードも最初、こうなっていました。</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>def get_toggl():
-    〜略〜
-    if current.status_code != 200:
-        print(&quot;togglの情報取得に失敗しました&quot;)
-    else:
-        current_json = current.json()
-        if current_json[&#39;data&#39;]:
-            return current_json[&#39;data&#39;][&#39;pid&#39;], current_json[&#39;data&#39;][&#39;description&#39;]
-    return None, None
-</pre></div>
-</div>
 <p>さあ、レビューしてみましょう！</p>
 <ul class="simple">
 <li>情報取得に失敗したあとも処理が続いている</li>
@@ -119,18 +108,6 @@
 </ul>
 <p>名付けとか色々あると思いますが、私はよく言われダメコーディングの一つ、 <strong>関数のreturnを1回しか書かないやーつ</strong> なんです。気を抜くとすぐに書いてしまいます。
 動けばいいやくらいで書いたスクリプトだったんで、ブログの記事を上げたら、旦那から「恥ずかしいから今すぐ直せ！」と言われました。(´・ω・｀)。</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>def get_toggl():
-    〜略〜
-    if current.status_code != 200:
-        print(&quot;togglの情報取得に失敗しました&quot;)
-        return None, None
-
-    current_json = current.json()
-    if not current_json[&#39;data&#39;]:
-        return None, None
-    return current_json[&#39;data&#39;][&#39;pid&#39;], current_json[&#39;data&#39;][&#39;description&#39;]
-</pre></div>
-</div>
 <p>直したあとは↑みたいな感じ。関数の最後のreturnは正常系の最後にしたほうが読みやすいですね。</p>
 <p>あと、私は <strong>変なフラグをつくりたがるやーつ</strong> でもあります。気を抜くとすぐに flg_XXX みたいな変なフラグ変数を作っちゃいます。</p>
 <p>まぁ、過去を振り返っても仕方ないので、これからも変なコードを作らないように自己レビューを厳しくしていきたいと思います。でも、変なときは指摘してくださいね。</p>

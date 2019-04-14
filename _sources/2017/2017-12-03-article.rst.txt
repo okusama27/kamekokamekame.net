@@ -39,7 +39,7 @@ Effective Pythonで学ぶ（項目７〜）
 
 内包表記と同じように書くのを括弧で囲むそうです。便利だ
 
-.. code-block:: python
+.. code-block::
 
    >>> greetings = ['Good Morning', 'Hello', 'Good Night']
    >>> it = (len(x) for x in greetings)
@@ -62,7 +62,7 @@ Effective Pythonで学ぶ（項目７〜）
 
 これ、Pythonをはじめた頃に指摘されました。
 
-.. code-block:: python
+.. code-block::
 
    for i in range(100):
        print(i, some_list[i])
@@ -70,7 +70,7 @@ Effective Pythonで学ぶ（項目７〜）
 
 じゃなくて、こう書く！
 
-.. code-block:: python
+.. code-block::
 
    for i, val in enumerate(some_list):
        print(i, val)
@@ -87,7 +87,7 @@ Effective Pythonで学ぶ（項目７〜）
 使わないというか、あまり有名じゃないと思っているのは私だけでしょうか。
 
 
-.. code-block:: python
+.. code-block::
 
    for val in some_list:
        なんか処理

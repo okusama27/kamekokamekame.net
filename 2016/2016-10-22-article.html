@@ -126,9 +126,6 @@
 <p>私のブログは記事に番号がついていてそれがURLでした。</p>
 <p><a class="reference external" href="http://kamekokamekame.net/archives/1207/">http://kamekokamekame.net/archives/1207/</a></p>
 <p>↑こんなの</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ curl http://kamekokamekame.net/archives/<span class="o">[</span><span class="m">1</span>-9999<span class="o">]</span>/ -o <span class="s2">&quot;#1.html&quot;</span>
-</pre></div>
-</div>
 <p>これで、 <code class="docutils literal notranslate"><span class="pre">[記事の番号].html</span></code> というファイル名で取得できます。</p>
 </div>
 <div class="section" id="htmlmarkdown">
@@ -142,30 +139,14 @@
 </div>
 <div class="section" id="id4">
 <h3>インストール<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>$ python3 -m venv env
-$ pip install Sphinx commonmark recommonmark
-</pre></div>
-</div>
 </div>
 <div class="section" id="id5">
 <h3>プロジェクト作成<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ sphinx-quickstart
-</pre></div>
-</div>
 <p><code class="docutils literal notranslate"><span class="pre">conf.py</span></code> の修正</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">source_suffix</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;.rst&#39;</span><span class="p">,</span> <span class="s1">&#39;.md&#39;</span><span class="p">]</span>
-<span class="n">source_parsers</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s1">&#39;.md&#39;</span><span class="p">:</span> <span class="s1">&#39;recommonmark.parser.CommonMarkParser&#39;</span><span class="p">,</span>
-<span class="p">}</span>
-</pre></div>
-</div>
 <p><code class="docutils literal notranslate"><span class="pre">index.rst</span></code> を作成</p>
 </div>
 <div class="section" id="id6">
 <h3>ビルド<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ make html
-</pre></div>
-</div>
 <p><code class="docutils literal notranslate"><span class="pre">build/html</span></code> フォルダの中身をサーバーにドーン！</p>
 </div>
 <div class="section" id="id7">
@@ -183,11 +164,6 @@ $ pip install Sphinx commonmark recommonmark
 <dd><a class="reference external" href="https://gist.github.com/okusama27/fc87c5f9ebd0b38590bcaa05a070736a">gist: create_rss.py</a> )</dd>
 </dl>
 <p>結局、 <code class="docutils literal notranslate"><span class="pre">feedgenerator</span></code> というのを使うと各情報を渡すだけでfeedできます。どーん。</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>フィードを生成
---------------------------------------------------------------
-return feedgenerator.Rss201rev2Feed(title=title,link=link,feed_url=feed_url,description=description,language=&quot;ja&quot;)
-</pre></div>
-</div>
 <p>これはもうちょっと綺麗にしたいです。</p>
 </div>
 </div>

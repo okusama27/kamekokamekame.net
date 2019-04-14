@@ -43,7 +43,7 @@ http://kamekokamekame.net/archives/1207/
 
 ↑こんなの
 
-.. code-block:: shell
+.. code-block::
 
    $ curl http://kamekokamekame.net/archives/[1-9999]/ -o "#1.html"
 
@@ -62,7 +62,7 @@ Sphinxでhtmlを作ろう
 インストール
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-.. code-block:: python
+.. code-block::
 
    $ python3 -m venv env
    $ pip install Sphinx commonmark recommonmark
@@ -71,14 +71,14 @@ Sphinxでhtmlを作ろう
 プロジェクト作成
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-.. code-block:: shell
+.. code-block::
 
    $ sphinx-quickstart
 
 
 ``conf.py`` の修正
 
-.. code-block:: python
+.. code-block::
 
    source_suffix = ['.rst', '.md']
    source_parsers = {
@@ -91,7 +91,7 @@ Sphinxでhtmlを作ろう
 ビルド
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-.. code-block:: shell
+.. code-block::
 
    $ make html
 
@@ -114,7 +114,7 @@ feedのプラグインがなかったんで、feedを出力してくれるスク
 結局、 ``feedgenerator`` というのを使うと各情報を渡すだけでfeedできます。どーん。
 
 
-.. code-block:: python
+.. code-block::
 
    フィードを生成
    --------------------------------------------------------------

@@ -20,7 +20,7 @@ unittestの公式ドキュメントを読みます。
 基本的な例
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. code-block:: python
+.. code-block::
 
    import unittest
 
@@ -57,7 +57,7 @@ unittestの公式ドキュメントを読みます。
 
 実行
 
-.. code-block:: bash
+.. code-block:: shell
 
    $ python unittest_sample1.py
    ...
@@ -69,7 +69,7 @@ unittestの公式ドキュメントを読みます。
 
 ``-v`` オプションを付けて詳細を表示
 
-.. code-block:: bash
+.. code-block:: shell
 
    $ python unittest_sample1.py
    ...
@@ -90,7 +90,7 @@ unittestの公式ドキュメントを読みます。
 
 コマンドラインからも実行できる
 
-.. code-block:: bash
+.. code-block:: shell
 
    $ python -m unittest unittest_sample1.TestStringMethods
    ...
@@ -101,7 +101,7 @@ unittestの公式ドキュメントを読みます。
 
 ファイルパスでもできる
 
-.. code-block:: bash
+.. code-block:: shell
 
    $ python -m unittest unittest_sample1.py
    ...
@@ -113,7 +113,7 @@ unittestの公式ドキュメントを読みます。
 
 ``-v`` オプションも付けられる
 
-.. code-block:: bash
+.. code-block:: shell
 
    $ python -m unittest -v unittest_sample1.TestStringMethods
    test_isupper (unittest_sample1.TestStringMethods) ... ok

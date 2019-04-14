@@ -15,7 +15,7 @@ pydoc
 
 先日の ``twc.py`` に書き足してみる
 
-.. code-block:: bash
+.. code-block::
 
    """
    This is a command line tool of watching twitter timelines
@@ -28,7 +28,7 @@ pydoc
 
 Pythonのインタプリタで実行
 
-.. code-block:: bash
+.. code-block::
 
    $ python
    >>> help()
@@ -37,7 +37,7 @@ Pythonのインタプリタで実行
 
 おお！表示された！！
 
-.. code-block:: bash
+.. code-block::
 
    Help on module twc:
    NAME
@@ -79,7 +79,7 @@ Pythonのインタプリタで実行
 
 ``help()`` だと
 
-.. code-block:: bash
+.. code-block::
 
    $ python
    >>> help()
@@ -89,7 +89,7 @@ Pythonのインタプリタで実行
 
 ``pydoc`` だと
 
-.. code-block:: bash
+.. code-block::
 
    $ pydoc sys
    ヘルプが表示される

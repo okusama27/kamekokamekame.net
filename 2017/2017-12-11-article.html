@@ -101,41 +101,8 @@
 <p><a class="reference external" href="https://docs.python.org/ja/3/library/unittest.html">unittest — ユニットテストフレームワーク</a></p>
 <div class="section" id="id2">
 <h2>基本的な例<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>import unittest
-
-unittest.TestCase)を継承するTestStringMethodsクラスを定義していますね。
---------------------------------------------------------------
-class TestStringMethods(unittest.TestCase):
-
-    # 1つ目のテスト
-    # 「&#39;foo&#39;.upper()」と「&#39;FOO&#39;」が等しいか比較していますね
-    def test_upper(self):
-        self.assertEqual(&#39;foo&#39;.upper(), &#39;FOO&#39;)
-
-    # 2つ目のテスト
-    # 全部大文字かどうかを確認するstr.isupper()を利用しています
-    def test_isupper(self):
-        # 「&#39;FOO&#39;.isupper())」の結果がTrueか
-        self.assertTrue(&#39;FOO&#39;.isupper())
-        # 「&#39;Foo&#39;.isupper()」の結果がFalseか
-        self.assertFalse(&#39;Foo&#39;.isupper())
-
-    # 3つ目のテスト
-    # 文字を配列に分割して、比較
-    def test_split(self):
-        s = &#39;hello world&#39;
-        self.assertEqual(s.split(), [&#39;hello&#39;, &#39;world&#39;])
-        # わざとstr.split()の引数に文字以外のものを指定して、TypeErrorが起こるか検証
-        # check that s.split fails when the separator is not a string
-        with self.assertRaises(TypeError):
-            s.split(2)
-
-if __name__ == &#39;__main__&#39;:
-    unittest.main()
-</pre></div>
-</div>
 <p>実行</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ python unittest_sample1.py
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ python unittest_sample1.py
 ...
 ----------------------------------------------------------------------
 Ran <span class="m">3</span> tests in <span class="m">0</span>.000s
@@ -144,7 +111,7 @@ OK
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">-v</span></code> オプションを付けて詳細を表示</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ python unittest_sample1.py
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ python unittest_sample1.py
 ...
 ----------------------------------------------------------------------
 Ran <span class="m">3</span> tests in <span class="m">0</span>.000s
@@ -162,7 +129,7 @@ OK
 </pre></div>
 </div>
 <p>コマンドラインからも実行できる</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ python -m unittest unittest_sample1.TestStringMethods
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ python -m unittest unittest_sample1.TestStringMethods
 ...
 ----------------------------------------------------------------------
 Ran <span class="m">3</span> tests in <span class="m">0</span>.000s
@@ -171,7 +138,7 @@ OK
 </pre></div>
 </div>
 <p>ファイルパスでもできる</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ python -m unittest unittest_sample1.py
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ python -m unittest unittest_sample1.py
 ...
 ----------------------------------------------------------------------
 Ran <span class="m">3</span> tests in <span class="m">0</span>.001s
@@ -180,7 +147,7 @@ OK
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">-v</span></code> オプションも付けられる</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ python -m unittest -v unittest_sample1.TestStringMethods
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ python -m unittest -v unittest_sample1.TestStringMethods
 test_isupper <span class="o">(</span>unittest_sample1.TestStringMethods<span class="o">)</span> ... ok
 test_split <span class="o">(</span>unittest_sample1.TestStringMethods<span class="o">)</span> ... ok
 test_upper <span class="o">(</span>unittest_sample1.TestStringMethods<span class="o">)</span> ... ok
