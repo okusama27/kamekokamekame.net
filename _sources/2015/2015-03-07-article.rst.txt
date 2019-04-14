@@ -13,7 +13,8 @@ Pythonでサンプルデータ作成
 
 とりあえず、思い出すためにサンプルデータをシェルで作ればいいのをあえてPythonで作ってみました。
 
-.. code-block::
+
+.. code-block:: none
 
    #coding: UTF-8
    Make following data
