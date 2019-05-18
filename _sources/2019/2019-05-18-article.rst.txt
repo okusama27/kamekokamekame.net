@@ -30,6 +30,7 @@ GCEいい話、いっぱい出てきた。実はGCEでNginxのサーバーを立
 アプリケーションサーバー入れてなかったんで、Djangoも入れて、動かしてみようかな。って思いました。
 
 .. image:: /_static/images/2019/djangocongress1.png
+    :width: 300px
 
 
 楽しかったです！

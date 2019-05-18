@@ -16,7 +16,7 @@
 &lt;p&gt;GCEいい話、いっぱい出てきた。実はGCEでNginxのサーバーを立てて動いてます。このページ。
 静的ファイル配信と、いくつかのバッチが動いています。
 アプリケーションサーバー入れてなかったんで、Djangoも入れて、動かしてみようかな。って思いました。&lt;/p&gt;
-&lt;img alt="_images/djangocongress1.png" src="https://kamekokamekame.net/_images/djangocongress1.png"&gt;
+&lt;a class="reference internal image-reference" href="https://kamekokamekame.net/_images/djangocongress1.png"&gt;&lt;img alt="_images/djangocongress1.png" src="https://kamekokamekame.net/_images/djangocongress1.png" style="width: 300px;"&gt;&lt;/a&gt;
 &lt;p&gt;楽しかったです！&lt;/p&gt;
 &lt;div class="toctree-wrapper compound"&gt;
 &lt;/div&gt;
@@ -40,7 +40,7 @@
 &lt;p&gt;GCEいい話、いっぱい出てきた。実はGCEでNginxのサーバーを立てて動いてます。このページ。
 静的ファイル配信と、いくつかのバッチが動いています。
 アプリケーションサーバー入れてなかったんで、Djangoも入れて、動かしてみようかな。って思いました。&lt;/p&gt;
-&lt;img alt="../_images/djangocongress1.png" src="https://kamekokamekame.net/_images/djangocongress1.png"&gt;
+&lt;a class="reference internal image-reference" href="https://kamekokamekame.net/_images/djangocongress1.png"&gt;&lt;img alt="../_images/djangocongress1.png" src="https://kamekokamekame.net/_images/djangocongress1.png" style="width: 300px;"&gt;&lt;/a&gt;
 &lt;p&gt;楽しかったです！&lt;/p&gt;
 &lt;/div&gt;
 </description><pubDate>土, 18  5 2019 00:00:00 -0000</pubDate><guid>https://kamekokamekame.net/2019/2019-05-18-article.html</guid></item><item><title>PyLadies Tokyo Meetup #40 Python入学式</title><link>https://kamekokamekame.net/new-article.html</link><description>&lt;div class=section id=pyladies-tokyo-meetup-40-python&gt;
