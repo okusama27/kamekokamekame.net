@@ -29,7 +29,7 @@ GCEいい話、いっぱい出てきた。実はGCEでNginxのサーバーを立
 静的ファイル配信と、いくつかのバッチが動いています。
 アプリケーションサーバー入れてなかったんで、Djangoも入れて、動かしてみようかな。って思いました。
 
-.. .. figure:: /_static/images/2019/djangocongress1.png
+.. figure:: /_static/images/2019/djangocongress1.png
     :width: 300px
 
     登壇者の方と記念撮影
