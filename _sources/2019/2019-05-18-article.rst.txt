@@ -1,0 +1,36 @@
+:date: 2019-05-18 00:00:00
+:title: DjangoCongress JP 2019に行ってきました
+:category: Django
+:tags: Django
+
+==========================================================
+DjangoCongress JP 2019に行ってきました
+==========================================================
+
+2019-05-18
+
+`DjangoCongress JP 2019 <https://djangocongress.jp/>`_ に行ってきました。
+
+Djangoだけでいろいろな話が聞けて楽しかったです。
+
+スタッフの皆様、ありがとうございます。
+
+しかし、朝から濃い情報を沢山聞くとだんだん疲れてきますね。体力つけないと。
+
+とりあえず勉強しようと思ったこと
+
+- DjangoとNginxの間の技術
+- Djangoで静的ファイルをうまくやるの復習
+- セキュリティーの話の復習
+
+なんとなく使っているんですが、資料にまとまっているとやはりいですね。
+
+GCEいい話、いっぱい出てきた。実はGCEでNginxのサーバーを立てて動いてます。このページ。
+静的ファイル配信と、いくつかのバッチが動いています。
+アプリケーションサーバー入れてなかったんで、Djangoも入れて、動かしてみようかな。って思いました。
+
+.. raw:: html
+
+    <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">集合写真／写真撮影タイム<a href="https://twitter.com/hashtag/djangocongress?src=hash&amp;ref_src=twsrc%5Etfw">#djangocongress</a> <a href="https://t.co/sAdpZqk8o8">pic.twitter.com/sAdpZqk8o8</a></p>&mdash; C.KaeDe (@chigusa_kaede) <a href="https://twitter.com/chigusa_kaede/status/1129648350859415552?ref_src=twsrc%5Etfw">May 18, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+楽しかったです！

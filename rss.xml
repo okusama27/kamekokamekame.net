@@ -1,5 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>鉄は熱いうちに打て</title><link>https://kamekokamekame.net</link><description>Strike while the iron is hot</description><language>ja</language><copyright>2018, kamekokamekame.net</copyright><lastBuildDate>土, 13  4 2019 21:00:00 -0000</lastBuildDate><item><title>PyLadies Tokyo Meetup #40 Python入学式</title><link>https://kamekokamekame.net/new-article.html</link><description>&lt;div class=section id=pyladies-tokyo-meetup-40-python&gt;
+<rss version="2.0"><channel><title>鉄は熱いうちに打て</title><link>https://kamekokamekame.net</link><description>Strike while the iron is hot</description><language>ja</language><copyright>2018, kamekokamekame.net</copyright><lastBuildDate>土, 18  5 2019 00:00:00 -0000</lastBuildDate><item><title>トップページ</title><link>https://kamekokamekame.net/index.html</link><description>&lt;div class=section id=djangocongress-jp-2019&gt;
+
+&lt;p&gt;2019-05-18&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://djangocongress.jp/"&gt;DjangoCongress JP 2019&lt;/a&gt; に行ってきました。&lt;/p&gt;
+&lt;p&gt;Djangoだけでいろいろな話が聞けて楽しかったです。&lt;/p&gt;
+&lt;p&gt;スタッフの皆様、ありがとうございます。&lt;/p&gt;
+&lt;p&gt;しかし、朝から濃い情報を沢山聞くとだんだん疲れてきますね。体力つけないと。&lt;/p&gt;
+&lt;p&gt;とりあえず勉強しようと思ったこと&lt;/p&gt;
+&lt;ul class=simple&gt;
+&lt;li&gt;DjangoとNginxの間の技術&lt;/li&gt;
+&lt;li&gt;Djangoで静的ファイルをうまくやるの復習&lt;/li&gt;
+&lt;li&gt;セキュリティーの話の復習&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;なんとなく使っているんですが、資料にまとまっているとやはりいですね。&lt;/p&gt;
+&lt;p&gt;GCEいい話、いっぱい出てきた。実はGCEでNginxのサーバーを立てて動いてます。このページ。
+静的ファイル配信と、いくつかのバッチが動いています。
+アプリケーションサーバー入れてなかったんで、Djangoも入れて、動かしてみようかな。って思いました。&lt;/p&gt;
+&lt;blockquote class=twitter-tweet&gt;&lt;p dir=ltr lang=ja&gt;集合写真／写真撮影タイム&lt;a href="https://twitter.com/hashtag/djangocongress?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#djangocongress&lt;/a&gt; &lt;a href="https://t.co/sAdpZqk8o8"&gt;pic.twitter.com/sAdpZqk8o8&lt;/a&gt;&lt;/p&gt;— C.KaeDe (@chigusa_kaede) &lt;a href="https://twitter.com/chigusa_kaede/status/1129648350859415552?ref_src=twsrc%5Etfw"&gt;May 18, 2019&lt;/a&gt;&lt;/blockquote&gt; &lt;script async charset=utf-8 src="https://platform.twitter.com/widgets.js"&gt;&lt;/script&gt;&lt;p&gt;楽しかったです！&lt;/p&gt;
+&lt;div class=section id=id2&gt;
+&lt;h2&gt;最近の投稿&lt;/h2&gt;
+&lt;div class="toctree-wrapper compound"&gt;
+&lt;/div&gt;
+&lt;div class="toctree-wrapper compound"&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description><pubDate>土, 18  5 2019 00:00:00 -0000</pubDate><guid>https://kamekokamekame.net/index.html</guid></item><item><title>DjangoCongress JP 2019に行ってきました</title><link>https://kamekokamekame.net/2019/2019-05-18-article.html</link><description>&lt;div class=section id=djangocongress-jp-2019&gt;
+
+&lt;p&gt;2019-05-18&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://djangocongress.jp/"&gt;DjangoCongress JP 2019&lt;/a&gt; に行ってきました。&lt;/p&gt;
+&lt;p&gt;Djangoだけでいろいろな話が聞けて楽しかったです。&lt;/p&gt;
+&lt;p&gt;スタッフの皆様、ありがとうございます。&lt;/p&gt;
+&lt;p&gt;しかし、朝から濃い情報を沢山聞くとだんだん疲れてきますね。体力つけないと。&lt;/p&gt;
+&lt;p&gt;とりあえず勉強しようと思ったこと&lt;/p&gt;
+&lt;ul class=simple&gt;
+&lt;li&gt;DjangoとNginxの間の技術&lt;/li&gt;
+&lt;li&gt;Djangoで静的ファイルをうまくやるの復習&lt;/li&gt;
+&lt;li&gt;セキュリティーの話の復習&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;なんとなく使っているんですが、資料にまとまっているとやはりいですね。&lt;/p&gt;
+&lt;p&gt;GCEいい話、いっぱい出てきた。実はGCEでNginxのサーバーを立てて動いてます。このページ。
+静的ファイル配信と、いくつかのバッチが動いています。
+アプリケーションサーバー入れてなかったんで、Djangoも入れて、動かしてみようかな。って思いました。&lt;/p&gt;
+&lt;blockquote class=twitter-tweet&gt;&lt;p dir=ltr lang=ja&gt;集合写真／写真撮影タイム&lt;a href="https://twitter.com/hashtag/djangocongress?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#djangocongress&lt;/a&gt; &lt;a href="https://t.co/sAdpZqk8o8"&gt;pic.twitter.com/sAdpZqk8o8&lt;/a&gt;&lt;/p&gt;— C.KaeDe (@chigusa_kaede) &lt;a href="https://twitter.com/chigusa_kaede/status/1129648350859415552?ref_src=twsrc%5Etfw"&gt;May 18, 2019&lt;/a&gt;&lt;/blockquote&gt; &lt;script async charset=utf-8 src="https://platform.twitter.com/widgets.js"&gt;&lt;/script&gt;&lt;p&gt;楽しかったです！&lt;/p&gt;
+&lt;/div&gt;
+</description><pubDate>土, 18  5 2019 00:00:00 -0000</pubDate><guid>https://kamekokamekame.net/2019/2019-05-18-article.html</guid></item><item><title>PyLadies Tokyo Meetup #40 Python入学式</title><link>https://kamekokamekame.net/new-article.html</link><description>&lt;div class=section id=pyladies-tokyo-meetup-40-python&gt;
 
 &lt;p&gt;2019-04-13&lt;/p&gt;
 &lt;p&gt;今日は、4月のPyLadies Tokyoのイベント、 &lt;a class="reference external" href="https://pyladies-tokyo.connpass.com/event/123097/"&gt;PyLadies Tokyo Meetup #40 Python入学式&lt;/a&gt; に参加しました。&lt;/p&gt;
