@@ -2,9 +2,6 @@
 
 .. include:: 2019/2019-05-18-article.rst
 
-最近の投稿
-++++++++++++++++++++++
-
 .. toctree::
    :maxdepth: 1
    :hidden:
