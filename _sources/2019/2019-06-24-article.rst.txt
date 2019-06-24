@@ -54,13 +54,6 @@ PyLadiesスタッフ合宿に行ってきました
 
    <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">本日はPyLadies Tokyo運営スタッフ合宿開催中です。一泊二日で福島の磐梯山に来ています。スタッフ業のお手伝いをしてくれるnot スタッフなメンバーも一緒にもくもく作業中(ありがとうございます！) <a href="https://twitter.com/hashtag/pyladiestokyo?src=hash&amp;ref_src=twsrc%5Etfw">#pyladiestokyo</a> <a href="https://t.co/MfhB1vQ2qG">pic.twitter.com/MfhB1vQ2qG</a></p>&mdash; PyLadiesTokyo (@PyLadiesTokyo) <a href="https://twitter.com/PyLadiesTokyo/status/1142343615508885504?ref_src=twsrc%5Etfw">June 22, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-
-ヤグラもありました。夜はここで盆踊りを踊りました。
-
-.. image:: /_static/images/2019/pyladies20190623_13.png
-
-.. image:: /_static/images/2019/pyladies20190623_03.png
-
 コーヒーは飲み放題でした。作業中も美味しいコーヒーを飲めてありがたかったです。
 
 .. image:: /_static/images/2019/pyladies20190623_05.png
@@ -74,6 +67,13 @@ PyLadiesスタッフ合宿に行ってきました
 .. image:: /_static/images/2019/pyladies20190623_09.png
 
 .. image:: /_static/images/2019/pyladies20190623_10.png
+
+ヤグラもありました。夜はここで盆踊りを踊りました。
+
+.. image:: /_static/images/2019/pyladies20190623_13.png
+
+.. image:: /_static/images/2019/pyladies20190623_03.png
+
 
 控えめに言って最高でした。また、お邪魔したいです。
 
