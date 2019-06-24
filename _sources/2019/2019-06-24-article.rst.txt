@@ -1,0 +1,76 @@
+:date: 2019-06-24 00:00:00
+:title: PyLadiesスタッフ合宿
+:category: PyLadies
+:tags: PyLadies
+
+==========================================================
+PyLadiesスタッフ合宿に行ってきました
+==========================================================
+
+2019-06-24
+
+6/22,23の2日間 `PyLadies Tokyo スタッフ合宿 2019 <https://pyladies-tokyo.connpass.com/event/125806/>`_ に参加しました。
+星野リゾートさんがコミュニティーの開発合宿での施設の利用にも力を入れていきたいとのことでお邪魔しました。
+
+今回は、 `磐梯山温泉ホテル｜星野リゾート <https://www.hoshinoresorts.com/resortsandhotels/uniquehotels/bandaisan.html>`_ での開催でした。
+
+結論から言うと、とても素敵な2日間でした！！ありがとうございました。
+
+スタッフの溜まっている作業を消化しにいく山奥での合宿というイメージだったので思っていたのの10倍は楽しかったです！
+
+磐梯町（ばんだいちょう）という駅までは電車で行き、そこに宿のバスが迎えに来てくれました。駅から20分位山道を登りました。
+
+.. image:: /_static/images/2019/pyladies20190623_01.png
+
+宿は日本酒と赤べこをテーマにしているようでした。そこら中に赤べこがありました。
+第一印象は従業員の方が丁寧！接客が素晴らしかったです。
+
+
+.. image:: /_static/images/2019/pyladies20190623_02.png
+
+.. image:: /_static/images/2019/pyladies20190623_14.png
+
+ロビーも広かった。
+
+.. image:: /_static/images/2019/pyladies20190623_11.png
+
+
+まずは開始前に星野リゾート様より施設の紹介と会社の取り組みについてご説明いただきました。
+
+.. image:: /_static/images/2019/pyladies20190623_08.png
+
+エンジニア、絶賛募集中とのことです！
+
+.. image:: /_static/images/2019/pyladies20190623_06.png
+
+
+作業は広めの会議室にテーブルを置いていただいて行いました。
+
+.. image:: /_static/images/2019/pyladies20190623_15.png
+
+.. image:: /_static/images/2019/pyladies20190623_07.png
+
+
+ヤグラもありました。夜はここで盆踊りを踊りました。
+
+.. image:: /_static/images/2019/pyladies20190623_13.png
+
+.. image:: /_static/images/2019/pyladies20190623_03.png
+
+コーヒーは飲み放題でした。作業中も美味しいコーヒーを飲めてありがたかったです。
+
+.. image:: /_static/images/2019/pyladies20190623_05.png
+
+お部屋も余裕がありきれいでした。
+
+.. image:: /_static/images/2019/pyladies20190623_04.png
+
+お風呂上がりにはアイスキャンディーとお茶のサービスがありました。お茶が美味しかったです！
+
+.. image:: /_static/images/2019/pyladies20190623_09.png
+
+.. image:: /_static/images/2019/pyladies20190623_10.png
+
+控えめに言って最高でした。また、お邪魔したいです。
+
+余談ですが、ホテルの目の前が猫魔スキー場でした。冬にお邪魔したいです。
