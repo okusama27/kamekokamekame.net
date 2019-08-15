@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>鉄は熱いうちに打て</title><link>https://kamekokamekame.net</link><description>Strike while the iron is hot</description><language>ja</language><copyright>2018, kamekokamekame.net</copyright><lastBuildDate>土, 10  8 2019 00:00:00 -0000</lastBuildDate><item><title>トップページ</title><link>https://kamekokamekame.net/index.html</link><description>&lt;div class=section id=python&gt;
+<rss version="2.0"><channel><title>鉄は熱いうちに打て</title><link>https://kamekokamekame.net</link><description>Strike while the iron is hot</description><language>ja</language><copyright>2018, kamekokamekame.net</copyright><lastBuildDate>日, 11  8 2019 00:00:00 -0000</lastBuildDate><item><title>トップページ</title><link>https://kamekokamekame.net/index.html</link><description>&lt;div class=section id=pep&gt;
+
+&lt;p&gt;2019-08-11&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://www.python.org/dev/peps/"&gt;PEP 0 -- Index of Python Enhancement Proposals (PEPs)&lt;/a&gt; は各PEPの目次になっている。&lt;/p&gt;
+&lt;p&gt;その中でPEP 1〜12は、 &lt;a class="reference external" href="https://www.python.org/dev/peps/#meta-peps-peps-about-peps-or-processes"&gt;Meta-PEPs (PEPs about PEPs or Processes)&lt;/a&gt; は、PEPの説明に割り当てられています。&lt;/p&gt;
+&lt;p&gt;拡張機能だけじゃなくて、その書き方や方針などを決めているのも迷いがなくていいですね。&lt;/p&gt;
+&lt;div class="toctree-wrapper compound"&gt;
+&lt;/div&gt;
+&lt;div class="toctree-wrapper compound"&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description><pubDate>日, 11  8 2019 00:00:00 -0000</pubDate><guid>https://kamekokamekame.net/index.html</guid></item><item><title>PEPの説明</title><link>https://kamekokamekame.net/2019/2019-08-11-article.html</link><description>&lt;div class=section id=pep&gt;
+
+&lt;p&gt;2019-08-11&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://www.python.org/dev/peps/"&gt;PEP 0 -- Index of Python Enhancement Proposals (PEPs)&lt;/a&gt; は各PEPの目次になっている。&lt;/p&gt;
+&lt;p&gt;その中でPEP 1〜12は、 &lt;a class="reference external" href="https://www.python.org/dev/peps/#meta-peps-peps-about-peps-or-processes"&gt;Meta-PEPs (PEPs about PEPs or Processes)&lt;/a&gt; は、PEPの説明に割り当てられています。&lt;/p&gt;
+&lt;p&gt;拡張機能だけじゃなくて、その書き方や方針などを決めているのも迷いがなくていいですね。&lt;/p&gt;
+&lt;/div&gt;
+</description><pubDate>日, 11  8 2019 00:00:00 -0000</pubDate><guid>https://kamekokamekame.net/2019/2019-08-11-article.html</guid></item><item><title>トップページ</title><link>https://kamekokamekame.net/index.html</link><description>&lt;div class=section id=python&gt;
 
 &lt;p&gt;2019-08-10&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="https://pyladies-tokyo.connpass.com/event/136599/"&gt;PyLadies Tokyo Meetup #44 夏休み! PEP自由研究発表会&lt;/a&gt; でPEPのことを取り扱うので、昔まとめたスライドから引用して復習します。&lt;/p&gt;
