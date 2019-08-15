@@ -1,16 +1,16 @@
 .. title:: トップページ
 
-.. include:: 2019/2019-06-24-article.rst
+.. include:: 2019/2019-08-10-article.rst
 
 .. toctree::
    :maxdepth: 1
    :hidden:
 
+   2019/2019-06-24-article.rst
    2019/2019-05-18-article.rst
    2019/2019-04-13-article.rst
    2019/2019-02-10-article.rst
    2019/2019-02-05-article.rst
-   2019/2019-02-04-article.rst
 
 .. toctree::
    :maxdepth: 1

@@ -1,0 +1,102 @@
+:date: 2019-08-10 00:00:00
+:title: Pythonの言語仕様の決め方
+:category: PEP
+:tags: PEP
+
+==========================================================
+Pythonの言語仕様の決め方
+==========================================================
+
+2019-08-10
+
+`PyLadies Tokyo Meetup #44 夏休み! PEP自由研究発表会 <https://pyladies-tokyo.connpass.com/event/136599/>`_ でPEPのことを取り扱うので、昔まとめたスライドから引用して復習します。
+
+PEP
+===========
+
+`PEP <https://github.com/python/peps>`_ はPython 拡張提案(Python Enhancement Proposal)の略語です。
+
+大きな変更が行われるときは、PEPという文書が書かれて議論されます。
+
+PEPについて詳しくは、 `PEP 1 -- PEP Purpose and Guidelines <https://www.python.org/dev/peps/pep-0001/>`_ に記載があります。
+
+.. 和訳 `Python Enhancement Proposal: 1 <http://sphinx-users.jp/articles/pep1.html>`_
+
+また、 `PEP 0 -- Index of Python Enhancement Proposals (PEPs) <https://www.python.org/dev/peps/>`_ を参照すると、PEPの歴史を一覧で参照できます。
+
+PEPの種類
+================
+
+Standards Track(標準化過程)
+------------------------------------------
+Pythonの新しい機能や実装について説明するドキュメント
+
+Informational(情報)
+------------------------------------------
+Pythonの設計上の課題や、Pythonコミュニティに知らせる一般的なガイドラインや情報などを説明するドキュメント
+
+
+Process(プロセス)
+------------------------------------------
+Pythonを取り巻くプロセスについて説明をしたり、プロセスや、プロセス中のイベントについて提案したりするドキュメント
+
+
+PEPワークフロー
+======================
+PEPの採用、不採用などは、以下の流れで進みます。
+
+アイデア
+------------------------------------------
+
+Pythonの言語に関するアイデアは特定のメーリングリスト( python-ideas@python.org 、python-list@python.org)や `SIG's <https://www.python.org/community/sigs/>`_ などで議論されている。
+
+アイデアを思いついたら、メーリングリストやSIG'sに投げて議論します。
+
+Draft(草案)
+------------------------------------------
+PEP編集者が承認するとPEP番号が割り当てられます。ステータスは"Draft"(草案)になります。
+
+Accepted（受理）、Rejected（却下）
+------------------------------------------
+グイドや、彼が選んだコンサルタントにレビューされて、"Accepted"（受理）、"Rejected"（却下）、差し戻しになります。
+
+PEPのドラフトの最終決裁者は、BDFL(慈悲深き終身独裁者, グイドさんのこと)です。
+
+忙しいときは他の人にBDFLの権利を移譲したりします。
+
+参照: https://mail.python.org/pipermail/python-dev/2017-December/151054.html
+
+.. topic:: 例
+
+   Reminder: INADA Naoki was nominated as the BDFL-Delegate.
+   「稲田さん, 代わりによろしく」
+
+Final（確定）
+------------------------------------------
+承認されて、 `リファレンス実装（Reference implementation） <https://ja.wikipedia.org/wiki/%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9%E5%AE%9F%E8%A3%85>`_ が完成し、main source code repositoryに取り込まれたら、"Final"（確定）になります。
+
+
+PEPのステータスの移行可能な経路
+------------------------------------------
+
+流れはこんな感じだそうですが、違う場合もあるそうです。
+
+.. image:: /_static/images/2019/pep_image.png
+
+図は、 `PEP1 <https://www.python.org/dev/peps/pep-0001/>`_ より参照。
+
+Deferred（延期）、Withdrawn（取り下げ）、Active（完成させることを意図していない。PEP1など）などに設定されることもあります。
+
+日本人のPEPへの貢献
+======================
+日本人にもPEPを作り確定した方がいらっしゃいます。
+
+* `Atsuo Ishimoto <https://twitter.com/atsuoishimoto>`_ さんの `PEP 3138 -- String representation in Python 3000 <https://www.python.org/dev/peps/pep-3138/>`_
+
+* `INADA Naoki <https://twitter.com/methane>`_ さんの `PEP 545 -- Python Documentation Translations <https://www.python.org/dev/peps/pep-0545/>`_
+
+まとめ
+============
+- PEPは、Python 拡張提案をまとめたもの
+- アイデアが湧いたらPEPを作る
+- 採用、不採用の手順が決まっている
