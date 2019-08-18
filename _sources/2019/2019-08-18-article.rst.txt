@@ -1,0 +1,36 @@
+:date: 2019-08-18 00:00:00
+:title: PyLadies Tokyo Meetup #44 夏休み! PEP自由研究発表会に参加
+:category: PEP
+:tags: PEP
+
+========================================================================================
+PyLadies Tokyo Meetup #44 夏休み! PEP自由研究発表会に参加
+========================================================================================
+
+2019-08-18
+
+`PyLadies Tokyo Meetup #44 夏休み! PEP自由研究発表会 <https://pyladies-tokyo.connpass.com/event/136599/>`_ に参加しました。
+
+PEPについて学ぶ会でした。
+発表予定の方が急遽これなくなったので、代打で「PEPとは？」と「PEP1」について話してきました。
+
+`前の日に作った資料 <https://github.com/okusama27/LightningTalk/blob/master/pyladies_201908/index.rst>`_ 
+
+.. raw:: html
+
+   <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">ヴァズ株式会社様に会場提供して頂き、夏休み！PEP自由研究発表会はじまりました！<a href="https://twitter.com/hashtag/PyLadiesTokyo?src=hash&amp;ref_src=twsrc%5Etfw">#PyLadiesTokyo</a> <a href="https://t.co/RicNOiesE5">pic.twitter.com/RicNOiesE5</a></p>&mdash; PyLadiesTokyo (@PyLadiesTokyo) <a href="https://twitter.com/PyLadiesTokyo/status/1162941116414431232?ref_src=twsrc%5Etfw">August 18, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+吉祥寺のヴァズ株式会社様にお邪魔しました。とても素敵なオフィスでした！井の頭公園も近くてとても素敵な環境でした。
+
+お盆のためか暑さのためか、人数は少なめでしたがグループワークなども行い濃い会でした。
+
+`ワークの成果 <https://github.com/okusama27/LightningTalk/blob/master/pyladies_slide/2019/pyladies44/pep257.md>`_
+
+懇親会はPEPという名前のスペイン料理店へ。お酒もお料理もおいしかったです。
+
+.. raw:: html
+
+   <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">本日はPEPの会のため、2次会もPEP（おしゃれスペイン料理）で開催しました！思わず皆で興奮。人数少なめでしたが、濃くて楽しかったです！本日もお疲れ様でしたー！ <a href="https://twitter.com/hashtag/pyladiestokyo?src=hash&amp;ref_src=twsrc%5Etfw">#pyladiestokyo</a> <a href="https://t.co/sQMRPjyNpW">pic.twitter.com/sQMRPjyNpW</a></p>&mdash; sugita (@ane45) <a href="https://twitter.com/ane45/status/1163031766162014208?ref_src=twsrc%5Etfw">August 18, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+
+大満足の1日でした！！

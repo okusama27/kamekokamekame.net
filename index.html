@@ -10,7 +10,8 @@
     <meta name="twitter:site" content="@okusama27" />
     <meta property="og:site_name" content="鉄は熱いうちに打て">
     <meta property="og:title" content="トップページ">
-    <meta property="og:description" content="2019-08-11 PEP 0 -- Index of Python Enhancement Proposals (PEPs) は各PEPの目次になっている。 その中でPEP 1〜12は、 Meta-PEPs (PEPs about PEPs or Processes) は、PEPの説明に割り当てられています。  PEP PEP Title 意味 P 1 PEP Purpose and G...">
+    <meta property="og:description" content="2019-08-18 PyLadies Tokyo Meetup #44 夏休み! PEP自由研究発表会 に参加しました。 PEPについて学ぶ会でした。
+発表予定の方が急遽これなくなったので、代打で「PEPとは？」と「PEP1」について話してきました。 前の日に作った資料 吉祥寺のヴァズ株式会社様にお邪魔しました。とても素敵なオフィスでした！井の頭公園も近くてとても素敵な環境でした。 お盆の...">
     <meta property='og:url' content="https://kamekokamekame.net/index.html">
     
     <title>トップページ &#8212; 鉄は熱いうちに打て</title>
@@ -24,7 +25,7 @@
     <script type="text/javascript" src="_static/translations.js"></script>
     <script type="text/javascript" src="_static/bizstyle.js"></script>
     <link rel="search" title="検索" href="search.html" />
-    <link rel="next" title="Pythonの言語仕様の決め方" href="2019/2019-08-10-article.html" />
+    <link rel="next" title="PEPの説明" href="2019/2019-08-11-article.html" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <!--[if lt IE 9]>
     <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
@@ -34,7 +35,7 @@
       <h3>ナビゲーション</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="2019/2019-08-10-article.html" title="Pythonの言語仕様の決め方"
+          <a href="2019/2019-08-11-article.html" title="PEPの説明"
              accesskey="N">次へ</a></li>
         <li class="nav-item nav-item-0"><a href="#">鉄は熱いうちに打て</a> &#187;</li> 
       </ul>
@@ -43,11 +44,11 @@
         <div class="sphinxsidebarwrapper"><div id="toc" class="sidebarRow">
 <h3><a href="#">Table Of Contents</a></h3>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="2019/2019-08-11-article.html">PEPの説明</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2019/2019-08-10-article.html">Pythonの言語仕様の決め方</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2019/2019-06-24-article.html">磐梯山温泉ホテルでのPyLadiesスタッフ合宿に行ってきました</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2019/2019-05-18-article.html">DjangoCongress JP 2019に行ってきました</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2019/2019-04-13-article.html">PyLadies Tokyo Meetup #40 Python入学式</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2019/2019-02-10-article.html">Webスクレイピング入門の予習 - その他の知識</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="2019/index.html">2019</a></li>
@@ -59,8 +60,8 @@
 
 </div>
   <h4>次のトピックへ</h4>
-  <p class="topless"><a href="2019/2019-08-10-article.html"
-                        title="次の章へ">Pythonの言語仕様の決め方</a></p>
+  <p class="topless"><a href="2019/2019-08-11-article.html"
+                        title="次の章へ">PEPの説明</a></p>
 <div id="searchbox" style="display: none" role="search">
   <h3>クイック検索</h3>
     <div class="searchformwrapper">
@@ -84,74 +85,18 @@
 <h1>鉄は熱いうちに打て<br>
 =============================</h1>
 
-<div class="section" id="pep">
-<h1>PEPの説明<a class="headerlink" href="#pep" title="このヘッドラインへのパーマリンク">¶</a></h1>
-<p>2019-08-11</p>
-<p><a class="reference external" href="https://www.python.org/dev/peps/">PEP 0 -- Index of Python Enhancement Proposals (PEPs)</a> は各PEPの目次になっている。</p>
-<p>その中でPEP 1〜12は、 <a class="reference external" href="https://www.python.org/dev/peps/#meta-peps-peps-about-peps-or-processes">Meta-PEPs (PEPs about PEPs or Processes)</a> は、PEPの説明に割り当てられています。</p>
-<table border="1" class="colwidths-given docutils">
-<colgroup>
-<col width="4%" />
-<col width="9%" />
-<col width="43%" />
-<col width="43%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head"></th>
-<th class="head">PEP</th>
-<th class="head">PEP Title</th>
-<th class="head">意味</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td>P</td>
-<td>1</td>
-<td>PEP Purpose and Guidelines</td>
-<td>PEPの目的とガイドライン</td>
-</tr>
-<tr class="row-odd"><td>P</td>
-<td>4</td>
-<td>Deprecation of Standard Modules</td>
-<td>標準ライブラリからモジュールを廃止する手順と廃止されたモジュール一覧</td>
-</tr>
-<tr class="row-even"><td>P</td>
-<td>5</td>
-<td>Guidelines for Language Evolution</td>
-<td>言語開発のガイドライン</td>
-</tr>
-<tr class="row-odd"><td>P</td>
-<td>6</td>
-<td>Bug Fix Releases</td>
-<td>バグを修正してリリースする手順</td>
-</tr>
-<tr class="row-even"><td>P</td>
-<td>7</td>
-<td>Style Guide for C Code</td>
-<td>Pythonを実装するCのコーディング規約</td>
-</tr>
-<tr class="row-odd"><td>P</td>
-<td>8</td>
-<td>Style Guide for Python Code</td>
-<td>Pythonコードのコーディング規約</td>
-</tr>
-<tr class="row-even"><td>P</td>
-<td>10</td>
-<td>Voting Guidelines</td>
-<td>新しい機能追加への投票のガイドライン</td>
-</tr>
-<tr class="row-odd"><td>P</td>
-<td>11</td>
-<td>Removing support for little used platforms</td>
-<td>ほとんど使われていないプラットフォーム向けのコード削除方法</td>
-</tr>
-<tr class="row-even"><td>P</td>
-<td>12</td>
-<td>Sample reStructuredText PEP Template</td>
-<td>reStructuredTextでPEPを書くためのテンプレートとサンプル</td>
-</tr>
-</tbody>
-</table>
-<p>拡張機能だけじゃなくて、その書き方や方針などを決めているのも迷いがなくていいですね。</p>
+<div class="section" id="pyladies-tokyo-meetup-44-pep">
+<h1>PyLadies Tokyo Meetup #44 夏休み! PEP自由研究発表会に参加<a class="headerlink" href="#pyladies-tokyo-meetup-44-pep" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>2019-08-18</p>
+<p><a class="reference external" href="https://pyladies-tokyo.connpass.com/event/136599/">PyLadies Tokyo Meetup #44 夏休み! PEP自由研究発表会</a> に参加しました。</p>
+<p>PEPについて学ぶ会でした。
+発表予定の方が急遽これなくなったので、代打で「PEPとは？」と「PEP1」について話してきました。</p>
+<p><a class="reference external" href="https://github.com/okusama27/LightningTalk/blob/master/pyladies_201908/index.rst">前の日に作った資料</a></p>
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">ヴァズ株式会社様に会場提供して頂き、夏休み！PEP自由研究発表会はじまりました！<a href="https://twitter.com/hashtag/PyLadiesTokyo?src=hash&amp;ref_src=twsrc%5Etfw">#PyLadiesTokyo</a> <a href="https://t.co/RicNOiesE5">pic.twitter.com/RicNOiesE5</a></p>&mdash; PyLadiesTokyo (@PyLadiesTokyo) <a href="https://twitter.com/PyLadiesTokyo/status/1162941116414431232?ref_src=twsrc%5Etfw">August 18, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><p>吉祥寺のヴァズ株式会社様にお邪魔しました。とても素敵なオフィスでした！井の頭公園も近くてとても素敵な環境でした。</p>
+<p>お盆のためか暑さのためか、人数は少なめでしたがグループワークなども行い濃い会でした。</p>
+<p><a class="reference external" href="https://github.com/okusama27/LightningTalk/blob/master/pyladies_slide/2019/pyladies44/pep257.md">ワークの成果</a></p>
+<p>懇親会はPEPという名前のスペイン料理店へ。お酒もお料理もおいしかったです。</p>
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">本日はPEPの会のため、2次会もPEP（おしゃれスペイン料理）で開催しました！思わず皆で興奮。人数少なめでしたが、濃くて楽しかったです！本日もお疲れ様でしたー！ <a href="https://twitter.com/hashtag/pyladiestokyo?src=hash&amp;ref_src=twsrc%5Etfw">#pyladiestokyo</a> <a href="https://t.co/sQMRPjyNpW">pic.twitter.com/sQMRPjyNpW</a></p>&mdash; sugita (@ane45) <a href="https://twitter.com/ane45/status/1163031766162014208?ref_src=twsrc%5Etfw">August 18, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><p>大満足の1日でした！！</p>
 <div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">
@@ -185,7 +130,7 @@
       <h3>ナビゲーション</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="2019/2019-08-10-article.html" title="Pythonの言語仕様の決め方"
+          <a href="2019/2019-08-11-article.html" title="PEPの説明"
              >次へ</a></li>
         <li class="nav-item nav-item-0"><a href="#">鉄は熱いうちに打て</a> &#187;</li> 
       </ul>

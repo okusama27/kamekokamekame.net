@@ -9,6 +9,9 @@ PEPの説明
 
 2019-08-11
 
+`PyLadies Tokyo Meetup #44 夏休み! PEP自由研究発表会 <https://pyladies-tokyo.connpass.com/event/136599/>`_ でPEPのことを取り扱うので、復習中です。
+
+
 `PEP 0 -- Index of Python Enhancement Proposals (PEPs) <https://www.python.org/dev/peps/>`_ は各PEPの目次になっている。
 
 その中でPEP 1〜12は、 `Meta-PEPs (PEPs about PEPs or Processes) <https://www.python.org/dev/peps/#meta-peps-peps-about-peps-or-processes>`_ は、PEPの説明に割り当てられています。
