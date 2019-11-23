@@ -4,8 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@okusama27" />
     <meta property="og:site_name" content="鉄は熱いうちに打て">
@@ -22,8 +21,8 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
-    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/bizstyle.js"></script>
     <link rel="search" title="検索" href="../search.html" />
     <link rel="next" title="2018年12月の振り返り" href="2018-12-31-article.html" />
@@ -50,11 +49,11 @@
         <div class="sphinxsidebarwrapper"><div id="toc" class="sidebarRow">
 <h3><a href="../index.html">Table Of Contents</a></h3>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../2019/2019-08-18-article.html">PyLadies Tokyo Meetup #44 夏休み! PEP自由研究発表会に参加</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2019/2019-08-11-article.html">PEPの説明</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2019/2019-08-10-article.html">Pythonの言語仕様の決め方</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2019/2019-06-24-article.html">磐梯山温泉ホテルでのPyLadiesスタッフ合宿に行ってきました</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2019/2019-05-18-article.html">DjangoCongress JP 2019に行ってきました</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2019/2019-04-13-article.html">PyLadies Tokyo Meetup #40 Python入学式</a></li>
 </ul>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../2019/index.html">2019</a></li>
@@ -72,13 +71,11 @@
   <p class="topless"><a href="2018-12-31-article.html"
                         title="次の章へ">2018年12月の振り返り</a></p>
 <div id="searchbox" style="display: none" role="search">
-  <h3>クイック検索</h3>
+  <h3 id="searchlabel">クイック検索</h3>
     <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" />
       <input type="submit" value="検索" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
@@ -107,10 +104,10 @@
 伝えたいことを短い文章で正しく書くことが求められます。</p>
 <p>また、お客様ともメールかSlackでやり取りします。</p>
 <ul class="simple">
-<li>MTGの議事録を書く</li>
-<li>メールでの依頼、質問に返信する</li>
-<li>問題があった時は調査を行いその結果を報告する。</li>
-<li>開発を終了するときは、引き継ぎ資料を残す。</li>
+<li><p>MTGの議事録を書く</p></li>
+<li><p>メールでの依頼、質問に返信する</p></li>
+<li><p>問題があった時は調査を行いその結果を報告する。</p></li>
+<li><p>開発を終了するときは、引き継ぎ資料を残す。</p></li>
 </ul>
 <p>関わっているプロジェクトのチームのために残しておきたいことをwikiにまとめるなどの仕事もあります。</p>
 <p>また、私はPyQというオンライン学習サービスチームのメンバーなので、お客様の問い合わせに回答したり、問題文を書いたり、ブログを書いたりします。</p>
@@ -132,18 +129,20 @@
 <h3>書いてあることの雑なまとめ<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>雑にまとめます。</p>
 <ul class="simple">
-<li>内容の精選<ul>
-<li>必要でないことは書かない</li>
-<li>目的から何が必要か考える</li>
-<li>読む人の知識も考慮する</li>
+<li><p>内容の精選</p>
+<ul>
+<li><p>必要でないことは書かない</p></li>
+<li><p>目的から何が必要か考える</p></li>
+<li><p>読む人の知識も考慮する</p></li>
 </ul>
 </li>
-<li>事実と意見の区別</li>
-<li>読む人が知りたいことを最初に書く</li>
-<li>明快・簡素な文章<ul>
-<li>文章は短ければ短いほどよい</li>
-<li>はっきり言いきる</li>
-<li>できるだけ普通の用語、日常用語を使う</li>
+<li><p>事実と意見の区別</p></li>
+<li><p>読む人が知りたいことを最初に書く</p></li>
+<li><p>明快・簡素な文章</p>
+<ul>
+<li><p>文章は短ければ短いほどよい</p></li>
+<li><p>はっきり言いきる</p></li>
+<li><p>できるだけ普通の用語、日常用語を使う</p></li>
 </ul>
 </li>
 </ul>
@@ -156,17 +155,17 @@
 <h2>会社で言われたこと<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>本に書いてないですが、先輩に言われたこともあります。</p>
 <ul class="simple">
-<li>必要以上に謙らない（へりくだらない）</li>
-<li>思っていないことを書かない</li>
-<li>誇張しない</li>
-<li>主語、目的語をはっきりさせる</li>
+<li><p>必要以上に謙らない（へりくだらない）</p></li>
+<li><p>思っていないことを書かない</p></li>
+<li><p>誇張しない</p></li>
+<li><p>主語、目的語をはっきりさせる</p></li>
 </ul>
 <p>すぐに営業のようなお客様が喜びそうなことを書いてしまう癖がなかなか抜けずに指摘を受けます。
 転職するまでその書き方が良い書き方だと思っていただけにショックでした。</p>
 <p>ふんわりと耳障りがいい言葉は誤解を生むだけで信頼関係を構築するのに役に立たないようです。</p>
 <p>まだまだ身についてないですが、  <strong>出来ることからやっていく</strong> を実践します。
 本を見返しながら、自分が苦手なところから直していくようにします。</p>
-<p>まずは、アホみたいに丁寧というか、謙った文章を書かないようにしたいと思います。(<a href="#id5"><span class="problematic" id="id6">`</span></a>・ω・´)＞</p>
+<p>まずは、アホみたいに丁寧というか、謙った文章を書かないようにしたいと思います。</p>
 </div>
 </div>
 
@@ -208,7 +207,7 @@
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2018, kamekokamekame.net.
-      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.1 で生成しました。
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.1 で生成しました。
     </div>
   </body>
 </html>

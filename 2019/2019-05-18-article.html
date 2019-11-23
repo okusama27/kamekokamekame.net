@@ -4,8 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@okusama27" />
     <meta property="og:site_name" content="鉄は熱いうちに打て">
@@ -21,11 +20,11 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
-    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/bizstyle.js"></script>
     <link rel="search" title="検索" href="../search.html" />
-    <link rel="next" title="PyLadies Tokyo Meetup #40 Python入学式" href="2019-04-13-article.html" />
+    <link rel="next" title="2019" href="index.html" />
     <link rel="prev" title="磐梯山温泉ホテルでのPyLadiesスタッフ合宿に行ってきました" href="2019-06-24-article.html" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <!--[if lt IE 9]>
@@ -36,7 +35,7 @@
       <h3>ナビゲーション</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="2019-04-13-article.html" title="PyLadies Tokyo Meetup #40 Python入学式"
+          <a href="index.html" title="2019"
              accesskey="N">次へ</a></li>
         <li class="right" >
           <a href="2019-06-24-article.html" title="磐梯山温泉ホテルでのPyLadiesスタッフ合宿に行ってきました"
@@ -48,11 +47,11 @@
         <div class="sphinxsidebarwrapper"><div id="toc" class="sidebarRow">
 <h3><a href="../index.html">Table Of Contents</a></h3>
 <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="2019-08-18-article.html">PyLadies Tokyo Meetup #44 夏休み! PEP自由研究発表会に参加</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2019-08-11-article.html">PEPの説明</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2019-08-10-article.html">Pythonの言語仕様の決め方</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2019-06-24-article.html">磐梯山温泉ホテルでのPyLadiesスタッフ合宿に行ってきました</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">DjangoCongress JP 2019に行ってきました</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2019-04-13-article.html">PyLadies Tokyo Meetup #40 Python入学式</a></li>
 </ul>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">2019</a></li>
@@ -67,16 +66,14 @@
   <p class="topless"><a href="2019-06-24-article.html"
                         title="前の章へ">磐梯山温泉ホテルでのPyLadiesスタッフ合宿に行ってきました</a></p>
   <h4>次のトピックへ</h4>
-  <p class="topless"><a href="2019-04-13-article.html"
-                        title="次の章へ">PyLadies Tokyo Meetup #40 Python入学式</a></p>
+  <p class="topless"><a href="index.html"
+                        title="次の章へ">2019</a></p>
 <div id="searchbox" style="display: none" role="search">
-  <h3>クイック検索</h3>
+  <h3 id="searchlabel">クイック検索</h3>
     <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" />
       <input type="submit" value="検索" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
@@ -101,17 +98,17 @@
 <p>しかし、朝から濃い情報を沢山聞くとだんだん疲れてきますね。体力つけないと。</p>
 <p>とりあえず勉強しようと思ったこと</p>
 <ul class="simple">
-<li>DjangoとNginxの間の技術</li>
-<li>Djangoで静的ファイルをうまくやるの復習</li>
-<li>セキュリティーの話の復習</li>
+<li><p>DjangoとNginxの間の技術</p></li>
+<li><p>Djangoで静的ファイルをうまくやるの復習</p></li>
+<li><p>セキュリティーの話の復習</p></li>
 </ul>
 <p>なんとなく使っているんですが、資料にまとまっているとやはりいですね。</p>
 <p>GCEいい話、いっぱい出てきた。実はGCEでNginxのサーバーを立てて動いてます。このページ。
 静的ファイル配信と、いくつかのバッチが動いています。
 アプリケーションサーバー入れてなかったんで、Djangoも入れて、動かしてみようかな。って思いました。</p>
-<div class="figure" id="id2">
+<div class="figure align-default" id="id2">
 <a class="reference internal image-reference" href="../_images/djangocongress1.png"><img alt="../_images/djangocongress1.png" src="../_images/djangocongress1.png" style="width: 400px;" /></a>
-<p class="caption"><span class="caption-text">公式撮影の画像</span></p>
+<p class="caption"><span class="caption-text">公式撮影の画像</span><a class="headerlink" href="#id2" title="この画像へのパーマリンク">¶</a></p>
 </div>
 <p>楽しかったです！</p>
 </div>
@@ -143,7 +140,7 @@
       <h3>ナビゲーション</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="2019-04-13-article.html" title="PyLadies Tokyo Meetup #40 Python入学式"
+          <a href="index.html" title="2019"
              >次へ</a></li>
         <li class="right" >
           <a href="2019-06-24-article.html" title="磐梯山温泉ホテルでのPyLadiesスタッフ合宿に行ってきました"
@@ -153,7 +150,7 @@
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2018, kamekokamekame.net.
-      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.1 で生成しました。
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.1 で生成しました。
     </div>
   </body>
 </html>

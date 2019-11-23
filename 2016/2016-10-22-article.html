@@ -4,8 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@okusama27" />
     <meta property="og:site_name" content="鉄は熱いうちに打て">
@@ -21,8 +20,8 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
-    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/bizstyle.js"></script>
     <link rel="search" title="検索" href="../search.html" />
     <link rel="next" title="2015" href="../2015/index.html" />
@@ -49,11 +48,11 @@
         <div class="sphinxsidebarwrapper"><div id="toc" class="sidebarRow">
 <h3><a href="../index.html">Table Of Contents</a></h3>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../2019/2019-08-18-article.html">PyLadies Tokyo Meetup #44 夏休み! PEP自由研究発表会に参加</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2019/2019-08-11-article.html">PEPの説明</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2019/2019-08-10-article.html">Pythonの言語仕様の決め方</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2019/2019-06-24-article.html">磐梯山温泉ホテルでのPyLadiesスタッフ合宿に行ってきました</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2019/2019-05-18-article.html">DjangoCongress JP 2019に行ってきました</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2019/2019-04-13-article.html">PyLadies Tokyo Meetup #40 Python入学式</a></li>
 </ul>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../2019/index.html">2019</a></li>
@@ -71,13 +70,11 @@
   <p class="topless"><a href="../2015/index.html"
                         title="次の章へ">2015</a></p>
 <div id="searchbox" style="display: none" role="search">
-  <h3>クイック検索</h3>
+  <h3 id="searchlabel">クイック検索</h3>
     <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" />
       <input type="submit" value="検索" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
@@ -99,23 +96,23 @@
 <div class="section" id="id1">
 <h2>私とブログ<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <ul class="simple">
-<li>1995年にパソコン購入。同時にパソコン通信（niftyサーブ）開始。</li>
-<li>1999年当時のプロバイダだったInfoWeb（現&#64;nifty）からホームページスペースを与えられたので、htmlを自分で書いてブログスタート。</li>
-<li>2004年html書くのめんどくさくなって、どっかのブログサービスでブログ開始。</li>
-<li>2006年フリーランスになったので、勉強のために自分でCMSを運営しようとhetemlと契約。Nucleus CMSにブログを乗り換え。</li>
-<li>2010年Wordpressの仕事が増えて、プラグインを作ったりしていた。Nucleus CMSの更新がほぼなくなり、hetemlがサポートするPHPのバージョンと合わなくなってくる。hetemlにWordpress簡単インストールというサービスができた機にWordpressに乗り換え。</li>
-<li>2016年Sphinx製の静的Webページに乗り換え</li>
+<li><p>1995年にパソコン購入。同時にパソコン通信（niftyサーブ）開始。</p></li>
+<li><p>1999年当時のプロバイダだったInfoWeb（現&#64;nifty）からホームページスペースを与えられたので、htmlを自分で書いてブログスタート。</p></li>
+<li><p>2004年html書くのめんどくさくなって、どっかのブログサービスでブログ開始。</p></li>
+<li><p>2006年フリーランスになったので、勉強のために自分でCMSを運営しようとhetemlと契約。Nucleus CMSにブログを乗り換え。</p></li>
+<li><p>2010年Wordpressの仕事が増えて、プラグインを作ったりしていた。Nucleus CMSの更新がほぼなくなり、hetemlがサポートするPHPのバージョンと合わなくなってくる。hetemlにWordpress簡単インストールというサービスができた機にWordpressに乗り換え。</p></li>
+<li><p>2016年Sphinx製の静的Webページに乗り換え</p></li>
 </ul>
 </div>
 <div class="section" id="id2">
 <h2>どうして乗り換えたか<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <ul class="simple">
-<li>PHPを書かなくなっているうちにhetemlのPHPがバージョン7になった。</li>
-<li>Wordpressがしょっちゅう更新しろ！と言ってきて、鬱陶しくなった。</li>
-<li>Wordpressにセキュリティーホールが見つかるたびにhetemlからお知らせが来て、対応しないといけないのがめんどくさくなってきた。</li>
-<li>ブログしかやってないので、はてなにでも乗り換えようか。。。</li>
-<li>セキュリティーとか気にしなくていい、静的HTMLに乗り換えよう！</li>
-<li>せっかく、Pythonかけるようになったし、Sphinxだ！</li>
+<li><p>PHPを書かなくなっているうちにhetemlのPHPがバージョン7になった。</p></li>
+<li><p>Wordpressがしょっちゅう更新しろ！と言ってきて、鬱陶しくなった。</p></li>
+<li><p>Wordpressにセキュリティーホールが見つかるたびにhetemlからお知らせが来て、対応しないといけないのがめんどくさくなってきた。</p></li>
+<li><p>ブログしかやってないので、はてなにでも乗り換えようか。。。</p></li>
+<li><p>セキュリティーとか気にしなくていい、静的HTMLに乗り換えよう！</p></li>
+<li><p>せっかく、Pythonかけるようになったし、Sphinxだ！</p></li>
 </ul>
 </div>
 <div class="section" id="id3">
@@ -126,6 +123,9 @@
 <p>私のブログは記事に番号がついていてそれがURLでした。</p>
 <p><a class="reference external" href="http://kamekokamekame.net/archives/1207/">http://kamekokamekame.net/archives/1207/</a></p>
 <p>↑こんなの</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ curl http://kamekokamekame.net/archives/[1-9999]/ -o &quot;#1.html&quot;
+</pre></div>
+</div>
 <p>これで、 <code class="docutils literal notranslate"><span class="pre">[記事の番号].html</span></code> というファイル名で取得できます。</p>
 </div>
 <div class="section" id="htmlmarkdown">
@@ -139,31 +139,52 @@
 </div>
 <div class="section" id="id4">
 <h3>インストール<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ python3 -m venv env
+$ pip install Sphinx commonmark recommonmark
+</pre></div>
+</div>
 </div>
 <div class="section" id="id5">
 <h3>プロジェクト作成<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sphinx-quickstart
+</pre></div>
+</div>
 <p><code class="docutils literal notranslate"><span class="pre">conf.py</span></code> の修正</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">source_suffix</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;.rst&#39;</span><span class="p">,</span> <span class="s1">&#39;.md&#39;</span><span class="p">]</span>
+<span class="n">source_parsers</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;.md&#39;</span><span class="p">:</span> <span class="s1">&#39;recommonmark.parser.CommonMarkParser&#39;</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+</div>
 <p><code class="docutils literal notranslate"><span class="pre">index.rst</span></code> を作成</p>
 </div>
 <div class="section" id="id6">
 <h3>ビルド<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ make html
+</pre></div>
+</div>
 <p><code class="docutils literal notranslate"><span class="pre">build/html</span></code> フォルダの中身をサーバーにドーン！</p>
 </div>
 <div class="section" id="id7">
 <h3>まとめ<a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <ul class="simple">
-<li>実はあまりPythonをわかっていなくても, Markdownが書ければ、いいだけな気がする。</li>
-<li>嫌になったら、Githubでブログを営むこともできるのでMarkdownにしておくのはいいと思う。</li>
+<li><p>実はあまりPythonをわかっていなくても, Markdownが書ければ、いいだけな気がする。</p></li>
+<li><p>嫌になったら、Githubでブログを営むこともできるのでMarkdownにしておくのはいいと思う。</p></li>
 </ul>
 </div>
 <div class="section" id="rss">
 <h3>おまけ(rss)<a class="headerlink" href="#rss" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>feedのプラグインがなかったんで、feedを出力してくれるスクリプトも作りました。</p>
-<dl class="docutils">
-<dt>自分のMarkdownから、タイトルとか記事とか取るだけのスクリプト。（汚いですが、見たかったらどうぞ。</dt>
-<dd><a class="reference external" href="https://gist.github.com/okusama27/fc87c5f9ebd0b38590bcaa05a070736a">gist: create_rss.py</a> )</dd>
+<dl class="simple">
+<dt>自分のMarkdownから、タイトルとか記事とか取るだけのスクリプト。（汚いですが、見たかったらどうぞ。</dt><dd><p><a class="reference external" href="https://gist.github.com/okusama27/fc87c5f9ebd0b38590bcaa05a070736a">gist: create_rss.py</a> )</p>
+</dd>
 </dl>
 <p>結局、 <code class="docutils literal notranslate"><span class="pre">feedgenerator</span></code> というのを使うと各情報を渡すだけでfeedできます。どーん。</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">フィードを生成</span>
+<span class="o">--------------------------------------------------------------</span>
+<span class="k">return</span> <span class="n">feedgenerator</span><span class="o">.</span><span class="n">Rss201rev2Feed</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="n">title</span><span class="p">,</span><span class="n">link</span><span class="o">=</span><span class="n">link</span><span class="p">,</span><span class="n">feed_url</span><span class="o">=</span><span class="n">feed_url</span><span class="p">,</span><span class="n">description</span><span class="o">=</span><span class="n">description</span><span class="p">,</span><span class="n">language</span><span class="o">=</span><span class="s2">&quot;ja&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
 <p>これはもうちょっと綺麗にしたいです。</p>
 </div>
 </div>
@@ -207,7 +228,7 @@
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2018, kamekokamekame.net.
-      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.1 で生成しました。
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.1 で生成しました。
     </div>
   </body>
 </html>

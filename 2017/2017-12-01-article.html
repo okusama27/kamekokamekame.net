@@ -4,8 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@okusama27" />
     <meta property="og:site_name" content="鉄は熱いうちに打て">
@@ -22,8 +21,8 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
-    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/bizstyle.js"></script>
     <link rel="search" title="検索" href="../search.html" />
     <link rel="next" title="Effective Pythonで学ぶ" href="2017-12-02-article.html" />
@@ -50,11 +49,11 @@
         <div class="sphinxsidebarwrapper"><div id="toc" class="sidebarRow">
 <h3><a href="../index.html">Table Of Contents</a></h3>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../2019/2019-08-18-article.html">PyLadies Tokyo Meetup #44 夏休み! PEP自由研究発表会に参加</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2019/2019-08-11-article.html">PEPの説明</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2019/2019-08-10-article.html">Pythonの言語仕様の決め方</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2019/2019-06-24-article.html">磐梯山温泉ホテルでのPyLadiesスタッフ合宿に行ってきました</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2019/2019-05-18-article.html">DjangoCongress JP 2019に行ってきました</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2019/2019-04-13-article.html">PyLadies Tokyo Meetup #40 Python入学式</a></li>
 </ul>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../2019/index.html">2019</a></li>
@@ -72,13 +71,11 @@
   <p class="topless"><a href="2017-12-02-article.html"
                         title="次の章へ">Effective Pythonで学ぶ</a></p>
 <div id="searchbox" style="display: none" role="search">
-  <h3>クイック検索</h3>
+  <h3 id="searchlabel">クイック検索</h3>
     <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" />
       <input type="submit" value="検索" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
@@ -104,8 +101,8 @@
 知らない言語を学んでみようかなと <code class="docutils literal notranslate"><span class="pre">Land</span> <span class="pre">of</span> <span class="pre">Lisp</span></code> という本を読んでみました。しかし、作者の他言語への並々ならぬ気持ちがすごかったので、受け止めきれなかったです。<cite>Lisp</cite> に関してはわかりやすかったです。読むまでは <cite>Lisp</cite> はカッコばっかりでとっつきにくいと思ったけどいい本でした。</p>
 <p>そんな時、 <a class="reference external" href="https://cronote.connpass.com/">くろのて勉強会</a> に参加しました。</p>
 <ul class="simple">
-<li>他言語学ぶほどPython知っているの？</li>
-<li>おまえのPythonの知識は充分なの？</li>
+<li><p>他言語学ぶほどPython知っているの？</p></li>
+<li><p>おまえのPythonの知識は充分なの？</p></li>
 </ul>
 <p>と私の中のリトル亀子が問いかけてきます。</p>
 <p>反省して、Python関連のことを1ヶ月勉強することにしました。</p>
@@ -147,79 +144,79 @@ If the implementation is hard to explain, it<span class="s1">&#39;s a bad idea.<
 <div class="section" id="id4">
 <h2>ノーヒント翻訳<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <ul class="simple">
-<li>Beautiful is better than ugly.</li>
+<li><p>Beautiful is better than ugly.</p></li>
 </ul>
 <p>醜いより美しい方がいい。</p>
 <ul class="simple">
-<li>Explicit is better than implicit.</li>
+<li><p>Explicit is better than implicit.</p></li>
 </ul>
 <p>自明な方が暗黙よりよい。</p>
 <ul class="simple">
-<li>Simple is better than complex.</li>
+<li><p>Simple is better than complex.</p></li>
 </ul>
 <p>シンプルな方が複雑よりいい。</p>
 <ul class="simple">
-<li>Complex is better than complicated.</li>
+<li><p>Complex is better than complicated.</p></li>
 </ul>
 <p>複合はややこしいよりよい。（ちょっと意味がわからない）</p>
 <ul class="simple">
-<li>Flat is better than nested.</li>
+<li><p>Flat is better than nested.</p></li>
 </ul>
 <p>ネストするよりフラットがいい。</p>
 <ul class="simple">
-<li>Sparse is better than dense.</li>
+<li><p>Sparse is better than dense.</p></li>
 </ul>
 <p>希薄なほうが密よりいい</p>
 <ul class="simple">
-<li>Readability counts.</li>
+<li><p>Readability counts.</p></li>
 </ul>
 <p>可読性は数える？</p>
 <ul class="simple">
-<li>Special cases aren't special enough to break the rules.</li>
+<li><p>Special cases aren't special enough to break the rules.</p></li>
 </ul>
 <p>ルールを破らないといけないほど特別なケースはない。</p>
 <ul class="simple">
-<li>Although practicality beats purity.</li>
+<li><p>Although practicality beats purity.</p></li>
 </ul>
 <p>実用性は純粋さを凌いだりする</p>
 <ul class="simple">
-<li>Errors should never pass silently.</li>
+<li><p>Errors should never pass silently.</p></li>
 </ul>
 <p>エラーは静かに過ぎさらせてはいけない</p>
 <ul class="simple">
-<li>Unless explicitly silenced.</li>
+<li><p>Unless explicitly silenced.</p></li>
 </ul>
 <p>はっきりしていないことは無視してはいけない</p>
 <ul class="simple">
-<li>In the face of ambiguity, refuse the temptation to guess.</li>
+<li><p>In the face of ambiguity, refuse the temptation to guess.</p></li>
 </ul>
 <p>曖昧さに直面すると、推測したくなる</p>
 <ul class="simple">
-<li>There should be one-- and preferably only one --obvious way to do it.</li>
+<li><p>There should be one-- and preferably only one --obvious way to do it.</p></li>
 </ul>
 <p>何かをやる方法は一つであるべき、できればたったひとつがいい</p>
 <ul class="simple">
-<li>Although that way may not be obvious at first unless you're Dutch.</li>
+<li><p>Although that way may not be obvious at first unless you're Dutch.</p></li>
 </ul>
 <p>あなたがオランダ人じゃないなら、その方法は最初から自明ではない（突然のオランダ人？）</p>
 <ul class="simple">
-<li>Now is better than never.</li>
+<li><p>Now is better than never.</p></li>
 </ul>
 <p>やらないよりは今やるほうがいい</p>
 <ul class="simple">
-<li>Although never is often better than <em>right</em> now.</li>
+<li><p>Although never is often better than <em>right</em> now.</p></li>
 </ul>
 <p>しばしばやらないほうが今やるよりいい（右？今？なに？）</p>
 <ul class="simple">
-<li>If the implementation is hard to explain, it's a bad idea.</li>
+<li><p>If the implementation is hard to explain, it's a bad idea.</p></li>
 </ul>
 <p>実装を説明するのが難しい場合は、悪い実装をしている</p>
 <ul class="simple">
-<li>If the implementation is easy to explain, it may be a good idea.</li>
+<li><p>If the implementation is easy to explain, it may be a good idea.</p></li>
 </ul>
 <p>実装を説明するのが易しい場合、良い実装をしてる</p>
 <ul class="simple">
-<li>Namespaces are one honking great idea -- let's do more of those!</li>
+<li><p>Namespaces are one honking great idea -- let's do more of those!</p></li>
 </ul>
 <p>名前空間は一つの素晴らしいアイデアだ、それ以上のことをしよう。</p>
 </div>
@@ -228,7 +225,7 @@ If the implementation is hard to explain, it<span class="s1">&#39;s a bad idea.<
 <p>ぐぐったら石本敦夫さんのブログに回答らしきものが載っていたので答え合わせ</p>
 <p><a class="reference external" href="http://atsuoishimoto.hatenablog.com/entry/20100926/1285508015">The Zen of Python 解題 - 後編 - atsuoishimoto's diary</a></p>
 <ul class="simple">
-<li>Readability counts.</li>
+<li><p>Readability counts.</p></li>
 </ul>
 <p>「読みやすさが大切なのよ。」だそうです。
 countsってどう訳されているの？わからない。</p>
@@ -284,7 +281,7 @@ countsってどう訳されているの？わからない。</p>
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2018, kamekokamekame.net.
-      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.1 で生成しました。
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.1 で生成しました。
     </div>
   </body>
 </html>

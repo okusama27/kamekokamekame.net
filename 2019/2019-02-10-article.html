@@ -4,8 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@okusama27" />
     <meta property="og:site_name" content="鉄は熱いうちに打て">
@@ -22,11 +21,11 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
-    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/bizstyle.js"></script>
     <link rel="search" title="検索" href="../search.html" />
-    <link rel="next" title="PyLadies Tokyo Meetup #44 夏休み! PEP自由研究発表会に参加" href="2019-08-18-article.html" />
+    <link rel="next" title="PyLadies Tokyo Meetup #40 Python入学式" href="2019-04-13-article.html" />
     <link rel="prev" title="Webスクレイピング入門の予習 - Webのページを取得する" href="2019-02-05-article.html" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <!--[if lt IE 9]>
@@ -37,7 +36,7 @@
       <h3>ナビゲーション</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="2019-08-18-article.html" title="PyLadies Tokyo Meetup #44 夏休み! PEP自由研究発表会に参加"
+          <a href="2019-04-13-article.html" title="PyLadies Tokyo Meetup #40 Python入学式"
              accesskey="N">次へ</a></li>
         <li class="right" >
           <a href="2019-02-05-article.html" title="Webスクレイピング入門の予習 - Webのページを取得する"
@@ -50,11 +49,11 @@
         <div class="sphinxsidebarwrapper"><div id="toc" class="sidebarRow">
 <h3><a href="../index.html">Table Of Contents</a></h3>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="2019-08-18-article.html">PyLadies Tokyo Meetup #44 夏休み! PEP自由研究発表会に参加</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2019-08-11-article.html">PEPの説明</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2019-08-10-article.html">Pythonの言語仕様の決め方</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2019-06-24-article.html">磐梯山温泉ホテルでのPyLadiesスタッフ合宿に行ってきました</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2019-05-18-article.html">DjangoCongress JP 2019に行ってきました</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2019-04-13-article.html">PyLadies Tokyo Meetup #40 Python入学式</a></li>
 </ul>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">2019</a></li>
@@ -69,16 +68,14 @@
   <p class="topless"><a href="2019-02-05-article.html"
                         title="前の章へ">Webスクレイピング入門の予習 - Webのページを取得する</a></p>
   <h4>次のトピックへ</h4>
-  <p class="topless"><a href="2019-08-18-article.html"
-                        title="次の章へ">PyLadies Tokyo Meetup #44 夏休み! PEP自由研究発表会に参加</a></p>
+  <p class="topless"><a href="2019-04-13-article.html"
+                        title="次の章へ">PyLadies Tokyo Meetup #40 Python入学式</a></p>
 <div id="searchbox" style="display: none" role="search">
-  <h3>クイック検索</h3>
+  <h3 id="searchlabel">クイック検索</h3>
     <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" />
       <input type="submit" value="検索" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
@@ -103,8 +100,8 @@
 まぁ、やりたいことは調べながら実装はできるくらいですが、せっかくなので、勉強会駆動学習ということで、なるべく予習していこうと思います。</p>
 <p>使うのは以下のライブラリ。</p>
 <ul class="simple">
-<li><a class="reference external" href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">Beautiful Soup Documentation — Beautiful Soup 4.4.0 documentation</a></li>
-<li><a class="reference external" href="http://docs.python-requests.org/en/master/">Requests: HTTP for Humans™ — Requests 2.21.0 documentation</a></li>
+<li><p><a class="reference external" href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">Beautiful Soup Documentation — Beautiful Soup 4.4.0 documentation</a></p></li>
+<li><p><a class="reference external" href="http://docs.python-requests.org/en/master/">Requests: HTTP for Humans™ — Requests 2.21.0 documentation</a></p></li>
 </ul>
 <p>時間が余ったときに備えよう</p>
 </div>
@@ -112,17 +109,17 @@
 <h2>データの取得方法<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>わざわざプログラムを書かなくてもWebページのデータは取得できます。</p>
 <ul class="simple">
-<li>ブラウザを利用して「ソースを表示」-&gt;「保存」</li>
-<li>macOS, Linuxなどに含まれるwgetコマンドの利用 <code class="docutils literal notranslate"><span class="pre">wget</span> <span class="pre">URL</span></code> （例. wget <a class="reference external" href="https://kamekokamekame.net">https://kamekokamekame.net</a>）</li>
+<li><p>ブラウザを利用して「ソースを表示」-&gt;「保存」</p></li>
+<li><p>macOS, Linuxなどに含まれるwgetコマンドの利用 <code class="docutils literal notranslate"><span class="pre">wget</span> <span class="pre">URL</span></code> （例. wget <a class="reference external" href="https://kamekokamekame.net">https://kamekokamekame.net</a>）</p></li>
 </ul>
 <p>Python書けるならやらないかな。ちょっと取得するときはwgetでいいかな。うーん。好み？</p>
 </div>
 <div class="section" id="id3">
 <h2>データの種類<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <ul class="simple">
-<li>Webページのソース</li>
-<li>XML(RSS)</li>
-<li>APIから</li>
+<li><p>Webページのソース</p></li>
+<li><p>XML(RSS)</p></li>
+<li><p>APIから</p></li>
 </ul>
 </div>
 <div class="section" id="rss">
@@ -184,7 +181,7 @@
       <h3>ナビゲーション</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="2019-08-18-article.html" title="PyLadies Tokyo Meetup #44 夏休み! PEP自由研究発表会に参加"
+          <a href="2019-04-13-article.html" title="PyLadies Tokyo Meetup #40 Python入学式"
              >次へ</a></li>
         <li class="right" >
           <a href="2019-02-05-article.html" title="Webスクレイピング入門の予習 - Webのページを取得する"
@@ -195,7 +192,7 @@
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2018, kamekokamekame.net.
-      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.1 で生成しました。
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.1 で生成しました。
     </div>
   </body>
 </html>

@@ -4,8 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@okusama27" />
     <meta property="og:site_name" content="鉄は熱いうちに打て">
@@ -21,8 +20,8 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
-    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/bizstyle.js"></script>
     <link rel="search" title="検索" href="../search.html" />
     <link rel="next" title="PyLadies Tokyo Meetup #37 Java女子部共催 Git・GitHub入門" href="2019-01-26-article.html" />
@@ -49,11 +48,11 @@
         <div class="sphinxsidebarwrapper"><div id="toc" class="sidebarRow">
 <h3><a href="../index.html">Table Of Contents</a></h3>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="2019-08-18-article.html">PyLadies Tokyo Meetup #44 夏休み! PEP自由研究発表会に参加</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2019-08-11-article.html">PEPの説明</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2019-08-10-article.html">Pythonの言語仕様の決め方</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2019-06-24-article.html">磐梯山温泉ホテルでのPyLadiesスタッフ合宿に行ってきました</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2019-05-18-article.html">DjangoCongress JP 2019に行ってきました</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2019-04-13-article.html">PyLadies Tokyo Meetup #40 Python入学式</a></li>
 </ul>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">2019</a></li>
@@ -71,13 +70,11 @@
   <p class="topless"><a href="2019-01-26-article.html"
                         title="次の章へ">PyLadies Tokyo Meetup #37 Java女子部共催 Git・GitHub入門</a></p>
 <div id="searchbox" style="display: none" role="search">
-  <h3>クイック検索</h3>
+  <h3 id="searchlabel">クイック検索</h3>
     <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" />
       <input type="submit" value="検索" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
@@ -99,12 +96,12 @@
 <p>あけましておめでとうございます。</p>
 <p>自堕落な6日間を過ごし続けてやっとこさキーボードに触れました。</p>
 <ul class="simple">
-<li>1日目、二日酔い、スキー準備</li>
-<li>2日目、スキー</li>
-<li>3日目、スキー</li>
-<li>4日目、6キロ歩いて初詣、旦那一族と新年会、予約していた年末のお笑い番組鑑賞</li>
-<li>5日目、二日酔い、箱根駅伝、録画していた紅白歌合戦鑑賞、ゲーム</li>
-<li>6日目、箱根駅伝、ゲーム</li>
+<li><p>1日目、二日酔い、スキー準備</p></li>
+<li><p>2日目、スキー</p></li>
+<li><p>3日目、スキー</p></li>
+<li><p>4日目、6キロ歩いて初詣、旦那一族と新年会、予約していた年末のお笑い番組鑑賞</p></li>
+<li><p>5日目、二日酔い、箱根駅伝、録画していた紅白歌合戦鑑賞、ゲーム</p></li>
+<li><p>6日目、箱根駅伝、ゲーム</p></li>
 </ul>
 <p>今年は酒量を減らそうと思っていたのですが、すでに二日酔いが2回。だるかったくらいの二日酔いだったのでセーフかな。</p>
 <p>箱根駅伝が好きすぎて2日間で20時間位テレビみてしまいました。紅白もチラ見のつもりが全部見てしまった。</p>
@@ -139,17 +136,17 @@
 <p><strong>健康第一</strong></p>
 <p>健康に良いものを食べて、健康的な生活します。心も体も健全でありたい。</p>
 <ul class="simple">
-<li>酒量を減らす</li>
-<li>体重を減らす</li>
-<li>5級クライマーになる</li>
-<li>英語をたくさん読む</li>
-<li>腹筋バキバキになる</li>
-<li>投資実践</li>
-<li>投資の勉強</li>
-<li>英会話も続ける</li>
-<li>プライベートでも実装する</li>
-<li>コミュニティーの翻訳イベントを6回やる</li>
-<li>月1冊は本を読む</li>
+<li><p>酒量を減らす</p></li>
+<li><p>体重を減らす</p></li>
+<li><p>5級クライマーになる</p></li>
+<li><p>英語をたくさん読む</p></li>
+<li><p>腹筋バキバキになる</p></li>
+<li><p>投資実践</p></li>
+<li><p>投資の勉強</p></li>
+<li><p>英会話も続ける</p></li>
+<li><p>プライベートでも実装する</p></li>
+<li><p>コミュニティーの翻訳イベントを6回やる</p></li>
+<li><p>月1冊は本を読む</p></li>
 </ul>
 <p>長くてもあと20年位で完全体の人間としての寿命は終わるので、20年やっていける、その後も死ぬまでやることを考えています。</p>
 <p>死んだように生きるのは辛いので、やりたいことをやって楽しく暮らしたい。</p>
@@ -195,7 +192,7 @@
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2018, kamekokamekame.net.
-      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.1 で生成しました。
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.1 で生成しました。
     </div>
   </body>
 </html>

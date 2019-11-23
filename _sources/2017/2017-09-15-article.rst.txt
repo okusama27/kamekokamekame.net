@@ -1,8 +1,8 @@
 ..
    :date: 2017-09-15
    :title: PyCon JP 2017 に参加しました。
-   :category: PyCon JP
-   :tags: PyCon JP
+   :category: PyConJP
+   :tags: PyConJP
 
 ==========================================================
 PyCon JP 2017 に参加しました。

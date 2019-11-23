@@ -1,11 +1,11 @@
 ..
    :date: 2016-06-28
-   :title: PyConJP 2016 Talkと私
-   :category: PyCon JP
-   :tags: PyCon JP
+   :title: PyCon JP 2016 Talkと私
+   :category: PyConJP
+   :tags: PyConJP
 
 ==========================================================
-PyConJP 2016 Talkと私
+PyCon JP 2016 Talkと私
 ==========================================================
 
 2016-06-28
