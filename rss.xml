@@ -2,14 +2,17 @@
 <rss version="2.0"><channel><title>鉄は熱いうちに打て</title><link>https://kamekokamekame.net</link><description>Strike while the iron is hot</description><language>ja</language><copyright>2018, kamekokamekame.net</copyright><lastBuildDate>Thu, 21 Nov 2019 00:00:00 -0000</lastBuildDate><item><title>トップページ</title><link>https://kamekokamekame.net/index.html</link><description>&lt;div class=section id=id1&gt;
 
 &lt;p&gt;2019-11-21&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://fintech-engineer.connpass.com/event/151320/"&gt;【好評につき増枠！】フィンテックエンジニア養成勉強会#3（共催:東京証券取引所）&lt;/a&gt; が東京証券取引所での開催につられて参加しました。
-空港みたいに入り口で荷物チェックされました。でも、ペットボトルの中身はチェックされなかった。&lt;/p&gt;
+&lt;p&gt;金融エンジニア要請コミュニティのイベント &lt;a class="reference external" href="https://fintech-engineer.connpass.com/event/151320/"&gt;【好評につき増枠！】フィンテックエンジニア養成勉強会#3（共催:東京証券取引所）&lt;/a&gt; に行ってきました。
+東京証券取引所での開催につられての参加でした。&lt;/p&gt;
+&lt;p&gt;空港みたいに入り口で荷物チェックされました。でも、ペットボトルの中身はチェックされなかった。&lt;/p&gt;
 &lt;p&gt;本の勉強会なのかな？と思ったら、パネルディスカッションでした。&lt;/p&gt;
 &lt;p&gt;最初は東証の中の人がご挨拶。東証の仕事の紹介。&lt;/p&gt;
 &lt;p&gt;その後、パネルディスカッションがビックデータ、金融クラウドの2テーマで行われました。&lt;/p&gt;
 &lt;p&gt;フィンテックエンジニアがどんな感じで仕事しているのか？みたいな話を期待していたのですが、ビジネスよりの話が多かったような感じでした。
 データエンジニアは私の予想通りでデータをクレンジングしたり、前処理したりみたいな感じのようです。
 会社の４０％くらいはデータエンジニアだそうで、もっとサイエンティストが多くてデータ成形部分は外注しているのかと思っていたので意外でした。&lt;/p&gt;
+&lt;p&gt;当たり前ですが、東証の職員の方は株式売買できないのですね。
+フィンテック系の会社の人はプライベートでは取引しまくって儲かっているのかと思っていましたが、法律的にはOKでもお客様に信頼されるために取引は社の規則で禁止しているそうです。&lt;/p&gt;
 &lt;p&gt;後半はマイクロソフトとマネーフォワード、みずほファイナンシャル、東京三菱UFJ銀行のかたのディスカッションでした。
 クラウドと仕事というテーマかと思ったら裏話みたいなのが多かったです。&lt;/p&gt;
 &lt;p&gt;たまには違う感じの勉強会に出るのも、普段触れ合わない界隈にもエンジニアの人がいっぱいいるなと刺激になってよかったです。&lt;/p&gt;
@@ -22,14 +25,17 @@
 </description><pubDate>Thu, 21 Nov 2019 00:00:00 -0000</pubDate><guid>https://kamekokamekame.net/index.html</guid></item><item><title>フィンテックエンジニア養成勉強会#3</title><link>https://kamekokamekame.net/2019/2019-11-21-article.html</link><description>&lt;div class=section id=id1&gt;
 
 &lt;p&gt;2019-11-21&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://fintech-engineer.connpass.com/event/151320/"&gt;【好評につき増枠！】フィンテックエンジニア養成勉強会#3（共催:東京証券取引所）&lt;/a&gt; が東京証券取引所での開催につられて参加しました。
-空港みたいに入り口で荷物チェックされました。でも、ペットボトルの中身はチェックされなかった。&lt;/p&gt;
+&lt;p&gt;金融エンジニア要請コミュニティのイベント &lt;a class="reference external" href="https://fintech-engineer.connpass.com/event/151320/"&gt;【好評につき増枠！】フィンテックエンジニア養成勉強会#3（共催:東京証券取引所）&lt;/a&gt; に行ってきました。
+東京証券取引所での開催につられての参加でした。&lt;/p&gt;
+&lt;p&gt;空港みたいに入り口で荷物チェックされました。でも、ペットボトルの中身はチェックされなかった。&lt;/p&gt;
 &lt;p&gt;本の勉強会なのかな？と思ったら、パネルディスカッションでした。&lt;/p&gt;
 &lt;p&gt;最初は東証の中の人がご挨拶。東証の仕事の紹介。&lt;/p&gt;
 &lt;p&gt;その後、パネルディスカッションがビックデータ、金融クラウドの2テーマで行われました。&lt;/p&gt;
 &lt;p&gt;フィンテックエンジニアがどんな感じで仕事しているのか？みたいな話を期待していたのですが、ビジネスよりの話が多かったような感じでした。
 データエンジニアは私の予想通りでデータをクレンジングしたり、前処理したりみたいな感じのようです。
 会社の４０％くらいはデータエンジニアだそうで、もっとサイエンティストが多くてデータ成形部分は外注しているのかと思っていたので意外でした。&lt;/p&gt;
+&lt;p&gt;当たり前ですが、東証の職員の方は株式売買できないのですね。
+フィンテック系の会社の人はプライベートでは取引しまくって儲かっているのかと思っていましたが、法律的にはOKでもお客様に信頼されるために取引は社の規則で禁止しているそうです。&lt;/p&gt;
 &lt;p&gt;後半はマイクロソフトとマネーフォワード、みずほファイナンシャル、東京三菱UFJ銀行のかたのディスカッションでした。
 クラウドと仕事というテーマかと思ったら裏話みたいなのが多かったです。&lt;/p&gt;
 &lt;p&gt;たまには違う感じの勉強会に出るのも、普段触れ合わない界隈にもエンジニアの人がいっぱいいるなと刺激になってよかったです。&lt;/p&gt;
