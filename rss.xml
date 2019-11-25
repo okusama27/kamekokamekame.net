@@ -1,5 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>鉄は熱いうちに打て</title><link>https://kamekokamekame.net</link><description>Strike while the iron is hot</description><language>ja</language><copyright>2018, kamekokamekame.net</copyright><lastBuildDate>Thu, 21 Nov 2019 00:00:00 -0000</lastBuildDate><item><title>トップページ</title><link>https://kamekokamekame.net/index.html</link><description>&lt;div class=section id=id1&gt;
+<rss version="2.0"><channel><title>鉄は熱いうちに打て</title><link>https://kamekokamekame.net</link><description>Strike while the iron is hot</description><language>ja</language><copyright>2018, kamekokamekame.net</copyright><lastBuildDate>Mon, 25 Nov 2019 00:00:00 -0000</lastBuildDate><item><title>トップページ</title><link>https://kamekokamekame.net/index.html</link><description>&lt;div class=section id=sphinxcon-jp-2019&gt;
+
+&lt;p&gt;2019-11-25&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://sphinxjp.connpass.com/event/154759/"&gt;SphinxCon JP 2019&lt;/a&gt; に行ってきました。&lt;/p&gt;
+&lt;p&gt;今日は年に一回の世界最大のShpinxの祭典、Shpinx Con JP 2019に行ってきました。&lt;/p&gt;
+&lt;p&gt;以下、私のトークを聞いた感想です。トークについてはTwitterで &lt;code class="docutils literal notranslate"&gt;&lt;span class=pre&gt;#sphinxjp&lt;/span&gt;&lt;/code&gt; というタグにぶら下がっていると思います。&lt;/p&gt;
+&lt;div class=section id=id2&gt;
+&lt;h2&gt;オープニングトーク&lt;/h2&gt;
+&lt;p&gt;毎月、市ヶ谷でハッカソンをしている。
+翻訳か、Sphinx関係のことをやればいいハッカソン。皆来てね！（と言ってたような気がする）&lt;/p&gt;
+&lt;p&gt;定期総会の紹介。忘年会という名の総会があるよ。12/3にあるそうです。（別の忘年会で行けない。。。）&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=section id=scrapbox-shimizukawa-15&gt;
+&lt;h2&gt;Scrapboxをはじめよう (@shimizukawa, 15分)&lt;/h2&gt;
+&lt;p&gt;最初は今年のSphinxJPユーザー会会長のshimizukawaさんの発表。&lt;/p&gt;
+&lt;p&gt;なぜか、Scrapboxは便利だよという発表でした。
+「Sphinxと違うところは～」みたいな感じで話が進みました。&lt;/p&gt;
+&lt;p&gt;Scrapbox便利ですね。使いだしたら二度と引き返せない気がして使っていないです。&lt;/p&gt;
+&lt;p&gt;最後にScrapboxからrstに引っ越せるツールを作った話が出た！出たと思ったら時間になって終わった！&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=section id=sphinxpdf-anzawatta-10&gt;
+&lt;h2&gt;Sphinxで縦書きPDFを作成したときの辛み報告 (@anzawatta, 10分)&lt;/h2&gt;
+&lt;p&gt;PDFで縦書きしようという無理ゲーな話。&lt;/p&gt;
+&lt;p&gt;部屋が汚いので同人誌を作ることにしたらしい（why?）&lt;/p&gt;
+&lt;p&gt;Sphinxは、コマンド1個でLaTexを作れる！（すごい！）&lt;/p&gt;
+&lt;p&gt;..:&lt;/p&gt;
+&lt;div class="highlight-default notranslate"&gt;&lt;div class=highlight&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$make latexpdf
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;日本語組版という決まりがあるらしい。JIS X 4051にあるらしい。&lt;/p&gt;
+&lt;p&gt;困ったことは、Sphinxはuplatexに対応していないらしい。（現在は対応しているらしい。by 小宮さん）&lt;/p&gt;
+&lt;p&gt;秘伝のたれを作って縦書きの本ができたらしい。すごい。尊敬が半端ない！！&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=section id=jupytersphinx-driller-20&gt;
+&lt;h2&gt;JupyterとSphinxで本書いた (driller, 20分)&lt;/h2&gt;
+&lt;p&gt;木星から帰ってきた話をされました。&lt;/p&gt;
+&lt;p&gt;Jupyterで作ったのを組版した話です。一元化してJupyterで本を書いたらしい。転記ミスが減ったらしい。&lt;/p&gt;
+&lt;p&gt;後ろはTipsでした。（聞き入ってしまってメモするの忘れた。githubに上がっているそうです。）&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=section id=getfem-mayavi2-tkoyama010-10&gt;
+&lt;h2&gt;GetFEM++とmayavi2の翻訳リポジトリを作成してみた (tkoyama010, 10分)&lt;/h2&gt;
+&lt;p&gt;Sphinxのドキュメントを翻訳している仕組みを自分のやりたいサービスのドキュメントの翻訳に使う話。&lt;/p&gt;
+&lt;p&gt;めっちゃ便利そう！私もやりたい！！&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=section id=why-we-need-to-learn-inside-sphinx-tk0miya-30&gt;
+&lt;h2&gt;Why we need to learn "Inside Sphinx"  (tk0miya, 30分)&lt;/h2&gt;
+&lt;p&gt;タイトルが変わったらしい。&lt;/p&gt;
+&lt;p&gt;世界で一番アクティブなコミッター。倒れるとSphinxが止まる。引っ越しでも止まった。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=section id=id3&gt;
+&lt;h2&gt;まとめ&lt;/h2&gt;
+&lt;p&gt;楽しい会をスタッフの皆様、ありがとうございました。Nonスタッフで参加する会、楽しい！&lt;/p&gt;
+&lt;p&gt;Sphinxもまだまだやることがあるなという気がしました。
+私もrstで書いてブログ形式にいい感じに出すやつやっていきたいです。全然やってないけど。&lt;/p&gt;
+&lt;p&gt;来年はCfP出せるように頑張ります。&lt;/p&gt;
+&lt;div class="toctree-wrapper compound"&gt;
+&lt;/div&gt;
+&lt;div class="toctree-wrapper compound"&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description><pubDate>Mon, 25 Nov 2019 00:00:00 -0000</pubDate><guid>https://kamekokamekame.net/index.html</guid></item><item><title>SphinxCon JP 2019 に行ってきました。</title><link>https://kamekokamekame.net/2019/2019-11-25-article.html</link><description>&lt;div class=section id=sphinxcon-jp-2019&gt;
+
+&lt;p&gt;2019-11-25&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://sphinxjp.connpass.com/event/154759/"&gt;SphinxCon JP 2019&lt;/a&gt; に行ってきました。&lt;/p&gt;
+&lt;p&gt;今日は年に一回の世界最大のShpinxの祭典、Shpinx Con JP 2019に行ってきました。&lt;/p&gt;
+&lt;p&gt;以下、私のトークを聞いた感想です。トークについてはTwitterで &lt;code class="docutils literal notranslate"&gt;&lt;span class=pre&gt;#sphinxjp&lt;/span&gt;&lt;/code&gt; というタグにぶら下がっていると思います。&lt;/p&gt;
+&lt;div class=section id=id2&gt;
+&lt;h2&gt;オープニングトーク&lt;/h2&gt;
+&lt;p&gt;毎月、市ヶ谷でハッカソンをしている。
+翻訳か、Sphinx関係のことをやればいいハッカソン。皆来てね！（と言ってたような気がする）&lt;/p&gt;
+&lt;p&gt;定期総会の紹介。忘年会という名の総会があるよ。12/3にあるそうです。（別の忘年会で行けない。。。）&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=section id=scrapbox-shimizukawa-15&gt;
+&lt;h2&gt;Scrapboxをはじめよう (@shimizukawa, 15分)&lt;/h2&gt;
+&lt;p&gt;最初は今年のSphinxJPユーザー会会長のshimizukawaさんの発表。&lt;/p&gt;
+&lt;p&gt;なぜか、Scrapboxは便利だよという発表でした。
+「Sphinxと違うところは～」みたいな感じで話が進みました。&lt;/p&gt;
+&lt;p&gt;Scrapbox便利ですね。使いだしたら二度と引き返せない気がして使っていないです。&lt;/p&gt;
+&lt;p&gt;最後にScrapboxからrstに引っ越せるツールを作った話が出た！出たと思ったら時間になって終わった！&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=section id=sphinxpdf-anzawatta-10&gt;
+&lt;h2&gt;Sphinxで縦書きPDFを作成したときの辛み報告 (@anzawatta, 10分)&lt;/h2&gt;
+&lt;p&gt;PDFで縦書きしようという無理ゲーな話。&lt;/p&gt;
+&lt;p&gt;部屋が汚いので同人誌を作ることにしたらしい（why?）&lt;/p&gt;
+&lt;p&gt;Sphinxは、コマンド1個でLaTexを作れる！（すごい！）&lt;/p&gt;
+&lt;p&gt;..:&lt;/p&gt;
+&lt;div class="highlight-default notranslate"&gt;&lt;div class=highlight&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$make latexpdf
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;日本語組版という決まりがあるらしい。JIS X 4051にあるらしい。&lt;/p&gt;
+&lt;p&gt;困ったことは、Sphinxはuplatexに対応していないらしい。（現在は対応しているらしい。by 小宮さん）&lt;/p&gt;
+&lt;p&gt;秘伝のたれを作って縦書きの本ができたらしい。すごい。尊敬が半端ない！！&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=section id=jupytersphinx-driller-20&gt;
+&lt;h2&gt;JupyterとSphinxで本書いた (driller, 20分)&lt;/h2&gt;
+&lt;p&gt;木星から帰ってきた話をされました。&lt;/p&gt;
+&lt;p&gt;Jupyterで作ったのを組版した話です。一元化してJupyterで本を書いたらしい。転記ミスが減ったらしい。&lt;/p&gt;
+&lt;p&gt;後ろはTipsでした。（聞き入ってしまってメモするの忘れた。githubに上がっているそうです。）&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=section id=getfem-mayavi2-tkoyama010-10&gt;
+&lt;h2&gt;GetFEM++とmayavi2の翻訳リポジトリを作成してみた (tkoyama010, 10分)&lt;/h2&gt;
+&lt;p&gt;Sphinxのドキュメントを翻訳している仕組みを自分のやりたいサービスのドキュメントの翻訳に使う話。&lt;/p&gt;
+&lt;p&gt;めっちゃ便利そう！私もやりたい！！&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=section id=why-we-need-to-learn-inside-sphinx-tk0miya-30&gt;
+&lt;h2&gt;Why we need to learn "Inside Sphinx"  (tk0miya, 30分)&lt;/h2&gt;
+&lt;p&gt;タイトルが変わったらしい。&lt;/p&gt;
+&lt;p&gt;世界で一番アクティブなコミッター。倒れるとSphinxが止まる。引っ越しでも止まった。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=section id=id3&gt;
+&lt;h2&gt;まとめ&lt;/h2&gt;
+&lt;p&gt;楽しい会をスタッフの皆様、ありがとうございました。Nonスタッフで参加する会、楽しい！&lt;/p&gt;
+&lt;p&gt;Sphinxもまだまだやることがあるなという気がしました。
+私もrstで書いてブログ形式にいい感じに出すやつやっていきたいです。全然やってないけど。&lt;/p&gt;
+&lt;p&gt;来年はCfP出せるように頑張ります。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description><pubDate>Mon, 25 Nov 2019 00:00:00 -0000</pubDate><guid>https://kamekokamekame.net/2019/2019-11-25-article.html</guid></item><item><title>トップページ</title><link>https://kamekokamekame.net/index.html</link><description>&lt;div class=section id=id1&gt;
 
 &lt;p&gt;2019-11-21&lt;/p&gt;
 &lt;p&gt;金融エンジニア要請コミュニティのイベント &lt;a class="reference external" href="https://fintech-engineer.connpass.com/event/151320/"&gt;【好評につき増枠！】フィンテックエンジニア養成勉強会#3（共催:東京証券取引所）&lt;/a&gt; に行ってきました。
