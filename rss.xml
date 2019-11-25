@@ -24,10 +24,6 @@
 &lt;p&gt;PDFで縦書きしようという無理ゲーな話。&lt;/p&gt;
 &lt;p&gt;部屋が汚いので同人誌を作ることにしたらしい（why?）&lt;/p&gt;
 &lt;p&gt;Sphinxは、コマンド1個でLaTexを作れる！（すごい！）&lt;/p&gt;
-&lt;p&gt;..:&lt;/p&gt;
-&lt;div class="highlight-default notranslate"&gt;&lt;div class=highlight&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$make latexpdf
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
 &lt;p&gt;日本語組版という決まりがあるらしい。JIS X 4051にあるらしい。&lt;/p&gt;
 &lt;p&gt;困ったことは、Sphinxはuplatexに対応していないらしい。（現在は対応しているらしい。by 小宮さん）&lt;/p&gt;
 &lt;p&gt;秘伝のたれを作って縦書きの本ができたらしい。すごい。尊敬が半端ない！！&lt;/p&gt;
@@ -85,10 +81,6 @@
 &lt;p&gt;PDFで縦書きしようという無理ゲーな話。&lt;/p&gt;
 &lt;p&gt;部屋が汚いので同人誌を作ることにしたらしい（why?）&lt;/p&gt;
 &lt;p&gt;Sphinxは、コマンド1個でLaTexを作れる！（すごい！）&lt;/p&gt;
-&lt;p&gt;..:&lt;/p&gt;
-&lt;div class="highlight-default notranslate"&gt;&lt;div class=highlight&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$make latexpdf
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
 &lt;p&gt;日本語組版という決まりがあるらしい。JIS X 4051にあるらしい。&lt;/p&gt;
 &lt;p&gt;困ったことは、Sphinxはuplatexに対応していないらしい。（現在は対応しているらしい。by 小宮さん）&lt;/p&gt;
 &lt;p&gt;秘伝のたれを作って縦書きの本ができたらしい。すごい。尊敬が半端ない！！&lt;/p&gt;
