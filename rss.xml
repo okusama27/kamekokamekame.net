@@ -67,67 +67,7 @@
 感想ブログは合宿の場所を終わるまでは内緒にしたほうが良いっぽいので最終日に上げる予定です。&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</description><pubDate>Thu, 28 Nov 2019 00:00:00 -0000</pubDate><guid>https://kamekokamekame.net/2019/2019-11-28-article.html</guid></item><item><title>トップページ</title><link>https://kamekokamekame.net/index.html</link><description>&lt;div class=section id=sphinxcon-jp-2019&gt;
-
-&lt;p&gt;2019-11-25&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://sphinxjp.connpass.com/event/154759/"&gt;SphinxCon JP 2019&lt;/a&gt; に行ってきました。&lt;/p&gt;
-&lt;p&gt;今日は年に一回の世界最大のShpinxの祭典、Shpinx Con JP 2019に行ってきました。&lt;/p&gt;
-&lt;p&gt;以下、私のトークを聞いた感想です。トークについてはTwitterで &lt;code class="docutils literal notranslate"&gt;&lt;span class=pre&gt;#sphinxjp&lt;/span&gt;&lt;/code&gt; というタグにぶら下がっていると思います。&lt;/p&gt;
-&lt;div class=section id=id2&gt;
-&lt;h2&gt;オープニングトーク&lt;/h2&gt;
-&lt;p&gt;毎月、市ヶ谷でハッカソンをしている。
-翻訳か、Sphinx関係のことをやればいいハッカソン。皆来てね！（と言ってたような気がする）&lt;/p&gt;
-&lt;p&gt;定期総会の紹介。忘年会という名の総会があるよ。12/3にあるそうです。（別の忘年会で行けない。。。）&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=section id=scrapbox-shimizukawa-15&gt;
-&lt;h2&gt;Scrapboxをはじめよう (@shimizukawa, 15分)&lt;/h2&gt;
-&lt;p&gt;最初は今年のSphinxJPユーザー会会長のshimizukawaさんの発表。&lt;/p&gt;
-&lt;p&gt;なぜか、Scrapboxは便利だよという発表でした。
-「Sphinxと違うところは～」みたいな感じで話が進みました。&lt;/p&gt;
-&lt;p&gt;Scrapbox便利ですね。使いだしたら二度と引き返せない気がして使っていないです。&lt;/p&gt;
-&lt;p&gt;最後にScrapboxからrstに引っ越せるツールを作った話が出た！出たと思ったら時間になって終わった！&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=section id=sphinxpdf-anzawatta-10&gt;
-&lt;h2&gt;Sphinxで縦書きPDFを作成したときの辛み報告 (@anzawatta, 10分)&lt;/h2&gt;
-&lt;p&gt;PDFで縦書きしようという無理ゲーな話。&lt;/p&gt;
-&lt;p&gt;部屋が汚いので同人誌を作ることにしたらしい（why?）&lt;/p&gt;
-&lt;p&gt;Sphinxは、コマンド1個でLaTexを作れる！（すごい！）&lt;/p&gt;
-&lt;div class="highlight-default notranslate"&gt;&lt;div class=highlight&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$make latexpdf
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;日本語組版という決まりがあるらしい。JIS X 4051にあるらしい。&lt;/p&gt;
-&lt;p&gt;困ったことは、Sphinxはuplatexに対応していないらしい。（現在は対応しているらしい。by 小宮さん）&lt;/p&gt;
-&lt;p&gt;秘伝のたれを作って縦書きの本ができたらしい。すごい。尊敬が半端ない！！&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=section id=jupytersphinx-driller-20&gt;
-&lt;h2&gt;JupyterとSphinxで本書いた (driller, 20分)&lt;/h2&gt;
-&lt;p&gt;木星から帰ってきた話をされました。&lt;/p&gt;
-&lt;p&gt;Jupyterで作ったのを組版した話です。一元化してJupyterで本を書いたらしい。転記ミスが減ったらしい。&lt;/p&gt;
-&lt;p&gt;後ろはTipsでした。（聞き入ってしまってメモするの忘れた。githubに上がっているそうです。）&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=section id=getfem-mayavi2-tkoyama010-10&gt;
-&lt;h2&gt;GetFEM++とmayavi2の翻訳リポジトリを作成してみた (tkoyama010, 10分)&lt;/h2&gt;
-&lt;p&gt;Sphinxのドキュメントを翻訳している仕組みを自分のやりたいサービスのドキュメントの翻訳に使う話。&lt;/p&gt;
-&lt;p&gt;めっちゃ便利そう！私もやりたい！！&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=section id=why-we-need-to-learn-inside-sphinx-tk0miya-30&gt;
-&lt;h2&gt;Why we need to learn "Inside Sphinx"  (tk0miya, 30分)&lt;/h2&gt;
-&lt;p&gt;タイトルが変わったらしい。&lt;/p&gt;
-&lt;p&gt;世界で一番アクティブなコミッター。倒れるとSphinxが止まる。引っ越しでも止まった。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=section id=id3&gt;
-&lt;h2&gt;まとめ&lt;/h2&gt;
-&lt;p&gt;楽しい会をスタッフの皆様、ありがとうございました。Nonスタッフで参加する会、楽しい！&lt;/p&gt;
-&lt;p&gt;Sphinxもまだまだやることがあるなという気がしました。
-私もrstで書いてブログ形式にいい感じに出すやつやっていきたいです。全然やってないけど。&lt;/p&gt;
-&lt;p&gt;来年はCfP出せるように頑張ります。&lt;/p&gt;
-&lt;div class="toctree-wrapper compound"&gt;
-&lt;/div&gt;
-&lt;div class="toctree-wrapper compound"&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</description><pubDate>Mon, 25 Nov 2019 00:00:00 -0000</pubDate><guid>https://kamekokamekame.net/index.html</guid></item><item><title>SphinxCon JP 2019 に行ってきました。</title><link>https://kamekokamekame.net/2019/2019-11-25-article.html</link><description>&lt;div class=section id=sphinxcon-jp-2019&gt;
+</description><pubDate>Thu, 28 Nov 2019 00:00:00 -0000</pubDate><guid>https://kamekokamekame.net/2019/2019-11-28-article.html</guid></item><item><title>SphinxCon JP 2019 に行ってきました。</title><link>https://kamekokamekame.net/2019/2019-11-25-article.html</link><description>&lt;div class=section id=sphinxcon-jp-2019&gt;
 
 &lt;p&gt;2019-11-25&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="https://sphinxjp.connpass.com/event/154759/"&gt;SphinxCon JP 2019&lt;/a&gt; に行ってきました。&lt;/p&gt;
@@ -183,30 +123,7 @@
 &lt;p&gt;来年はCfP出せるように頑張ります。&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</description><pubDate>Mon, 25 Nov 2019 00:00:00 -0000</pubDate><guid>https://kamekokamekame.net/2019/2019-11-25-article.html</guid></item><item><title>トップページ</title><link>https://kamekokamekame.net/index.html</link><description>&lt;div class=section id=id1&gt;
-
-&lt;p&gt;2019-11-21&lt;/p&gt;
-&lt;p&gt;金融エンジニア要請コミュニティのイベント &lt;a class="reference external" href="https://fintech-engineer.connpass.com/event/151320/"&gt;【好評につき増枠！】フィンテックエンジニア養成勉強会#3（共催:東京証券取引所）&lt;/a&gt; に行ってきました。
-東京証券取引所での開催につられての参加でした。&lt;/p&gt;
-&lt;p&gt;空港みたいに入り口で荷物チェックされました。でも、ペットボトルの中身はチェックされなかった。&lt;/p&gt;
-&lt;p&gt;本の勉強会なのかな？と思ったら、パネルディスカッションでした。&lt;/p&gt;
-&lt;p&gt;最初は東証の中の人がご挨拶。東証の仕事の紹介。&lt;/p&gt;
-&lt;p&gt;その後、パネルディスカッションがビックデータ、金融クラウドの2テーマで行われました。&lt;/p&gt;
-&lt;p&gt;フィンテックエンジニアがどんな感じで仕事しているのか？みたいな話を期待していたのですが、ビジネスよりの話が多かったような感じでした。
-データエンジニアは私の予想通りでデータをクレンジングしたり、前処理したりみたいな感じのようです。
-会社の４０％くらいはデータエンジニアだそうで、もっとサイエンティストが多くてデータ成形部分は外注しているのかと思っていたので意外でした。&lt;/p&gt;
-&lt;p&gt;当たり前ですが、東証の職員の方は株式売買できないのですね。
-フィンテック系の会社の人はプライベートでは取引しまくって儲かっているのかと思っていましたが、法律的にはOKでもお客様に信頼されるために取引は社の規則で禁止しているそうです。&lt;/p&gt;
-&lt;p&gt;後半はマイクロソフトとマネーフォワード、みずほファイナンシャル、東京三菱UFJ銀行のかたのディスカッションでした。
-クラウドと仕事というテーマかと思ったら裏話みたいなのが多かったです。&lt;/p&gt;
-&lt;p&gt;たまには違う感じの勉強会に出るのも、普段触れ合わない界隈にもエンジニアの人がいっぱいいるなと刺激になってよかったです。&lt;/p&gt;
-&lt;p&gt;月刊fintalkで勉強しているのでわからない言葉とかもなくてまぁ楽しい会でした。機会があったらまた参加したいです。&lt;/p&gt;
-&lt;div class="toctree-wrapper compound"&gt;
-&lt;/div&gt;
-&lt;div class="toctree-wrapper compound"&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</description><pubDate>Thu, 21 Nov 2019 00:00:00 -0000</pubDate><guid>https://kamekokamekame.net/index.html</guid></item><item><title>フィンテックエンジニア養成勉強会#3</title><link>https://kamekokamekame.net/2019/2019-11-21-article.html</link><description>&lt;div class=section id=id1&gt;
+</description><pubDate>Mon, 25 Nov 2019 00:00:00 -0000</pubDate><guid>https://kamekokamekame.net/2019/2019-11-25-article.html</guid></item><item><title>フィンテックエンジニア養成勉強会#3</title><link>https://kamekokamekame.net/2019/2019-11-21-article.html</link><description>&lt;div class=section id=id1&gt;
 
 &lt;p&gt;2019-11-21&lt;/p&gt;
 &lt;p&gt;金融エンジニア要請コミュニティのイベント &lt;a class="reference external" href="https://fintech-engineer.connpass.com/event/151320/"&gt;【好評につき増枠！】フィンテックエンジニア養成勉強会#3（共催:東京証券取引所）&lt;/a&gt; に行ってきました。
@@ -225,7 +142,72 @@
 &lt;p&gt;たまには違う感じの勉強会に出るのも、普段触れ合わない界隈にもエンジニアの人がいっぱいいるなと刺激になってよかったです。&lt;/p&gt;
 &lt;p&gt;月刊fintalkで勉強しているのでわからない言葉とかもなくてまぁ楽しい会でした。機会があったらまた参加したいです。&lt;/p&gt;
 &lt;/div&gt;
-</description><pubDate>Thu, 21 Nov 2019 00:00:00 -0000</pubDate><guid>https://kamekokamekame.net/2019/2019-11-21-article.html</guid></item><item><title>トップページ</title><link>https://kamekokamekame.net/index.html</link><description>&lt;div class=section id=pyladies-tokyo-meetup-44-pep&gt;
+</description><pubDate>Thu, 21 Nov 2019 00:00:00 -0000</pubDate><guid>https://kamekokamekame.net/2019/2019-11-21-article.html</guid></item><item><title>PyCon JP 2019 に参加しました</title><link>https://kamekokamekame.net/2019/2019-09-17-article.html</link><description>&lt;div class=section id=pycon-jp-2019&gt;
+
+&lt;p&gt;2019-09-17&lt;/p&gt;
+&lt;p&gt;今年もPyCon JPに参加しました。&lt;/p&gt;
+&lt;p&gt;今年は、所属企業のブースとPyLadies Japanのポスターを担当しました。&lt;/p&gt;
+&lt;p&gt;今年は、日本のPyLadies支部として東京、京都、沖縄、そのほかCaravanも合同でポスター発表しました。
+とても内容の濃いポスターでした。&lt;/p&gt;
+&lt;img alt="../_images/pyconjp2019_03.JPG" src="https://kamekokamekame.net/_images/pyconjp2019_03.JPG"&gt;
+&lt;p&gt;ポスターをここで発表しますね。&lt;/p&gt;
+&lt;p&gt;タイトルとPyLadiesの紹介&lt;/p&gt;
+&lt;img alt="../_images/pyconjp2019_pyladies01.jpg" src="https://kamekokamekame.net/_images/pyconjp2019_pyladies01.jpg"&gt;
+&lt;div class=line-block&gt;
+&lt;div class=line&gt;&lt;br&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;img alt="../_images/pyconjp2019_pyladies02.jpg" src="https://kamekokamekame.net/_images/pyconjp2019_pyladies02.jpg"&gt;
+&lt;div class=line-block&gt;
+&lt;div class=line&gt;&lt;br&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;img alt="../_images/pyconjp2019_pyladies03.jpg" src="https://kamekokamekame.net/_images/pyconjp2019_pyladies03.jpg"&gt;
+&lt;p&gt;PyLadies 京都&lt;/p&gt;
+&lt;img alt="../_images/pyconjp2019_pyladies04.jpg" src="https://kamekokamekame.net/_images/pyconjp2019_pyladies04.jpg"&gt;
+&lt;div class=line-block&gt;
+&lt;div class=line&gt;&lt;br&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;img alt="../_images/pyconjp2019_pyladies11.jpg" src="https://kamekokamekame.net/_images/pyconjp2019_pyladies11.jpg"&gt;
+&lt;p&gt;PyLadies 沖縄&lt;/p&gt;
+&lt;img alt="../_images/pyconjp2019_pyladies06.jpg" src="https://kamekokamekame.net/_images/pyconjp2019_pyladies06.jpg"&gt;
+&lt;div class=line-block&gt;
+&lt;div class=line&gt;&lt;br&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;img alt="../_images/pyconjp2019_pyladies07.jpg" src="https://kamekokamekame.net/_images/pyconjp2019_pyladies07.jpg"&gt;
+&lt;p&gt;PyLadies 東京&lt;/p&gt;
+&lt;img alt="../_images/pyconjp2019_pyladies09.jpg" src="https://kamekokamekame.net/_images/pyconjp2019_pyladies09.jpg"&gt;
+&lt;div class=line-block&gt;
+&lt;div class=line&gt;&lt;br&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;img alt="../_images/pyconjp2019_pyladies10.jpg" src="https://kamekokamekame.net/_images/pyconjp2019_pyladies10.jpg"&gt;
+&lt;p&gt;PyLadies Caravan&lt;/p&gt;
+&lt;img alt="../_images/pyconjp2019_pyladies05.jpg" src="https://kamekokamekame.net/_images/pyconjp2019_pyladies05.jpg"&gt;
+&lt;div class=line-block&gt;
+&lt;div class=line&gt;&lt;br&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;img alt="../_images/pyconjp2019_pyladies12.jpg" src="https://kamekokamekame.net/_images/pyconjp2019_pyladies12.jpg"&gt;
+&lt;p&gt;PyLadies JapanのTシャツを作ることになり、色の投票も行いました。
+結果は、 &lt;strong&gt;カロライナブルー&lt;/strong&gt; になりました。&lt;/p&gt;
+&lt;img alt="../_images/pyconjp2019_pyladies13.jpg" src="https://kamekokamekame.net/_images/pyconjp2019_pyladies13.jpg"&gt;
+&lt;p&gt;他にはいろいろなスポンサーのブースを見て回ったり、おやつ食べたりしました。&lt;/p&gt;
+&lt;img alt="../_images/pyconjp2019_05.JPG" src="https://kamekokamekame.net/_images/pyconjp2019_05.JPG"&gt;
+&lt;div class=line-block&gt;
+&lt;div class=line&gt;&lt;br&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;img alt="../_images/pyconjp2019_07.JPG" src="https://kamekokamekame.net/_images/pyconjp2019_07.JPG"&gt;
+&lt;div class=line-block&gt;
+&lt;div class=line&gt;&lt;br&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;img alt="../_images/pyconjp2019_08.JPG" src="https://kamekokamekame.net/_images/pyconjp2019_08.JPG"&gt;
+&lt;p&gt;閉会式ではドローンで記念撮影がありました。&lt;/p&gt;
+&lt;img alt="../_images/pyconjp2019_06.JPG" src="https://kamekokamekame.net/_images/pyconjp2019_06.JPG"&gt;
+&lt;p&gt;（このブログ書いているの11月です）
+（なんでこんなに書くの遅くなったの？って話ですが、）
+（１日目に酔っぱらって転んで、ケガして心が折れたからです。）&lt;/p&gt;
+&lt;img alt="../_images/pyconjp2019_01.JPG" src="https://kamekokamekame.net/_images/pyconjp2019_01.JPG"&gt;
+&lt;p&gt;飲みすぎには気をつけましょうね。&lt;/p&gt;
+&lt;p&gt;今年もトークには落ちましたが楽しい２日間でした。来年もまた参加したいです。&lt;/p&gt;
+&lt;/div&gt;
+</description><pubDate>Tue, 17 Sep 2019 00:00:00 -0000</pubDate><guid>https://kamekokamekame.net/2019/2019-09-17-article.html</guid></item><item><title>PyLadies Tokyo Meetup #44 夏休み! PEP自由研究発表会に参加</title><link>https://kamekokamekame.net/2019/2019-08-18-article.html</link><description>&lt;div class=section id=pyladies-tokyo-meetup-44-pep&gt;
 
 &lt;p&gt;2019-08-18&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="https://pyladies-tokyo.connpass.com/event/136599/"&gt;PyLadies Tokyo Meetup #44 夏休み! PEP自由研究発表会&lt;/a&gt; に参加しました。&lt;/p&gt;
@@ -237,99 +219,8 @@
 &lt;p&gt;&lt;a class="reference external" href="https://github.com/okusama27/LightningTalk/blob/master/pyladies_slide/2019/pyladies44/pep257.md"&gt;ワークの成果&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;懇親会はPEPという名前のスペイン料理店へ。お酒もお料理もおいしかったです。&lt;/p&gt;
 &lt;blockquote class=twitter-tweet&gt;&lt;p dir=ltr lang=ja&gt;本日はPEPの会のため、2次会もPEP（おしゃれスペイン料理）で開催しました！思わず皆で興奮。人数少なめでしたが、濃くて楽しかったです！本日もお疲れ様でしたー！ &lt;a href="https://twitter.com/hashtag/pyladiestokyo?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#pyladiestokyo&lt;/a&gt; &lt;a href="https://t.co/sQMRPjyNpW"&gt;pic.twitter.com/sQMRPjyNpW&lt;/a&gt;&lt;/p&gt;— sugita (@ane45) &lt;a href="https://twitter.com/ane45/status/1163031766162014208?ref_src=twsrc%5Etfw"&gt;August 18, 2019&lt;/a&gt;&lt;/blockquote&gt; &lt;script async charset=utf-8 src="https://platform.twitter.com/widgets.js"&gt;&lt;/script&gt;&lt;p&gt;大満足の1日でした！！&lt;/p&gt;
-&lt;div class="toctree-wrapper compound"&gt;
 &lt;/div&gt;
-&lt;div class="toctree-wrapper compound"&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</description><pubDate>Sun, 18 Aug 2019 00:00:00 -0000</pubDate><guid>https://kamekokamekame.net/index.html</guid></item><item><title>PyLadies Tokyo Meetup #44 夏休み! PEP自由研究発表会に参加</title><link>https://kamekokamekame.net/2019/2019-08-18-article.html</link><description>&lt;div class=section id=pyladies-tokyo-meetup-44-pep&gt;
-
-&lt;p&gt;2019-08-18&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://pyladies-tokyo.connpass.com/event/136599/"&gt;PyLadies Tokyo Meetup #44 夏休み! PEP自由研究発表会&lt;/a&gt; に参加しました。&lt;/p&gt;
-&lt;p&gt;PEPについて学ぶ会でした。
-発表予定の方が急遽これなくなったので、代打で「PEPとは？」と「PEP1」について話してきました。&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://github.com/okusama27/LightningTalk/blob/master/pyladies_201908/index.rst"&gt;前の日に作った資料&lt;/a&gt;&lt;/p&gt;
-&lt;blockquote class=twitter-tweet&gt;&lt;p dir=ltr lang=ja&gt;ヴァズ株式会社様に会場提供して頂き、夏休み！PEP自由研究発表会はじまりました！&lt;a href="https://twitter.com/hashtag/PyLadiesTokyo?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#PyLadiesTokyo&lt;/a&gt; &lt;a href="https://t.co/RicNOiesE5"&gt;pic.twitter.com/RicNOiesE5&lt;/a&gt;&lt;/p&gt;— PyLadiesTokyo (@PyLadiesTokyo) &lt;a href="https://twitter.com/PyLadiesTokyo/status/1162941116414431232?ref_src=twsrc%5Etfw"&gt;August 18, 2019&lt;/a&gt;&lt;/blockquote&gt; &lt;script async charset=utf-8 src="https://platform.twitter.com/widgets.js"&gt;&lt;/script&gt;&lt;p&gt;吉祥寺のヴァズ株式会社様にお邪魔しました。とても素敵なオフィスでした！井の頭公園も近くてとても素敵な環境でした。&lt;/p&gt;
-&lt;p&gt;お盆のためか暑さのためか、人数は少なめでしたがグループワークなども行い濃い会でした。&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://github.com/okusama27/LightningTalk/blob/master/pyladies_slide/2019/pyladies44/pep257.md"&gt;ワークの成果&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;懇親会はPEPという名前のスペイン料理店へ。お酒もお料理もおいしかったです。&lt;/p&gt;
-&lt;blockquote class=twitter-tweet&gt;&lt;p dir=ltr lang=ja&gt;本日はPEPの会のため、2次会もPEP（おしゃれスペイン料理）で開催しました！思わず皆で興奮。人数少なめでしたが、濃くて楽しかったです！本日もお疲れ様でしたー！ &lt;a href="https://twitter.com/hashtag/pyladiestokyo?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#pyladiestokyo&lt;/a&gt; &lt;a href="https://t.co/sQMRPjyNpW"&gt;pic.twitter.com/sQMRPjyNpW&lt;/a&gt;&lt;/p&gt;— sugita (@ane45) &lt;a href="https://twitter.com/ane45/status/1163031766162014208?ref_src=twsrc%5Etfw"&gt;August 18, 2019&lt;/a&gt;&lt;/blockquote&gt; &lt;script async charset=utf-8 src="https://platform.twitter.com/widgets.js"&gt;&lt;/script&gt;&lt;p&gt;大満足の1日でした！！&lt;/p&gt;
-&lt;/div&gt;
-</description><pubDate>Sun, 18 Aug 2019 00:00:00 -0000</pubDate><guid>https://kamekokamekame.net/2019/2019-08-18-article.html</guid></item><item><title>トップページ</title><link>https://kamekokamekame.net/index.html</link><description>&lt;div class=section id=pep&gt;
-
-&lt;p&gt;2019-08-11&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://pyladies-tokyo.connpass.com/event/136599/"&gt;PyLadies Tokyo Meetup #44 夏休み! PEP自由研究発表会&lt;/a&gt; でPEPのことを取り扱うので、復習中です。&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://www.python.org/dev/peps/"&gt;PEP 0 -- Index of Python Enhancement Proposals (PEPs)&lt;/a&gt; は各PEPの目次になっている。&lt;/p&gt;
-&lt;p&gt;その中でPEP 1〜12は、 &lt;a class="reference external" href="https://www.python.org/dev/peps/#meta-peps-peps-about-peps-or-processes"&gt;Meta-PEPs (PEPs about PEPs or Processes)&lt;/a&gt; は、PEPの説明に割り当てられています。&lt;/p&gt;
-&lt;table class="colwidths-given docutils align-default"&gt;
-&lt;colgroup&gt;
-&lt;col style="width: 4%"&gt;
-&lt;col style="width: 9%"&gt;
-&lt;col style="width: 43%"&gt;
-&lt;col style="width: 43%"&gt;
-&lt;/colgroup&gt;
-&lt;thead&gt;
-&lt;tr class=row-odd&gt;&lt;th class=head&gt;&lt;p&gt;&lt;/th&gt;
-&lt;th class=head&gt;&lt;p&gt;PEP&lt;/th&gt;
-&lt;th class=head&gt;&lt;p&gt;PEP Title&lt;/th&gt;
-&lt;th class=head&gt;&lt;p&gt;意味&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr class=row-even&gt;&lt;td&gt;&lt;p&gt;P&lt;/td&gt;
-&lt;td&gt;&lt;p&gt;1&lt;/td&gt;
-&lt;td&gt;&lt;p&gt;PEP Purpose and Guidelines&lt;/td&gt;
-&lt;td&gt;&lt;p&gt;PEPの目的とガイドライン&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=row-odd&gt;&lt;td&gt;&lt;p&gt;P&lt;/td&gt;
-&lt;td&gt;&lt;p&gt;4&lt;/td&gt;
-&lt;td&gt;&lt;p&gt;Deprecation of Standard Modules&lt;/td&gt;
-&lt;td&gt;&lt;p&gt;標準ライブラリからモジュールを廃止する手順と廃止されたモジュール一覧&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=row-even&gt;&lt;td&gt;&lt;p&gt;P&lt;/td&gt;
-&lt;td&gt;&lt;p&gt;5&lt;/td&gt;
-&lt;td&gt;&lt;p&gt;Guidelines for Language Evolution&lt;/td&gt;
-&lt;td&gt;&lt;p&gt;言語開発のガイドライン&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=row-odd&gt;&lt;td&gt;&lt;p&gt;P&lt;/td&gt;
-&lt;td&gt;&lt;p&gt;6&lt;/td&gt;
-&lt;td&gt;&lt;p&gt;Bug Fix Releases&lt;/td&gt;
-&lt;td&gt;&lt;p&gt;バグを修正してリリースする手順&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=row-even&gt;&lt;td&gt;&lt;p&gt;P&lt;/td&gt;
-&lt;td&gt;&lt;p&gt;7&lt;/td&gt;
-&lt;td&gt;&lt;p&gt;Style Guide for C Code&lt;/td&gt;
-&lt;td&gt;&lt;p&gt;Pythonを実装するCのコーディング規約&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=row-odd&gt;&lt;td&gt;&lt;p&gt;P&lt;/td&gt;
-&lt;td&gt;&lt;p&gt;8&lt;/td&gt;
-&lt;td&gt;&lt;p&gt;Style Guide for Python Code&lt;/td&gt;
-&lt;td&gt;&lt;p&gt;Pythonコードのコーディング規約&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=row-even&gt;&lt;td&gt;&lt;p&gt;P&lt;/td&gt;
-&lt;td&gt;&lt;p&gt;10&lt;/td&gt;
-&lt;td&gt;&lt;p&gt;Voting Guidelines&lt;/td&gt;
-&lt;td&gt;&lt;p&gt;新しい機能追加への投票のガイドライン&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=row-odd&gt;&lt;td&gt;&lt;p&gt;P&lt;/td&gt;
-&lt;td&gt;&lt;p&gt;11&lt;/td&gt;
-&lt;td&gt;&lt;p&gt;Removing support for little used platforms&lt;/td&gt;
-&lt;td&gt;&lt;p&gt;ほとんど使われていないプラットフォーム向けのコード削除方法&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=row-even&gt;&lt;td&gt;&lt;p&gt;P&lt;/td&gt;
-&lt;td&gt;&lt;p&gt;12&lt;/td&gt;
-&lt;td&gt;&lt;p&gt;Sample reStructuredText PEP Template&lt;/td&gt;
-&lt;td&gt;&lt;p&gt;reStructuredTextでPEPを書くためのテンプレートとサンプル&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;拡張機能だけじゃなくて、その書き方や方針などを決めているのも迷いがなくていいですね。&lt;/p&gt;
-&lt;div class="toctree-wrapper compound"&gt;
-&lt;/div&gt;
-&lt;div class="toctree-wrapper compound"&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</description><pubDate>Sun, 11 Aug 2019 00:00:00 -0000</pubDate><guid>https://kamekokamekame.net/index.html</guid></item><item><title>PEPの説明</title><link>https://kamekokamekame.net/2019/2019-08-11-article.html</link><description>&lt;div class=section id=pep&gt;
+</description><pubDate>Sun, 18 Aug 2019 00:00:00 -0000</pubDate><guid>https://kamekokamekame.net/2019/2019-08-18-article.html</guid></item><item><title>PEPの説明</title><link>https://kamekokamekame.net/2019/2019-08-11-article.html</link><description>&lt;div class=section id=pep&gt;
 
 &lt;p&gt;2019-08-11&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="https://pyladies-tokyo.connpass.com/event/136599/"&gt;PyLadies Tokyo Meetup #44 夏休み! PEP自由研究発表会&lt;/a&gt; でPEPのことを取り扱うので、復習中です。&lt;/p&gt;
