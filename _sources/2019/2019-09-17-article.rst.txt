@@ -45,11 +45,11 @@ PyLadies 京都
 
 PyLadies 沖縄
 
-.. image:: /_static/images/2019/pyconjp2019_pyladies06.jpg
+.. image:: /_static/images/2019/pyconjp2019_pyladies07.jpg
 
 |
 
-.. image:: /_static/images/2019/pyconjp2019_pyladies07.jpg
+.. image:: /_static/images/2019/pyconjp2019_pyladies06.jpg
 
 PyLadies 東京
 
