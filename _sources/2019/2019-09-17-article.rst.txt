@@ -35,13 +35,13 @@ PyCon JP 2019 に参加しました
 
 PyLadies 京都
 
-.. image:: /_static/images/2019/pyconjp2019_pyladies04.jpg
+.. image:: /_static/images/2019/pyconjp2019_pyladies11.jpg
 
 
 |
 
 
-.. image:: /_static/images/2019/pyconjp2019_pyladies11.jpg
+.. image:: /_static/images/2019/pyconjp2019_pyladies04.jpg
 
 PyLadies 沖縄
 
