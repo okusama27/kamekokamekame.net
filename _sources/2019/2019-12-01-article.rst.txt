@@ -1,0 +1,83 @@
+:date: 2019-12-01 00:00:00
+:title: PyLadies Tokyo 2019 合宿報告
+:category: PyLadies
+:tags: PyLadies
+
+==========================================================
+PyLadies Tokyo 2019 合宿報告
+==========================================================
+
+2019-12-01
+
+この記事は `PyLadies Japan Advent Calendar 2019 - Adventar <https://adventar.org/calendars/4730>`_ の１日目です。明日は、 `なつこ <https://adventar.org/users/30461>`_ さんです。
+
+`PyLadies Tokyo 秋合宿 2019 - connpass <https://pyladies-tokyo.connpass.com/event/142972/>`_ への参加報告をします。
+
+今年も開き合宿に参加しました。もう３回目かと思うと感慨深いです。
+
+今年は月末月初の開催だったためか少数精鋭の７人での合宿になりました。もくもく時間がたくさんとれたので実りある合宿となりました。
+
+.. raw:: html
+
+   <blockquote class="twitter-tweet">
+   <p lang="ja" dir="ltr">合宿風景です
+   <a href="https://twitter.com/hashtag/pyladiestokyo?src=hash&amp;ref_src=twsrc%5Etfw">#pyladiestokyo</a> 
+   <a href="https://t.co/xkJxyy1pCU">pic.twitter.com/xkJxyy1pCU</a></p>
+   &mdash; PyLadiesTokyo (@PyLadiesTokyo) 
+   <a href="https://twitter.com/PyLadiesTokyo/status/1200716504683204608?ref_src=twsrc%5Etfw">November 30, 2019</a></blockquote> 
+   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+場所は２年前と同じ秩父です。
+
+秩父に到着。
+
+.. image:: /_static/images/2019/pyladies201911_04.JPG
+
+まずは集合前にお風呂で身を清めました。
+
+.. image:: /_static/images/2019/pyladies201911_01.JPG
+
+|
+
+.. image:: /_static/images/2019/pyladies201911_07.JPG
+
+駅前にあって手軽な割にとても良いお風呂でした。露天の青空がとても素敵で、感動しました。
+
+宿も２年前と同じ梁山泊さんにお世話になりました。
+
+.. image:: /_static/images/2019/pyladies201911_11.JPG
+
+|
+
+.. image:: /_static/images/2019/pyladies201911_12.JPG
+
+宿の近くの公園に上ると秩父が一望できて素敵でした。
+
+.. image:: /_static/images/2019/pyladies201911_15.JPG
+
+|
+
+.. image:: /_static/images/2019/pyladies201911_16.jpg
+
+もくもく会は宿所有のホールで行いました。たっぷり集中できました。
+
+ホールの近くには鹿公園があって、鹿に餌やりで息抜きができました。
+
+.. image:: /_static/images/2019/pyladies201911_13.JPG
+
+神社もよかったです。
+
+.. image:: /_static/images/2019/pyladies201911_14.jpg
+
+奇跡的にお天気恵まれた3日間で、最高の合宿になりました。
+
+この記事を書いている時点で2日目の夜ですが、進捗報告します。
+
+- feedの修正はあきらめて自分のブログにしか当てはまらない rss.xmlを雑に吐き出すスクリプトを書きました
+- LINE PAYを使えるようになりました
+- PyConJP 2019 参加ブログ
+- PyLadies Tokyo 5周年参加ブログ
+- Inside_Sphinxをダウンロードしてざっと読み
+- Advent Calendar を作成
+
+3日目ももくもく時間があるので、MUSTを何とか進めます。

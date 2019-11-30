@@ -4,8 +4,17 @@
 <description>Strike while the iron is hot</description>
 <language>ja</language>
 <copyright>2019, kamekokamekame.net</copyright>
-<lastBuildDate>Thu, 28 November 2019 08:00:00 +0900</lastBuildDate>
+<lastBuildDate>Sun, 01 December 2019 08:00:00 +0900</lastBuildDate>
 <item>
+<title>PyLadies Tokyo 2019 合宿報告</title>
+<link>https://kamekokamekame.net/2019/2019-12-01-article.html</link>
+<description>
+&lt;p&gt;この記事は &lt;a class=&quot;reference external&quot; href=&quot;https://adventar.org/calendars/4730&quot;&gt;PyLadies Japan Advent Calendar 2019 - Adventar&lt;/a&gt; の１日目です。明日は、 &lt;a class=&quot;reference external&quot; href=&quot;https://adventar.org/users/30461&quot;&gt;なつこ&lt;/a&gt; さんです。&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://pyladies-tokyo.connpass.com/event/142972/&quot;&gt;PyLadies Tokyo 秋合宿 2019 - connpass&lt;/a&gt; への参加報告をします。&lt;/p&gt;&lt;p&gt;今年も開き合宿に参加しました。もう３回目かと思うと感慨深いです。&lt;/p&gt;&lt;p&gt;今年は月末月初の開催だったためか少数精鋭の７人での合宿になりました。もくもく時間がたくさんとれたので実りある合宿となりました。&lt;/p&gt;
+...
+</description>
+<pubDate>Sun, 01 December 2019 08:00:00 +0900</pubDate>
+<guid>https://kamekokamekame.net/2019/2019-12-01-article.html</guid>
+</item><item>
 <title>合宿でやることリスト2019</title>
 <link>https://kamekokamekame.net/2019/2019-11-28-article.html</link>
 <description>
@@ -79,17 +88,6 @@
 </description>
 <pubDate>Sat, 19 October 2019 08:00:00 +0900</pubDate>
 <guid>https://kamekokamekame.net/2019/2019-10-19-article.html</guid>
-</item><item>
-<title>PyCon JP 2019 に参加しました</title>
-<link>https://kamekokamekame.net/2019/2019-09-17-article.html</link>
-<description>
-&lt;p&gt;今年もPyCon JPに参加しました。
-アルコールにやられて記憶も定かではありませんが、参加したブログです。&lt;/p&gt;&lt;p&gt;私は所属企業のブースとPyLadies Japanのポスターを担当しました。&lt;/p&gt;&lt;p&gt;今年は、日本のPyLadies支部として東京、京都、沖縄、そのほかCaravanも合同でポスターを作成しました。
-各コミュニティーの力作ぞろいで、とても内容の濃いポスターになりました！&lt;/p&gt;&lt;img alt=&quot;../_images/pyconjp2019_03.JPG&quot; src=&quot;../_images/pyconjp2019_03.JPG&quot;/&gt;
-...
-</description>
-<pubDate>Tue, 17 September 2019 08:00:00 +0900</pubDate>
-<guid>https://kamekokamekame.net/2019/2019-09-17-article.html</guid>
 </item>
 </channel>
 </rss>
