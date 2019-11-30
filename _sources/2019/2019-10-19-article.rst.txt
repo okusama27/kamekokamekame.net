@@ -1,0 +1,47 @@
+:date: 2019-10-19 00:00:00
+:title: PyLadies Tokyo - 5周年記念パーティ
+:category: Category
+:tags: Category
+
+==========================================================
+PyLadies Tokyo - 5周年記念パーティ
+==========================================================
+
+2019-10-19
+
+`PyLadies Tokyo - 5周年記念パーティ <https://pyladies-tokyo.connpass.com/event/145046/>`_ に参加しました！
+
+今年は５周年の年でした。２周年から参加していますが、月日が経つのは速いですね。
+
+.. raw:: html
+
+   <blockquote class="twitter-tweet">
+   <p lang="ja" dir="ltr">とりあえず1番最初に集合写真撮っておいたよー
+   <a href="https://twitter.com/hashtag/pyladiestokyo?src=hash&amp;ref_src=twsrc%5Etfw">#pyladiestokyo</a> 
+   <a href="https://t.co/kUsLqk5Zj5">pic.twitter.com/kUsLqk5Zj5</a>
+   </p>
+   &mdash; PyLadiesTokyo (@PyLadiesTokyo) 
+   <a href="https://twitter.com/PyLadiesTokyo/status/1185427562492612609?ref_src=twsrc%5Etfw">October 19, 2019</a>
+   </blockquote> 
+   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8">
+   </script>
+
+
+今年は、fintalkについてやっていることを発表しました。
+
+.. raw:: html
+
+   <iframe src="//www.slideshare.net/slideshow/embed_code/key/pccCTIZ76gVElR" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> 
+   </iframe> 
+   <div style="margin-bottom:5px"> 
+   <strong> <a href="//www.slideshare.net/okusama27/pyladies-tokyo-5" title="PyLadies Tokyo 5周年パーティー" target="_blank">PyLadies Tokyo 5周年パーティー</a> </strong> from <strong><a href="https://www.slideshare.net/okusama27" target="_blank">Kameko Ohmura</a></strong> 
+   </div>
+
+内容はあまりありません（汗）
+
+PyCon JP 2019 で投票されたシャツが出来上がり販売しました。（シャツの写真は後日。。）
+
+スタッフ業が忙しすぎてあまり写真は撮れていないですが、とても楽しい会でした。
+参加してくださった方々、他のスタッフの方々、ありがとうございました！！
+
+来年もやっていこう！と思える一日でした！
