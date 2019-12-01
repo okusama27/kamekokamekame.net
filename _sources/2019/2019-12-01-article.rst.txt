@@ -9,11 +9,11 @@ PyLadies Tokyo 2019 合宿報告
 
 2019-12-01
 
-この記事は `PyLadies Japan Advent Calendar 2019 - Adventar <https://adventar.org/calendars/4730>`_ の１日目です。明日は、 `なつこ <https://adventar.org/users/30461>`_ さんです。
+この記事は `PyLadies Japan Advent Calendar 2019 - Adventar <https://adventar.org/calendars/4730>`_ の１日目です。
 
 `PyLadies Tokyo 秋合宿 2019 - connpass <https://pyladies-tokyo.connpass.com/event/142972/>`_ への参加報告をします。
 
-今年も開き合宿に参加しました。もう３回目かと思うと感慨深いです。
+今年もPyLadies Tokyoの合宿に参加しました。もう３回目の参加と思うと感慨深いです。
 
 今年は月末月初の開催だったためか少数精鋭の７人での合宿になりました。もくもく時間がたくさんとれたので実りある合宿となりました。
 
@@ -81,3 +81,5 @@ PyLadies Tokyo 2019 合宿報告
 - Advent Calendar を作成
 
 3日目ももくもく時間があるので、MUSTを何とか進めます。
+
+明日は、 `なつこ <https://adventar.org/users/30461>`_ さんです。
