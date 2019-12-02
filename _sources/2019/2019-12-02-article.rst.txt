@@ -1,0 +1,91 @@
+:date: 2019-12-02 00:00:00
+:title: Windowsで分析したい
+:category: fintalk
+:tags: fintalk
+
+==========================================================
+Windowsで分析したい
+==========================================================
+
+2019-12-02
+
+この記事は、 `fintalk Advent Calendar 2019 - Adventar <https://adventar.org/calendars/4331>`_ の2日目の記事です。
+
+
+最近、プライベートのPCをmacOSから、Windows10に乗り換えました。詳しくは下のスライドで説明しています。
+
+.. raw:: html
+
+   <iframe src="//www.slideshare.net/slideshow/embed_code/key/hbpAskjoNFoo4R" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+   <div style="margin-bottom:5px"> 
+   <strong> <a href="//www.slideshare.net/okusama27/windows-200348467" title="Windowsマシンを使いだしたときの失敗談" target="_blank">Windowsマシンを使いだしたときの失敗談</a> </strong> 
+   from <strong><a href="https://www.slideshare.net/okusama27" target="_blank">Kameko Ohmura</a></strong> </div>
+
+Windowsでも、macと同じようにJupyter Notebookを利用したい。
+
+macOSでの私の使い方
+
+- Pythonをインストール
+- venvで環境構築
+- pipを利用してライブラリ類をインストール
+- ターミナルからJupyter Notebookを起動
+
+Windowsで、できるかな？
+
+Windows10にはWSL2というほぼLinuxやん。という環境があるらしい。
+調べると「Build 18917」のOS以上でないと動かないらしい。
+私の現在の環境は普通にWindowsUpdateとかしているが、「18362.476」と書いてありますけど？
+
+（画面左下の検索窓に「winver」と打つと出てくる。）
+
+.. image:: /_static/images/2019/winver.png
+
+
+よく調べると、一般にリリースする前に希望者に公開している「Windows 10 Insider Preview Build」というバージョンのOSでないと動かないようです。
+不具合が出る可能性も高いそうです。
+私はそこまでWindowsに詳しくないので、何かあった時に困る可能性があるので、来年まで待つことにしました。
+
+そんなわけで、wslか、通常のwindows環境でJupyter Notebookを動かします。
+
+コマンドプロンプトで動くと楽な気がするので、コマンドプロンプトに挑戦してみます。
+（jupyter notebookをインストールはできましたが、起動できませんでした）
+
+→挑戦して、インストールはできましたが、jupyter notebookが起動できなかったのでとりあえずあきらめました。
+
+wslのほうはjupyter notebook起動しました。
+
+手順は以下です。
+
+- wslインストールする。（「wsl ubuntu インストール」などで検索するとやり方が出てきます）
+- python3.8をインストールする（ubuntu python3.8 インストール」などで検索するとやり方が出てきます）
+- 特定のフォルダに仮想環境を作る「python3 -m venv env」
+- 仮想環境を有効にする「env\Scripts\activate」
+- pipをアップデート「pip install -U pip」
+- 関連ライブラリをインストール「pip install jupyter pandas matplotlib」
+- Jupyterを起動する「jupyter notebook」
+- 画面がpower shellと書いた何も表示されない画面に一瞬で変わってしまう（なんでだろう？）
+
+http://localhost:8888/とブラウザに入力してみましたが、トークンがわからないとログインできないようです。
+
+- 「Ctrl+C」するとトークン的なのが表示されるので、どれかをコピーする。
+- ブラウザにペーストする。
+- 動いた！（y/[n]の表示はEnterしましょう） 　
+
+
+.. image:: /_static/images/2019/20191202_jupyter4.png
+
+|
+
+.. image:: /_static/images/2019/20191202_jupyter2.png
+
+|
+
+.. image:: /_static/images/2019/20191202_jupyter3.png
+
+|
+
+.. image:: /_static/images/2019/20191202_jupyter1.png
+
+Ta-Libもインストールしたかったのですが、今回はここで終わります。今月中にTa-Libも動くようにがんばります。
+
+明日は `しんせいたろう <https://adventar.org/users/15802>`_ さんです。
