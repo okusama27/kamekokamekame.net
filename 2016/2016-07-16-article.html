@@ -4,7 +4,8 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
   <head>
-    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@okusama27" />
     <meta property="og:site_name" content="鉄は熱いうちに打て">
@@ -20,8 +21,8 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/bizstyle.js"></script>
     <link rel="search" title="検索" href="../search.html" />
     <link rel="next" title="PyCon JP 2016にブースを出します" href="2016-09-17-article.html" />
@@ -48,11 +49,11 @@
         <div class="sphinxsidebarwrapper"><div id="toc" class="sidebarRow">
 <h3><a href="../index.html">Table Of Contents</a></h3>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../2019/2019-12-02-article.html">Windowsで分析したい</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2019/2019-12-01-article.html">PyLadies Tokyo 2019 合宿報告</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2019/2019-11-28-article.html">合宿でやることリスト2019</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2019/2019-11-25-article.html">SphinxCon JP 2019 に行ってきました。</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2019/2019-11-21-article.html">フィンテックエンジニア養成勉強会#3</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2019/2019-10-19-article.html">PyLadies Tokyo - 5周年記念パーティ</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2019/2019-09-17-article.html">PyCon JP 2019 に参加しました</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2019/2019-08-18-article.html">PyLadies Tokyo Meetup #44 夏休み! PEP自由研究発表会に参加</a></li>
 </ul>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../2019/index.html">2019</a></li>
@@ -70,11 +71,13 @@
   <p class="topless"><a href="2016-09-17-article.html"
                         title="次の章へ">PyCon JP 2016にブースを出します</a></p>
 <div id="searchbox" style="display: none" role="search">
-  <h3 id="searchlabel">クイック検索</h3>
+  <h3>クイック検索</h3>
     <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="text" name="q" />
       <input type="submit" value="検索" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
@@ -104,10 +107,10 @@
 <a href="https://www.amazon.co.jp/dp/B01GDS0994/ref=as_li_ss_il?_encoding=UTF8&btkr=1&linkCode=li2&tag=ironhotcom-22&linkId=40af7ca3e146cd6c5e3abb67c9863805&language=ja_JP" target="_blank"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B01GDS0994&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=ironhotcom-22&language=ja_JP" ></a><img src="https://ir-jp.amazon-adsystem.com/e/ir?t=ironhotcom-22&language=ja_JP&l=li2&o=9&a=B01GDS0994" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /><p><strong>スーパープログラマーに学ぶ 最強シンプル思考術</strong></p>
 <a href="https://www.amazon.co.jp/%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9E%E3%83%BC%E3%81%AB%E5%AD%A6%E3%81%B6-%E6%9C%80%E5%BC%B7%E3%82%B7%E3%83%B3%E3%83%97%E3%83%AB%E6%80%9D%E8%80%83%E8%A1%93-%E5%90%89%E7%94%B0%E5%A1%81-ebook/dp/B01FSFLCQC/ref=as_li_ss_il?s=digital-text&ie=UTF8&qid=1541824347&sr=1-1&keywords=%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9E%E3%83%BC%E3%81%AB%E5%AD%A6%E3%81%B6+%E6%9C%80%E5%BC%B7%E3%82%B7%E3%83%B3%E3%83%97%E3%83%AB%E6%80%9D%E8%80%83%E8%A1%93&linkCode=li2&tag=ironhotcom-22&linkId=9cfe34f48feec1e6fff73b9faaa2ed7b&language=ja_JP" target="_blank"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B01FSFLCQC&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=ironhotcom-22&language=ja_JP" ></a><img src="https://ir-jp.amazon-adsystem.com/e/ir?t=ironhotcom-22&language=ja_JP&l=li2&o=9&a=B01FSFLCQC" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /><p>ざっくりまとめると。</p>
 <ul class="simple">
-<li><p>ポモドーロタイマーいい！</p></li>
-<li><p>集中しろ</p></li>
-<li><p>テレビ見るな</p></li>
-<li><p>ちゃんと寝ろ</p></li>
+<li>ポモドーロタイマーいい！</li>
+<li>集中しろ</li>
+<li>テレビ見るな</li>
+<li>ちゃんと寝ろ</li>
 </ul>
 <p>うん。知ってる。</p>
 <p>知っているけど、実践できてないことだらけでした。
@@ -154,7 +157,7 @@
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2019, kamekokamekame.net.
-      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.1 で生成しました。
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.1 で生成しました。
     </div>
   </body>
 </html>

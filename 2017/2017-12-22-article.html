@@ -4,7 +4,8 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
   <head>
-    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@okusama27" />
     <meta property="og:site_name" content="鉄は熱いうちに打て">
@@ -20,8 +21,8 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/bizstyle.js"></script>
     <link rel="search" title="検索" href="../search.html" />
     <link rel="next" title="達人プログラマーを読んでみた" href="2017-12-23-article.html" />
@@ -48,11 +49,11 @@
         <div class="sphinxsidebarwrapper"><div id="toc" class="sidebarRow">
 <h3><a href="../index.html">Table Of Contents</a></h3>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../2019/2019-12-02-article.html">Windowsで分析したい</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2019/2019-12-01-article.html">PyLadies Tokyo 2019 合宿報告</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2019/2019-11-28-article.html">合宿でやることリスト2019</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2019/2019-11-25-article.html">SphinxCon JP 2019 に行ってきました。</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2019/2019-11-21-article.html">フィンテックエンジニア養成勉強会#3</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2019/2019-10-19-article.html">PyLadies Tokyo - 5周年記念パーティ</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2019/2019-09-17-article.html">PyCon JP 2019 に参加しました</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2019/2019-08-18-article.html">PyLadies Tokyo Meetup #44 夏休み! PEP自由研究発表会に参加</a></li>
 </ul>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../2019/index.html">2019</a></li>
@@ -70,11 +71,13 @@
   <p class="topless"><a href="2017-12-23-article.html"
                         title="次の章へ">達人プログラマーを読んでみた</a></p>
 <div id="searchbox" style="display: none" role="search">
-  <h3 id="searchlabel">クイック検索</h3>
+  <h3>クイック検索</h3>
     <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="text" name="q" />
       <input type="submit" value="検索" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
@@ -97,37 +100,14 @@
 <p>ということで、残りの日付は今年の振り返りと小ネタで埋めていきます。</p>
 <p>今日は私がコードレビューでよく指摘される話。</p>
 <p><a class="reference external" href="/2017/2017-12-15-article.html">TogglとSlackを連携した話</a> のコードも最初、こうなっていました。</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>def get_toggl():
-    〜略〜
-    if current.status_code != 200:
-        print(&quot;togglの情報取得に失敗しました&quot;)
-    else:
-        current_json = current.json()
-        if current_json[&#39;data&#39;]:
-            return current_json[&#39;data&#39;][&#39;pid&#39;], current_json[&#39;data&#39;][&#39;description&#39;]
-    return None, None
-</pre></div>
-</div>
 <p>さあ、レビューしてみましょう！</p>
 <ul class="simple">
-<li><p>情報取得に失敗したあとも処理が続いている</p></li>
-<li><p>関数の最後で異常系（データがなかった場合）が返っている</p></li>
-<li><p>正常系がネストされたif文の中で返っている</p></li>
+<li>情報取得に失敗したあとも処理が続いている</li>
+<li>関数の最後で異常系（データがなかった場合）が返っている</li>
+<li>正常系がネストされたif文の中で返っている</li>
 </ul>
 <p>名付けとか色々あると思いますが、私はよく言われダメコーディングの一つ、 <strong>関数のreturnを1回しか書かないやーつ</strong> なんです。気を抜くとすぐに書いてしまいます。
 動けばいいやくらいで書いたスクリプトだったんで、ブログの記事を上げたら、旦那から「恥ずかしいから今すぐ直せ！」と言われました。(´・ω・｀)。</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>def get_toggl():
-    〜略〜
-    if current.status_code != 200:
-        print(&quot;togglの情報取得に失敗しました&quot;)
-        return None, None
-
-    current_json = current.json()
-    if not current_json[&#39;data&#39;]:
-        return None, None
-    return current_json[&#39;data&#39;][&#39;pid&#39;], current_json[&#39;data&#39;][&#39;description&#39;]
-</pre></div>
-</div>
 <p>直したあとは↑みたいな感じ。関数の最後のreturnは正常系の最後にしたほうが読みやすいですね。</p>
 <p>あと、私は <strong>変なフラグをつくりたがるやーつ</strong> でもあります。気を抜くとすぐに flg_XXX みたいな変なフラグ変数を作っちゃいます。</p>
 <p>まぁ、過去を振り返っても仕方ないので、これからも変なコードを作らないように自己レビューを厳しくしていきたいと思います。でも、変なときは指摘してくださいね。</p>
@@ -171,7 +151,7 @@
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2019, kamekokamekame.net.
-      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.1 で生成しました。
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.1 で生成しました。
     </div>
   </body>
 </html>

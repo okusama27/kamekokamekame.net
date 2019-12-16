@@ -4,7 +4,8 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
   <head>
-    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@okusama27" />
     <meta property="og:site_name" content="鉄は熱いうちに打て">
@@ -22,8 +23,8 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/bizstyle.js"></script>
     <link rel="search" title="検索" href="../search.html" />
     <link rel="next" title="DjangoCongress JP 2019に行ってきました" href="2019-05-18-article.html" />
@@ -50,11 +51,11 @@
         <div class="sphinxsidebarwrapper"><div id="toc" class="sidebarRow">
 <h3><a href="../index.html">Table Of Contents</a></h3>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="2019-12-02-article.html">Windowsで分析したい</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2019-12-01-article.html">PyLadies Tokyo 2019 合宿報告</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2019-11-28-article.html">合宿でやることリスト2019</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2019-11-25-article.html">SphinxCon JP 2019 に行ってきました。</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2019-11-21-article.html">フィンテックエンジニア養成勉強会#3</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2019-10-19-article.html">PyLadies Tokyo - 5周年記念パーティ</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2019-09-17-article.html">PyCon JP 2019 に参加しました</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2019-08-18-article.html">PyLadies Tokyo Meetup #44 夏休み! PEP自由研究発表会に参加</a></li>
 </ul>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">2019</a></li>
@@ -72,11 +73,13 @@
   <p class="topless"><a href="2019-05-18-article.html"
                         title="次の章へ">DjangoCongress JP 2019に行ってきました</a></p>
 <div id="searchbox" style="display: none" role="search">
-  <h3 id="searchlabel">クイック検索</h3>
+  <h3>クイック検索</h3>
     <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="text" name="q" />
       <input type="submit" value="検索" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
@@ -116,10 +119,10 @@
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">show_pyramid</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
         <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
-            <span class="k">print</span><span class="p">(</span><span class="s1">&#39;*&#39;</span><span class="o">*</span><span class="n">n</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;*&#39;</span><span class="o">*</span><span class="n">n</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">num</span><span class="p">),</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
-            <span class="k">print</span><span class="p">(</span><span class="s1">&#39;*&#39;</span><span class="o">*</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;*&#39;</span><span class="o">*</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>
 
 
 <span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
@@ -187,9 +190,9 @@ NameError: name &#39;show_pyrami&#39; is not defined
 <div class="section" id="id10">
 <h3>自動で動いています<a class="headerlink" href="#id10" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <ul class="simple">
-<li><p>自動で動いているのにうまく行かない？</p></li>
-<li><p>どこが悪かったの？</p></li>
-<li><p>なんのせい？？？</p></li>
+<li>自動で動いているのにうまく行かない？</li>
+<li>どこが悪かったの？</li>
+<li>なんのせい？？？</li>
 </ul>
 </div>
 </div>
@@ -197,10 +200,10 @@ NameError: name &#39;show_pyrami&#39; is not defined
 <h2>ログがあるとわかる<a class="headerlink" href="#id11" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>ログは情報の宝庫！</p>
 <ul class="simple">
-<li><p>発生時刻</p></li>
-<li><p>発生ファイル</p></li>
-<li><p>発生したときのエラー</p></li>
-<li><p>使ってた情報</p></li>
+<li>発生時刻</li>
+<li>発生ファイル</li>
+<li>発生したときのエラー</li>
+<li>使ってた情報</li>
 </ul>
 <p>詳しくは、 <a class="reference external" href="https://docs.python.org/ja/3/howto/logging.html">Logging HOWTO — Python 3.7.3 ドキュメント</a> をみてね。</p>
 </div>
@@ -215,9 +218,9 @@ NameError: name &#39;show_pyrami&#39; is not defined
 <div class="section" id="id13">
 <h2>余裕が出たら早めにやっていくといいものの話でした<a class="headerlink" href="#id13" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <ul class="simple">
-<li><p>エラーを読む</p></li>
-<li><p>ログを出力する</p></li>
-<li><p>テストを書く</p></li>
+<li>エラーを読む</li>
+<li>ログを出力する</li>
+<li>テストを書く</li>
 </ul>
 <p>よきPythonライフを！</p>
 </div>
@@ -261,7 +264,7 @@ NameError: name &#39;show_pyrami&#39; is not defined
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2019, kamekokamekame.net.
-      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.1 で生成しました。
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.1 で生成しました。
     </div>
   </body>
 </html>

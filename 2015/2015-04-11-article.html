@@ -4,7 +4,8 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
   <head>
-    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@okusama27" />
     <meta property="og:site_name" content="鉄は熱いうちに打て">
@@ -21,8 +22,8 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/bizstyle.js"></script>
     <link rel="search" title="検索" href="../search.html" />
     <link rel="next" title="virtualenv使ってみる" href="2015-04-12-article.html" />
@@ -49,11 +50,11 @@
         <div class="sphinxsidebarwrapper"><div id="toc" class="sidebarRow">
 <h3><a href="../index.html">Table Of Contents</a></h3>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../2019/2019-12-02-article.html">Windowsで分析したい</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2019/2019-12-01-article.html">PyLadies Tokyo 2019 合宿報告</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2019/2019-11-28-article.html">合宿でやることリスト2019</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2019/2019-11-25-article.html">SphinxCon JP 2019 に行ってきました。</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2019/2019-11-21-article.html">フィンテックエンジニア養成勉強会#3</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2019/2019-10-19-article.html">PyLadies Tokyo - 5周年記念パーティ</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2019/2019-09-17-article.html">PyCon JP 2019 に参加しました</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2019/2019-08-18-article.html">PyLadies Tokyo Meetup #44 夏休み! PEP自由研究発表会に参加</a></li>
 </ul>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../2019/index.html">2019</a></li>
@@ -71,11 +72,13 @@
   <p class="topless"><a href="2015-04-12-article.html"
                         title="次の章へ">virtualenv使ってみる</a></p>
 <div id="searchbox" style="display: none" role="search">
-  <h3 id="searchlabel">クイック検索</h3>
+  <h3>クイック検索</h3>
     <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="text" name="q" />
       <input type="submit" value="検索" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
@@ -111,7 +114,7 @@
 <span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
 <span class="c1">#import dateutil.tz</span>
 <span class="kn">import</span> <span class="nn">pytz</span>
-<span class="n">Check</span> <span class="n">config</span> <span class="nb">file</span>
+<span class="n">Check</span> <span class="n">config</span> <span class="n">file</span>
 <span class="o">--------------------------------------------------------------</span>
 <span class="n">config</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;config.yaml&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
 <span class="n">data</span> <span class="o">=</span> <span class="n">yaml</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">config</span><span class="p">)</span>
@@ -136,14 +139,14 @@
     <span class="k">if</span> <span class="n">req</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
         <span class="n">timeline</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">req</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="k">print</span> <span class="p">(</span><span class="s2">&quot;Error: </span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">req</span><span class="o">.</span><span class="n">status_code</span><span class="p">)</span>
+        <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Error: </span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">req</span><span class="o">.</span><span class="n">status_code</span><span class="p">)</span>
     <span class="c1"># display timeline</span>
     <span class="k">for</span> <span class="n">tweet</span> <span class="ow">in</span> <span class="n">timeline</span><span class="p">:</span>
-        <span class="n">dt</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">tweet</span><span class="p">[</span><span class="s1">&#39;created_at&#39;</span><span class="p">],</span><span class="s1">&#39;%a %b </span><span class="si">%d</span><span class="s1"> %H:%M:%S +0000 %Y&#39;</span><span class="p">)</span>
+        <span class="n">dt</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">tweet</span><span class="p">[</span><span class="s1">&#39;created_at&#39;</span><span class="p">],</span><span class="s1">&#39;</span><span class="si">%a</span><span class="s1"> %b </span><span class="si">%d</span><span class="s1"> %H:%M:%S +0000 %Y&#39;</span><span class="p">)</span>
         <span class="c1">#dt.replace(tzinfo=dateutil.tz.tzutc()).astimezone(dateutil.tz.tzlocal())</span>
         <span class="n">created_at</span> <span class="o">=</span> <span class="n">tz_tokyo</span><span class="o">.</span><span class="n">fromutc</span><span class="p">(</span><span class="n">dt</span><span class="p">)</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%Y-%m-</span><span class="si">%d</span><span class="s1"> %H:%M:%S&#39;</span><span class="p">)</span>
-        <span class="k">print</span> <span class="s2">&quot;[</span><span class="si">%s</span><span class="s2">]&quot;</span> <span class="o">%</span> <span class="n">created_at</span> <span class="p">,</span>
-        <span class="k">print</span> <span class="n">tweet</span><span class="p">[</span><span class="s2">&quot;text&quot;</span><span class="p">]</span>
+        <span class="nb">print</span> <span class="s2">&quot;[</span><span class="si">%s</span><span class="s2">]&quot;</span> <span class="o">%</span> <span class="n">created_at</span> <span class="p">,</span>
+        <span class="nb">print</span> <span class="n">tweet</span><span class="p">[</span><span class="s2">&quot;text&quot;</span><span class="p">]</span>
 <span class="k">def</span> <span class="nf">show_home_timeline</span><span class="p">(</span><span class="n">oauth</span><span class="p">):</span>
     <span class="n">params</span> <span class="o">=</span> <span class="p">{}</span>
     <span class="n">req</span> <span class="o">=</span> <span class="n">oauth</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">HOME_TIME_LINE_URL</span><span class="p">,</span> <span class="n">params</span> <span class="o">=</span> <span class="n">params</span><span class="p">)</span>
@@ -151,24 +154,24 @@
     <span class="k">if</span> <span class="n">req</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
         <span class="n">timeline</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">req</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="k">print</span> <span class="p">(</span><span class="s2">&quot;Error: </span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">req</span><span class="o">.</span><span class="n">status_code</span><span class="p">)</span>
+        <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Error: </span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">req</span><span class="o">.</span><span class="n">status_code</span><span class="p">)</span>
     <span class="c1"># display timeline</span>
     <span class="k">for</span> <span class="n">tweet</span> <span class="ow">in</span> <span class="n">timeline</span><span class="p">:</span>
         <span class="c1"># i.g. Sat Apr 11 06:10:12 +0000 2015</span>
-        <span class="n">dt</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">tweet</span><span class="p">[</span><span class="s1">&#39;created_at&#39;</span><span class="p">],</span><span class="s1">&#39;%a %b </span><span class="si">%d</span><span class="s1"> %H:%M:%S +0000 %Y&#39;</span><span class="p">)</span>
+        <span class="n">dt</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">tweet</span><span class="p">[</span><span class="s1">&#39;created_at&#39;</span><span class="p">],</span><span class="s1">&#39;</span><span class="si">%a</span><span class="s1"> %b </span><span class="si">%d</span><span class="s1"> %H:%M:%S +0000 %Y&#39;</span><span class="p">)</span>
         <span class="c1">#dt.replace(tzinfo=dateutil.tz.tzutc()).astimezone(dateutil.tz.tzlocal())</span>
         <span class="n">created_at</span> <span class="o">=</span> <span class="n">tz_tokyo</span><span class="o">.</span><span class="n">fromutc</span><span class="p">(</span><span class="n">dt</span><span class="p">)</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%Y-%m-</span><span class="si">%d</span><span class="s1"> %H:%M:%S&#39;</span><span class="p">)</span>
-        <span class="k">print</span> <span class="s2">&quot;[</span><span class="si">%s</span><span class="s2">]&quot;</span> <span class="o">%</span> <span class="n">created_at</span> <span class="p">,</span>
-        <span class="k">print</span> <span class="s2">&quot;@</span><span class="si">%s</span><span class="s2"> :&quot;</span> <span class="o">%</span> <span class="n">tweet</span><span class="p">[</span><span class="s2">&quot;user&quot;</span><span class="p">][</span><span class="s2">&quot;screen_name&quot;</span><span class="p">]</span> <span class="p">,</span>
-        <span class="k">print</span> <span class="n">tweet</span><span class="p">[</span><span class="s2">&quot;text&quot;</span><span class="p">]</span>
+        <span class="nb">print</span> <span class="s2">&quot;[</span><span class="si">%s</span><span class="s2">]&quot;</span> <span class="o">%</span> <span class="n">created_at</span> <span class="p">,</span>
+        <span class="nb">print</span> <span class="s2">&quot;@</span><span class="si">%s</span><span class="s2"> :&quot;</span> <span class="o">%</span> <span class="n">tweet</span><span class="p">[</span><span class="s2">&quot;user&quot;</span><span class="p">][</span><span class="s2">&quot;screen_name&quot;</span><span class="p">]</span> <span class="p">,</span>
+        <span class="nb">print</span> <span class="n">tweet</span><span class="p">[</span><span class="s2">&quot;text&quot;</span><span class="p">]</span>
 <span class="k">def</span> <span class="nf">post_tweet</span><span class="p">(</span><span class="n">oauth</span><span class="p">,</span><span class="n">args</span><span class="p">):</span>
     <span class="n">params</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;status&quot;</span><span class="p">:</span><span class="n">args</span><span class="o">.</span><span class="n">tweet</span><span class="p">}</span>
     <span class="n">req</span> <span class="o">=</span> <span class="n">oauth</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">POST_STATUS_UPDATE</span><span class="p">,</span> <span class="n">params</span> <span class="o">=</span> <span class="n">params</span><span class="p">)</span>
     <span class="c1"># Check response</span>
     <span class="k">if</span> <span class="n">req</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
-        <span class="k">print</span> <span class="s2">&quot;OK&quot;</span>
+        <span class="nb">print</span> <span class="s2">&quot;OK&quot;</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="k">print</span> <span class="p">(</span><span class="s2">&quot;Error: </span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">req</span><span class="o">.</span><span class="n">status_code</span><span class="p">)</span>
+        <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Error: </span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">req</span><span class="o">.</span><span class="n">status_code</span><span class="p">)</span>
 <span class="n">main</span> <span class="n">flow</span>
 <span class="o">--------------------------------------------------------------</span>
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
@@ -211,14 +214,14 @@
 そして、教えていただきました #＾＾#
 エラー処理も何もせず。。うーん。</p>
 <ul class="simple">
-<li><p>感想１：もっと慣れないとPythonistには程遠い。。。</p></li>
-<li><p>感想２：Javadocみたいなの見たい。（あるのかな？あるよね。。）</p></li>
-<li><p>感想３：戻り値のクラスを知りたい。</p></li>
+<li>感想１：もっと慣れないとPythonistには程遠い。。。</li>
+<li>感想２：Javadocみたいなの見たい。（あるのかな？あるよね。。）</li>
+<li>感想３：戻り値のクラスを知りたい。</li>
 </ul>
 <p>以下は疑問点ですが、後ほど調べます。。。</p>
 <ul class="simple">
-<li><p>疑問１：C++のヘッダーファイルみたいなの作れます？　メソッドの一覧とかだけ書いてあるファイルあるのか？コンパイルしないからいらないか。。</p></li>
-<li><p>疑問２：pydocみたいなのを出すためのコメントの書き方とかある？</p></li>
+<li>疑問１：C++のヘッダーファイルみたいなの作れます？　メソッドの一覧とかだけ書いてあるファイルあるのか？コンパイルしないからいらないか。。</li>
+<li>疑問２：pydocみたいなのを出すためのコメントの書き方とかある？</li>
 </ul>
 <p>あと、後悔
 - 後悔１：テストコード書きたかった
@@ -266,7 +269,7 @@
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2019, kamekokamekame.net.
-      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.1 で生成しました。
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.1 で生成しました。
     </div>
   </body>
 </html>

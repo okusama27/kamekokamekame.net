@@ -4,7 +4,8 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
   <head>
-    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@okusama27" />
     <meta property="og:site_name" content="鉄は熱いうちに打て">
@@ -20,12 +21,12 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/bizstyle.js"></script>
     <link rel="search" title="検索" href="../search.html" />
     <link rel="next" title="2018年がはじまりました。" href="2018-01-01-article.html" />
-    <link rel="prev" title="合宿でやることリスト2019" href="../2019/2019-11-28-article.html" />
+    <link rel="prev" title="コードの動きを確認しよう" href="../2019/2019-12-16-article.html" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <!--[if lt IE 9]>
     <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
@@ -38,7 +39,7 @@
           <a href="2018-01-01-article.html" title="2018年がはじまりました。"
              accesskey="N">次へ</a></li>
         <li class="right" >
-          <a href="../2019/2019-11-28-article.html" title="合宿でやることリスト2019"
+          <a href="../2019/2019-12-16-article.html" title="コードの動きを確認しよう"
              accesskey="P">前へ</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &#187;</li> 
       </ul>
@@ -47,11 +48,11 @@
         <div class="sphinxsidebarwrapper"><div id="toc" class="sidebarRow">
 <h3><a href="../index.html">Table Of Contents</a></h3>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../2019/2019-12-02-article.html">Windowsで分析したい</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2019/2019-12-01-article.html">PyLadies Tokyo 2019 合宿報告</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2019/2019-11-28-article.html">合宿でやることリスト2019</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2019/2019-11-25-article.html">SphinxCon JP 2019 に行ってきました。</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2019/2019-11-21-article.html">フィンテックエンジニア養成勉強会#3</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2019/2019-10-19-article.html">PyLadies Tokyo - 5周年記念パーティ</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2019/2019-09-17-article.html">PyCon JP 2019 に参加しました</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2019/2019-08-18-article.html">PyLadies Tokyo Meetup #44 夏休み! PEP自由研究発表会に参加</a></li>
 </ul>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../2019/index.html">2019</a></li>
@@ -63,17 +64,19 @@
 
 </div>
   <h4>前のトピックへ</h4>
-  <p class="topless"><a href="../2019/2019-11-28-article.html"
-                        title="前の章へ">合宿でやることリスト2019</a></p>
+  <p class="topless"><a href="../2019/2019-12-16-article.html"
+                        title="前の章へ">コードの動きを確認しよう</a></p>
   <h4>次のトピックへ</h4>
   <p class="topless"><a href="2018-01-01-article.html"
                         title="次の章へ">2018年がはじまりました。</a></p>
 <div id="searchbox" style="display: none" role="search">
-  <h3 id="searchlabel">クイック検索</h3>
+  <h3>クイック検索</h3>
     <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="text" name="q" />
       <input type="submit" value="検索" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
@@ -153,14 +156,14 @@
           <a href="2018-01-01-article.html" title="2018年がはじまりました。"
              >次へ</a></li>
         <li class="right" >
-          <a href="../2019/2019-11-28-article.html" title="合宿でやることリスト2019"
+          <a href="../2019/2019-12-16-article.html" title="コードの動きを確認しよう"
              >前へ</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &#187;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2019, kamekokamekame.net.
-      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.1 で生成しました。
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.1 で生成しました。
     </div>
   </body>
 </html>

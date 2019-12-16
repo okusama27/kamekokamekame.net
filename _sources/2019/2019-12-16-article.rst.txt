@@ -1,0 +1,61 @@
+:date: 2019-12-16 00:00:00
+:title: コードの動きを確認しよう
+:category: PyLadies
+:tags: PyLadies
+
+==========================================================
+コードの動きを確認しよう
+==========================================================
+
+2019-12-16
+
+この記事は `PyLadies Japan Advent Calendar 2019 - Adventar <https://adventar.org/calendars/4730>`_ の16日目です。
+
+今回は、 `PyLadies Tokyo Meetup #46 コードリファクタリング討論会 <https://pyladies-tokyo.connpass.com/event/156710/>`_ に向けて自分のコードの動きを確認する方法を紹介します。
+
+プログラムを書いたら、1行ずつ動かして各動作中の変数の様子などを見る方法があります。
+
+思い通りの結果にならない場合などにプログラムの実行中の変数の値などを参照し、どこで思い通りに確認する手段です。
+**デバッグ** と呼ばれます。
+
+お手軽に利用できるサイトだと `Python Tutor <http://pythontutor.com/>`_ があります。
+
+`Python Tutor <http://pythontutor.com/visualize.html>`_ に遷移し、 ``Live Programming Mode`` をクリックします。
+
+画面の左側に以下のコードを張り付けてみます。 ``Next >`` を押して行ってみます。
+
+.. ::
+
+   sample = []
+   
+   for i in range(0, 10):
+       sample.append(i)
+   print(sample)
+
+
+変数 ``i`` とリスト ``sample`` にどんな値が代入されてプログラムが実行されているかを確認できます。
+
+.. image:: /_static/images/2019/pythontutor1.png
+
+|
+
+.. image:: /_static/images/2019/pythontutor2.png
+
+|
+
+.. image:: /_static/images/2019/pythontutor3.png
+
+|
+
+.. image:: /_static/images/2019/pythontutor4.png
+
+|
+
+.. image:: /_static/images/2019/pythontutor5.png
+
+|
+
+.. image:: /_static/images/2019/pythontutor6.png
+
+
+動きを見てみるとおかしな部分が判明したり、プログラムを見直すきっかけになります。

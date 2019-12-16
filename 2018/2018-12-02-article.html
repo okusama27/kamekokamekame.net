@@ -4,7 +4,8 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
   <head>
-    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@okusama27" />
     <meta property="og:site_name" content="鉄は熱いうちに打て">
@@ -20,8 +21,8 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/bizstyle.js"></script>
     <link rel="search" title="検索" href="../search.html" />
     <link rel="next" title="DocutilsのBugの何処かのボタンを押す" href="2018-12-03-article.html" />
@@ -48,11 +49,11 @@
         <div class="sphinxsidebarwrapper"><div id="toc" class="sidebarRow">
 <h3><a href="../index.html">Table Of Contents</a></h3>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../2019/2019-12-02-article.html">Windowsで分析したい</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2019/2019-12-01-article.html">PyLadies Tokyo 2019 合宿報告</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2019/2019-11-28-article.html">合宿でやることリスト2019</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2019/2019-11-25-article.html">SphinxCon JP 2019 に行ってきました。</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2019/2019-11-21-article.html">フィンテックエンジニア養成勉強会#3</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2019/2019-10-19-article.html">PyLadies Tokyo - 5周年記念パーティ</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2019/2019-09-17-article.html">PyCon JP 2019 に参加しました</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2019/2019-08-18-article.html">PyLadies Tokyo Meetup #44 夏休み! PEP自由研究発表会に参加</a></li>
 </ul>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../2019/index.html">2019</a></li>
@@ -70,11 +71,13 @@
   <p class="topless"><a href="2018-12-03-article.html"
                         title="次の章へ">DocutilsのBugの何処かのボタンを押す</a></p>
 <div id="searchbox" style="display: none" role="search">
-  <h3 id="searchlabel">クイック検索</h3>
+  <h3>クイック検索</h3>
     <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="text" name="q" />
       <input type="submit" value="検索" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
@@ -118,11 +121,11 @@ PyLaidesにはいくつかの守るべきルールがあります。</p>
 <div class="section" id="id4">
 <h3>PyLadies Handbookに書いてあること<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <ul class="simple">
-<li><p>ローカルPyLadiesの作り方</p></li>
-<li><p>PyLadiesの運営方法</p></li>
-<li><p>PyLadiesの行動規範</p></li>
-<li><p>ロゴなどの権利</p></li>
-<li><p>どんな人が参加できるか</p></li>
+<li>ローカルPyLadiesの作り方</li>
+<li>PyLadiesの運営方法</li>
+<li>PyLadiesの行動規範</li>
+<li>ロゴなどの権利</li>
+<li>どんな人が参加できるか</li>
 </ul>
 </div>
 <div class="section" id="pip">
@@ -149,21 +152,21 @@ $ pyladies handbook
 <h3>着手<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>以下の方法で、翻訳をはじめました。</p>
 <ul class="simple">
-<li><p>GitHubにリポジトリを作る</p></li>
-<li><p>本家の英文をコピー（本家、rstなのにmdにコピー）</p></li>
-<li><p>issueで範囲、担当を指定</p></li>
-<li><p>英文の真下に1行ずつ日本語を書いて、担当ページが終わったらPRを作る</p></li>
-<li><p>PR上でレビューと修正を行う</p></li>
+<li>GitHubにリポジトリを作る</li>
+<li>本家の英文をコピー（本家、rstなのにmdにコピー）</li>
+<li>issueで範囲、担当を指定</li>
+<li>英文の真下に1行ずつ日本語を書いて、担当ページが終わったらPRを作る</li>
+<li>PR上でレビューと修正を行う</li>
 </ul>
 <img alt="../_images/pyladies_translatin_night_2.png" src="../_images/pyladies_translatin_night_2.png" />
 </div>
 <div class="section" id="id7">
 <h3>問題点<a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <ul class="simple">
-<li><p>日本語のドキュメントとして整形するときに手動でコピペが必要</p></li>
-<li><p>本家に取り込んでもらう時、どうやってやるのか決めていない</p></li>
-<li><p>レビューがやりづらい: PRでレビューするのですが、文書が1行ずつに分かれていて読みにくかったです</p></li>
-<li><p>GitHubを使えない人が参加しにくい: 集まってもGitHubの使い方を説明して終わることもありました。</p></li>
+<li>日本語のドキュメントとして整形するときに手動でコピペが必要</li>
+<li>本家に取り込んでもらう時、どうやってやるのか決めていない</li>
+<li>レビューがやりづらい: PRでレビューするのですが、文書が1行ずつに分かれていて読みにくかったです</li>
+<li>GitHubを使えない人が参加しにくい: 集まってもGitHubの使い方を説明して終わることもありました。</li>
 </ul>
 </div>
 </div>
@@ -254,9 +257,9 @@ $ pip install sphinx-intl
 <div class="section" id="id14">
 <h3>Sphinxプロジェクトでの作業<a class="headerlink" href="#id14" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <ul class="simple">
-<li><p>翻訳後のファイルをTransifexからダウンロード</p></li>
-<li><p>Sphinxプロジェクトのlocale/ja/LC_MESSAGES/ に翻訳したpoファイルをコピー</p></li>
-<li><p>htmlファイルを作成する</p></li>
+<li>翻訳後のファイルをTransifexからダウンロード</li>
+<li>Sphinxプロジェクトのlocale/ja/LC_MESSAGES/ に翻訳したpoファイルをコピー</li>
+<li>htmlファイルを作成する</li>
 </ul>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ make html
 </pre></div>
@@ -319,7 +322,7 @@ $ pip install sphinx-intl
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2019, kamekokamekame.net.
-      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.1 で生成しました。
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.1 で生成しました。
     </div>
   </body>
 </html>

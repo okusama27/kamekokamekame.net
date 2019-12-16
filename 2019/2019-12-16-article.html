@@ -1,0 +1,173 @@
+
+
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@okusama27" />
+    <meta property="og:site_name" content="鉄は熱いうちに打て">
+    <meta property="og:title" content="コードの動きを確認しよう">
+    <meta property="og:description" content="2019-12-16 この記事は PyLadies Japan Advent Calendar 2019 - Adventar の16日目です。 今回は、 PyLadies Tokyo Meetup #46 コードリファクタリング討論会 に向けて自分のコードの動きを確認する方法を紹介します。 プログラムを書いたら、1行ずつ動かして各動作中の変数の様子などを見る方法があります。 思い通りの結果...">
+    <meta property='og:url' content="https://kamekokamekame.net/2019/2019-12-16-article.html">
+    <meta property="og:image" content="https://kamekokamekame.net/_images/pythontutor1.png">
+    <title>コードの動きを確認しよう &#8212; 鉄は熱いうちに打て</title>
+    <link rel="stylesheet" href="../_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/bizstyle.js"></script>
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="next" title="2018" href="../2018/index.html" />
+    <link rel="prev" title="PyLadies Tokyo - 5周年記念パーティ" href="2019-10-19-article.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../2018/index.html" title="2018"
+             accesskey="N">次へ</a></li>
+        <li class="right" >
+          <a href="2019-10-19-article.html" title="PyLadies Tokyo - 5周年記念パーティ"
+             accesskey="P">前へ</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">2019</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div id="toc" class="sidebarRow">
+<h3><a href="../index.html">Table Of Contents</a></h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="2019-12-02-article.html">Windowsで分析したい</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2019-12-01-article.html">PyLadies Tokyo 2019 合宿報告</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2019-11-28-article.html">合宿でやることリスト2019</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2019-11-25-article.html">SphinxCon JP 2019 に行ってきました。</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2019-11-21-article.html">フィンテックエンジニア養成勉強会#3</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">2019</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2018/index.html">2018</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2017/index.html">2017</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2016/index.html">2016</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2015/index.html">2015</a></li>
+</ul>
+
+</div>
+  <h4>前のトピックへ</h4>
+  <p class="topless"><a href="2019-10-19-article.html"
+                        title="前の章へ">PyLadies Tokyo - 5周年記念パーティ</a></p>
+  <h4>次のトピックへ</h4>
+  <p class="topless"><a href="../2018/index.html"
+                        title="次の章へ">2018</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>クイック検索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="検索" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+<h1>鉄は熱いうちに打て<br>
+=============================</h1>
+
+<div class="section" id="id1">
+<h1>コードの動きを確認しよう<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>2019-12-16</p>
+<p>この記事は <a class="reference external" href="https://adventar.org/calendars/4730">PyLadies Japan Advent Calendar 2019 - Adventar</a> の16日目です。</p>
+<p>今回は、 <a class="reference external" href="https://pyladies-tokyo.connpass.com/event/156710/">PyLadies Tokyo Meetup #46 コードリファクタリング討論会</a> に向けて自分のコードの動きを確認する方法を紹介します。</p>
+<p>プログラムを書いたら、1行ずつ動かして各動作中の変数の様子などを見る方法があります。</p>
+<p>思い通りの結果にならない場合などにプログラムの実行中の変数の値などを参照し、どこで思い通りに確認する手段です。
+<strong>デバッグ</strong> と呼ばれます。</p>
+<p>お手軽に利用できるサイトだと <a class="reference external" href="http://pythontutor.com/">Python Tutor</a> があります。</p>
+<p><a class="reference external" href="http://pythontutor.com/visualize.html">Python Tutor</a> に遷移し、 <code class="docutils literal notranslate"><span class="pre">Live</span> <span class="pre">Programming</span> <span class="pre">Mode</span></code> をクリックします。</p>
+<p>画面の左側に以下のコードを張り付けてみます。 <code class="docutils literal notranslate"><span class="pre">Next</span> <span class="pre">&gt;</span></code> を押して行ってみます。</p>
+<p>変数 <code class="docutils literal notranslate"><span class="pre">i</span></code> とリスト <code class="docutils literal notranslate"><span class="pre">sample</span></code> にどんな値が代入されてプログラムが実行されているかを確認できます。</p>
+<img alt="../_images/pythontutor1.png" src="../_images/pythontutor1.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<img alt="../_images/pythontutor2.png" src="../_images/pythontutor2.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<img alt="../_images/pythontutor3.png" src="../_images/pythontutor3.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<img alt="../_images/pythontutor4.png" src="../_images/pythontutor4.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<img alt="../_images/pythontutor5.png" src="../_images/pythontutor5.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<img alt="../_images/pythontutor6.png" src="../_images/pythontutor6.png" />
+<p>動きを見てみるとおかしな部分が判明したり、プログラムを見直すきっかけになります。</p>
+</div>
+
+
+<br><br>
+<style>
+.box5 {
+    padding: 0.5em 1em;
+    border: double 5px #4ec4d3;
+}
+.box5 p {
+    margin: 0;
+    padding: 0;
+    font-size: large;
+}
+</style>
+<p>
+    <a href="//af.moshimo.com/af/c/click?a_id=767877&p_id=1166&pc_id=1793&pl_id=17972&guid=ON" target="_blank" rel="nofollow"><img src="//image.moshimo.com/af-img/0408/000000017972.png" width="234" height="60" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=767877&p_id=1166&pc_id=1793&pl_id=17972" width="1" height="1" style="border:none;">
+    <a href="//af.moshimo.com/af/c/click?a_id=767877&p_id=1166&pc_id=1793&pl_id=20225&guid=ON" target="_blank" rel="nofollow"><img src="//image.moshimo.com/af-img/0408/000000020225.png" width="234" height="60" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=767877&p_id=1166&pc_id=1793&pl_id=20225" width="1" height="1" style="border:none;">
+</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../2018/index.html" title="2018"
+             >次へ</a></li>
+        <li class="right" >
+          <a href="2019-10-19-article.html" title="PyLadies Tokyo - 5周年記念パーティ"
+             >前へ</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >2019</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, kamekokamekame.net.
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.1 で生成しました。
+    </div>
+  </body>
+</html>
