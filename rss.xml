@@ -4,8 +4,18 @@
 <description>Strike while the iron is hot</description>
 <language>ja</language>
 <copyright>2019, kamekokamekame.net</copyright>
-<lastBuildDate>Mon, 02 December 2019 08:00:00 +0900</lastBuildDate>
+<lastBuildDate>Mon, 16 December 2019 08:00:00 +0900</lastBuildDate>
 <item>
+<title>コードの動きを確認しよう</title>
+<link>https://kamekokamekame.net/2019/2019-12-16-article.html</link>
+<description>
+&lt;p&gt;この記事は &lt;a class=&quot;reference external&quot; href=&quot;https://adventar.org/calendars/4730&quot;&gt;PyLadies Japan Advent Calendar 2019 - Adventar&lt;/a&gt; の16日目です。&lt;/p&gt;&lt;p&gt;今回は、 &lt;a class=&quot;reference external&quot; href=&quot;https://pyladies-tokyo.connpass.com/event/156710/&quot;&gt;PyLadies Tokyo Meetup #46 コードリファクタリング討論会&lt;/a&gt; に向けて自分のコードの動きを確認する方法を紹介します。&lt;/p&gt;&lt;p&gt;プログラムを書いたら、1行ずつ動かして各動作中の変数の様子などを見る方法があります。&lt;/p&gt;&lt;p&gt;思い通りの結果にならない場合などにプログラムの実行中の変数の値などを参照し、どこで思い通りに確認する手段です。
+&lt;strong&gt;デバッグ&lt;/strong&gt; と呼ばれます。&lt;/p&gt;
+...
+</description>
+<pubDate>Mon, 16 December 2019 08:00:00 +0900</pubDate>
+<guid>https://kamekokamekame.net/2019/2019-12-16-article.html</guid>
+</item><item>
 <title>Windowsで分析したい</title>
 <link>https://kamekokamekame.net/2019/2019-12-02-article.html</link>
 <description>
@@ -72,16 +82,6 @@ from &lt;strong&gt;&lt;a href=&quot;https://www.slideshare.net/okusama27&quot; t
 </description>
 <pubDate>Mon, 25 November 2019 08:00:00 +0900</pubDate>
 <guid>https://kamekokamekame.net/2019/2019-11-25-article.html</guid>
-</item><item>
-<title>フィンテックエンジニア養成勉強会#3</title>
-<link>https://kamekokamekame.net/2019/2019-11-21-article.html</link>
-<description>
-&lt;p&gt;金融エンジニア要請コミュニティのイベント &lt;a class=&quot;reference external&quot; href=&quot;https://fintech-engineer.connpass.com/event/151320/&quot;&gt;【好評につき増枠！】フィンテックエンジニア養成勉強会#3（共催:東京証券取引所）&lt;/a&gt; に行ってきました。
-東京証券取引所での開催につられての参加でした。&lt;/p&gt;&lt;p&gt;空港みたいに入り口で荷物チェックされました。でも、ペットボトルの中身はチェックされなかった。&lt;/p&gt;&lt;p&gt;本の勉強会なのかな？と思ったら、パネルディスカッションでした。&lt;/p&gt;&lt;p&gt;最初は東証の中の人がご挨拶。東証の仕事の紹介。&lt;/p&gt;
-...
-</description>
-<pubDate>Thu, 21 November 2019 08:00:00 +0900</pubDate>
-<guid>https://kamekokamekame.net/2019/2019-11-21-article.html</guid>
 </item>
 </channel>
 </rss>

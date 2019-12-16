@@ -4,8 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@okusama27" />
     <meta property="og:site_name" content="鉄は熱いうちに打て">
@@ -22,8 +21,8 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
-    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/bizstyle.js"></script>
     <link rel="search" title="検索" href="../search.html" />
     <link rel="next" title="SphinxCon JP 2019 に行ってきました。" href="2019-11-25-article.html" />
@@ -71,13 +70,11 @@
   <p class="topless"><a href="2019-11-25-article.html"
                         title="次の章へ">SphinxCon JP 2019 に行ってきました。</a></p>
 <div id="searchbox" style="display: none" role="search">
-  <h3>クイック検索</h3>
+  <h3 id="searchlabel">クイック検索</h3>
     <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" />
       <input type="submit" value="検索" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
@@ -102,24 +99,24 @@
 <div class="section" id="must">
 <h2>MUST<a class="headerlink" href="#must" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <ul class="simple">
-<li>[ ] このブログのfeedが2重に送信されるので修正する</li>
-<li>[ ] Fintalkのアドベントカレンダーの記事作成</li>
-<li>[ ] PyConJP2019参加ブログ</li>
-<li>[ ] PyLadies Handbook翻訳作業の現状把握、マイルストーン作成</li>
-<li>[ ] 某プロジェクトを開始。（少なくとも1時間はやる）</li>
-<li>[ ] Fintalkの11月課題</li>
+<li><p>[ ] このブログのfeedが2重に送信されるので修正する</p></li>
+<li><p>[ ] Fintalkのアドベントカレンダーの記事作成</p></li>
+<li><p>[ ] PyConJP2019参加ブログ</p></li>
+<li><p>[ ] PyLadies Handbook翻訳作業の現状把握、マイルストーン作成</p></li>
+<li><p>[ ] 某プロジェクトを開始。（少なくとも1時間はやる）</p></li>
+<li><p>[ ] Fintalkの11月課題</p></li>
 </ul>
 </div>
 <div class="section" id="want">
 <h2>WANT<a class="headerlink" href="#want" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <ul class="simple">
-<li>[ ] PyLadies Handbook翻訳</li>
-<li>[ ] ablogのコードを読んで仕様を把握する</li>
-<li>[ ] このブログ作成プロジェクトを見直す。</li>
-<li>[ ] SphinxConで買った本を読む</li>
-<li>[ ] 合宿1日目の感想ブログ</li>
-<li>[ ] 合宿2日目の感想ブログ</li>
-<li>[ ] 合宿3日目の感想ブログ</li>
+<li><p>[ ] PyLadies Handbook翻訳</p></li>
+<li><p>[ ] ablogのコードを読んで仕様を把握する</p></li>
+<li><p>[ ] このブログ作成プロジェクトを見直す。</p></li>
+<li><p>[ ] SphinxConで買った本を読む</p></li>
+<li><p>[ ] 合宿1日目の感想ブログ</p></li>
+<li><p>[ ] 合宿2日目の感想ブログ</p></li>
+<li><p>[ ] 合宿3日目の感想ブログ</p></li>
 </ul>
 <p>やらなきゃなーと思ってためていたことが多すぎ。
 感想ブログは合宿の場所を終わるまでは内緒にしたほうが良いっぽいので最終日に上げる予定です。</p>
@@ -163,7 +160,7 @@
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2019, kamekokamekame.net.
-      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.1 で生成しました。
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 2.3.0 で生成しました。
     </div>
   </body>
 </html>

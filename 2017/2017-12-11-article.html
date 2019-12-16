@@ -4,8 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@okusama27" />
     <meta property="og:site_name" content="鉄は熱いうちに打て">
@@ -21,8 +20,8 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
-    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/bizstyle.js"></script>
     <link rel="search" title="検索" href="../search.html" />
     <link rel="next" title="unittestのテスト前後に実行される処理の確認" href="2017-12-12-article.html" />
@@ -71,13 +70,11 @@
   <p class="topless"><a href="2017-12-12-article.html"
                         title="次の章へ">unittestのテスト前後に実行される処理の確認</a></p>
 <div id="searchbox" style="display: none" role="search">
-  <h3>クイック検索</h3>
+  <h3 id="searchlabel">クイック検索</h3>
     <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" />
       <input type="submit" value="検索" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
@@ -101,6 +98,39 @@
 <p><a class="reference external" href="https://docs.python.org/ja/3/library/unittest.html">unittest — ユニットテストフレームワーク</a></p>
 <div class="section" id="id2">
 <h2>基本的な例<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>import unittest
+
+unittest.TestCase)を継承するTestStringMethodsクラスを定義していますね。
+--------------------------------------------------------------
+class TestStringMethods(unittest.TestCase):
+
+    # 1つ目のテスト
+    # 「&#39;foo&#39;.upper()」と「&#39;FOO&#39;」が等しいか比較していますね
+    def test_upper(self):
+        self.assertEqual(&#39;foo&#39;.upper(), &#39;FOO&#39;)
+
+    # 2つ目のテスト
+    # 全部大文字かどうかを確認するstr.isupper()を利用しています
+    def test_isupper(self):
+        # 「&#39;FOO&#39;.isupper())」の結果がTrueか
+        self.assertTrue(&#39;FOO&#39;.isupper())
+        # 「&#39;Foo&#39;.isupper()」の結果がFalseか
+        self.assertFalse(&#39;Foo&#39;.isupper())
+
+    # 3つ目のテスト
+    # 文字を配列に分割して、比較
+    def test_split(self):
+        s = &#39;hello world&#39;
+        self.assertEqual(s.split(), [&#39;hello&#39;, &#39;world&#39;])
+        # わざとstr.split()の引数に文字以外のものを指定して、TypeErrorが起こるか検証
+        # check that s.split fails when the separator is not a string
+        with self.assertRaises(TypeError):
+            s.split(2)
+
+if __name__ == &#39;__main__&#39;:
+    unittest.main()
+</pre></div>
+</div>
 <p>実行</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ python unittest_sample1.py
 ...
@@ -200,7 +230,7 @@ OK
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2019, kamekokamekame.net.
-      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.1 で生成しました。
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 2.3.0 で生成しました。
     </div>
   </body>
 </html>

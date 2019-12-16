@@ -4,8 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@okusama27" />
     <meta property="og:site_name" content="鉄は熱いうちに打て">
@@ -21,8 +20,8 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
-    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/bizstyle.js"></script>
     <link rel="search" title="検索" href="../search.html" />
     <link rel="next" title="読書: 眠れなくなるほど面白い 図解 確率の話" href="2018-12-04-article.html" />
@@ -71,13 +70,11 @@
   <p class="topless"><a href="2018-12-04-article.html"
                         title="次の章へ">読書: 眠れなくなるほど面白い 図解 確率の話</a></p>
 <div id="searchbox" style="display: none" role="search">
-  <h3>クイック検索</h3>
+  <h3 id="searchlabel">クイック検索</h3>
     <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" />
       <input type="submit" value="検索" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
@@ -108,15 +105,15 @@
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><p>早速、 <a class="reference external" href="https://twitter.com/cocoatomo">&#64;cocoatomo</a> さんがリンクを貼ってくださいました。</p>
 <p>しかし、ビール飲んで、眠くて朦朧としている私は「どっか押す」くらいしかわかっていませんでした。あとから調べたことをまとめましょう。</p>
 <ul class="simple">
-<li><a class="reference external" href="https://sourceforge.net/">SourceForge</a> : オープンソースの開発とダウンロードをする老舗サイト。</li>
+<li><p><a class="reference external" href="https://sourceforge.net/">SourceForge</a> : オープンソースの開発とダウンロードをする老舗サイト。</p></li>
 </ul>
 <p>ここでDocutilsの開発が行われているらしい。</p>
 <ul class="simple">
-<li><a class="reference external" href="https://sourceforge.net/projects/docutils/">Docutils: Documentation Utilities download | SourceForge.net</a></li>
+<li><p><a class="reference external" href="https://sourceforge.net/projects/docutils/">Docutils: Documentation Utilities download | SourceForge.net</a></p></li>
 </ul>
 <p>これが、Docutilsのプロジェクトらしい。</p>
 <ul class="simple">
-<li><a class="reference external" href="https://sourceforge.net/p/docutils/bugs/281/">Docutils: Documentation Utilities / Bugs / #281 Support colon in meta directive name</a></li>
+<li><p><a class="reference external" href="https://sourceforge.net/p/docutils/bugs/281/">Docutils: Documentation Utilities / Bugs / #281 Support colon in meta directive name</a></p></li>
 </ul>
 <p>これが該当のBugらしいです。ちゃんと聞いてなかったので、どこを押したらいいのかわかりませんでした。</p>
 <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">SOURCEFOGEにアカウント作ってログインしてみたけど、押すところがわからない。 Fixed in r8169. って書いてあるけど、なんか、直っているの？ <a href="https://t.co/5fWKe1bib7">https://t.co/5fWKe1bib7</a></p>&mdash; kame-chan (@okusama27) <a href="https://twitter.com/okusama27/status/1069120818804744192?ref_src=twsrc%5Etfw">2018年12月2日</a></blockquote>
@@ -164,7 +161,7 @@
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2019, kamekokamekame.net.
-      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.1 で生成しました。
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 2.3.0 で生成しました。
     </div>
   </body>
 </html>

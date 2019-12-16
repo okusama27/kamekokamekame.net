@@ -4,8 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@okusama27" />
     <meta property="og:site_name" content="鉄は熱いうちに打て">
@@ -21,8 +20,8 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
-    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/bizstyle.js"></script>
     <link rel="search" title="検索" href="../search.html" />
     <link rel="next" title="Effective Pythonで学ぶ - 3章 クラスと継承4" href="2017-12-08-article.html" />
@@ -71,13 +70,11 @@
   <p class="topless"><a href="2017-12-08-article.html"
                         title="次の章へ">Effective Pythonで学ぶ - 3章　クラスと継承4</a></p>
 <div id="searchbox" style="display: none" role="search">
-  <h3>クイック検索</h3>
+  <h3 id="searchlabel">クイック検索</h3>
     <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" />
       <input type="submit" value="検索" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
@@ -103,7 +100,7 @@
 <div class="section" id="id2">
 <h2>3章　クラスと継承<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <ul class="simple">
-<li>項目 25：親クラスを superを使って初期化する</li>
+<li><p>項目 25：親クラスを superを使って初期化する</p></li>
 </ul>
 <p>昨日のコンストラクタの話ですが、 <a class="reference external" href="https://www.oreilly.co.jp/books/9784873116884/">Python文法詳解</a> の６．４．３継承にありました。
 MRO（Method Resolution Order）で検索していくらしいです。同じ親を持つと兄弟も検索していくそうです。</p>
@@ -197,7 +194,7 @@ MRO（Method Resolution Order）で検索していくらしいです。同じ親
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2019, kamekokamekame.net.
-      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.1 で生成しました。
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 2.3.0 で生成しました。
     </div>
   </body>
 </html>

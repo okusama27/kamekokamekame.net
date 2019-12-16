@@ -4,8 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@okusama27" />
     <meta property="og:site_name" content="鉄は熱いうちに打て">
@@ -22,8 +21,8 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
-    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/bizstyle.js"></script>
     <link rel="search" title="検索" href="../search.html" />
     <link rel="next" title="達人プログラマーを読んでみた−34．テストしやすいコード2" href="2017-12-28-article.html" />
@@ -72,13 +71,11 @@
   <p class="topless"><a href="2017-12-28-article.html"
                         title="次の章へ">達人プログラマーを読んでみた−34．テストしやすいコード2</a></p>
 <div id="searchbox" style="display: none" role="search">
-  <h3>クイック検索</h3>
+  <h3 id="searchlabel">クイック検索</h3>
     <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" />
       <input type="submit" value="検索" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
@@ -106,8 +103,8 @@
 本もあるみたいですが、PDF版を買おうとしたらアダルト系決済サイトの入力画面が出てきたので、萎えてます。amazonで買うと2倍のお値段。しかもkindle。悩む。</p>
 <p>ユニットテストを書くとなにがいいか？</p>
 <ul class="simple">
-<li>該当モジュールが持っている全機能の使用例</li>
-<li>将来のコード変更時における、有効性検証用回帰テストの生成手段</li>
+<li><p>該当モジュールが持っている全機能の使用例</p></li>
+<li><p>将来のコード変更時における、有効性検証用回帰テストの生成手段</p></li>
 </ul>
 <p>これは仕事中にレビューを同僚にお願いした時も「テストが書いてないので仕様がよくわからないのでレビューできない」と言われたことがあります。テストを書くと品質を保持するの他に、 <strong>他のプログラマに仕様を伝える</strong> という側面があることを学びました。</p>
 </div>
@@ -151,7 +148,7 @@
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2019, kamekokamekame.net.
-      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.1 で生成しました。
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 2.3.0 で生成しました。
     </div>
   </body>
 </html>

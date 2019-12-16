@@ -4,8 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@okusama27" />
     <meta property="og:site_name" content="鉄は熱いうちに打て">
@@ -21,8 +20,8 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
-    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/bizstyle.js"></script>
     <link rel="search" title="検索" href="../search.html" />
     <link rel="next" title="PyLadies沖縄合宿に参加します - 目標を立てよう" href="2018-11-01-article.html" />
@@ -71,13 +70,11 @@
   <p class="topless"><a href="2018-11-01-article.html"
                         title="次の章へ">PyLadies沖縄合宿に参加します - 目標を立てよう</a></p>
 <div id="searchbox" style="display: none" role="search">
-  <h3>クイック検索</h3>
+  <h3 id="searchlabel">クイック検索</h3>
     <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" />
       <input type="submit" value="検索" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
@@ -102,8 +99,8 @@
 <p>毎度のことながら楽しい会でした。みんなありがとう！！</p>
 <p>スポンサーの皆様もありがとうございました！！</p>
 <ul class="simple">
-<li>会場スポンサー <a class="reference external" href="https://coiney.com/">コイニ―株式会社</a> 様</li>
-<li>ケーキスポンサー <a class="reference external" href="https://twitter.com/Addition_quince">kanan様</a></li>
+<li><p>会場スポンサー <a class="reference external" href="https://coiney.com/">コイニ―株式会社</a> 様</p></li>
+<li><p>ケーキスポンサー <a class="reference external" href="https://twitter.com/Addition_quince">kanan様</a></p></li>
 </ul>
 <p>ケーキ美味しかったね</p>
 <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">わーい。ケーキだぁ！ もぐもぐするよ。<a href="https://twitter.com/Addition_quince?ref_src=twsrc%5Etfw">@Addition_quince</a> さんありがとうございまーす！ <a href="https://twitter.com/hashtag/PyLadiesTokyo?src=hash&amp;ref_src=twsrc%5Etfw">#PyLadiesTokyo</a> <a href="https://t.co/aBUoy9DVWa">pic.twitter.com/aBUoy9DVWa</a></p>&mdash; PyLadiesTokyo (@PyLadiesTokyo) <a href="https://twitter.com/PyLadiesTokyo/status/1049162242757865473?ref_src=twsrc%5Etfw">2018年10月8日</a></blockquote>
@@ -162,7 +159,7 @@
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2019, kamekokamekame.net.
-      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.1 で生成しました。
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 2.3.0 で生成しました。
     </div>
   </body>
 </html>
