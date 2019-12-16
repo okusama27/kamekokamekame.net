@@ -22,9 +22,9 @@
 
 `Python Tutor visualize <http://pythontutor.com/visualize.html>`_ に遷移し、 ``Live Programming Mode`` をクリックします。
 
-画面の左側に以下のコードを張り付けてみます。 ``Next >`` を押して行ってみます。
+画面の左側に以下のコードを張り付けてみます。 ``Next >`` をクリックして1処理ずつ実行します。
 
-.. ::
+::
 
    sample = []
    
