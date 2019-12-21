@@ -4,13 +4,38 @@
 <description>Strike while the iron is hot</description>
 <language>ja</language>
 <copyright>2019, kamekokamekame.net</copyright>
-<lastBuildDate>Mon, 16 December 2019 08:00:00 +0900</lastBuildDate>
+<lastBuildDate>Sat, 21 December 2019 08:00:00 +0900</lastBuildDate>
 <item>
+<title>WindowsにJupyterとTA-Libをインストールしよう</title>
+<link>https://kamekokamekame.net/2019/2019-12-21-article.html</link>
+<description>
+&lt;p&gt;この記事は、 &lt;a class=&quot;reference external&quot; href=&quot;https://adventar.org/calendars/4331&quot;&gt;fintalk Advent Calendar 2019 - Adventar&lt;/a&gt; の21日目の記事です。&lt;/p&gt;&lt;div class=&quot;section&quot; id=&quot;id1&quot;&gt;
+&lt;h2&gt;あらすじ&lt;a class=&quot;headerlink&quot; href=&quot;#id1&quot; title=&quot;このヘッドラインへのパーマリンク&quot;&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;p&gt;プライベートマシンをMacからWinに変更した&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;fintalkでは、Jupyterを用いて分析などのハンズオンをしている&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;macでは、ローカルでJupyter notebookを動かして分析をしていた&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;winでも同じことをしたい&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;div class=&quot;section&quot; id=&quot;id2&quot;&gt;
+&lt;h2&gt;しばり&lt;a class=&quot;headerlink&quot; href=&quot;#id2&quot; title=&quot;このヘッドラインへのパーマリンク&quot;&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;p&gt;Anaconda, condaなどは使わない&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;環境は汚さない&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;div class=&quot;section&quot; id=&quot;id3&quot;&gt;
+&lt;h2&gt;反省&lt;a class=&quot;headerlink&quot; href=&quot;#id3&quot; title=&quot;このヘッドラインへのパーマリンク&quot;&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;12/2に &lt;a class=&quot;reference external&quot; href=&quot;https://kamekokamekame.net/2019/2019-12-02-article.html&quot;&gt;Windowsで分析したい&lt;/a&gt; でWindows10のUbuntu上でやろうといろいろやっていたのですが、結論から言うとUbuntu環境使っていません。&lt;/p&gt;
+&lt;/div&gt;
+...
+</description>
+<pubDate>Sat, 21 December 2019 08:00:00 +0900</pubDate>
+<guid>https://kamekokamekame.net/2019/2019-12-21-article.html</guid>
+</item><item>
 <title>コードを動かしながら確認しよう</title>
 <link>https://kamekokamekame.net/2019/2019-12-16-article.html</link>
 <description>
-&lt;p&gt;この記事は &lt;a class=&quot;reference external&quot; href=&quot;https://adventar.org/calendars/4730&quot;&gt;PyLadies Japan Advent Calendar 2019 - Adventar&lt;/a&gt; の16日目です。&lt;/p&gt;&lt;p&gt;今回は、 &lt;a class=&quot;reference external&quot; href=&quot;https://pyladies-tokyo.connpass.com/event/156710/&quot;&gt;PyLadies Tokyo Meetup #46 コードリファクタリング討論会&lt;/a&gt; に向けて自分のコードの動きを確認する方法を紹介します。&lt;/p&gt;&lt;p&gt;プログラムを書いたら、1行ずつ動かして各動作中の変数の様子などを見る方法があります。&lt;/p&gt;&lt;p&gt;思い通りの結果にならない場合などにプログラムの実行中の変数の値などを参照し、どこで思い通りに確認する手段です。
-&lt;strong&gt;デバッグ&lt;/strong&gt; と呼ばれます。&lt;/p&gt;
+&lt;p&gt;この記事は &lt;a class=&quot;reference external&quot; href=&quot;https://adventar.org/calendars/4730&quot;&gt;PyLadies Japan Advent Calendar 2019 - Adventar&lt;/a&gt; の16日目です。&lt;/p&gt;&lt;p&gt;今回は、 &lt;a class=&quot;reference external&quot; href=&quot;https://pyladies-tokyo.connpass.com/event/156710/&quot;&gt;PyLadies Tokyo Meetup #46 コードリファクタリング討論会&lt;/a&gt; に向けて自分のコードの動きを確認する方法を紹介します。&lt;/p&gt;&lt;p&gt;プログラムを書いたら、1行ずつ動かして各動作中の変数の様子などを見る方法があります。&lt;/p&gt;&lt;p&gt;思い通りの結果にならない場合などにプログラムの実行中の変数の値などを参照し、どこで思い通りの状態になっていないのかを確認する手段です。&lt;/p&gt;
 ...
 </description>
 <pubDate>Mon, 16 December 2019 08:00:00 +0900</pubDate>
@@ -68,20 +93,6 @@ from &lt;strong&gt;&lt;a href=&quot;https://www.slideshare.net/okusama27&quot; t
 </description>
 <pubDate>Thu, 28 November 2019 08:00:00 +0900</pubDate>
 <guid>https://kamekokamekame.net/2019/2019-11-28-article.html</guid>
-</item><item>
-<title>SphinxCon JP 2019 に行ってきました。</title>
-<link>https://kamekokamekame.net/2019/2019-11-25-article.html</link>
-<description>
-&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://sphinxjp.connpass.com/event/154759/&quot;&gt;SphinxCon JP 2019&lt;/a&gt; に行ってきました。&lt;/p&gt;&lt;p&gt;今日は年に一回の世界最大のShpinxの祭典、Shpinx Con JP 2019に行ってきました。&lt;/p&gt;&lt;p&gt;以下、私のトークを聞いた感想です。トークについてはTwitterで &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;#sphinxjp&lt;/span&gt;&lt;/code&gt; というタグにぶら下がっていると思います。&lt;/p&gt;&lt;div class=&quot;section&quot; id=&quot;id2&quot;&gt;
-&lt;h2&gt;オープニングトーク&lt;a class=&quot;headerlink&quot; href=&quot;#id2&quot; title=&quot;このヘッドラインへのパーマリンク&quot;&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;毎月、市ヶ谷でハッカソンをしている。
-翻訳か、Sphinx関係のことをやればいいハッカソン。皆来てね！（と言ってたような気がする）&lt;/p&gt;
-&lt;p&gt;定期総会の紹介。忘年会という名の総会があるよ。12/3にあるそうです。（別の忘年会で行けない。。。）&lt;/p&gt;
-&lt;/div&gt;
-...
-</description>
-<pubDate>Mon, 25 November 2019 08:00:00 +0900</pubDate>
-<guid>https://kamekokamekame.net/2019/2019-11-25-article.html</guid>
 </item>
 </channel>
 </rss>

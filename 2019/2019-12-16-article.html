@@ -24,8 +24,8 @@
     <script type="text/javascript" src="../_static/translations.js"></script>
     <script type="text/javascript" src="../_static/bizstyle.js"></script>
     <link rel="search" title="検索" href="../search.html" />
-    <link rel="next" title="2018" href="../2018/index.html" />
-    <link rel="prev" title="PyLadies Tokyo - 5周年記念パーティ" href="2019-10-19-article.html" />
+    <link rel="next" title="Windowsで分析したい" href="2019-12-02-article.html" />
+    <link rel="prev" title="WindowsにJupyterとTA-Libをインストールしよう" href="../index.html" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <!--[if lt IE 9]>
     <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
@@ -35,24 +35,23 @@
       <h3>ナビゲーション</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="../2018/index.html" title="2018"
+          <a href="2019-12-02-article.html" title="Windowsで分析したい"
              accesskey="N">次へ</a></li>
         <li class="right" >
-          <a href="2019-10-19-article.html" title="PyLadies Tokyo - 5周年記念パーティ"
+          <a href="../index.html" title="WindowsにJupyterとTA-Libをインストールしよう"
              accesskey="P">前へ</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">2019</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &#187;</li> 
       </ul>
     </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper"><div id="toc" class="sidebarRow">
 <h3><a href="../index.html">Table Of Contents</a></h3>
-<ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">コードを動かしながら確認しよう</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2019-12-02-article.html">Windowsで分析したい</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2019-12-01-article.html">PyLadies Tokyo 2019 合宿報告</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2019-11-28-article.html">合宿でやることリスト2019</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2019-11-25-article.html">SphinxCon JP 2019 に行ってきました。</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2019-11-21-article.html">フィンテックエンジニア養成勉強会#3</a></li>
 </ul>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">2019</a></li>
@@ -64,11 +63,11 @@
 
 </div>
   <h4>前のトピックへ</h4>
-  <p class="topless"><a href="2019-10-19-article.html"
-                        title="前の章へ">PyLadies Tokyo - 5周年記念パーティ</a></p>
+  <p class="topless"><a href="../index.html"
+                        title="前の章へ">WindowsにJupyterとTA-Libをインストールしよう</a></p>
   <h4>次のトピックへ</h4>
-  <p class="topless"><a href="../2018/index.html"
-                        title="次の章へ">2018</a></p>
+  <p class="topless"><a href="2019-12-02-article.html"
+                        title="次の章へ">Windowsで分析したい</a></p>
 <div id="searchbox" style="display: none" role="search">
   <h3 id="searchlabel">クイック検索</h3>
     <div class="searchformwrapper">
@@ -96,8 +95,8 @@
 <p>この記事は <a class="reference external" href="https://adventar.org/calendars/4730">PyLadies Japan Advent Calendar 2019 - Adventar</a> の16日目です。</p>
 <p>今回は、 <a class="reference external" href="https://pyladies-tokyo.connpass.com/event/156710/">PyLadies Tokyo Meetup #46 コードリファクタリング討論会</a> に向けて自分のコードの動きを確認する方法を紹介します。</p>
 <p>プログラムを書いたら、1行ずつ動かして各動作中の変数の様子などを見る方法があります。</p>
-<p>思い通りの結果にならない場合などにプログラムの実行中の変数の値などを参照し、どこで思い通りの状態になっていないのかを確認する手段です。
-この確認作業は <strong>デバッグ</strong> と呼ばれます。</p>
+<p>思い通りの結果にならない場合などにプログラムの実行中の変数の値などを参照し、どこで思い通りの状態になっていないのかを確認する手段です。</p>
+<p>この確認作業は <strong>デバッグ</strong> と呼ばれます。</p>
 <p>お手軽に利用できるサイトだと <a class="reference external" href="http://pythontutor.com/">Python Tutor</a> があります。</p>
 <p><a class="reference external" href="http://pythontutor.com/visualize.html">Python Tutor visualize</a> に遷移し、 <code class="docutils literal notranslate"><span class="pre">Live</span> <span class="pre">Programming</span> <span class="pre">Mode</span></code> をクリックします。</p>
 <p>画面の左側に以下のコードを張り付けてみます。 <code class="docutils literal notranslate"><span class="pre">Next</span> <span class="pre">&gt;</span></code> をクリックして1処理ずつ実行します。</p>
@@ -160,13 +159,12 @@
       <h3>ナビゲーション</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="../2018/index.html" title="2018"
+          <a href="2019-12-02-article.html" title="Windowsで分析したい"
              >次へ</a></li>
         <li class="right" >
-          <a href="2019-10-19-article.html" title="PyLadies Tokyo - 5周年記念パーティ"
+          <a href="../index.html" title="WindowsにJupyterとTA-Libをインストールしよう"
              >前へ</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="index.html" >2019</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &#187;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">

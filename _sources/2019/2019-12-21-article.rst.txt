@@ -1,0 +1,107 @@
+:date: 2019-12-21 00:00:00
+:title: WindowsにJupyterとTA-Libをインストールしよう
+:category: fintalk
+:tags: fintalk
+
+==========================================================
+WindowsにJupyterとTA-Libをインストールしよう
+==========================================================
+
+2019-12-21
+
+この記事は、 `fintalk Advent Calendar 2019 - Adventar <https://adventar.org/calendars/4331>`_ の21日目の記事です。
+
+
+あらすじ
+--------------------
+- プライベートマシンをMacからWinに変更した
+- fintalkでは、Jupyterを用いて分析などのハンズオンをしている
+- macでは、ローカルでJupyter notebookを動かして分析をしていた
+- winでも同じことをしたい
+
+しばり
+----------
+- Anaconda, condaなどは使わない
+- 環境は汚さない
+
+反省
+-------
+12/2に `Windowsで分析したい <https://kamekokamekame.net/2019/2019-12-02-article.html>`_ でWindows10のUbuntu上でやろうといろいろやっていたのですが、結論から言うとUbuntu環境使っていません。
+
+設定
+--------------
+Python3.8をインストールする
++++++++++++++++++++++++++++++++++++++++++++
+`https://www.python.org/ <https://www.python.org/>`_ でWindows用のインストーラーを取得します。
+
+今日の時点でPython3.8.1でWindows用のインストーラーを取得します。
+
+.. image:: /_static/images/2019/image_20191221_1.png
+
+インストーラーでインストールします。
+
+TA-Libをインストールする
+++++++++++++++++++++++++++++++++++++++++++++++++
+`http://ta-lib.org/hdr_dw.html <http://ta-lib.org/hdr_dw.html>`_ から ``ta-lib-0.4.0-msvc.zip`` をダウンロードします。
+
+解凍して、Cドライブの直下に ``ta-lib`` ディレクトリーをコピーします。
+
+仮想環境にインストールする
+++++++++++++++++++++++++++++++++++++++++++++
+適当なディレクトリで仮想環境を作ります。
+
+::
+
+   $ python -m venv venv
+   $ . venv/bin/activate
+   (venv)$ 
+
+pipで必要なライブラリーをインストールします
+
+::
+
+   (venv)$ pip install TA-Lib
+   (venv)$ pip install jupyter
+   (venv)$ pip install pandas matplotlib
+
+起動
+++++++++++++
+起動します。
+
+::
+
+   (venv)$ jupyter notebook
+
+悲しいことに今日の時点ではエラーになります。Stackoverflowに解決策がのっていました。
+
+`Jupyter Notebook with Python 3.8 - NotImplementedError <https://stackoverflow.com/questions/58422817/jupyter-notebook-with-python-3-8-notimplementederror>`_
+
+``venv\Lib\site-packages\tornado\platform\asyncio.py`` の一番下の行に以下を書き足します。
+
+::
+
+   import sys
+
+   if sys.platform == 'win32':
+       asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+
+
+もう一回起動します。
+
+::
+
+   (venv)$ jupyter notebook
+
+起動しました。
+
+お試し
+++++++++++
+試しに `Function API Examples <https://mrjbq7.github.io/ta-lib/func.html>`_ にあったサンプルを打ってみます。
+
+
+.. image:: /_static/images/2019/image_20191221_2.png
+
+
+動いた！
+
+これで次回からローカルで動くJupyter Notebookを利用してfintalkに参加できそうです。
