@@ -26,3 +26,4 @@
    2019-12-02-article.rst
    2019-12-16-article.rst
    2019-12-21-article.rst
+   2019-12-25-article.rst

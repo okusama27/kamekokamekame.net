@@ -4,8 +4,18 @@
 <description>Strike while the iron is hot</description>
 <language>ja</language>
 <copyright>2019, kamekokamekame.net</copyright>
-<lastBuildDate>Sat, 21 December 2019 08:00:00 +0900</lastBuildDate>
+<lastBuildDate>Wed, 25 December 2019 08:00:00 +0900</lastBuildDate>
 <item>
+<title>自分に合ったイベントを探そう</title>
+<link>https://kamekokamekame.net/2019/2019-12-25-article.html</link>
+<description>
+&lt;p&gt;メリークリスマス！&lt;/p&gt;&lt;p&gt;この記事は &lt;a class=&quot;reference external&quot; href=&quot;https://adventar.org/calendars/4730&quot;&gt;PyLadies Japan Advent Calendar 2019 - Adventar&lt;/a&gt; の25日目です。&lt;/p&gt;&lt;p&gt;今回は、イベントや勉強会の探し方を紹介します。&lt;/p&gt;&lt;p&gt;先日、とある女性限定勉強会に参加したときに参加者の方から「いろいろあって、女性が多い、もしくは女性だけの勉強会に参加したいと思いここにただどりつきました。やっと見つけられました！」というお話をうかがいました。
+その方は、インターネットなどで検索してもなかなか思った通りの勉強会に参加できなかったそうです。&lt;/p&gt;
+...
+</description>
+<pubDate>Wed, 25 December 2019 08:00:00 +0900</pubDate>
+<guid>https://kamekokamekame.net/2019/2019-12-25-article.html</guid>
+</item><item>
 <title>WindowsにJupyterとTA-Libをインストールしよう</title>
 <link>https://kamekokamekame.net/2019/2019-12-21-article.html</link>
 <description>
@@ -60,39 +70,6 @@ from &lt;strong&gt;&lt;a href=&quot;https://www.slideshare.net/okusama27&quot; t
 </description>
 <pubDate>Sun, 01 December 2019 08:00:00 +0900</pubDate>
 <guid>https://kamekokamekame.net/2019/2019-12-01-article.html</guid>
-</item><item>
-<title>合宿でやることリスト2019</title>
-<link>https://kamekokamekame.net/2019/2019-11-28-article.html</link>
-<description>
-&lt;p&gt;明日から、 &lt;a class=&quot;reference external&quot; href=&quot;https://pyladies-tokyo.connpass.com/event/142972/&quot;&gt;PyLadies Tokyo 秋合宿 2019&lt;/a&gt; に参加します。&lt;/p&gt;&lt;p&gt;過去2回参加していますが、やることを決めて参加しないとだらだらして終わる。と反省しています。
-楽しむときは楽しむ、やるときはやる。ということで、やることを定めて参加します。&lt;/p&gt;&lt;div class=&quot;section&quot; id=&quot;must&quot;&gt;
-&lt;h2&gt;MUST&lt;a class=&quot;headerlink&quot; href=&quot;#must&quot; title=&quot;このヘッドラインへのパーマリンク&quot;&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;ul class=&quot;simple&quot;&gt;
-&lt;li&gt;&lt;p&gt;[ ] このブログのfeedが2重に送信されるので修正する&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;[ ] Fintalkのアドベントカレンダーの記事作成&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;[ ] PyConJP2019参加ブログ&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;[ ] PyLadies Handbook翻訳作業の現状把握、マイルストーン作成&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;[ ] 某プロジェクトを開始。（少なくとも1時間はやる）&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;[ ] Fintalkの11月課題&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;&lt;div class=&quot;section&quot; id=&quot;want&quot;&gt;
-&lt;h2&gt;WANT&lt;a class=&quot;headerlink&quot; href=&quot;#want&quot; title=&quot;このヘッドラインへのパーマリンク&quot;&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;ul class=&quot;simple&quot;&gt;
-&lt;li&gt;&lt;p&gt;[ ] PyLadies Handbook翻訳&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;[ ] ablogのコードを読んで仕様を把握する&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;[ ] このブログ作成プロジェクトを見直す。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;[ ] SphinxConで買った本を読む&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;[ ] 合宿1日目の感想ブログ&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;[ ] 合宿2日目の感想ブログ&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;[ ] 合宿3日目の感想ブログ&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;やらなきゃなーと思ってためていたことが多すぎ。
-感想ブログは合宿の場所を終わるまでは内緒にしたほうが良いっぽいので最終日に上げる予定です。&lt;/p&gt;
-&lt;/div&gt;
-...
-</description>
-<pubDate>Thu, 28 November 2019 08:00:00 +0900</pubDate>
-<guid>https://kamekokamekame.net/2019/2019-11-28-article.html</guid>
 </item>
 </channel>
 </rss>
