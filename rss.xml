@@ -4,72 +4,22 @@
 <description>Strike while the iron is hot</description>
 <language>ja</language>
 <copyright>2019, kamekokamekame.net</copyright>
-<lastBuildDate>Wed, 25 December 2019 08:00:00 +0900</lastBuildDate>
+<lastBuildDate>Sat, 29 August 2020 08:00:00 +0900</lastBuildDate>
 <item>
-<title>自分に合ったイベントを探そう</title>
-<link>https://kamekokamekame.net/2019/2019-12-25-article.html</link>
+<title>PyCon JP 2020 に参加しました</title>
+<link>https://kamekokamekame.net/2020/2020-08-29-article.html</link>
 <description>
-&lt;p&gt;メリークリスマス！&lt;/p&gt;&lt;p&gt;この記事は &lt;a class=&quot;reference external&quot; href=&quot;https://adventar.org/calendars/4730&quot;&gt;PyLadies Japan Advent Calendar 2019 - Adventar&lt;/a&gt; の25日目です。&lt;/p&gt;&lt;p&gt;今回は、イベントや勉強会の探し方を紹介します。&lt;/p&gt;&lt;p&gt;先日、とある女性限定勉強会に参加したときに参加者の方から「いろいろあって、女性が多い、もしくは女性だけの勉強会に参加したいと思いここにただどりつきました。やっと見つけられました！」というお話をうかがいました。
-その方は、インターネットなどで検索してもなかなか思った通りの勉強会に参加できなかったそうです。&lt;/p&gt;
+&lt;p&gt;PyCon JP 2020に参加しました。去年のPyCon JP終了時には予想もしなかったオンライン開催。
+今年に向けて蒲田のホテルを予約していたのですが、まさかキャンセルすることになるとは。&lt;/p&gt;&lt;p&gt;そして、会社がブースを出さなかったので久しぶりの一般参加でした。
+昨年までは疲れ切ってほとんど当日に発表を見れなかったんですが、今年は何個か聞けました。&lt;/p&gt;&lt;p&gt;しかし、私の場合ですが自宅参加は厳しかったです。
+仕事じゃないので、家でずっとYoutube見ている人扱いでした。
+子供はしょっちゅうくるし、普段の家事を期待されるし、3食作って買い物行ってとかしていたので結構聞けてないのあります。
+普段はPyCon JPの2日間は暖かく送り出してくれていたのですが、仕事じゃないのに家にいてPCの画面見てるだけの人は優しくされません。
+自分自身もまぁYoutubeで後で見てもほぼ条件は一緒だな。と思っていた節もありました。&lt;/p&gt;&lt;p&gt;夕ご飯の時間と重なるのでパーティーにも出れませんでした。&lt;/p&gt;
 ...
 </description>
-<pubDate>Wed, 25 December 2019 08:00:00 +0900</pubDate>
-<guid>https://kamekokamekame.net/2019/2019-12-25-article.html</guid>
-</item><item>
-<title>WindowsにJupyterとTA-Libをインストールしよう</title>
-<link>https://kamekokamekame.net/2019/2019-12-21-article.html</link>
-<description>
-&lt;p&gt;この記事は、 &lt;a class=&quot;reference external&quot; href=&quot;https://adventar.org/calendars/4331&quot;&gt;fintalk Advent Calendar 2019 - Adventar&lt;/a&gt; の21日目の記事です。&lt;/p&gt;&lt;div class=&quot;section&quot; id=&quot;id1&quot;&gt;
-&lt;h2&gt;あらすじ&lt;a class=&quot;headerlink&quot; href=&quot;#id1&quot; title=&quot;このヘッドラインへのパーマリンク&quot;&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;ul class=&quot;simple&quot;&gt;
-&lt;li&gt;&lt;p&gt;プライベートマシンをMacからWinに変更した&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;fintalkでは、Jupyterを用いて分析などのハンズオンをしている&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;macでは、ローカルでJupyter notebookを動かして分析をしていた&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;winでも同じことをしたい&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;&lt;div class=&quot;section&quot; id=&quot;id2&quot;&gt;
-&lt;h2&gt;しばり&lt;a class=&quot;headerlink&quot; href=&quot;#id2&quot; title=&quot;このヘッドラインへのパーマリンク&quot;&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;ul class=&quot;simple&quot;&gt;
-&lt;li&gt;&lt;p&gt;Anaconda, condaなどは使わない&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;環境は汚さない&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;&lt;div class=&quot;section&quot; id=&quot;id3&quot;&gt;
-&lt;h2&gt;反省&lt;a class=&quot;headerlink&quot; href=&quot;#id3&quot; title=&quot;このヘッドラインへのパーマリンク&quot;&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;12/2に &lt;a class=&quot;reference external&quot; href=&quot;https://kamekokamekame.net/2019/2019-12-02-article.html&quot;&gt;Windowsで分析したい&lt;/a&gt; でWindows10のUbuntu上でやろうといろいろやっていたのですが、結論から言うとUbuntu環境使っていません。&lt;/p&gt;
-&lt;/div&gt;
-...
-</description>
-<pubDate>Sat, 21 December 2019 08:00:00 +0900</pubDate>
-<guid>https://kamekokamekame.net/2019/2019-12-21-article.html</guid>
-</item><item>
-<title>コードを動かしながら確認しよう</title>
-<link>https://kamekokamekame.net/2019/2019-12-16-article.html</link>
-<description>
-&lt;p&gt;この記事は &lt;a class=&quot;reference external&quot; href=&quot;https://adventar.org/calendars/4730&quot;&gt;PyLadies Japan Advent Calendar 2019 - Adventar&lt;/a&gt; の16日目です。&lt;/p&gt;&lt;p&gt;今回は、 &lt;a class=&quot;reference external&quot; href=&quot;https://pyladies-tokyo.connpass.com/event/156710/&quot;&gt;PyLadies Tokyo Meetup #46 コードリファクタリング討論会&lt;/a&gt; に向けて自分のコードの動きを確認する方法を紹介します。&lt;/p&gt;&lt;p&gt;プログラムを書いたら、1行ずつ動かして各動作中の変数の様子などを見る方法があります。&lt;/p&gt;&lt;p&gt;思い通りの結果にならない場合などにプログラムの実行中の変数の値などを参照し、どこで思い通りの状態になっていないのかを確認する手段です。&lt;/p&gt;
-...
-</description>
-<pubDate>Mon, 16 December 2019 08:00:00 +0900</pubDate>
-<guid>https://kamekokamekame.net/2019/2019-12-16-article.html</guid>
-</item><item>
-<title>Windowsで分析したい</title>
-<link>https://kamekokamekame.net/2019/2019-12-02-article.html</link>
-<description>
-&lt;p&gt;この記事は、 &lt;a class=&quot;reference external&quot; href=&quot;https://adventar.org/calendars/4331&quot;&gt;fintalk Advent Calendar 2019 - Adventar&lt;/a&gt; の2日目の記事です。&lt;/p&gt;&lt;p&gt;最近、プライベートのPCをmacOSから、Windows10に乗り換えました。詳しくは下のスライドで説明しています。&lt;/p&gt;&lt;iframe allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;485&quot; marginheight=&quot;0&quot; marginwidth=&quot;0&quot; scrolling=&quot;no&quot; src=&quot;//www.slideshare.net/slideshow/embed_code/key/hbpAskjoNFoo4R&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; width=&quot;595&quot;&gt; &lt;/iframe&gt;&lt;div style=&quot;margin-bottom:5px&quot;&gt;
-&lt;strong&gt; &lt;a href=&quot;//www.slideshare.net/okusama27/windows-200348467&quot; target=&quot;_blank&quot; title=&quot;Windowsマシンを使いだしたときの失敗談&quot;&gt;Windowsマシンを使いだしたときの失敗談&lt;/a&gt; &lt;/strong&gt;
-from &lt;strong&gt;&lt;a href=&quot;https://www.slideshare.net/okusama27&quot; target=&quot;_blank&quot;&gt;Kameko Ohmura&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
-...
-</description>
-<pubDate>Mon, 02 December 2019 08:00:00 +0900</pubDate>
-<guid>https://kamekokamekame.net/2019/2019-12-02-article.html</guid>
-</item><item>
-<title>PyLadies Tokyo 2019 合宿報告</title>
-<link>https://kamekokamekame.net/2019/2019-12-01-article.html</link>
-<description>
-&lt;p&gt;この記事は &lt;a class=&quot;reference external&quot; href=&quot;https://adventar.org/calendars/4730&quot;&gt;PyLadies Japan Advent Calendar 2019 - Adventar&lt;/a&gt; の１日目です。&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://pyladies-tokyo.connpass.com/event/142972/&quot;&gt;PyLadies Tokyo 秋合宿 2019 - connpass&lt;/a&gt; への参加報告をします。&lt;/p&gt;&lt;p&gt;今年もPyLadies Tokyoの合宿に参加しました。もう３回目の参加と思うと感慨深いです。&lt;/p&gt;&lt;p&gt;今年は月末月初の開催だったためか少数精鋭の７人での合宿になりました。もくもく時間がたくさんとれたので実りある合宿となりました。&lt;/p&gt;
-...
-</description>
-<pubDate>Sun, 01 December 2019 08:00:00 +0900</pubDate>
-<guid>https://kamekokamekame.net/2019/2019-12-01-article.html</guid>
+<pubDate>Sat, 29 August 2020 08:00:00 +0900</pubDate>
+<guid>https://kamekokamekame.net/2020/2020-08-29-article.html</guid>
 </item>
 </channel>
 </rss>

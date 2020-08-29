@@ -1,1 +1,7 @@
-/* This file intentionally left blank. */
+.document .body img {
+    max-width: calc(100% - 50px);
+}
+
+div.body{
+    min-width: auto;
+}
