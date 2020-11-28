@@ -6,3 +6,4 @@
    :maxdepth: 1
 
    2020-08-29-article.rst
+   2020-12-02-article.rst
