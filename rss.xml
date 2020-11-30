@@ -6,11 +6,23 @@
 <copyright>2019, kamekokamekame.net</copyright>
 <lastBuildDate>Wed, 02 December 2020 08:00:00 +0900</lastBuildDate>
 <item>
-<title>月刊フィントークに約3年参加して学んだこと</title>
+<title>FXのデータをテクニカル分析してみる（準備編）</title>
 <link>https://kamekokamekame.net/2020/2020-12-02-article.html</link>
 <description>
+&lt;p&gt;こんにちは。kame-chanです。
+最近、寒いですね。&lt;/p&gt;&lt;p&gt;今年3本目のブログです。&lt;/p&gt;&lt;p&gt;今年はコロナ騒動とかあって精神不安定になったり疲れたりでアウトプットできない1年でした。
+夏ぐらいまで景色が白黒に見えるくらい病んでましたが、秋くらいからは徐々に景色に色が戻ってきたので来年は頑張っていこうと思っています。&lt;/p&gt;&lt;p&gt;せっかくのAdvent Calendarを書く機会を得たので、2019年から勉強させてもらっているPython（主にpandas）でテクニカル分析をする方法の復習をします。
+勉強会で教えてもらったりしたのですが、復習しないと忘れますね。&lt;/p&gt;
+...
+</description>
+<pubDate>Wed, 02 December 2020 08:00:00 +0900</pubDate>
+<guid>https://kamekokamekame.net/2020/2020-12-02-article.html</guid>
+</item><item>
+<title>月刊フィントークに約3年参加して学んだこと</title>
+<link>https://kamekokamekame.net/2020/2020-12-01-article.html</link>
+<description>
 &lt;p&gt;こんにちはkame-chanです。
-月刊フィントークに多めに参加しているので参加してよかったことを紹介します。&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://fintalk.connpass.com/event/76982/&quot;&gt;【女性限定】月刊フィントーク ホリデー その4&lt;/a&gt;&lt;/p&gt;&lt;p&gt;月刊フィントークにはじめて参加したのは2018年の2月でした。
+&lt;a class=&quot;reference external&quot; href=&quot;https://fintalk.connpass.com/&quot;&gt;月刊フィントーク&lt;/a&gt; に多めに参加しているので参加してよかったことを紹介します。&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://fintalk.connpass.com/event/76982/&quot;&gt;【女性限定】月刊フィントーク ホリデー その4&lt;/a&gt;&lt;/p&gt;&lt;p&gt;月刊フィントークにはじめて参加したのは2018年の2月でした。
 どういう経緯で行ったのかは覚えてないですが秋葉原のファミレスに朝8時に行きました。寒かったです。
 なんでこんなに朝早いんですか？と聞いたら、「やる気がある人に参加して欲しいから。」と言われて納得しました。
 確かに他の勉強会に比べて受け身な方が皆無な勉強会です。かなり珍しいと思います。&lt;/p&gt;&lt;p&gt;その頃、いろいろあってほぼ一人で家計を支えていました。
@@ -19,8 +31,8 @@
 今は暮らせるくらいは給料をもらえてぼちぼち暮らせているけど、この先も続くかわからないし、どうやったら不安の少ない老後を迎えられるか考えていました。&lt;/p&gt;
 ...
 </description>
-<pubDate>Wed, 02 December 2020 08:00:00 +0900</pubDate>
-<guid>https://kamekokamekame.net/2020/2020-12-02-article.html</guid>
+<pubDate>Tue, 01 December 2020 08:00:00 +0900</pubDate>
+<guid>https://kamekokamekame.net/2020/2020-12-01-article.html</guid>
 </item><item>
 <title>PyCon JP 2020 に参加しました</title>
 <link>https://kamekokamekame.net/2020/2020-08-29-article.html</link>

@@ -8,14 +8,13 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@okusama27" />
     <meta property="og:site_name" content="鉄は熱いうちに打て">
-    <meta property="og:title" content="月刊フィントークに約3年参加して学んだこと">
-    <meta property="og:description" content="2020-12-02 こんにちはkame-chanです。
-月刊フィントークに多めに参加しているので参加してよかったことを紹介します。 【女性限定】月刊フィントーク ホリデー その4 月刊フィントークにはじめて参加したのは2018年の2月でした。
-どういう経緯で行ったのかは覚えてないですが秋葉原のファミレスに朝8時に行きました。寒かったです。
-なんでこんなに朝早いんですか？と聞いたら、「やる気...">
+    <meta property="og:title" content="FXのデータをテクニカル分析してみる（準備編）">
+    <meta property="og:description" content="2020-12-02 こんにちは。kame-chanです。
+最近、寒いですね。 今年3本目のブログです。 今年はコロナ騒動とかあって精神不安定になったり疲れたりでアウトプットできない1年でした。
+夏ぐらいまで景色が白黒に見えるくらい病んでましたが、秋くらいからは徐々に景色に色が戻ってきたので来年は頑張っていこうと思っています。 せっかくのAdvent Calendarを書く機会を得たので、2...">
     <meta property='og:url' content="https://kamekokamekame.net/2020/2020-12-02-article.html">
-    
-    <title>月刊フィントークに約3年参加して学んだこと &#8212; 鉄は熱いうちに打て</title>
+    <meta property="og:image" content="https://kamekokamekame.net/_images/20201202_01.png">
+    <title>FXのデータをテクニカル分析してみる（準備編） &#8212; 鉄は熱いうちに打て</title>
     <link rel="stylesheet" href="../_static/bizstyle.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
@@ -28,8 +27,6 @@
     <script type="text/javascript" src="../_static/translations.js"></script>
     <script type="text/javascript" src="../_static/bizstyle.js"></script>
     <link rel="search" title="検索" href="../search.html" />
-    <link rel="next" title="2019" href="../2019/index.html" />
-    <link rel="prev" title="PyCon JP 2020 に参加しました" href="2020-08-29-article.html" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <!--[if lt IE 9]>
     <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
@@ -38,14 +35,7 @@
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>ナビゲーション</h3>
       <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="../2019/index.html" title="2019"
-             accesskey="N">次へ</a></li>
-        <li class="right" >
-          <a href="2020-08-29-article.html" title="PyCon JP 2020 に参加しました"
-             accesskey="P">前へ</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">2020</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &#187;</li> 
       </ul>
     </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
@@ -58,8 +48,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../2019/2019-12-02-article.html">Windowsで分析したい</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2019/2019-12-01-article.html">PyLadies Tokyo 2019 合宿報告</a></li>
 </ul>
-<ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">2020</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">2020</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2019/index.html">2019</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2018/index.html">2018</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2017/index.html">2017</a></li>
@@ -68,12 +58,6 @@
 </ul>
 
 </div>
-  <h4>前のトピックへ</h4>
-  <p class="topless"><a href="2020-08-29-article.html"
-                        title="前の章へ">PyCon JP 2020 に参加しました</a></p>
-  <h4>次のトピックへ</h4>
-  <p class="topless"><a href="../2019/index.html"
-                        title="次の章へ">2019</a></p>
 <div id="searchbox" style="display: none" role="search">
   <h3 id="searchlabel">クイック検索</h3>
     <div class="searchformwrapper">
@@ -95,41 +79,51 @@
 <h1>鉄は熱いうちに打て<br>
 =============================</h1>
 
-<div class="section" id="id1">
-<h1>月刊フィントークに約3年参加して学んだこと<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="section" id="fx">
+<h1>FXのデータをテクニカル分析してみる（準備編）<a class="headerlink" href="#fx" title="このヘッドラインへのパーマリンク">¶</a></h1>
 <p>2020-12-02</p>
-<p>こんにちはkame-chanです。
-月刊フィントークに多めに参加しているので参加してよかったことを紹介します。</p>
-<p><a class="reference external" href="https://fintalk.connpass.com/event/76982/">【女性限定】月刊フィントーク ホリデー その4</a></p>
-<p>月刊フィントークにはじめて参加したのは2018年の2月でした。
-どういう経緯で行ったのかは覚えてないですが秋葉原のファミレスに朝8時に行きました。寒かったです。
-なんでこんなに朝早いんですか？と聞いたら、「やる気がある人に参加して欲しいから。」と言われて納得しました。
-確かに他の勉強会に比べて受け身な方が皆無な勉強会です。かなり珍しいと思います。</p>
-<p>その頃、いろいろあってほぼ一人で家計を支えていました。
-将来どうなるか不安で子供たちが成人するまで無事に育てることができるか？
-老後は子供たちに迷惑をかけずに暮らせるのか？
-今は暮らせるくらいは給料をもらえてぼちぼち暮らせているけど、この先も続くかわからないし、どうやったら不安の少ない老後を迎えられるか考えていました。</p>
-<p>金持ち父さんという本も流行っていたと思います。
-どうも投資をしたほうがゆとりある老後を送れるらしいということは分かりましたが、ライブドア事件とかの印象があって投資はリスクがあるものと考えていました。
-参加する1年前くらいに証券口座を開いて、個別株を買ったりはしていましたが知っている会社の株を100株ずつ買っていた程度でした。</p>
-<p>月刊フィントークに参加するようになってリスクはあるけど考えて投資すれば人生を棒に振るようなことはない。ということがわかりました。
-また、自分で働いたお金で自分で考えて投資している女性にたくさん会えて、気持ちが変わりました。
-（その頃は投資とか山っ気がある男性がやるものってちょっと思っていました。）</p>
-<p>月刊フィントークに参加して、投資信託とiDecoの話を聞きました。
-恥ずかしながら NISAは始めていたのですがiDecoのことは月刊フィントークに参加するまで知らなかったです。
-早速、次の月に会社に依頼してiDecoを始めました。
-月2万3千円だと少ないような感じもしましたがあと1年くらいで100万くらいの投資になるのでコツコツ続けるのは大事だなと時間がたつと実感します。</p>
-<p>今では3年前まで投資信託もやってなかったとか信じられない！
-世間知らずにもほどがある！と今では思っています。</p>
-<p>私の認識を180度変えてくれた月刊フィントーク。なんで参加したか全く覚えてないですが、参加できて本当によかったです。</p>
-<p>今では子供たちにも投資の大切さを語っています。私は始めるのが遅かったけど、子供たちにはより不安の少ない未来を生きてほしいと思っています。</p>
-<p>FXで有名は羊飼いさんの本に書いてあったのですが、最初はよくわからなくても無理のない金額で投資を始めるのが良いと思います。
-自分のお金の増減をみることで、考える力が育っていくと思います。</p>
-<p>最後に。
-いい感じに資産が増えたみたいに書いてますが、実は情報に踊らされ、思い付きで株買ったりして損もしてます。
-初めのころは損切りできなくて顔面蒼白とかも経験しました。</p>
-<p>損切り大事。損切りできるようになるまでは顔面蒼白にならない金額で挑戦したほうが私はいいと思います。</p>
-<p>この記事は <a class="reference external" href="https://adventar.org/calendars/5084">fintalk Advent Calendar 2020</a> の2日目の投稿です。</p>
+<p>こんにちは。kame-chanです。
+最近、寒いですね。</p>
+<p>今年3本目のブログです。</p>
+<p>今年はコロナ騒動とかあって精神不安定になったり疲れたりでアウトプットできない1年でした。
+夏ぐらいまで景色が白黒に見えるくらい病んでましたが、秋くらいからは徐々に景色に色が戻ってきたので来年は頑張っていこうと思っています。</p>
+<p>せっかくのAdvent Calendarを書く機会を得たので、2019年から勉強させてもらっているPython（主にpandas）でテクニカル分析をする方法の復習をします。
+勉強会で教えてもらったりしたのですが、復習しないと忘れますね。</p>
+<p>習っていたころはそんなにテクニカル分析に興味がなかったので「へぇー」と思っただけでありがたみがわかってませんでしてた。
+自分の資金で投資して、チャート毎日眺めるようになってやっとありがたみがわかりました。</p>
+<p>過去には戻れないので今年中にPythonでチャート分析する基本を思い出します。</p>
+<p>今回はUSドルと日本円の為替データを使ってテクニカル分析を振り返っていこうと思います。
+為替ってブレグジットみたいなのがあるとドーンときますが、通常はゆっくり上がったり下がったりしている印象なのでテクニカル分析の練習によさそうだなと思っています。</p>
+<p>まずは準備します。
+今回はJupyter Notebookで為替データを読み込んでみます。</p>
+<p><strong>環境準備</strong></p>
+<p>まずはローカルに環境を準備するか、Google Colaboratoryを用意します。
+私はローカルにインストールしました。</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ python3 -m venv env
+$ . env/bin/activate
+$ pip install pandas jupyter matplotlib
+</pre></div>
+</div>
+<p>Jupyter Notebook起動</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ jupyter notebook
+</pre></div>
+</div>
+<p>ブラウザに表示されなかったら、 <code class="docutils literal notranslate"><span class="pre">http://localhost:8888/</span></code> とかにアクセスする。</p>
+<p><strong>データを読み込んで、DataFrameに代入する</strong></p>
+<p>用意したドル円の為替データのCSVを読み込んで、DataFrameに変換します。
+<code class="docutils literal notranslate"><span class="pre">read_csv(ファイル名)</span></code> だけでファイルを読み込んでDataFrameにしてくれます。神ですか。</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;data/usdjpy_2020.csv&quot;</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+<img alt="../_images/20201202_01.png" src="../_images/20201202_01.png" />
+<p>※為替データは自分で用意してください。「静的 為替データ　ドル円」とかで探せば見つかると思います。</p>
+<p>ここまでなにも調べたりせずに準備できました。
+仕事でpandasを使う機会がなくてなかなか書けなかったのに1年間コツコツやってたら書けるようになったので感激です。
+今日は準備だけで終わります。</p>
+<p>この記事は <a class="reference external" href="https://adventar.org/calendars/5685">PyLadies Japan Advent Calendar 2020</a> の2目の投稿です。</p>
 </div>
 
 
@@ -146,8 +140,7 @@
 }
 </style>
 <p>
-    <a href="//af.moshimo.com/af/c/click?a_id=767877&p_id=1166&pc_id=1793&pl_id=17972&guid=ON" target="_blank" rel="nofollow"><img src="//image.moshimo.com/af-img/0408/000000017972.png" width="234" height="60" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=767877&p_id=1166&pc_id=1793&pl_id=17972" width="1" height="1" style="border:none;">
-    <a href="//af.moshimo.com/af/c/click?a_id=767877&p_id=1166&pc_id=1793&pl_id=20225&guid=ON" target="_blank" rel="nofollow"><img src="//image.moshimo.com/af-img/0408/000000020225.png" width="234" height="60" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=767877&p_id=1166&pc_id=1793&pl_id=20225" width="1" height="1" style="border:none;">
+    <a href="//af.moshimo.com/af/c/click?a_id=767877&p_id=1166&pc_id=1793&pl_id=17974&guid=ON" rel="nofollow"><img src="//image.moshimo.com/af-img/0408/000000017974.png" width="120" height="60" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=767877&p_id=1166&pc_id=1793&pl_id=17974" width="1" height="1" style="border:none;">
 </p>
 
           </div>
@@ -158,14 +151,7 @@
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>ナビゲーション</h3>
       <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="../2019/index.html" title="2019"
-             >次へ</a></li>
-        <li class="right" >
-          <a href="2020-08-29-article.html" title="PyCon JP 2020 に参加しました"
-             >前へ</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="index.html" >2020</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &#187;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
