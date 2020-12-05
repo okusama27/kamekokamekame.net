@@ -4,8 +4,19 @@
 <description>Strike while the iron is hot</description>
 <language>ja</language>
 <copyright>2019, kamekokamekame.net</copyright>
-<lastBuildDate>Wed, 02 December 2020 08:00:00 +0900</lastBuildDate>
+<lastBuildDate>Sat, 05 December 2020 08:00:00 +0900</lastBuildDate>
 <item>
+<title>kabuステーション APIの始め方</title>
+<link>https://kamekokamekame.net/2020/2020-12-05-article.html</link>
+<description>
+&lt;p&gt;この記事は &lt;a class=&quot;reference external&quot; href=&quot;https://adventar.org/calendars/5084&quot;&gt;fintalk Advent Calendar 2020&lt;/a&gt; の5日目の投稿です。&lt;/p&gt;&lt;p&gt;今日はauカブコム証券が2020年8月に提供を開始したkabuステーション APIの始め方の始め方を紹介します。&lt;/p&gt;&lt;p&gt;kabuステーション APIは、プログラムから株取引を行えるREST APIを提供する国内初めてのサービスでした。
+詳しくは、 &lt;a class=&quot;reference external&quot; href=&quot;https://kabu.com/company/lp/lp90.html&quot;&gt;kabu STATION API｜auカブコム証券&lt;/a&gt; をご覧ください。&lt;/p&gt;&lt;p&gt;仕組みは以下のような感じです。
+auカブコム証券が提供するkabu STATIONをプログラムで操作できます。&lt;/p&gt;
+...
+</description>
+<pubDate>Sat, 05 December 2020 08:00:00 +0900</pubDate>
+<guid>https://kamekokamekame.net/2020/2020-12-05-article.html</guid>
+</item><item>
 <title>FXのデータをテクニカル分析してみる（準備編）</title>
 <link>https://kamekokamekame.net/2020/2020-12-02-article.html</link>
 <description>
