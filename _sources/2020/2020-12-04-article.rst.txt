@@ -9,7 +9,7 @@ FXのデータをテクニカル分析してみる（日付に変換）
 
 2020-12-04
 
-この記事は `PyLadies Japan Advent Calendar 2020 <https://adventar.org/calendars/5685>`_ の4日目の投稿です。
+この記事は `PyLadies Japan Advent Calendar 2020 <https://adventar.org/calendars/5685>`_ の5日目の投稿です。
 
 この記事は、 `FXのデータをテクニカル分析してみる（準備編） <https://kamekokamekame.net/2020/2020-12-02-article.html>`_ の続きです。
 
@@ -32,4 +32,4 @@ FXのデータをテクニカル分析してみる（日付に変換）
 
 .. image:: /_static/images/2020/20201204.png
 
-この記事は `PyLadies Japan Advent Calendar 2020 <https://adventar.org/calendars/5685>`_ の4日目の投稿です。
+この記事は `PyLadies Japan Advent Calendar 2020 <https://adventar.org/calendars/5685>`_ の5日目の投稿です。

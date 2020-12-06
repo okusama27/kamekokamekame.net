@@ -31,7 +31,7 @@ auカブコム証券が提供するkabu STATIONをプログラムで操作でき
 <title>FXのデータをテクニカル分析してみる（日付に変換）</title>
 <link>https://kamekokamekame.net/2020/2020-12-04-article.html</link>
 <description>
-&lt;p&gt;この記事は &lt;a class=&quot;reference external&quot; href=&quot;https://adventar.org/calendars/5685&quot;&gt;PyLadies Japan Advent Calendar 2020&lt;/a&gt; の4日目の投稿です。&lt;/p&gt;&lt;p&gt;この記事は、 &lt;a class=&quot;reference external&quot; href=&quot;https://kamekokamekame.net/2020/2020-12-02-article.html&quot;&gt;FXのデータをテクニカル分析してみる（準備編）&lt;/a&gt; の続きです。&lt;/p&gt;&lt;p&gt;テクニカル分析はとりあえず日付データを日付順に並べないと話がはじまりません。&lt;/p&gt;&lt;p&gt;そこで今回はデータを日付型にして、インデックスに設定します。&lt;/p&gt;
+&lt;p&gt;この記事は &lt;a class=&quot;reference external&quot; href=&quot;https://adventar.org/calendars/5685&quot;&gt;PyLadies Japan Advent Calendar 2020&lt;/a&gt; の5日目の投稿です。&lt;/p&gt;&lt;p&gt;この記事は、 &lt;a class=&quot;reference external&quot; href=&quot;https://kamekokamekame.net/2020/2020-12-02-article.html&quot;&gt;FXのデータをテクニカル分析してみる（準備編）&lt;/a&gt; の続きです。&lt;/p&gt;&lt;p&gt;テクニカル分析はとりあえず日付データを日付順に並べないと話がはじまりません。&lt;/p&gt;&lt;p&gt;そこで今回はデータを日付型にして、インデックスに設定します。&lt;/p&gt;
 ...
 </description>
 <pubDate>Fri, 04 December 2020 08:00:00 +0900</pubDate>
