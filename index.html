@@ -9,10 +9,11 @@
     <meta name="twitter:site" content="@okusama27" />
     <meta property="og:site_name" content="鉄は熱いうちに打て">
     <meta property="og:title" content="トップページ">
-    <meta property="og:description" content="2020-12-05 この記事は fintalk Advent Calendar 2020 の5日目の投稿です。 今日はauカブコム証券が2020年8月に提供を開始したkabuステーション APIの始め方の始め方を紹介します。 kabuステーション APIは、プログラムから株取引を行えるREST APIを提供する国内初めてのサービスでした。
-詳しくは、 kabu STATION API｜au...">
+    <meta property="og:description" content="2020-12-06 投資を軽い気持ちで初めてしまったので、いままで税金に関してきちんと把握していませんでした。
+利益が20万を越えなければ気にしなくていいと思っていました。
+最近、真面目に投資をやっているので運が良ければ20万を超えてしまうかもしれません。 また、複数の証券会社と契約して投資を行っているのでその辺も知りたくなって調べることにしました。 まずは投資に関わる税を調べました。 税...">
     <meta property='og:url' content="https://kamekokamekame.net/index.html">
-    <meta property="og:image" content="https://kamekokamekame.net/_images/20201205.png">
+    
     <title>トップページ &#8212; 鉄は熱いうちに打て</title>
     <link rel="stylesheet" href="_static/bizstyle.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -26,7 +27,7 @@
     <script type="text/javascript" src="_static/translations.js"></script>
     <script type="text/javascript" src="_static/bizstyle.js"></script>
     <link rel="search" title="検索" href="search.html" />
-    <link rel="next" title="FXのデータをテクニカル分析してみる（準備編）" href="2020/2020-12-02-article.html" />
+    <link rel="next" title="kabuステーション APIの始め方" href="2020/2020-12-05-article.html" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <!--[if lt IE 9]>
     <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
@@ -36,7 +37,7 @@
       <h3>ナビゲーション</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="2020/2020-12-02-article.html" title="FXのデータをテクニカル分析してみる（準備編）"
+          <a href="2020/2020-12-05-article.html" title="kabuステーション APIの始め方"
              accesskey="N">次へ</a></li>
         <li class="nav-item nav-item-0"><a href="#">鉄は熱いうちに打て</a> &#187;</li> 
       </ul>
@@ -45,11 +46,11 @@
         <div class="sphinxsidebarwrapper"><div id="toc" class="sidebarRow">
 <h3><a href="#">Table Of Contents</a></h3>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="2020/2020-12-05-article.html">kabuステーション APIの始め方</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2020/2020-12-02-article.html">FXのデータをテクニカル分析してみる（準備編）</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2020/2020-12-01-article.html">月刊フィントークに約3年参加して学んだこと</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2020/2020-08-29-article.html">PyCon JP 2020 に参加しました</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2019/2019-12-25-article.html">自分に合ったイベントを探そう</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2019/2019-12-21-article.html">WindowsにJupyterとTA-Libをインストールしよう</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="2020/index.html">2020</a></li>
@@ -62,8 +63,8 @@
 
 </div>
   <h4>次のトピックへ</h4>
-  <p class="topless"><a href="2020/2020-12-02-article.html"
-                        title="次の章へ">FXのデータをテクニカル分析してみる（準備編）</a></p>
+  <p class="topless"><a href="2020/2020-12-05-article.html"
+                        title="次の章へ">kabuステーション APIの始め方</a></p>
 <div id="searchbox" style="display: none" role="search">
   <h3 id="searchlabel">クイック検索</h3>
     <div class="searchformwrapper">
@@ -85,46 +86,42 @@
 <h1>鉄は熱いうちに打て<br>
 =============================</h1>
 
-<div class="section" id="kabu-api">
-<h1>kabuステーション APIの始め方<a class="headerlink" href="#kabu-api" title="このヘッドラインへのパーマリンク">¶</a></h1>
-<p>2020-12-05</p>
-<p>この記事は <a class="reference external" href="https://adventar.org/calendars/5084">fintalk Advent Calendar 2020</a> の5日目の投稿です。</p>
-<p>今日はauカブコム証券が2020年8月に提供を開始したkabuステーション APIの始め方の始め方を紹介します。</p>
-<p>kabuステーション APIは、プログラムから株取引を行えるREST APIを提供する国内初めてのサービスでした。
-詳しくは、 <a class="reference external" href="https://kabu.com/company/lp/lp90.html">kabu STATION API｜auカブコム証券</a> をご覧ください。</p>
-<p>仕組みは以下のような感じです。
-auカブコム証券が提供するkabu STATIONをプログラムで操作できます。</p>
-<img alt="_images/20201205.png" src="_images/20201205.png" />
-<p>kabu STATIONは、Window10環境（多分8も動く）で実行できるアプリケーションです。
-このkabu STATIONから情報を取得したり注文を出せたりします。
-詳しくは、 <a class="reference external" href="https://kabucom.github.io/kabusapi/ptal/">kabuステーション API ｜株のことならネット証券会社【auカブコム証券】</a> に説明があります。</p>
-<p>ここからが本題です。よし！kabuステーション APIを使ってみよう！と思ったはいいのですが、すぐには使えません。
-今回は、kabuステーション APIを始める方法を紹介します。</p>
-<ol class="arabic simple">
-<li><p>auカブコム証券に口座を開く</p></li>
-<li><p>kabuステーション APIの利用申し込みをする（詳しくは <a class="reference external" href="https://kabucom.github.io/kabusapi/ptal/howto.html">kabuステーション API</a> ）</p></li>
-<li><p>kabuステーションをWindowsマシンにインストールする</p></li>
-<li><p>kabuステーションでAPIが利用できるように設定する</p></li>
-<li><p>プログラムを書く</p></li>
-<li><p>発注してみる</p></li>
-</ol>
-<p>以上です。
-ただ取引などをしなくても利用できるのは、 <strong>初回申込みの翌々月第1営業日まで</strong> です。
-12/5に申し込むと2/2まで使えるようです。
-これ以降はさらなる条件を満たす必要があります。</p>
-<ul class="simple">
-<li><p>auカブコム証券で信用取引口座か、先物オプション取引口座を開設する（取引実績は不要。）</p></li>
-<li><p>前月にauカブコム証券で何かしら約定する。（約定とは、金融取引において、買いまたは売りの注文が執行されて売買が成立すること）</p></li>
-</ul>
-<p>私もサービスがはじまったときに利用できるか申し込んで、操作して、しばらく利用しないでいたら「前月に約定」という条件を満たしていなくて1か月間使えなくなってしまいました。</p>
-<p>現在の対象商品が「（日本株の）現物株式、信用取引、先物取引、オプション取引」だけなので、あまり利用する機会もないのですが、折角なので何かの業界に絞って戦略を考えて運用したいとは思っています。
-インターネット上で証券取引ができるようになって参加しやすくなりました、APIを利用して可能性が広がるといいですね。</p>
-<p>外国株をAPI取引できるサービスを提供している会社は昔からあるらしいです。
-2021年こそはそちらもやってみたいと思っています。</p>
-<p>この記事は <a class="reference external" href="https://adventar.org/calendars/5084">fintalk Advent Calendar 2020</a> の5日目の投稿です。</p>
+<div class="section" id="id1">
+<h1>投資に関わる税金の種類<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>2020-12-06</p>
+<p>投資を軽い気持ちで初めてしまったので、いままで税金に関してきちんと把握していませんでした。
+利益が20万を越えなければ気にしなくていいと思っていました。
+最近、真面目に投資をやっているので運が良ければ20万を超えてしまうかもしれません。</p>
+<p>また、複数の証券会社と契約して投資を行っているのでその辺も知りたくなって調べることにしました。</p>
+<p>まずは投資に関わる税を調べました。</p>
+<p>税金は <strong>利益</strong> に課税されるようです。</p>
+<div class="section" id="id2">
+<h2>株の税金<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>株式投資の利益は、配当金と売った時の利益になります。知らなかったのですが、株主優待品にも税金がかかるようです。</p>
+<div class="section" id="id3">
+<h3>配当<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>配当された配当金に <strong>配当課税</strong> （税率20.315%）という税金がかかるそうです。</p>
+</div>
+<div class="section" id="id4">
+<h3>売った時の利益<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>株式を売った場合の利益に <strong>譲渡益課税</strong> （税率20.315%）という税金がかかるそうです。</p>
+<p>譲渡益課税は、1年間の株の売買の損益の合計にかかるそうです。</p>
+<p>以下のサイトに詳しく書いてありました。</p>
+<p><a class="reference external" href="https://www.matsui.co.jp/study/qa/trading/qa_10.html">株には、どんな税金がかかりますか？会社員の場合はどうなるの？ | はじめての証券取引 | 松井証券</a></p>
+</div>
+<div class="section" id="id6">
+<h3>株主優待<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>配当金とは別扱いで、 <strong>雑所得</strong> として申告するそうです。</p>
+<p>優待品を転売して利益が発生した場合は、その利益も <strong>雑所得</strong> として申告するそうです。
+芸能事務所とかの優待とかの転売で発生しそうですね。</p>
+<p>株主優待についてはあまり厳しくは取り締まられてないそうです。
+そうはいっても脱税になるのは嫌なので、金券とかをもらったらメモしておくようにしたいと思います。
+商品でもらった場合も金額換算したほうがいいんでしょうが、そこまでやるのはちょっと大変そうですね。</p>
 <div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">
+</div>
+</div>
 </div>
 </div>
 
@@ -154,7 +151,7 @@ auカブコム証券が提供するkabu STATIONをプログラムで操作でき
       <h3>ナビゲーション</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="2020/2020-12-02-article.html" title="FXのデータをテクニカル分析してみる（準備編）"
+          <a href="2020/2020-12-05-article.html" title="kabuステーション APIの始め方"
              >次へ</a></li>
         <li class="nav-item nav-item-0"><a href="#">鉄は熱いうちに打て</a> &#187;</li> 
       </ul>

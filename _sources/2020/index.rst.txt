@@ -9,3 +9,4 @@
    2020-12-01-article.rst
    2020-12-02-article.rst
    2020-12-05-article.rst
+   2020-12-06-article.rst
