@@ -12,6 +12,8 @@ FXのデータをテクニカル分析してみる（準備編）
 こんにちは。kame-chanです。
 最近、寒いですね。
 
+この記事は `PyLadies Japan Advent Calendar 2020 <https://adventar.org/calendars/5685>`_ の2日目の投稿です。
+
 今年3本目のブログです。
 
 今年はコロナ騒動とかあって精神不安定になったり疲れたりでアウトプットできない1年でした。
@@ -72,4 +74,4 @@ Jupyter Notebook起動
 仕事でpandasを使う機会がなくてなかなか書けなかったのに1年間コツコツやってたら書けるようになったので感激です。
 今日は準備だけで終わります。
 
-この記事は `PyLadies Japan Advent Calendar 2020 <https://adventar.org/calendars/5685>`_ の2目の投稿です。
+この記事は `PyLadies Japan Advent Calendar 2020 <https://adventar.org/calendars/5685>`_ の2日目の投稿です。

@@ -28,13 +28,21 @@ auカブコム証券が提供するkabu STATIONをプログラムで操作でき
 <pubDate>Sat, 05 December 2020 08:00:00 +0900</pubDate>
 <guid>https://kamekokamekame.net/2020/2020-12-05-article.html</guid>
 </item><item>
+<title>FXのデータをテクニカル分析してみる（日付に変換）</title>
+<link>https://kamekokamekame.net/2020/2020-12-04-article.html</link>
+<description>
+&lt;p&gt;この記事は &lt;a class=&quot;reference external&quot; href=&quot;https://adventar.org/calendars/5685&quot;&gt;PyLadies Japan Advent Calendar 2020&lt;/a&gt; の4日目の投稿です。&lt;/p&gt;&lt;p&gt;この記事は、 &lt;a class=&quot;reference external&quot; href=&quot;https://kamekokamekame.net/2020/2020-12-02-article.html&quot;&gt;FXのデータをテクニカル分析してみる（準備編）&lt;/a&gt; の続きです。&lt;/p&gt;&lt;p&gt;テクニカル分析はとりあえず日付データを日付順に並べないと話がはじまりません。&lt;/p&gt;&lt;p&gt;そこで今回はデータを日付型にして、インデックスに設定します。&lt;/p&gt;
+...
+</description>
+<pubDate>Fri, 04 December 2020 08:00:00 +0900</pubDate>
+<guid>https://kamekokamekame.net/2020/2020-12-04-article.html</guid>
+</item><item>
 <title>FXのデータをテクニカル分析してみる（準備編）</title>
 <link>https://kamekokamekame.net/2020/2020-12-02-article.html</link>
 <description>
 &lt;p&gt;こんにちは。kame-chanです。
-最近、寒いですね。&lt;/p&gt;&lt;p&gt;今年3本目のブログです。&lt;/p&gt;&lt;p&gt;今年はコロナ騒動とかあって精神不安定になったり疲れたりでアウトプットできない1年でした。
-夏ぐらいまで景色が白黒に見えるくらい病んでましたが、秋くらいからは徐々に景色に色が戻ってきたので来年は頑張っていこうと思っています。&lt;/p&gt;&lt;p&gt;せっかくのAdvent Calendarを書く機会を得たので、2019年から勉強させてもらっているPython（主にpandas）でテクニカル分析をする方法の復習をします。
-勉強会で教えてもらったりしたのですが、復習しないと忘れますね。&lt;/p&gt;
+最近、寒いですね。&lt;/p&gt;&lt;p&gt;この記事は &lt;a class=&quot;reference external&quot; href=&quot;https://adventar.org/calendars/5685&quot;&gt;PyLadies Japan Advent Calendar 2020&lt;/a&gt; の2日目の投稿です。&lt;/p&gt;&lt;p&gt;今年3本目のブログです。&lt;/p&gt;&lt;p&gt;今年はコロナ騒動とかあって精神不安定になったり疲れたりでアウトプットできない1年でした。
+夏ぐらいまで景色が白黒に見えるくらい病んでましたが、秋くらいからは徐々に景色に色が戻ってきたので来年は頑張っていこうと思っています。&lt;/p&gt;
 ...
 </description>
 <pubDate>Wed, 02 December 2020 08:00:00 +0900</pubDate>
@@ -55,20 +63,6 @@ auカブコム証券が提供するkabu STATIONをプログラムで操作でき
 </description>
 <pubDate>Tue, 01 December 2020 08:00:00 +0900</pubDate>
 <guid>https://kamekokamekame.net/2020/2020-12-01-article.html</guid>
-</item><item>
-<title>PyCon JP 2020 に参加しました</title>
-<link>https://kamekokamekame.net/2020/2020-08-29-article.html</link>
-<description>
-&lt;p&gt;PyCon JP 2020に参加しました。去年のPyCon JP終了時には予想もしなかったオンライン開催。
-今年に向けて蒲田のホテルを予約していたのですが、まさかキャンセルすることになるとは。&lt;/p&gt;&lt;p&gt;そして、会社がブースを出さなかったので久しぶりの一般参加でした。
-昨年までは疲れ切ってほとんど当日に発表を見れなかったんですが、今年は何個か聞けました。&lt;/p&gt;&lt;p&gt;しかし、私の場合ですが自宅参加は厳しかったです。
-仕事じゃないので、家でずっとYoutube見ている人扱いでした。&lt;/p&gt;&lt;p&gt;子供はしょっちゅうくるし、普段の家事を期待されるし、3食作って買い物行ってとかしていたので結構聞けてないのあります。
-普段はPyCon JPの2日間は暖かく送り出してくれていたのですが、仕事じゃないのに家にいてPCの画面見てるだけの人は優しくされません。
-自分自身もまぁYoutubeで後で見てもほぼ条件は一緒だな。と思っていた節もありました。&lt;/p&gt;
-...
-</description>
-<pubDate>Sat, 29 August 2020 08:00:00 +0900</pubDate>
-<guid>https://kamekokamekame.net/2020/2020-08-29-article.html</guid>
 </item>
 </channel>
 </rss>
