@@ -6,11 +6,11 @@
    :maxdepth: 1
    :hidden:
 
+   2020/2020-12-08-article.rst
    2020/2020-12-06-article.rst
    2020/2020-12-05-article.rst
    2020/2020-12-04-article.rst
    2020/2020-12-02-article.rst
-   2020/2020-12-01-article.rst
    
 
 .. toctree::
