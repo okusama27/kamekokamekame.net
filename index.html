@@ -9,11 +9,10 @@
     <meta name="twitter:site" content="@okusama27" />
     <meta property="og:site_name" content="鉄は熱いうちに打て">
     <meta property="og:title" content="トップページ">
-    <meta property="og:description" content="2020-12-06 投資を軽い気持ちで初めてしまったので、いままで税金に関してきちんと把握していませんでした。
-利益が20万を越えなければ気にしなくていいと思っていました。
-最近、真面目に投資をやっているので税のこともちゃんと認識しないといけないなと考え始めています。 また、複数の証券会社と契約して投資を行っているのでその辺も知りたくなって調べることにしました。 まずは投資に関わる税を調べ...">
+    <meta property="og:description" content="2020-12-09 この記事は PyLadies Japan Advent Calendar 2020 の9目の投稿です。 Advent Calenda駆動でこれまで学んだことを復習しています。 今日はデータからグラフを表示したいと思います。
+1分ごとにデータがあるので、closeの値を使ってグラフを書きたいと思います。 indexがtimeなので、closeだけ取り出します。 後ろに [...">
     <meta property='og:url' content="https://kamekokamekame.net/index.html">
-    
+    <meta property="og:image" content="https://kamekokamekame.net/_images/20201209.png">
     <title>トップページ &#8212; 鉄は熱いうちに打て</title>
     <link rel="stylesheet" href="_static/bizstyle.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -27,7 +26,7 @@
     <script type="text/javascript" src="_static/translations.js"></script>
     <script type="text/javascript" src="_static/bizstyle.js"></script>
     <link rel="search" title="検索" href="search.html" />
-    <link rel="next" title="kabuステーション APIの始め方" href="2020/2020-12-05-article.html" />
+    <link rel="next" title="投資に関わる税金の種類" href="2020/2020-12-06-article.html" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <!--[if lt IE 9]>
     <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
@@ -37,7 +36,7 @@
       <h3>ナビゲーション</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="2020/2020-12-05-article.html" title="kabuステーション APIの始め方"
+          <a href="2020/2020-12-06-article.html" title="投資に関わる税金の種類"
              accesskey="N">次へ</a></li>
         <li class="nav-item nav-item-0"><a href="#">鉄は熱いうちに打て</a> &#187;</li> 
       </ul>
@@ -46,11 +45,11 @@
         <div class="sphinxsidebarwrapper"><div id="toc" class="sidebarRow">
 <h3><a href="#">Table Of Contents</a></h3>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="2020/2020-12-06-article.html">投資に関わる税金の種類</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2020/2020-12-05-article.html">kabuステーション APIの始め方</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2020/2020-12-04-article.html">FXのデータをテクニカル分析してみる（日付に変換）</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2020/2020-12-02-article.html">FXのデータをテクニカル分析してみる（準備編）</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2020/2020-12-01-article.html">月刊フィントークに約3年参加して学んだこと</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2020/2020-08-29-article.html">PyCon JP 2020 に参加しました</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="2020/index.html">2020</a></li>
@@ -63,8 +62,8 @@
 
 </div>
   <h4>次のトピックへ</h4>
-  <p class="topless"><a href="2020/2020-12-05-article.html"
-                        title="次の章へ">kabuステーション APIの始め方</a></p>
+  <p class="topless"><a href="2020/2020-12-06-article.html"
+                        title="次の章へ">投資に関わる税金の種類</a></p>
 <div id="searchbox" style="display: none" role="search">
   <h3 id="searchlabel">クイック検索</h3>
     <div class="searchformwrapper">
@@ -86,45 +85,32 @@
 <h1>鉄は熱いうちに打て<br>
 =============================</h1>
 
-<div class="section" id="id1">
-<h1>投資に関わる税金の種類<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
-<p>2020-12-06</p>
-<p>投資を軽い気持ちで初めてしまったので、いままで税金に関してきちんと把握していませんでした。
-利益が20万を越えなければ気にしなくていいと思っていました。
-最近、真面目に投資をやっているので税のこともちゃんと認識しないといけないなと考え始めています。</p>
-<p>また、複数の証券会社と契約して投資を行っているのでその辺も知りたくなって調べることにしました。</p>
-<p>まずは投資に関わる税を調べました。</p>
-<p>税金は <strong>利益</strong> に課税されるようです。</p>
-<div class="section" id="id2">
-<h2>株の税金<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>株式投資の利益は、配当金と売った時の利益になります。知らなかったのですが、株主優待品にも税金がかかるようです。</p>
-<div class="section" id="id3">
-<h3>配当<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>配当された配当金に <strong>配当課税</strong> （税率20.315%）という税金がかかるそうです。
-内訳は所得税が15.315%、住民税5%です。</p>
-<p>100万円の利益が出た場合は、内20万円3150円を納税するということですね。</p>
-<p>ただし、会社員の場合は給料以外の収入の合計が20万円以下の場合は申告の必要はないようです。</p>
+<div class="section" id="fx">
+<h1>FXのデータをテクニカル分析してみる（グラフ描画）<a class="headerlink" href="#fx" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>2020-12-09</p>
+<p>この記事は <a class="reference external" href="https://adventar.org/calendars/5685">PyLadies Japan Advent Calendar 2020</a> の9目の投稿です。</p>
+<p>Advent Calenda駆動でこれまで学んだことを復習しています。</p>
+<p>今日はデータからグラフを表示したいと思います。
+1分ごとにデータがあるので、closeの値を使ってグラフを書きたいと思います。</p>
+<p>indexがtimeなので、closeだけ取り出します。</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[[</span><span class="s2">&quot;close&quot;</span><span class="p">]]</span>
+</pre></div>
 </div>
-<div class="section" id="id4">
-<h3>売った時の利益<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>株式を売った場合の利益に <strong>譲渡益課税</strong> （税率20.315%）という税金がかかるそうです。</p>
-<p>譲渡益課税は、1年間の株の売買の損益の合計にかかるそうです。</p>
-<p>以下のサイトに詳しく書いてありました。</p>
-<p><a class="reference external" href="https://www.matsui.co.jp/study/qa/trading/qa_10.html">株には、どんな税金がかかりますか？会社員の場合はどうなるの？ | はじめての証券取引 | 松井証券</a></p>
-</div>
-<div class="section" id="id6">
-<h3>株主優待<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>配当金とは別扱いで、 <strong>雑所得</strong> として申告するそうです。</p>
-<p>優待品を転売して利益が発生した場合は、その利益も <strong>雑所得</strong> として申告するそうです。
-芸能事務所とかの優待とかの転売で発生しそうですね。</p>
-<p>株主優待についてはあまり厳しくは取り締まられてないそうです。
-そうはいっても脱税になるのは嫌なので、金券とかをもらったらメモしておくようにしたいと思います。
-商品でもらった場合も金額換算したほうがいいんでしょうが、そこまでやるのはちょっと大変そうですね。</p>
+<p>後ろに <code class="docutils literal notranslate"><span class="pre">[2:-1]</span></code> とあるのはスライスです。前から3番目から1番後ろの1つ前（後ろから2番目）までのデータを取り出します。
+先頭の2件と、最後の1件の時間が他のデータと離れていたので切りすてました。</p>
+<p>今回は、pandasのplotを利用してグラフを表示しました。</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">grid＝True</span></code> で、グラフにグリッド線を表示しています。</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">figsize=(15,</span> <span class="pre">5)</span></code> でグラフの大きさを指定しています。横15、縦5と指定して横長にしています。</p></li>
+</ul>
+<img alt="_images/20201209.png" src="_images/20201209.png" />
+<p>グラフが表示できました。</p>
+<p>3月と4月の間で円高になってますね。
+なかなかテクニカル分析にたどり着けないですが、次回こそはテクニカル分析したいと思います。</p>
+<p>この記事は <a class="reference external" href="https://adventar.org/calendars/5685">PyLadies Japan Advent Calendar 2020</a> の9目の投稿です。</p>
 <div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">
-</div>
-</div>
 </div>
 </div>
 
@@ -154,7 +140,7 @@
       <h3>ナビゲーション</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="2020/2020-12-05-article.html" title="kabuステーション APIの始め方"
+          <a href="2020/2020-12-06-article.html" title="投資に関わる税金の種類"
              >次へ</a></li>
         <li class="nav-item nav-item-0"><a href="#">鉄は熱いうちに打て</a> &#187;</li> 
       </ul>

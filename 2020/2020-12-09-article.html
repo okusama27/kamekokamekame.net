@@ -8,11 +8,12 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@okusama27" />
     <meta property="og:site_name" content="鉄は熱いうちに打て">
-    <meta property="og:title" content="2020">
-    <meta property="og:description" content="">
-    <meta property='og:url' content="https://kamekokamekame.net/2020/index.html">
-    
-    <title>2020 &#8212; 鉄は熱いうちに打て</title>
+    <meta property="og:title" content="FXのデータをテクニカル分析してみる（グラフ描画）">
+    <meta property="og:description" content="2020-12-09 この記事は PyLadies Japan Advent Calendar 2020 の9目の投稿です。 Advent Calenda駆動でこれまで学んだことを復習しています。 今日はデータからグラフを表示したいと思います。
+1分ごとにデータがあるので、closeの値を使ってグラフを書きたいと思います。 indexがtimeなので、closeだけ取り出します。 後ろに [...">
+    <meta property='og:url' content="https://kamekokamekame.net/2020/2020-12-09-article.html">
+    <meta property="og:image" content="https://kamekokamekame.net/_images/20201209.png">
+    <title>FXのデータをテクニカル分析してみる（グラフ描画） &#8212; 鉄は熱いうちに打て</title>
     <link rel="stylesheet" href="../_static/bizstyle.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
@@ -25,8 +26,8 @@
     <script type="text/javascript" src="../_static/translations.js"></script>
     <script type="text/javascript" src="../_static/bizstyle.js"></script>
     <link rel="search" title="検索" href="../search.html" />
-    <link rel="next" title="PyCon JP 2020 に参加しました" href="2020-08-29-article.html" />
-    <link rel="prev" title="月刊フィントークに約3年参加して学んだこと" href="2020-12-01-article.html" />
+    <link rel="next" title="2019" href="../2019/index.html" />
+    <link rel="prev" title="PyCon JP 2020 に参加しました" href="2020-08-29-article.html" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <!--[if lt IE 9]>
     <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
@@ -36,12 +37,13 @@
       <h3>ナビゲーション</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="2020-08-29-article.html" title="PyCon JP 2020 に参加しました"
+          <a href="../2019/index.html" title="2019"
              accesskey="N">次へ</a></li>
         <li class="right" >
-          <a href="2020-12-01-article.html" title="月刊フィントークに約3年参加して学んだこと"
+          <a href="2020-08-29-article.html" title="PyCon JP 2020 に参加しました"
              accesskey="P">前へ</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">2020</a> &#187;</li> 
       </ul>
     </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
@@ -55,7 +57,7 @@
 <li class="toctree-l1"><a class="reference internal" href="2020-12-01-article.html">月刊フィントークに約3年参加して学んだこと</a></li>
 </ul>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">2020</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">2020</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2019/index.html">2019</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2018/index.html">2018</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2017/index.html">2017</a></li>
@@ -65,11 +67,11 @@
 
 </div>
   <h4>前のトピックへ</h4>
-  <p class="topless"><a href="2020-12-01-article.html"
-                        title="前の章へ">月刊フィントークに約3年参加して学んだこと</a></p>
-  <h4>次のトピックへ</h4>
   <p class="topless"><a href="2020-08-29-article.html"
-                        title="次の章へ">PyCon JP 2020 に参加しました</a></p>
+                        title="前の章へ">PyCon JP 2020 に参加しました</a></p>
+  <h4>次のトピックへ</h4>
+  <p class="topless"><a href="../2019/index.html"
+                        title="次の章へ">2019</a></p>
 <div id="searchbox" style="display: none" role="search">
   <h3 id="searchlabel">クイック検索</h3>
     <div class="searchformwrapper">
@@ -91,19 +93,29 @@
 <h1>鉄は熱いうちに打て<br>
 =============================</h1>
 
-<div class="section" id="id1">
-<h1>2020<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="2020-08-29-article.html">PyCon JP 2020 に参加しました</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2020-12-01-article.html">月刊フィントークに約3年参加して学んだこと</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2020-12-02-article.html">FXのデータをテクニカル分析してみる（準備編）</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2020-12-04-article.html">FXのデータをテクニカル分析してみる（日付に変換）</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2020-12-05-article.html">kabuステーション APIの始め方</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2020-12-06-article.html">投資に関わる税金の種類</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2020-12-09-article.html">FXのデータをテクニカル分析してみる（グラフ描画）</a></li>
-</ul>
+<div class="section" id="fx">
+<h1>FXのデータをテクニカル分析してみる（グラフ描画）<a class="headerlink" href="#fx" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>2020-12-09</p>
+<p>この記事は <a class="reference external" href="https://adventar.org/calendars/5685">PyLadies Japan Advent Calendar 2020</a> の9目の投稿です。</p>
+<p>Advent Calenda駆動でこれまで学んだことを復習しています。</p>
+<p>今日はデータからグラフを表示したいと思います。
+1分ごとにデータがあるので、closeの値を使ってグラフを書きたいと思います。</p>
+<p>indexがtimeなので、closeだけ取り出します。</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[[</span><span class="s2">&quot;close&quot;</span><span class="p">]]</span>
+</pre></div>
 </div>
+<p>後ろに <code class="docutils literal notranslate"><span class="pre">[2:-1]</span></code> とあるのはスライスです。前から3番目から1番後ろの1つ前（後ろから2番目）までのデータを取り出します。
+先頭の2件と、最後の1件の時間が他のデータと離れていたので切りすてました。</p>
+<p>今回は、pandasのplotを利用してグラフを表示しました。</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">grid＝True</span></code> で、グラフにグリッド線を表示しています。</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">figsize=(15,</span> <span class="pre">5)</span></code> でグラフの大きさを指定しています。横15、縦5と指定して横長にしています。</p></li>
+</ul>
+<img alt="../_images/20201209.png" src="../_images/20201209.png" />
+<p>グラフが表示できました。</p>
+<p>3月と4月の間で円高になってますね。
+なかなかテクニカル分析にたどり着けないですが、次回こそはテクニカル分析したいと思います。</p>
+<p>この記事は <a class="reference external" href="https://adventar.org/calendars/5685">PyLadies Japan Advent Calendar 2020</a> の9目の投稿です。</p>
 </div>
 
 
@@ -132,12 +144,13 @@
       <h3>ナビゲーション</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="2020-08-29-article.html" title="PyCon JP 2020 に参加しました"
+          <a href="../2019/index.html" title="2019"
              >次へ</a></li>
         <li class="right" >
-          <a href="2020-12-01-article.html" title="月刊フィントークに約3年参加して学んだこと"
+          <a href="2020-08-29-article.html" title="PyCon JP 2020 に参加しました"
              >前へ</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >2020</a> &#187;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
