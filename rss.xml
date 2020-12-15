@@ -4,13 +4,29 @@
 <description>Strike while the iron is hot</description>
 <language>ja</language>
 <copyright>2019, kamekokamekame.net</copyright>
-<lastBuildDate>Wed, 09 December 2020 08:00:00 +0900</lastBuildDate>
+<lastBuildDate>Wed, 16 December 2020 08:00:00 +0900</lastBuildDate>
 <item>
+<title>FXのデータをテクニカル分析してみる（移動平均線）</title>
+<link>https://kamekokamekame.net/2020/2020-12-16-article.html</link>
+<description>
+&lt;p&gt;この記事は &lt;a class=&quot;reference external&quot; href=&quot;https://adventar.org/calendars/5685&quot;&gt;PyLadies Japan Advent Calendar 2020&lt;/a&gt; の16目の投稿です。&lt;/p&gt;&lt;p&gt;Advent Calenda駆動でこれまで学んだことを復習しています。&lt;/p&gt;&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://kamekokamekame.net/2020/2020-12-02-article.html&quot;&gt;FXのデータをテクニカル分析してみる（準備編）&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://kamekokamekame.net/2020/2020-12-04-article.html&quot;&gt;FXのデータをテクニカル分析してみる（日付に変換）&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://kamekokamekame.net/2020/2020-12-09-article.html&quot;&gt;FXのデータをテクニカル分析してみる（グラフ描画）&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;いよいよテクニカル分析してみましょう。&lt;/p&gt;
+...
+</description>
+<pubDate>Wed, 16 December 2020 08:00:00 +0900</pubDate>
+<guid>https://kamekokamekame.net/2020/2020-12-16-article.html</guid>
+</item><item>
 <title>FXのデータをテクニカル分析してみる（グラフ描画）</title>
 <link>https://kamekokamekame.net/2020/2020-12-09-article.html</link>
 <description>
-&lt;p&gt;この記事は &lt;a class=&quot;reference external&quot; href=&quot;https://adventar.org/calendars/5685&quot;&gt;PyLadies Japan Advent Calendar 2020&lt;/a&gt; の9目の投稿です。&lt;/p&gt;&lt;p&gt;Advent Calenda駆動でこれまで学んだことを復習しています。&lt;/p&gt;&lt;p&gt;今日はデータからグラフを表示したいと思います。
-1分ごとにデータがあるので、closeの値を使ってグラフを書きたいと思います。&lt;/p&gt;&lt;p&gt;indexがtimeなので、closeだけ取り出します。&lt;/p&gt;
+&lt;p&gt;この記事は &lt;a class=&quot;reference external&quot; href=&quot;https://adventar.org/calendars/5685&quot;&gt;PyLadies Japan Advent Calendar 2020&lt;/a&gt; の9目の投稿です。&lt;/p&gt;&lt;p&gt;Advent Calenda駆動でこれまで学んだことを復習しています。&lt;/p&gt;&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://kamekokamekame.net/2020/2020-12-02-article.html&quot;&gt;FXのデータをテクニカル分析してみる（準備編）&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://kamekokamekame.net/2020/2020-12-04-article.html&quot;&gt;FXのデータをテクニカル分析してみる（日付に変換）&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;今日はデータからグラフを表示したいと思います。
+1分ごとにデータがあるので、closeの値を使ってグラフを書きたいと思います。&lt;/p&gt;
 ...
 </description>
 <pubDate>Wed, 09 December 2020 08:00:00 +0900</pubDate>
@@ -49,15 +65,6 @@ auカブコム証券が提供するkabu STATIONをプログラムで操作でき
 </description>
 <pubDate>Sat, 05 December 2020 08:00:00 +0900</pubDate>
 <guid>https://kamekokamekame.net/2020/2020-12-05-article.html</guid>
-</item><item>
-<title>FXのデータをテクニカル分析してみる（日付に変換）</title>
-<link>https://kamekokamekame.net/2020/2020-12-04-article.html</link>
-<description>
-&lt;p&gt;この記事は &lt;a class=&quot;reference external&quot; href=&quot;https://adventar.org/calendars/5685&quot;&gt;PyLadies Japan Advent Calendar 2020&lt;/a&gt; の5日目の投稿です。&lt;/p&gt;&lt;p&gt;この記事は、 &lt;a class=&quot;reference external&quot; href=&quot;https://kamekokamekame.net/2020/2020-12-02-article.html&quot;&gt;FXのデータをテクニカル分析してみる（準備編）&lt;/a&gt; の続きです。&lt;/p&gt;&lt;p&gt;テクニカル分析はとりあえず日付データを日付順に並べないと話がはじまりません。&lt;/p&gt;&lt;p&gt;そこで今回はデータを日付型にして、インデックスに設定します。&lt;/p&gt;
-...
-</description>
-<pubDate>Fri, 04 December 2020 08:00:00 +0900</pubDate>
-<guid>https://kamekokamekame.net/2020/2020-12-04-article.html</guid>
 </item>
 </channel>
 </rss>
