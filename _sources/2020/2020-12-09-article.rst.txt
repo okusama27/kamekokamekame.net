@@ -9,7 +9,7 @@ FXのデータをテクニカル分析してみる（グラフ描画）
 
 2020-12-09
 
-この記事は `PyLadies Japan Advent Calendar 2020 <https://adventar.org/calendars/5685>`_ の9目の投稿です。
+この記事は `PyLadies Japan Advent Calendar 2020 <https://adventar.org/calendars/5685>`_ の9日目の投稿です。
 
 Advent Calenda駆動でこれまで学んだことを復習しています。
 
@@ -41,4 +41,4 @@ indexがtimeなので、closeだけ取り出します。
 3月と4月の間で円高になってますね。
 なかなかテクニカル分析にたどり着けないですが、次回こそはテクニカル分析したいと思います。
 
-この記事は `PyLadies Japan Advent Calendar 2020 <https://adventar.org/calendars/5685>`_ の9目の投稿です。
+この記事は `PyLadies Japan Advent Calendar 2020 <https://adventar.org/calendars/5685>`_ の9日目の投稿です。

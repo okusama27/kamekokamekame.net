@@ -9,7 +9,7 @@
 <title>FXのデータをテクニカル分析してみる（移動平均線）</title>
 <link>https://kamekokamekame.net/2020/2020-12-16-article.html</link>
 <description>
-&lt;p&gt;この記事は &lt;a class=&quot;reference external&quot; href=&quot;https://adventar.org/calendars/5685&quot;&gt;PyLadies Japan Advent Calendar 2020&lt;/a&gt; の16目の投稿です。&lt;/p&gt;&lt;p&gt;Advent Calenda駆動でこれまで学んだことを復習しています。&lt;/p&gt;&lt;ul class=&quot;simple&quot;&gt;
+&lt;p&gt;この記事は &lt;a class=&quot;reference external&quot; href=&quot;https://adventar.org/calendars/5685&quot;&gt;PyLadies Japan Advent Calendar 2020&lt;/a&gt; の16日目の投稿です。&lt;/p&gt;&lt;p&gt;Advent Calenda駆動でこれまで学んだことを復習しています。&lt;/p&gt;&lt;ul class=&quot;simple&quot;&gt;
 &lt;li&gt;&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://kamekokamekame.net/2020/2020-12-02-article.html&quot;&gt;FXのデータをテクニカル分析してみる（準備編）&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://kamekokamekame.net/2020/2020-12-04-article.html&quot;&gt;FXのデータをテクニカル分析してみる（日付に変換）&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://kamekokamekame.net/2020/2020-12-09-article.html&quot;&gt;FXのデータをテクニカル分析してみる（グラフ描画）&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
@@ -22,7 +22,7 @@
 <title>FXのデータをテクニカル分析してみる（グラフ描画）</title>
 <link>https://kamekokamekame.net/2020/2020-12-09-article.html</link>
 <description>
-&lt;p&gt;この記事は &lt;a class=&quot;reference external&quot; href=&quot;https://adventar.org/calendars/5685&quot;&gt;PyLadies Japan Advent Calendar 2020&lt;/a&gt; の9目の投稿です。&lt;/p&gt;&lt;p&gt;Advent Calenda駆動でこれまで学んだことを復習しています。&lt;/p&gt;&lt;ul class=&quot;simple&quot;&gt;
+&lt;p&gt;この記事は &lt;a class=&quot;reference external&quot; href=&quot;https://adventar.org/calendars/5685&quot;&gt;PyLadies Japan Advent Calendar 2020&lt;/a&gt; の9日目の投稿です。&lt;/p&gt;&lt;p&gt;Advent Calenda駆動でこれまで学んだことを復習しています。&lt;/p&gt;&lt;ul class=&quot;simple&quot;&gt;
 &lt;li&gt;&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://kamekokamekame.net/2020/2020-12-02-article.html&quot;&gt;FXのデータをテクニカル分析してみる（準備編）&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://kamekokamekame.net/2020/2020-12-04-article.html&quot;&gt;FXのデータをテクニカル分析してみる（日付に変換）&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;p&gt;今日はデータからグラフを表示したいと思います。
