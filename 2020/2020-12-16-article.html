@@ -25,8 +25,8 @@
     <script type="text/javascript" src="../_static/translations.js"></script>
     <script type="text/javascript" src="../_static/bizstyle.js"></script>
     <link rel="search" title="検索" href="../search.html" />
-    <link rel="next" title="2019" href="../2019/index.html" />
-    <link rel="prev" title="FXのデータをテクニカル分析してみる（準備編）" href="2020-12-02-article.html" />
+    <link rel="next" title="FXのデータをテクニカル分析してみる（グラフ描画）" href="2020-12-09-article.html" />
+    <link rel="prev" title="脱税してないか不安になって調べた話" href="2020-12-19-article.html" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <!--[if lt IE 9]>
     <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
@@ -36,24 +36,23 @@
       <h3>ナビゲーション</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="../2019/index.html" title="2019"
+          <a href="2020-12-09-article.html" title="FXのデータをテクニカル分析してみる（グラフ描画）"
              accesskey="N">次へ</a></li>
         <li class="right" >
-          <a href="2020-12-02-article.html" title="FXのデータをテクニカル分析してみる（準備編）"
+          <a href="2020-12-19-article.html" title="脱税してないか不安になって調べた話"
              accesskey="P">前へ</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">2020</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &#187;</li> 
       </ul>
     </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper"><div id="toc" class="sidebarRow">
 <h3><a href="../index.html">Table Of Contents</a></h3>
-<ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="2020-12-23-article.html">FXのデータをテクニカル分析してみる（ゴールデンクロス）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2020-12-20-article.html">ふるさと納税制度を使ってみた</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2020-12-19-article.html">脱税してないか不安になって調べた話</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">FXのデータをテクニカル分析してみる（移動平均線）</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2020-12-09-article.html">FXのデータをテクニカル分析してみる（グラフ描画）</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2020-12-08-article.html">NISAと税金</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2020-12-06-article.html">投資に関わる税金の種類</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2020-12-05-article.html">kabuステーション APIの始め方</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2020-12-04-article.html">FXのデータをテクニカル分析してみる（日付に変換）</a></li>
 </ul>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">2020</a></li>
@@ -66,11 +65,11 @@
 
 </div>
   <h4>前のトピックへ</h4>
-  <p class="topless"><a href="2020-12-02-article.html"
-                        title="前の章へ">FXのデータをテクニカル分析してみる（準備編）</a></p>
+  <p class="topless"><a href="2020-12-19-article.html"
+                        title="前の章へ">脱税してないか不安になって調べた話</a></p>
   <h4>次のトピックへ</h4>
-  <p class="topless"><a href="../2019/index.html"
-                        title="次の章へ">2019</a></p>
+  <p class="topless"><a href="2020-12-09-article.html"
+                        title="次の章へ">FXのデータをテクニカル分析してみる（グラフ描画）</a></p>
 <div id="searchbox" style="display: none" role="search">
   <h3 id="searchlabel">クイック検索</h3>
     <div class="searchformwrapper">
@@ -104,15 +103,38 @@
 </ul>
 <p>いよいよテクニカル分析してみましょう。</p>
 <p>テクニカル分析の本を読むと <strong>移動平均線</strong> と <strong>MACD</strong> が「よく知られている、わかりやすい、一般的」な指標と書いてあります。</p>
-<p><strong>移動平均線</strong> とは、ある一定期間の価格の平均値を計算し、折れ線グラフで表したものです。
+<p><strong>移動平均線</strong> とは、ある一定期間の終値の平均値を計算し、線で表したグラフです。
 過去5日間の平均だと5日線というそうです。その日を含む過去5日間の終値の平均値を出すそうです。</p>
 <p>昨日の終値はどうやって出しましょう。pandas.DataFrame.shift()を使うとデータをずらせます。
 <code class="docutils literal notranslate"><span class="pre">df[&quot;close&quot;].shift(1)</span></code> で1日前の終値を今日の終値と同じ行に表示できます。</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># 毎日の終値の平均値を抜き出す</span>
+<span class="n">df_5</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s2">&quot;D&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+
+<span class="c1"># 4日分の終値を同じ行に並べる</span>
+<span class="n">df_5</span><span class="p">[</span><span class="s2">&quot;1day ago&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_5</span><span class="p">[</span><span class="s2">&quot;close&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">df_5</span><span class="p">[</span><span class="s2">&quot;2day ago&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_5</span><span class="p">[</span><span class="s2">&quot;close&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">df_5</span><span class="p">[</span><span class="s2">&quot;3day ago&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_5</span><span class="p">[</span><span class="s2">&quot;close&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">df_5</span><span class="p">[</span><span class="s2">&quot;4day ago&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_5</span><span class="p">[</span><span class="s2">&quot;close&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<span class="n">df_5</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
 <img alt="../_images/20201216_1.png" src="../_images/20201216_1.png" />
 <p>5日分の値を足して5で割れば、5日線用の値が計算できます。計算してグラフを表示しました。</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># 5日の平均を求める</span>
+<span class="n">df_5</span><span class="p">[</span><span class="s2">&quot;mean5&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">df_5</span><span class="p">[</span><span class="s2">&quot;close&quot;</span><span class="p">]</span> <span class="o">+</span> <span class="n">df_5</span><span class="p">[</span><span class="s2">&quot;1day ago&quot;</span><span class="p">]</span> <span class="o">+</span> <span class="n">df_5</span><span class="p">[</span><span class="s2">&quot;2day ago&quot;</span><span class="p">]</span> <span class="o">+</span> <span class="n">df_5</span><span class="p">[</span><span class="s2">&quot;3day ago&quot;</span><span class="p">]</span> <span class="o">+</span> <span class="n">df_5</span><span class="p">[</span><span class="s2">&quot;4day ago&quot;</span><span class="p">])</span><span class="o">/</span><span class="mi">5</span>
+<span class="n">df_graph_5</span> <span class="o">=</span> <span class="n">df_5</span><span class="p">[[</span><span class="s2">&quot;close&quot;</span><span class="p">,</span> <span class="s2">&quot;mean5&quot;</span><span class="p">]][</span><span class="mi">2</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">df_graph_5</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">grid</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">5</span><span class="p">));</span>
+</pre></div>
+</div>
 <img alt="../_images/20201216_2.png" src="../_images/20201216_2.png" />
 <p>まぁ、めんどくさいですね。</p>
 <p>実際は、 <code class="docutils literal notranslate"><span class="pre">rolling()</span></code> を使って移動平均線は出すみたいです。25日線とか上の方法で計算してられないですしね。</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">df_25</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s2">&quot;D&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="n">df_25</span><span class="p">[</span><span class="s2">&quot;mean25&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_25</span><span class="p">[</span><span class="s2">&quot;close&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">rolling</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="n">df_graph_25</span> <span class="o">=</span> <span class="n">df_25</span><span class="p">[[</span><span class="s2">&quot;close&quot;</span><span class="p">,</span> <span class="s2">&quot;mean25&quot;</span><span class="p">]][</span><span class="mi">2</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">df_graph_25</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">grid</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">5</span><span class="p">));</span>
+</pre></div>
+</div>
 <img alt="../_images/20201216_3.png" src="../_images/20201216_3.png" />
 <p>FXのデータを使っているだけでもはや何のことやらですが、移動平均線を表示することができました。</p>
 <p>前やったはずなのに結構忘れてたし、前回は有識者と一緒にハンズオンしたので、自分で考えていませんでした。
@@ -147,13 +169,12 @@
       <h3>ナビゲーション</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="../2019/index.html" title="2019"
+          <a href="2020-12-09-article.html" title="FXのデータをテクニカル分析してみる（グラフ描画）"
              >次へ</a></li>
         <li class="right" >
-          <a href="2020-12-02-article.html" title="FXのデータをテクニカル分析してみる（準備編）"
+          <a href="2020-12-19-article.html" title="脱税してないか不安になって調べた話"
              >前へ</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="index.html" >2020</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &#187;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">

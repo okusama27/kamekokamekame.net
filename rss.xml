@@ -4,8 +4,40 @@
 <description>Strike while the iron is hot</description>
 <language>ja</language>
 <copyright>2019, kamekokamekame.net</copyright>
-<lastBuildDate>Sun, 20 December 2020 08:00:00 +0900</lastBuildDate>
+<lastBuildDate>Thu, 24 December 2020 08:00:00 +0900</lastBuildDate>
 <item>
+<title>FXを6週間やってみた結果と反省と感想</title>
+<link>https://kamekokamekame.net/2020/2020-12-24-article.html</link>
+<description>
+&lt;p&gt;この記事は &lt;a class=&quot;reference external&quot; href=&quot;https://adventar.org/calendars/5084&quot;&gt;fintalk Advent Calendar 2020&lt;/a&gt; の24日目の投稿です。&lt;/p&gt;&lt;p&gt;コロナ禍で時間があったこともあって、今年はやったことない投資に手を出してみよう！と思っていました。&lt;/p&gt;&lt;p&gt;今年、はじめて挑戦した金融系の投資は以下です。（逆に言うと今まで日本株と投資信託しかやってなかったですね。）&lt;/p&gt;&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;p&gt;外国株&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;外国株ETF&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;金&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;信用取引&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;FX&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;カブコムAPI&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+...
+</description>
+<pubDate>Thu, 24 December 2020 08:00:00 +0900</pubDate>
+<guid>https://kamekokamekame.net/2020/2020-12-24-article.html</guid>
+</item><item>
+<title>FXのデータをテクニカル分析してみる（ゴールデンクロス）</title>
+<link>https://kamekokamekame.net/2020/2020-12-23-article.html</link>
+<description>
+&lt;p&gt;この記事は &lt;a class=&quot;reference external&quot; href=&quot;https://adventar.org/calendars/5685&quot;&gt;PyLadies Japan Advent Calendar 2020&lt;/a&gt; の23日目の投稿です。&lt;/p&gt;&lt;p&gt;Advent Calenda駆動でこれまで学んだことを復習しています。&lt;/p&gt;&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://kamekokamekame.net/2020/2020-12-02-article.html&quot;&gt;FXのデータをテクニカル分析してみる（準備編）&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://kamekokamekame.net/2020/2020-12-04-article.html&quot;&gt;FXのデータをテクニカル分析してみる（日付に変換）&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://kamekokamekame.net/2020/2020-12-09-article.html&quot;&gt;FXのデータをテクニカル分析してみる（グラフ描画）&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://kamekokamekame.net/2020/2020-12-16-article.html&quot;&gt;FXのデータをテクニカル分析してみる（移動平均線）&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;さて、前回は移動平均線を描画しましたが、意味とか何も書いていませんでした。
+過去N日間の移動線を見るとトレンド（上がっているか下がっているか）がわかるそうです。
+この線を見て、売るか買うかを決めるんですね。&lt;/p&gt;
+...
+</description>
+<pubDate>Wed, 23 December 2020 08:00:00 +0900</pubDate>
+<guid>https://kamekokamekame.net/2020/2020-12-23-article.html</guid>
+</item><item>
 <title>ふるさと納税制度を使ってみた</title>
 <link>https://kamekokamekame.net/2020/2020-12-20-article.html</link>
 <description>
@@ -76,31 +108,6 @@ NISAの枠では個別株などは買わずにインデックス系の商品で�
 </description>
 <pubDate>Wed, 16 December 2020 08:00:00 +0900</pubDate>
 <guid>https://kamekokamekame.net/2020/2020-12-16-article.html</guid>
-</item><item>
-<title>FXのデータをテクニカル分析してみる（グラフ描画）</title>
-<link>https://kamekokamekame.net/2020/2020-12-09-article.html</link>
-<description>
-&lt;p&gt;この記事は &lt;a class=&quot;reference external&quot; href=&quot;https://adventar.org/calendars/5685&quot;&gt;PyLadies Japan Advent Calendar 2020&lt;/a&gt; の9日目の投稿です。&lt;/p&gt;&lt;p&gt;Advent Calenda駆動でこれまで学んだことを復習しています。&lt;/p&gt;&lt;ul class=&quot;simple&quot;&gt;
-&lt;li&gt;&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://kamekokamekame.net/2020/2020-12-02-article.html&quot;&gt;FXのデータをテクニカル分析してみる（準備編）&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://kamekokamekame.net/2020/2020-12-04-article.html&quot;&gt;FXのデータをテクニカル分析してみる（日付に変換）&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;p&gt;今日はデータからグラフを表示したいと思います。
-1分ごとにデータがあるので、closeの値を使ってグラフを書きたいと思います。&lt;/p&gt;
-...
-</description>
-<pubDate>Wed, 09 December 2020 08:00:00 +0900</pubDate>
-<guid>https://kamekokamekame.net/2020/2020-12-09-article.html</guid>
-</item><item>
-<title>NISAと税金</title>
-<link>https://kamekokamekame.net/2020/2020-12-08-article.html</link>
-<description>
-&lt;p&gt;NISAと税金について調べました。&lt;/p&gt;&lt;p&gt;金融庁のページにまとまっていたのでリンクします。&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://www.fsa.go.jp/policy/nisa2/about/nisa/index.html&quot;&gt;NISA ： 金融庁&lt;/a&gt;&lt;/p&gt;&lt;ul class=&quot;simple&quot;&gt;
-&lt;li&gt;&lt;p&gt;毎年、購入金額の合計が120 万円まで&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;右肩上がりの株式、投資信託を購入していたとして購入から5年以内の売却益、配当金に課税されない。&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-...
-</description>
-<pubDate>Tue, 08 December 2020 08:00:00 +0900</pubDate>
-<guid>https://kamekokamekame.net/2020/2020-12-08-article.html</guid>
 </item>
 </channel>
 </rss>

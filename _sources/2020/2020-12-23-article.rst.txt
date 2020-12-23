@@ -1,0 +1,63 @@
+:date: 2020-12-23 00:00:00
+:title: FXのデータをテクニカル分析してみる（ゴールデンクロス）
+:category: PyLadies
+:tags: PyLadies
+
+============================================================================
+FXのデータをテクニカル分析してみる（ゴールデンクロス）
+============================================================================
+
+2020-12-23
+
+この記事は `PyLadies Japan Advent Calendar 2020 <https://adventar.org/calendars/5685>`_ の23日目の投稿です。
+
+Advent Calenda駆動でこれまで学んだことを復習しています。
+
+- `FXのデータをテクニカル分析してみる（準備編） <https://kamekokamekame.net/2020/2020-12-02-article.html>`_
+- `FXのデータをテクニカル分析してみる（日付に変換） <https://kamekokamekame.net/2020/2020-12-04-article.html>`_
+- `FXのデータをテクニカル分析してみる（グラフ描画） <https://kamekokamekame.net/2020/2020-12-09-article.html>`_
+- `FXのデータをテクニカル分析してみる（移動平均線） <https://kamekokamekame.net/2020/2020-12-16-article.html>`_
+
+さて、前回は移動平均線を描画しましたが、意味とか何も書いていませんでした。
+過去N日間の移動線を見るとトレンド（上がっているか下がっているか）がわかるそうです。
+この線を見て、売るか買うかを決めるんですね。
+
+ただ、線が1本より複数の線を合わせてみたほうがわかりやすいそうです。
+売買のシグナルとして有名なのに **ゴールデンクロス** と **デッドクロス** があるそうです。
+短期の移動平均線が長期の移動平均線を下から上に突き抜けることをゴールデンクロスといい、上昇トレンドで買いのサイン。
+逆がデッドクロスが下降トレンドで売りのサインだそうです。
+
+詳しくは、 `移動平均線 | トレンド分析 | マネックス証券 <https://info.monex.co.jp/technical-analysis/indicators/001.html>`_ で説明されています。
+
+今回は5日の移動平均線と25日の移動平均線を見てみます。
+
+1年分は見づらいので9月以降のデータで線を出してみました。
+
+::
+
+   df_day_oct = df.resample("D").mean()
+   df_day_oct = df_day_oct[df_day_oct.index >= "2020-10-01"]
+   df_day_oct["mean5"] = df_day_oct["close"].rolling(5).mean()
+   df_day_oct["mean25"] = df_day_oct["close"].rolling(25).mean() 
+   df_graph_oct = df_day_oct[["close", "mean5", "mean25"]][25:]
+   df_graph_oct.plot(grid=True, figsize=(15, 5));
+
+
+.. image:: /_static/images/2020/20201223_1.png
+
+赤い矢印のところがゴールデンクロスで、青い矢印のところがデッドクロスらしいですが、その後上昇してない気もします？
+これを機にいろいろなグラフを書いてみたいと思います。
+
+.. image:: /_static/images/2020/20201223_2.png
+
+
+仕事でそんなに使わないのであまりpandas、numpyなどのデータ分析ライブラリーは使うたびに調べていました。
+しかし、fintalkのkoanに参加するうちに何も見ずに書けるようになってきました。
+書けると楽しい。分析をしようという気持ちにもなります。
+オーガナイザーのしんせいたろうさんにはとても感謝しています。
+
+`【python/女性限定/オンライン】Python/Pandas Koan 100本ノック - connpass <https://fintalk.connpass.com/event/198373/>`_
+
+来年もさらに分析していきたいと思います。
+
+この記事は `PyLadies Japan Advent Calendar 2020 <https://adventar.org/calendars/5685>`_ の23日目の投稿です。
