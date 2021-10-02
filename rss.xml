@@ -4,110 +4,25 @@
 <description>Strike while the iron is hot</description>
 <language>ja</language>
 <copyright>2019, kamekokamekame.net</copyright>
-<lastBuildDate>Thu, 24 December 2020 08:00:00 +0900</lastBuildDate>
+<lastBuildDate>Tue, 14 September 2021 08:00:00 +0900</lastBuildDate>
 <item>
-<title>FXを6週間やってみた結果と反省と感想</title>
-<link>https://kamekokamekame.net/2020/2020-12-24-article.html</link>
+<title>［ITS］関東ITソフトウェア健康保険組合でスポーツジムに通う方法</title>
+<link>https://kamekokamekame.net/2021/2021-09-14-article.html</link>
 <description>
-&lt;p&gt;この記事は &lt;a class=&quot;reference external&quot; href=&quot;https://adventar.org/calendars/5084&quot;&gt;fintalk Advent Calendar 2020&lt;/a&gt; の24日目の投稿です。&lt;/p&gt;&lt;p&gt;コロナ禍で時間があったこともあって、今年はやったことない投資に手を出してみよう！と思っていました。&lt;/p&gt;&lt;p&gt;今年、はじめて挑戦した金融系の投資は以下です。（逆に言うと今まで日本株と投資信託しかやってなかったですね。）&lt;/p&gt;&lt;ul class=&quot;simple&quot;&gt;
-&lt;li&gt;&lt;p&gt;外国株&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;外国株ETF&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;金&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;信用取引&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;FX&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;カブコムAPI&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-...
-</description>
-<pubDate>Thu, 24 December 2020 08:00:00 +0900</pubDate>
-<guid>https://kamekokamekame.net/2020/2020-12-24-article.html</guid>
-</item><item>
-<title>FXのデータをテクニカル分析してみる（ゴールデンクロス）</title>
-<link>https://kamekokamekame.net/2020/2020-12-23-article.html</link>
-<description>
-&lt;p&gt;この記事は &lt;a class=&quot;reference external&quot; href=&quot;https://adventar.org/calendars/5685&quot;&gt;PyLadies Japan Advent Calendar 2020&lt;/a&gt; の23日目の投稿です。&lt;/p&gt;&lt;p&gt;Advent Calenda駆動でこれまで学んだことを復習しています。&lt;/p&gt;&lt;ul class=&quot;simple&quot;&gt;
-&lt;li&gt;&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://kamekokamekame.net/2020/2020-12-02-article.html&quot;&gt;FXのデータをテクニカル分析してみる（準備編）&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://kamekokamekame.net/2020/2020-12-04-article.html&quot;&gt;FXのデータをテクニカル分析してみる（日付に変換）&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://kamekokamekame.net/2020/2020-12-09-article.html&quot;&gt;FXのデータをテクニカル分析してみる（グラフ描画）&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://kamekokamekame.net/2020/2020-12-16-article.html&quot;&gt;FXのデータをテクニカル分析してみる（移動平均線）&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;p&gt;さて、前回は移動平均線を描画しましたが、意味とか何も書いていませんでした。
-過去N日間の移動線を見るとトレンド（上がっているか下がっているか）がわかるそうです。
-この線を見て、売るか買うかを決めるんですね。&lt;/p&gt;
-...
-</description>
-<pubDate>Wed, 23 December 2020 08:00:00 +0900</pubDate>
-<guid>https://kamekokamekame.net/2020/2020-12-23-article.html</guid>
-</item><item>
-<title>ふるさと納税制度を使ってみた</title>
-<link>https://kamekokamekame.net/2020/2020-12-20-article.html</link>
-<description>
-&lt;p&gt;これは、アドベントカレンダーではありません。&lt;/p&gt;&lt;p&gt;税金について調べていたら &lt;strong&gt;ふるさと納税&lt;/strong&gt; が出てきたので、ついでに調べてみました。&lt;/p&gt;&lt;p&gt;今までは保育園、小学校、学童、医療費補助と住居地域の公共サービスのお世話に存分になっている身でふるさと納税なんて申し訳ない。
-と考えてやっていませんでした。（調べるのめんどくさかったわけじゃないからね）&lt;/p&gt;&lt;p&gt;子供も別の区の学校に通っていますし、病気もしなくなったのでちょっとやってみることにしました。&lt;/p&gt;
-...
-</description>
-<pubDate>Sun, 20 December 2020 08:00:00 +0900</pubDate>
-<guid>https://kamekokamekame.net/2020/2020-12-20-article.html</guid>
-</item><item>
-<title>脱税してないか不安になって調べた話</title>
-<link>https://kamekokamekame.net/2020/2020-12-19-article.html</link>
-<description>
-&lt;p&gt;この記事は &lt;a class=&quot;reference external&quot; href=&quot;https://adventar.org/calendars/5084&quot;&gt;fintalk Advent Calendar 2020&lt;/a&gt; の19日目の投稿です。&lt;/p&gt;&lt;p&gt;今年はいろいろな投資に手を出した1年でした。
-春からの株価爆回復のおかげでまぁまぁ利益が出たり、投資信託をスイッチングしたりしたのでNISA口座以外で利益がでました。
-ぼーっとしていると脱税になって逮捕とかされたら家族に申し訳ないので、投資と税金について調べました。&lt;/p&gt;&lt;div class=&quot;section&quot; id=&quot;id2&quot;&gt;
-&lt;h2&gt;はじめに&lt;a class=&quot;headerlink&quot; href=&quot;#id2&quot; title=&quot;このヘッドラインへのパーマリンク&quot;&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;まずは私が調査前の知っている情報です。&lt;/p&gt;
+&lt;p&gt;食欲の秋、スポーツの秋ですね。今回は関東ITソフトウェア健康保険組合に入会している方がお得に通えるジム情報を紹介します。&lt;/p&gt;&lt;p&gt;関東にお住いのITエンジニアの方で自社の保険組合を持っていない会社の方は、結構 &lt;a class=&quot;reference external&quot; href=&quot;https://www.its-kenpo.or.jp/&quot;&gt;［ITS］関東ITソフトウェア健康保険組合&lt;/a&gt; にお世話になっているのではないでしょうか。
+今回は、このITSの保険証を持っている方向けにジムに通う方法を紹介します。&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://www.its-kenpo.or.jp/shisetsu/sports_club/index.html&quot;&gt;スポーツクラブ | ［ITS］関東ITソフトウェア健康保険組合&lt;/a&gt; のページに行くとやり方がわかりますが、資料読みたくない！という方に向けて、今回は紹介します。&lt;/p&gt;&lt;div class=&quot;section&quot; id=&quot;id3&quot;&gt;
+&lt;h2&gt;通えるスポーツクラブ&lt;a class=&quot;headerlink&quot; href=&quot;#id3&quot; title=&quot;このヘッドラインへのパーマリンク&quot;&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;主に、 &lt;strong&gt;コナミスポーツクラブ&lt;/strong&gt; 系列と &lt;strong&gt;セントラルスポーツ&lt;/strong&gt; 系列のスポーツクラブに通えます。&lt;/p&gt;
 &lt;ul class=&quot;simple&quot;&gt;
-&lt;li&gt;&lt;p&gt;株の売買などの税金は税率20％くらい&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;また、年間20万円までの利益なら申告しなくていい？&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;NISAの利益は無課税&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;NISAじゃなくても証券会社が勝手に税金分を払ってくれる？&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://img.konami.com/sportsclub/BtoB/corp_service/pdf/facility_list.pdf&quot;&gt;コナミスポーツの系列一覧&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;http://business.central.co.jp/corporate/system/club/&quot;&gt;セントラルスポーツの系列一覧&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;しかし、NISAの配当金は無課税なの？FXの利益ってどうしたらいいの？と不安になったので調査することにしました。
-知らなかったとはいえ法を犯していたら嫌ですしね。&lt;/p&gt;
-&lt;p&gt;まずは、税金の種類を調べました。配当課税 （税率20.315%）、譲渡益課税 （税率20.315%）と2種類があるようです。
-優待、FX、先物などの利益は雑所得、為替などの利子は利子所得になるようです。&lt;/p&gt;
-&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://kamekokamekame.net/2020/2020-12-06-article.html&quot;&gt;投資に関わる税金の種類&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;また、FX、先物の損益を他の株などの損益と相殺できないそうです。
-株ですごく儲かって、FXですごく損しても株の利益分の税金はおさめないといけないようです。&lt;/p&gt;
-&lt;p&gt;NISAについても確認しました。NISAでは配当金、売買益が出ても無課税だそうです。ただし、損が出ても他の口座と相殺はできません。
-NISAの枠では個別株などは買わずにインデックス系の商品で利益がでる、配当も出る安定した商品に投資するのがよさそうです。&lt;/p&gt;
-&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://kamekokamekame.net/2020/2020-12-08-article.html&quot;&gt;NISAと税金&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;証券会社にはNISA口座、特定口座、一般口座があり、特定口座には源泉徴収ありと源泉徴収無しがあります。
-特定口座を利用すると納税の手間が省けるくらいしか分かっておらず、証券会社がおすすめしていると思ったNISA以外の取引は何も考えずに特定口座（源泉徴収あり）でやっていました。
-この源泉あり口座を利用すると証券会社が売却時などに税金を計算して差し引いてくれます。
-このため、利益が出ても確定申告しなくていいのです。
-しかし給与所得者や年金所得者の場合、利益が20万以下だと本来は納税義務がないのに自動で引かれてしまいます。
-20万以上の利益が出なかった年も税金を払ってしまうことになるのです。
-また複数の証券会社を利用した取引で損益の合算もされません。源泉ありでも確定申告を行えば問題ないようです。&lt;/p&gt;
-&lt;/div&gt;&lt;div class=&quot;section&quot; id=&quot;id4&quot;&gt;
-&lt;h2&gt;結論&lt;a class=&quot;headerlink&quot; href=&quot;#id4&quot; title=&quot;このヘッドラインへのパーマリンク&quot;&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;これまで源泉あり口座とNISA口座で取引していたので、&lt;strong&gt;脱税してません。&lt;/strong&gt;
-素人がうっかり脱税しないような仕組みになっているようです。&lt;/p&gt;
-&lt;p&gt;以下は、今日までに調べようと思っていた項目の残りです。間に合いませんでしたが年内には調べようと思います。&lt;/p&gt;
-&lt;ul class=&quot;simple&quot;&gt;
-&lt;li&gt;&lt;p&gt;iDecoと税金&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;FXと税金&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;投資に関わる税金を払い忘れていた場合&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;損失が出た場合&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;この中には &lt;strong&gt;ゴールドジム&lt;/strong&gt; も含まれています。場所によっては、 スポーツクラブＮＡＳ、ルネサンスなどの系列にも通えます。&lt;/p&gt;
 &lt;/div&gt;
 ...
 </description>
-<pubDate>Sat, 19 December 2020 08:00:00 +0900</pubDate>
-<guid>https://kamekokamekame.net/2020/2020-12-19-article.html</guid>
-</item><item>
-<title>FXのデータをテクニカル分析してみる（移動平均線）</title>
-<link>https://kamekokamekame.net/2020/2020-12-16-article.html</link>
-<description>
-&lt;p&gt;この記事は &lt;a class=&quot;reference external&quot; href=&quot;https://adventar.org/calendars/5685&quot;&gt;PyLadies Japan Advent Calendar 2020&lt;/a&gt; の16日目の投稿です。&lt;/p&gt;&lt;p&gt;Advent Calenda駆動でこれまで学んだことを復習しています。&lt;/p&gt;&lt;ul class=&quot;simple&quot;&gt;
-&lt;li&gt;&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://kamekokamekame.net/2020/2020-12-02-article.html&quot;&gt;FXのデータをテクニカル分析してみる（準備編）&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://kamekokamekame.net/2020/2020-12-04-article.html&quot;&gt;FXのデータをテクニカル分析してみる（日付に変換）&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://kamekokamekame.net/2020/2020-12-09-article.html&quot;&gt;FXのデータをテクニカル分析してみる（グラフ描画）&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;p&gt;いよいよテクニカル分析してみましょう。&lt;/p&gt;
-...
-</description>
-<pubDate>Wed, 16 December 2020 08:00:00 +0900</pubDate>
-<guid>https://kamekokamekame.net/2020/2020-12-16-article.html</guid>
+<pubDate>Tue, 14 September 2021 08:00:00 +0900</pubDate>
+<guid>https://kamekokamekame.net/2021/2021-09-14-article.html</guid>
 </item>
 </channel>
 </rss>
