@@ -1,0 +1,64 @@
+:date: 2021-12-02 00:00:00
+:title: PyLadies Tokyo 2021 合宿報告
+:category: PyLadies
+:tags: PyLadies
+
+==========================================================
+PyLadies Tokyo 2021 合宿報告
+==========================================================
+
+2021-12-02
+
+この記事は `PyLadies Japan Advent Calendar 2021 - Adventar <https://adventar.org/calendars/7013>`_ の2日目です。
+
+`PyLadies Tokyo 秋合宿 2021 - connpass <https://pyladies-tokyo.connpass.com/event/225583/>`_ への参加報告をします。
+
+PyLades Tokyoの合宿が2年ぶりに開催されました。興奮しすぎて写真を撮るのを忘れたので、写真が見たい方は1日目のsugitaさんの `Pyladies Tokyo 合宿 in 上野&秋葉原にいってきました！ <https://electricsheep.hatenadiary.jp/entry/2021/12/01/093052>`_ をご覧ください！ちゃんと写真を撮って、レポートしてすごい！尊敬！
+
+.. raw:: html
+
+   <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">今から2年ぶりの合宿！！</p>&mdash; kame-chan (@okusama27) <a href="https://twitter.com/okusama27/status/1464396869488889856?ref_src=twsrc%5Etfw">November 27, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+久しぶりのオフライン合宿で、興奮して、始まったら、あっという間に終わってしまいました。
+
+やったことも報告したいのですが、宿題のように抱えていた作業をやってたら、あっという間に2日間が終わってしまいました。
+
+.. raw:: html
+
+   <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">他の人と一緒の部屋でもくもくすると超集中できるという学びを得ました。オンラインだと見られてないので生産性が低くなっちゃうなーと思いました。</p>&mdash; kame-chan (@okusama27) <a href="https://twitter.com/okusama27/status/1464480721670602756?ref_src=twsrc%5Etfw">November 27, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+しかし、オフラインのもくもく会は集中できますね。なかなか難しいですが、たまにはオフラインもくもくしたいな！と思いました。
+オンラインでしかお会いしたことがなかった方にも会えて嬉しかったです！
+
+最後に撮った少ない写真（食べ物しかなかった。。。）をアップして思い出としたいと思います。
+
+1日目のお昼
+
+.. image:: /_static/images/2021/20211202_02.JPG
+   :width: 200
+
+1日目のおやつ
+
+.. image:: /_static/images/2021/20211202_03.JPG
+   :width: 200
+
+
+1日目に飲んだアルコール
+
+.. image:: /_static/images/2021/20211202_05.JPG
+   :width: 200
+
+
+2日目のお昼
+
+.. image:: /_static/images/2021/20211202_04.JPG
+   :width: 200
+
+
+最後に打ち上げで飲んだビール
+
+.. image:: /_static/images/2021/20211202_01.JPG
+   :width: 200
+
+
+来年は平和になって、さらにたくさんの方々にお会いできるといいですね！
