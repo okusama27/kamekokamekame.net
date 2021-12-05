@@ -1,0 +1,43 @@
+:date: 2021-12-04 00:00:00
+:title: PyLadies Kitの紹介
+:category: PyLadies
+:tags: PyLadies
+
+==========================================================
+PyLadies Kitの紹介
+==========================================================
+
+2021-12-04
+
+この記事は `PyLadies Japan Advent Calendar 2021 - Adventar <https://adventar.org/calendars/7013>`_ の4日目です。
+
+PyLadies Tokyoは毎月イベントを開催したりしていますが、どんな団体かご存じない方もいると思います。私が知っているPyLadiesのことをちょっと紹介しようと思います。
+
+PyLadiesとは？
+-----------------------
+
+`About PyLadies <https://pyladies.com/about/>`_ より引用（日本語訳は私）
+
+   PyLadiesとは、プログラミング言語Pythonを愛する世界中の女性開発者のグループです。昼も夜も実装していて、Pythonのプロジェクトをハックする人もいれば、フルタイムでPythonで開発をしている人もいます。でも、そんなことは大したことでありません。私たちは皆、Pythonのコードを書くのが好きです。それでつながっているのです。
+
+PyLadiesは世界中の都市に組織を形成しています。2021-12-04現在で、124のコミュニティーがあります。日本にも3団体（東京、京都、沖縄）あります。Pythonを愛する女性をつなぐための活動を行っています。
+
+以下は、PyLadies TokyoのWebページです。
+https://tokyo.pyladies.com/coc/index.html
+
+PyLadies Kitとは？
+------------------------
+今回は、PyLadies Kitを紹介します。
+
+PyLadies Kitには、PyLadiesハンドブックと、PyLadiesのグループを運営するための役に立つ資料が含まれています。
+GitHubに公開されていて、pipで試せます。詳しくは、以下にあります。
+
+GitHub: https://github.com/pyladies/pyladies-kit
+
+以下のURLでも見れます。
+
+http://kit.pyladies.com/en/latest/
+
+日々メンテナンスされていて、PyLadiesの立ち上げ方法、運営方法のアドバイスや、メンバーば読むべき場所や行動規範なども含まれています。
+
+思い立ったら、自分の地域でPyLadiesを立ち上げて運営するのに何をすればよいか書いてあるのでとてもわかりやすいです。そうはいっても、日本でPyLadies Tokyoを最初に立ち上げたメンバーは大変だったと思います。最初になにかをはじめるのはとても大変で勇気がいることです。そして、継続するのも大変なことです。もう7年も続いていることも素晴らしいですね。

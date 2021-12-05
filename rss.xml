@@ -4,8 +4,36 @@
 <description>Strike while the iron is hot</description>
 <language>ja</language>
 <copyright>2019, kamekokamekame.net</copyright>
-<lastBuildDate>Thu, 02 December 2021 08:00:00 +0900</lastBuildDate>
+<lastBuildDate>Sat, 04 December 2021 08:00:00 +0900</lastBuildDate>
 <item>
+<title>PyLadies Kitの紹介</title>
+<link>https://kamekokamekame.net/2021/2021-12-04-article.html</link>
+<description>
+&lt;p&gt;この記事は &lt;a class=&quot;reference external&quot; href=&quot;https://adventar.org/calendars/7013&quot;&gt;PyLadies Japan Advent Calendar 2021 - Adventar&lt;/a&gt; の4日目です。&lt;/p&gt;&lt;p&gt;PyLadies Tokyoは毎月イベントを開催したりしていますが、どんな団体かご存じない方もいると思います。私が知っているPyLadiesのことをちょっと紹介しようと思います。&lt;/p&gt;&lt;div class=&quot;section&quot; id=&quot;pyladies&quot;&gt;
+&lt;h2&gt;PyLadiesとは？&lt;a class=&quot;headerlink&quot; href=&quot;#pyladies&quot; title=&quot;このヘッドラインへのパーマリンク&quot;&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://pyladies.com/about/&quot;&gt;About PyLadies&lt;/a&gt; より引用（日本語訳は私）&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;div&gt;&lt;p&gt;PyLadiesとは、プログラミング言語Pythonを愛する世界中の女性開発者のグループです。昼も夜も実装していて、Pythonのプロジェクトをハックする人もいれば、フルタイムでPythonで開発をしている人もいます。でも、そんなことは大したことでありません。私たちは皆、Pythonのコードを書くのが好きです。それでつながっているのです。&lt;/p&gt;
+&lt;/div&gt;&lt;/blockquote&gt;
+&lt;p&gt;PyLadiesは世界中の都市に組織を形成しています。2021-12-04現在で、124のコミュニティーがあります。日本にも3団体（東京、京都、沖縄）あります。Pythonを愛する女性をつなぐための活動を行っています。&lt;/p&gt;
+&lt;p&gt;以下は、PyLadies TokyoのWebページです。
+&lt;a class=&quot;reference external&quot; href=&quot;https://tokyo.pyladies.com/coc/index.html&quot;&gt;https://tokyo.pyladies.com/coc/index.html&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;div class=&quot;section&quot; id=&quot;id1&quot;&gt;
+&lt;h2&gt;PyLadies Kitとは？&lt;a class=&quot;headerlink&quot; href=&quot;#id1&quot; title=&quot;このヘッドラインへのパーマリンク&quot;&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;今回は、PyLadies Kitを紹介します。&lt;/p&gt;
+&lt;p&gt;PyLadies Kitには、PyLadiesハンドブックと、PyLadiesのグループを運営するための役に立つ資料が含まれています。
+GitHubに公開されていて、pipで試せます。詳しくは、以下にあります。&lt;/p&gt;
+&lt;p&gt;GitHub: &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/pyladies/pyladies-kit&quot;&gt;https://github.com/pyladies/pyladies-kit&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;以下のURLでも見れます。&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;http://kit.pyladies.com/en/latest/&quot;&gt;http://kit.pyladies.com/en/latest/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;日々メンテナンスされていて、PyLadiesの立ち上げ方法、運営方法のアドバイスや、メンバーば読むべき場所や行動規範なども含まれています。&lt;/p&gt;
+&lt;p&gt;思い立ったら、自分の地域でPyLadiesを立ち上げて運営するのに何をすればよいか書いてあるのでとてもわかりやすいです。そうはいっても、日本でPyLadies Tokyoを最初に立ち上げたメンバーは大変だったと思います。最初になにかをはじめるのはとても大変で勇気がいることです。そして、継続するのも大変なことです。もう7年も続いていることも素晴らしいですね。&lt;/p&gt;
+&lt;/div&gt;
+...
+</description>
+<pubDate>Sat, 04 December 2021 08:00:00 +0900</pubDate>
+<guid>https://kamekokamekame.net/2021/2021-12-04-article.html</guid>
+</item><item>
 <title>PyLadies Tokyo 2021 合宿報告</title>
 <link>https://kamekokamekame.net/2021/2021-12-02-article.html</link>
 <description>
