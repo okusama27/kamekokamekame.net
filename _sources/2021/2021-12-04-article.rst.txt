@@ -9,6 +9,8 @@ PyLadies Kitの紹介
 
 2021-12-04
 
+2021-12-04
+
 この記事は `PyLadies Japan Advent Calendar 2021 - Adventar <https://adventar.org/calendars/7013>`_ の4日目です。
 
 PyLadies Tokyoは毎月イベントを開催したりしていますが、どんな団体かご存じない方もいると思います。私が知っているPyLadiesのことをちょっと紹介しようと思います。

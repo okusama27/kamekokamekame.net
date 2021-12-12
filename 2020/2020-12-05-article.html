@@ -2,9 +2,11 @@
 
 <!doctype html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<html lang="ja">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@okusama27" />
     <meta property="og:site_name" content="鉄は熱いうちに打て">
@@ -14,76 +16,38 @@
     <meta property='og:url' content="https://kamekokamekame.net/2020/2020-12-05-article.html">
     <meta property="og:image" content="https://kamekokamekame.net/_images/20201205.png">
     <title>kabuステーション APIの始め方 &#8212; 鉄は熱いうちに打て</title>
-    <link rel="stylesheet" href="../_static/bizstyle.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bizstyle.css" />
     <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
     
-    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="../_static/language_data.js"></script>
-    <script type="text/javascript" src="../_static/translations.js"></script>
-    <script type="text/javascript" src="../_static/bizstyle.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script src="../_static/bizstyle.js"></script>
     <link rel="search" title="検索" href="../search.html" />
-    <link rel="next" title="2019" href="../2019/index.html" />
-    <link rel="prev" title="2020" href="index.html" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="next" title="投資に関わる税金の種類" href="2020-12-06-article.html" />
+    <link rel="prev" title="FXのデータをテクニカル分析してみる（日付に変換）" href="2020-12-04-article.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <!--[if lt IE 9]>
-    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <script src="_static/css3-mediaqueries.js"></script>
     <![endif]-->
   </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>ナビゲーション</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="../2019/index.html" title="2019"
+          <a href="2020-12-06-article.html" title="投資に関わる税金の種類"
              accesskey="N">次へ</a></li>
         <li class="right" >
-          <a href="index.html" title="2020"
+          <a href="2020-12-04-article.html" title="FXのデータをテクニカル分析してみる（日付に変換）"
              accesskey="P">前へ</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">2020</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">2020</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">kabuステーション APIの始め方</a></li> 
       </ul>
-    </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper"><div id="toc" class="sidebarRow">
-<h3><a href="../index.html">Table Of Contents</a></h3>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="2020-12-02-article.html">FXのデータをテクニカル分析してみる（準備編）</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2020-12-01-article.html">月刊フィントークに約3年参加して学んだこと</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2020-08-29-article.html">PyCon JP 2020 に参加しました</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2019/2019-12-25-article.html">自分に合ったイベントを探そう</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2019/2019-12-21-article.html">WindowsにJupyterとTA-Libをインストールしよう</a></li>
-</ul>
-<ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">2020</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2019/index.html">2019</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2018/index.html">2018</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2017/index.html">2017</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2016/index.html">2016</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2015/index.html">2015</a></li>
-</ul>
-
-</div>
-  <h4>前のトピックへ</h4>
-  <p class="topless"><a href="index.html"
-                        title="前の章へ">2020</a></p>
-  <h4>次のトピックへ</h4>
-  <p class="topless"><a href="../2019/index.html"
-                        title="次の章へ">2019</a></p>
-<div id="searchbox" style="display: none" role="search">
-  <h3 id="searchlabel">クイック検索</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" />
-      <input type="submit" value="検索" />
-    </form>
-    </div>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
-      </div>
+    </div>  
 
     <div class="document">
       <div class="documentwrapper">
@@ -93,7 +57,7 @@
 <h1>鉄は熱いうちに打て<br>
 =============================</h1>
 
-<div class="section" id="kabu-api">
+<section id="kabu-api">
 <h1>kabuステーション APIの始め方<a class="headerlink" href="#kabu-api" title="このヘッドラインへのパーマリンク">¶</a></h1>
 <p>2020-12-05</p>
 <p>この記事は <a class="reference external" href="https://adventar.org/calendars/5084">fintalk Advent Calendar 2020</a> の5日目の投稿です。</p>
@@ -130,7 +94,7 @@ auカブコム証券が提供するkabu STATIONをプログラムで操作でき
 <p>外国株をAPI取引できるサービスを提供している会社は昔からあるらしいです。
 2021年こそはそちらもやってみたいと思っています。</p>
 <p>この記事は <a class="reference external" href="https://adventar.org/calendars/5084">fintalk Advent Calendar 2020</a> の5日目の投稿です。</p>
-</div>
+</section>
 
 
 <br><br>
@@ -149,7 +113,47 @@ auカブコム証券が提供するkabu STATIONをプログラムで操作でき
     <a href="//af.moshimo.com/af/c/click?a_id=767877&p_id=1166&pc_id=1793&pl_id=17974&guid=ON" rel="nofollow"><img src="//image.moshimo.com/af-img/0408/000000017974.png" width="120" height="60" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=767877&p_id=1166&pc_id=1793&pl_id=17974" width="1" height="1" style="border:none;">
 </p>
 
+            <div class="clearer"></div>
           </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div id="toc" class="sidebarRow">
+<h3><a href="../index.html">Table Of Contents</a></h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../2021/2021-12-02-article.html">PyLadies Tokyo 2021 合宿報告</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2021/2021-09-14-article.html">［ITS］関東ITソフトウェア健康保険組合でスポーツジムに通う方法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2020-12-24-article.html">FXを6週間やってみた結果と反省と感想</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2020-12-23-article.html">FXのデータをテクニカル分析してみる（ゴールデンクロス）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2020-12-20-article.html">ふるさと納税制度を使ってみた</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../2021/index.html">2021</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">2020</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2019/index.html">2019</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2018/index.html">2018</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2017/index.html">2017</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2016/index.html">2016</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2015/index.html">2015</a></li>
+</ul>
+
+</div>
+  <h4>前のトピックへ</h4>
+  <p class="topless"><a href="2020-12-04-article.html"
+                        title="前の章へ">FXのデータをテクニカル分析してみる（日付に変換）</a></p>
+  <h4>次のトピックへ</h4>
+  <p class="topless"><a href="2020-12-06-article.html"
+                        title="次の章へ">投資に関わる税金の種類</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">クイック検索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="検索" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -158,18 +162,19 @@ auカブコム証券が提供するkabu STATIONをプログラムで操作でき
       <h3>ナビゲーション</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="../2019/index.html" title="2019"
+          <a href="2020-12-06-article.html" title="投資に関わる税金の種類"
              >次へ</a></li>
         <li class="right" >
-          <a href="index.html" title="2020"
+          <a href="2020-12-04-article.html" title="FXのデータをテクニカル分析してみる（日付に変換）"
              >前へ</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="index.html" >2020</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="index.html" >2020</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">kabuステーション APIの始め方</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2019, kamekokamekame.net.
-      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 2.3.1 で生成しました。
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.3.1.
     </div>
   </body>
 </html>

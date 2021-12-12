@@ -39,6 +39,11 @@ div.document {
     -webkit-box-shadow: 2px 2px 5px #000;
 }
 
+div.documentwrapper {
+    float: left;
+    width: 100%;
+}
+
 div.bodywrapper {
     margin: 0 0 0 240px;
     border-left: 1px solid #ccc;
@@ -49,7 +54,7 @@ div.body {
     padding: 0.5em 20px 20px 20px;
 }
 div.bodywrapper {
-    margin: 0 240px 0 0;
+    margin: 0 calc(210px + 30px) 0 0;
     border-right: 1px solid #ccc;
 }
 
@@ -98,7 +103,6 @@ div.sphinxsidebarwrapper {
 }
 
 div.sphinxsidebar {
-    margin: 0;
     padding: 0.5em 12px 12px 12px;
     width: 210px;
     float: right;

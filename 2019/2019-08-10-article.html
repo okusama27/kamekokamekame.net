@@ -2,9 +2,11 @@
 
 <!doctype html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<html lang="ja">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@okusama27" />
     <meta property="og:site_name" content="鉄は熱いうちに打て">
@@ -13,23 +15,22 @@
     <meta property='og:url' content="https://kamekokamekame.net/2019/2019-08-10-article.html">
     <meta property="og:image" content="https://kamekokamekame.net/_images/pep_image.png">
     <title>Pythonの言語仕様の決め方 &#8212; 鉄は熱いうちに打て</title>
-    <link rel="stylesheet" href="../_static/bizstyle.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bizstyle.css" />
     <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
     
-    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="../_static/language_data.js"></script>
-    <script type="text/javascript" src="../_static/translations.js"></script>
-    <script type="text/javascript" src="../_static/bizstyle.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script src="../_static/bizstyle.js"></script>
     <link rel="search" title="検索" href="../search.html" />
     <link rel="next" title="PEPの説明" href="2019-08-11-article.html" />
     <link rel="prev" title="磐梯山温泉ホテルでのPyLadiesスタッフ合宿に行ってきました" href="2019-06-24-article.html" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <!--[if lt IE 9]>
-    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <script src="_static/css3-mediaqueries.js"></script>
     <![endif]-->
   </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
@@ -42,20 +43,132 @@
           <a href="2019-06-24-article.html" title="磐梯山温泉ホテルでのPyLadiesスタッフ合宿に行ってきました"
              accesskey="P">前へ</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">2019</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">2019</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Pythonの言語仕様の決め方</a></li> 
       </ul>
-    </div>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+<h1>鉄は熱いうちに打て<br>
+=============================</h1>
+
+<section id="python">
+<h1>Pythonの言語仕様の決め方<a class="headerlink" href="#python" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>2019-08-10</p>
+<p><a class="reference external" href="https://pyladies-tokyo.connpass.com/event/136599/">PyLadies Tokyo Meetup #44 夏休み! PEP自由研究発表会</a> でPEPのことを取り扱うので、昔まとめたスライドから引用して復習します。</p>
+<section id="pep">
+<h2>PEP<a class="headerlink" href="#pep" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p><a class="reference external" href="https://github.com/python/peps">PEP</a> はPython 拡張提案(Python Enhancement Proposal)の略語です。</p>
+<p>大きな変更が行われるときは、PEPという文書が書かれて議論されます。</p>
+<p>PEPについて詳しくは、 <a class="reference external" href="https://www.python.org/dev/peps/pep-0001/">PEP 1 -- PEP Purpose and Guidelines</a> に記載があります。</p>
+<p>また、 <a class="reference external" href="https://www.python.org/dev/peps/">PEP 0 -- Index of Python Enhancement Proposals (PEPs)</a> を参照すると、PEPの歴史を一覧で参照できます。</p>
+</section>
+<section id="id2">
+<h2>PEPの種類<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<section id="standards-track">
+<h3>Standards Track(標準化過程)<a class="headerlink" href="#standards-track" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>Pythonの新しい機能や実装について説明するドキュメント</p>
+</section>
+<section id="informational">
+<h3>Informational(情報)<a class="headerlink" href="#informational" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>Pythonの設計上の課題や、Pythonコミュニティに知らせる一般的なガイドラインや情報などを説明するドキュメント</p>
+</section>
+<section id="process">
+<h3>Process(プロセス)<a class="headerlink" href="#process" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>Pythonを取り巻くプロセスについて説明をしたり、プロセスや、プロセス中のイベントについて提案したりするドキュメント</p>
+</section>
+</section>
+<section id="id3">
+<h2>PEPワークフロー<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>PEPの採用、不採用などは、以下の流れで進みます。</p>
+<section id="id4">
+<h3>アイデア<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>Pythonの言語に関するアイデアは特定のメーリングリスト( <a class="reference external" href="mailto:python-ideas&#37;&#52;&#48;python&#46;org">python-ideas<span>&#64;</span>python<span>&#46;</span>org</a> 、<a class="reference external" href="mailto:python-list&#37;&#52;&#48;python&#46;org">python-list<span>&#64;</span>python<span>&#46;</span>org</a>)や <a class="reference external" href="https://www.python.org/community/sigs/">SIG's</a> などで議論されている。</p>
+<p>アイデアを思いついたら、メーリングリストやSIG'sに投げて議論します。</p>
+</section>
+<section id="draft">
+<h3>Draft(草案)<a class="headerlink" href="#draft" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>PEP編集者が承認するとPEP番号が割り当てられます。ステータスは&quot;Draft&quot;(草案)になります。</p>
+</section>
+<section id="accepted-rejected">
+<h3>Accepted（受理）、Rejected（却下）<a class="headerlink" href="#accepted-rejected" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>グイドや、彼が選んだコンサルタントにレビューされて、&quot;Accepted&quot;（受理）、&quot;Rejected&quot;（却下）、差し戻しになります。</p>
+<p>PEPのドラフトの最終決裁者は、BDFL(慈悲深き終身独裁者, グイドさんのこと)です。</p>
+<p>忙しいときは他の人にBDFLの権利を移譲したりします。</p>
+<p>参照: <a class="reference external" href="https://mail.python.org/pipermail/python-dev/2017-December/151054.html">https://mail.python.org/pipermail/python-dev/2017-December/151054.html</a></p>
+<div class="topic">
+<p class="topic-title">例</p>
+<p>Reminder: INADA Naoki was nominated as the BDFL-Delegate.
+「稲田さん, 代わりによろしく」</p>
+</div>
+</section>
+<section id="final">
+<h3>Final（確定）<a class="headerlink" href="#final" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>承認されて、 <a class="reference external" href="https://ja.wikipedia.org/wiki/%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9%E5%AE%9F%E8%A3%85">リファレンス実装（Reference implementation）</a> が完成し、main source code repositoryに取り込まれたら、&quot;Final&quot;（確定）になります。</p>
+</section>
+<section id="id5">
+<h3>PEPのステータスの移行可能な経路<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>流れはこんな感じだそうですが、違う場合もあるそうです。</p>
+<img alt="../_images/pep_image.png" src="../_images/pep_image.png" />
+<p>図は、 <a class="reference external" href="https://www.python.org/dev/peps/pep-0001/">PEP1</a> より参照。</p>
+<p>Deferred（延期）、Withdrawn（取り下げ）、Active（完成させることを意図していない。PEP1など）などに設定されることもあります。</p>
+</section>
+</section>
+<section id="id6">
+<h2>日本人のPEPへの貢献<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>日本人にもPEPを作り確定した方がいらっしゃいます。</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://twitter.com/atsuoishimoto">Atsuo Ishimoto</a> さんの <a class="reference external" href="https://www.python.org/dev/peps/pep-3138/">PEP 3138 -- String representation in Python 3000</a></p></li>
+<li><p><a class="reference external" href="https://twitter.com/methane">INADA Naoki</a> さんの <a class="reference external" href="https://www.python.org/dev/peps/pep-0545/">PEP 545 -- Python Documentation Translations</a></p></li>
+</ul>
+</section>
+<section id="id7">
+<h2>まとめ<a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<ul class="simple">
+<li><p>PEPは、Python 拡張提案をまとめたもの</p></li>
+<li><p>アイデアが湧いたらPEPを作る</p></li>
+<li><p>採用、不採用の手順が決まっている</p></li>
+</ul>
+</section>
+</section>
+
+
+<br><br>
+<style>
+.box5 {
+    padding: 0.5em 1em;
+    border: double 5px #4ec4d3;
+}
+.box5 p {
+    margin: 0;
+    padding: 0;
+    font-size: large;
+}
+</style>
+<p>
+    <a href="//af.moshimo.com/af/c/click?a_id=767877&p_id=1166&pc_id=1793&pl_id=17974&guid=ON" rel="nofollow"><img src="//image.moshimo.com/af-img/0408/000000017974.png" width="120" height="60" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=767877&p_id=1166&pc_id=1793&pl_id=17974" width="1" height="1" style="border:none;">
+</p>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper"><div id="toc" class="sidebarRow">
 <h3><a href="../index.html">Table Of Contents</a></h3>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="2019-12-25-article.html">自分に合ったイベントを探そう</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2019-12-21-article.html">WindowsにJupyterとTA-Libをインストールしよう</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2019-12-16-article.html">コードを動かしながら確認しよう</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2019-12-02-article.html">Windowsで分析したい</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2019-12-01-article.html">PyLadies Tokyo 2019 合宿報告</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2021/2021-12-02-article.html">PyLadies Tokyo 2021 合宿報告</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2021/2021-09-14-article.html">［ITS］関東ITソフトウェア健康保険組合でスポーツジムに通う方法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2020/2020-12-24-article.html">FXを6週間やってみた結果と反省と感想</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2020/2020-12-23-article.html">FXのデータをテクニカル分析してみる（ゴールデンクロス）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2020/2020-12-20-article.html">ふるさと納税制度を使ってみた</a></li>
 </ul>
 <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../2021/index.html">2021</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2020/index.html">2020</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">2019</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2018/index.html">2018</a></li>
@@ -75,121 +188,12 @@
   <h3 id="searchlabel">クイック検索</h3>
     <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
       <input type="submit" value="検索" />
     </form>
     </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
-      </div>
-
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body" role="main">
-            
-<h1>鉄は熱いうちに打て<br>
-=============================</h1>
-
-<div class="section" id="python">
-<h1>Pythonの言語仕様の決め方<a class="headerlink" href="#python" title="このヘッドラインへのパーマリンク">¶</a></h1>
-<p>2019-08-10</p>
-<p><a class="reference external" href="https://pyladies-tokyo.connpass.com/event/136599/">PyLadies Tokyo Meetup #44 夏休み! PEP自由研究発表会</a> でPEPのことを取り扱うので、昔まとめたスライドから引用して復習します。</p>
-<div class="section" id="pep">
-<h2>PEP<a class="headerlink" href="#pep" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p><a class="reference external" href="https://github.com/python/peps">PEP</a> はPython 拡張提案(Python Enhancement Proposal)の略語です。</p>
-<p>大きな変更が行われるときは、PEPという文書が書かれて議論されます。</p>
-<p>PEPについて詳しくは、 <a class="reference external" href="https://www.python.org/dev/peps/pep-0001/">PEP 1 -- PEP Purpose and Guidelines</a> に記載があります。</p>
-<p>また、 <a class="reference external" href="https://www.python.org/dev/peps/">PEP 0 -- Index of Python Enhancement Proposals (PEPs)</a> を参照すると、PEPの歴史を一覧で参照できます。</p>
-</div>
-<div class="section" id="id2">
-<h2>PEPの種類<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<div class="section" id="standards-track">
-<h3>Standards Track(標準化過程)<a class="headerlink" href="#standards-track" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>Pythonの新しい機能や実装について説明するドキュメント</p>
-</div>
-<div class="section" id="informational">
-<h3>Informational(情報)<a class="headerlink" href="#informational" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>Pythonの設計上の課題や、Pythonコミュニティに知らせる一般的なガイドラインや情報などを説明するドキュメント</p>
-</div>
-<div class="section" id="process">
-<h3>Process(プロセス)<a class="headerlink" href="#process" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>Pythonを取り巻くプロセスについて説明をしたり、プロセスや、プロセス中のイベントについて提案したりするドキュメント</p>
-</div>
-</div>
-<div class="section" id="id3">
-<h2>PEPワークフロー<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>PEPの採用、不採用などは、以下の流れで進みます。</p>
-<div class="section" id="id4">
-<h3>アイデア<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>Pythonの言語に関するアイデアは特定のメーリングリスト( <a class="reference external" href="mailto:python-ideas&#37;&#52;&#48;python&#46;org">python-ideas<span>&#64;</span>python<span>&#46;</span>org</a> 、<a class="reference external" href="mailto:python-list&#37;&#52;&#48;python&#46;org">python-list<span>&#64;</span>python<span>&#46;</span>org</a>)や <a class="reference external" href="https://www.python.org/community/sigs/">SIG's</a> などで議論されている。</p>
-<p>アイデアを思いついたら、メーリングリストやSIG'sに投げて議論します。</p>
-</div>
-<div class="section" id="draft">
-<h3>Draft(草案)<a class="headerlink" href="#draft" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>PEP編集者が承認するとPEP番号が割り当てられます。ステータスは&quot;Draft&quot;(草案)になります。</p>
-</div>
-<div class="section" id="accepted-rejected">
-<h3>Accepted（受理）、Rejected（却下）<a class="headerlink" href="#accepted-rejected" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>グイドや、彼が選んだコンサルタントにレビューされて、&quot;Accepted&quot;（受理）、&quot;Rejected&quot;（却下）、差し戻しになります。</p>
-<p>PEPのドラフトの最終決裁者は、BDFL(慈悲深き終身独裁者, グイドさんのこと)です。</p>
-<p>忙しいときは他の人にBDFLの権利を移譲したりします。</p>
-<p>参照: <a class="reference external" href="https://mail.python.org/pipermail/python-dev/2017-December/151054.html">https://mail.python.org/pipermail/python-dev/2017-December/151054.html</a></p>
-<div class="topic">
-<p class="topic-title first">例</p>
-<p>Reminder: INADA Naoki was nominated as the BDFL-Delegate.
-「稲田さん, 代わりによろしく」</p>
-</div>
-</div>
-<div class="section" id="final">
-<h3>Final（確定）<a class="headerlink" href="#final" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>承認されて、 <a class="reference external" href="https://ja.wikipedia.org/wiki/%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9%E5%AE%9F%E8%A3%85">リファレンス実装（Reference implementation）</a> が完成し、main source code repositoryに取り込まれたら、&quot;Final&quot;（確定）になります。</p>
-</div>
-<div class="section" id="id5">
-<h3>PEPのステータスの移行可能な経路<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>流れはこんな感じだそうですが、違う場合もあるそうです。</p>
-<img alt="../_images/pep_image.png" src="../_images/pep_image.png" />
-<p>図は、 <a class="reference external" href="https://www.python.org/dev/peps/pep-0001/">PEP1</a> より参照。</p>
-<p>Deferred（延期）、Withdrawn（取り下げ）、Active（完成させることを意図していない。PEP1など）などに設定されることもあります。</p>
-</div>
-</div>
-<div class="section" id="id6">
-<h2>日本人のPEPへの貢献<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>日本人にもPEPを作り確定した方がいらっしゃいます。</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://twitter.com/atsuoishimoto">Atsuo Ishimoto</a> さんの <a class="reference external" href="https://www.python.org/dev/peps/pep-3138/">PEP 3138 -- String representation in Python 3000</a></p></li>
-<li><p><a class="reference external" href="https://twitter.com/methane">INADA Naoki</a> さんの <a class="reference external" href="https://www.python.org/dev/peps/pep-0545/">PEP 545 -- Python Documentation Translations</a></p></li>
-</ul>
-</div>
-<div class="section" id="id7">
-<h2>まとめ<a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<ul class="simple">
-<li><p>PEPは、Python 拡張提案をまとめたもの</p></li>
-<li><p>アイデアが湧いたらPEPを作る</p></li>
-<li><p>採用、不採用の手順が決まっている</p></li>
-</ul>
-</div>
-</div>
-
-
-<br><br>
-<style>
-.box5 {
-    padding: 0.5em 1em;
-    border: double 5px #4ec4d3;
-}
-.box5 p {
-    margin: 0;
-    padding: 0;
-    font-size: large;
-}
-</style>
-<p>
-    <a href="//af.moshimo.com/af/c/click?a_id=767877&p_id=1166&pc_id=1793&pl_id=17974&guid=ON" rel="nofollow"><img src="//image.moshimo.com/af-img/0408/000000017974.png" width="120" height="60" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=767877&p_id=1166&pc_id=1793&pl_id=17974" width="1" height="1" style="border:none;">
-</p>
-
-          </div>
+<script>$('#searchbox').show(0);</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -204,12 +208,13 @@
           <a href="2019-06-24-article.html" title="磐梯山温泉ホテルでのPyLadiesスタッフ合宿に行ってきました"
              >前へ</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="index.html" >2019</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="index.html" >2019</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Pythonの言語仕様の決め方</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2019, kamekokamekame.net.
-      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 2.3.1 で生成しました。
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.3.1.
     </div>
   </body>
 </html>

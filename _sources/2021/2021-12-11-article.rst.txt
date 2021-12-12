@@ -1,0 +1,30 @@
+:date: 2021-12-11 00:00:00
+:title: 他の地域のPyLadiesを探そう
+:category: PyLadies
+:tags: PyLadies
+
+==========================================================
+他の地域のPyLadiesを探そう
+==========================================================
+
+2021-12-11
+
+この記事は `PyLadies Japan Advent Calendar 2021 - Adventar <https://adventar.org/calendars/7013>`_ の11日目です。
+
+`PyLadies Kitの紹介 <https://kamekokamekame.net/2021/2021-12-04-article.html>`_ で紹介しましたように世界中にPyLadiesが120以上あります。
+
+https://pyladies.com/locations/ に現在PyLadies本部が把握している世界中のPyLaidesの一覧があります。眺めているだけでも楽しいですね。
+
+.. image:: /_static/images/2021/20211211_1.JPG
+   :width: 600
+
+あとは、Twitterのアカウントを探す方法もあります。一覧に乗っていても休眠状態のコミュニティーもありますので、Twitterのつぶやきなどが盛んなコミュニティーをフォローするのも楽しいです。
+
+**pyladies** で検索して、「アカウント」タブを見るとPylaidesとついているアカウントがわかります。
+
+.. image:: /_static/images/2021/20211211_2.JPG
+   :width: 600
+
+あとは、PyLadiesのSlackもあります。https://pyladies.com/about/ のページから参加できます。世界中のPython関係の求人情報とか見られて楽しいですよ。
+
+今日は、世界のPyLadiesの探し方を紹介しました。
