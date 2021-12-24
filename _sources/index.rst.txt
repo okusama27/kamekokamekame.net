@@ -1,16 +1,16 @@
 .. title:: トップページ
 
-.. include:: 2021/2021-12-11-article.rst
+.. include:: 2021/2021-12-24-article.rst
 
 .. toctree::
    :maxdepth: 1
    :hidden:
 
+   2021/2021-12-11-article.rst
    2021/2021-12-04-article.rst
    2021/2021-12-02-article.rst
    2021/2021-09-14-article.rst
    2020/2020-12-24-article.rst
-   2020/2020-12-23-article.rst
    
 
 .. toctree::

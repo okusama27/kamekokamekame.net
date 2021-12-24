@@ -4,8 +4,21 @@
 <description>Strike while the iron is hot</description>
 <language>ja</language>
 <copyright>2019, kamekokamekame.net</copyright>
-<lastBuildDate>Sat, 11 December 2021 08:00:00 +0900</lastBuildDate>
+<lastBuildDate>Fri, 24 December 2021 08:00:00 +0900</lastBuildDate>
 <item>
+<title>Pythonで数理最適化の実装をしてみた</title>
+<link>https://kamekokamekame.net/2021/2021-12-24-article.html</link>
+<description>
+&lt;p&gt;この記事は &lt;a class=&quot;reference external&quot; href=&quot;https://adventar.org/calendars/7013&quot;&gt;PyLadies Japan Advent Calendar 2021 - Adventar&lt;/a&gt; の24日目です。&lt;/p&gt;&lt;p&gt;Merry Christmas!&lt;/p&gt;&lt;p&gt;今年もいよいよあと1週間となりました。今年の目標など達成できたでしょうか？
+私は年始にいくつか立てた目標がことごとく微妙に達成できませんでした。
+来年は達成できるように今年よりもうちょっと頑張ろうと思います。&lt;/p&gt;&lt;p&gt;さて、今日はPythonの話ということで、数理最適化を実装した話を書きます。
+まだまだ初心者で、ちょっとずつ勉強しています。クイズみたいな問題も多いので、結構楽しいです。
+私の理解では、「何かを行うときに、いろんな方法がある中で、最も良い方法（最適な解）を選ぶ手法」と思っています。&lt;/p&gt;
+...
+</description>
+<pubDate>Fri, 24 December 2021 08:00:00 +0900</pubDate>
+<guid>https://kamekokamekame.net/2021/2021-12-24-article.html</guid>
+</item><item>
 <title>他の地域のPyLadiesを探そう</title>
 <link>https://kamekokamekame.net/2021/2021-12-11-article.html</link>
 <description>
@@ -18,7 +31,7 @@
 <title>PyLadies Kitの紹介</title>
 <link>https://kamekokamekame.net/2021/2021-12-04-article.html</link>
 <description>
-&lt;p&gt;2021-12-04&lt;/p&gt;&lt;p&gt;この記事は &lt;a class=&quot;reference external&quot; href=&quot;https://adventar.org/calendars/7013&quot;&gt;PyLadies Japan Advent Calendar 2021 - Adventar&lt;/a&gt; の4日目です。&lt;/p&gt;&lt;p&gt;PyLadies Tokyoは毎月イベントを開催したりしていますが、どんな団体かご存じない方もいると思います。私が知っているPyLadiesのことをちょっと紹介しようと思います。&lt;/p&gt;&lt;section id=&quot;pyladies&quot;&gt;
+&lt;p&gt;この記事は &lt;a class=&quot;reference external&quot; href=&quot;https://adventar.org/calendars/7013&quot;&gt;PyLadies Japan Advent Calendar 2021 - Adventar&lt;/a&gt; の4日目です。&lt;/p&gt;&lt;p&gt;PyLadies Tokyoは毎月イベントを開催したりしていますが、どんな団体かご存じない方もいると思います。私が知っているPyLadiesのことをちょっと紹介しようと思います。&lt;/p&gt;&lt;section id=&quot;pyladies&quot;&gt;
 &lt;h2&gt;PyLadiesとは？&lt;a class=&quot;headerlink&quot; href=&quot;#pyladies&quot; title=&quot;このヘッドラインへのパーマリンク&quot;&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://pyladies.com/about/&quot;&gt;About PyLadies&lt;/a&gt; より引用（日本語訳は私）&lt;/p&gt;
 &lt;blockquote&gt;
@@ -27,6 +40,16 @@
 &lt;p&gt;PyLadiesは世界中の都市に組織を形成しています。2021-12-04現在で、124のコミュニティーがあります。日本にも3団体（東京、京都、沖縄）あります。Pythonを愛する女性をつなぐための活動を行っています。&lt;/p&gt;
 &lt;p&gt;以下は、PyLadies TokyoのWebページです。
 &lt;a class=&quot;reference external&quot; href=&quot;https://tokyo.pyladies.com/coc/index.html&quot;&gt;https://tokyo.pyladies.com/coc/index.html&lt;/a&gt;&lt;/p&gt;
+&lt;/section&gt;&lt;section id=&quot;id1&quot;&gt;
+&lt;h2&gt;PyLadies Kitとは？&lt;a class=&quot;headerlink&quot; href=&quot;#id1&quot; title=&quot;このヘッドラインへのパーマリンク&quot;&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;今回は、PyLadies Kitを紹介します。&lt;/p&gt;
+&lt;p&gt;PyLadies Kitには、PyLadiesハンドブックと、PyLadiesのグループを運営するための役に立つ資料が含まれています。
+GitHubに公開されていて、pipで試せます。詳しくは、以下にあります。&lt;/p&gt;
+&lt;p&gt;GitHub: &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/pyladies/pyladies-kit&quot;&gt;https://github.com/pyladies/pyladies-kit&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;以下のURLでも見れます。&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;http://kit.pyladies.com/en/latest/&quot;&gt;http://kit.pyladies.com/en/latest/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;日々メンテナンスされていて、PyLadiesの立ち上げ方法、運営方法のアドバイスや、メンバーば読むべき場所や行動規範なども含まれています。&lt;/p&gt;
+&lt;p&gt;思い立ったら、自分の地域でPyLadiesを立ち上げて運営するのに何をすればよいか書いてあるのでとてもわかりやすいです。そうはいっても、日本でPyLadies Tokyoを最初に立ち上げたメンバーは大変だったと思います。最初になにかをはじめるのはとても大変で勇気がいることです。そして、継続するのも大変なことです。もう7年も続いていることも素晴らしいですね。&lt;/p&gt;
 &lt;/section&gt;
 ...
 </description>
