@@ -4,84 +4,30 @@
 <description>Strike while the iron is hot</description>
 <language>ja</language>
 <copyright>2019, kamekokamekame.net</copyright>
-<lastBuildDate>Fri, 24 December 2021 08:00:00 +0900</lastBuildDate>
+<lastBuildDate>Sun, 01 December 2024 08:00:00 +0900</lastBuildDate>
 <item>
-<title>Pythonで数理最適化の実装をしてみた</title>
-<link>https://kamekokamekame.net/2021/2021-12-24-article.html</link>
+<title>お久しぶりです</title>
+<link>https://kamekokamekame.net/2024/2024-12-01-article.html</link>
 <description>
-&lt;p&gt;この記事は &lt;a class=&quot;reference external&quot; href=&quot;https://adventar.org/calendars/7013&quot;&gt;PyLadies Japan Advent Calendar 2021 - Adventar&lt;/a&gt; の24日目です。&lt;/p&gt;&lt;p&gt;Merry Christmas!&lt;/p&gt;&lt;p&gt;今年もいよいよあと1週間となりました。今年の目標など達成できたでしょうか？
-私は年始にいくつか立てた目標がことごとく微妙に達成できませんでした。
-来年は達成できるように今年よりもうちょっと頑張ろうと思います。&lt;/p&gt;&lt;p&gt;さて、今日はPythonの話ということで、数理最適化を実装した話を書きます。
-まだまだ初心者で、ちょっとずつ勉強しています。クイズみたいな問題も多いので、結構楽しいです。
-私の理解では、「何かを行うときに、いろんな方法がある中で、最も良い方法（最適な解）を選ぶ手法」と思っています。&lt;/p&gt;
-...
-</description>
-<pubDate>Fri, 24 December 2021 08:00:00 +0900</pubDate>
-<guid>https://kamekokamekame.net/2021/2021-12-24-article.html</guid>
-</item><item>
-<title>他の地域のPyLadiesを探そう</title>
-<link>https://kamekokamekame.net/2021/2021-12-11-article.html</link>
-<description>
-&lt;p&gt;この記事は &lt;a class=&quot;reference external&quot; href=&quot;https://adventar.org/calendars/7013&quot;&gt;PyLadies Japan Advent Calendar 2021 - Adventar&lt;/a&gt; の11日目です。&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://kamekokamekame.net/2021/2021-12-04-article.html&quot;&gt;PyLadies Kitの紹介&lt;/a&gt; で紹介しましたように世界中にPyLadiesが120以上あります。&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://pyladies.com/locations/&quot;&gt;https://pyladies.com/locations/&lt;/a&gt; に現在PyLadies本部が把握している世界中のPyLaidesの一覧があります。眺めているだけでも楽しいですね。&lt;/p&gt;&lt;a class=&quot;reference internal image-reference&quot; href=&quot;../_images/20211211_1.JPG&quot;&gt;&lt;img alt=&quot;../_images/20211211_1.JPG&quot; src=&quot;../_images/20211211_1.JPG&quot; style=&quot;width: 600px;&quot;/&gt;&lt;/a&gt;
-...
-</description>
-<pubDate>Sat, 11 December 2021 08:00:00 +0900</pubDate>
-<guid>https://kamekokamekame.net/2021/2021-12-11-article.html</guid>
-</item><item>
-<title>PyLadies Kitの紹介</title>
-<link>https://kamekokamekame.net/2021/2021-12-04-article.html</link>
-<description>
-&lt;p&gt;この記事は &lt;a class=&quot;reference external&quot; href=&quot;https://adventar.org/calendars/7013&quot;&gt;PyLadies Japan Advent Calendar 2021 - Adventar&lt;/a&gt; の4日目です。&lt;/p&gt;&lt;p&gt;PyLadies Tokyoは毎月イベントを開催したりしていますが、どんな団体かご存じない方もいると思います。私が知っているPyLadiesのことをちょっと紹介しようと思います。&lt;/p&gt;&lt;section id=&quot;pyladies&quot;&gt;
-&lt;h2&gt;PyLadiesとは？&lt;a class=&quot;headerlink&quot; href=&quot;#pyladies&quot; title=&quot;このヘッドラインへのパーマリンク&quot;&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://pyladies.com/about/&quot;&gt;About PyLadies&lt;/a&gt; より引用（日本語訳は私）&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;div&gt;&lt;p&gt;PyLadiesとは、プログラミング言語Pythonを愛する世界中の女性開発者のグループです。昼も夜も実装していて、Pythonのプロジェクトをハックする人もいれば、フルタイムでPythonで開発をしている人もいます。でも、そんなことは大したことでありません。私たちは皆、Pythonのコードを書くのが好きです。それでつながっているのです。&lt;/p&gt;
-&lt;/div&gt;&lt;/blockquote&gt;
-&lt;p&gt;PyLadiesは世界中の都市に組織を形成しています。2021-12-04現在で、124のコミュニティーがあります。日本にも3団体（東京、京都、沖縄）あります。Pythonを愛する女性をつなぐための活動を行っています。&lt;/p&gt;
-&lt;p&gt;以下は、PyLadies TokyoのWebページです。
-&lt;a class=&quot;reference external&quot; href=&quot;https://tokyo.pyladies.com/coc/index.html&quot;&gt;https://tokyo.pyladies.com/coc/index.html&lt;/a&gt;&lt;/p&gt;
-&lt;/section&gt;&lt;section id=&quot;id1&quot;&gt;
-&lt;h2&gt;PyLadies Kitとは？&lt;a class=&quot;headerlink&quot; href=&quot;#id1&quot; title=&quot;このヘッドラインへのパーマリンク&quot;&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;今回は、PyLadies Kitを紹介します。&lt;/p&gt;
-&lt;p&gt;PyLadies Kitには、PyLadiesハンドブックと、PyLadiesのグループを運営するための役に立つ資料が含まれています。
-GitHubに公開されていて、pipで試せます。詳しくは、以下にあります。&lt;/p&gt;
-&lt;p&gt;GitHub: &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/pyladies/pyladies-kit&quot;&gt;https://github.com/pyladies/pyladies-kit&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;以下のURLでも見れます。&lt;/p&gt;
-&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;http://kit.pyladies.com/en/latest/&quot;&gt;http://kit.pyladies.com/en/latest/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;日々メンテナンスされていて、PyLadiesの立ち上げ方法、運営方法のアドバイスや、メンバーば読むべき場所や行動規範なども含まれています。&lt;/p&gt;
-&lt;p&gt;思い立ったら、自分の地域でPyLadiesを立ち上げて運営するのに何をすればよいか書いてあるのでとてもわかりやすいです。そうはいっても、日本でPyLadies Tokyoを最初に立ち上げたメンバーは大変だったと思います。最初になにかをはじめるのはとても大変で勇気がいることです。そして、継続するのも大変なことです。もう7年も続いていることも素晴らしいですね。&lt;/p&gt;
-&lt;/section&gt;
-...
-</description>
-<pubDate>Sat, 04 December 2021 08:00:00 +0900</pubDate>
-<guid>https://kamekokamekame.net/2021/2021-12-04-article.html</guid>
-</item><item>
-<title>PyLadies Tokyo 2021 合宿報告</title>
-<link>https://kamekokamekame.net/2021/2021-12-02-article.html</link>
-<description>
-&lt;p&gt;この記事は &lt;a class=&quot;reference external&quot; href=&quot;https://adventar.org/calendars/7013&quot;&gt;PyLadies Japan Advent Calendar 2021 - Adventar&lt;/a&gt; の2日目です。&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://pyladies-tokyo.connpass.com/event/225583/&quot;&gt;PyLadies Tokyo 秋合宿 2021 - connpass&lt;/a&gt; への参加報告をします。&lt;/p&gt;&lt;p&gt;PyLades Tokyoの合宿が2年ぶりに開催されました。興奮しすぎて写真を撮るのを忘れたので、写真が見たい方は1日目のsugitaさんの &lt;a class=&quot;reference external&quot; href=&quot;https://electricsheep.hatenadiary.jp/entry/2021/12/01/093052&quot;&gt;Pyladies Tokyo 合宿 in 上野&amp;amp;秋葉原にいってきました！&lt;/a&gt; をご覧ください！ちゃんと写真を撮って、レポートしてすごい！尊敬！&lt;/p&gt;&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p dir=&quot;ltr&quot; lang=&quot;ja&quot;&gt;今から2年ぶりの合宿！！&lt;/p&gt;— kame-chan (@okusama27) &lt;a href=&quot;https://twitter.com/okusama27/status/1464396869488889856?ref_src=twsrc%5Etfw&quot;&gt;November 27, 2021&lt;/a&gt;&lt;/blockquote&gt;
-...
-</description>
-<pubDate>Thu, 02 December 2021 08:00:00 +0900</pubDate>
-<guid>https://kamekokamekame.net/2021/2021-12-02-article.html</guid>
-</item><item>
-<title>［ITS］関東ITソフトウェア健康保険組合でスポーツジムに通う方法</title>
-<link>https://kamekokamekame.net/2021/2021-09-14-article.html</link>
-<description>
-&lt;p&gt;食欲の秋、スポーツの秋ですね。今回は関東ITソフトウェア健康保険組合に入会している方がお得に通えるジム情報を紹介します。&lt;/p&gt;&lt;p&gt;関東にお住いのITエンジニアの方で自社の保険組合を持っていない会社の方は、結構 &lt;a class=&quot;reference external&quot; href=&quot;https://www.its-kenpo.or.jp/&quot;&gt;［ITS］関東ITソフトウェア健康保険組合&lt;/a&gt; にお世話になっているのではないでしょうか。
-今回は、このITSの保険証を持っている方向けにジムに通う方法を紹介します。&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://www.its-kenpo.or.jp/shisetsu/sports_club/index.html&quot;&gt;スポーツクラブ | ［ITS］関東ITソフトウェア健康保険組合&lt;/a&gt; のページに行くとやり方がわかりますが、資料読みたくない！という方に向けて、今回は紹介します。&lt;/p&gt;&lt;section id=&quot;id3&quot;&gt;
-&lt;h2&gt;通えるスポーツクラブ&lt;a class=&quot;headerlink&quot; href=&quot;#id3&quot; title=&quot;このヘッドラインへのパーマリンク&quot;&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;主に、 &lt;strong&gt;コナミスポーツクラブ&lt;/strong&gt; 系列と &lt;strong&gt;セントラルスポーツ&lt;/strong&gt; 系列のスポーツクラブに通えます。&lt;/p&gt;
+&lt;p&gt;久しぶりにブログを書いています。ひとつ前が2021年の12月なので、約3年ぶりです。
+その間に何をしていたかというと、いろいろやりすぎて疲れていました。&lt;/p&gt;&lt;p&gt;今回は、過去3年間にあったことをつらつらと書いてみたいと思います。&lt;/p&gt;&lt;section id=&quot;id2&quot;&gt;
+&lt;h2&gt;2022年&lt;a class=&quot;headerlink&quot; href=&quot;#id2&quot; title=&quot;Link to this heading&quot;&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;ul class=&quot;simple&quot;&gt;
-&lt;li&gt;&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;https://img.konami.com/sportsclub/BtoB/corp_service/pdf/facility_list.pdf&quot;&gt;コナミスポーツの系列一覧&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a class=&quot;reference external&quot; href=&quot;http://business.central.co.jp/corporate/system/club/&quot;&gt;セントラルスポーツの系列一覧&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;PyCon JP 2022 スタッフ&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;娘、中学受験&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;この中には &lt;strong&gt;ゴールドジム&lt;/strong&gt; も含まれています。場所によっては、 スポーツクラブＮＡＳ、ルネサンスなどの系列にも通えます。&lt;/p&gt;
+&lt;/section&gt;&lt;section id=&quot;id3&quot;&gt;
+&lt;h2&gt;2023年&lt;a class=&quot;headerlink&quot; href=&quot;#id3&quot; title=&quot;Link to this heading&quot;&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;&lt;p&gt;PyCon APAC 2023 スタッフ（リーダー）&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;15年ぶりくらいの海外旅行（PyCon 台湾）&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;引っ越し1&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/section&gt;
 ...
 </description>
-<pubDate>Tue, 14 September 2021 08:00:00 +0900</pubDate>
-<guid>https://kamekokamekame.net/2021/2021-09-14-article.html</guid>
+<pubDate>Sun, 01 December 2024 08:00:00 +0900</pubDate>
+<guid>https://kamekokamekame.net/2024/2024-12-01-article.html</guid>
 </item>
 </channel>
 </rss>

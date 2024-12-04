@@ -1,11 +1,10 @@
 
+<!DOCTYPE html>
 
-<!doctype html>
-
-<html lang="ja">
+<html lang="ja" data-content_root="../">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@okusama27" />
@@ -16,15 +15,14 @@
     <meta property='og:url' content="https://kamekokamekame.net/2017/2017-12-02-article.html">
     
     <title>Effective Pythonで学ぶ &#8212; 鉄は熱いうちに打て</title>
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/bizstyle.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=649a27d8" />
+    <link rel="stylesheet" type="text/css" href="../_static/bizstyle.css?v=6b41fdce" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=fc297846" />
     
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/translations.js"></script>
+    <script src="../_static/documentation_options.js?v=6bbe880f"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/translations.js?v=4755f45a"></script>
     <script src="../_static/bizstyle.js"></script>
     <link rel="search" title="検索" href="../search.html" />
     <link rel="next" title="Effective Pythonで学ぶ（項目７〜）" href="2017-12-03-article.html" />
@@ -34,7 +32,7 @@
     <script src="_static/css3-mediaqueries.js"></script>
     <![endif]-->
   </head><body>
-    <div class="related" role="navigation" aria-label="related navigation">
+    <div class="related" role="navigation" aria-label="Related">
       <h3>ナビゲーション</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -58,46 +56,46 @@
 =============================</h1>
 
 <section id="effective-python">
-<h1>Effective Pythonで学ぶ<a class="headerlink" href="#effective-python" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h1>Effective Pythonで学ぶ<a class="headerlink" href="#effective-python" title="Link to this heading">¶</a></h1>
 <p>2017-12-02</p>
 <p>Pythonの知識で足りないところを補完したいな〜と、たまにペラペラめくっていた <a class="reference external" href="https://www.oreilly.co.jp/books/9784873117560/">Effective Python</a> を真面目に読むことにしました。
 その感想と新規発見したことを数日に分けて書こうと思います。たぶん、私のメモとなるでしょう。ちゃんと最後まで頑張りたいな。</p>
 <section id="id2">
-<h2>はじめに<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>はじめに<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
 <p><a class="reference external" href="https://www.oreilly.co.jp/books/9784873117560/">Effective Python</a> は「Pythonプログラムを改良する59項目」とサブタイトルが付いていますが、 <strong>こう書いたほうがいいよね</strong> が詰まっている本です。</p>
 <p>これを会社に入社したときにきちんと読み込んでいたら、私のコードをレビューした人の手間が大分減ったのに。と後悔しました。
 過去を振り返ってもピチピチギャルには戻れないので、これから未来の為にPythonらしさ、おすすめの書き方を学んでいきます。</p>
 </section>
 <section id="id4">
-<h2>目次<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>目次<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
 <p>目次は公開されているので、 <a class="reference external" href="https://www.oreilly.co.jp/books/9784873117560/">Effective Python</a> をみてください。</p>
 </section>
 <section id="id6">
-<h2>対象読者<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>対象読者<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h2>
 <p>本の対象としている読者は <strong>Pythonの文法は覚えたけど、どう書いていいかわからないときが結構あるなと思っている人</strong> くらいでかなっと思います。
 まず、Pythonの文法を学びたい場合は、 <a class="reference external" href="https://www.oreilly.co.jp/books/9784873116884/">Python文法詳解</a> がわかりやすくておすすめです。</p>
 </section>
 <section id="python-pythonic-thinking">
-<h2>1章　 Python流思考（Pythonic Thinking）<a class="headerlink" href="#python-pythonic-thinking" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>1章　 Python流思考（Pythonic Thinking）<a class="headerlink" href="#python-pythonic-thinking" title="Link to this heading">¶</a></h2>
 <p>早速、はじめます。</p>
 <section id="id7">
-<h3>項目 1：使っている Pythonのバージョンを知っておく<a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>項目 1：使っている Pythonのバージョンを知っておく<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h3>
 <p>Pythonのバージョンは知っておいたほうがいいですね。</p>
 </section>
 <section id="pep-8">
-<h3>項目 2：PEP 8スタイルガイドに従う<a class="headerlink" href="#pep-8" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>項目 2：PEP 8スタイルガイドに従う<a class="headerlink" href="#pep-8" title="Link to this heading">¶</a></h3>
 <p>PEP8に従ったほうがいいですね。（おい）</p>
 <p>私は開発環境にPyCharmを利用しているので、勝手にPEP8に準拠していないと黄色い波線が出て警告されます。
 もうカンマ打ったら、手が勝手に後ろに半角スペース打ったりしますね。
 ちゃんと守っている方が読みやすいです。</p>
 <p>このPEP8を忘れていました。</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>シーケンス <span class="o">(</span>文字列, リスト, タプル<span class="o">)</span> については、 空のシーケンスが False であることを利用しましょう。:
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>シーケンス<span class="w"> </span><span class="o">(</span>文字列,<span class="w"> </span>リスト,<span class="w"> </span>タプル<span class="o">)</span><span class="w"> </span>については、<span class="w"> </span>空のシーケンスが<span class="w"> </span>False<span class="w"> </span>であることを利用しましょう。:
 
-良い: <span class="k">if</span> not seq:
-     <span class="k">if</span> seq:
+良い:<span class="w"> </span><span class="k">if</span><span class="w"> </span>not<span class="w"> </span>seq:
+<span class="w">     </span><span class="k">if</span><span class="w"> </span>seq:
 
-悪い: <span class="k">if</span> len<span class="o">(</span>seq<span class="o">)</span>:
-      <span class="k">if</span> not len<span class="o">(</span>seq<span class="o">)</span>:
+悪い:<span class="w"> </span><span class="k">if</span><span class="w"> </span>len<span class="o">(</span>seq<span class="o">)</span>:
+<span class="w">      </span><span class="k">if</span><span class="w"> </span>not<span class="w"> </span>len<span class="o">(</span>seq<span class="o">)</span>:
 </pre></div>
 </div>
 <p>結構、 <cite>len()</cite> で調べていました（汗）
@@ -121,18 +119,18 @@
 しかし、時々忘れるので年に1回位は振り返るのは大事ですね。 <a class="reference external" href="http://pep8-ja.readthedocs.io/ja/latest/">pep8-ja 1.0 ドキュメント</a></p>
 </section>
 <section id="bytes-str-unicode">
-<h3>項目 3：bytes, str, unicodeの違いを知っておく<a class="headerlink" href="#bytes-str-unicode" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>項目 3：bytes, str, unicodeの違いを知っておく<a class="headerlink" href="#bytes-str-unicode" title="Link to this heading">¶</a></h3>
 <p>はい。</p>
 </section>
 <section id="id8">
-<h3>項目 4：複雑な式の代わりにヘルパー関数を書く<a class="headerlink" href="#id8" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>項目 4：複雑な式の代わりにヘルパー関数を書く<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h3>
 <p><strong>ヘルパー関数</strong> ってなんじゃろ？と思ったんですが、「条件式が複雑になるようなら、関数を作りましょう」ということですね。</p>
 </section>
 <section id="id9">
-<h3>項目 5：シーケンスをどのようにスライスするか知っておく<a class="headerlink" href="#id9" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>項目 5：シーケンスをどのようにスライスするか知っておく<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h3>
 </section>
 <section id="start-end-stride">
-<h3>項目 6：1つのスライスでは、 start, end, strideを使わない<a class="headerlink" href="#start-end-stride" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>項目 6：1つのスライスでは、 start, end, strideを使わない<a class="headerlink" href="#start-end-stride" title="Link to this heading">¶</a></h3>
 <p>スライス楽しいよね。</p>
 <p>無理すると続かないので、こんな感じで読んでいこう。</p>
 </section>
@@ -160,17 +158,14 @@
           </div>
         </div>
       </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper"><div id="toc" class="sidebarRow">
 <h3><a href="../index.html">Table Of Contents</a></h3>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../2021/2021-12-04-article.html">PyLadies Kitの紹介</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2021/2021-12-02-article.html">PyLadies Tokyo 2021 合宿報告</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2021/2021-09-14-article.html">［ITS］関東ITソフトウェア健康保険組合でスポーツジムに通う方法</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2020/2020-12-24-article.html">FXを6週間やってみた結果と反省と感想</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2020/2020-12-23-article.html">FXのデータをテクニカル分析してみる（ゴールデンクロス）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2024/2024-12-01-article.html">お久しぶりです</a></li>
 </ul>
 <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../2024/index.html">2024</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2021/index.html">2021</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2020/index.html">2020</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2019/index.html">2019</a></li>
@@ -181,13 +176,17 @@
 </ul>
 
 </div>
-  <h4>前のトピックへ</h4>
-  <p class="topless"><a href="2017-12-01-article.html"
-                        title="前の章へ">The Zen of Python</a></p>
-  <h4>次のトピックへ</h4>
-  <p class="topless"><a href="2017-12-03-article.html"
-                        title="次の章へ">Effective Pythonで学ぶ（項目７〜）</a></p>
-<div id="searchbox" style="display: none" role="search">
+  <div>
+    <h4>前のトピックへ</h4>
+    <p class="topless"><a href="2017-12-01-article.html"
+                          title="前の章へ">The Zen of Python</a></p>
+  </div>
+  <div>
+    <h4>次のトピックへ</h4>
+    <p class="topless"><a href="2017-12-03-article.html"
+                          title="次の章へ">Effective Pythonで学ぶ（項目７〜）</a></p>
+  </div>
+<search id="searchbox" style="display: none" role="search">
   <h3 id="searchlabel">クイック検索</h3>
     <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
@@ -195,13 +194,13 @@
       <input type="submit" value="検索" />
     </form>
     </div>
-</div>
-<script>$('#searchbox').show(0);</script>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
     </div>
-    <div class="related" role="navigation" aria-label="related navigation">
+    <div class="related" role="navigation" aria-label="Related">
       <h3>ナビゲーション</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -216,8 +215,8 @@
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2019, kamekokamekame.net.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.3.1.
+    &#169; 著作権 2019, kamekokamekame.net.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
     </div>
   </body>
 </html>
