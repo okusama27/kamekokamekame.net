@@ -4,8 +4,19 @@
 <description>Strike while the iron is hot</description>
 <language>ja</language>
 <copyright>2019, kamekokamekame.net</copyright>
-<lastBuildDate>Sun, 01 December 2024 08:00:00 +0900</lastBuildDate>
+<lastBuildDate>Mon, 02 December 2024 08:00:00 +0900</lastBuildDate>
 <item>
+<title>ブログの環境</title>
+<link>https://kamekokamekame.net/2024/2024-12-02-article.html</link>
+<description>
+&lt;p&gt;ブログを3年ぶりくらいに書きました。&lt;/p&gt;&lt;p&gt;私のブログの環境ですが、確認してみたらGoogle CloudeにDebianのインスタンスが立っていて、そのうえでnginxが動いてました。
+記事も書かない3年間も証明書をときどき更新しながら、インスタンス代を月500円くらい払い続けていました。
+新しい更新もしないのに。&lt;/p&gt;&lt;p&gt;なぜ、GCPで、Debianなのかも覚えていないです。&lt;/p&gt;&lt;p&gt;たぶん、ブログを書き始めたころは向上心があったので、普段使っていないプロバイダーで、普段使っていないOSも使っておこう。と思っていたと思われます。&lt;/p&gt;
+...
+</description>
+<pubDate>Mon, 02 December 2024 08:00:00 +0900</pubDate>
+<guid>https://kamekokamekame.net/2024/2024-12-02-article.html</guid>
+</item><item>
 <title>お久しぶりです</title>
 <link>https://kamekokamekame.net/2024/2024-12-01-article.html</link>
 <description>

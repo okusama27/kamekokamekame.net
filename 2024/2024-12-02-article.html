@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 
-<html lang="ja" data-content_root="./">
+<html lang="ja" data-content_root="../">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -9,24 +9,25 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@okusama27" />
     <meta property="og:site_name" content="鉄は熱いうちに打て">
-    <meta property="og:title" content="トップページ">
+    <meta property="og:title" content="ブログの環境">
     <meta property="og:description" content="2024-12-02 ブログを3年ぶりくらいに書きました。 私のブログの環境ですが、確認してみたらGoogle CloudeにDebianのインスタンスが立っていて、そのうえでnginxが動いてました。
 記事も書かない3年間も証明書をときどき更新しながら、インスタンス代を月500円くらい払い続けていました。
 新しい更新もしないのに。 なぜ、GCPで、Debianなのかも覚えていないです。 た...">
-    <meta property='og:url' content="https://kamekokamekame.net/index.html">
+    <meta property='og:url' content="https://kamekokamekame.net/2024/2024-12-02-article.html">
     
-    <title>トップページ &#8212; 鉄は熱いうちに打て</title>
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=649a27d8" />
-    <link rel="stylesheet" type="text/css" href="_static/bizstyle.css?v=6b41fdce" />
-    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=fc297846" />
+    <title>ブログの環境 &#8212; 鉄は熱いうちに打て</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=649a27d8" />
+    <link rel="stylesheet" type="text/css" href="../_static/bizstyle.css?v=6b41fdce" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=fc297846" />
     
-    <script src="_static/documentation_options.js?v=6bbe880f"></script>
-    <script src="_static/doctools.js?v=9bcbadda"></script>
-    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="_static/translations.js?v=4755f45a"></script>
-    <script src="_static/bizstyle.js"></script>
-    <link rel="search" title="検索" href="search.html" />
-    <link rel="next" title="お久しぶりです" href="2024/2024-12-01-article.html" />
+    <script src="../_static/documentation_options.js?v=6bbe880f"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/translations.js?v=4755f45a"></script>
+    <script src="../_static/bizstyle.js"></script>
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="next" title="2021" href="../2021/index.html" />
+    <link rel="prev" title="2024" href="index.html" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <!--[if lt IE 9]>
     <script src="_static/css3-mediaqueries.js"></script>
@@ -36,10 +37,14 @@
       <h3>ナビゲーション</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="2024/2024-12-01-article.html" title="お久しぶりです"
+          <a href="../2021/index.html" title="2021"
              accesskey="N">次へ</a></li>
-        <li class="nav-item nav-item-0"><a href="#">鉄は熱いうちに打て</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">トップページ</a></li> 
+        <li class="right" >
+          <a href="index.html" title="2024"
+             accesskey="P">前へ</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">2024</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">ブログの環境</a></li> 
       </ul>
     </div>  
 
@@ -63,10 +68,6 @@
 <p>仕事でずっとmacOSを使っていたので、自宅用のマシンもWindowsにしています。当時、SEたるものはいろいろな環境でも問題なく作業ができてこそ。とか考えていたのだと思います。
 若いころに先輩が、客先に行っていつでも問題なく作業ができるようにキーボードは日本語配列をキーの配置をいじらずに使っておくようにしている。と、言っているのを聞いた私は、「かっこいい！プロフェッショナルだ！！」と大尊敬したのを覚えています。</p>
 <p>話は戻って、この10年ほど残念ながらDebianとGCPは言うまでもなく、Windowsもほぼ使いませんでした。まぁ、備えあれば憂いなしだったということでいい思い出にしようと思います。</p>
-<div class="toctree-wrapper compound">
-</div>
-<div class="toctree-wrapper compound">
-</div>
 </section>
 
 
@@ -92,35 +93,40 @@
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper"><div id="toc" class="sidebarRow">
-<h3><a href="#">Table Of Contents</a></h3>
+<h3><a href="../index.html">Table Of Contents</a></h3>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="2024/2024-12-01-article.html">お久しぶりです</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2021/2021-12-24-article.html">Pythonで数理最適化の実装をしてみた</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2021/2021-12-11-article.html">他の地域のPyLadiesを探そう</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2021/2021-12-04-article.html">PyLadies Kitの紹介</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2021/2021-12-02-article.html">PyLadies Tokyo 2021 合宿報告</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2024-12-01-article.html">お久しぶりです</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2021/2021-12-24-article.html">Pythonで数理最適化の実装をしてみた</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2021/2021-12-11-article.html">他の地域のPyLadiesを探そう</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2021/2021-12-04-article.html">PyLadies Kitの紹介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2021/2021-12-02-article.html">PyLadies Tokyo 2021 合宿報告</a></li>
 </ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="2024/index.html">2024</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2021/index.html">2021</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2020/index.html">2020</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2019/index.html">2019</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2018/index.html">2018</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2017/index.html">2017</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2016/index.html">2016</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2015/index.html">2015</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">2024</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2021/index.html">2021</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2020/index.html">2020</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2019/index.html">2019</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2018/index.html">2018</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2017/index.html">2017</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2016/index.html">2016</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2015/index.html">2015</a></li>
 </ul>
 
 </div>
   <div>
+    <h4>前のトピックへ</h4>
+    <p class="topless"><a href="index.html"
+                          title="前の章へ">2024</a></p>
+  </div>
+  <div>
     <h4>次のトピックへ</h4>
-    <p class="topless"><a href="2024/2024-12-01-article.html"
-                          title="次の章へ">お久しぶりです</a></p>
+    <p class="topless"><a href="../2021/index.html"
+                          title="次の章へ">2021</a></p>
   </div>
 <search id="searchbox" style="display: none" role="search">
   <h3 id="searchlabel">クイック検索</h3>
     <div class="searchformwrapper">
-    <form class="search" action="search.html" method="get">
+    <form class="search" action="../search.html" method="get">
       <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
       <input type="submit" value="検索" />
     </form>
@@ -135,10 +141,14 @@
       <h3>ナビゲーション</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="2024/2024-12-01-article.html" title="お久しぶりです"
+          <a href="../2021/index.html" title="2021"
              >次へ</a></li>
-        <li class="nav-item nav-item-0"><a href="#">鉄は熱いうちに打て</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">トップページ</a></li> 
+        <li class="right" >
+          <a href="index.html" title="2024"
+             >前へ</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >2024</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">ブログの環境</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">

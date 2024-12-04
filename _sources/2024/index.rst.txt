@@ -6,3 +6,4 @@
    :maxdepth: 1
 
    2024-12-01-article.rst
+   2024-12-02-article.rst
