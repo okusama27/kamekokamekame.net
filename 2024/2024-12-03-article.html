@@ -9,11 +9,11 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@okusama27" />
     <meta property="og:site_name" content="鉄は熱いうちに打て">
-    <meta property="og:title" content="eggを作ってみる">
-    <meta property="og:description" content="2015-04-14 Pythonのモジュールの配布方法としてeggというzipファイルを作成して配るらしい。 完全にこちらのサイトを参考にしました。ありがとうございます。mm pasterのインストール 雛形の作成 これやると色々聞かれる。バージョンとか作者の名前とか。聞かれたことはsetup.py中に記録されています。 egg作成 bdist_eggってコマンドだけど、なんの略？？ とり...">
-    <meta property='og:url' content="https://kamekokamekame.net/2015/2015-04-14-article.html">
+    <meta property="og:title" content="x(Twitter) と私">
+    <meta property="og:description" content="2024-12-03 Twitterをはじめたのは、2010年でした。 第2子を妊娠中に暇でドラマを見続けるしかすることがなかったのではじめたと思います。第1子とそんなに離れていなかったので、私って乳牛みたい（産んでは授乳しての繰り返しという意味）。と思って、ホルスタインの絵を描いてアイコンにした思い出があります。 SNS大好きな私ですが、ここ数年はスタッフをやっているPyLadiesのイベ...">
+    <meta property='og:url' content="https://kamekokamekame.net/2024/2024-12-03-article.html">
     
-    <title>eggを作ってみる &#8212; 鉄は熱いうちに打て</title>
+    <title>x(Twitter) と私 &#8212; 鉄は熱いうちに打て</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=649a27d8" />
     <link rel="stylesheet" type="text/css" href="../_static/bizstyle.css?v=6b41fdce" />
     <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=fc297846" />
@@ -24,8 +24,8 @@
     <script src="../_static/translations.js?v=4755f45a"></script>
     <script src="../_static/bizstyle.js"></script>
     <link rel="search" title="検索" href="../search.html" />
-    <link rel="next" title="もう一回virtualenvの使い方" href="2015-04-15-article.html" />
-    <link rel="prev" title="pydoc" href="2015-04-13-article.html" />
+    <link rel="next" title="2021" href="../2021/index.html" />
+    <link rel="prev" title="2024" href="index.html" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <!--[if lt IE 9]>
     <script src="_static/css3-mediaqueries.js"></script>
@@ -35,14 +35,14 @@
       <h3>ナビゲーション</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="2015-04-15-article.html" title="もう一回virtualenvの使い方"
+          <a href="../2021/index.html" title="2021"
              accesskey="N">次へ</a></li>
         <li class="right" >
-          <a href="2015-04-13-article.html" title="pydoc"
+          <a href="index.html" title="2024"
              accesskey="P">前へ</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">2015</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">eggを作ってみる</a></li> 
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">2024</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">x(Twitter) と私</a></li> 
       </ul>
     </div>  
 
@@ -54,32 +54,16 @@
 <h1>鉄は熱いうちに打て<br>
 =============================</h1>
 
-<section id="egg">
-<h1>eggを作ってみる<a class="headerlink" href="#egg" title="Link to this heading">¶</a></h1>
-<p>2015-04-14</p>
-<p>Pythonのモジュールの配布方法としてeggというzipファイルを作成して配るらしい。</p>
-<p>完全にこちらのサイトを参考にしました。ありがとうございます。mm</p>
-<a href="http://www.exsoft.net/blog/entry/ab4v5g" target="_blank">python開発環境の構築から作成したeggを別環境へインストールするまで</a><p>pasterのインストール</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>easy_install<span class="w"> </span>PasteScript
-</pre></div>
-</div>
-<p>雛形の作成</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>paster<span class="w"> </span>create<span class="w"> </span>-t<span class="w"> </span>basic_package<span class="w"> </span>MyPkg
-</pre></div>
-</div>
-<p>これやると色々聞かれる。バージョンとか作者の名前とか。聞かれたことはsetup.py中に記録されています。</p>
-<p>egg作成</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>MyPkg
-$<span class="w"> </span>python<span class="w"> </span>setup.py<span class="w"> </span>bdist_egg
-</pre></div>
-</div>
-<p>bdist_eggってコマンドだけど、なんの略？？</p>
-<p>とりあえず、よくわからない時の合言葉”おまじない”ってことで。
-で、Mypkg/distの下にパッケージが完成！！</p>
-<p>インストールはこれでオケ。</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>easy_install<span class="w"> </span><span class="o">{</span>作ったeggファイル<span class="o">}</span>
-</pre></div>
-</div>
+<section id="x-twitter">
+<h1>x(Twitter) と私<a class="headerlink" href="#x-twitter" title="Link to this heading">¶</a></h1>
+<p>2024-12-03</p>
+<p>Twitterをはじめたのは、2010年でした。</p>
+<p>第2子を妊娠中に暇でドラマを見続けるしかすることがなかったのではじめたと思います。第1子とそんなに離れていなかったので、私って乳牛みたい（産んでは授乳しての繰り返しという意味）。と思って、ホルスタインの絵を描いてアイコンにした思い出があります。</p>
+<p>SNS大好きな私ですが、ここ数年はスタッフをやっているPyLadiesのイベント時にしか投稿していませんでした。</p>
+<p>原因は、仕事でどちらかというとBtoCのサービスを運営していたためです。ローンチ当初は、運営しているメンバーが少なかったために変な投稿をして、炎上するとサービスの評判が落ちるかも！と考え、もう何も投稿できなくなっていました。</p>
+<p>男尊女卑が根強い田舎で昭和に生まれ、私にも男性と女性を区別する心が多めでした。何度か指摘されて改善はしていますが、油断すると余計なことを言いそうで何もつぶやけませんでした。</p>
+<p>退職して責任もなくなり、いまは心置きなくつぶやけます。嬉しいです。
+次にどこかで働くことがあってもxとはなるべくひもづかないようにひっそり働こうと思っています。</p>
 </section>
 
 
@@ -112,33 +96,33 @@ $<span class="w"> </span>python<span class="w"> </span>setup.py<span class="w"> 
         <div class="sphinxsidebarwrapper"><div id="toc" class="sidebarRow">
 <h3><a href="../index.html">Table Of Contents</a></h3>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../2024/2024-12-02-article.html">ブログの環境</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2024/2024-12-01-article.html">お久しぶりです</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2024-12-02-article.html">ブログの環境</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2024-12-01-article.html">お久しぶりです</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2021/2021-12-24-article.html">Pythonで数理最適化の実装をしてみた</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2021/2021-12-11-article.html">他の地域のPyLadiesを探そう</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2021/2021-12-04-article.html">PyLadies Kitの紹介</a></li>
 </ul>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../2024/index.html">2024</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">2024</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2021/index.html">2021</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2020/index.html">2020</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2019/index.html">2019</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2018/index.html">2018</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2017/index.html">2017</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2016/index.html">2016</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">2015</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2015/index.html">2015</a></li>
 </ul>
 
 </div>
   <div>
     <h4>前のトピックへ</h4>
-    <p class="topless"><a href="2015-04-13-article.html"
-                          title="前の章へ">pydoc</a></p>
+    <p class="topless"><a href="index.html"
+                          title="前の章へ">2024</a></p>
   </div>
   <div>
     <h4>次のトピックへ</h4>
-    <p class="topless"><a href="2015-04-15-article.html"
-                          title="次の章へ">もう一回virtualenvの使い方</a></p>
+    <p class="topless"><a href="../2021/index.html"
+                          title="次の章へ">2021</a></p>
   </div>
 <search id="searchbox" style="display: none" role="search">
   <h3 id="searchlabel">クイック検索</h3>
@@ -158,14 +142,14 @@ $<span class="w"> </span>python<span class="w"> </span>setup.py<span class="w"> 
       <h3>ナビゲーション</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="2015-04-15-article.html" title="もう一回virtualenvの使い方"
+          <a href="../2021/index.html" title="2021"
              >次へ</a></li>
         <li class="right" >
-          <a href="2015-04-13-article.html" title="pydoc"
+          <a href="index.html" title="2024"
              >前へ</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">鉄は熱いうちに打て</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="index.html" >2015</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">eggを作ってみる</a></li> 
+          <li class="nav-item nav-item-1"><a href="index.html" >2024</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">x(Twitter) と私</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
