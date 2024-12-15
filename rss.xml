@@ -4,14 +4,44 @@
 <description>Strike while the iron is hot</description>
 <language>ja</language>
 <copyright>2019, kamekokamekame.net</copyright>
-<lastBuildDate>Mon, 09 December 2024 08:00:00 +0900</lastBuildDate>
+<lastBuildDate>Mon, 16 December 2024 08:00:00 +0900</lastBuildDate>
 <item>
+<title>個人ブログを書くときに寄り添ってくれるShodo</title>
+<link>https://kamekokamekame.net/2024/2024-12-16-article.html</link>
+<description>
+&lt;p&gt;この記事は、 &lt;a class=&quot;reference external&quot; href=&quot;https://qiita.com/advent-calendar/2024/shodo&quot;&gt;AI校正Shodo Advent Calendar 2024&lt;/a&gt; の16日目の記事です。
+私が &lt;strong&gt;Shodo&lt;/strong&gt; の便利だなと思う機能をいちファンとして紹介します。&lt;/p&gt;&lt;p&gt;みなさんは、ブログを書いていますか？&lt;/p&gt;&lt;p&gt;私は、前の会社で仕事でブログを書いていました。その時に使っていたのはShodoでした。主に他の人にレビューをしてもらうために使っていました（参照 &lt;a class=&quot;reference external&quot; href=&quot;https://help.shodo.ink/ja/articles/6336929-%E5%85%B1%E6%9C%89%E3%83%AA%E3%83%B3%E3%82%AF%E3%81%A7%E5%A4%96%E9%83%A8%E3%81%AE%E4%BA%BA%E3%81%AB%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC%E3%81%97%E3%81%A6%E3%82%82%E3%82%89%E3%81%86&quot;&gt;共有リンクで外部の人にレビューしてもらう&lt;/a&gt; ）。GitHubのように文章の下にコメントを書けるので、どこのことを指摘しているのかがすぐに理解できてとても助かっていました。&lt;/p&gt;&lt;p&gt;そして月日は流れ、会社は退職したのですが今度は個人ブログを書きたくなってきました。&lt;/p&gt;
+...
+</description>
+<pubDate>Mon, 16 December 2024 08:00:00 +0900</pubDate>
+<guid>https://kamekokamekame.net/2024/2024-12-16-article.html</guid>
+</item><item>
+<title>PyLadies Tokyoの合宿に参加（2日目）</title>
+<link>https://kamekokamekame.net/2024/2024-12-15-article.html</link>
+<description>
+&lt;p&gt;PyLadies Tokyoの合宿に来ています。2日目です。
+2日目も朝からもくもくしています。室内だけど、お天気も良くて最高です。&lt;/p&gt;&lt;p&gt;今日は、 &lt;a class=&quot;reference external&quot; href=&quot;https://www.asakura.co.jp/detail.php?book_code=12295&quot;&gt;Python時系列分析クックブック II ―モデル・機械学習―&lt;/a&gt; を学習しました。1冊目の &lt;a class=&quot;reference external&quot; href=&quot;https://www.asakura.co.jp/detail.php?book_code=12294&amp;amp;srsltid=AfmBOoozcph1Gf8P_m79VgDooKrGJcL3ATWKdPBdTxLZxYTDHxNojFsg&quot;&gt;Python時系列分析クックブック 前処理&lt;/a&gt; からレシピの番号もページ番号も続いています。2冊とも学んでほしい気合が伝わります。&lt;/p&gt;&lt;a class=&quot;reference internal image-reference&quot; href=&quot;../_images/2024121501.jpg&quot;&gt;&lt;img alt=&quot;../_images/2024121501.jpg&quot; src=&quot;../_images/2024121501.jpg&quot; style=&quot;width: 300px;&quot;/&gt;
+&lt;/a&gt;&lt;p&gt;全部読む前にタイムアップでした。2冊目のほうが私にはだいぶん難しかったので、途中で疲れてコミュニティのGitHubをきれいにしたりしていました。終わりませんでしたが、1年間ほったらかしにしていた本を読むことができたので良かったです。&lt;/p&gt;
+...
+</description>
+<pubDate>Sun, 15 December 2024 08:00:00 +0900</pubDate>
+<guid>https://kamekokamekame.net/2024/2024-12-15-article.html</guid>
+</item><item>
+<title>PyLadies Tokyoの合宿に参加（1日目）</title>
+<link>https://kamekokamekame.net/2024/2024-12-14-article.html</link>
+<description>
+&lt;p&gt;PyLadies Tokyoの合宿に来ています。&lt;/p&gt;&lt;p&gt;私が参加している &lt;a class=&quot;reference external&quot; href=&quot;https://tokyo.pyladies.com/&quot;&gt;PyLadies Tokyo&lt;/a&gt; は、Pythonが好きな女性を結ぶ国際的なコミュニティです。日本には、東京・京都・沖縄の支部があります。私は東京でスタッフをしています。2015年から参加しているので、そろそろ10年ですね。スタッフになった理由はスタッフの人たちが仲良さそうで羨ましかったからです。&lt;/p&gt;&lt;p&gt;PyLadies Tokyoは毎月イベントを開催していて、年に1回くらいは宿泊を伴う合宿を行っています。セキュリティの関係で、場所は参加者にだけ明かされますがだいたい関東で開催されています。私は家族以外と旅行に行く機会がないので、参加できてうれしいです。&lt;/p&gt;&lt;p&gt;やることは、親睦ともくもくです。会議室がある宿に泊まって、日中はもくもくし、夜は飲みながら話したりします。多くのエンジニアの女性と話せる機会はなかなかないので、かけがえのない時間です。他の女性の働き方や考え方を聞くことにより自分の将来についても考えたり、自身の価値観や生き方を確認する良い機会にもなります。&lt;/p&gt;
+...
+</description>
+<pubDate>Sat, 14 December 2024 08:00:00 +0900</pubDate>
+<guid>https://kamekokamekame.net/2024/2024-12-14-article.html</guid>
+</item><item>
 <title>無職と私</title>
 <link>https://kamekokamekame.net/2024/2024-12-09-article.html</link>
 <description>
 &lt;p&gt;私は現在働いておらず、どこの会社にも所属していないので &lt;strong&gt;無職&lt;/strong&gt; です。最近は誰かに職業のことを聞かれたら、自分の職業のことを無職と表現していました。
 しかし、よく考えると結婚しており、毎日家事をしているので &lt;strong&gt;専業主婦&lt;/strong&gt; が正しい表現なのかもしれません。&lt;/p&gt;&lt;p&gt;18歳で実家を離れて一人暮らしを始めてから、これまで私の肩書は学生、会社員、個人事業主のどれかでした。転職をしたこともありますが、辞める前に転職活動をして有給消化が終わった翌日に次の会社で働いていたので無職だったことはありません。個人事業主のときも会社を辞めた翌日から就業先が決まっていたので、無職期間はありませんでした。
-現在は、確実に無職です。このあと、個人事業主になる気もあまりありません。&lt;/p&gt;&lt;p&gt;他の人にはどうでもいい話ですが、私が自分のことを無職と表現するのは、今後もどこかで働く気が自分にあるからだなと気づきました。&lt;/p&gt;&lt;p&gt;もともと不妊治療をするために個人事業主を選択したのですが、8年間の個人事業主時代に私は個人事業主に向いていないなと思っていました。長い期間ひとりで働くのは自分がどんどん劣化していく世に感じていました。個人事業主は最終的に社長を目指しているか、ひとりでもアンテナを張り巡らせて新しい技術をキャッチアップしたり、あらゆるところに顔を出し人脈を広げていける人だと考えます。
+現在は、確実に無職です。このあと、個人事業主になる気もあまりありません。&lt;/p&gt;&lt;p&gt;他の人にはどうでもいい話ですが、私が自分のことを無職と表現するのは、今後もどこかで働く気が自分にあるからだなと気づきました。&lt;/p&gt;&lt;p&gt;もともと不妊治療をするために個人事業主を選択したのですが、8年間の個人事業主時代に私は個人事業主に向いていないなと思っていました。長い期間ひとりで働くのは自分がどんどん劣化していくように感じていました。個人事業主は最終的に社長を目指しているか、ひとりでもアンテナを張り巡らせて新しい技術をキャッチアップしたり、あらゆるところに顔を出し人脈を広げていける人だと考えます。
 久しぶりに就職したとき、会社の勉強会に出たら知らなかったことをたくさん学べて嬉しかったことを覚えています。具合が悪いときにフォローしてくれる仲間がいるのも心強いです。&lt;/p&gt;
 ...
 </description>
@@ -26,49 +56,6 @@
 </description>
 <pubDate>Sat, 07 December 2024 08:00:00 +0900</pubDate>
 <guid>https://kamekokamekame.net/2024/2024-12-07-article.html</guid>
-</item><item>
-<title>x(Twitter) と私</title>
-<link>https://kamekokamekame.net/2024/2024-12-03-article.html</link>
-<description>
-&lt;p&gt;Twitterをはじめたのは、2010年でした。&lt;/p&gt;&lt;p&gt;第2子を妊娠中に暇でドラマを見続けるしかすることがなかったのではじめたと思います。第1子とそんなに離れていなかったので、私って乳牛みたい（産んでは授乳しての繰り返しという意味）。と思って、ホルスタインの絵を描いてアイコンにした思い出があります。&lt;/p&gt;&lt;p&gt;SNS大好きな私ですが、ここ数年はスタッフをやっているPyLadiesのイベント時にしか投稿していませんでした。&lt;/p&gt;&lt;p&gt;原因は、仕事でどちらかというとBtoCのサービスを運営していたためです。ローンチ当初は、運営しているメンバーが少なかったために変な投稿をして、炎上するとサービスの評判が落ちるかも！と考え、もう何も投稿できなくなっていました。&lt;/p&gt;
-...
-</description>
-<pubDate>Tue, 03 December 2024 08:00:00 +0900</pubDate>
-<guid>https://kamekokamekame.net/2024/2024-12-03-article.html</guid>
-</item><item>
-<title>ブログの環境</title>
-<link>https://kamekokamekame.net/2024/2024-12-02-article.html</link>
-<description>
-&lt;p&gt;ブログを3年ぶりくらいに書きました。&lt;/p&gt;&lt;p&gt;私のブログの環境ですが、確認してみたらGoogle CloudeにDebianのインスタンスが立っていて、そのうえでnginxが動いてました。
-記事も書かない3年間も証明書をときどき更新しながら、インスタンス代を月500円くらい払い続けていました。
-新しい更新もしないのに。&lt;/p&gt;&lt;p&gt;なぜ、GCPで、Debianなのかも覚えていないです。&lt;/p&gt;&lt;p&gt;たぶん、ブログを書き始めたころは向上心があったので、普段使っていないプロバイダーで、普段使っていないOSも使っておこう。と思っていたと思われます。&lt;/p&gt;
-...
-</description>
-<pubDate>Mon, 02 December 2024 08:00:00 +0900</pubDate>
-<guid>https://kamekokamekame.net/2024/2024-12-02-article.html</guid>
-</item><item>
-<title>お久しぶりです</title>
-<link>https://kamekokamekame.net/2024/2024-12-01-article.html</link>
-<description>
-&lt;p&gt;久しぶりにブログを書いています。ひとつ前が2021年の12月なので、約3年ぶりです。
-その間に何をしていたかというと、いろいろやりすぎて疲れていました。&lt;/p&gt;&lt;p&gt;今回は、過去3年間にあったことをつらつらと書いてみたいと思います。&lt;/p&gt;&lt;section id=&quot;id2&quot;&gt;
-&lt;h2&gt;2022年&lt;a class=&quot;headerlink&quot; href=&quot;#id2&quot; title=&quot;Link to this heading&quot;&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;ul class=&quot;simple&quot;&gt;
-&lt;li&gt;&lt;p&gt;PyCon JP 2022 スタッフ&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;娘、中学受験&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/section&gt;&lt;section id=&quot;id3&quot;&gt;
-&lt;h2&gt;2023年&lt;a class=&quot;headerlink&quot; href=&quot;#id3&quot; title=&quot;Link to this heading&quot;&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;ul class=&quot;simple&quot;&gt;
-&lt;li&gt;&lt;p&gt;PyCon APAC 2023 スタッフ（リーダー）&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;15年ぶりくらいの海外旅行（PyCon 台湾）&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;引っ越し1&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/section&gt;
-...
-</description>
-<pubDate>Sun, 01 December 2024 08:00:00 +0900</pubDate>
-<guid>https://kamekokamekame.net/2024/2024-12-01-article.html</guid>
 </item>
 </channel>
 </rss>

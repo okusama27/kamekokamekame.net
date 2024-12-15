@@ -1,0 +1,21 @@
+:date: 2024-12-15 00:00:00
+:title: PyLadies Tokyoの合宿に参加（2日目）
+:category: pyladies
+:tags: pyladies
+
+==========================================================
+PyLadies Tokyoの合宿に参加（2日目）
+==========================================================
+
+2024-12-15
+
+PyLadies Tokyoの合宿に来ています。2日目です。
+2日目も朝からもくもくしています。室内だけど、お天気も良くて最高です。
+
+今日は、 `Python時系列分析クックブック II ―モデル・機械学習― <https://www.asakura.co.jp/detail.php?book_code=12295>`_ を学習しました。1冊目の `Python時系列分析クックブック 前処理 <https://www.asakura.co.jp/detail.php?book_code=12294&srsltid=AfmBOoozcph1Gf8P_m79VgDooKrGJcL3ATWKdPBdTxLZxYTDHxNojFsg>`_ からレシピの番号もページ番号も続いています。2冊とも学んでほしい気合が伝わります。
+
+.. image:: /_static/images/2024/2024121501.jpg
+   :width: 300
+
+全部読む前にタイムアップでした。2冊目のほうが私にはだいぶん難しかったので、途中で疲れてコミュニティのGitHubをきれいにしたりしていました。終わりませんでしたが、1年間ほったらかしにしていた本を読むことができたので良かったです。
+   
