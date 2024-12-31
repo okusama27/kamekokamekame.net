@@ -13,3 +13,4 @@
    2024-12-14-article.rst
    2024-12-15-article.rst
    2024-12-16-article.rst
+   2024-12-31-article.rst
