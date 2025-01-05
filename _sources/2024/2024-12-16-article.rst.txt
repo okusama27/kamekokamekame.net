@@ -1,7 +1,7 @@
 :date: 2024-12-16 00:00:00
 :title: 個人ブログを書くときに寄り添ってくれるShodo
-:category: Category
-:tags: Category
+:category: Shodo
+:tags: Shodo
 
 ==========================================================
 個人ブログを書くときに寄り添ってくれるShodo
