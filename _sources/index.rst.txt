@@ -17,6 +17,7 @@
    :maxdepth: 1
    :hidden:
 
+   2025/index
    2024/index
    2021/index
    2020/index
