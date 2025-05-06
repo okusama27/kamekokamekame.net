@@ -1,16 +1,16 @@
 .. title:: トップページ
 
-.. include:: 2025/2025-01-05-article.rst
+.. include:: 2025/2025-05-05-article.rst
 
 .. toctree::
    :maxdepth: 1
    :hidden:
 
+   2025/2025-01-05-article.rst
    2024/2024-12-31-article.rst
    2024/2024-12-16-article.rst
    2024/2024-12-15-article.rst
    2024/2024-12-14-article.rst
-   2024/2024-12-09-article.rst
    
 
 .. toctree::
