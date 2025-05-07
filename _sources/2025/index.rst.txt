@@ -7,3 +7,4 @@
 
    2025-01-05-article.rst
    2025-05-05-article.rst
+   2025-05-06-article.rst
